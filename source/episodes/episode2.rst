@@ -1,226 +1,305 @@
-Episode 2: Machine Learning Fundamentals
+Episode 2: Hvordan fungerer språkmodeller?
 ==========================================
 
 .. contents::
    :local:
    :depth: 2
 
-Overview
+Oversikt
 --------
 
-This episode covers the basics of machine learning, a core component of modern AI.
+I denne episoden lærer du hvordan store språkmodeller (LLM) faktisk fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.
 
-Topics covered
-~~~~~~~~~~~~~~
+Temaer som dekkes
+~~~~~~~~~~~~~~~~~
 
-* Supervised vs Unsupervised Learning
-* Training and testing data
-* Model evaluation metrics
-* Common algorithms
+* Språkmodeller er ikke kunnskapsbaser
+* Hvordan LLM-er genererer tekst
+* Statistisk sannsynlighet og tilfeldighet
+* Begrensninger ved LLM-er
+* Hvorfor LLM-er kan "hallusinere"
 
-Learning objectives
-~~~~~~~~~~~~~~~~~~
+Læringsmål
+~~~~~~~~~~
 
-By the end of this episode, you will be able to:
+Etter denne episoden vil du kunne:
 
-* Explain the difference between supervised and unsupervised learning
-* Understand the importance of data splitting
-* Apply basic evaluation metrics
-* Recognize common ML algorithms and their use cases
+* Forstå at LLM-er konstruerer tekst basert på statistiske mønstre
+* Forklare hvorfor LLM-er ikke er pålitelige kunnskapsbaser
+* Gjenkjenne når en LLM kan gi feil informasjon
+* Forstå betydningen av tilfeldighet i KI-svar
 
-Supervised vs Unsupervised Learning
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Estimert tid:** 10 minutter
 
-Machine learning can be broadly categorized into two main approaches:
+LLM-er er IKKE kunnskapsbaser
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+Dette er kanskje den viktigste forståelsen du kan ha om språkmodeller:
 
-   .. tab:: Supervised Learning
+.. warning::
 
-      Learning with labeled data where the algorithm learns to map inputs to outputs based on example input-output pairs.
+   **Store språkmodeller er IKKE databaser med fakta. De er statistiske modeller som genererer tekst basert på mønstre de har lært.**
 
-      **Common Tasks:**
-      * Classification (categorical output)
-      * Regression (continuous output)
-
-      **Examples:**
-      * Email spam detection
-      * House price prediction
-      * Image classification
-
-   .. tab:: Unsupervised Learning
-
-      Learning with unlabeled data where the algorithm tries to find patterns or structure in the data without predefined outputs.
-
-      **Common Tasks:**
-      * Clustering
-      * Dimensionality reduction
-      * Anomaly detection
-
-      **Examples:**
-      * Customer segmentation
-      * Feature extraction
-      * Network intrusion detection
-
-.. code-block:: python
-
-   import numpy as np
-   from sklearn.model_selection import train_test_split
-   from sklearn.linear_model import LinearRegression
-   from sklearn.metrics import mean_squared_error
-
-   # Sample data for supervised learning
-   X = np.array([[1], [2], [3], [4], [5]])  # Features
-   y = np.array([2, 4, 6, 8, 10])          # Labels
-
-   # Split data into training and testing sets
-   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-   # Create and train a model
-   model = LinearRegression()
-   model.fit(X_train, y_train)
-
-   # Make predictions
-   predictions = model.predict(X_test)
-   print(f"Predictions: {predictions}")
-
-   # Evaluate the model
-   mse = mean_squared_error(y_test, predictions)
-   print(f"Mean Squared Error: {mse}")
-
-Training and Testing Data
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Proper data splitting is crucial for model evaluation:
+La oss sammenligne med noe du kjenner:
 
 .. tabs::
 
-   .. tab:: Training Set
+   .. tab:: Kunnskapsbase (f.eks. Wikipedia)
 
-      The portion of data used to train the model. Typically 70-80% of the total dataset.
+      **Slik fungerer det:**
 
-   .. tab:: Testing Set
+      * Informasjon er lagret som strukturerte data
+      * Når du søker, henter systemet frem eksakt informasjon
+      * Informasjonen er (ideelt sett) verifisert og referert
+      * Du får samme svar hver gang på samme spørsmål
+      * Hvis informasjonen ikke finnes, får du ingen treff
 
-      The portion of data used to evaluate the model's performance on unseen data. Typically 20-30% of the total dataset.
+      **Eksempel:**
 
-   .. tab:: Validation Set
+      Søker du "befolkning i Norge 2024", får du det eksakte tallet som er lagret.
 
-      Optional set used for hyperparameter tuning and model selection during development.
+   .. tab:: Språkmodell (f.eks. ChatGPT)
 
-.. question::
+      **Slik fungerer det:**
 
-   Why do we need to split data into training and testing sets?
+      * Ingen informasjon er direkte "lagret" som fakta
+      * Modellen har lært mønstre fra millioner av tekster
+      * Når du stiller et spørsmål, genererer den ny tekst som ligner på mønstre den har sett
+      * Du kan få ulike svar på samme spørsmål
+      * Modellen vil alltid forsøke å gi et svar, selv om den ikke "vet" svaret
 
-   .. answer::
+      **Eksempel:**
 
-      To evaluate how well the model generalizes to unseen data. If we test on the same data we trained on, we might get overly optimistic results that don't reflect real-world performance.
+      Spør du "befolkning i Norge 2024", konstruerer modellen et svar basert på mønstre fra lignende spørsmål den har sett - og kan gi feil tall.
 
-Model Evaluation Metrics
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Hvordan genererer LLM-er tekst?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Different metrics are used depending on the type of machine learning problem:
-
-.. tabs::
-
-   .. tab:: Classification Metrics
-
-      * **Accuracy**: (TP + TN) / (TP + TN + FP + FN)
-      * **Precision**: TP / (TP + FP)
-      * **Recall**: TP / (TP + FN)
-      * **F1-Score**: 2 * (Precision * Recall) / (Precision + Recall)
-
-   .. tab:: Regression Metrics
-
-      * **Mean Absolute Error (MAE)**: Average of absolute errors
-      * **Mean Squared Error (MSE)**: Average of squared errors
-      * **R-squared**: Proportion of variance explained by the model
-
-.. exercise::
-
-   **Exercise: Calculate Evaluation Metrics**
-
-   Given the following confusion matrix for a binary classification problem:
-
-   .. code-block:: text
-
-              Predicted
-               Positive  Negative
-      Actual   Positive    45        5
-               Negative    10        40
-
-   Calculate:
-   1. Accuracy
-   2. Precision
-   3. Recall
-   4. F1-Score
-
-   .. solution::
-
-      1. Accuracy = (45 + 40) / (45 + 5 + 10 + 40) = 85 / 100 = 0.85
-      2. Precision = 45 / (45 + 10) = 45 / 55 = 0.818
-      3. Recall = 45 / (45 + 5) = 45 / 50 = 0.9
-      4. F1-Score = 2 * (0.818 * 0.9) / (0.818 + 0.9) = 2 * 0.736 / 1.718 = 0.857
-
-Common ML Algorithms
-~~~~~~~~~~~~~~~~~~~~~
-
-Here are some fundamental machine learning algorithms:
+For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:
 
 .. tabs::
 
-   .. tab:: Linear Regression
+   .. tab:: Trening
 
-      Simple algorithm for predicting continuous values. Assumes linear relationship between features and target.
+      **Hva skjer under treningen:**
 
-      **Use Cases:** Price prediction, trend analysis, forecasting
+      1. Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
+      2. Den lærer hvilke ord som ofte kommer etter hverandre
+      3. Den lærer mønstre i språk, grammatikk, og hvordan setninger bygges opp
+      4. Den lærer sammenhenger mellom begreper og emner
 
-   .. tab:: Decision Trees
+      **Eksempel:**
 
-      Tree-like model of decisions. Easy to interpret and visualize.
+      Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
 
-      **Use Cases:** Classification, regression, feature importance analysis
+   .. tab:: Generering
 
-   .. tab:: Random Forest
+      **Hva skjer når du stiller et spørsmål:**
 
-      Ensemble method using multiple decision trees. Reduces overfitting.
+      1. Modellen analyserer din tekst (prompten)
+      2. Basert på mønstre den har lært, beregner den hva som er statistisk sannsynlig som neste ord
+      3. Den velger et ord (med litt tilfeldighet)
+      4. Den gjentar prosessen for neste ord, og neste ord, osv.
+      5. Den stopper når den "mener" svaret er fullstendig
 
-      **Use Cases:** Classification, regression, feature selection
+      **Viktig:**
 
-   .. tab:: Support Vector Machines (SVM)
+      Modellen "tenker" ikke på om informasjonen er korrekt - den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
-      Finds optimal hyperplane to separate classes in feature space.
+   .. tab:: Temperatur og tilfeldighet
 
-      **Use Cases:** Classification, regression, outlier detection
+      **Hva er "temperatur"?**
 
-   .. tab:: K-Means Clustering
+      * En parameter som styrer hvor kreativ/tilfeldig modellen skal være
+      * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene
+      * **Høy temperatur** (f.eks. 0.8): Mer kreativ, kan velge mindre sannsynlige ord
 
-      Unsupervised algorithm for grouping similar data points.
+      **Derfor:**
 
-      **Use Cases:** Customer segmentation, image compression, anomaly detection
+      * Du kan få ulike svar på samme spørsmål
+      * Noen ganger kan svarene være mer kreative, andre ganger mer "standard"
+      * Ingen garanti for at samme spørsmål gir samme svar
 
-.. code-block:: bash
+Et praktisk eksempel
+~~~~~~~~~~~~~~~~~~~~
 
-   # Install common ML libraries
-   pip install scikit-learn pandas matplotlib seaborn
-   
-   # Example of loading and exploring data
-   import pandas as pd
-   import matplotlib.pyplot as plt
-   
-   # Load dataset
-   data = pd.read_csv('your_dataset.csv')
-   
-   # Basic exploration
-   print(data.head())
-   print(data.describe())
-   
-   # Simple visualization
-   plt.scatter(data['feature1'], data['feature2'])
-   plt.xlabel('Feature 1')
-   plt.ylabel('Feature 2')
-   plt.title('Data Distribution')
-   plt.show()
+La oss se på et konkret eksempel:
+
+.. code-block:: text
+
+   DU: "Hva er åpningstidene til biblioteket på Blindern?"
+
+**Hva skjer i modellen:**
+
+1. Modellen ser at dette er et spørsmål om åpningstider
+2. Den har sett mange lignende spørsmål under trening
+3. Den har lært mønsteret: spørsmål om åpningstider → svar med tider
+4. Den genererer et svar som *ser ut* som åpningstider
+
+**Problemet:**
+
+Modellen kan konstruere et helt plausibelt svar som "Biblioteket på Blindern er åpent 08:00-20:00 mandag-fredag og 10:00-16:00 i helgene" - selv om dette er fullstendig feil!
+
+.. warning::
+
+   **Modellen "vet" ikke hva åpningstidene faktisk er. Den genererer bare tekst som ligner på svar om åpningstider.**
+
+Hva er "hallusinering"?
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kaller vi det "hallusinering" (eller "confabulation" på fagspråket).
+
+.. tabs::
+
+   .. tab:: Eksempler på hallusinering
+
+      **Typiske situasjoner:**
+
+      * **Oppdiktede referanser**: Modellen lager titler på artikler som ikke finnes
+      * **Feil fakta**: Oppgir feil datoer, tall eller navn
+      * **Blandede personer**: Blander sammen biografier fra ulike personer
+      * **Oppfunnet programvare**: Beskriver funksjoner som ikke eksisterer
+      * **Feil prosedyrer**: Beskriver arbeidsprosesser som ikke stemmer
+
+      **Eksempel:**
+
+      "Studien av Hansen et al. (2023) publisert i Nature viste at..." - der både studien og forfatterne kan være oppfunnet.
+
+   .. tab:: Hvorfor skjer det?
+
+      **Årsaker til hallusinering:**
+
+      1. **Modellen vil alltid gi et svar** - Den sier ikke "jeg vet ikke"
+      2. **Mønstre fra trening** - Den har lært hvordan svar "skal se ut"
+      3. **Manglende faktasjekk** - Den verifiserer ikke mot noen database
+      4. **Overgeneralisering** - Den kombinerer mønstre fra ulike kilder
+      5. **Utdatert treningsdata** - Modellen vet ikke hva som har skjedd etter den ble trent
+
+      **Viktig å forstå:**
+
+      Hallusinering er ikke en "bug" som kan fikses fullstendig - det er en iboende egenskap ved hvordan språkmodeller fungerer.
+
+   .. tab:: Hallusinering med selvtillit
+
+      **Det mest problematiske:**
+
+      LLM-er hallusinerer ofte med stor **selvsikkerhet**. De sier ikke:
+
+      * "Jeg er usikker, men..."
+      * "Dette kan være feil, men..."
+      * "Jeg vet ikke sikkert, men..."
+
+      I stedet presenterer de feil informasjon med samme overbevisning som riktig informasjon.
+
+      **Derfor:**
+
+      Du kan IKKE stole på om et svar er korrekt basert på hvor selvsikkert det fremstår.
+
+.. admonition:: Spørsmål
+
+   **Hvorfor kan en språkmodell gi feil informasjon selv om svaret høres veldig troverdig ut?**
+
+.. admonition:: Svar
+   :class: tip
+
+   Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk. Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant. Derfor kan den produsere feil informasjon med samme selvtillit som riktig informasjon.
+
+Begrensninger du bør kjenne til
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Utdatert informasjon
+
+      **Problemet:**
+
+      * LLM-er trenes på data fra et bestemt tidspunkt
+      * De vet ikke hva som har skjedd etter treningsdataen ble samlet
+      * Mange modeller har en "kunnskapsgrense" (cutoff date)
+
+      **Eksempel:**
+
+      En modell trent i 2023 vet ikke hvem som vant fotball-VM i 2024, eller nye lover som ble vedtatt i 2024.
+
+      **Merk:**
+
+      Noen verktøy (som Bing Chat/Copilot) kan søke på internett for oppdatert informasjon - men da bruker de en søkemotor i tillegg til språkmodellen.
+
+   .. tab:: Manglende kontekst
+
+      **Problemet:**
+
+      * LLM-er kjenner ikke til interne prosedyrer ved UiO (med mindre de fortelles)
+      * De vet ikke om spesifikke systemer dere bruker
+      * De har ikke tilgang til deres dokumenter eller databaser
+
+      **Eksempel:**
+
+      Spør du "Hvordan registrerer jeg fravær i vårt system?", kan modellen gi et generisk svar om fraværsregistrering - men ikke det spesifikke systemet dere bruker.
+
+      **Løsning:**
+
+      Gi kontekst i prompten: "Vi bruker systemet X ved UiO. Hvordan registrerer jeg fravær?"
+
+   .. tab:: Språk og kulturforståelse
+
+      **Problemet:**
+
+      * De fleste LLM-er er primært trent på engelsk
+      * Norsk fungerer, men kvaliteten kan være noe lavere
+      * Norske forhold og kontekst kan være underrepresentert
+
+      **Eksempel:**
+
+      Juridiske eller administrative spørsmål om norske forhold kan få svar basert på amerikanske eller britiske systemer.
+
+      **Tips:**
+
+      * Vær eksplisitt: "i Norge", "ved norske universiteter", "etter norsk lovverk"
+      * Sjekk alltid svar om lover, regler og prosedyrer
+
+Hva betyr dette for deg som bruker?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
-   Understanding these fundamentals is essential for building effective machine learning models. In the next episode, we'll explore neural networks and deep learning.
+   **Viktigste takeaways:**
+
+   1. **LLM-er er verktøy for å generere tekst** - ikke oppslagsverk for fakta
+   2. **Verifiser alltid viktig informasjon** - spesielt fakta, tall, referanser
+   3. **Bruk LLM-er til hva de er gode på** - strukturering, formulering, idémyldring
+   4. **Vær kritisk** - spesielt når svaret virker veldig detaljert og spesifikt
+   5. **Gi god kontekst** - hjelp modellen ved å gi relevant informasjon i prompten
+
+.. exercise::
+
+   **Refleksjonsoppgave**
+
+   Tenk over følgende situasjoner. I hvilke av disse bør du være EKSTRA forsiktig med å stole på et LLM-svar?
+
+   * Skrive et utkast til en e-post
+   * Finne en spesifikk paragraf i universitetsloven
+   * Få hjelp til å formulere et budskap på en vennlig måte
+   * Sjekke åpningstider for UiO-biblioteket
+   * Brainstorme ideer til et arrangement
+   * Få oppgitt kontaktinformasjon til en bestemt person
+   * Oppsummere et dokument du har limt inn i chatten
+
+   .. solution::
+
+      **Ekstra forsiktig (verifiser alltid):**
+
+      * Spesifikk paragraf i universitetsloven (kan hallusinere lovtekst)
+      * Åpningstider (kan oppfinne tider)
+      * Kontaktinformasjon (kan oppfinne eller gi utdatert info)
+
+      **Tryggere å bruke (men fortsatt vær kritisk):**
+
+      * Skrive utkast til e-post (du leser over og godkjenner)
+      * Formulere budskap (du kontrollerer innholdet)
+      * Brainstorme ideer (kreativ prosess, ikke faktabasert)
+      * Oppsummere dokument du ga (basert på tekst du ga, ikke hallusinert)
+
+.. note::
+
+   I neste episode skal vi se nærmere på hvordan du kan kvalitetssikre output fra generativ KI, og hva du må tenke på når du bruker disse verktøyene.

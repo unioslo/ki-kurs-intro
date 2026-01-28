@@ -12,6 +12,7 @@ Welcome to the AI Course documentation!
    episodes/episode3
    episodes/episode4
    episodes/episode5
+   episodes/episode6
 
 Indices and tables
 ==================
