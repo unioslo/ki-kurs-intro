@@ -1,159 +1,206 @@
-Episode 1: Introduction to AI
-==============================
+Episode 1: Hva er KI og generativ KI?
+=====================================
 
 .. contents::
    :local:
    :depth: 2
 
-Overview
+Oversikt
 --------
 
-This episode introduces the fundamental concepts of Artificial Intelligence.
+I denne episoden blir du introdusert til grunnleggende konsepter om kunstig intelligens (KI) og generativ KI.
 
-Topics covered
-~~~~~~~~~~~~~~
+Temaer som dekkes
+~~~~~~~~~~~~~~~~~
 
-* What is Artificial Intelligence?
-* History of AI
-* Types of AI
-* Applications of AI
+* Hva er kunstig intelligens (KI)?
+* Hva er generativ KI?
+* Hva er store språkmodeller (LLM)?
+* Forskjellen mellom tradisjonell KI og generativ KI
 
-Learning objectives
-~~~~~~~~~~~~~~~~~~
+Læringsmål
+~~~~~~~~~~
 
-By the end of this episode, you will be able to:
+Etter denne episoden vil du kunne:
 
-* Define AI and its key characteristics
-* Understand the historical development of AI
-* Distinguish between different types of AI
-* Identify real-world AI applications
+* Forklare hva KI og generativ KI er
+* Forstå grunnleggende om hvordan språkmodeller fungerer
+* Gjenkjenne eksempler på generativ KI i dagliglivet
+* Forstå forskjellen mellom ulike typer KI
 
-What is Artificial Intelligence?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Estimert tid:** 10 minutter
 
-Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans.
+Hva er kunstig intelligens (KI)?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: python
-
-   # Simple example of AI concept: pattern recognition
-   def recognize_pattern(data):
-       """A simple function that demonstrates pattern recognition"""
-       if data > 0:
-           return "Positive pattern"
-       else:
-           return "Negative pattern"
-
-   # Test the function
-   result = recognize_pattern(5)
-   print(result)  # Output: Positive pattern
+Kunstig intelligens (KI) er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. Dette kan være alt fra å gjenkjenne ansikter i bilder til å forstå og svare på spørsmål.
 
 .. tabs::
 
-   .. tab:: Question
+   .. tab:: Tradisjonell KI
 
-      What is the basic definition of Artificial Intelligence?
+      Tradisjonell KI følger regler og instruksjoner som mennesker har programmert inn.
 
-   .. tab:: Answer
+      **Eksempler:**
 
-      Artificial Intelligence is the simulation of human intelligence in machines that are programmed to think and learn like humans.
+      * Spam-filtre i e-post
+      * Anbefalingssystemer (f.eks. Netflix, Spotify)
+      * Søkemotorer
+      * GPS og ruteplanlegging
 
-Types of AI
-~~~~~~~~~~~
+   .. tab:: Moderne KI
 
-AI can be categorized in different ways:
+      Moderne KI lærer av store mengder data og kan tilpasse seg nye situasjoner.
 
-.. tabs::
+      **Eksempler:**
 
-   .. tab:: Narrow AI (Weak AI)
-
-      AI designed and trained for a particular task. Examples include virtual assistants, recommendation systems, and image recognition software.
-
-   .. tab:: General AI (Strong AI)
-
-      AI with the ability to understand, learn, and apply its intelligence to solve any problem, similar to a human being. This is largely theoretical at present.
-
-   .. tab:: Superintelligent AI
-
-      An AI that surpasses human intelligence and capabilities in virtually all domains. This is a hypothetical concept.
-
-.. exercise::
-
-   **Exercise: AI Classification**
-
-   Try to classify the following AI applications into Narrow AI, General AI, or Superintelligent AI:
-
-   1. ChatGPT
-   2. Self-driving cars
-   3. Human-level reasoning AI
-
-   .. solution::
-
-      1. ChatGPT - Narrow AI (designed for conversation and text generation)
-      2. Self-driving cars - Narrow AI (designed for driving tasks)
-      3. Human-level reasoning AI - General AI (theoretical concept)
-
-History of AI
-~~~~~~~~~~~~~
-
-The field of AI has evolved through several key periods:
-
-.. tabs::
-
-   .. tab:: 1950s-1960s: The Birth of AI
-
-      The term "Artificial Intelligence" was coined at the Dartmouth Conference in 1956. Early programs like Logic Theorist and General Problem Solver demonstrated basic reasoning capabilities.
-
-   .. tab:: 1970s-1980s: AI Winter
-
-      Funding decreased as AI failed to meet overly optimistic expectations. Research continued but at a reduced pace.
-
-   .. tab:: 1990s-2000s: Statistical AI
-
-      Focus shifted to statistical methods and machine learning. Programs like IBM's Deep Blue defeated world chess champion Garry Kasparov.
-
-   .. tab:: 2010s-Present: Deep Learning Revolution
-
-      Advances in neural networks, big data, and computing power led to breakthroughs in image recognition, natural language processing, and game playing.
-
-.. question::
-
-   What was the major milestone that marked the beginning of modern AI?
-
-   .. answer::
-
-      The Dartmouth Conference in 1956, where the term "Artificial Intelligence" was officially coined.
-
-Applications of AI
-~~~~~~~~~~~~~~~~~~
-
-AI is transforming numerous industries:
-
-.. tabs::
-
-   .. tab:: Healthcare
-
-      Medical diagnosis, drug discovery, personalized treatment plans, and administrative automation.
-
-   .. tab:: Finance
-
-      Algorithmic trading, fraud detection, risk assessment, and customer service chatbots.
-
-   .. tab:: Transportation
-
-      Self-driving vehicles, traffic optimization, route planning, and predictive maintenance.
-
-   .. tab:: Education
-
-      Personalized learning, automated grading, intelligent tutoring systems, and content creation.
-
-.. code-block:: bash
-
-   # Example of AI in action - simple data analysis
-   pip install pandas scikit-learn
-   
-   # This would typically be followed by Python code for data analysis
-   # and machine learning model training
+      * Bildegjenkjenning
+      * Talegjenkjenning (Siri, Alexa)
+      * Selvkjørende biler
+      * Generativ KI (ChatGPT, DALL-E, osv.)
 
 .. note::
 
-   This episode provides a foundation for understanding AI concepts. In the next episodes, we'll dive deeper into specific AI techniques and applications.
+   KI er ikke en ny teknologi - den har utviklet seg over flere tiår. Det som er nytt er hvor kraftig og tilgjengelig den har blitt de siste årene.
+
+Hva er generativ KI?
+~~~~~~~~~~~~~~~~~~~~
+
+Generativ KI er en type KI som kan **skape** nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon. Den kan generere tekst, bilder, lyd, video og mye mer.
+
+.. tabs::
+
+   .. tab:: Tekstgenerering
+
+      KI-verktøy som ChatGPT, Claude, Copilot og Gemini kan:
+
+      * Skrive tekster og artikler
+      * Svare på spørsmål
+      * Oppsummere dokumenter
+      * Oversette mellom språk
+      * Skrive e-poster og rapporter
+      * Hjelpe med idémyldring
+
+   .. tab:: Bildegenerering
+
+      KI-verktøy som DALL-E, Midjourney og Stable Diffusion kan:
+
+      * Lage bilder fra tekstbeskrivelser
+      * Redigere og forbedre eksisterende bilder
+      * Generere illustrasjoner og design
+      * Lage logo og grafisk materiale
+
+   .. tab:: Andre typer
+
+      Generativ KI kan også:
+
+      * Lage musikk og lydeffekter
+      * Generere video
+      * Skape 3D-modeller
+      * Produsere programmeringskode
+
+Hva er store språkmodeller (LLM)?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Store språkmodeller (Large Language Models - LLM) er en type generativ KI som er spesialisert på tekst. LLM-er som ChatGPT, Claude og Copilot har lært av enorme mengder tekst fra internett, bøker, artikler og andre kilder.
+
+.. tabs::
+
+   .. tab:: Hva kan LLM-er gjøre?
+
+      Store språkmodeller er gode til:
+
+      * **Skrive og redigere tekst** - artikler, rapporter, e-poster
+      * **Svare på spørsmål** - både faktaspørsmål og spørsmål som krever resonnering
+      * **Oppsummere** - lange dokumenter, møtereferater, artikler
+      * **Oversette** - mellom ulike språk
+      * **Strukturere informasjon** - lage tabeller, punktlister, organisere data
+      * **Idémyldring** - hjelpe med kreative prosesser
+      * **Forklare komplekse konsepter** - på en enkel måte
+
+   .. tab:: Hva LLM-er IKKE er
+
+      Det er viktig å forstå at LLM-er:
+
+      * **IKKE er søkemotorer** - de søker ikke på internett (med mindre spesifikt utvidet med den funksjonen)
+      * **IKKE har en database med fakta** - de genererer tekst basert på mønstre de har lært
+      * **IKKE vet hva som er sant eller usant** - de kan produsere feil informasjon med stor overbevisning
+      * **IKKE har bevissthet eller forståelse** - de er statistiske modeller, ikke tenkende vesener
+      * **IKKE kan huske tidligere samtaler** (med mindre det er bygd inn som en funksjon)
+
+.. admonition:: Spørsmål
+
+   **Hva er hovedforskjellen mellom tradisjonell KI og generativ KI?**
+
+.. admonition:: Svar
+   :class: tip
+
+   Tradisjonell KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre), mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.
+
+Hvorfor er generativ KI så populært nå?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Generativ KI har eksistert i flere år, men ble svært populært etter lanseringen av ChatGPT i november 2022. Det er flere grunner til dette:
+
+1. **Tilgjengelighet** - Enkelt å bruke via nettleseren eller apper, ingen programmeringskunnskap nødvendig
+2. **Naturlig språk** - Man kan kommunisere med KI-en på vanlig norsk eller engelsk
+3. **Bred anvendelse** - Kan brukes til mange ulike oppgaver i arbeidslivet
+4. **Kvalitet** - Resultatene har blitt dramatisk bedre de siste årene
+5. **Gratis eller rimelige versjoner** - Mange verktøy er tilgjengelige uten kostnad
+
+Eksempler på bruk i administrativt arbeid
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Skriving og kommunikasjon
+
+      * Skrive utkast til e-poster og brev
+      * Forbedre og korrekturlese tekster
+      * Tilpasse tone og formalitetsnivå
+      * Oversette dokumenter
+      * Lage møtereferater fra notater
+
+   .. tab:: Databehandling
+
+      * Oppsummere lange dokumenter
+      * Trekke ut hovedpunkter fra møter
+      * Strukturere uorganisert informasjon
+      * Lage oversikter og sammendrag
+      * Konvertere mellom formater (f.eks. liste til tabell)
+
+   .. tab:: Planlegging og organisering
+
+      * Lage agendaer for møter
+      * Planlegge arrangementer
+      * Idémyldring
+      * Lage sjekklister og prosedyrer
+      * Foreslå løsninger på problemer
+
+   .. tab:: Læring og utvikling
+
+      * Forklare komplekse konsepter
+      * Lage opplæringsmateriell
+      * Svare på spørsmål om prosedyrer
+      * Oversette faguttrykk
+      * Gi eksempler på ulike situasjoner
+
+.. exercise::
+
+   **Refleksjonsoppgave**
+
+   Tenk på dine daglige arbeidsoppgaver. Hvilke av følgende kunne du tenke deg å bruke generativ KI til?
+
+   * Skrive eller forbedre e-poster
+   * Oppsummere lange dokumenter
+   * Oversette tekster
+   * Få hjelp til å formulere vanskelige budskap
+   * Lage utkast til presentasjoner
+   * Strukturere informasjon
+   * Idémyldring
+
+   Det er ingen fasit her - målet er å begynne å tenke på hvordan KI kan være nyttig i din arbeidshverdag.
+
+.. note::
+
+   I neste episode skal vi se nærmere på hvordan store språkmodeller faktisk fungerer, og hvorfor det er viktig å forstå dette når du bruker dem.
