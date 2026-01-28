@@ -1,0 +1,38 @@
+/* Custom CSS for sphinx-lesson solution buttons */
+
+/* Fix solution button text being cut off */
+.solution .admonition-title {
+    padding: 12px 15px;
+    line-height: 1.4;
+    min-height: auto;
+}
+
+/* Ensure solution button has proper vertical spacing */
+.solution .admonition-title::before {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Adjust solution button container */
+.solution {
+    margin-bottom: 1em;
+}
+
+/* Fix toggle button styling for solutions */
+.togglebutton .admonition-title {
+    padding: 12px 15px;
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.togglebutton .admonition-title:hover {
+    background-color: #f5f5f5;
+}
+
+/* Ensure proper alignment of toggle button content */
+.togglebutton .admonition-title span {
+    vertical-align: middle;
+    display: inline-block;
+}
