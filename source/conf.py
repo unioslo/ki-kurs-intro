@@ -12,9 +12,9 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'AI Course'
-copyright = '2026, Course Team'
-author = 'Course Team'
+project = 'Grunnkurs KI'
+copyright = 'IT-avdelingen Universitetet i Oslo'
+author = 'KI-inititaivet, Universitetet i Oslo'
 
 # -- General configuration ---------------------------------------------------
 
