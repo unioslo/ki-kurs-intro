@@ -1,11 +1,11 @@
-AI Course
-=========
+Grunnkurs i generativ KI
+==========================
 
-Welcome to the AI Course documentation!
+Velkommen til grunnkurs i generativ KI!e
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Innhold:
 
    episodes/episode1
    episodes/episode2
@@ -14,9 +14,3 @@ Welcome to the AI Course documentation!
    episodes/episode5
    episodes/episode6
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
