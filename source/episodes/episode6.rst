@@ -36,9 +36,9 @@ Oppsummering av kurset
 
 La oss oppsummere det viktigste du har lært:
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Hva er generativ KI?
+   .. canvas-tab:: Hva er generativ KI?
 
       **Viktige punkter:**
 
@@ -51,7 +51,7 @@ La oss oppsummere det viktigste du har lært:
 
       Generativ KI er et verktøy, ikke en erstatning for menneskelig tenkning og ekspertise.
 
-   .. tab:: Hvordan fungerer det?
+   .. canvas-tab:: Hvordan fungerer det?
 
       **Viktige punkter:**
 
@@ -64,7 +64,7 @@ La oss oppsummere det viktigste du har lært:
 
       Forstå begrensningene - da kan du bruke KI smartere.
 
-   .. tab:: Når kan du stole på det?
+   .. canvas-tab:: Når kan du stole på det?
 
       **Viktige punkter:**
 
@@ -78,7 +78,7 @@ La oss oppsummere det viktigste du har lært:
 
       Du er ansvarlig for det du publiserer, ikke KI-en.
 
-   .. tab:: UiOs tjenester
+   .. canvas-tab:: UiOs tjenester
 
       **Viktige punkter:**
 
@@ -91,7 +91,7 @@ La oss oppsummere det viktigste du har lært:
 
       Bruk godkjente verktøy når du håndterer data relatert til UiO.
 
-   .. tab:: God prompting
+   .. canvas-tab:: God prompting
 
       **Viktige punkter:**
 
@@ -109,9 +109,9 @@ Etiske betraktninger og AI-kompetanse
 
 Når du bruker KI, er det viktig å tenke på de etiske aspektene.
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Ansvar og åpenhet
+   .. canvas-tab:: Ansvar og åpenhet
 
       **Etiske prinsipper:**
 
@@ -124,7 +124,7 @@ Når du bruker KI, er det viktig å tenke på de etiske aspektene.
 
       Hvis du bruker KI til å skrive en rapport, kan du nevne: "Dette dokumentet er utarbeidet med assistanse fra KI-verktøy, men alle fakta er verifisert."
 
-   .. tab:: Miljøpåvirkning
+   .. canvas-tab:: Miljøpåvirkning
 
       **Husk:**
 
@@ -137,7 +137,7 @@ Når du bruker KI, er det viktig å tenke på de etiske aspektene.
       * Bruk KI til oppgaver der det faktisk sparer tid eller gir bedre resultat
       * Ikke kjør samme prompt 50 ganger for moro skyld
 
-   .. tab:: Bias og diskriminering
+   .. canvas-tab:: Bias og diskriminering
 
       **Vær oppmerksom på:**
 
@@ -149,7 +149,7 @@ Når du bruker KI, er det viktig å tenke på de etiske aspektene.
 
       Hvis KI-en konsekvent assosierer visse roller med ett kjønn, vær obs og korriger det.
 
-   .. tab:: Menneskelig kompetanse
+   .. canvas-tab:: Menneskelig kompetanse
 
       **Balanse:**
 
@@ -165,9 +165,9 @@ Når du bruker KI, er det viktig å tenke på de etiske aspektene.
 Vanlige spørsmål og misforståelser
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: "KI kommer til å ta jobben min"
+   .. canvas-tab:: "KI kommer til å ta jobben min"
 
       **Fakta:**
 
@@ -183,7 +183,7 @@ Vanlige spørsmål og misforståelser
 
       Lær å bruke KI - det er en ferdighet som blir stadig viktigere.
 
-   .. tab:: "KI vet alt"
+   .. canvas-tab:: "KI vet alt"
 
       **Misforståelse:**
 
@@ -199,7 +199,7 @@ Vanlige spørsmål og misforståelser
 
       Behandle KI-svar som forslag fra en ukjent kilde - verifiser alltid.
 
-   .. tab:: "Jeg må være teknisk for å bruke KI"
+   .. canvas-tab:: "Jeg må være teknisk for å bruke KI"
 
       **Misforståelse:**
 
@@ -215,7 +215,7 @@ Vanlige spørsmål og misforståelser
 
       Alle kan lære å bruke KI - det handler om å stille gode spørsmål på vanlig språk.
 
-   .. tab:: "KI gjør meg lat/mindre kompetent"
+   .. canvas-tab:: "KI gjør meg lat/mindre kompetent"
 
       **Misforståelse:**
 
@@ -235,9 +235,9 @@ Vanlige spørsmål og misforståelser
 Ressurser for videre læring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: UiO-ressurser
+   .. canvas-tab:: UiO-ressurser
 
       **Offisielle ressurser:**
 
@@ -250,7 +250,7 @@ Ressurser for videre læring
 
       Meld deg på nyhetsbrev eller følg med på interne kanaler for oppdateringer.
 
-   .. tab:: Eksterne ressurser (gratis)
+   .. canvas-tab:: Eksterne ressurser (gratis)
 
       **Nettkurs:**
 
@@ -267,7 +267,7 @@ Ressurser for videre læring
 
       * Mange gode tutorials på norsk og engelsk om praktisk KI-bruk
 
-   .. tab:: Prøv selv
+   .. canvas-tab:: Prøv selv
 
       **Beste måten å lære:**
 
@@ -284,7 +284,7 @@ Ressurser for videre læring
       * Brainstorme ideer til et arrangement
       * Lage en sjekkliste for en kommende oppgave
 
-   .. tab:: Fagfellesskap
+   .. canvas-tab:: Fagfellesskap
 
       **Delta i fellesskap:**
 
@@ -374,7 +374,7 @@ Avslutning
 
    Lykke til på din KI-reise!
 
-.. exercise::
+.. canvas-exercise::
 
    **Refleksjonsoppgave: Din KI-plan**
 

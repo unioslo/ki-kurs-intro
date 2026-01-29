@@ -36,9 +36,9 @@ Hva er en prompt?
 
 En **prompt** er instruksjonen eller spørsmålet du gir til en KI-modell. Det er din måte å kommunisere med KI-en på.
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Enkel prompt
+   .. canvas-tab:: Enkel prompt
 
       **Eksempel:**
 
@@ -50,7 +50,7 @@ En **prompt** er instruksjonen eller spørsmålet du gir til en KI-modell. Det e
 
       Du får et generelt svar om klimaendringer.
 
-   .. tab:: Detaljert prompt
+   .. canvas-tab:: Detaljert prompt
 
       **Eksempel:**
 
@@ -63,7 +63,7 @@ En **prompt** er instruksjonen eller spørsmålet du gir til en KI-modell. Det e
 
       Du får et svar tilpasset målgruppen og lengden du ba om.
 
-   .. tab:: Kontekst-rik prompt
+   .. canvas-tab:: Kontekst-rik prompt
 
       **Eksempel:**
 
@@ -85,9 +85,9 @@ En **prompt** er instruksjonen eller spørsmålet du gir til en KI-modell. Det e
 Prinsipper for god prompting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: 1. Vær spesifikk
+   .. canvas-tab:: 1. Vær spesifikk
 
       **Dårlig prompt:**
 
@@ -107,7 +107,7 @@ Prinsipper for god prompting
 
       Den spesifiserer hva e-posten skal handle om, hvem den er til, og hvilken tone den skal ha.
 
-   .. tab:: 2. Gi kontekst
+   .. canvas-tab:: 2. Gi kontekst
 
       **Dårlig prompt:**
 
@@ -132,7 +132,7 @@ Prinsipper for god prompting
 
       Du gir både innholdet (notatene) og strukturen du ønsker.
 
-   .. tab:: 3. Spesifiser format
+   .. canvas-tab:: 3. Spesifiser format
 
       **Dårlig prompt:**
 
@@ -152,7 +152,7 @@ Prinsipper for god prompting
 
       Du får et strukturert svar som er lett å bruke videre.
 
-   .. tab:: 4. Definer rollen
+   .. canvas-tab:: 4. Definer rollen
 
       **Dårlig prompt:**
 
@@ -176,9 +176,9 @@ Prinsipper for god prompting
 Nyttige prompt-teknikker
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Chain of thought (Tankekjede)
+   .. canvas-tab:: Chain of thought (Tankekjede)
 
       **Teknikk:**
 
@@ -197,7 +197,7 @@ Nyttige prompt-teknikker
       * Enklere å følge resonnementet
       * Bedre for komplekse oppgaver
 
-   .. tab:: Few-shot prompting (Gi eksempler)
+   .. canvas-tab:: Few-shot prompting (Gi eksempler)
 
       **Teknikk:**
 
@@ -222,7 +222,7 @@ Nyttige prompt-teknikker
       * Får svar i ønsket stil
       * Lettere enn å forklare stilen med ord
 
-   .. tab:: Rollespill
+   .. canvas-tab:: Rollespill
 
       **Teknikk:**
 
@@ -241,7 +241,7 @@ Nyttige prompt-teknikker
       * Får perspektiv fra en bestemt rolle
       * Mer fokuserte svar
 
-   .. tab:: Strukturert output
+   .. canvas-tab:: Strukturert output
 
       **Teknikk:**
 
@@ -270,7 +270,7 @@ Nyttige prompt-teknikker
       * Får svar klart til bruk
       * Konsistent format
 
-   .. tab:: Iterativ prompting
+   .. canvas-tab:: Iterativ prompting
 
       **Teknikk:**
 
@@ -297,9 +297,9 @@ Nyttige prompt-teknikker
 Praktiske eksempler for administrativt arbeid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: E-post og kommunikasjon
+   .. canvas-tab:: E-post og kommunikasjon
 
       **Eksempel 1: Omformulere til vennligere tone**
 
@@ -323,7 +323,7 @@ Praktiske eksempler for administrativt arbeid
          Omskriv den slik at ikke-eksperter forstår den,
          men behold den viktige informasjonen.
 
-   .. tab:: Oppsummering
+   .. canvas-tab:: Oppsummering
 
       **Eksempel 1: Oppsummere møtenotater**
 
@@ -349,7 +349,7 @@ Praktiske eksempler for administrativt arbeid
 
          [dokument her]
 
-   .. tab:: Planlegging
+   .. canvas-tab:: Planlegging
 
       **Eksempel 1: Lage agenda**
 
@@ -374,7 +374,7 @@ Praktiske eksempler for administrativt arbeid
          på et eksternt sted. Inkluder alt fra booking
          til oppfølging etter arrangementet.
 
-   .. tab:: Språk og oversettelse
+   .. canvas-tab:: Språk og oversettelse
 
       **Eksempel 1: Oversette og tilpasse**
 
@@ -402,9 +402,9 @@ Praktiske eksempler for administrativt arbeid
 Vanlige feil og hvordan unngå dem
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Feil 1: For vage prompts
+   .. canvas-tab:: Feil 1: For vage prompts
 
       **Problem:**
 
@@ -422,7 +422,7 @@ Vanlige feil og hvordan unngå dem
          ukentlige teammøter mer effektive. Vi er en gruppe
          på 8 personer som møtes i 1 time."
 
-   .. tab:: Feil 2: For mange krav på én gang
+   .. canvas-tab:: Feil 2: For mange krav på én gang
 
       **Problem:**
 
@@ -438,7 +438,7 @@ Vanlige feil og hvordan unngå dem
 
       Del opp i separate prompts - én oppgave om gangen.
 
-   .. tab:: Feil 3: Ikke gi nok kontekst
+   .. canvas-tab:: Feil 3: Ikke gi nok kontekst
 
       **Problem:**
 
@@ -459,7 +459,7 @@ Vanlige feil og hvordan unngå dem
 
          [ditt utkast]"
 
-   .. tab:: Feil 4: Forvente perfeksjon med én gang
+   .. canvas-tab:: Feil 4: Forvente perfeksjon med én gang
 
       **Problem:**
 
@@ -508,7 +508,7 @@ Tips for å bli bedre til prompting
       - "Dette var for langt, gjør det kortere" eller
       - "Tonen var for formell, jeg trenger mer avslappet språk"
 
-.. exercise::
+.. canvas-exercise::
 
    **Praktisk øvelse: Forbedre prompts**
 
@@ -519,7 +519,7 @@ Tips for å bli bedre til prompting
    3. "Hva med den tingen?"
    4. "Lag en liste"
 
-   .. solution::
+   .. canvas-solution::
 
       **Mulige forbedringer:**
 
@@ -540,9 +540,9 @@ Eksempel: Fra dårlig til god prompt
 
 La oss se et komplett eksempel på hvordan en prompt kan forbedres:
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Versjon 1 - Dårlig
+   .. canvas-tab:: Versjon 1 - Dårlig
 
       .. code-block:: text
 
@@ -550,7 +550,7 @@ La oss se et komplett eksempel på hvordan en prompt kan forbedres:
 
       **Problem:** Altfor vagt. Hva slags tekst? Om hva med møter?
 
-   .. tab:: Versjon 2 - Bedre
+   .. canvas-tab:: Versjon 2 - Bedre
 
       .. code-block:: text
 
@@ -558,7 +558,7 @@ La oss se et komplett eksempel på hvordan en prompt kan forbedres:
 
       **Problem:** Fortsatt vagt. Tips til hvem? Hva slags møter? Hvor mange tips?
 
-   .. tab:: Versjon 3 - Mye bedre
+   .. canvas-tab:: Versjon 3 - Mye bedre
 
       .. code-block:: text
 
@@ -566,7 +566,7 @@ La oss se et komplett eksempel på hvordan en prompt kan forbedres:
 
       **Problem:** Bedre, men mangler kontekst. Hvilke typer møter? Hvem er målgruppen?
 
-   .. tab:: Versjon 4 - God!
+   .. canvas-tab:: Versjon 4 - God!
 
       .. code-block:: text
 
@@ -597,7 +597,7 @@ Oppsummering
    6. **Eksperimenter** - Test ulike tilnærminger
    7. **Vær tålmodig** - God prompting er en ferdighet som utvikles over tid
 
-.. exercise::
+.. canvas-exercise::
 
    **Oppgave: Skriv din egen prompt**
 

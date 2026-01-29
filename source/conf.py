@@ -9,6 +9,7 @@ import sys
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- Project information -----------------------------------------------------
 
@@ -27,7 +28,8 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
     'sphinx.ext.githubpages',
-    'sphinx_tabs.tabs',
+    'canvas_tabs',  # Canvas-compatible tabs (no JavaScript)
+    'canvas_exercise',  # Canvas-compatible collapsible exercises
     'sphinx_lesson',
     'sphinx_rtd_theme',
 ]
@@ -57,6 +59,22 @@ html_static_path = ['_static']
 html_css_files = [
     'custom.css',
 ]
+
+# Hide navigation for Canvas integration
+html_sidebars = {
+    '**': []  # No sidebars on any page
+}
+
+# RTD theme options to hide navigation
+html_theme_options = {
+    'navigation_depth': -1,  # Hide navigation tree
+    'collapse_navigation': True,
+    'sticky_navigation': False,
+    'includehidden': False,
+    'titles_only': True,
+    'prev_next_buttons_location': None,  # Remove prev/next buttons
+    'display_version': False,
+}
 
 # -- Extension configuration -------------------------------------------------
 

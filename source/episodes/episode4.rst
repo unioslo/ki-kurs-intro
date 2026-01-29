@@ -47,9 +47,9 @@ Universitetet i Oslo tilbyr tilgang til ulike KI-verktøy som ansatte kan bruke.
 Hvorfor bruke UiOs versjoner?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Personvern og datasikkerhet
+   .. canvas-tab:: Personvern og datasikkerhet
 
       **Institusjonelle avtaler gir bedre beskyttelse:**
 
@@ -66,7 +66,7 @@ Hvorfor bruke UiOs versjoner?
       * Ofte amerikanske servere
       * Mindre kontroll
 
-   .. tab:: Tilleggsfunksjonalitet
+   .. canvas-tab:: Tilleggsfunksjonalitet
 
       **Institusjonelle versjoner har ofte flere funksjoner:**
 
@@ -77,7 +77,7 @@ Hvorfor bruke UiOs versjoner?
       * **Bedre ytelse** - Raskere responstider
       * **Færre begrensninger** - Flere spørsmål per dag/time
 
-   .. tab:: Støtte og opplæring
+   .. canvas-tab:: Støtte og opplæring
 
       **Ved bruk av UiOs versjoner:**
 
@@ -96,9 +96,9 @@ Tilgjengelige tjenester
 
 Typiske tjenester som kan være tilgjengelige (eksempler):
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Tekstgenerering (LLM)
+   .. canvas-tab:: Tekstgenerering (LLM)
 
       **Microsoft Copilot (Business/Enterprise):**
 
@@ -117,7 +117,7 @@ Typiske tjenester som kan være tilgjengelige (eksempler):
 
       * Sjekk UiOs nettsider for fullstendig liste
 
-   .. tab:: Spesialiserte KI-verktøy
+   .. canvas-tab:: Spesialiserte KI-verktøy
 
       **For forskning:**
 
@@ -139,7 +139,7 @@ Typiske tjenester som kan være tilgjengelige (eksempler):
 
       Sjekk med IT-avdelingen eller din enhet hva som er tilgjengelig for deg.
 
-   .. tab:: Bildegenereering og andre
+   .. canvas-tab:: Bildegenereering og andre
 
       **Andre KI-verktøy:**
 
@@ -153,9 +153,9 @@ Typiske tjenester som kan være tilgjengelige (eksempler):
 Hvordan få tilgang
 ~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Steg 1: Sjekk hva som er tilgjengelig
+   .. canvas-tab:: Steg 1: Sjekk hva som er tilgjengelig
 
       **Gå til UiOs IT-tjenester:**
 
@@ -169,7 +169,7 @@ Hvordan få tilgang
       * Spør kolleger hva de bruker
       * Sjekk interne informasjonskanaler
 
-   .. tab:: Steg 2: Søk om tilgang
+   .. canvas-tab:: Steg 2: Søk om tilgang
 
       **Vanlige framgangsmåter:**
 
@@ -184,7 +184,7 @@ Hvordan få tilgang
       * Hjelp.uio.no
       * Kontakt IT-avdelingen
 
-   .. tab:: Steg 3: Logg inn og kom i gang
+   .. canvas-tab:: Steg 3: Logg inn og kom i gang
 
       **Første gangs bruk:**
 
@@ -199,7 +199,7 @@ Hvordan få tilgang
       * Les dokumentasjon og brukerveiledninger
       * Start smått - eksperimenter med ukritiske oppgaver først
 
-   .. tab:: Steg 4: Få hjelp
+   .. canvas-tab:: Steg 4: Få hjelp
 
       **Hvis du står fast:**
 
@@ -217,9 +217,9 @@ Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer
 
    **Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.**
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Generelle retningslinjer
+   .. canvas-tab:: Generelle retningslinjer
 
       **Kjerneprinsippers:**
 
@@ -233,7 +233,7 @@ Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer
 
       Retningslinjer kan endre seg. Sjekk jevnlig for oppdateringer.
 
-   .. tab:: Hva er tillatt?
+   .. canvas-tab:: Hva er tillatt?
 
       **Typisk tillatt bruk:**
 
@@ -252,7 +252,7 @@ Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer
       * Formål (forskning, undervisning, administrasjon)
       * Spesifikke retningslinjer for din enhet
 
-   .. tab:: Hva er IKKE tillatt?
+   .. canvas-tab:: Hva er IKKE tillatt?
 
       **Typisk ikke tillatt:**
 
@@ -267,7 +267,7 @@ Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer
 
       Spør leder, personvernombud, eller IT-sikkerhet før du gjør noe du er usikker på.
 
-   .. tab:: Spesielle hensyn
+   .. canvas-tab:: Spesielle hensyn
 
       **For undervisning:**
 
@@ -290,9 +290,9 @@ Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer
 Hvor finner du hjelp?
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Dokumentasjon og veiledninger
+   .. canvas-tab:: Dokumentasjon og veiledninger
 
       **UiOs ressurser:**
 
@@ -307,7 +307,7 @@ Hvor finner du hjelp?
       * Nettkurs og tutorials
       * Faglige forum og communities
 
-   .. tab:: Kurs og opplæring
+   .. canvas-tab:: Kurs og opplæring
 
       **UiO tilbyr:**
 
@@ -322,7 +322,7 @@ Hvor finner du hjelp?
       * Interne opplæringssider
       * Invitasjoner fra HR eller din enhet
 
-   .. tab:: Support og hjelp
+   .. canvas-tab:: Support og hjelp
 
       **Teknisk support:**
 
@@ -373,7 +373,7 @@ Praktiske tips for å komme i gang
       - Les nyhetsbrev om KI ved UiO
       - Delta i faglige oppdateringer
 
-.. exercise::
+.. canvas-exercise::
 
    **Oppgave: Utforsk UiOs KI-tjenester**
 

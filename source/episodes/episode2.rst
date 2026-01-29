@@ -42,9 +42,9 @@ Dette er kanskje den viktigste forståelsen du kan ha om språkmodeller:
 
 La oss sammenligne med noe du kjenner:
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Kunnskapsbase (f.eks. Wikipedia)
+   .. canvas-tab:: Kunnskapsbase (f.eks. Wikipedia)
 
       **Slik fungerer det:**
 
@@ -58,7 +58,7 @@ La oss sammenligne med noe du kjenner:
 
       Søker du "befolkning i Norge 2024", får du det eksakte tallet som er lagret.
 
-   .. tab:: Språkmodell (f.eks. ChatGPT)
+   .. canvas-tab:: Språkmodell (f.eks. ChatGPT)
 
       **Slik fungerer det:**
 
@@ -77,9 +77,9 @@ Hvordan genererer LLM-er tekst?
 
 For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Trening
+   .. canvas-tab:: Trening
 
       **Hva skjer under treningen:**
 
@@ -92,7 +92,7 @@ For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hv
 
       Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
 
-   .. tab:: Generering
+   .. canvas-tab:: Generering
 
       **Hva skjer når du stiller et spørsmål:**
 
@@ -106,7 +106,7 @@ For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hv
 
       Modellen "tenker" ikke på om informasjonen er korrekt - den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
-   .. tab:: Temperatur og tilfeldighet
+   .. canvas-tab:: Temperatur og tilfeldighet
 
       **Hva er "temperatur"?**
 
@@ -149,9 +149,9 @@ Hva er "hallusinering"?
 
 Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kaller vi det "hallusinering" (eller "confabulation" på fagspråket).
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Eksempler på hallusinering
+   .. canvas-tab:: Eksempler på hallusinering
 
       **Typiske situasjoner:**
 
@@ -165,7 +165,7 @@ Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kall
 
       "Studien av Hansen et al. (2023) publisert i Nature viste at..." - der både studien og forfatterne kan være oppfunnet.
 
-   .. tab:: Hvorfor skjer det?
+   .. canvas-tab:: Hvorfor skjer det?
 
       **Årsaker til hallusinering:**
 
@@ -179,7 +179,7 @@ Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kall
 
       Hallusinering er ikke en "bug" som kan fikses fullstendig - det er en iboende egenskap ved hvordan språkmodeller fungerer.
 
-   .. tab:: Hallusinering med selvtillit
+   .. canvas-tab:: Hallusinering med selvtillit
 
       **Det mest problematiske:**
 
@@ -195,21 +195,20 @@ Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kall
 
       Du kan IKKE stole på om et svar er korrekt basert på hvor selvsikkert det fremstår.
 
-.. admonition:: Spørsmål
+.. canvas-question::
 
    **Hvorfor kan en språkmodell gi feil informasjon selv om svaret høres veldig troverdig ut?**
 
-.. admonition:: Svar
-   :class: tip
+   .. canvas-answer::
 
-   Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk. Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant. Derfor kan den produsere feil informasjon med samme selvtillit som riktig informasjon.
+      Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk. Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant. Derfor kan den produsere feil informasjon med samme selvtillit som riktig informasjon.
 
-Begrensninger du bør kjenne til
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Begrensninger du bør kjenne til
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Utdatert informasjon
+   .. canvas-tab:: Utdatert informasjon
 
       **Problemet:**
 
@@ -225,7 +224,7 @@ Begrensninger du bør kjenne til
 
       Noen verktøy (som Bing Chat/Copilot) kan søke på internett for oppdatert informasjon - men da bruker de en søkemotor i tillegg til språkmodellen.
 
-   .. tab:: Manglende kontekst
+   .. canvas-tab:: Manglende kontekst
 
       **Problemet:**
 
@@ -241,7 +240,7 @@ Begrensninger du bør kjenne til
 
       Gi kontekst i prompten: "Vi bruker systemet X ved UiO. Hvordan registrerer jeg fravær?"
 
-   .. tab:: Språk og kulturforståelse
+   .. canvas-tab:: Språk og kulturforståelse
 
       **Problemet:**
 
@@ -271,7 +270,7 @@ Hva betyr dette for deg som bruker?
    4. **Vær kritisk** - spesielt når svaret virker veldig detaljert og spesifikt
    5. **Gi god kontekst** - hjelp modellen ved å gi relevant informasjon i prompten
 
-.. exercise::
+.. canvas-exercise::
 
    **Refleksjonsoppgave**
 
@@ -285,7 +284,7 @@ Hva betyr dette for deg som bruker?
    * Få oppgitt kontaktinformasjon til en bestemt person
    * Oppsummere et dokument du har limt inn i chatten
 
-   .. solution::
+   .. canvas-solution::
 
       **Ekstra forsiktig (verifiser alltid):**
 

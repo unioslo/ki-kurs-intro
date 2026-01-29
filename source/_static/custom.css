@@ -36,3 +36,378 @@
     vertical-align: middle;
     display: inline-block;
 }
+
+/* ========================================
+   Canvas Integration: Hide All Navigation
+   ======================================== */
+
+/* Hide left sidebar/navigation */
+.wy-nav-side {
+    display: none !important;
+}
+
+/* Hide top navigation bar */
+.wy-nav-top {
+    display: none !important;
+}
+
+/* Hide breadcrumbs */
+.wy-breadcrumbs {
+    display: none !important;
+}
+
+/* Hide footer with prev/next links */
+.rst-footer-buttons {
+    display: none !important;
+}
+
+/* Hide "Edit on GitHub" and similar links */
+.wy-breadcrumbs-aside {
+    display: none !important;
+}
+
+/* Expand content to full width when sidebar is hidden */
+.wy-nav-content {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+}
+
+/* Center content with reasonable max-width */
+.wy-nav-content-wrap {
+    margin-left: 0 !important;
+    background: #fcfcfc;
+}
+
+.wy-nav-content {
+    padding: 1.618em 3em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Hide search box if present */
+.wy-side-nav-search {
+    display: none !important;
+}
+
+/* Hide version selector */
+.rst-versions {
+    display: none !important;
+}
+
+/* Remove any related/navigation links at bottom */
+.relations {
+    display: none !important;
+}
+
+/* ========================================
+   Collapsible Exercise/Solution Blocks
+   ======================================== */
+
+/* Canvas exercise blocks - light green */
+.canvas-exercise {
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 0;
+    margin: 1.5em 0;
+    background-color: #e8f5e9;
+    position: relative;
+}
+
+/* Exercise icon */
+.exercise-icon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* Exercise content */
+.exercise-content {
+    padding: 15px 15px 15px 50px;
+}
+
+/* Canvas question blocks - light green */
+.canvas-question {
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 0;
+    margin: 1.5em 0;
+    background-color: #e8f5e9;
+    position: relative;
+}
+
+/* Question icon */
+.question-icon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* Question content */
+.question-content {
+    padding: 15px 15px 15px 50px;
+}
+
+/* Collapsible solution - nested in exercise, darker green */
+.canvas-exercise details.canvas-solution {
+    border: none;
+    border-top: 2px solid #4caf50;
+    border-radius: 0 0 6px 6px;
+    margin: 10px 0 0 0;
+    background-color: #c8e6c9;
+}
+
+.canvas-exercise details.canvas-solution summary {
+    background-color: #81c784;
+    padding: 12px 15px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    color: #1b5e20;
+    border-radius: 0;
+    list-style: none;
+}
+
+/* Hide default disclosure triangle */
+.canvas-exercise details.canvas-solution summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Add custom arrow */
+.canvas-exercise details.canvas-solution summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-right: 5px;
+}
+
+/* Rotate arrow when open */
+.canvas-exercise details.canvas-solution[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Hover effect */
+.canvas-exercise details.canvas-solution summary:hover {
+    background-color: #66bb6a;
+}
+
+/* Solution content styling */
+.canvas-exercise .solution-content {
+    padding: 15px 15px 15px 50px;
+    background-color: #c8e6c9;
+}
+
+/* Collapsible answer - nested in question, darker green */
+.canvas-question details.canvas-answer {
+    border: none;
+    border-top: 2px solid #4caf50;
+    border-radius: 0 0 6px 6px;
+    margin: 10px 0 0 0;
+    background-color: #c8e6c9;
+}
+
+.canvas-question details.canvas-answer summary {
+    background-color: #81c784;
+    padding: 12px 15px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    color: #1b5e20;
+    border-radius: 0;
+    list-style: none;
+}
+
+/* Hide default disclosure triangle */
+.canvas-question details.canvas-answer summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Add custom arrow */
+.canvas-question details.canvas-answer summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-right: 5px;
+}
+
+/* Rotate arrow when open */
+.canvas-question details.canvas-answer[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Hover effect */
+.canvas-question details.canvas-answer summary:hover {
+    background-color: #66bb6a;
+}
+
+/* Answer content styling */
+.canvas-question .answer-content {
+    padding: 15px 15px 15px 50px;
+    background-color: #c8e6c9;
+}
+
+/* Legacy sphinx-lesson exercise blocks */
+.exercise, .admonition.exercise {
+    border: 1px solid #0066cc;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 1.5em 0;
+    background-color: #f0f7ff;
+}
+
+/* Legacy sphinx-lesson solution blocks - also make collapsible */
+.solution.dropdown {
+    border: 1px solid #666;
+    border-radius: 4px;
+    margin: 1em 0;
+    background-color: #f9f9f9;
+}
+
+.solution.dropdown .admonition-title {
+    background-color: #e0e0e0;
+    padding: 12px 15px;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ========================================
+   Canvas Tabs Styling
+   ======================================== */
+
+/* Canvas-compatible tabs styling */
+.enhanceable_content.tabs {
+    border: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+.enhanceable_content.tabs > ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.enhanceable_content.tabs > ul li {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.enhanceable_content.tabs > ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    background-color: #f5f5f5;
+    transition: background-color 0.2s;
+}
+
+.enhanceable_content.tabs > ul li a:hover {
+    background-color: #e0e0e0;
+    color: #004499;
+}
+
+.enhanceable_content.tabs > ul li:first-child a {
+    border-left: none;
+}
+
+/* Tab content sections */
+.enhanceable_content.tabs > div {
+    padding: 15px;
+    display: none;
+    background-color: #ffffff;
+    border-top: 3px solid #0066cc;
+}
+
+/* Show first tab by default */
+.enhanceable_content.tabs > div:first-of-type {
+    display: block;
+}
+
+/* When a tab is targeted via URL fragment, show it */
+.enhanceable_content.tabs > div:target {
+    display: block;
+}
+
+/* Hide other tabs when one is targeted */
+.enhanceable_content.tabs:has(> div:target) > div:not(:target) {
+    display: none;
+}
+
+/* Highlight the first tab link by default (when no fragment in URL) */
+.enhanceable_content.tabs > ul li:first-child a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* When any content is targeted, remove highlight from first tab */
+.enhanceable_content.tabs:has(> div:target) > ul li:first-child a {
+    background-color: #f5f5f5;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Highlight tab when its content is targeted - using nth-child matching */
+/* Tab 1 */
+.enhanceable_content.tabs:has(> div:nth-of-type(1):target) > ul li:nth-child(1) a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Tab 2 */
+.enhanceable_content.tabs:has(> div:nth-of-type(2):target) > ul li:nth-child(2) a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Tab 3 */
+.enhanceable_content.tabs:has(> div:nth-of-type(3):target) > ul li:nth-child(3) a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Tab 4 */
+.enhanceable_content.tabs:has(> div:nth-of-type(4):target) > ul li:nth-child(4) a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Fallback for browsers without :has() support */
+@supports not (selector(:has(*))) {
+    .enhanceable_content.tabs > div {
+        display: block;
+        border-top: 1px solid #ccc;
+        margin-top: 0;
+    }
+
+    .enhanceable_content.tabs > div:not(:first-of-type) {
+        border-top: 1px solid #ccc;
+    }
+}

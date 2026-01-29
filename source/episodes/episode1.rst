@@ -35,9 +35,9 @@ Hva er kunstig intelligens (KI)?
 
 Kunstig intelligens (KI) er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. Dette kan være alt fra å gjenkjenne ansikter i bilder til å forstå og svare på spørsmål.
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Tradisjonell KI
+   .. canvas-tab:: Tradisjonell KI
 
       Tradisjonell KI følger regler og instruksjoner som mennesker har programmert inn.
 
@@ -48,7 +48,7 @@ Kunstig intelligens (KI) er teknologi som gjør det mulig for datamaskiner å ut
       * Søkemotorer
       * GPS og ruteplanlegging
 
-   .. tab:: Moderne KI
+   .. canvas-tab:: Moderne KI
 
       Moderne KI lærer av store mengder data og kan tilpasse seg nye situasjoner.
 
@@ -68,9 +68,9 @@ Hva er generativ KI?
 
 Generativ KI er en type KI som kan **skape** nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon. Den kan generere tekst, bilder, lyd, video og mye mer.
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Tekstgenerering
+   .. canvas-tab:: Tekstgenerering
 
       KI-verktøy som ChatGPT, Claude, Copilot og Gemini kan:
 
@@ -81,7 +81,7 @@ Generativ KI er en type KI som kan **skape** nytt innhold, i stedet for bare å 
       * Skrive e-poster og rapporter
       * Hjelpe med idémyldring
 
-   .. tab:: Bildegenerering
+   .. canvas-tab:: Bildegenerering
 
       KI-verktøy som DALL-E, Midjourney og Stable Diffusion kan:
 
@@ -90,7 +90,7 @@ Generativ KI er en type KI som kan **skape** nytt innhold, i stedet for bare å 
       * Generere illustrasjoner og design
       * Lage logo og grafisk materiale
 
-   .. tab:: Andre typer
+   .. canvas-tab:: Andre typer
 
       Generativ KI kan også:
 
@@ -104,9 +104,9 @@ Hva er store språkmodeller (LLM)?
 
 Store språkmodeller (Large Language Models - LLM) er en type generativ KI som er spesialisert på tekst. LLM-er som ChatGPT, Claude og Copilot har lært av enorme mengder tekst fra internett, bøker, artikler og andre kilder.
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Hva kan LLM-er gjøre?
+   .. canvas-tab:: Hva kan LLM-er gjøre?
 
       Store språkmodeller er gode til:
 
@@ -118,7 +118,7 @@ Store språkmodeller (Large Language Models - LLM) er en type generativ KI som e
       * **Idémyldring** - hjelpe med kreative prosesser
       * **Forklare komplekse konsepter** - på en enkel måte
 
-   .. tab:: Hva LLM-er IKKE er
+   .. canvas-tab:: Hva LLM-er IKKE er
 
       Det er viktig å forstå at LLM-er:
 
@@ -128,32 +128,31 @@ Store språkmodeller (Large Language Models - LLM) er en type generativ KI som e
       * **IKKE har bevissthet eller forståelse** - de er statistiske modeller, ikke tenkende vesener
       * **IKKE kan huske tidligere samtaler** (med mindre det er bygd inn som en funksjon)
 
-.. admonition:: Spørsmål
+.. canvas-question::
 
    **Hva er hovedforskjellen mellom tradisjonell KI og generativ KI?**
 
-.. admonition:: Svar
-   :class: tip
+   .. canvas-answer::
 
-   Tradisjonell KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre), mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.
+      Tradisjonell KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre), mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.
 
-Hvorfor er generativ KI så populært nå?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Hvorfor er generativ KI så populært nå?
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Generativ KI har eksistert i flere år, men ble svært populært etter lanseringen av ChatGPT i november 2022. Det er flere grunner til dette:
+      Generativ KI har eksistert i flere år, men ble svært populært etter lanseringen av ChatGPT i november 2022. Det er flere grunner til dette:
 
-1. **Tilgjengelighet** - Enkelt å bruke via nettleseren eller apper, ingen programmeringskunnskap nødvendig
-2. **Naturlig språk** - Man kan kommunisere med KI-en på vanlig norsk eller engelsk
-3. **Bred anvendelse** - Kan brukes til mange ulike oppgaver i arbeidslivet
-4. **Kvalitet** - Resultatene har blitt dramatisk bedre de siste årene
-5. **Gratis eller rimelige versjoner** - Mange verktøy er tilgjengelige uten kostnad
+      1. **Tilgjengelighet** - Enkelt å bruke via nettleseren eller apper, ingen programmeringskunnskap nødvendig
+      2. **Naturlig språk** - Man kan kommunisere med KI-en på vanlig norsk eller engelsk
+      3. **Bred anvendelse** - Kan brukes til mange ulike oppgaver i arbeidslivet
+      4. **Kvalitet** - Resultatene har blitt dramatisk bedre de siste årene
+      5. **Gratis eller rimelige versjoner** - Mange verktøy er tilgjengelige uten kostnad
 
-Eksempler på bruk i administrativt arbeid
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Eksempler på bruk i administrativt arbeid
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Skriving og kommunikasjon
+   .. canvas-tab:: Skriving og kommunikasjon
 
       * Skrive utkast til e-poster og brev
       * Forbedre og korrekturlese tekster
@@ -161,7 +160,7 @@ Eksempler på bruk i administrativt arbeid
       * Oversette dokumenter
       * Lage møtereferater fra notater
 
-   .. tab:: Databehandling
+   .. canvas-tab:: Databehandling
 
       * Oppsummere lange dokumenter
       * Trekke ut hovedpunkter fra møter
@@ -169,7 +168,7 @@ Eksempler på bruk i administrativt arbeid
       * Lage oversikter og sammendrag
       * Konvertere mellom formater (f.eks. liste til tabell)
 
-   .. tab:: Planlegging og organisering
+   .. canvas-tab:: Planlegging og organisering
 
       * Lage agendaer for møter
       * Planlegge arrangementer
@@ -177,7 +176,7 @@ Eksempler på bruk i administrativt arbeid
       * Lage sjekklister og prosedyrer
       * Foreslå løsninger på problemer
 
-   .. tab:: Læring og utvikling
+   .. canvas-tab:: Læring og utvikling
 
       * Forklare komplekse konsepter
       * Lage opplæringsmateriell
@@ -185,7 +184,7 @@ Eksempler på bruk i administrativt arbeid
       * Oversette faguttrykk
       * Gi eksempler på ulike situasjoner
 
-.. exercise::
+.. canvas-exercise::
 
    **Refleksjonsoppgave**
 

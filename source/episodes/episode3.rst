@@ -36,9 +36,9 @@ Når kan du stole på generativ KI?
 
 Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hva du bruker den til.
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Høy risiko - MÅ verifiseres
+   .. canvas-tab:: Høy risiko - MÅ verifiseres
 
       **Situasjoner hvor du ALLTID må sjekke output:**
 
@@ -54,7 +54,7 @@ Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hv
 
       Her kan hallusinering få alvorlige konsekvenser - feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover/regler.
 
-   .. tab:: Medium risiko - Bør sjekkes
+   .. canvas-tab:: Medium risiko - Bør sjekkes
 
       **Situasjoner hvor du bør være kritisk:**
 
@@ -68,7 +68,7 @@ Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hv
 
       Feil her kan føre til ineffektivitet, misforståelser, eller bortkastet tid.
 
-   .. tab:: Lav risiko - Kan brukes mer fritt
+   .. canvas-tab:: Lav risiko - Kan brukes mer fritt
 
       **Situasjoner hvor KI er tryggere å bruke:**
 
@@ -88,9 +88,9 @@ Hvordan kvalitetssikre KI-generert innhold
 
 Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ KI:
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: 1. Kildekritikk
+   .. canvas-tab:: 1. Kildekritikk
 
       **Behandle KI-output som ukjent kilde:**
 
@@ -104,7 +104,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
       * Søk opp referanser - eksisterer de faktisk?
       * Sammenlign med offisiell dokumentasjon
 
-   .. tab:: 2. Be om kilder
+   .. canvas-tab:: 2. Be om kilder
 
       **Bruk strategiske spørsmål:**
 
@@ -120,7 +120,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
 
       Søk selv etter informasjonen på pålitelige nettsider, og bruk KI-en til å hjelpe deg forstå eller oppsummere det du finner.
 
-   .. tab:: 3. Kryss-sjekk
+   .. canvas-tab:: 3. Kryss-sjekk
 
       **Sammenlign flere verktøy:**
 
@@ -135,7 +135,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
       * Lover og regler
       * Faglige kilder
 
-   .. tab:: 4. Bruk din egen ekspertise
+   .. canvas-tab:: 4. Bruk din egen ekspertise
 
       **Stol på din kunnskap:**
 
@@ -147,7 +147,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
 
       Hvis KI-en påstår at "alle møtereferater ved UiO skal sendes til Arkivverket innen 24 timer", og dette høres rart ut - så er det sannsynligvis feil.
 
-   .. tab:: 5. Test og iterasjon
+   .. canvas-tab:: 5. Test og iterasjon
 
       **Stille spørsmålet på nytt:**
 
@@ -163,7 +163,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
 
       Hvis du får tre ulike datoer, vet du at du må finne informasjonen på en annen måte.
 
-.. exercise::
+.. canvas-exercise::
 
    **Praktisk øvelse: Kvalitetssikring**
 
@@ -174,7 +174,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
    3. "Hjelp meg å strukturere disse møtenotatene" (du har limt inn notatene)
    4. "Generer ideer til et sommerarrangement for ansatte"
 
-   .. solution::
+   .. canvas-solution::
 
       1. **E-post-utkast:**
          - Les grundig gjennom
@@ -209,9 +209,9 @@ Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensi
 
    **ALDRI del sensitiv informasjon med offentlige KI-verktøy!**
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Hva du IKKE skal dele
+   .. canvas-tab:: Hva du IKKE skal dele
 
       **Del ALDRI dette med ChatGPT, Claude, Copilot (gratis versjoner) eller andre offentlige KI-verktøy:**
 
@@ -228,7 +228,7 @@ Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensi
 
       Når du skriver noe i ChatGPT eller lignende, kan informasjonen bli brukt til trening av modellen eller bli lagret. Det er ikke lenger privat.
 
-   .. tab:: Anonymisering er ikke nok
+   .. canvas-tab:: Anonymisering er ikke nok
 
       **Vær forsiktig selv med anonymisert data:**
 
@@ -244,7 +244,7 @@ Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensi
 
       Skriv helt generiske eksempler: "En person ved et fakultet..." uten spesifikke detaljer.
 
-   .. tab:: Godkjente verktøy ved UiO
+   .. canvas-tab:: Godkjente verktøy ved UiO
 
       **Hva kan du bruke?**
 
@@ -257,7 +257,7 @@ Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensi
 
       Hvis du er i tvil om noe er greit å dele - IKKE del det. Spør heller IT-avdelingen eller din leder først.
 
-   .. tab:: Praktiske tips
+   .. canvas-tab:: Praktiske tips
 
       **Slik kan du jobbe trygt:**
 
@@ -275,21 +275,20 @@ Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensi
          - Er det noe her som ikke burde deles?
          - Ville du vært komfortabel med at hele verden kunne lese dette?
 
-.. admonition:: Spørsmål
+.. canvas-question::
 
    **Hvorfor er det ikke nok å anonymisere data før du deler det med en LLM?**
 
-.. admonition:: Svar
-   :class: tip
+   .. canvas-answer::
 
-   Fordi selv "anonymiserte" data kan brukes til å identifisere personer, spesielt når flere detaljer kombineres. I tillegg vet du ikke hvordan dataene blir lagret eller brukt av KI-leverandøren. Det er tryggere å bruke helt generiske eksempler uten ekte data.
+      Fordi selv "anonymiserte" data kan brukes til å identifisere personer, spesielt når flere detaljer kombineres. I tillegg vet du ikke hvordan dataene blir lagret eller brukt av KI-leverandøren. Det er tryggere å bruke helt generiske eksempler uten ekte data.
 
-Vanlige feil og fallgruver
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Vanlige feil og fallgruver
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tabs::
+.. canvas-tabs::
 
-   .. tab:: Feil 1: Blind tillit
+   .. canvas-tab:: Feil 1: Blind tillit
 
       **Feilen:**
 
@@ -305,7 +304,7 @@ Vanlige feil og fallgruver
 
       Alltid les, forstå og verifiser før du bruker output.
 
-   .. tab:: Feil 2: Dele sensitiv info
+   .. canvas-tab:: Feil 2: Dele sensitiv info
 
       **Feilen:**
 
@@ -321,7 +320,7 @@ Vanlige feil og fallgruver
 
       Aldri del ekte sensitiv data. Bruk generiske eksempler i stedet.
 
-   .. tab:: Feil 3: Avhengighet
+   .. canvas-tab:: Feil 3: Avhengighet
 
       **Feilen:**
 
@@ -337,7 +336,7 @@ Vanlige feil og fallgruver
 
       Bruk KI som verktøy, ikke erstatning. Du er eksperten - KI-en er assistenten.
 
-   .. tab:: Feil 4: Feil bruksområde
+   .. canvas-tab:: Feil 4: Feil bruksområde
 
       **Feilen:**
 
@@ -371,7 +370,7 @@ Beste praksis - oppsummering
    7. **Vær transparent** - Hvis du bruker KI-assistanse, vurder om det bør nevnes
    8. **Hold deg oppdatert** - Sjekk UiOs retningslinjer regelmessig
 
-.. exercise::
+.. canvas-exercise::
 
    **Refleksjonsoppgave**
 
