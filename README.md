@@ -16,7 +16,7 @@ Html filene finner du i:  ```artifact/episodes``` når du har unzippet den nedla
 
 Da må du manuelt åpne hver fil, og copy-paste innholdet til Canvas. 
 
-1. Lage en ny side og gi den en tittel - f.eks. samme tittel som <h1> elemented i html-en du skal kopiere inn
+1. Lage en ny side og gi den en tittel - f.eks. samme tittel som `<h1>` elemented i html-en du skal kopiere inn
 2. Klikk på `<``>`iconet for å laste inn rå html.
 3. Copy html fra artifacts, paste inn i Siden
 4. Lagre
