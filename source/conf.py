@@ -23,13 +23,7 @@ author = 'KI-inititaivet, Universitetet i Oslo'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.githubpages',
     'canvas_tabs',  # Canvas-compatible tabs (no JavaScript)
-    'sphinx_lesson',
     'sphinx_rtd_theme',
     'uio_components',  # UiO Canvas design components
 ]
@@ -75,9 +69,3 @@ html_compact_lists = True
 html_permalinks = False
 
 # -- Extension configuration -------------------------------------------------
-
-# Example configuration for intersphinx extension:
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'numpy': ('https://numpy.org/doc/stable/', None),
-}
