@@ -9,6 +9,7 @@ import sys
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 # -- Project information -----------------------------------------------------
 
@@ -27,9 +28,10 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
     'sphinx.ext.githubpages',
-    'sphinx_tabs.tabs',
+    'canvas_tabs',  # Canvas-compatible tabs (no JavaScript)
     'sphinx_lesson',
     'sphinx_rtd_theme',
+    'uio_components',  # UiO Canvas design components
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -41,6 +43,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The master toctree document.
 master_doc = 'index'
+
+# Add UiO heading stripe to all pages
+#rst_prolog = """
+#.. raw:: html
+#
+#   <div class="uio-heading-stripe">&nbsp;</div>
+#
+#"""
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -57,6 +67,12 @@ html_static_path = ['_static']
 html_css_files = [
     'custom.css',
 ]
+
+# Don't add <p> tags to simple list items
+html_compact_lists = True
+
+# Disable automatic headerlinks (anchor links on headers)
+html_permalinks = False
 
 # -- Extension configuration -------------------------------------------------
 

@@ -36,3 +36,33 @@
     vertical-align: middle;
     display: inline-block;
 }
+
+/* ========================================
+   UiO Components Styling
+   ======================================== */
+
+/* Green color for solution and answer summary text */
+.uio-solution-summary,
+.uio-answer-summary {
+    color: #28a745 !important;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.uio-solution-summary strong,
+.uio-answer-summary strong {
+    color: #28a745 !important;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+/* Add spacing after tabs */
+.enhanceable_content.tabs {
+    margin-bottom: 2em;
+}
+
+/* Add spacing before and after uio-icon-box elements */
+.uio-icon-box {
+    margin-top: 50em;
+    margin-bottom: 50em;
+}
