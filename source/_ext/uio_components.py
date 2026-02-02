@@ -376,6 +376,12 @@ def cleanup_html_post_build(app, exception):
             content = re.sub(r'<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">',
                            '<section class="wy-nav-content-wrap" style="margin-left: 0;">', content)
 
+            # 4. Remove RTD theme wrapper divs
+            content = re.sub(r'<body class="wy-body-for-nav">', '<body>', content)
+            content = re.sub(r'<div class="wy-grid-for-nav">\s*', '', content)
+            # Remove the closing div for wy-grid-for-nav (comes after the last </section>)
+            content = re.sub(r'(</section>\s*</div>\s*</body>)', r'</section></body>', content)
+
             # Only write if changed
             if content != original:
                 with open(html_file, 'w', encoding='utf-8') as f:
