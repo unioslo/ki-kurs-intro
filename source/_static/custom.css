@@ -56,9 +56,35 @@
     margin-bottom: 10em;
 }
 
+/* ========================================
+   Canvas Tabs Styling
+   ======================================== */
+
 /* Add spacing after tabs */
 .enhanceable_content.tabs {
     margin-bottom: 2em;
+}
+
+/* All tab links - ensure consistent bottom spacing */
+.enhanceable_content.tabs > ul li a {
+    margin-bottom: -1px;
+    position: relative;
+}
+
+/* Highlight the first tab link by default */
+.enhanceable_content.tabs > ul li:first-child a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    z-index: 1;
+}
+
+/* Tab content sections */
+.enhanceable_content.tabs > div {
+    padding: 15px;
+    display: none;
+    background-color: #ffffff;
+    border-top: 3px solid #0066cc;
+    scroll-margin-top: -9999px; /* Prevent scrolling when clicking tabs */
 }
 
 /* Add spacing before and after uio-icon-box elements */
