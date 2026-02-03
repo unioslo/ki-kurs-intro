@@ -91,7 +91,7 @@ def html_visit_canvas_tabs(self, node):
     tabs = [child for child in node.children if isinstance(child, canvas_tab)]
 
     # Start the tabs container
-    self.body.append('<div class="enhanceable_content tabs">\n')
+    self.body.append('<div class="enhanceable_content tabs" style="margin-bottom: 2em;">\n')
     self.body.append('<ul>\n')
 
     # Generate tab navigation
