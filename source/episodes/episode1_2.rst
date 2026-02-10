@@ -3,6 +3,7 @@ Hva er generativ KI?
 ====================
 
 Generativ KI er en type KI som kan **skape** nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon. Den kan generere tekst, bilder, lyd, video og mye mer.
+Det er vanligvis generativ KI vi mener når vi idag snakker om kunstig intelligens.
 
 .. canvas-tabs::
 
@@ -34,3 +35,11 @@ Generativ KI er en type KI som kan **skape** nytt innhold, i stedet for bare å 
       * Generere video
       * Skape 3D-modeller
       * Produsere programmeringskode
+
+.. uio-question::
+
+   **Hva er hovedforskjellen mellom tradisjonell KI og generativ KI?**
+
+   .. uio-answer::
+
+      Tradisjonell KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre), mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.

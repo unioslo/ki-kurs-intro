@@ -54,13 +54,23 @@ class uio_do(nodes.General, nodes.Element):
     pass
 
 
+class uio_icon_box(nodes.General, nodes.Element):
+    """Generic icon box container - plain div with class uio-icon-box."""
+    pass
+
+
+class uio_detail(nodes.General, nodes.Element):
+    """Details/accordion element - uses HTML details/summary."""
+    pass
+
+
 class UioExerciseDirective(SphinxDirective):
     """
     UiO exercise directive.
 
     Usage::
 
-        .. uio-exercise::
+        .. uio-exercise:: Custom Title
 
            Exercise content here
 
@@ -69,13 +79,16 @@ class UioExerciseDirective(SphinxDirective):
               Solution content here (will be collapsible accordion)
     """
     has_content = True
-    option_spec = {
-        'title': directives.unchanged,
-    }
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_exercise()
-        node['title'] = self.options.get('title', 'Oppgave')
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Oppgave'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -86,7 +99,7 @@ class UioReflectDirective(SphinxDirective):
 
     Usage::
 
-        .. uio-reflect::
+        .. uio-reflect:: Custom Title
 
            Reflection content here
 
@@ -95,13 +108,16 @@ class UioReflectDirective(SphinxDirective):
               Solution content here (will be collapsible accordion)
     """
     has_content = True
-    option_spec = {
-        'title': directives.unchanged,
-    }
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_reflect()
-        node['title'] = self.options.get('title', 'Refleksjon')
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Refleksjon'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -112,7 +128,7 @@ class UioQuestionDirective(SphinxDirective):
 
     Usage::
 
-        .. uio-question::
+        .. uio-question:: Custom Title
 
            Question content here
 
@@ -121,13 +137,16 @@ class UioQuestionDirective(SphinxDirective):
               Answer content here (will be collapsible accordion)
     """
     has_content = True
-    option_spec = {
-        'title': directives.unchanged,
-    }
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_question()
-        node['title'] = self.options.get('title', 'Spørsmål')
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Spørsmål'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -158,18 +177,21 @@ class UioDontDirective(SphinxDirective):
 
     Usage::
 
-        .. uio-dont::
+        .. uio-dont:: Custom Title
 
            Warning content here
     """
     has_content = True
-    option_spec = {
-        'title': directives.unchanged,
-    }
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_dont()
-        node['title'] = self.options.get('title', 'OBS!')
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'OBS!'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -180,18 +202,21 @@ class UioNoteDirective(SphinxDirective):
 
     Usage::
 
-        .. uio-note::
+        .. uio-note:: Custom Title
 
            Note content here
     """
     has_content = True
-    option_spec = {
-        'title': directives.unchanged,
-    }
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_note()
-        node['title'] = self.options.get('title', 'Merk')
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Merk'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -202,18 +227,67 @@ class UioDoDirective(SphinxDirective):
 
     Usage::
 
-        .. uio-do::
+        .. uio-do:: Custom Title
 
            Tip content here
     """
     has_content = True
-    option_spec = {
-        'title': directives.unchanged,
-    }
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_do()
-        node['title'] = self.options.get('title', 'Tips')
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Tips'
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioIconBoxDirective(SphinxDirective):
+    """
+    UiO icon box directive - generic container.
+
+    Usage::
+
+        .. uio-icon-box::
+
+           .. uio-detail:: Details title
+
+              Content here
+    """
+    has_content = True
+
+    def run(self):
+        node = uio_icon_box()
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioDetailDirective(SphinxDirective):
+    """
+    UiO detail/accordion directive.
+
+    Usage::
+
+        .. uio-detail:: Summary text here
+
+           Content that will be hidden/collapsible
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_detail()
+        # Get summary text from directive arguments
+        if self.arguments:
+            node['summary'] = ' '.join(self.arguments)
+        else:
+            node['summary'] = 'Details'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -330,6 +404,28 @@ def html_depart_uio_do(self, node):
     self.body.append('</div>\n')  # Close uio-icon-box do
 
 
+def html_visit_uio_icon_box(self, node):
+    """Generate UiO icon box HTML."""
+    self.body.append('<div class="uio-icon-box">\n')
+
+
+def html_depart_uio_icon_box(self, node):
+    """Close icon box HTML."""
+    self.body.append('</div>\n')
+
+
+def html_visit_uio_detail(self, node):
+    """Generate details/accordion HTML."""
+    summary = node.get('summary', 'Details')
+    self.body.append('<details>\n')
+    self.body.append(f'<summary><strong>{self.encode(summary)}</strong></summary>\n')
+
+
+def html_depart_uio_detail(self, node):
+    """Close details HTML."""
+    self.body.append('</details>\n')
+
+
 def add_heading_stripe(app, pagename, templatename, context, doctree):
     """Add blue heading stripe to every page."""
     if doctree and hasattr(context, 'body'):
@@ -427,6 +523,14 @@ def setup(app):
         uio_do,
         html=(html_visit_uio_do, html_depart_uio_do)
     )
+    app.add_node(
+        uio_icon_box,
+        html=(html_visit_uio_icon_box, html_depart_uio_icon_box)
+    )
+    app.add_node(
+        uio_detail,
+        html=(html_visit_uio_detail, html_depart_uio_detail)
+    )
 
     # Add directives
     app.add_directive('uio-exercise', UioExerciseDirective)
@@ -437,6 +541,8 @@ def setup(app):
     app.add_directive('uio-dont', UioDontDirective)
     app.add_directive('uio-note', UioNoteDirective)
     app.add_directive('uio-do', UioDoDirective)
+    app.add_directive('uio-icon-box', UioIconBoxDirective)
+    app.add_directive('uio-detail', UioDetailDirective)
 
     # Connect to html-page-context to add heading stripe
     app.connect('html-page-context', add_heading_stripe)
