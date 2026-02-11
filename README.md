@@ -1,5 +1,7 @@
 # ki-kurs-intro
 
+## test - web edits - does it need signed commits, or is this considered signed?
+
 Alt innhold er KI-generert. Innholdet er foreløpig kun for å ha noe relevant innhold for å få på plass automatiseringen av html genereringen. 
 
 Kurssidene bygges automatisk og kan sees her: https://unioslo.github.io/ki-kurs-intro
