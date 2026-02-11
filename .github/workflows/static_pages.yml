@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --proxy http://software-proxy.uio.no:3128 --user sphinx
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements.txt ]; then pip install --proxy http://software-proxy.uio.no:3128 --user sphinx -r requirements.txt; fi
          
       - name: Build Sphinx documentation
         run: |
