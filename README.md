@@ -1,6 +1,7 @@
 # ki-kurs-intro
 
 ## test - web edits - does it need signed commits, or is this considered signed?
+New test after added signing in settings
 
 Alt innhold er KI-generert. Innholdet er foreløpig kun for å ha noe relevant innhold for å få på plass automatiseringen av html genereringen. 
 
