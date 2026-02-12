@@ -1,0 +1,2519 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Grunnkurs i generativ KI</title>
+<style>
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            page-break-after: avoid;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            page-break-after: avoid;
+        }
+        h3 {
+            color: #7f8c8d;
+            page-break-after: avoid;
+        }
+        .episode {
+            page-break-before: always;
+            margin-bottom: 50px;
+        }
+        .episode:first-child {
+            page-break-before: auto;
+        }
+
+        /* UiO icon boxes */
+        .uio-icon-box {
+            border-left: 4px solid #ddd;
+            padding: 15px 20px;
+            margin: 20px 0;
+            background-color: #f8f9fa;
+            page-break-inside: avoid;
+        }
+        .uio-icon-box.task { border-left-color: #2c5aa0; }
+        .uio-icon-box.reflect { border-left-color: #6c757d; }
+        .uio-icon-box.dont { border-left-color: #dc3545; }
+        .uio-icon-box.source { border-left-color: #17a2b8; }
+        .uio-icon-box.do { border-left-color: #28a745; }
+        .uio-icon-box.info { border-left-color: #ffc107; }
+
+        /* Canvas tabs */
+        .enhanceable_content.tabs {
+            margin: 20px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            page-break-inside: avoid;
+        }
+        .enhanceable_content.tabs ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            border-bottom: 2px solid #0066cc;
+            background-color: #f8f9fa;
+        }
+        .enhanceable_content.tabs ul li {
+            margin: 0;
+        }
+        .enhanceable_content.tabs ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #495057;
+            font-weight: bold;
+            border-right: 1px solid #dee2e6;
+        }
+        .enhanceable_content.tabs ul li:first-child a {
+            background-color: white;
+            color: #0066cc;
+        }
+        .enhanceable_content.tabs > div {
+            padding: 20px;
+            background-color: white;
+        }
+
+        /* Details/Summary (accordions) */
+        details {
+            margin: 15px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            page-break-inside: avoid;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #28a745;
+            padding: 5px;
+        }
+        summary:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 5px 0;
+        }
+
+        /* Tables */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        /* Print/PDF specific */
+        @media print {
+            body { max-width: 100%; }
+            .episode { page-break-before: always; }
+            a { color: #0066cc; text-decoration: none; }
+        }
+        
+/* Custom CSS for sphinx-lesson solution buttons */
+
+/* Fix solution button text being cut off */
+.solution .admonition-title {
+    padding: 12px 15px;
+    line-height: 1.4;
+    min-height: auto;
+}
+
+/* Ensure solution button has proper vertical spacing */
+.solution .admonition-title::before {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Adjust solution button container */
+.solution {
+    margin-bottom: 1em;
+}
+
+/* Fix toggle button styling for solutions */
+.togglebutton .admonition-title {
+    padding: 12px 15px;
+    line-height: 1.4;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.togglebutton .admonition-title:hover {
+    background-color: #f5f5f5;
+}
+
+/* Ensure proper alignment of toggle button content */
+.togglebutton .admonition-title span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* ========================================
+   UiO Components Styling
+   ======================================== */
+
+/* Green color for solution and answer summary text */
+.uio-solution-summary,
+.uio-answer-summary {
+    color: #28a745 !important;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.uio-solution-summary strong,
+.uio-answer-summary strong {
+    color: #28a745 !important;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+/* ========================================
+   Canvas Tabs Styling
+   ======================================== */
+
+/* Add spacing after tabs */
+.enhanceable_content.tabs {
+    margin-bottom: 2em;
+}
+
+/* All tab links - ensure consistent bottom spacing */
+.enhanceable_content.tabs > ul li a {
+    margin-bottom: -1px;
+    position: relative;
+}
+
+/* Highlight the first tab link by default */
+.enhanceable_content.tabs > ul li:first-child a {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    z-index: 1;
+}
+
+/* Tab content sections */
+.enhanceable_content.tabs > div {
+    padding: 15px;
+    display: none;
+    background-color: #ffffff;
+    border-top: 3px solid #0066cc;
+    scroll-margin-top: -9999px; /* Prevent scrolling when clicking tabs */
+}
+
+/* Add spacing before and after uio-icon-box elements */
+.uio-icon-box {
+    margin-top: 50em;
+    margin-bottom: 50em;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; font-size: 2.5em; margin-bottom: 10px;">Grunnkurs i generativ KI</h1>
+<p style="text-align: center; color: #7f8c8d; margin-bottom: 50px;">IT-avdelingen, Universitetet i Oslo</p>
+<hr style="margin-bottom: 50px;">
+<div class="episode" id="episode1">
+<div itemprop="articleBody">
+<section id="episode-1-hva-er-ki-og-generativ-ki">
+<h1>Episode 1: Hva er KI og generativ KI?</h1>
+<p>I denne episoden blir du introdusert til grunnleggende konsepter om kunstig intelligens (KI) og generativ KI.</p>
+<section id="temaer-som-dekkes">
+<h2>Temaer som dekkes</h2>
+<ul class="simple">
+<li>Hva er kunstig intelligens (KI)?</li>
+<li>Hva er generativ KI?</li>
+<li>Hva er store språkmodeller (LLM)?</li>
+<li>Forskjellen mellom tradisjonell KI og generativ KI</li>
+</ul>
+</section>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Forklare hva KI og generativ KI er</li>
+<li>Forstå grunnleggende om hvordan språkmodeller fungerer</li>
+<li>Gjenkjenne eksempler på generativ KI i dagliglivet</li>
+<li>Forstå forskjellen mellom ulike typer KI</li>
+</ul>
+<p><strong>Estimert tid:</strong> 10 minutter</p>
+</section>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hva-er-kunstig-intelligens-ki">
+<h1>Hva er kunstig intelligens (KI)?</h1>
+<p>Kunstig intelligens (KI) er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. Dette kan være alt fra å gjenkjenne ansikter i bilder til å forstå og svare på spørsmål.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-daec51d1-1" style="font-size: 1.2em; font-weight: bold;">Tradisjonell KI</a></li>
+<li><a href="#fragment-daec51d1-2" style="font-size: 1.2em; font-weight: bold;">Moderne KI</a></li>
+</ul>
+<div id="fragment-daec51d1-1" style="font-size: 1.2em;">
+<p>Tradisjonell KI følger regler og instruksjoner som mennesker har programmert inn.</p>
+<p><strong>Eksempler:</strong></p>
+<ul class="simple">
+<li>Spam-filtre i e-post</li>
+<li>Anbefalingssystemer (f.eks. Netflix, Spotify)</li>
+<li>Søkemotorer</li>
+<li>GPS og ruteplanlegging</li>
+</ul>
+</div>
+<div id="fragment-daec51d1-2" style="font-size: 1.2em;">
+<p>Moderne KI lærer av store mengder data og kan tilpasse seg nye situasjoner.</p>
+<p><strong>Eksempler:</strong></p>
+<ul class="simple">
+<li>Bildegjenkjenning</li>
+<li>Talegjenkjenning (Siri, Alexa)</li>
+<li>Selvkjørende biler</li>
+<li>Generativ KI (ChatGPT, DALL-E, osv.)</li>
+</ul>
+</div>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p>KI er ikke en ny teknologi - den har utviklet seg over flere tiår. Det som er nytt er hvor kraftig og tilgjengelig den har blitt de siste årene.</p>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hva-er-generativ-ki">
+<h1>Hva er generativ KI?</h1>
+<p>Generativ KI er en type KI som kan <strong>skape</strong> nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon. Den kan generere tekst, bilder, lyd, video og mye mer.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-e97ee366-1" style="font-size: 1.2em; font-weight: bold;">Tekstgenerering</a></li>
+<li><a href="#fragment-e97ee366-2" style="font-size: 1.2em; font-weight: bold;">Bildegenerering</a></li>
+<li><a href="#fragment-e97ee366-3" style="font-size: 1.2em; font-weight: bold;">Andre typer</a></li>
+</ul>
+<div id="fragment-e97ee366-1" style="font-size: 1.2em;">
+<p>KI-verktøy som ChatGPT, Claude, Copilot og Gemini kan:</p>
+<ul class="simple">
+<li>Skrive tekster og artikler</li>
+<li>Svare på spørsmål</li>
+<li>Oppsummere dokumenter</li>
+<li>Oversette mellom språk</li>
+<li>Skrive e-poster og rapporter</li>
+<li>Hjelpe med idémyldring</li>
+</ul>
+</div>
+<div id="fragment-e97ee366-2" style="font-size: 1.2em;">
+<p>KI-verktøy som DALL-E, Midjourney og Stable Diffusion kan:</p>
+<ul class="simple">
+<li>Lage bilder fra tekstbeskrivelser</li>
+<li>Redigere og forbedre eksisterende bilder</li>
+<li>Generere illustrasjoner og design</li>
+<li>Lage logo og grafisk materiale</li>
+</ul>
+</div>
+<div id="fragment-e97ee366-3" style="font-size: 1.2em;">
+<p>Generativ KI kan også:</p>
+<ul class="simple">
+<li>Lage musikk og lydeffekter</li>
+<li>Generere video</li>
+<li>Skape 3D-modeller</li>
+<li>Produsere programmeringskode</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hva-er-store-sprakmodeller-llm">
+<h1>Hva er store språkmodeller (LLM)?</h1>
+<p>Store språkmodeller (Large Language Models - LLM) er en type generativ KI som er spesialisert på tekst. LLM-er som ChatGPT, Claude og Copilot har lært av enorme mengder tekst fra internett, bøker, artikler og andre kilder.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-f73045b1-1" style="font-size: 1.2em; font-weight: bold;">Hva kan LLM-er gjøre?</a></li>
+<li><a href="#fragment-f73045b1-2" style="font-size: 1.2em; font-weight: bold;">Hva LLM-er IKKE er</a></li>
+</ul>
+<div id="fragment-f73045b1-1" style="font-size: 1.2em;">
+<p>Store språkmodeller er gode til:</p>
+<ul class="simple">
+<li><strong>Skrive og redigere tekst</strong> - artikler, rapporter, e-poster</li>
+<li><strong>Svare på spørsmål</strong> - både faktaspørsmål og spørsmål som krever resonnering</li>
+<li><strong>Oppsummere</strong> - lange dokumenter, møtereferater, artikler</li>
+<li><strong>Oversette</strong> - mellom ulike språk</li>
+<li><strong>Strukturere informasjon</strong> - lage tabeller, punktlister, organisere data</li>
+<li><strong>Idémyldring</strong> - hjelpe med kreative prosesser</li>
+<li><strong>Forklare komplekse konsepter</strong> - på en enkel måte</li>
+</ul>
+</div>
+<div id="fragment-f73045b1-2" style="font-size: 1.2em;">
+<p>Det er viktig å forstå at LLM-er:</p>
+<ul class="simple">
+<li><strong>IKKE er søkemotorer</strong> - de søker ikke på internett (med mindre spesifikt utvidet med den funksjonen)</li>
+<li><strong>IKKE har en database med fakta</strong> - de genererer tekst basert på mønstre de har lært</li>
+<li><strong>IKKE vet hva som er sant eller usant</strong> - de kan produsere feil informasjon med stor overbevisning</li>
+<li><strong>IKKE har bevissthet eller forståelse</strong> - de er statistiske modeller, ikke tenkende vesener</li>
+<li><strong>IKKE kan huske tidligere samtaler</strong> (med mindre det er bygd inn som en funksjon)</li>
+</ul>
+</div>
+</div>
+<div class="uio-icon-box task">
+<h3>Spørsmål</h3>
+<p><strong>Hva er hovedforskjellen mellom tradisjonell KI og generativ KI?</strong></p>
+<details>
+<summary class="uio-answer-summary"><strong>Svar / Answer</strong></summary>
+<p>Tradisjonell KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre), mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.</p>
+</details>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hvorfor-er-generativ-ki-sa-populaert-na">
+<h1>Hvorfor er generativ KI så populært nå?</h1>
+<p>Generativ KI har eksistert i flere år, men ble svært populært etter lanseringen av ChatGPT i november 2022. Det er flere grunner til dette:</p>
+<ol class="arabic simple">
+<li><strong>Tilgjengelighet</strong> - Enkelt å bruke via nettleseren eller apper, ingen programmeringskunnskap nødvendig</li>
+<li><strong>Naturlig språk</strong> - Man kan kommunisere med KI-en på vanlig norsk eller engelsk</li>
+<li><strong>Bred anvendelse</strong> - Kan brukes til mange ulike oppgaver i arbeidslivet</li>
+<li><strong>Kvalitet</strong> - Resultatene har blitt dramatisk bedre de siste årene</li>
+<li><strong>Gratis eller rimelige versjoner</strong> - Mange verktøy er tilgjengelige uten kostnad</li>
+</ol>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="eksempler-pa-bruk-i-administrativt-arbeid">
+<h1>Eksempler på bruk i administrativt arbeid</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-626b455c-1" style="font-size: 1.2em; font-weight: bold;">Skriving og kommunikasjon</a></li>
+<li><a href="#fragment-626b455c-2" style="font-size: 1.2em; font-weight: bold;">Databehandling</a></li>
+<li><a href="#fragment-626b455c-3" style="font-size: 1.2em; font-weight: bold;">Planlegging og organisering</a></li>
+<li><a href="#fragment-626b455c-4" style="font-size: 1.2em; font-weight: bold;">Læring og utvikling</a></li>
+</ul>
+<div id="fragment-626b455c-1" style="font-size: 1.2em;">
+<ul class="simple">
+<li>Skrive utkast til e-poster og brev</li>
+<li>Forbedre og korrekturlese tekster</li>
+<li>Tilpasse tone og formalitetsnivå</li>
+<li>Oversette dokumenter</li>
+<li>Lage møtereferater fra notater</li>
+</ul>
+</div>
+<div id="fragment-626b455c-2" style="font-size: 1.2em;">
+<ul class="simple">
+<li>Oppsummere lange dokumenter</li>
+<li>Trekke ut hovedpunkter fra møter</li>
+<li>Strukturere uorganisert informasjon</li>
+<li>Lage oversikter og sammendrag</li>
+<li>Konvertere mellom formater (f.eks. liste til tabell)</li>
+</ul>
+</div>
+<div id="fragment-626b455c-3" style="font-size: 1.2em;">
+<ul class="simple">
+<li>Lage agendaer for møter</li>
+<li>Planlegge arrangementer</li>
+<li>Idémyldring</li>
+<li>Lage sjekklister og prosedyrer</li>
+<li>Foreslå løsninger på problemer</li>
+</ul>
+</div>
+<div id="fragment-626b455c-4" style="font-size: 1.2em;">
+<ul class="simple">
+<li>Forklare komplekse konsepter</li>
+<li>Lage opplæringsmateriell</li>
+<li>Svare på spørsmål om prosedyrer</li>
+<li>Oversette faguttrykk</li>
+<li>Gi eksempler på ulike situasjoner</li>
+</ul>
+</div>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p><strong>Refleksjonsoppgave</strong></p>
+<p>Tenk på dine daglige arbeidsoppgaver. Hvilke av følgende kunne du tenke deg å bruke generativ KI til?</p>
+<ul class="simple">
+<li>Skrive eller forbedre e-poster</li>
+<li>Oppsummere lange dokumenter</li>
+<li>Oversette tekster</li>
+<li>Få hjelp til å formulere vanskelige budskap</li>
+<li>Lage utkast til presentasjoner</li>
+<li>Strukturere informasjon</li>
+<li>Idémyldring</li>
+</ul>
+<p>Det er ingen fasit her - målet er å begynne å tenke på hvordan KI kan være nyttig i din arbeidshverdag.</p>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p>I neste episode skal vi se nærmere på hvordan store språkmodeller faktisk fungerer, og hvorfor det er viktig å forstå dette når du bruker dem.</p>
+</div>
+</section>
+</div>
+</div>
+<div class="episode" id="episode2">
+<div itemprop="articleBody">
+<section id="episode-2-hvordan-fungerer-sprakmodeller">
+<h1>Episode 2: Hvordan fungerer språkmodeller?</h1>
+<p>I denne episoden lærer du hvordan store språkmodeller (LLM) faktisk fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.</p>
+<section id="temaer-som-dekkes">
+<h2>Temaer som dekkes</h2>
+<ul class="simple">
+<li>Språkmodeller er ikke kunnskapsbaser</li>
+<li>Hvordan LLM-er genererer tekst</li>
+<li>Statistisk sannsynlighet og tilfeldighet</li>
+<li>Begrensninger ved LLM-er</li>
+<li>Hvorfor LLM-er kan “hallusinere”</li>
+</ul>
+</section>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Forstå at LLM-er konstruerer tekst basert på statistiske mønstre</li>
+<li>Forklare hvorfor LLM-er ikke er pålitelige kunnskapsbaser</li>
+<li>Gjenkjenne når en LLM kan gi feil informasjon</li>
+<li>Forstå betydningen av tilfeldighet i KI-svar</li>
+</ul>
+<p><strong>Estimert tid:</strong> 10 minutter</p>
+</section>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="llm-er-er-ikke-kunnskapsbaser">
+<h1>LLM-er er IKKE kunnskapsbaser</h1>
+<p>Dette er kanskje den viktigste forståelsen du kan ha om språkmodeller:</p>
+<div class="uio-icon-box dont">
+<h3>OBS!</h3>
+<p><strong>Store språkmodeller er IKKE databaser med fakta. De er statistiske modeller som genererer tekst basert på mønstre de har lært.</strong></p>
+</div>
+<p>La oss sammenligne med noe du kjenner:</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-c1fdcd73-1" style="font-size: 1.2em; font-weight: bold;">Kunnskapsbase (f.eks. Wikipedia)</a></li>
+<li><a href="#fragment-c1fdcd73-2" style="font-size: 1.2em; font-weight: bold;">Språkmodell (f.eks. ChatGPT)</a></li>
+</ul>
+<div id="fragment-c1fdcd73-1" style="font-size: 1.2em;">
+<p><strong>Slik fungerer det:</strong></p>
+<ul class="simple">
+<li>Informasjon er lagret som strukturerte data</li>
+<li>Når du søker, henter systemet frem eksakt informasjon</li>
+<li>Informasjonen er (ideelt sett) verifisert og referert</li>
+<li>Du får samme svar hver gang på samme spørsmål</li>
+<li>Hvis informasjonen ikke finnes, får du ingen treff</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Søker du “befolkning i Norge 2024”, får du det eksakte tallet som er lagret.</p>
+</div>
+<div id="fragment-c1fdcd73-2" style="font-size: 1.2em;">
+<p><strong>Slik fungerer det:</strong></p>
+<ul class="simple">
+<li>Ingen informasjon er direkte “lagret” som fakta</li>
+<li>Modellen har lært mønstre fra millioner av tekster</li>
+<li>Når du stiller et spørsmål, genererer den ny tekst som ligner på mønstre den har sett</li>
+<li>Du kan få ulike svar på samme spørsmål</li>
+<li>Modellen vil alltid forsøke å gi et svar, selv om den ikke “vet” svaret</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Spør du “befolkning i Norge 2024”, konstruerer modellen et svar basert på mønstre fra lignende spørsmål den har sett - og kan gi feil tall.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hvordan-genererer-llm-er-tekst">
+<h1>Hvordan genererer LLM-er tekst?</h1>
+<p>For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-17d89c79-1" style="font-size: 1.2em; font-weight: bold;">Trening</a></li>
+<li><a href="#fragment-17d89c79-2" style="font-size: 1.2em; font-weight: bold;">Generering</a></li>
+<li><a href="#fragment-17d89c79-3" style="font-size: 1.2em; font-weight: bold;">Temperatur og tilfeldighet</a></li>
+</ul>
+<div id="fragment-17d89c79-1" style="font-size: 1.2em;">
+<p><strong>Hva skjer under treningen:</strong></p>
+<ol class="arabic simple">
+<li>Modellen får lese milliarder av ord fra internett, bøker, artikler osv.</li>
+<li>Den lærer hvilke ord som ofte kommer etter hverandre</li>
+<li>Den lærer mønstre i språk, grammatikk, og hvordan setninger bygges opp</li>
+<li>Den lærer sammenhenger mellom begreper og emner</li>
+</ol>
+<p><strong>Eksempel:</strong></p>
+<p>Hvis modellen har sett setningen “hovedstaden i Norge er Oslo” tusenvis av ganger, lærer den at “Oslo” er et sannsynlig ord som kommer etter “hovedstaden i Norge er”.</p>
+</div>
+<div id="fragment-17d89c79-2" style="font-size: 1.2em;">
+<p><strong>Hva skjer når du stiller et spørsmål:</strong></p>
+<ol class="arabic simple">
+<li>Modellen analyserer din tekst (prompten)</li>
+<li>Basert på mønstre den har lært, beregner den hva som er statistisk sannsynlig som neste ord</li>
+<li>Den velger et ord (med litt tilfeldighet)</li>
+<li>Den gjentar prosessen for neste ord, og neste ord, osv.</li>
+<li>Den stopper når den “mener” svaret er fullstendig</li>
+</ol>
+<p><strong>Viktig:</strong></p>
+<p>Modellen “tenker” ikke på om informasjonen er korrekt - den genererer bare det som er statistisk sannsynlig basert på mønstre.</p>
+</div>
+<div id="fragment-17d89c79-3" style="font-size: 1.2em;">
+<p><strong>Hva er “temperatur”?</strong></p>
+<ul class="simple">
+<li>En parameter som styrer hvor kreativ/tilfeldig modellen skal være</li>
+<li><strong>Lav temperatur</strong> (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene</li>
+<li><strong>Høy temperatur</strong> (f.eks. 0.8): Mer kreativ, kan velge mindre sannsynlige ord</li>
+</ul>
+<p><strong>Derfor:</strong></p>
+<ul class="simple">
+<li>Du kan få ulike svar på samme spørsmål</li>
+<li>Noen ganger kan svarene være mer kreative, andre ganger mer “standard”</li>
+<li>Ingen garanti for at samme spørsmål gir samme svar</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="et-praktisk-eksempel">
+<h1>Et praktisk eksempel</h1>
+<p>La oss se på et konkret eksempel:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>DU: "Hva er åpningstidene til biblioteket på Blindern?"
+</pre></div>
+</div>
+<p><strong>Hva skjer i modellen:</strong></p>
+<ol class="arabic simple">
+<li>Modellen ser at dette er et spørsmål om åpningstider</li>
+<li>Den har sett mange lignende spørsmål under trening</li>
+<li>Den har lært mønsteret: spørsmål om åpningstider → svar med tider</li>
+<li>Den genererer et svar som <em>ser ut</em> som åpningstider</li>
+</ol>
+<p><strong>Problemet:</strong></p>
+<p>Modellen kan konstruere et helt plausibelt svar som “Biblioteket på Blindern er åpent 08:00-20:00 mandag-fredag og 10:00-16:00 i helgene” - selv om dette er fullstendig feil!</p>
+<div class="uio-icon-box dont">
+<h3>OBS!</h3>
+<p><strong>Modellen “vet” ikke hva åpningstidene faktisk er. Den genererer bare tekst som ligner på svar om åpningstider.</strong></p>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hva-er-hallusinering">
+<h1>Hva er “hallusinering”?</h1>
+<p>Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kaller vi det “hallusinering” (eller “confabulation” på fagspråket).</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-f6ba0cd2-1" style="font-size: 1.2em; font-weight: bold;">Eksempler på hallusinering</a></li>
+<li><a href="#fragment-f6ba0cd2-2" style="font-size: 1.2em; font-weight: bold;">Hvorfor skjer det?</a></li>
+<li><a href="#fragment-f6ba0cd2-3" style="font-size: 1.2em; font-weight: bold;">Hallusinering med selvtillit</a></li>
+</ul>
+<div id="fragment-f6ba0cd2-1" style="font-size: 1.2em;">
+<p><strong>Typiske situasjoner:</strong></p>
+<ul class="simple">
+<li><strong>Oppdiktede referanser</strong>: Modellen lager titler på artikler som ikke finnes</li>
+<li><strong>Feil fakta</strong>: Oppgir feil datoer, tall eller navn</li>
+<li><strong>Blandede personer</strong>: Blander sammen biografier fra ulike personer</li>
+<li><strong>Oppfunnet programvare</strong>: Beskriver funksjoner som ikke eksisterer</li>
+<li><strong>Feil prosedyrer</strong>: Beskriver arbeidsprosesser som ikke stemmer</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>“Studien av Hansen et al. (2023) publisert i Nature viste at…” - der både studien og forfatterne kan være oppfunnet.</p>
+</div>
+<div id="fragment-f6ba0cd2-2" style="font-size: 1.2em;">
+<p><strong>Årsaker til hallusinering:</strong></p>
+<ol class="arabic simple">
+<li><strong>Modellen vil alltid gi et svar</strong> - Den sier ikke “jeg vet ikke”</li>
+<li><strong>Mønstre fra trening</strong> - Den har lært hvordan svar “skal se ut”</li>
+<li><strong>Manglende faktasjekk</strong> - Den verifiserer ikke mot noen database</li>
+<li><strong>Overgeneralisering</strong> - Den kombinerer mønstre fra ulike kilder</li>
+<li><strong>Utdatert treningsdata</strong> - Modellen vet ikke hva som har skjedd etter den ble trent</li>
+</ol>
+<p><strong>Viktig å forstå:</strong></p>
+<p>Hallusinering er ikke en “bug” som kan fikses fullstendig - det er en iboende egenskap ved hvordan språkmodeller fungerer.</p>
+</div>
+<div id="fragment-f6ba0cd2-3" style="font-size: 1.2em;">
+<p><strong>Det mest problematiske:</strong></p>
+<p>LLM-er hallusinerer ofte med stor <strong>selvsikkerhet</strong>. De sier ikke:</p>
+<ul class="simple">
+<li>“Jeg er usikker, men…”</li>
+<li>“Dette kan være feil, men…”</li>
+<li>“Jeg vet ikke sikkert, men…”</li>
+</ul>
+<p>I stedet presenterer de feil informasjon med samme overbevisning som riktig informasjon.</p>
+<p><strong>Derfor:</strong></p>
+<p>Du kan IKKE stole på om et svar er korrekt basert på hvor selvsikkert det fremstår.</p>
+</div>
+</div>
+<div class="uio-icon-box task">
+<h3>Spørsmål</h3>
+<p><strong>Hvorfor kan en språkmodell gi feil informasjon selv om svaret høres veldig troverdig ut?</strong></p>
+<details>
+<summary class="uio-answer-summary"><strong>Svar / Answer</strong></summary>
+<p>Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk. Den har lært hvordan troverdige svar “ser ut”, men vet ikke forskjellen på sant og usant. Derfor kan den produsere feil informasjon med samme selvtillit som riktig informasjon.</p>
+</details>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="begrensninger-du-bor-kjenne-til">
+<h1>Begrensninger du bør kjenne til</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-1bc77583-1" style="font-size: 1.2em; font-weight: bold;">Utdatert informasjon</a></li>
+<li><a href="#fragment-1bc77583-2" style="font-size: 1.2em; font-weight: bold;">Manglende kontekst</a></li>
+<li><a href="#fragment-1bc77583-3" style="font-size: 1.2em; font-weight: bold;">Språk og kulturforståelse</a></li>
+</ul>
+<div id="fragment-1bc77583-1" style="font-size: 1.2em;">
+<p><strong>Problemet:</strong></p>
+<ul class="simple">
+<li>LLM-er trenes på data fra et bestemt tidspunkt</li>
+<li>De vet ikke hva som har skjedd etter treningsdataen ble samlet</li>
+<li>Mange modeller har en “kunnskapsgrense” (cutoff date)</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>En modell trent i 2023 vet ikke hvem som vant fotball-VM i 2024, eller nye lover som ble vedtatt i 2024.</p>
+<p><strong>Merk:</strong></p>
+<p>Noen verktøy (som Bing Chat/Copilot) kan søke på internett for oppdatert informasjon - men da bruker de en søkemotor i tillegg til språkmodellen.</p>
+</div>
+<div id="fragment-1bc77583-2" style="font-size: 1.2em;">
+<p><strong>Problemet:</strong></p>
+<ul class="simple">
+<li>LLM-er kjenner ikke til interne prosedyrer ved UiO (med mindre de fortelles)</li>
+<li>De vet ikke om spesifikke systemer dere bruker</li>
+<li>De har ikke tilgang til deres dokumenter eller databaser</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Spør du “Hvordan registrerer jeg fravær i vårt system?”, kan modellen gi et generisk svar om fraværsregistrering - men ikke det spesifikke systemet dere bruker.</p>
+<p><strong>Løsning:</strong></p>
+<p>Gi kontekst i prompten: “Vi bruker systemet X ved UiO. Hvordan registrerer jeg fravær?”</p>
+</div>
+<div id="fragment-1bc77583-3" style="font-size: 1.2em;">
+<p><strong>Problemet:</strong></p>
+<ul class="simple">
+<li>De fleste LLM-er er primært trent på engelsk</li>
+<li>Norsk fungerer, men kvaliteten kan være noe lavere</li>
+<li>Norske forhold og kontekst kan være underrepresentert</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Juridiske eller administrative spørsmål om norske forhold kan få svar basert på amerikanske eller britiske systemer.</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li>Vær eksplisitt: “i Norge”, “ved norske universiteter”, “etter norsk lovverk”</li>
+<li>Sjekk alltid svar om lover, regler og prosedyrer</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hva-betyr-dette-for-deg-som-bruker">
+<h1>Hva betyr dette for deg som bruker?</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Viktigste takeaways:</strong></p>
+<ol class="arabic simple">
+<li><strong>LLM-er er verktøy for å generere tekst</strong> - ikke oppslagsverk for fakta</li>
+<li><strong>Verifiser alltid viktig informasjon</strong> - spesielt fakta, tall, referanser</li>
+<li><strong>Bruk LLM-er til hva de er gode på</strong> - strukturering, formulering, idémyldring</li>
+<li><strong>Vær kritisk</strong> - spesielt når svaret virker veldig detaljert og spesifikt</li>
+<li><strong>Gi god kontekst</strong> - hjelp modellen ved å gi relevant informasjon i prompten</li>
+</ol>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p><strong>Refleksjonsoppgave</strong></p>
+<p>Tenk over følgende situasjoner. I hvilke av disse bør du være EKSTRA forsiktig med å stole på et LLM-svar?</p>
+<ul class="simple">
+<li>Skrive et utkast til en e-post</li>
+<li>Finne en spesifikk paragraf i universitetsloven</li>
+<li>Få hjelp til å formulere et budskap på en vennlig måte</li>
+<li>Sjekke åpningstider for UiO-biblioteket</li>
+<li>Brainstorme ideer til et arrangement</li>
+<li>Få oppgitt kontaktinformasjon til en bestemt person</li>
+<li>Oppsummere et dokument du har limt inn i chatten</li>
+</ul>
+<details>
+<summary class="uio-solution-summary"><strong>Løsning / Solution</strong></summary>
+<p><strong>Ekstra forsiktig (verifiser alltid):</strong></p>
+<ul class="simple">
+<li>Spesifikk paragraf i universitetsloven (kan hallusinere lovtekst)</li>
+<li>Åpningstider (kan oppfinne tider)</li>
+<li>Kontaktinformasjon (kan oppfinne eller gi utdatert info)</li>
+</ul>
+<p><strong>Tryggere å bruke (men fortsatt vær kritisk):</strong></p>
+<ul class="simple">
+<li>Skrive utkast til e-post (du leser over og godkjenner)</li>
+<li>Formulere budskap (du kontrollerer innholdet)</li>
+<li>Brainstorme ideer (kreativ prosess, ikke faktabasert)</li>
+<li>Oppsummere dokument du ga (basert på tekst du ga, ikke hallusinert)</li>
+</ul>
+</details>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p>I neste episode skal vi se nærmere på hvordan du kan kvalitetssikre output fra generativ KI, og hva du må tenke på når du bruker disse verktøyene.</p>
+</div>
+</section>
+</div>
+</div>
+<div class="episode" id="episode3">
+<div itemprop="articleBody">
+<section id="episode-3-kan-du-stole-pa-generativ-ki">
+<h1>Episode 3: Kan du stole på generativ KI?</h1>
+<p>I denne episoden lærer du hvordan du kan kvalitetssikre output fra generativ KI og hva du må tenke på når du bruker disse verktøyene.</p>
+<section id="temaer-som-dekkes">
+<h2>Temaer som dekkes</h2>
+<ul class="simple">
+<li>Når kan du stole på generativ KI?</li>
+<li>Hvordan kvalitetssikre innhold fra LLM-er</li>
+<li>Beste praksis for bruk av KI-verktøy</li>
+<li>Vanlige feil og hvordan unngå dem</li>
+<li>Personvern og datasikkerhet</li>
+</ul>
+</section>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Vurdere når generativ KI er pålitelig og når den ikke er det</li>
+<li>Bruke strategier for å kvalitetssikre KI-generert innhold</li>
+<li>Forstå personvernhensyn ved bruk av generativ KI</li>
+<li>Unngå vanlige feil ved bruk av KI-verktøy</li>
+</ul>
+<p><strong>Estimert tid:</strong> 10 minutter</p>
+</section>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="nar-kan-du-stole-pa-generativ-ki">
+<h1>Når kan du stole på generativ KI?</h1>
+<p>Generativ KI er ikke enten “pålitelig” eller “upålitelig” - det avhenger av hva du bruker den til.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-3aabeffd-1" style="font-size: 1.2em; font-weight: bold;">Høy risiko - MÅ verifiseres</a></li>
+<li><a href="#fragment-3aabeffd-2" style="font-size: 1.2em; font-weight: bold;">Medium risiko - Bør sjekkes</a></li>
+<li><a href="#fragment-3aabeffd-3" style="font-size: 1.2em; font-weight: bold;">Lav risiko - Kan brukes mer fritt</a></li>
+</ul>
+<div id="fragment-3aabeffd-1" style="font-size: 1.2em;">
+<p><strong>Situasjoner hvor du ALLTID må sjekke output:</strong></p>
+<ul class="simple">
+<li><strong>Fakta og tall</strong> - befolkningstall, datoer, statistikk</li>
+<li><strong>Lover og regler</strong> - lovparagrafer, regelverket ved UiO</li>
+<li><strong>Referanser</strong> - kildehenvisninger, studier, publikasjoner</li>
+<li><strong>Kontaktinformasjon</strong> - telefonnumre, e-postadresser, åpningstider</li>
+<li><strong>Tekniske detaljer</strong> - programvare-kommandoer, konfigurasjon</li>
+<li><strong>Medisinske/juridiske råd</strong> - Bruk profesjonelle kilder i stedet</li>
+<li><strong>Kritisk kommunikasjon</strong> - Viktige e-poster til ledelse, eksterne</li>
+</ul>
+<p><strong>Hvorfor?</strong></p>
+<p>Her kan hallusinering få alvorlige konsekvenser - feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover/regler.</p>
+</div>
+<div id="fragment-3aabeffd-2" style="font-size: 1.2em;">
+<p><strong>Situasjoner hvor du bør være kritisk:</strong></p>
+<ul class="simple">
+<li><strong>Forslag til prosedyrer</strong> - Verifiser mot faktiske retningslinjer</li>
+<li><strong>Historisk informasjon</strong> - Sjekk viktige detaljer</li>
+<li><strong>Tekniske forklaringer</strong> - Bekreft med fagressurser</li>
+<li><strong>Oppgaveplanlegging</strong> - Vurder om forslagene er realistiske</li>
+<li><strong>Oppsummeringer</strong> - Sammenlign med originaldokumentet</li>
+</ul>
+<p><strong>Hvorfor?</strong></p>
+<p>Feil her kan føre til ineffektivitet, misforståelser, eller bortkastet tid.</p>
+</div>
+<div id="fragment-3aabeffd-3" style="font-size: 1.2em;">
+<p><strong>Situasjoner hvor KI er tryggere å bruke:</strong></p>
+<ul class="simple">
+<li><strong>Brainstorming og idémyldring</strong> - Kreative prosesser uten fasitsvar</li>
+<li><strong>Formulere tekst du selv har kontekst på</strong> - Du vet hva som er riktig</li>
+<li><strong>Språklig forbedring</strong> - Grammatikk, tonefall, struktur</li>
+<li><strong>Oppsummere tekst DU har gitt</strong> - Basert på din input, ikke hallusinert</li>
+<li><strong>Lage utkast</strong> - Som utgangspunkt for videre arbeid</li>
+<li><strong>Lære nye konsepter</strong> - Når du følger opp med verifiserte kilder</li>
+</ul>
+<p><strong>Hvorfor?</strong></p>
+<p>Her er du i kontroll, eller konsekvensene av feil er lave.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hvordan-kvalitetssikre-ki-generert-innhold">
+<h1>Hvordan kvalitetssikre KI-generert innhold</h1>
+<p>Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ KI:</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-2d8d4e35-1" style="font-size: 1.2em; font-weight: bold;">1. Kildekritikk</a></li>
+<li><a href="#fragment-2d8d4e35-2" style="font-size: 1.2em; font-weight: bold;">2. Be om kilder</a></li>
+<li><a href="#fragment-2d8d4e35-3" style="font-size: 1.2em; font-weight: bold;">3. Kryss-sjekk</a></li>
+<li><a href="#fragment-2d8d4e35-4" style="font-size: 1.2em; font-weight: bold;">4. Bruk din egen ekspertise</a></li>
+<li><a href="#fragment-2d8d4e35-5" style="font-size: 1.2em; font-weight: bold;">5. Test og iterasjon</a></li>
+</ul>
+<div id="fragment-2d8d4e35-1" style="font-size: 1.2em;">
+<p><strong>Behandle KI-output som ukjent kilde:</strong></p>
+<ul class="simple">
+<li>Ville du stolt på denne informasjonen fra en tilfeldig person på gaten?</li>
+<li>Er dette noe du kan verifisere?</li>
+<li>Har du fagkunnskap til å vurdere om det virker riktig?</li>
+</ul>
+<p><strong>Verifiser alltid:</strong></p>
+<ul class="simple">
+<li>Sjekk fakta mot pålitelige kilder (UiO.no, lovdata.no, osv.)</li>
+<li>Søk opp referanser - eksisterer de faktisk?</li>
+<li>Sammenlign med offisiell dokumentasjon</li>
+</ul>
+</div>
+<div id="fragment-2d8d4e35-2" style="font-size: 1.2em;">
+<p><strong>Bruk strategiske spørsmål:</strong></p>
+<ul class="simple">
+<li>“Kan du gi meg kilder for denne påstanden?”</li>
+<li>“Hvor kommer denne informasjonen fra?”</li>
+<li>“Kan du peke meg til offisiell dokumentasjon?”</li>
+</ul>
+<p><strong>Merk:</strong></p>
+<p>Selv når LLM-en gir “kilder”, kan disse være hallusinerte! Sjekk alltid at kildene faktisk eksisterer.</p>
+<p><strong>Bedre tilnærming:</strong></p>
+<p>Søk selv etter informasjonen på pålitelige nettsider, og bruk KI-en til å hjelpe deg forstå eller oppsummere det du finner.</p>
+</div>
+<div id="fragment-2d8d4e35-3" style="font-size: 1.2em;">
+<p><strong>Sammenlign flere verktøy:</strong></p>
+<ul class="simple">
+<li>Spør samme spørsmål til ChatGPT, Claude, og Copilot</li>
+<li>Hvis de gir ulike svar, er dette et rødt flagg</li>
+<li>Bruk tradisjonell søk (Google, UiO.no) for å verifisere</li>
+</ul>
+<p><strong>Sjekk mot dokumentasjon:</strong></p>
+<ul class="simple">
+<li>Interne prosedyrer ved UiO</li>
+<li>Offisielle nettsider</li>
+<li>Lover og regler</li>
+<li>Faglige kilder</li>
+</ul>
+</div>
+<div id="fragment-2d8d4e35-4" style="font-size: 1.2em;">
+<p><strong>Stol på din kunnskap:</strong></p>
+<ul class="simple">
+<li>Hvis noe føles feil, er det sannsynligvis feil</li>
+<li>Bruk din fagkunnskap og erfaring</li>
+<li>Vær spesielt skeptisk til svært spesifikke eller detaljerte påstander</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Hvis KI-en påstår at “alle møtereferater ved UiO skal sendes til Arkivverket innen 24 timer”, og dette høres rart ut - så er det sannsynligvis feil.</p>
+</div>
+<div id="fragment-2d8d4e35-5" style="font-size: 1.2em;">
+<p><strong>Stille spørsmålet på nytt:</strong></p>
+<ul class="simple">
+<li>Omformulere spørsmålet ditt</li>
+<li>Hvis du får helt ulike svar, er ikke KI-en pålitelig for dette spørsmålet</li>
+<li>Konsistente svar er (litt) mer troverdige - men fortsatt ikke garantert korrekte</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<ul class="simple">
+<li>“Hva er søknadsfristen for X?”</li>
+<li>“Når må søknaden om X leveres?”</li>
+<li>“Har du informasjon om tidsfrister for X?”</li>
+</ul>
+<p>Hvis du får tre ulike datoer, vet du at du må finne informasjonen på en annen måte.</p>
+</div>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave</h3>
+<p><strong>Praktisk øvelse: Kvalitetssikring</strong></p>
+<p>Tenk deg at du har bedt en LLM om hjelp med følgende oppgaver. Hvordan ville du kvalitetssikret hvert svar?</p>
+<ol class="arabic simple">
+<li>“Skriv et utkast til e-post hvor jeg informerer om møtetidspunkt”</li>
+<li>“Hva sier universitetsloven om arbeidskontrakter?”</li>
+<li>“Hjelp meg å strukturere disse møtenotatene” (du har limt inn notatene)</li>
+<li>“Generer ideer til et sommerarrangement for ansatte”</li>
+</ol>
+<details>
+<summary class="uio-solution-summary"><strong>Løsning / Solution</strong></summary>
+<ol class="arabic simple">
+<li><strong>E-post-utkast:</strong>
+- Les grundig gjennom
+- Sjekk at alle fakta (tid, sted, dato) stemmer
+- Vurder om tonen passer
+- Legg til personlig touch</li>
+<li><strong>Universitetsloven:</strong>
+- <strong>VERIFISER ALT!</strong> Sjekk på lovdata.no
+- LLM-er hallusinerer ofte lovtekster
+- Bruk i stedet: Søk på lovdata.no og be KI-en forklare det du finner
+- Kontakt HR hvis det er viktig</li>
+<li><strong>Strukturere notater:</strong>
+- Sammenlign med originalnotatene dine
+- Sjekk at ingenting viktig er utelatt
+- Bekreft at tolkninger stemmer
+- Relativt trygt siden du ga konteksten</li>
+<li><strong>Idémyldring:</strong>
+- Relativt trygt - ingen fasitsvar
+- Bruk ideene som inspirasjon
+- Vurder selv hva som passer for deres kultur
+- Tilpass til budsjett og ressurser</li>
+</ol>
+</details>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="personvern-og-datasikkerhet">
+<h1>Personvern og datasikkerhet</h1>
+<p>Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensitiv informasjon.</p>
+<div class="uio-icon-box dont">
+<h3>OBS!</h3>
+<p><strong>ALDRI del sensitiv informasjon med offentlige KI-verktøy!</strong></p>
+</div>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-b3dc8879-1" style="font-size: 1.2em; font-weight: bold;">Hva du IKKE skal dele</a></li>
+<li><a href="#fragment-b3dc8879-2" style="font-size: 1.2em; font-weight: bold;">Anonymisering er ikke nok</a></li>
+<li><a href="#fragment-b3dc8879-3" style="font-size: 1.2em; font-weight: bold;">Godkjente verktøy ved UiO</a></li>
+<li><a href="#fragment-b3dc8879-4" style="font-size: 1.2em; font-weight: bold;">Praktiske tips</a></li>
+</ul>
+<div id="fragment-b3dc8879-1" style="font-size: 1.2em;">
+<p><strong>Del ALDRI dette med ChatGPT, Claude, Copilot (gratis versjoner) eller andre offentlige KI-verktøy:</strong></p>
+<ul class="simple">
+<li><strong>Personopplysninger</strong> - Fødselsnummer, personnummer, navn + kontaktinfo</li>
+<li><strong>Konfidensielle dokumenter</strong> - Interne strategier, ikke-publiserte planer</li>
+<li><strong>Sensitive personalsaker</strong> - Informasjon om ansattes helse, økonomi, etc.</li>
+<li><strong>Forskningsdata</strong> - Upubliserte data, særlig persondata</li>
+<li><strong>Studentinformasjon</strong> - Karakterer, personlige data, sensitivt om studenter</li>
+<li><strong>Sikkerhetsinformasjon</strong> - Passord, API-nøkler, systemdetaljer</li>
+<li><strong>Kontraktsinfo</strong> - Detaljer fra konfidensielle avtaler</li>
+<li><strong>Økonomidata</strong> - Budsjetter, lønnsinfo, sensitive økonomiske data</li>
+</ul>
+<p><strong>Hvorfor?</strong></p>
+<p>Når du skriver noe i ChatGPT eller lignende, kan informasjonen bli brukt til trening av modellen eller bli lagret. Det er ikke lenger privat.</p>
+</div>
+<div id="fragment-b3dc8879-2" style="font-size: 1.2em;">
+<p><strong>Vær forsiktig selv med anonymisert data:</strong></p>
+<ul class="simple">
+<li>Det er lett å gjenidentifisere personer fra “anonymiserte” tekster</li>
+<li>Kombinasjoner av detaljer kan avsløre identitet</li>
+<li>Vær spesielt forsiktig med små grupper</li>
+</ul>
+<p><strong>Eksempel på risiko:</strong></p>
+<p>“Fakultetet har en kvinnelig professor i astrofysikk som jobber med mørk materie” kan være nok til å identifisere en person.</p>
+<p><strong>Bedre tilnærming:</strong></p>
+<p>Skriv helt generiske eksempler: “En person ved et fakultet…” uten spesifikke detaljer.</p>
+</div>
+<div id="fragment-b3dc8879-3" style="font-size: 1.2em;">
+<p><strong>Hva kan du bruke?</strong></p>
+<ul class="simple">
+<li>Sjekk UiOs oversikt over godkjente KI-tjenester (dekkes i neste episode)</li>
+<li>Noen verktøy har avtaler som beskytter data bedre</li>
+<li>Organisasjonslisensieter har ofte bedre personverngarantier</li>
+<li>Spør IT-avdelingen hvis du er usikker</li>
+</ul>
+<p><strong>Generell regel:</strong></p>
+<p>Hvis du er i tvil om noe er greit å dele - IKKE del det. Spør heller IT-avdelingen eller din leder først.</p>
+</div>
+<div id="fragment-b3dc8879-4" style="font-size: 1.2em;">
+<p><strong>Slik kan du jobbe trygt:</strong></p>
+<ol class="arabic simple">
+<li><strong>Bruk generiske eksempler:</strong>
+- I stedet for ekte navn, bruk “Person A”, “Person B”
+- I stedet for ekte tall, bruk representative eksempler
+- Behold strukturen, fjern identifiserbar info</li>
+<li><strong>Skriv fra scratch:</strong>
+- Be KI-en hjelpe deg lage noe nytt, i stedet for å dele eksisterende dokumenter
+- “Lag et møtereferat-mal” i stedet for å dele ekte referater</li>
+<li><strong>Dobbeltsjekk før du sender:</strong>
+- Les alltid gjennom før du trykker “send”
+- Er det noe her som ikke burde deles?
+- Ville du vært komfortabel med at hele verden kunne lese dette?</li>
+</ol>
+</div>
+</div>
+<div class="uio-icon-box task">
+<h3>Spørsmål</h3>
+<p><strong>Hvorfor er det ikke nok å anonymisere data før du deler det med en LLM?</strong></p>
+<details>
+<summary class="uio-answer-summary"><strong>Svar / Answer</strong></summary>
+<p>Fordi selv “anonymiserte” data kan brukes til å identifisere personer, spesielt når flere detaljer kombineres. I tillegg vet du ikke hvordan dataene blir lagret eller brukt av KI-leverandøren. Det er tryggere å bruke helt generiske eksempler uten ekte data.</p>
+</details>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="vanlige-feil-og-fallgruver">
+<h1>Vanlige feil og fallgruver</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-e741e233-1" style="font-size: 1.2em; font-weight: bold;">Feil 1: Blind tillit</a></li>
+<li><a href="#fragment-e741e233-2" style="font-size: 1.2em; font-weight: bold;">Feil 2: Dele sensitiv info</a></li>
+<li><a href="#fragment-e741e233-3" style="font-size: 1.2em; font-weight: bold;">Feil 3: Avhengighet</a></li>
+<li><a href="#fragment-e741e233-4" style="font-size: 1.2em; font-weight: bold;">Feil 4: Feil bruksområde</a></li>
+</ul>
+<div id="fragment-e741e233-1" style="font-size: 1.2em;">
+<p><strong>Feilen:</strong></p>
+<p>Å kopiere KI-output direkte uten å lese gjennom eller sjekke det.</p>
+<p><strong>Konsekvenser:</strong></p>
+<ul class="simple">
+<li>Feilinformasjon spres</li>
+<li>Profesjonelle konsekvenser hvis feil oppdages</li>
+<li>Tap av tillit</li>
+</ul>
+<p><strong>Løsning:</strong></p>
+<p>Alltid les, forstå og verifiser før du bruker output.</p>
+</div>
+<div id="fragment-e741e233-2" style="font-size: 1.2em;">
+<p><strong>Feilen:</strong></p>
+<p>Lime inn konfidensielle dokumenter eller persondata i KI-verktøy.</p>
+<p><strong>Konsekvenser:</strong></p>
+<ul class="simple">
+<li>Brudd på personvernlovgivningen (GDPR)</li>
+<li>Sikkerhetsrisiko for organisasjonen</li>
+<li>Kan få personlige og juridiske konsekvenser</li>
+</ul>
+<p><strong>Løsning:</strong></p>
+<p>Aldri del ekte sensitiv data. Bruk generiske eksempler i stedet.</p>
+</div>
+<div id="fragment-e741e233-3" style="font-size: 1.2em;">
+<p><strong>Feilen:</strong></p>
+<p>Slutte å tenke selv og overlate all skriving/analyse til KI-en.</p>
+<p><strong>Konsekvenser:</strong></p>
+<ul class="simple">
+<li>Tap av faglige ferdigheter</li>
+<li>Lavere kvalitet over tid</li>
+<li>Mindre kritisk tenkning</li>
+</ul>
+<p><strong>Løsning:</strong></p>
+<p>Bruk KI som verktøy, ikke erstatning. Du er eksperten - KI-en er assistenten.</p>
+</div>
+<div id="fragment-e741e233-4" style="font-size: 1.2em;">
+<p><strong>Feilen:</strong></p>
+<p>Bruke LLM-er til oppgaver de ikke egner seg for (f.eks. slå opp eksakte prosedyrer).</p>
+<p><strong>Konsekvenser:</strong></p>
+<ul class="simple">
+<li>Feil informasjon</li>
+<li>Bortkastet tid</li>
+<li>Frustrasjon</li>
+</ul>
+<p><strong>Løsning:</strong></p>
+<ul class="simple">
+<li>For fakta: Bruk søkemotorer, offisielle nettsider, databaser</li>
+<li>For kreativ hjelp: Bruk LLM-er</li>
+<li>For prosedyrer: Sjekk intern dokumentasjon først</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="beste-praksis-oppsummering">
+<h1>Beste praksis - oppsummering</h1>
+<div class="uio-icon-box do">
+<h3>Tips</h3>
+<p><strong>Gylne regler for bruk av generativ KI:</strong></p>
+<ol class="arabic simple">
+<li><strong>Verifiser alltid fakta</strong> - Ikke stol blindt på output</li>
+<li><strong>Beskytt personvern</strong> - Aldri del sensitiv informasjon</li>
+<li><strong>Du er ansvarlig</strong> - Det er ditt navn på dokumentet, ikke KI-ens</li>
+<li><strong>Bruk kritisk tenkning</strong> - Høres noe rart ut? Det er sannsynligvis feil</li>
+<li><strong>Bruk riktig verktøy</strong> - LLM for kreativitet, databaser for fakta</li>
+<li><strong>Les alt før du bruker det</strong> - Ingen copy-paste uten gjennomlesning</li>
+<li><strong>Vær transparent</strong> - Hvis du bruker KI-assistanse, vurder om det bør nevnes</li>
+<li><strong>Hold deg oppdatert</strong> - Sjekk UiOs retningslinjer regelmessig</li>
+</ol>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p><strong>Refleksjonsoppgave</strong></p>
+<p>Tenk på en konkret situasjon hvor du kunne brukt generativ KI i ditt arbeid denne uken:</p>
+<ul class="simple">
+<li>Hva ville du brukt den til?</li>
+<li>Hvilke kvalitetssikringstiltak ville du tatt?</li>
+<li>Er det noen personvernhensyn du må ta?</li>
+<li>Hvordan ville du verifisert at output var korrekt?</li>
+</ul>
+<p>Dette er refleksjonsøvelse uten fasit - målet er å tenke gjennom hvordan du kan bruke KI på en trygg og ansvarlig måte.</p>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p>I neste episode skal vi se på konkrete KI-tjenester som er tilgjengelige ved UiO, og hvordan du får tilgang til dem.</p>
+</div>
+</section>
+</div>
+</div>
+<div class="episode" id="episode4">
+<div itemprop="articleBody">
+<section id="episode-4-ki-tjenester-ved-uio">
+<h1>Episode 4: KI-tjenester ved UiO</h1>
+<p>I denne episoden får du en oversikt over hvilke KI-tjenester som er tilgjengelige ved Universitetet i Oslo, og hvordan du får tilgang til dem.</p>
+<section id="temaer-som-dekkes">
+<h2>Temaer som dekkes</h2>
+<ul class="simple">
+<li>Oversikt over godkjente KI-tjenester ved UiO</li>
+<li>Forskjellen på gratis og institusjonelle versjoner</li>
+<li>Hvordan få tilgang til UiOs KI-tjenester</li>
+<li>Retningslinjer og policies</li>
+<li>Hjelp og support</li>
+</ul>
+</section>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Finne oversikt over tilgjengelige KI-tjenester ved UiO</li>
+<li>Forstå forskjellen på gratis og institusjonelle KI-versjoner</li>
+<li>Vite hvordan du får tilgang til KI-verktøy ved UiO</li>
+<li>Kjenne til UiOs retningslinjer for bruk av KI</li>
+</ul>
+<p><strong>Estimert tid:</strong> 8 minutter</p>
+</section>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="uios-ki-tjenester">
+<h1>UiOs KI-tjenester</h1>
+<p>Universitetet i Oslo tilbyr tilgang til ulike KI-verktøy som ansatte kan bruke. Disse har bedre personverngarantier enn gratis versjoner.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Offisiell informasjon om KI-tjenester ved UiO:</strong></p>
+<p><a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a></p>
+<p>Denne siden oppdateres jevnlig med nye tjenester og informasjon. Anbefaler at du besøker den for mest oppdatert informasjon.</p>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hvorfor-bruke-uios-versjoner">
+<h1>Hvorfor bruke UiOs versjoner?</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-508c997d-1" style="font-size: 1.2em; font-weight: bold;">Personvern og datasikkerhet</a></li>
+<li><a href="#fragment-508c997d-2" style="font-size: 1.2em; font-weight: bold;">Tilleggsfunksjonalitet</a></li>
+<li><a href="#fragment-508c997d-3" style="font-size: 1.2em; font-weight: bold;">Støtte og opplæring</a></li>
+</ul>
+<div id="fragment-508c997d-1" style="font-size: 1.2em;">
+<p><strong>Institusjonelle avtaler gir bedre beskyttelse:</strong></p>
+<ul class="simple">
+<li><strong>Databehandleravtaler</strong> - UiO har avtaler med leverandørene om hvordan data behandles</li>
+<li><strong>Ingen bruk til trening</strong> - Dine samtaler brukes IKKE til å trene modellen</li>
+<li><strong>Bedre kontroll</strong> - UiO kan stille krav til leverandørene</li>
+<li><strong>GDPR-compliance</strong> - Avtalene sikrer at personvernregelverket følges</li>
+<li><strong>Europeiske servere</strong> - Data lagres ofte i EU/EØS-området</li>
+</ul>
+<p><strong>Gratis versjoner:</strong></p>
+<ul class="simple">
+<li>Ingen garantier for hvordan data brukes</li>
+<li>Kan brukes til modelltrening</li>
+<li>Ofte amerikanske servere</li>
+<li>Mindre kontroll</li>
+</ul>
+</div>
+<div id="fragment-508c997d-2" style="font-size: 1.2em;">
+<p><strong>Institusjonelle versjoner har ofte flere funksjoner:</strong></p>
+<ul class="simple">
+<li><strong>Større kontekstvindu</strong> - Kan håndtere lengre dokumenter</li>
+<li><strong>Nyere modeller</strong> - Tilgang til de siste og beste modellene</li>
+<li><strong>Fileopplasting</strong> - Kan laste opp dokumenter for analyse</li>
+<li><strong>Integrasjoner</strong> - Kan integreres med andre UiO-tjenester</li>
+<li><strong>Bedre ytelse</strong> - Raskere responstider</li>
+<li><strong>Færre begrensninger</strong> - Flere spørsmål per dag/time</li>
+</ul>
+</div>
+<div id="fragment-508c997d-3" style="font-size: 1.2em;">
+<p><strong>Ved bruk av UiOs versjoner:</strong></p>
+<ul class="simple">
+<li>IT-avdelingen kan hjelpe med tekniske problemer</li>
+<li>Opplæringsressurser tilpasset UiO</li>
+<li>Support på norsk</li>
+<li>Felles retningslinjer og beste praksis</li>
+<li>Erfaringsdeling med kolleger</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="tilgjengelige-tjenester">
+<h1>Tilgjengelige tjenester</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Viktig:</strong> Listen under kan være utdatert. Sjekk alltid <a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a> for oppdatert informasjon.</p>
+</div>
+<p>Typiske tjenester som kan være tilgjengelige (eksempler):</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-e4895160-1" style="font-size: 1.2em; font-weight: bold;">Tekstgenerering (LLM)</a></li>
+<li><a href="#fragment-e4895160-2" style="font-size: 1.2em; font-weight: bold;">Spesialiserte KI-verktøy</a></li>
+<li><a href="#fragment-e4895160-3" style="font-size: 1.2em; font-weight: bold;">Bildegenereering og andre</a></li>
+</ul>
+<div id="fragment-e4895160-1" style="font-size: 1.2em;">
+<p><strong>Microsoft Copilot (Business/Enterprise):</strong></p>
+<ul class="simple">
+<li>Integrert med Microsoft 365</li>
+<li>Kan brukes i Word, Outlook, Teams, PowerPoint</li>
+<li>Tilgang via UiO-konto</li>
+<li>Databehandleravtale på plass</li>
+</ul>
+<p><strong>ChatGPT Enterprise/Team:</strong></p>
+<ul class="simple">
+<li>Kan være tilgjengelig for visse bruksområder</li>
+<li>Bedre personvern enn gratis versjon</li>
+<li>Ingen bruk til trening av modellen</li>
+</ul>
+<p><strong>Andre verktøy:</strong></p>
+<ul class="simple">
+<li>Sjekk UiOs nettsider for fullstendig liste</li>
+</ul>
+</div>
+<div id="fragment-e4895160-2" style="font-size: 1.2em;">
+<p><strong>For forskning:</strong></p>
+<ul class="simple">
+<li>Verktøy for dataanalyse</li>
+<li>Forskningsassistenter</li>
+<li>Litteraturgjennomgang</li>
+</ul>
+<p><strong>For undervisning:</strong></p>
+<ul class="simple">
+<li>Verktøy for å lage undervisningsmateriell</li>
+<li>Vurderingsverktøy</li>
+<li>Automatisk tilbakemelding</li>
+</ul>
+<p><strong>For administrasjon:</strong></p>
+<ul class="simple">
+<li>Dokumentbehandling</li>
+<li>Automatisering av rutineoppgaver</li>
+<li>Møteassistenter</li>
+</ul>
+<p>Sjekk med IT-avdelingen eller din enhet hva som er tilgjengelig for deg.</p>
+</div>
+<div id="fragment-e4895160-3" style="font-size: 1.2em;">
+<p><strong>Andre KI-verktøy:</strong></p>
+<ul class="simple">
+<li>Bildegenerering</li>
+<li>Transkripsjon av møter</li>
+<li>Oversettelse</li>
+<li>Tilgjengelighetsverktøy</li>
+</ul>
+<p>Tilgjengeligheten varierer - sjekk UiOs oversikt.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hvordan-fa-tilgang">
+<h1>Hvordan få tilgang</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-ef2eb08f-1" style="font-size: 1.2em; font-weight: bold;">Steg 1: Sjekk hva som er tilgjengelig</a></li>
+<li><a href="#fragment-ef2eb08f-2" style="font-size: 1.2em; font-weight: bold;">Steg 2: Søk om tilgang</a></li>
+<li><a href="#fragment-ef2eb08f-3" style="font-size: 1.2em; font-weight: bold;">Steg 3: Logg inn og kom i gang</a></li>
+<li><a href="#fragment-ef2eb08f-4" style="font-size: 1.2em; font-weight: bold;">Steg 4: Få hjelp</a></li>
+</ul>
+<div id="fragment-ef2eb08f-1" style="font-size: 1.2em;">
+<p><strong>Gå til UiOs IT-tjenester:</strong></p>
+<ol class="arabic simple">
+<li>Besøk <a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a></li>
+<li>Les om hvilke tjenester som er tilgjengelige</li>
+<li>Sjekk om det er noen begrensninger (f.eks. kun for visse enheter)</li>
+</ol>
+<p><strong>Eller:</strong></p>
+<ul class="simple">
+<li>Kontakt din IT-kontaktperson</li>
+<li>Spør kolleger hva de bruker</li>
+<li>Sjekk interne informasjonskanaler</li>
+</ul>
+</div>
+<div id="fragment-ef2eb08f-2" style="font-size: 1.2em;">
+<p><strong>Vanlige framgangsmåter:</strong></p>
+<ul class="simple">
+<li><strong>Automatisk tilgang</strong> - Noen tjenester er tilgjengelige for alle ansatte via UiO-konto</li>
+<li><strong>Selvbetjening</strong> - Bestill tilgang via UiOs selvbetjeningsportal</li>
+<li><strong>Godkjenning</strong> - Noen verktøy krever godkjenning fra leder/fakultet</li>
+<li><strong>Kursing først</strong> - Enkelte verktøy kan kreve at du tar et kurs først</li>
+</ul>
+<p><strong>Sjekk:</strong></p>
+<ul class="simple">
+<li>Dokumentasjon på uio.no</li>
+<li>Hjelp.uio.no</li>
+<li>Kontakt IT-avdelingen</li>
+</ul>
+</div>
+<div id="fragment-ef2eb08f-3" style="font-size: 1.2em;">
+<p><strong>Første gangs bruk:</strong></p>
+<ul class="simple">
+<li>Logg inn med din UiO-konto (<a class="reference external" href="mailto:brukernavn%40uio.no">brukernavn<span>@</span>uio<span>.</span>no</a>)</li>
+<li>Les eventuelle retningslinjer eller bruksvilkår</li>
+<li>Utforsk grensesnittet</li>
+<li>Start med enkle oppgaver</li>
+</ul>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li>Delta på innføringskurs hvis tilgjengelig</li>
+<li>Les dokumentasjon og brukerveiledninger</li>
+<li>Start smått - eksperimenter med ukritiske oppgaver først</li>
+</ul>
+</div>
+<div id="fragment-ef2eb08f-4" style="font-size: 1.2em;">
+<p><strong>Hvis du står fast:</strong></p>
+<ul class="simple">
+<li><strong>IT-support:</strong> Kontakt UiOs IT-avdeling via hjelp.uio.no</li>
+<li><strong>Dokumentasjon:</strong> Les veiledninger på UiOs nettsider</li>
+<li><strong>Kolleger:</strong> Spør andre som bruker samme verktøy</li>
+<li><strong>Kurs:</strong> Meld deg på kurs i KI-verktøy</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="retningslinjer-og-policies">
+<h1>Retningslinjer og policies</h1>
+<p>Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer.</p>
+<div class="uio-icon-box dont">
+<h3>OBS!</h3>
+<p><strong>Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.</strong></p>
+</div>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-fc1958c5-1" style="font-size: 1.2em; font-weight: bold;">Generelle retningslinjer</a></li>
+<li><a href="#fragment-fc1958c5-2" style="font-size: 1.2em; font-weight: bold;">Hva er tillatt?</a></li>
+<li><a href="#fragment-fc1958c5-3" style="font-size: 1.2em; font-weight: bold;">Hva er IKKE tillatt?</a></li>
+<li><a href="#fragment-fc1958c5-4" style="font-size: 1.2em; font-weight: bold;">Spesielle hensyn</a></li>
+</ul>
+<div id="fragment-fc1958c5-1" style="font-size: 1.2em;">
+<p><strong>Kjerneprinsippers:</strong></p>
+<ul class="simple">
+<li><strong>Personvern først</strong> - Beskytt personopplysninger og sensitiv data</li>
+<li><strong>Kvalitetssikring</strong> - Verifiser alltid output før bruk</li>
+<li><strong>Åpenhet</strong> - Vær transparent om bruk av KI når relevant</li>
+<li><strong>Etisk bruk</strong> - Bruk KI på en ansvarlig og etisk måte</li>
+<li><strong>Følg lover og regler</strong> - GDPR, opphavsrett, UiOs retningslinjer</li>
+</ul>
+<p><strong>Husk:</strong></p>
+<p>Retningslinjer kan endre seg. Sjekk jevnlig for oppdateringer.</p>
+</div>
+<div id="fragment-fc1958c5-2" style="font-size: 1.2em;">
+<p><strong>Typisk tillatt bruk:</strong></p>
+<ul class="simple">
+<li>Skrive utkast til tekster</li>
+<li>Forbedre og redigere egne tekster</li>
+<li>Oversette dokumenter (ikke-sensitive)</li>
+<li>Brainstorming og idéutvikling</li>
+<li>Lære nye konsepter</li>
+<li>Oppsummere ikke-sensitiv informasjon</li>
+<li>Strukturere data og informasjon</li>
+<li>Få forklaringer på faglige emner</li>
+</ul>
+<p><strong>Avhenger av:</strong></p>
+<ul class="simple">
+<li>Type informasjon (sensitiv eller ikke)</li>
+<li>Formål (forskning, undervisning, administrasjon)</li>
+<li>Spesifikke retningslinjer for din enhet</li>
+</ul>
+</div>
+<div id="fragment-fc1958c5-3" style="font-size: 1.2em;">
+<p><strong>Typisk ikke tillatt:</strong></p>
+<ul class="simple">
+<li>Dele personopplysninger med KI-verktøy uten hjemmel</li>
+<li>Dele graderte eller konfidensielle dokumenter</li>
+<li>Bruke output uten kvalitetssikring i kritiske situasjoner</li>
+<li>Presentere KI-generert innhold som ditt eget uten kvalitetssikring</li>
+<li>Omgå sikkerhetsmekanismer</li>
+<li>Bruke KI til uetiske formål</li>
+</ul>
+<p><strong>Usikker?</strong></p>
+<p>Spør leder, personvernombud, eller IT-sikkerhet før du gjør noe du er usikker på.</p>
+</div>
+<div id="fragment-fc1958c5-4" style="font-size: 1.2em;">
+<p><strong>For undervisning:</strong></p>
+<ul class="simple">
+<li>Sjekk retningslinjer for bruk av KI i vurdering</li>
+<li>Vær åpen med studenter om hvordan KI brukes</li>
+<li>Vurder om KI-bruk må dokumenteres</li>
+</ul>
+<p><strong>For forskning:</strong></p>
+<ul class="simple">
+<li>Sjekk med REK (Regional etisk komité) hvis relevant</li>
+<li>Vurder om bruk av KI må rapporteres i publikasjoner</li>
+<li>Tenk på hvordan KI-bruk påvirker reproduserbarhet</li>
+</ul>
+<p><strong>For administrasjon:</strong></p>
+<ul class="simple">
+<li>Sjekk om det finnes spesifikke retningslinjer for ditt arbeidsområde</li>
+<li>Vurder personvern ved behandling av personalsaker</li>
+<li>Dokumenter viktige beslutninger tatt med KI-assistanse</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hvor-finner-du-hjelp">
+<h1>Hvor finner du hjelp?</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-d1137e82-1" style="font-size: 1.2em; font-weight: bold;">Dokumentasjon og veiledninger</a></li>
+<li><a href="#fragment-d1137e82-2" style="font-size: 1.2em; font-weight: bold;">Kurs og opplæring</a></li>
+<li><a href="#fragment-d1137e82-3" style="font-size: 1.2em; font-weight: bold;">Support og hjelp</a></li>
+</ul>
+<div id="fragment-d1137e82-1" style="font-size: 1.2em;">
+<p><strong>UiOs ressurser:</strong></p>
+<ul class="simple">
+<li><strong>Hovedside:</strong> <a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a></li>
+<li><strong>IT-hjelp:</strong> <a class="reference external" href="https://hjelp.uio.no">https://hjelp.uio.no</a></li>
+<li><strong>Personvern:</strong> UiOs personvernombud</li>
+<li><strong>IT-sikkerhet:</strong> USIT/IT-avdelingen</li>
+</ul>
+<p><strong>Eksterne ressurser:</strong></p>
+<ul class="simple">
+<li>Dokumentasjon fra KI-leverandørene</li>
+<li>Nettkurs og tutorials</li>
+<li>Faglige forum og communities</li>
+</ul>
+</div>
+<div id="fragment-d1137e82-2" style="font-size: 1.2em;">
+<p><strong>UiO tilbyr:</strong></p>
+<ul class="simple">
+<li>Innføringskurs i KI-verktøy</li>
+<li>Spesifikke kurs for ulike verktøy</li>
+<li>Webinarer og workshops</li>
+<li>E-læringskurs</li>
+</ul>
+<p><strong>Sjekk:</strong></p>
+<ul class="simple">
+<li>Kurskatalog på uio.no</li>
+<li>Interne opplæringssider</li>
+<li>Invitasjoner fra HR eller din enhet</li>
+</ul>
+</div>
+<div id="fragment-d1137e82-3" style="font-size: 1.2em;">
+<p><strong>Teknisk support:</strong></p>
+<ul class="simple">
+<li>IT-helpdesk: hjelp.uio.no</li>
+<li>E-post: <a class="reference external" href="mailto:orakel%40usit.uio.no">orakel<span>@</span>usit<span>.</span>uio<span>.</span>no</a> (generell IT-support)</li>
+<li>Telefon: Finn nummer på hjelp.uio.no</li>
+</ul>
+<p><strong>Faglig support:</strong></p>
+<ul class="simple">
+<li>Kolleger som bruker samme verktøy</li>
+<li>Fagnettverk ved UiO</li>
+<li>Interne chat-kanaler eller forum</li>
+</ul>
+<p><strong>Sikkerhet og personvern:</strong></p>
+<ul class="simple">
+<li>Personvernombud</li>
+<li>IT-sikkerhet ved USIT</li>
+<li>Din leder</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="praktiske-tips-for-a-komme-i-gang">
+<h1>Praktiske tips for å komme i gang</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Slik kommer du trygt i gang:</strong></p>
+<ol class="arabic simple">
+<li><strong>Start med godkjente verktøy</strong>
+- Bruk KI-tjenester som UiO har godkjent
+- Les retningslinjene først</li>
+<li><strong>Begynn med enkle oppgaver</strong>
+- Test med ikke-sensitiv informasjon
+- Eksperimenter med språkforbedring, brainstorming
+- Bygg erfaring gradvis</li>
+<li><strong>Lær av andre</strong>
+- Snakk med kolleger som bruker KI
+- Delta på kurs og workshops
+- Del erfaringer og tips</li>
+<li><strong>Vær kritisk</strong>
+- Verifiser alltid viktig informasjon
+- Tenk personvern i hver samtale
+- Bruk sunn fornuft</li>
+<li><strong>Hold deg oppdatert</strong>
+- Sjekk UiOs nettsider jevnlig
+- Les nyhetsbrev om KI ved UiO
+- Delta i faglige oppdateringer</li>
+</ol>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave</h3>
+<p><strong>Oppgave: Utforsk UiOs KI-tjenester</strong></p>
+<p>Gå til <a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a> og finn svar på:</p>
+<ol class="arabic simple">
+<li>Hvilke KI-tjenester har du tilgang til?</li>
+<li>Hvordan søker du om tilgang hvis du ikke har det?</li>
+<li>Finnes det retningslinjer spesifikke for din rolle (forsker/administrativ/underviser)?</li>
+<li>Hvor kan du få hjelp hvis du står fast?</li>
+</ol>
+<p>Ta gjerne notater som du kan bruke som referanse senere.</p>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p>I neste episode skal vi se på hvordan du kan skrive gode “prompts” (instruksjoner) til KI-verktøy, og lære grunnleggende prompt engineering.</p>
+</div>
+</section>
+</div>
+</div>
+<div class="episode" id="episode5">
+<div itemprop="articleBody">
+<section id="episode-5-prompting-og-prompt-engineering">
+<h1>Episode 5: Prompting og prompt engineering</h1>
+<p>I denne episoden lærer du hvordan du skriver gode instruksjoner (prompts) til KI-verktøy for å få best mulige resultater.</p>
+<section id="temaer-som-dekkes">
+<h2>Temaer som dekkes</h2>
+<ul class="simple">
+<li>Hva er en prompt?</li>
+<li>Grunnleggende prinsipper for god prompting</li>
+<li>Teknikker for å forbedre resultater</li>
+<li>Vanlige feil og hvordan unngå dem</li>
+<li>Praktiske eksempler</li>
+</ul>
+</section>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Skrive klare og effektive prompts</li>
+<li>Bruke ulike prompt-teknikker for forskjellige oppgaver</li>
+<li>Iterere og forbedre prompts basert på resultatene</li>
+<li>Gjenkjenne vanlige feil i prompting</li>
+</ul>
+<p><strong>Estimert tid:</strong> 12 minutter</p>
+</section>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="hva-er-en-prompt">
+<h1>Hva er en prompt?</h1>
+<p>En <strong>prompt</strong> er instruksjonen eller spørsmålet du gir til en KI-modell. Det er din måte å kommunisere med KI-en på.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-a0b01093-1" style="font-size: 1.2em; font-weight: bold;">Enkel prompt</a></li>
+<li><a href="#fragment-a0b01093-2" style="font-size: 1.2em; font-weight: bold;">Detaljert prompt</a></li>
+<li><a href="#fragment-a0b01093-3" style="font-size: 1.2em; font-weight: bold;">Kontekst-rik prompt</a></li>
+</ul>
+<div id="fragment-a0b01093-1" style="font-size: 1.2em;">
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Hva er klimaendringer?
+</pre></div>
+</div>
+<p><strong>Resultat:</strong></p>
+<p>Du får et generelt svar om klimaendringer.</p>
+</div>
+<div id="fragment-a0b01093-2" style="font-size: 1.2em;">
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Forklar klimaendringer på en enkel måte for en 10-åring.
+Bruk 3-4 setninger og unngå faguttrykk.
+</pre></div>
+</div>
+<p><strong>Resultat:</strong></p>
+<p>Du får et svar tilpasset målgruppen og lengden du ba om.</p>
+</div>
+<div id="fragment-a0b01093-3" style="font-size: 1.2em;">
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Jeg skal skrive en e-post til alle ansatte om nytt møterom-
+bookingsystem. Målgruppen er administrativt ansatte ved UiO
+som ikke er teknisk kyndige. Tonen skal være vennlig og
+informativ, ikke formell. Kan du hjelpe meg med et utkast?
+</pre></div>
+</div>
+<p><strong>Resultat:</strong></p>
+<p>Du får et svar som er tilpasset din spesifikke situasjon.</p>
+</div>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Hovedregel:</strong> Jo mer spesifikk og detaljert prompten din er, jo bedre blir resultatet.</p>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="prinsipper-for-god-prompting">
+<h1>Prinsipper for god prompting</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-e6365a9a-1" style="font-size: 1.2em; font-weight: bold;">1. Vær spesifikk</a></li>
+<li><a href="#fragment-e6365a9a-2" style="font-size: 1.2em; font-weight: bold;">2. Gi kontekst</a></li>
+<li><a href="#fragment-e6365a9a-3" style="font-size: 1.2em; font-weight: bold;">3. Spesifiser format</a></li>
+<li><a href="#fragment-e6365a9a-4" style="font-size: 1.2em; font-weight: bold;">4. Definer rollen</a></li>
+</ul>
+<div id="fragment-e6365a9a-1" style="font-size: 1.2em;">
+<p><strong>Dårlig prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Skriv en e-post.
+</pre></div>
+</div>
+<p><strong>Bedre prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Skriv en e-post til mine kolleger hvor jeg informerer om
+at møterommet Gaia er stengt for vedlikehold uke 15.
+Tonen skal være vennlig men profesjonell.
+</pre></div>
+</div>
+<p><strong>Hvorfor bedre?</strong></p>
+<p>Den spesifiserer hva e-posten skal handle om, hvem den er til, og hvilken tone den skal ha.</p>
+</div>
+<div id="fragment-e6365a9a-2" style="font-size: 1.2em;">
+<p><strong>Dårlig prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Lag et møtereferat.
+</pre></div>
+</div>
+<p><strong>Bedre prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Basert på disse notatene fra møtet, lag et møtereferat:
+[dine notater her]
+
+Strukturer referatet med:
+- Deltakere
+- Agenda
+- Beslutninger
+- Oppgaver (hvem skal gjøre hva)
+</pre></div>
+</div>
+<p><strong>Hvorfor bedre?</strong></p>
+<p>Du gir både innholdet (notatene) og strukturen du ønsker.</p>
+</div>
+<div id="fragment-e6365a9a-3" style="font-size: 1.2em;">
+<p><strong>Dårlig prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Gi meg informasjon om UiOs fakulteter.
+</pre></div>
+</div>
+<p><strong>Bedre prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Lag en tabell med UiOs 8 fakulteter.
+Kolonner: Navn, Forkortelse, Antall studenter (omtrent)
+Sorter alfabetisk etter navn.
+</pre></div>
+</div>
+<p><strong>Hvorfor bedre?</strong></p>
+<p>Du får et strukturert svar som er lett å bruke videre.</p>
+</div>
+<div id="fragment-e6365a9a-4" style="font-size: 1.2em;">
+<p><strong>Dårlig prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Hvordan kan jeg forbedre min skriving?
+</pre></div>
+</div>
+<p><strong>Bedre prompt:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en erfaren kommunikasjonsrådgiver. Jeg jobber
+administrativt ved et universitet og skal ofte skrive
+formelle brev og e-poster. Gi meg 5 konkrete tips til
+hvordan jeg kan forbedre min administrative skriving.
+</pre></div>
+</div>
+<p><strong>Hvorfor bedre?</strong></p>
+<p>Ved å gi KI-en en rolle, får du svar som er mer relevant for din situasjon.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="nyttige-prompt-teknikker">
+<h1>Nyttige prompt-teknikker</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-9d0ad96b-1" style="font-size: 1.2em; font-weight: bold;">Chain of thought (Tankekjede)</a></li>
+<li><a href="#fragment-9d0ad96b-2" style="font-size: 1.2em; font-weight: bold;">Few-shot prompting (Gi eksempler)</a></li>
+<li><a href="#fragment-9d0ad96b-3" style="font-size: 1.2em; font-weight: bold;">Rollespill</a></li>
+<li><a href="#fragment-9d0ad96b-4" style="font-size: 1.2em; font-weight: bold;">Strukturert output</a></li>
+<li><a href="#fragment-9d0ad96b-5" style="font-size: 1.2em; font-weight: bold;">Iterativ prompting</a></li>
+</ul>
+<div id="fragment-9d0ad96b-1" style="font-size: 1.2em;">
+<p><strong>Teknikk:</strong></p>
+<p>Be KI-en “tenke høyt” eller “forklare steg for steg”.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Forklar trinn for trinn hvordan jeg kan
+organisere et sommerarrangement for 50 personer.
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får mer gjennomtenkte svar</li>
+<li>Enklere å følge resonnementet</li>
+<li>Bedre for komplekse oppgaver</li>
+</ul>
+</div>
+<div id="fragment-9d0ad96b-2" style="font-size: 1.2em;">
+<p><strong>Teknikk:</strong></p>
+<p>Gi eksempler på hva du vil ha.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Jeg skal skrive titler til nyhetssaker. Her er eksempler
+på stilen jeg ønsker:
+
+- "Nytt tilbud: Gratis språkkurs for ansatte"
+- "Viktig: Endringer i møterom-booking fra 1. april"
+- "Påminnelse: Personalseminar 15. mai"
+
+Skriv en tittel for denne saken:
+"Vi får nytt IT-system for reiseregninger neste måned"
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får svar i ønsket stil</li>
+<li>Lettere enn å forklare stilen med ord</li>
+</ul>
+</div>
+<div id="fragment-9d0ad96b-3" style="font-size: 1.2em;">
+<p><strong>Teknikk:</strong></p>
+<p>Be KI-en ta rollen som en bestemt type ekspert.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en erfaren prosjektleder ved et norsk universitet.
+Jeg skal lede mitt første prosjekt og er nervøs.
+Gi meg dine beste råd for å lykkes.
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får perspektiv fra en bestemt rolle</li>
+<li>Mer fokuserte svar</li>
+</ul>
+</div>
+<div id="fragment-9d0ad96b-4" style="font-size: 1.2em;">
+<p><strong>Teknikk:</strong></p>
+<p>Be om svaret i et bestemt format.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Oppsummer dette møtereferatet i følgende format:
+
+BESLUTNINGER:
+-
+-
+
+OPPGAVER:
+- [Person]: [oppgave] - [frist]
+
+NESTE MØTE:
+[dato og tid]
+
+[ditt møtereferat her]
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får svar klart til bruk</li>
+<li>Konsistent format</li>
+</ul>
+</div>
+<div id="fragment-9d0ad96b-5" style="font-size: 1.2em;">
+<p><strong>Teknikk:</strong></p>
+<p>Bygg videre på svarene i en samtale.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Første prompt:
+"Skriv et utkast til e-post om nytt bookingsystem"
+
+Oppfølging 1:
+"Gjør den mer konsis, maks 3 avsnitt"
+
+Oppfølging 2:
+"Legg til en setning om hvor de kan få hjelp"
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Gradvis forbedring</li>
+<li>Lettere enn å skrive perfekt prompt med én gang</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="praktiske-eksempler-for-administrativt-arbeid">
+<h1>Praktiske eksempler for administrativt arbeid</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-d612e6fb-1" style="font-size: 1.2em; font-weight: bold;">E-post og kommunikasjon</a></li>
+<li><a href="#fragment-d612e6fb-2" style="font-size: 1.2em; font-weight: bold;">Oppsummering</a></li>
+<li><a href="#fragment-d612e6fb-3" style="font-size: 1.2em; font-weight: bold;">Planlegging</a></li>
+<li><a href="#fragment-d612e6fb-4" style="font-size: 1.2em; font-weight: bold;">Språk og oversettelse</a></li>
+</ul>
+<div id="fragment-d612e6fb-1" style="font-size: 1.2em;">
+<p><strong>Eksempel 1: Omformulere til vennligere tone</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Denne e-posten føles litt for stram:
+
+"Møtet er flyttet. Nytt tidspunkt er 14:00.
+Møt presis."
+
+Omformuler til en vennligere og mer profesjonell tone.
+</pre></div>
+</div>
+<p><strong>Eksempel 2: Forenkle fagspråk</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Denne teksten bruker for mye fagsjargong:
+
+[din tekst]
+
+Omskriv den slik at ikke-eksperter forstår den,
+men behold den viktige informasjonen.
+</pre></div>
+</div>
+</div>
+<div id="fragment-d612e6fb-2" style="font-size: 1.2em;">
+<p><strong>Eksempel 1: Oppsummere møtenotater</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Oppsummer disse møtenotatene i punktform.
+Trekk ut:
+1. Viktigste beslutninger
+2. Hvem skal gjøre hva
+3. Frister som ble nevnt
+
+Notater:
+[dine notater her]
+</pre></div>
+</div>
+<p><strong>Eksempel 2: Lage sammendraget av langt dokument</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Les dette dokumentet og gi meg:
+- En setning med hovedbudskapet
+- 3-5 kulepunkter med viktigste punkter
+- Anbefalinger/konklusjon
+
+[dokument her]
+</pre></div>
+</div>
+</div>
+<div id="fragment-d612e6fb-3" style="font-size: 1.2em;">
+<p><strong>Eksempel 1: Lage agenda</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Lag en agenda for et 1-times planleggingsmøte
+for sommerarrangement. Vi må diskutere:
+- Dato og sted
+- Budsjett
+- Mat og drikke
+- Program/aktiviteter
+- Påmelding
+
+Sett av fornuftig tid til hvert punkt.
+</pre></div>
+</div>
+<p><strong>Eksempel 2: Sjekkliste</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Lag en sjekkliste for hva jeg må huske når
+jeg arrangerer et seminar for 30 personer
+på et eksternt sted. Inkluder alt fra booking
+til oppfølging etter arrangementet.
+</pre></div>
+</div>
+</div>
+<div id="fragment-d612e6fb-4" style="font-size: 1.2em;">
+<p><strong>Eksempel 1: Oversette og tilpasse</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Oversett denne teksten til engelsk.
+Målgruppen er internasjonale studenter,
+så bruk enkelt språk:
+
+[norsk tekst]
+</pre></div>
+</div>
+<p><strong>Eksempel 2: Finne riktig terminologi</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Hva er den korrekte norske oversettelsen av
+disse engelske universitetsbegrepene?
+
+- Dean
+- Faculty board
+- Course coordinator
+
+Gi meg både norsk og en kort forklaring.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="vanlige-feil-og-hvordan-unnga-dem">
+<h1>Vanlige feil og hvordan unngå dem</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-a7793723-1" style="font-size: 1.2em; font-weight: bold;">Feil 1: For vage prompts</a></li>
+<li><a href="#fragment-a7793723-2" style="font-size: 1.2em; font-weight: bold;">Feil 2: For mange krav på én gang</a></li>
+<li><a href="#fragment-a7793723-3" style="font-size: 1.2em; font-weight: bold;">Feil 3: Ikke gi nok kontekst</a></li>
+<li><a href="#fragment-a7793723-4" style="font-size: 1.2em; font-weight: bold;">Feil 4: Forvente perfeksjon med én gang</a></li>
+</ul>
+<div id="fragment-a7793723-1" style="font-size: 1.2em;">
+<p><strong>Problem:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>"Skriv noe om møter"
+</pre></div>
+</div>
+<p><strong>Resultat:</strong> Generelt, ubrukelig svar.</p>
+<p><strong>Løsning:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>"Skriv 5 tips for hvordan jeg kan gjøre våre
+ukentlige teammøter mer effektive. Vi er en gruppe
+på 8 personer som møtes i 1 time."
+</pre></div>
+</div>
+</div>
+<div id="fragment-a7793723-2" style="font-size: 1.2em;">
+<p><strong>Problem:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>"Skriv en e-post om det nye systemet, lag også
+en FAQ, en guide, og en presentasjon, og oversett
+alt til engelsk"
+</pre></div>
+</div>
+<p><strong>Resultat:</strong> Overfladisk behandling av alt.</p>
+<p><strong>Løsning:</strong></p>
+<p>Del opp i separate prompts - én oppgave om gangen.</p>
+</div>
+<div id="fragment-a7793723-3" style="font-size: 1.2em;">
+<p><strong>Problem:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>"Hva synes du om dette?"
+[uten å forklare hva "dette" er]
+</pre></div>
+</div>
+<p><strong>Resultat:</strong> KI-en gjetter hva du mener.</p>
+<p><strong>Løsning:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>"Jeg har skrevet et utkast til invitasjon for
+et personalseminar. Kan du vurdere om tonen
+er passende og om all viktig info er med?
+
+[ditt utkast]"
+</pre></div>
+</div>
+</div>
+<div id="fragment-a7793723-4" style="font-size: 1.2em;">
+<p><strong>Problem:</strong></p>
+<p>Bli frustrert hvis første svar ikke er perfekt.</p>
+<p><strong>Løsning:</strong></p>
+<p>Bruk iterativ prompting:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1. Start med grunnleggende prompt
+2. "Kan du gjøre den kortere?"
+3. "Legg til et avsnitt om hvor de får hjelp"
+4. "Endre tonen til å være mer formell"
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="tips-for-a-bli-bedre-til-prompting">
+<h1>Tips for å bli bedre til prompting</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Slik lærer du god prompting:</strong></p>
+<ol class="arabic simple">
+<li><strong>Eksperimenter</strong>
+- Prøv ulike måter å formulere spørsmål på
+- Se hva som gir best resultat
+- Lek deg med ulike teknikker</li>
+<li><strong>Lagre gode prompts</strong>
+- Når du finner en prompt som fungerer godt, lagre den
+- Bygg opp en samling du kan gjenbruke
+- Del med kolleger</li>
+<li><strong>Iterer</strong>
+- Første svar er sjelden perfekt
+- Følg opp og rafiner
+- Det er helt greit å justere underveis</li>
+<li><strong>Lær av andre</strong>
+- Se på eksempler på prompts online
+- Spør kolleger hva som fungerer for dem
+- Del egne erfaringer</li>
+<li><strong>Vær spesifikk om hva som er galt</strong>
+- I stedet for “Dette var ikke bra”, si
+- “Dette var for langt, gjør det kortere” eller
+- “Tonen var for formell, jeg trenger mer avslappet språk”</li>
+</ol>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave</h3>
+<p><strong>Praktisk øvelse: Forbedre prompts</strong></p>
+<p>Her er noen dårlige prompts. Hvordan ville du forbedret dem?</p>
+<ol class="arabic simple">
+<li>“Skriv noe fint”</li>
+<li>“Hjelp meg”</li>
+<li>“Hva med den tingen?”</li>
+<li>“Lag en liste”</li>
+</ol>
+<details>
+<summary class="uio-solution-summary"><strong>Løsning / Solution</strong></summary>
+<p><strong>Mulige forbedringer:</strong></p>
+<ol class="arabic simple">
+<li><strong>Original:</strong> “Skriv noe fint”
+<strong>Forbedret:</strong> “Skriv en gratulasjon til en kollega som har jobbet her i 25 år. Tonen skal være varm og personlig, ca 100 ord.”</li>
+<li><strong>Original:</strong> “Hjelp meg”
+<strong>Forbedret:</strong> “Jeg skal lede mitt første møte neste uke med 6 kolleger. Kan du gi meg konkrete tips for hvordan jeg forbereder meg og leder møtet profesjonelt?”</li>
+<li><strong>Original:</strong> “Hva med den tingen?”
+<strong>Forbedret:</strong> “Jeg har skrevet denne e-posten om endringer i lunsjordningen. Kan du sjekke om budskapet er klart og om jeg har glemt noe viktig? [e-post her]”</li>
+<li><strong>Original:</strong> “Lag en liste”
+<strong>Forbedret:</strong> “Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.”</li>
+</ol>
+</details>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="eksempel-fra-darlig-til-god-prompt">
+<h1>Eksempel: Fra dårlig til god prompt</h1>
+<p>La oss se et komplett eksempel på hvordan en prompt kan forbedres:</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-15617b99-1" style="font-size: 1.2em; font-weight: bold;">Versjon 1 - Dårlig</a></li>
+<li><a href="#fragment-15617b99-2" style="font-size: 1.2em; font-weight: bold;">Versjon 2 - Bedre</a></li>
+<li><a href="#fragment-15617b99-3" style="font-size: 1.2em; font-weight: bold;">Versjon 3 - Mye bedre</a></li>
+<li><a href="#fragment-15617b99-4" style="font-size: 1.2em; font-weight: bold;">Versjon 4 - God!</a></li>
+</ul>
+<div id="fragment-15617b99-1" style="font-size: 1.2em;">
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Skriv om møter
+</pre></div>
+</div>
+<p><strong>Problem:</strong> Altfor vagt. Hva slags tekst? Om hva med møter?</p>
+</div>
+<div id="fragment-15617b99-2" style="font-size: 1.2em;">
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Skriv tips om møter
+</pre></div>
+</div>
+<p><strong>Problem:</strong> Fortsatt vagt. Tips til hvem? Hva slags møter? Hvor mange tips?</p>
+</div>
+<div id="fragment-15617b99-3" style="font-size: 1.2em;">
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Skriv 5 tips for effektive møter
+</pre></div>
+</div>
+<p><strong>Problem:</strong> Bedre, men mangler kontekst. Hvilke typer møter? Hvem er målgruppen?</p>
+</div>
+<div id="fragment-15617b99-4" style="font-size: 1.2em;">
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Jeg leder ukentlige teammøter med 6 kolleger i
+administrativ stilling. Møtene er ofte kaotiske
+og ineffektive. Gi meg 5 konkrete, praktiske tips
+for hvordan jeg kan gjøre møtene bedre.
+
+Fokuser på:
+- Forberedelse
+- Struktur under møtet
+- Oppfølging
+</pre></div>
+</div>
+<p><strong>Hvorfor god:</strong> Spesifikk kontekst, tydelig mål, definert struktur.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="oppsummering">
+<h1>Oppsummering</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Nøkkelpunkter for god prompting:</strong></p>
+<ol class="arabic simple">
+<li><strong>Vær spesifikk</strong> - Jo mer detaljer, jo bedre svar</li>
+<li><strong>Gi kontekst</strong> - Forklar situasjonen og formålet</li>
+<li><strong>Spesifiser format</strong> - Si hvordan du vil ha svaret strukturert</li>
+<li><strong>Bruk eksempler</strong> - Vis hva du mener hvis mulig</li>
+<li><strong>Iterer</strong> - Første forsøk er sjelden perfekt</li>
+<li><strong>Eksperimenter</strong> - Test ulike tilnærminger</li>
+<li><strong>Vær tålmodig</strong> - God prompting er en ferdighet som utvikles over tid</li>
+</ol>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave</h3>
+<p><strong>Oppgave: Skriv din egen prompt</strong></p>
+<p>Tenk på en faktisk oppgave du har i ditt arbeid denne uken. Skriv en god prompt for å få hjelp med denne oppgaven.</p>
+<p>Sjekk at du har inkludert:
+- [ ] Spesifikk beskrivelse av hva du vil ha
+- [ ] Kontekst (hvem er målgruppen, hva er formålet)
+- [ ] Ønsket format eller struktur
+- [ ] Tone eller stil
+- [ ] Eventuelle begrensninger (lengde, kompleksitetsnivå, osv.)</p>
+<p>Prøv prompten i et KI-verktøy og iterer til du er fornøyd!</p>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Gratulerer!</strong> Du har nå fullført hoveddelen av KI-introduksjonskurset. I siste episode oppsummerer vi det viktigste og gir tips til videre læring.</p>
+</div>
+</section>
+</div>
+</div>
+<div class="episode" id="episode6">
+<div itemprop="articleBody">
+<section id="episode-6-oppsummering-og-veien-videre">
+<h1>Episode 6: Oppsummering og veien videre</h1>
+<p>I denne siste episoden oppsummerer vi det viktigste fra kurset, diskuterer etiske betraktninger, og gir deg tips for videre læring.</p>
+<section id="temaer-som-dekkes">
+<h2>Temaer som dekkes</h2>
+<ul class="simple">
+<li>Oppsummering av kursets hovedpunkter</li>
+<li>Etiske betraktninger og AI-kompetanse</li>
+<li>Vanlige spørsmål og misforståelser</li>
+<li>Ressurser for videre læring</li>
+<li>Neste steg i din KI-reise</li>
+</ul>
+</section>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Oppsummere kjernekonspetene fra kurset</li>
+<li>Forstå etiske aspekter ved bruk av KI</li>
+<li>Vite hvor du kan lære mer</li>
+<li>Ha en plan for hvordan du skal bruke KI i ditt arbeid</li>
+</ul>
+<p><strong>Estimert tid:</strong> 5 minutter</p>
+</section>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="oppsummering-av-kurset">
+<h1>Oppsummering av kurset</h1>
+<p>La oss oppsummere det viktigste du har lært:</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-cd775bba-1" style="font-size: 1.2em; font-weight: bold;">Hva er generativ KI?</a></li>
+<li><a href="#fragment-cd775bba-2" style="font-size: 1.2em; font-weight: bold;">Hvordan fungerer det?</a></li>
+<li><a href="#fragment-cd775bba-3" style="font-size: 1.2em; font-weight: bold;">Når kan du stole på det?</a></li>
+<li><a href="#fragment-cd775bba-4" style="font-size: 1.2em; font-weight: bold;">UiOs tjenester</a></li>
+<li><a href="#fragment-cd775bba-5" style="font-size: 1.2em; font-weight: bold;">God prompting</a></li>
+</ul>
+<div id="fragment-cd775bba-1" style="font-size: 1.2em;">
+<p><strong>Viktige punkter:</strong></p>
+<ul class="simple">
+<li>Generativ KI skaper nytt innhold (tekst, bilder, lyd)</li>
+<li>Store språkmodeller (LLM) er spesialisert på tekst</li>
+<li>Eksempler: ChatGPT, Claude, Copilot, Gemini</li>
+<li>KI-verktøy kan hjelpe med skriving, oppsummering, oversettelse, idémyldring</li>
+</ul>
+<p><strong>Husk:</strong></p>
+<p>Generativ KI er et verktøy, ikke en erstatning for menneskelig tenkning og ekspertise.</p>
+</div>
+<div id="fragment-cd775bba-2" style="font-size: 1.2em;">
+<p><strong>Viktige punkter:</strong></p>
+<ul class="simple">
+<li>LLM-er er IKKE kunnskapsbaser - de genererer tekst basert på statistiske mønstre</li>
+<li>De konstruerer svar ord for ord basert på hva som er sannsynlig</li>
+<li>“Hallusinering” = KI-en finner på troverdig-høresende, men feil informasjon</li>
+<li>Litt tilfeldighet er innebygd - samme spørsmål kan gi ulike svar</li>
+</ul>
+<p><strong>Husk:</strong></p>
+<p>Forstå begrensningene - da kan du bruke KI smartere.</p>
+</div>
+<div id="fragment-cd775bba-3" style="font-size: 1.2em;">
+<p><strong>Viktige punkter:</strong></p>
+<ul class="simple">
+<li><strong>Verifiser alltid</strong> viktig informasjon - spesielt fakta, tall, referanser</li>
+<li><strong>Høy risiko:</strong> Lover, kontaktinfo, tekniske detaljer - MÅ sjekkes</li>
+<li><strong>Medium risiko:</strong> Prosedyrer, historikk - BØR sjekkes</li>
+<li><strong>Lav risiko:</strong> Brainstorming, formulering, utkast - tryggere å bruke</li>
+<li><strong>Personvern:</strong> Aldri del sensitiv info med offentlige KI-verktøy</li>
+</ul>
+<p><strong>Husk:</strong></p>
+<p>Du er ansvarlig for det du publiserer, ikke KI-en.</p>
+</div>
+<div id="fragment-cd775bba-4" style="font-size: 1.2em;">
+<p><strong>Viktige punkter:</strong></p>
+<ul class="simple">
+<li>UiO tilbyr KI-tjenester med bedre personverngarantier</li>
+<li>Sjekk <a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a> for oppdatert info</li>
+<li>Institusjonelle versjoner: Databehandleravtaler, ingen bruk til trening</li>
+<li>Følg UiOs retningslinjer for bruk av KI</li>
+</ul>
+<p><strong>Husk:</strong></p>
+<p>Bruk godkjente verktøy når du håndterer data relatert til UiO.</p>
+</div>
+<div id="fragment-cd775bba-5" style="font-size: 1.2em;">
+<p><strong>Viktige punkter:</strong></p>
+<ul class="simple">
+<li>Vær spesifikk og gi kontekst</li>
+<li>Spesifiser format og struktur</li>
+<li>Iterer - første forsøk er sjelden perfekt</li>
+<li>Bruk teknikker: rollespill, eksempler, steg-for-steg</li>
+</ul>
+<p><strong>Husk:</strong></p>
+<p>God prompting er en ferdighet som læres gjennom praksis.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="etiske-betraktninger-og-ai-kompetanse">
+<h1>Etiske betraktninger og AI-kompetanse</h1>
+<p>Når du bruker KI, er det viktig å tenke på de etiske aspektene.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-bea58d14-1" style="font-size: 1.2em; font-weight: bold;">Ansvar og åpenhet</a></li>
+<li><a href="#fragment-bea58d14-2" style="font-size: 1.2em; font-weight: bold;">Miljøpåvirkning</a></li>
+<li><a href="#fragment-bea58d14-3" style="font-size: 1.2em; font-weight: bold;">Bias og diskriminering</a></li>
+<li><a href="#fragment-bea58d14-4" style="font-size: 1.2em; font-weight: bold;">Menneskelig kompetanse</a></li>
+</ul>
+<div id="fragment-bea58d14-1" style="font-size: 1.2em;">
+<p><strong>Etiske prinsipper:</strong></p>
+<ul class="simple">
+<li><strong>Ansvar:</strong> Du er ansvarlig for det output du bruker</li>
+<li><strong>Åpenhet:</strong> Vurder å være transparent om KI-bruk når relevant</li>
+<li><strong>Ærlighet:</strong> Ikke presenter KI-generert arbeid som utelukkende ditt eget uten kvalitetssikring</li>
+<li><strong>Integritet:</strong> Bruk KI som et verktøy, ikke for å jukse eller omgå arbeid</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Hvis du bruker KI til å skrive en rapport, kan du nevne: “Dette dokumentet er utarbeidet med assistanse fra KI-verktøy, men alle fakta er verifisert.”</p>
+</div>
+<div id="fragment-bea58d14-2" style="font-size: 1.2em;">
+<p><strong>Husk:</strong></p>
+<ul class="simple">
+<li>Trening og bruk av store KI-modeller krever mye energi</li>
+<li>Data senter og prosessorkraft har miljøkostnader</li>
+<li>Vær bevisst - bruk KI når det gir reell verdi, ikke bare fordi du kan</li>
+</ul>
+<p><strong>Praktisk:</strong></p>
+<ul class="simple">
+<li>Bruk KI til oppgaver der det faktisk sparer tid eller gir bedre resultat</li>
+<li>Ikke kjør samme prompt 50 ganger for moro skyld</li>
+</ul>
+</div>
+<div id="fragment-bea58d14-3" style="font-size: 1.2em;">
+<p><strong>Vær oppmerksom på:</strong></p>
+<ul class="simple">
+<li>KI-modeller lærer fra internett, som inneholder bias og fordommer</li>
+<li>KI kan reprodusere stereotyper om kjønn, etnisitet, alder, osv.</li>
+<li>Vær kritisk hvis du merker diskriminerende output</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Hvis KI-en konsekvent assosierer visse roller med ett kjønn, vær obs og korriger det.</p>
+</div>
+<div id="fragment-bea58d14-4" style="font-size: 1.2em;">
+<p><strong>Balanse:</strong></p>
+<ul class="simple">
+<li>Bruk KI til å <strong>supplere</strong> din kompetanse, ikke erstatte den</li>
+<li>Behold og utvikle egne ferdigheter</li>
+<li>Kritisk tenkning er viktigere enn noensinne</li>
+<li>Faglig skjønn kan ikke erstattes av KI</li>
+</ul>
+<p><strong>Advarsel:</strong></p>
+<p>Ikke bli så avhengig av KI at du mister evnen til å tenke, skrive og analysere selv.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="vanlige-sporsmal-og-misforstaelser">
+<h1>Vanlige spørsmål og misforståelser</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-3c200895-1" style="font-size: 1.2em; font-weight: bold;">"KI kommer til å ta jobben min"</a></li>
+<li><a href="#fragment-3c200895-2" style="font-size: 1.2em; font-weight: bold;">"KI vet alt"</a></li>
+<li><a href="#fragment-3c200895-3" style="font-size: 1.2em; font-weight: bold;">"Jeg må være teknisk for å bruke KI"</a></li>
+<li><a href="#fragment-3c200895-4" style="font-size: 1.2em; font-weight: bold;">"KI gjør meg lat/mindre kompetent"</a></li>
+</ul>
+<div id="fragment-3c200895-1" style="font-size: 1.2em;">
+<p><strong>Fakta:</strong></p>
+<ul class="simple">
+<li>KI vil endre mange jobber, men ikke nødvendigvis eliminere dem</li>
+<li>De som bruker KI effektivt vil ha et konkurransefortrinn</li>
+<li>Administrative jobber vil trolig innebære mer KI-assistert arbeid</li>
+</ul>
+<p><strong>Realitet:</strong></p>
+<p>Det er mer sannsynlig at <strong>personer som kan bruke KI</strong> erstatter personer som ikke kan, enn at KI i seg selv erstatter personer.</p>
+<p><strong>Konklusjon:</strong></p>
+<p>Lær å bruke KI - det er en ferdighet som blir stadig viktigere.</p>
+</div>
+<div id="fragment-3c200895-2" style="font-size: 1.2em;">
+<p><strong>Misforståelse:</strong></p>
+<p>Mange tror at fordi KI svarer raskt og selvsikkert, må det være riktig.</p>
+<p><strong>Realitet:</strong></p>
+<ul class="simple">
+<li>KI “vet” ingenting - den genererer tekst basert på mønstre</li>
+<li>KI hallusinerer ofte fakta med stor selvtillit</li>
+<li>KI har ikke tilgang til oppdatert info (med mindre det er bygget inn)</li>
+</ul>
+<p><strong>Konklusjon:</strong></p>
+<p>Behandle KI-svar som forslag fra en ukjent kilde - verifiser alltid.</p>
+</div>
+<div id="fragment-3c200895-3" style="font-size: 1.2em;">
+<p><strong>Misforståelse:</strong></p>
+<p>KI er bare for programmere og tech-folk.</p>
+<p><strong>Realitet:</strong></p>
+<ul class="simple">
+<li>Moderne KI-verktøy er laget for alle</li>
+<li>Du trenger bare å kunne skrive - ingen koding nødvendig</li>
+<li>Administrativt personell kan ha stor nytte av KI</li>
+</ul>
+<p><strong>Konklusjon:</strong></p>
+<p>Alle kan lære å bruke KI - det handler om å stille gode spørsmål på vanlig språk.</p>
+</div>
+<div id="fragment-3c200895-4" style="font-size: 1.2em;">
+<p><strong>Misforståelse:</strong></p>
+<p>Å bruke KI er å jukse eller gjøre deg mindre dyktig.</p>
+<p><strong>Realitet:</strong></p>
+<ul class="simple">
+<li>KI er et verktøy - som tekstbehandling eller kalkulator</li>
+<li>Brukt riktig, gjør KI deg <strong>mer</strong> produktiv</li>
+<li>Du lærer fortsatt - KI gir raskere feedback og forklaringer</li>
+<li>KI frigjør tid fra rutineoppgaver til mer verdifullt arbeid</li>
+</ul>
+<p><strong>Konklusjon:</strong></p>
+<p>KI er et verktøy for å jobbe smartere, ikke late seg.</p>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="ressurser-for-videre-laering">
+<h1>Ressurser for videre læring</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-1cdd1500-1" style="font-size: 1.2em; font-weight: bold;">UiO-ressurser</a></li>
+<li><a href="#fragment-1cdd1500-2" style="font-size: 1.2em; font-weight: bold;">Eksterne ressurser (gratis)</a></li>
+<li><a href="#fragment-1cdd1500-3" style="font-size: 1.2em; font-weight: bold;">Prøv selv</a></li>
+<li><a href="#fragment-1cdd1500-4" style="font-size: 1.2em; font-weight: bold;">Fagfellesskap</a></li>
+</ul>
+<div id="fragment-1cdd1500-1" style="font-size: 1.2em;">
+<p><strong>Offisielle ressurser:</strong></p>
+<ul class="simple">
+<li><strong>KI-tjenester:</strong> <a class="reference external" href="https://www.uio.no/tjenester/it/ki/">https://www.uio.no/tjenester/it/ki/</a></li>
+<li><strong>IT-hjelp:</strong> <a class="reference external" href="https://hjelp.uio.no">https://hjelp.uio.no</a></li>
+<li><strong>Kurs:</strong> Sjekk kurskatalogen for KI-relaterte kurs</li>
+<li><strong>Nettverk:</strong> Finn KI-interesserte kolleger på din enhet</li>
+</ul>
+<p><strong>Tips:</strong></p>
+<p>Meld deg på nyhetsbrev eller følg med på interne kanaler for oppdateringer.</p>
+</div>
+<div id="fragment-1cdd1500-2" style="font-size: 1.2em;">
+<p><strong>Nettkurs:</strong></p>
+<ul class="simple">
+<li><strong>OpenAI’s tutorials</strong> - Om ChatGPT og prompting</li>
+<li><strong>Google’s AI courses</strong> - Gratis introduksjonskurs</li>
+<li><strong>Coursera/edX</strong> - Mange gratis KI-kurs (audit mode)</li>
+</ul>
+<p><strong>Nettsteder:</strong></p>
+<ul class="simple">
+<li><strong>Learn Prompting</strong> (learnprompting.org) - Guide til prompt engineering</li>
+<li><strong>Prompt Engineering Guide</strong> - Omfattende ressurs</li>
+</ul>
+<p><strong>YouTube:</strong></p>
+<ul class="simple">
+<li>Mange gode tutorials på norsk og engelsk om praktisk KI-bruk</li>
+</ul>
+</div>
+<div id="fragment-1cdd1500-3" style="font-size: 1.2em;">
+<p><strong>Beste måten å lære:</strong></p>
+<ol class="arabic simple">
+<li><strong>Eksperimenter</strong> med KI-verktøy på ikke-sensitive oppgaver</li>
+<li><strong>Lag en “prompt-bibliotek”</strong> med dine beste prompts</li>
+<li><strong>Del erfaringer</strong> med kolleger</li>
+<li><strong>Start smått</strong> - en oppgave om dagen</li>
+<li><strong>Reflekter</strong> over hva som fungerer og ikke fungerer</li>
+</ol>
+<p><strong>Forslag til første prosjekter:</strong></p>
+<ul class="simple">
+<li>Forbedre en e-post du har skrevet</li>
+<li>Oppsummere en lang artikkel</li>
+<li>Brainstorme ideer til et arrangement</li>
+<li>Lage en sjekkliste for en kommende oppgave</li>
+</ul>
+</div>
+<div id="fragment-1cdd1500-4" style="font-size: 1.2em;">
+<p><strong>Delta i fellesskap:</strong></p>
+<ul class="simple">
+<li>Faggrupper ved UiO som diskuterer KI</li>
+<li>LinkedIn-grupper om KI i administrativt arbeid</li>
+<li>Interne chat-kanaler eller forum ved UiO</li>
+<li>Lokale meetups om KI (sjekk meetup.com)</li>
+</ul>
+<p><strong>Hvorfor?</strong></p>
+<ul class="simple">
+<li>Lær av andres erfaringer</li>
+<li>Få tips og triks</li>
+<li>Hold deg oppdatert på utviklingen</li>
+<li>Bygg kompetanse sammen med andre</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="neste-steg-i-din-ki-reise">
+<h1>Neste steg i din KI-reise</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Din handlingsplan:</strong></p>
+<p><strong>De neste 7 dagene:</strong></p>
+<ol class="arabic simple">
+<li><strong>Utforsk</strong> UiOs KI-tjenester - søk tilgang hvis nødvendig</li>
+<li><strong>Prøv</strong> et KI-verktøy på én konkret arbeidsoppgave</li>
+<li><strong>Reflekter</strong> over hva som fungerte og hva du lærte</li>
+</ol>
+<p><strong>Den neste måneden:</strong></p>
+<ol class="arabic simple">
+<li><strong>Lag</strong> en samling av prompts som fungerer for dine oppgaver</li>
+<li><strong>Del</strong> erfaringer med minimum én kollega</li>
+<li><strong>Identifiser</strong> 3 arbeidsoppgaver der KI kan spare deg tid</li>
+</ol>
+<p><strong>De neste 3 månedene:</strong></p>
+<ol class="arabic simple">
+<li><strong>Integrer</strong> KI i din daglige arbeidsflyt der det gir verdi</li>
+<li><strong>Ta</strong> et viderekommende kurs eller workshop</li>
+<li><strong>Vurder</strong> om det er områder der teamet ditt kan bruke KI mer effektivt</li>
+</ol>
+<p><strong>Langsiktig:</strong></p>
+<ol class="arabic simple">
+<li><strong>Hold deg oppdatert</strong> - feltet utvikler seg raskt</li>
+<li><strong>Vær nysgjerrig</strong> - test nye verktøy og teknikker</li>
+<li><strong>Del kunnskap</strong> - hjelp kolleger med å komme i gang</li>
+</ol>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="viktige-prinsipper-a-huske">
+<h1>Viktige prinsipper å huske</h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>De 7 gylne reglene:</strong></p>
+<ol class="arabic simple">
+<li><strong>Verifiser fakta</strong> - Aldri stol blindt på KI-output</li>
+<li><strong>Beskytt personvern</strong> - Aldri del sensitiv informasjon</li>
+<li><strong>Du er ansvarlig</strong> - KI er verktøyet, du er sjefen</li>
+<li><strong>Start enkelt</strong> - Bygg kompetanse gradvis</li>
+<li><strong>Vær kritisk</strong> - Bruk sunn fornuft og faglig skjønn</li>
+<li><strong>Eksperimenter</strong> - Lær ved å gjøre</li>
+<li><strong>Del kunnskap</strong> - Hjelp andre å lære</li>
+</ol>
+</div>
+</section>
+</div>
+<div itemprop="articleBody">
+<section id="avslutning">
+<h1>Avslutning</h1>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Gratulerer!</strong></p>
+<p>Du har nå fullført introduksjonskurset i KI for administrativt ansatte ved UiO.</p>
+<p>Du har lært:</p>
+<ul class="simple">
+<li>✓ Hva generativ KI er og hvordan det fungerer</li>
+<li>✓ Begrensninger og hvordan kvalitetssikre output</li>
+<li>✓ Personvern og sikkerhetshensyn</li>
+<li>✓ Hvordan få tilgang til UiOs KI-tjenester</li>
+<li>✓ Prompt engineering og beste praksis</li>
+</ul>
+<p><strong>Nå er det opp til deg:</strong></p>
+<ul class="simple">
+<li>Bruk kunnskapen du har fått</li>
+<li>Eksperimenter i en trygg kontekst</li>
+<li>Vær kritisk og ansvarlig</li>
+<li>Fortsett å lære</li>
+</ul>
+<p><strong>Husk:</strong> KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som gjør forskjellen.</p>
+<p>Lykke til på din KI-reise!</p>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p><strong>Refleksjonsoppgave: Din KI-plan</strong></p>
+<p>Ta deg noen minutter til å svare på følgende:</p>
+<ol class="arabic simple">
+<li><strong>Hva er det viktigste du har lært fra dette kurset?</strong></li>
+<li><strong>Hvilken én konkret oppgave vil du prøve KI på denne uken?</strong></li>
+<li><strong>Hva er dine største bekymringer eller spørsmål om KI?</strong></li>
+<li><strong>Hvem kan du dele denne kunnskapen med?</strong></li>
+<li><strong>Hva er ditt neste steg for å lære mer om KI?</strong></li>
+</ol>
+<p>Skriv ned svarene - det vil hjelpe deg å komme i gang!</p>
+</div>
+<div class="uio-icon-box source">
+<h3>Merk</h3>
+<p><strong>Tilbakemelding?</strong></p>
+<p>Har du tilbakemelding på kurset eller spørsmål om KI ved UiO?
+Kontakt IT-avdelingen eller kursets ansvarlige.</p>
+<p><strong>Fortsett læringen:</strong></p>
+<p>Teknologien utvikler seg raskt. Hold deg oppdatert via:</p>
+<ul class="simple">
+<li>UiOs nettsider om KI</li>
+<li>Nyhetsbrev fra IT-avdelingen</li>
+<li>Kurs og workshops ved UiO</li>
+<li>Fagnettverk og kollegaer</li>
+</ul>
+<p><strong>Takk for at du deltok!</strong></p>
+</div>
+</section>
+</div>
+</div>
+</body>
+</html>

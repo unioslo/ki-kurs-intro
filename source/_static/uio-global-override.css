@@ -1,0 +1,653 @@
+:root {
+	--uio-page-max-width: 780px;
+
+	--uio-darkblue: #3E31D6;
+	--uio-lightblue: #86A4F7;
+	--uio-bluetone: #E6ECFF;
+}
+
+/* Remove Microsoft collaboration tool */
+a.collaborations {display: none !important;}
+li:has(> a.collaborations) {display: none !important;}
+
+/*
+ * General overwritten styles
+
+#wiki_page_show h2 { font-size: 180%; margin: 25px 0px 5px 0px; padding: 0px !important; line-height: 1 !important; }
+#wiki_page_show h3 { font-size: 150%; margin: 15px 0px 5px 0px; padding: 0px !important; line-height: 1 !important; }
+#wiki_page_show h4 { font-size: 120%; margin: 10px 0px 5px 0px !important; padding: 0px !important; line-height: 1 !important; }
+ */
+ 
+ 
+ #wiki_page_show h1,
+ #wiki_page_show h2,
+ #wiki_page_show h3,
+ #wiki_page_show h4,
+ #wiki_page_show h5,
+ #wiki_page_show h6,
+ #wiki_page_show p,
+ #wiki_page_show li,
+ #wiki_page_show table,
+ #wiki_page_show img {
+	max-width: var(--uio-page-max-width);
+ }
+
+#wiki_page_show p { margin: 0px 0px 15px 0px; }
+#wiki_page_show li { padding: 0 0 10px 0; font-size: 100%; }
+
+
+.uio-heading-stripe {
+	width: var(--uio-page-max-width);
+	border-top: 10px solid var(--uio-bluetone);
+	margin-top: -10px;
+}
+
+/* */
+#assignment-student-header-content {
+	flex-wrap: wrap;
+}
+
+/* Planned removed */
+#wiki_page_show a:link { text-decoration: none !important; }
+
+#right-page-column {
+	position: relative;
+	z-index: 50;
+	margin-bottom: 20px;
+	float: right;
+}
+
+@media only screen and (max-width: var(--uio-page-max-width)) {
+
+	#right-page-column {
+		float: left;
+		display: block;
+		clear: both;
+		width: 100%;
+	}
+
+}
+
+#discussion_container article {
+	overflow: inherit !important;
+	pointer-events: all !important;
+}
+
+#right-page-column-with-forms {
+	pointer-events: all !important;
+	float: right;
+	margin-top: - 100px !important;
+	margin-right: -200px !important;
+	z-index: 3000 !important;
+}
+
+/*
+ * Specific styles for the UiO Canvas installation
+ * Prefix all styles with "uio" to aviod interfering class names and element selectors
+ */
+#uio-page-column-right {
+    float: right !important;
+    padding: 20px 5px 20px 5px;
+    margin-left: -10px !important;
+    width: 250px;
+    display: block;
+    clear: both;
+}
+
+.left, .float-left { float: left; }
+.right, .float-right { float: right; }
+img.float-left { padding-right: 10px; }
+img.float-right { padding-left: 10px; }
+
+/*
+ * Styles for displaying modules on home page
+ */
+.uio-module-listing { margin-top: 10px; }
+.uio-module-listing div p { max-width: 600px !important; margin: 0px 0px 5px 0px !important; padding: 0px !important; } 
+.uio-module-listing div img { padding: 0 10px 10px 0 !important; }
+.uio-module-listing div { display: block !important; clear: both; margin-bottom: 10px; }
+.uio-module-listing div h2 { color: #555; }
+.uio-module-listing div h3 { font-size: 130% !important; color: #444; margin: 0px 0px 5px 0px !important; padding: 0px !important; line-height: 1 !important; }
+.uio-module-listing div h4 { color: #444; margin: 0px 0px 5px 0px !important; padding: 0px !important; font-weight: 400 !important; line-height: 1 !important; font-size: 12px !important; }
+.uio-module-listing div ol, .uio-module-listing div ul { list-style-position: inside; }
+.uio-module-listing div li { padding-bottom: 0px !important;}
+
+/* For auto generated module listing*/
+#uio-module-listing-horizontal .uio-module-block {
+	display: block !important;
+	clear: both !important;
+	margin-top: 10px !important;
+}
+
+.uio-module-listing-titles {
+	font-size: 80% !important;
+	padding: 10px;
+	margin-right: 10px;
+	display: block;
+	margin-left: 55px;
+}
+#uio-module-listing-horizontal h3 {
+	display: block !important;
+}
+#uio-module-listing-horizontal .btn {
+	display: inline;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+#uio-module-listing-horizontal .btn-success {
+	background: #1779a0;
+}
+
+#uio-module-listing-horizontal .btn-success:hover {
+	background: #145366;
+}
+
+
+#modul-listing-box {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#modul-listing-box .menu-block {
+	min-height: 50px !important;
+}
+
+.module-item {
+	max-width: var(--uio-max-width-page);
+	display: grid;
+	gap: 5px;
+	grid-template-columns: 50% 50%;
+}
+
+.module-description {
+	padding: 5px 10px 15px 10px;
+	margin: -6px 0px !important;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--uio-max-width-page);
+}
+
+.video-player-full-size {
+  flex: 1 0 auto;
+  position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+.video-player-full-size iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.media-item {
+	overflow: hidden;
+}
+.media-item iframe, .media-item img {
+	width: 100%;
+	height: 220px;
+	margin: 0px;
+}
+
+.featured {
+	padding: 10px 20px 0px 5px;
+	border-radius: 10px;
+	background-color: #eee;
+}
+
+/* Planned removed */
+#uio-module-listing-horizontal div { display: inline !important; clear: both; margin-bottom: 20px; }
+
+.uio-refleksjonsboks,
+.uio-icon-box,
+.uio-color-box-1,
+.uio-color-box-2,
+.uio-color-box-3,
+.uio-litteraturlisteboks,
+.uio-infoboks,
+.uio-oppgaveboks {
+	max-width: calc(var(--uio-page-max-width) - 20px);
+	padding: 10px 10px 0px 10px;
+	background-color: #fafafa;
+	display: flow-root;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	border: 1px solid #ddd;
+	border-top: 10px solid var(--uio-bluetone);
+}
+
+.uio-oppgaveboks {
+	border: 1px solid #84949f;
+	border-radius: 5px;
+	font-size: 90%;
+	background: #ddd;
+	background: linear-gradient(0deg, #ddd 0%, #fff 100%);
+	padding: 10px 10px 0px 10px;
+	margin: 15px 0 15px 0;
+}
+.uio-oppgaveboks h2 {
+	font-size: 130% !important;
+	font-weight: 500 !important;
+}
+
+.uio-litteraturlisteboks {
+	margin: 35px 0px 35px 0px;
+	border: 1px solid #ccc
+}
+.uio-litteraturlisteboks li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.uio-litteraturlisteboks h2 {
+	font-size: 130% !important;
+}
+.uio-litteraturlisteboks h3 {
+	font-size: 120% !important;
+}
+.uio-litteraturlisteboks p {
+	font-size: 90% !important;	
+}
+
+.uio-metatekstbox {
+	width: 250px;
+	float: right;
+	border: 1px solid #d1d1d1;
+	border-radius: 3px;
+}
+
+a.reference-anchor {
+	color: #8f00a9 !important;
+	font-weight: bold;
+}
+details summary { 
+	cursor: pointer;
+}
+details[open] {
+	padding: .5em;
+}
+
+details[open] summary {
+	margin-bottom: .5em;
+}
+details {
+	max-width: var(--uio-page-max-width);
+	padding: .5em .5em 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+}
+/*
+.uio-refleksjonsboks {
+	margin: 35px 0 35px 0;
+	border-top: 10px solid #86A4F7;
+	background-color: #E6ECFF;
+}
+*/
+
+.uio-color-box-1 {
+	border-top: 10px solid var(--uio-darkblue);
+	background-color: var(--uio-bluetone);
+}
+.uio-color-box-2 {
+	border-top: 10px solid var(--uio-lightblue);
+	background-color: var(--uio-bluetone);
+}
+.uio-color-box-3 {
+	border-top: 10px solid var(--uio-bluetone);
+	border-bottom: 5px solid var(--uio-bluetone);
+}
+
+.do {
+	border-top: 10px solid #d0e6bc;
+	border-bottom: 5px solid #d0e6bc;
+	background: url("./images/ikon-do.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+.dont {
+	border-top: 10px solid #e5bdcf;
+	border-bottom: 5px solid #e5bdcf;
+	background: url("./images/ikon-dont.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+.info {
+	border-top: 10px solid #bedee5;
+	border-bottom: 5px solid #bedee5;
+	background: url("./images/ikon-info.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+
+.reflect {
+	border-top: 10px solid #8F59A4;
+	border-bottom: 5px solid #8F59A4;
+	background: url("./images/ikon-refleksjon.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+.task {
+	border-top: 10px solid #5A71A3;
+	border-bottom: 5px solid #5A71A3;
+	background: url("./images/ikon-oppgave.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+.source {
+	border-top: 10px solid var(--uio-lightblue);
+	border-bottom: 5px solid var(--uio-lightblue);
+	background: url("./images/ikon-sources.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+a.reference-anchor {
+	color: #8f00a9 !important;
+	font-weight: bold;
+}
+.uio-icon-box summary::marker {
+	color: var(--uio-darkblue);
+}
+
+details summary { 
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+details[open] {
+	padding: .5em;
+}
+
+details[open] summary {
+	margin-bottom: .5em;
+}
+details {
+	padding: .5em .5em 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.close-all-details {
+	cursor: pointer;
+	border: 1px solid #555;
+	margin: 10px auto 10px auto;
+}
+.uio-icon-box.icon-Solid {
+	color: var(--uio-darkblue);
+}
+
+.uio-grid-row {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	max-width: var(--uio-page-max-width);
+}
+
+@media only screen and (max-width: 980px) {
+
+	.featured {
+		padding: 5px 5px 0px 5px;
+		border-radius: 10px;
+		background-color: #eee;
+	}
+
+	.module-item {
+		max-width: var(--uio-max-width-page);
+		display: block;
+	}
+
+	#right-page-column {
+		float: none; 
+		width: auto;
+		padding-left: 0px;
+	}
+
+	.page-show, .page-title {
+		font-size: 2em !important;
+	}
+
+	.menu-button-container {
+		margin: 19px 10px 19px 0px;
+		display: flex;
+		float: left;
+	}
+
+	#uio-page-menu {
+		position: absolute;
+		top: 50px;
+		margin-top: 50px;
+		left: -10px;
+		z-index: 5000;
+		box-shadow: 5px 0px 5px 5px #fff;
+	}
+
+	#uio-page-menu li li a, #uio-page-menu li li.active {
+	    padding: 10px 5px 10px 30px !important;
+	}
+
+	#menu-toggle ~ ul#uio-page-menu {
+		display: none;
+		height: 0px;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	#menu-toggle:checked ~ ul#uio-page-menu  {
+		display: block;
+		opacity: 1;
+		height: auto;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		border: 1px solid #555;
+	}
+
+	#uio-module-menu, #uio-page-menu {	
+		margin-left: 10px !important;
+	}
+
+	#uio-page-menu li ul {
+		margin-left: 5px;
+		width: 100% !important;
+	}
+
+	ul#uio-page-menu {
+		width: 99% !important;
+		font-size: 90%;
+		margin-bottom: 10px;
+	}
+
+	.ingress {
+		font-size: 100% !important;
+	}
+
+	h2.course-title {
+	    font-size: 230% !important;
+	}
+
+	#modul-oversikt-boks h3 {
+		font-size: 120%;
+	}
+	
+	#wiki_page_show p {
+		font-size: 1em;
+	}
+
+	.module-description p {
+		font-size: 90% !important;
+	}
+
+	.pages.show .show-content {
+	    padding: 0px !important;
+	}
+
+	.module-description {
+    padding: 5px 0px 15px 0px;
+	}
+
+}
+
+/* Slides */
+/* slides.css */
+
+/* Wrapper */
+.slides {
+  position: relative;
+  max-width: 780px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+/* Image variant: fixed height */
+.slides.images {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+/* Text variant: auto height */
+.slides.text {
+  width: 100%;
+}
+
+/* All slide-items: off-screen by default */
+.slides .slide-item {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  transition: left 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* Active slide: on-screen */
+.slides .slide-item.active {
+  left: 0;
+}
+
+/* Image slide content */
+.slides.images .slide-item {
+  height: 100%;
+  text-align: center;
+}
+.slides.images .slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text slide content */
+.slides.text .slide-item {
+  padding: 1em;
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: visible;
+  text-align: left;
+}
+
+/* Controllers container */
+.slides .controllers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* Buttons/links */
+.slides .controllers a,
+.slides .controllers button {
+  position: absolute;
+  padding: 0.5em 1em;
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 4px;
+  text-decoration: none;
+  user-select: none;
+  pointer-events: auto;
+  transition: background-color 0.2s ease;
+}
+.slides .controllers a:hover,
+.slides .controllers button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Text variant: bottom-aligned */
+.slides.text .controllers .prev,
+.slides.text .controllers .next {
+  bottom: 10px;
+}
+.slides.text .controllers .prev {
+  left: 10px;
+}
+.slides.text .controllers .next {
+  right: 10px;
+}
+
+/* Responsive: shorter image slides */
+@media (max-width: 768px) {
+  .slides.images {
+    height: 300px;
+  }
+}
+
+
+/* Tooltips */
+.tooltip {
+  position: relative;
+  cursor: help;
+  color: #0056b3;
+  text-decoration: underline dotted;
+  outline: none;
+}
+.tooltip:focus {
+  box-shadow: 0 0 0 3px rgba(0,86,179,0.4);
+}
+
+.tooltip .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  width: 240px;
+  padding: 8px 12px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 1.4;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.tooltip .tooltip-content::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+}
+
+/* --- Faux list items --- */
+.tooltip .list-item {
+  display: block !important;
+  margin-bottom: 0.3em;
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+.tooltip .list-item::before {
+  content: "• ";
+  font-weight: bold;
+}
+
+.tooltip:hover .tooltip-content,
+.tooltip:focus-within .tooltip-content,
+.tooltip:active .tooltip-content {
+  display: block;
+}

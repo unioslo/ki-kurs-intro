@@ -57,9 +57,17 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Custom CSS to fix solution button styling
+# Custom CSS files
 html_css_files = [
+    'variables.css',
+    'common.css',
+    'uio-global-override.css',
     'custom.css',
+]
+
+# Custom JavaScript files
+html_js_files = [
+    'tabs.js',
 ]
 
 # Don't add <p> tags to simple list items

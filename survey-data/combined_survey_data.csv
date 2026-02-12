@@ -1,0 +1,201 @@
+participant_id,survey_type,q1_understanding_ai,q2_comfort_ai_tools,q3_frequency_usage,q4_perceptions,q5_ethics_comfort,q6_training_topics,q7_systems,q8_ai_help_areas
+P001,pre,2,3,1,"B,C,D",1,"B,C,E","SAP, Cerebrum",Personalhåndtering og rekruttering
+P002,pre,4,1,4,"C,E",2,"A,B,D,E","Planleggingsverktøy, Cristin, CRM-system, Cerebrum",Saksbehandling - raskere prosessering
+P003,pre,3,2,2,"A,B,C",1,"A,C,D,E,F","Excel, Cristin",Søk i dokumenter og regelverk
+P004,pre,3,4,3,"B,E",1,"A,B,C,E","Workday, Teams, Agresso/Unit4",Studenthenvendelser - chatbot
+P005,pre,2,3,2,"C,D",1,"A,B","Agresso/Unit4, Salesforce",Ikke sikker
+P006,pre,2,1,4,"A,B,C",2,"B,C,F","Outlook, FS (Felles Studentsystem)",Møtereferat og oppsummeringer
+P007,pre,1,2,2,C,2,"C,F","FS (Felles Studentsystem), Power BI, Excel, Outlook",Studenthenvendelser - chatbot
+P008,pre,4,3,1,A,2,"A,B,F","Ephorte, Planleggingsverktøy, Canvas, FS (Felles Studentsystem)",Kvalitetssikring av data
+P009,pre,3,1,4,A,2,"A,B,C,D","Canvas, Oracle",Forbedring av intern kommunikasjon
+P010,pre,3,2,1,B,3,"A,C,F","Outlook, Canvas",Budsjettanalyse og prognoser
+P011,pre,1,3,2,"A,E",1,F,Excel,Forbedring av intern kommunikasjon
+P012,pre,4,3,5,"B,C",3,"A,B,C,E,F","BOTT (Bestilling og tidtaking), ServiceNow, Teams, FS (Felles Studentsystem)",Forbedring av intern kommunikasjon
+P013,pre,3,3,5,"C,D",3,"A,C,D,F","FS (Felles Studentsystem), Salesforce, Teams, Cerebrum",Rapportskriving og dokumentasjon
+P014,pre,2,2,2,"A,E",1,"B,C","Agresso/Unit4, Cerebrum, Cristin, CRM-system, SAP",Timeplanlegging
+P015,pre,2,3,2,D,4,"A,B,C,D,E",Excel,Møtereferat og oppsummeringer
+P016,pre,2,2,2,"C,D",4,"A,B","ServiceNow, Salesforce, Power BI",Kvalitetssikring av data
+P017,pre,2,2,1,A,1,"A,B,D,E",Cristin,E-postbehandling og svar på vanlige spørsmål
+P018,pre,2,3,2,"B,C,D",2,A,"Cerebrum, Cristin, Planleggingsverktøy",Ikke sikker
+P019,pre,2,3,3,"B,C",3,"B,D",Canvas,Timeplanlegging
+P020,pre,2,4,3,D,3,"A,B,D,E,F","Oracle, Power BI",Forbedring av intern kommunikasjon
+P021,pre,3,3,3,"B,C,E",2,"B,C,D,F","Power BI, Workday, Excel, CRM-system",Kursplanlegging
+P022,pre,1,3,3,"A,B",2,"B,C,D,E","Salesforce, Power BI, Planleggingsverktøy",Møtereferat og oppsummeringer
+P023,pre,2,1,1,B,2,"B,C,D,E","Excel, Ephorte",Planlegging og koordinering av aktiviteter
+P024,pre,2,2,2,C,2,"A,B,E,F","Planleggingsverktøy, Oracle, Canvas",Automatisering av repeterende oppgaver
+P025,pre,2,2,1,"B,C,D",3,"B,C,D",Canvas,Automatisering av repeterende oppgaver
+P026,pre,3,2,2,"D,E",2,"A,B,C,E","FS (Felles Studentsystem), Planleggingsverktøy",Søk i dokumenter og regelverk
+P027,pre,2,5,2,"C,E",2,"A,B,C,D,E","Outlook, Salesforce, Ephorte, Excel",Budsjettanalyse og prognoser
+P028,pre,2,2,4,C,3,"A,B","Workday, HR-system, Outlook",Timeplanlegging
+P029,pre,3,4,2,"A,D",1,"A,C,D","Cerebrum, Ephorte, Agresso/Unit4",Studenthenvendelser - chatbot
+P030,pre,1,3,1,"B,C",2,"A,B,D,E,F",Ephorte,Timeplanlegging
+P031,pre,3,3,1,"A,B,C",3,"A,F",HR-system,Forbedring av intern kommunikasjon
+P032,pre,2,3,3,"B,C,D",4,"B,E","Excel, Cristin",Planlegging og koordinering av aktiviteter
+P033,pre,1,3,2,"A,D",2,"A,B,C,E","Ephorte, HR-system, Planleggingsverktøy",Planlegging og koordinering av aktiviteter
+P034,pre,4,3,1,"B,C",3,"B,F","CRM-system, Cristin, Cerebrum",Budsjettanalyse og prognoser
+P035,pre,4,2,1,"D,E",1,"A,B,F","Power BI, FS (Felles Studentsystem), Canvas, BOTT (Bestilling og tidtaking)",Kvalitetssikring av data
+P036,pre,3,3,3,"A,B",2,"B,E","SAP, Cerebrum, Oracle",Møtereferat og oppsummeringer
+P037,pre,2,2,1,"B,D",3,"A,B,F","CRM-system, HR-system, ServiceNow, Workday, Cerebrum",Tekstforbedring og korrektur
+P038,pre,1,1,3,"A,B",2,"A,B,C,D,E","HR-system, Excel",Dataanalyse og rapportering
+P039,pre,3,3,3,A,2,"A,B,C,E",ServiceNow,E-postbehandling og svar på vanlige spørsmål
+P040,pre,2,2,1,A,2,"B,C,E",Canvas,Saksbehandling - raskere prosessering
+P041,pre,1,4,1,"B,D",1,"B,E","Agresso/Unit4, FS (Felles Studentsystem)",Studenthenvendelser - chatbot
+P042,pre,2,5,5,"A,B,D",2,"A,B,C,E","BOTT (Bestilling og tidtaking), Salesforce",Opplæring og kunnskapsdeling
+P043,pre,1,4,2,B,2,"A,B,C,D,E","HR-system, Cerebrum",Automatisering av repeterende oppgaver
+P044,pre,4,2,2,"B,C",2,"A,B,C,D,E","Workday, Outlook, Ephorte, Salesforce",Planlegging og koordinering av aktiviteter
+P045,pre,2,1,3,C,1,"B,C,D,F","Cerebrum, Ephorte, Excel",Dataanalyse og rapportering
+P046,pre,3,4,4,"B,D",4,E,"Teams, Agresso/Unit4",Rapportskriving og dokumentasjon
+P047,pre,2,2,5,"C,D",3,"A,B,E","FS (Felles Studentsystem), Planleggingsverktøy, Power BI, Oracle",E-postbehandling og svar på vanlige spørsmål
+P048,pre,2,5,3,A,3,"B,C","Salesforce, ServiceNow, Oracle",Opplæring og kunnskapsdeling
+P049,pre,2,5,2,C,3,"A,B","ServiceNow, Cristin, CRM-system",Saksbehandling - raskere prosessering
+P050,pre,2,4,1,"A,C,D",2,"A,B,C,D","Cerebrum, FS (Felles Studentsystem), HR-system",Budsjettanalyse og prognoser
+P051,pre,4,2,3,"A,B,E",1,"A,B,C,E","Oracle, Cristin",Opplæring og kunnskapsdeling
+P052,pre,3,2,2,"A,B",3,"C,D,F",Planleggingsverktøy,Saksbehandling - raskere prosessering
+P053,pre,4,4,2,"A,B",3,"A,B,F","Excel, Power BI",Planlegging og koordinering av aktiviteter
+P054,pre,4,2,4,C,3,"A,B,D,E,F","Outlook, Cristin, Workday, CRM-system, Sharepoint",Saksbehandling - raskere prosessering
+P055,pre,3,2,1,"C,D,E",2,"B,C,D","Agresso/Unit4, Oracle",Forbedring av intern kommunikasjon
+P056,pre,4,3,2,B,1,"B,E,F","Salesforce, HR-system, Planleggingsverktøy",Budsjettanalyse og prognoser
+P057,pre,1,4,1,B,2,"A,B,F","Planleggingsverktøy, Oracle",Planlegging og koordinering av aktiviteter
+P058,pre,2,3,2,"A,B,C",2,"A,B,E",HR-system,Timeplanlegging
+P059,pre,1,3,1,B,3,"B,D,F","ServiceNow, HR-system, Workday",Dataanalyse og rapportering
+P060,pre,2,1,1,"A,B",3,"A,C,E,F","Ephorte, ServiceNow, CRM-system",Saksbehandling - raskere prosessering
+P061,pre,2,3,1,"C,D",2,"A,B,C,E,F",BOTT (Bestilling og tidtaking),Møtereferat og oppsummeringer
+P062,pre,2,5,2,A,5,"E,F","Cerebrum, Canvas",Kursplanlegging
+P063,pre,3,2,3,B,3,"C,E,F","Outlook, SAP, Planleggingsverktøy",Søk i dokumenter og regelverk
+P064,pre,2,3,2,"C,D",2,"A,B","Teams, BOTT (Bestilling og tidtaking), Cerebrum, Planleggingsverktøy, Salesforce",Planlegging og koordinering av aktiviteter
+P065,pre,2,4,5,"A,B,C",1,"A,B,C,D,E","Cristin, FS (Felles Studentsystem), HR-system, Workday",Arkivering og kategorisering
+P066,pre,2,3,2,"A,D",1,"A,B,E","Sharepoint, CRM-system, ServiceNow, Workday",Oversettelse av tekster
+P067,pre,1,3,1,"B,C",2,"A,B,C,E","Teams, BOTT (Bestilling og tidtaking), HR-system, Workday",Arkivering og kategorisering
+P068,pre,3,3,4,B,1,"A,B,D,E","Excel, Cerebrum, Teams, Cristin, Workday",Opplæring og kunnskapsdeling
+P069,pre,1,2,1,"B,C,D",2,"B,C",CRM-system,Oversettelse av tekster
+P070,pre,5,2,5,"A,B",2,"A,B,D","FS (Felles Studentsystem), Cristin, Agresso/Unit4",Planlegging og koordinering av aktiviteter
+P071,pre,3,4,1,"A,C",1,"C,D,E","Planleggingsverktøy, Ephorte, Cerebrum, Outlook, Agresso/Unit4",Søk i dokumenter og regelverk
+P072,pre,2,4,5,"A,C",4,"A,C","Canvas, FS (Felles Studentsystem)",Møtereferat og oppsummeringer
+P073,pre,1,4,1,"B,D,E",1,"A,C,D,E,F","Agresso/Unit4, Oracle",Kursplanlegging
+P074,pre,3,4,4,"A,B",2,"A,C,E,F","SAP, FS (Felles Studentsystem), Cristin",Planlegging og koordinering av aktiviteter
+P075,pre,3,3,2,B,2,"B,C","Salesforce, Teams, Excel",Studenthenvendelser - chatbot
+P076,pre,3,3,5,C,5,"A,B","Ephorte, FS (Felles Studentsystem), Sharepoint, Excel",Søk i dokumenter og regelverk
+P077,pre,3,3,1,B,1,"B,C,E","Teams, Outlook, Cerebrum",Tekstforbedring og korrektur
+P078,pre,1,3,2,"B,D",2,"B,E","ServiceNow, SAP",Saksbehandling - raskere prosessering
+P079,pre,2,3,5,"A,C,D",5,"A,C,E","ServiceNow, Agresso/Unit4",Timeplanlegging
+P080,pre,1,3,2,B,4,"A,B,D,F","FS (Felles Studentsystem), Cristin, SAP, Oracle",Arkivering og kategorisering
+P081,pre,4,4,2,C,3,"C,E","ServiceNow, Workday, Canvas",Ikke sikker
+P082,pre,3,2,3,B,2,"A,C,F","Teams, Excel, Ephorte",Studenthenvendelser - chatbot
+P083,pre,2,2,2,"A,B,C",1,"A,C,D,E","Cristin, Canvas, HR-system, Power BI",Timeplanlegging
+P084,pre,1,1,2,B,3,"A,C,E","ServiceNow, Outlook, Cerebrum",Personalhåndtering og rekruttering
+P085,pre,2,3,2,"B,C,E",4,"A,B,C,D","HR-system, Power BI",Saksbehandling - raskere prosessering
+P086,pre,2,1,4,C,3,"A,B,C,D,E","Planleggingsverktøy, Cerebrum",Kvalitetssikring av data
+P087,pre,3,3,1,"B,C,D",3,"A,C,D","Salesforce, ServiceNow, Sharepoint, Ephorte",Forbedring av intern kommunikasjon
+P088,pre,3,3,1,B,2,"B,C","Power BI, Sharepoint",Kursplanlegging
+P089,pre,4,2,5,A,3,"A,B,C","Canvas, Workday, Planleggingsverktøy, Ephorte",Oversettelse av tekster
+P090,pre,2,3,4,"B,C,D",2,"B,E,F","Planleggingsverktøy, Outlook",Studenthenvendelser - chatbot
+P091,pre,1,1,2,"B,D,E",2,"A,C,E","Ephorte, Agresso/Unit4",Studenthenvendelser - chatbot
+P092,pre,3,1,2,"A,B,C",2,"A,B,C,D",Salesforce,Møtereferat og oppsummeringer
+P093,pre,3,4,1,"A,D",2,"A,D","Cerebrum, Sharepoint, Ephorte",Søk i dokumenter og regelverk
+P094,pre,3,2,1,"B,C",2,"A,C","Workday, Agresso/Unit4",Forbedring av intern kommunikasjon
+P095,pre,3,2,2,A,1,"A,C,E,F",BOTT (Bestilling og tidtaking),Ikke sikker
+P096,pre,2,3,2,"B,C",3,"A,B,C,E","Workday, Planleggingsverktøy, Agresso/Unit4",Timeplanlegging
+P097,pre,2,3,2,B,2,"C,E,F","Cristin, SAP, Excel",Personalhåndtering og rekruttering
+P098,pre,2,2,1,"A,B,C",3,"A,B,C,D,F","SAP, Salesforce",Planlegging og koordinering av aktiviteter
+P099,pre,1,3,5,"A,B,C",1,"A,E","Workday, BOTT (Bestilling og tidtaking), Power BI",Planlegging og koordinering av aktiviteter
+P100,pre,1,1,5,"A,C,E",2,"A,B","Planleggingsverktøy, Workday, Sharepoint",Søk i dokumenter og regelverk
+P001,post,3,4,2,"A,B,D",3,N/A,"SAP, Cerebrum",Dataanalyse med KI for å identifisere mønstre i studentdata
+P002,post,5,3,5,A,3,N/A,"Planleggingsverktøy, Cristin, CRM-system, Cerebrum",AI-støttet prosjektplanlegging
+P003,post,5,4,2,"A,C",3,N/A,"Excel, Cristin",Automatisk kategorisering av innkommende henvendelser med språkmodeller
+P004,post,5,5,5,"A,C,D",2,N/A,"Workday, Teams, Agresso/Unit4",Generativ KI for å lage maler og standardtekster
+P005,post,5,5,3,C,2,N/A,"Agresso/Unit4, Salesforce",Prompt-basert søk i interne kunnskapsbaser
+P006,post,4,4,4,C,5,N/A,"Outlook, FS (Felles Studentsystem)",Prompt-basert søk i interne kunnskapsbaser
+P007,post,3,4,4,D,4,N/A,"FS (Felles Studentsystem), Power BI, Excel, Outlook",Generativ KI for å lage maler og standardtekster
+P008,post,5,5,3,A,5,N/A,"Ephorte, Planleggingsverktøy, Canvas, FS (Felles Studentsystem)",KI til å forberede møtedokumenter basert på tidligere møter
+P009,post,5,3,5,B,4,N/A,"Canvas, Oracle",Dataanalyse med KI for å identifisere mønstre i studentdata
+P010,post,4,3,2,A,5,N/A,"Outlook, Canvas",Generere rapportutkast fra strukturerte data
+P011,post,3,5,3,"A,B",4,N/A,Excel,Oversette dokumenter mellom norsk og engelsk med KI-støtte
+P012,post,5,4,5,"A,B",5,N/A,"BOTT (Bestilling og tidtaking), ServiceNow, Teams, FS (Felles Studentsystem)",Chatbot for førstelinje support til ansatte
+P013,post,5,4,5,"A,D",5,N/A,"FS (Felles Studentsystem), Salesforce, Teams, Cerebrum",Generere utkast til prosedyrer og veiledninger
+P014,post,5,5,4,A,3,N/A,"Agresso/Unit4, Cerebrum, Cristin, CRM-system, SAP",Prediktiv analyse for ressursplanlegging
+P015,post,4,5,2,A,5,N/A,Excel,Oppsummere lange dokumenter og rapporter med KI-verktøy
+P016,post,5,4,2,C,5,N/A,"ServiceNow, Salesforce, Power BI",AI-støttet prosjektplanlegging
+P017,post,5,4,1,"A,B,D",4,N/A,Cristin,KI-assistert tekstforbedring i Outlook
+P018,post,3,4,4,A,5,N/A,"Cerebrum, Cristin, Planleggingsverktøy",Oppsummere lange dokumenter og rapporter med KI-verktøy
+P019,post,5,4,5,"A,B,C",4,N/A,Canvas,Generativ KI for å lage maler og standardtekster
+P020,post,4,5,3,"A,E",5,N/A,"Oracle, Power BI",Generere utkast til prosedyrer og veiledninger
+P021,post,5,5,4,"A,C",5,N/A,"Power BI, Workday, Excel, CRM-system",Automatisk kategorisering av innkommende henvendelser med språkmodeller
+P022,post,4,5,3,A,3,N/A,"Salesforce, Power BI, Planleggingsverktøy",Chatbot for førstelinje support til ansatte
+P023,post,4,3,3,"A,C",3,N/A,"Excel, Ephorte",Generere rapportutkast fra strukturerte data
+P024,post,3,3,4,"A,D",4,N/A,"Planleggingsverktøy, Oracle, Canvas",KI-basert prioritering av arbeidsoppgaver
+P025,post,4,5,3,A,5,N/A,Canvas,KI-basert prioritering av arbeidsoppgaver
+P026,post,5,4,3,A,5,N/A,"FS (Felles Studentsystem), Planleggingsverktøy",Automatisk kategorisering av innkommende henvendelser med språkmodeller
+P027,post,5,5,3,A,3,N/A,"Outlook, Salesforce, Ephorte, Excel",Oppsummere lange dokumenter og rapporter med KI-verktøy
+P028,post,5,4,4,B,5,N/A,"Workday, HR-system, Outlook",Generere utkast til prosedyrer og veiledninger
+P029,post,4,5,2,"A,C",2,N/A,"Cerebrum, Ephorte, Agresso/Unit4",Sentiment-analyse av tilbakemeldinger
+P030,post,3,4,3,A,3,N/A,Ephorte,Generativ KI for å lage maler og standardtekster
+P031,post,5,5,3,"C,D",4,N/A,HR-system,Generere utkast til prosedyrer og veiledninger
+P032,post,4,5,5,A,5,N/A,"Excel, Cristin",Automatisering av datainnsamling og rapportering
+P033,post,2,4,4,A,4,N/A,"Ephorte, HR-system, Planleggingsverktøy",Generere utkast til prosedyrer og veiledninger
+P034,post,5,4,2,"A,D",5,N/A,"CRM-system, Cristin, Cerebrum",Prediktiv analyse for ressursplanlegging
+P035,post,5,3,2,"A,B,C",3,N/A,"Power BI, FS (Felles Studentsystem), Canvas, BOTT (Bestilling og tidtaking)",Automatisk tagging og kategorisering av dokumenter i arkivet
+P036,post,5,4,5,"A,C,D",5,N/A,"SAP, Cerebrum, Oracle",Bruke ChatGPT til å skrive utkast til e-poster og møtereferater
+P037,post,4,5,3,A,5,N/A,"CRM-system, HR-system, ServiceNow, Workday, Cerebrum",Generere utkast til prosedyrer og veiledninger
+P038,post,4,3,3,A,5,N/A,"HR-system, Excel",Generere utkast til prosedyrer og veiledninger
+P039,post,5,5,4,"A,D",4,N/A,ServiceNow,Lage FAQ-bot for repeterende spørsmål fra studenter
+P040,post,5,3,1,A,4,N/A,Canvas,Automatisering av datainnsamling og rapportering
+P041,post,4,5,3,A,3,N/A,"Agresso/Unit4, FS (Felles Studentsystem)",Oversette dokumenter mellom norsk og engelsk med KI-støtte
+P042,post,4,5,5,"A,B",4,N/A,"BOTT (Bestilling og tidtaking), Salesforce",KI-basert prioritering av arbeidsoppgaver
+P043,post,3,5,2,A,4,N/A,"HR-system, Cerebrum",Generere utkast til prosedyrer og veiledninger
+P044,post,5,4,3,"C,D",4,N/A,"Workday, Outlook, Ephorte, Salesforce",Generere rapportutkast fra strukturerte data
+P045,post,4,3,4,"A,D",2,N/A,"Cerebrum, Ephorte, Excel",Oversette dokumenter mellom norsk og engelsk med KI-støtte
+P046,post,4,5,4,"A,C",5,N/A,"Teams, Agresso/Unit4",Generativ KI for å lage maler og standardtekster
+P047,post,4,4,5,"A,C",5,N/A,"FS (Felles Studentsystem), Planleggingsverktøy, Power BI, Oracle",Prediktiv analyse for ressursplanlegging
+P048,post,4,5,4,B,5,N/A,"Salesforce, ServiceNow, Oracle",Automatisk tagging og kategorisering av dokumenter i arkivet
+P049,post,3,5,3,"A,E",5,N/A,"ServiceNow, Cristin, CRM-system",Generere rapportutkast fra strukturerte data
+P050,post,4,5,2,C,4,N/A,"Cerebrum, FS (Felles Studentsystem), HR-system",AI-støttet prosjektplanlegging
+P051,post,5,4,4,"A,C",2,N/A,"Oracle, Cristin",Generativ KI for å lage maler og standardtekster
+P052,post,5,5,4,"A,D",5,N/A,Planleggingsverktøy,KI-assistert tekstforbedring i Outlook
+P053,post,5,5,3,"C,D",5,N/A,"Excel, Power BI",Automatisk tagging og kategorisering av dokumenter i arkivet
+P054,post,5,3,5,"A,C",5,N/A,"Outlook, Cristin, Workday, CRM-system, Sharepoint",Chatbot for førstelinje support til ansatte
+P055,post,5,3,3,"A,C",3,N/A,"Agresso/Unit4, Oracle",KI-assistert tekstforbedring i Outlook
+P056,post,5,5,3,"A,D",4,N/A,"Salesforce, HR-system, Planleggingsverktøy",KI til å forberede møtedokumenter basert på tidligere møter
+P057,post,3,5,1,"A,C,D",4,N/A,"Planleggingsverktøy, Oracle",Automatisering av datainnsamling og rapportering
+P058,post,5,5,2,E,4,N/A,HR-system,AI-støttet prosjektplanlegging
+P059,post,3,5,2,A,5,N/A,"ServiceNow, HR-system, Workday",Lage FAQ-bot for repeterende spørsmål fra studenter
+P060,post,5,3,2,"A,C",5,N/A,"Ephorte, ServiceNow, CRM-system",Automatisering av datainnsamling og rapportering
+P061,post,4,5,2,D,3,N/A,BOTT (Bestilling og tidtaking),Prediktiv analyse for ressursplanlegging
+P062,post,4,5,2,C,5,N/A,"Cerebrum, Canvas",Generere utkast til prosedyrer og veiledninger
+P063,post,5,4,3,A,4,N/A,"Outlook, SAP, Planleggingsverktøy",KI-assistert tekstforbedring i Outlook
+P064,post,4,5,2,B,4,N/A,"Teams, BOTT (Bestilling og tidtaking), Cerebrum, Planleggingsverktøy, Salesforce",Prediktiv analyse for ressursplanlegging
+P065,post,3,5,5,"B,D",2,N/A,"Cristin, FS (Felles Studentsystem), HR-system, Workday",Prompt-basert søk i interne kunnskapsbaser
+P066,post,5,5,3,C,3,N/A,"Sharepoint, CRM-system, ServiceNow, Workday",Automatisk kategorisering av innkommende henvendelser med språkmodeller
+P067,post,3,5,1,"A,C",5,N/A,"Teams, BOTT (Bestilling og tidtaking), HR-system, Workday",Sentiment-analyse av tilbakemeldinger
+P068,post,4,5,5,A,4,N/A,"Excel, Cerebrum, Teams, Cristin, Workday",Oversette dokumenter mellom norsk og engelsk med KI-støtte
+P069,post,2,3,3,"A,C",4,N/A,CRM-system,Dataanalyse med KI for å identifisere mønstre i studentdata
+P070,post,5,3,5,"A,B",5,N/A,"FS (Felles Studentsystem), Cristin, Agresso/Unit4",Bruke ChatGPT til å skrive utkast til e-poster og møtereferater
+P071,post,5,5,2,"A,B,C",2,N/A,"Planleggingsverktøy, Ephorte, Cerebrum, Outlook, Agresso/Unit4",Chatbot for førstelinje support til ansatte
+P072,post,3,5,5,"A,D",5,N/A,"Canvas, FS (Felles Studentsystem)",Generativ KI for å lage maler og standardtekster
+P073,post,3,5,1,"A,B,C",2,N/A,"Agresso/Unit4, Oracle",Sentiment-analyse av tilbakemeldinger
+P074,post,5,5,5,"A,D",4,N/A,"SAP, FS (Felles Studentsystem), Cristin",Sentiment-analyse av tilbakemeldinger
+P075,post,5,4,4,A,5,N/A,"Salesforce, Teams, Excel",Prompt-basert søk i interne kunnskapsbaser
+P076,post,4,5,5,"A,B",5,N/A,"Ephorte, FS (Felles Studentsystem), Sharepoint, Excel",Automatisk tagging og kategorisering av dokumenter i arkivet
+P077,post,5,5,1,B,2,N/A,"Teams, Outlook, Cerebrum",Dataanalyse med KI for å identifisere mønstre i studentdata
+P078,post,3,4,4,A,4,N/A,"ServiceNow, SAP",Generere utkast til prosedyrer og veiledninger
+P079,post,5,5,5,"A,D",5,N/A,"ServiceNow, Agresso/Unit4",Prediktiv analyse for ressursplanlegging
+P080,post,2,4,2,B,5,N/A,"FS (Felles Studentsystem), Cristin, SAP, Oracle",Oversette dokumenter mellom norsk og engelsk med KI-støtte
+P081,post,5,5,3,D,5,N/A,"ServiceNow, Workday, Canvas",Generere rapportutkast fra strukturerte data
+P082,post,4,4,5,A,4,N/A,"Teams, Excel, Ephorte",Sentiment-analyse av tilbakemeldinger
+P083,post,5,4,3,"A,C,E",3,N/A,"Cristin, Canvas, HR-system, Power BI",Oversette dokumenter mellom norsk og engelsk med KI-støtte
+P084,post,4,4,2,"A,B",5,N/A,"ServiceNow, Outlook, Cerebrum",Automatisering av datainnsamling og rapportering
+P085,post,4,5,3,A,5,N/A,"HR-system, Power BI",Generativ KI for å lage maler og standardtekster
+P086,post,4,4,4,"A,B",5,N/A,"Planleggingsverktøy, Cerebrum",Prediktiv analyse for ressursplanlegging
+P087,post,5,4,1,A,5,N/A,"Salesforce, ServiceNow, Sharepoint, Ephorte",Chatbot for førstelinje support til ansatte
+P088,post,5,4,1,C,4,N/A,"Power BI, Sharepoint",Automatisering av datainnsamling og rapportering
+P089,post,5,4,5,"A,C",5,N/A,"Canvas, Workday, Planleggingsverktøy, Ephorte",Automatisering av datainnsamling og rapportering
+P090,post,4,5,4,A,5,N/A,"Planleggingsverktøy, Outlook",AI-støttet prosjektplanlegging
+P091,post,2,4,2,"A,C",3,N/A,"Ephorte, Agresso/Unit4",Kvalitetssikring av tekster ved hjelp av generativ KI
+P092,post,5,3,3,C,4,N/A,Salesforce,KI-assistert tekstforbedring i Outlook
+P093,post,5,5,1,"A,C",4,N/A,"Cerebrum, Sharepoint, Ephorte",Kvalitetssikring av tekster ved hjelp av generativ KI
+P094,post,5,4,1,"A,B,D",4,N/A,"Workday, Agresso/Unit4",Dataanalyse med KI for å identifisere mønstre i studentdata
+P095,post,5,4,4,A,2,N/A,BOTT (Bestilling og tidtaking),Generativ KI for å lage maler og standardtekster
+P096,post,4,5,3,"A,C",5,N/A,"Workday, Planleggingsverktøy, Agresso/Unit4",Automatisering av datainnsamling og rapportering
+P097,post,5,5,3,B,5,N/A,"Cristin, SAP, Excel",Kvalitetssikring av tekster ved hjelp av generativ KI
+P098,post,5,4,1,B,5,N/A,"SAP, Salesforce",Generativ KI for å lage maler og standardtekster
+P099,post,4,5,5,"A,C,D",3,N/A,"Workday, BOTT (Bestilling og tidtaking), Power BI",Automatisk kategorisering av innkommende henvendelser med språkmodeller
+P100,post,4,3,5,"A,E",5,N/A,"Planleggingsverktøy, Workday, Sharepoint",KI til å forberede møtedokumenter basert på tidligere møter

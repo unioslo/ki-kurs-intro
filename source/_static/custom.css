@@ -45,15 +45,32 @@
 .uio-solution-summary,
 .uio-answer-summary {
     color: #28a745 !important;
-    margin-top: 10em;
-    margin-bottom: 10em;
 }
 
 .uio-solution-summary strong,
 .uio-answer-summary strong {
     color: #28a745 !important;
-    margin-top: 10em;
-    margin-bottom: 10em;
+    font-family: inherit !important;
+    font-weight: bold !important;
+}
+
+/* Ensure fonts apply in details/summary elements */
+details,
+details p,
+details li,
+details strong,
+details b,
+summary,
+summary strong,
+summary b {
+    font-family: inherit !important;
+}
+
+details strong,
+details b,
+summary strong,
+summary b {
+    font-weight: bold !important;
 }
 
 /* ========================================
@@ -65,17 +82,81 @@
     margin-bottom: 2em;
 }
 
-/* All tab links - ensure consistent bottom spacing */
-.enhanceable_content.tabs > ul li a {
-    margin-bottom: -1px;
-    position: relative;
+/* Ensure fonts apply inside tab content */
+.enhanceable_content.tabs > div,
+.enhanceable_content.tabs > div p,
+.enhanceable_content.tabs > div li,
+.enhanceable_content.tabs > div h1,
+.enhanceable_content.tabs > div h2,
+.enhanceable_content.tabs > div h3,
+.enhanceable_content.tabs > div h4,
+.enhanceable_content.tabs > div strong,
+.enhanceable_content.tabs > div b {
+    font-family: inherit !important;
 }
 
-/* Highlight the first tab link by default */
-.enhanceable_content.tabs > ul li:first-child a {
+/* Normalize font size inside tabs to match page */
+.enhanceable_content.tabs > div {
+    font-size: 1em !important;
+}
+
+.enhanceable_content.tabs > div p,
+.enhanceable_content.tabs > div li {
+    font-size: inherit !important;
+}
+
+/* Ensure bold text styling applies */
+.enhanceable_content.tabs > div strong,
+.enhanceable_content.tabs > div b {
+    font-weight: bold !important;
+}
+
+/* Tab navigation list */
+.enhanceable_content.tabs > ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Tab list items */
+.enhanceable_content.tabs > ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+/* Tab links */
+.enhanceable_content.tabs > ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin-right: 4px;
+    margin-bottom: -2px;
+    position: relative;
+    transition: background-color 0.2s;
+    font-size: 1em !important;
+    font-weight: normal !important;
+}
+
+/* Tab link hover */
+.enhanceable_content.tabs > ul li a:hover {
+    background-color: #e8e8e8;
+}
+
+/* Highlight active tab (controlled by JavaScript) */
+.enhanceable_content.tabs > ul li a.active-tab {
     background-color: #ffffff;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     z-index: 1;
+    font-weight: bold;
 }
 
 /* Tab content sections */
@@ -83,12 +164,71 @@
     padding: 15px;
     display: none;
     background-color: #ffffff;
-    border-top: 3px solid #0066cc;
-    scroll-margin-top: -9999px; /* Prevent scrolling when clicking tabs */
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-top: -1px;
+}
+
+/* First tab shown by default, JavaScript will handle the rest */
+.enhanceable_content.tabs > div:first-of-type {
+    display: block;
 }
 
 /* Add spacing before and after uio-icon-box elements */
 .uio-icon-box {
-    margin-top: 50em;
-    margin-bottom: 50em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Ensure fonts apply inside icon boxes */
+.uio-icon-box,
+.uio-icon-box p,
+.uio-icon-box li,
+.uio-icon-box h1,
+.uio-icon-box h2,
+.uio-icon-box h3,
+.uio-icon-box h4,
+.uio-icon-box strong,
+.uio-icon-box b {
+    font-family: inherit !important;
+}
+
+/* Normalize font size inside icon boxes to match page */
+.uio-icon-box {
+    font-size: 1em !important;
+}
+
+.uio-icon-box p,
+.uio-icon-box li {
+    font-size: inherit !important;
+}
+
+/* Ensure bold text styling applies */
+.uio-icon-box strong,
+.uio-icon-box b {
+    font-weight: bold !important;
+}
+
+/* ========================================
+   Page Navigation Styling
+   ======================================== */
+
+.page-navigation {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation a {
+    text-decoration: none;
+    color: #0066cc;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.page-navigation a:hover {
+    background-color: #f5f5f5;
+    border-color: #0066cc;
 }

@@ -98,14 +98,14 @@ def html_visit_canvas_tabs(self, node):
     for i, tab in enumerate(tabs, 1):
         title = tab.get('tabtitle', f'Tab {i}')
         fragment_id = f'fragment-{tab_id}-{i}'
-        self.body.append(f'<li><a href="#{fragment_id}" style="font-size: 1.2em; font-weight: bold;">{self.encode(title)}</a></li>\n')
+        self.body.append(f'<li><a href="#{fragment_id}">{self.encode(title)}</a></li>\n')
 
     self.body.append('</ul>\n')
 
     # Generate tab content divs
     for i, tab in enumerate(tabs, 1):
         fragment_id = f'fragment-{tab_id}-{i}'
-        self.body.append(f'<div id="{fragment_id}" style="font-size: 1.2em;">\n')
+        self.body.append(f'<div id="{fragment_id}">\n')
 
         # Process the tab's content
         for child in tab.children:

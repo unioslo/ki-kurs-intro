@@ -459,16 +459,55 @@ def cleanup_html_post_build(app, exception):
             content = re.sub(r'<li><p>(.*?)</p></li>', r'<li>\1</li>', content, flags=re.DOTALL)
             content = re.sub(r'<li><p>(.*?)</p>', r'<li>\1', content, flags=re.DOTALL)
 
-            # 2. Replace admonition note with uio-icon-box info
-            content = re.sub(r'class="admonition note"', 'class="uio-icon-box info"', content)
+            # 2. Replace admonitions with appropriate uio-icon-box types
+            content = re.sub(r'class="admonition note"', 'class="uio-icon-box source"', content)
+            content = re.sub(r'class="admonition tip"', 'class="uio-icon-box do"', content)
+            content = re.sub(r'class="admonition warning"', 'class="uio-icon-box dont"', content)
+            content = re.sub(r'class="admonition important"', 'class="uio-icon-box source"', content)
+            content = re.sub(r'class="admonition caution"', 'class="uio-icon-box dont"', content)
+            content = re.sub(r'class="admonition danger"', 'class="uio-icon-box dont"', content)
+            content = re.sub(r'class="admonition hint"', 'class="uio-icon-box do"', content)
+            content = re.sub(r'class="admonition seealso"', 'class="uio-icon-box source"', content)
 
-            # 3. Remove navigation elements
+            # Remove admonition-title paragraphs
+            content = re.sub(r'<p class="admonition-title">[^<]*</p>\s*', '', content)
+
+            # 3. Remove any existing page-navigation divs (from previous builds)
+            content = re.sub(r'<div class="page-navigation".*?</div>\s*</div>\s*</div>\s*\n', '', content, flags=re.DOTALL)
+
+            # 4. Extract prev/next navigation before removing
+            prev_link = re.search(r'<link rel="prev" title="([^"]*)" href="([^"]*)"', content)
+            next_link = re.search(r'<link rel="next" title="([^"]*)" href="([^"]*)"', content)
+
+            # Build navigation HTML with just "Prev" and "Next"
+            nav_html = '<div class="page-navigation">'
+            if prev_link:
+                prev_href = prev_link.group(2)
+                nav_html += f'<div class="prev-link"><a href="{prev_href}">← Prev</a></div>'
+            else:
+                nav_html += '<div class="prev-link"></div>'
+
+            if next_link:
+                next_href = next_link.group(2)
+                nav_html += f'<div class="next-link"><a href="{next_href}">Next →</a></div>'
+            else:
+                nav_html += '<div class="next-link"></div>'
+            nav_html += '</div>\n'
+
+            # Insert navigation before closing </section> - more flexible regex
+            # Match </section> followed by closing divs, with flexible whitespace
+            content = re.sub(r'(</section>)\s*(\n\s*</div>)', nav_html + r'\1\2', content, count=1)
+
+            # Remove navigation elements
             content = re.sub(r'<nav data-toggle="wy-nav-shift" class="wy-nav-side">.*?</nav>', '', content, flags=re.DOTALL)
             content = re.sub(r'<nav class="wy-nav-top".*?</nav>', '', content, flags=re.DOTALL)
-            content = re.sub(r'<div role="navigation" aria-label="Page navigation">.*?</div>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<div role="navigation".*?</div>', '', content, flags=re.DOTALL)
             content = re.sub(r'<footer>.*?</footer>', '', content, flags=re.DOTALL)
             content = re.sub(r'<li class="wy-breadcrumbs-aside">.*?</li>', '', content, flags=re.DOTALL)
             content = re.sub(r'<div class="rst-versions".*?</div>', '', content, flags=re.DOTALL)
+            # Remove any existing prev/next navigation links in the content
+            content = re.sub(r'<a[^>]*rel="prev"[^>]*>.*?</a>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<a[^>]*rel="next"[^>]*>.*?</a>', '', content, flags=re.DOTALL)
             content = re.sub(r'<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">',
                            '<section class="wy-nav-content-wrap" style="margin-left: 0;">', content)
 

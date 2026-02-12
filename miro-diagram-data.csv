@@ -1,0 +1,39 @@
+Episode,Episode Title,Section Number,Section Title,Time
+1,Hva er KI og generativ KI?,1,Hva er kunstig intelligens (KI)?,10 min
+1,Hva er KI og generativ KI?,2,Hva er generativ KI?,10 min
+1,Hva er KI og generativ KI?,3,Hva er store språkmodeller (LLM)?,10 min
+1,Hva er KI og generativ KI?,4,Hvorfor er generativ KI så populært nå?,10 min
+1,Hva er KI og generativ KI?,5,Eksempler på bruk i administrativt arbeid,10 min
+2,Hvordan fungerer LLM-er egentlig?,1,LLM-er er IKKE kunnskapsbaser,10 min
+2,Hvordan fungerer LLM-er egentlig?,2,Hvordan genererer LLM-er tekst?,10 min
+2,Hvordan fungerer LLM-er egentlig?,3,Et praktisk eksempel,10 min
+2,Hvordan fungerer LLM-er egentlig?,4,Hva er "hallusinering"?,10 min
+2,Hvordan fungerer LLM-er egentlig?,5,Begrensninger du bør kjenne til,10 min
+2,Hvordan fungerer LLM-er egentlig?,6,Hva betyr dette for deg som bruker?,10 min
+3,Kvalitetssikring og ansvarlig bruk,1,Når kan du stole på generativ KI?,10 min
+3,Kvalitetssikring og ansvarlig bruk,2,Hvordan kvalitetssikre KI-generert innhold,10 min
+3,Kvalitetssikring og ansvarlig bruk,3,Personvern og datasikkerhet,10 min
+3,Kvalitetssikring og ansvarlig bruk,4,Vanlige feil og fallgruver,10 min
+3,Kvalitetssikring og ansvarlig bruk,5,Beste praksis - oppsummering,10 min
+4,UiOs KI-tjenester,1,UiOs KI-tjenester,8 min
+4,UiOs KI-tjenester,2,Hvorfor bruke UiOs versjoner?,8 min
+4,UiOs KI-tjenester,3,Tilgjengelige tjenester,8 min
+4,UiOs KI-tjenester,4,Hvordan få tilgang,8 min
+4,UiOs KI-tjenester,5,Retningslinjer og policies,8 min
+4,UiOs KI-tjenester,6,Hvor finner du hjelp?,8 min
+4,UiOs KI-tjenester,7,Praktiske tips for å komme i gang,8 min
+5,Grunnleggende prompt engineering,1,Hva er en prompt?,12 min
+5,Grunnleggende prompt engineering,2,Prinsipper for god prompting,12 min
+5,Grunnleggende prompt engineering,3,Nyttige prompt-teknikker,12 min
+5,Grunnleggende prompt engineering,4,Praktiske eksempler for administrativt arbeid,12 min
+5,Grunnleggende prompt engineering,5,Vanlige feil og hvordan unngå dem,12 min
+5,Grunnleggende prompt engineering,6,Tips for å bli bedre til prompting,12 min
+5,Grunnleggende prompt engineering,7,Eksempel: Fra dårlig til god prompt,12 min
+5,Grunnleggende prompt engineering,8,Oppsummering,12 min
+6,Oppsummering og veien videre,1,Oppsummering av kurset,5 min
+6,Oppsummering og veien videre,2,Etiske betraktninger og AI-kompetanse,5 min
+6,Oppsummering og veien videre,3,Vanlige spørsmål og misforståelser,5 min
+6,Oppsummering og veien videre,4,Ressurser for videre læring,5 min
+6,Oppsummering og veien videre,5,Neste steg i din KI-reise,5 min
+6,Oppsummering og veien videre,6,Viktige prinsipper å huske,5 min
+6,Oppsummering og veien videre,7,Avslutning,5 min
