@@ -2,6 +2,19 @@
 Begrensninger du bør kjenne til
 ================================
 
+Vi har sett at LLM-er lærer mønstre fra treningsdata, og at de kan hallusinere - produsere overbevisende men feil informasjon. 
+Men det er flere praktiske begrensninger du bør være klar over når du bruker disse verktøyene i hverdagen.
+
+Disse begrensningene handler ikke om at teknologien er "dårlig", men om å forstå *hva slags verktøy* du faktisk bruker. 
+En hammer er utmerket til å slå inn spiker, men håpløs til å sage i tre - det handler ikke (nødvendigvis) om kvalitet, men om å bruke riktig verktøy til riktig formål.
+
+På samme måte er det viktig å vite når en LLM er et godt verktøy, og når den mangler viktig informasjon eller kontekst som påvirker svarene du får.
+
+.. figure:: ../images/ChatGPT_usingTheRightTool.png
+   :align: center
+   :width: 60%
+   :alt: LLM using the right tool - placeholder image
+
 .. canvas-tabs::
 
    .. canvas-tab:: Utdatert informasjon

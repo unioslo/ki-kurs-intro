@@ -4,6 +4,11 @@ Hvordan genererer LLM-er tekst?
 
 For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:
 
+.. figure:: ../images/ChatGPT_howLLMswork.png
+   :align: center
+   :width: 60%
+   :alt: LLM text generation illustration
+
 .. canvas-tabs::
 
    .. canvas-tab:: Trening
@@ -35,6 +40,10 @@ For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hv
 
    .. canvas-tab:: Temperatur og tilfeldighet
 
+      Graden av tilfeldighet på teksten LLMen genererer og hvor "kreativ" teksten er kan vanligvis justeres.
+      Den vanligste og mest brukte er *temperatur*". Mange tjenester har en default temperatur som ikke kan justeres, mens andre lar deg sette denne etter behov. 
+
+      
       **Hva er "temperatur"?**
 
       * En parameter som styrer hvor kreativ/tilfeldig modellen skal være

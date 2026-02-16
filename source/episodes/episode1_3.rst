@@ -2,36 +2,31 @@
 Hva er store språkmodeller (LLM)?
 ==================================
 
-Store språkmodeller (Large Language Models - LLM) er en type generativ KI som er spesialisert på tekst. 
-LLM-er som GPT, Claude og Gemini har lært av enorme mengder tekst fra internett, bøker, artikler og andre kilder.
+Store språkmodeller (Large Language Models - LLM) er selve "motoren" bak tjenester som ChatGPT, Claude og Gemini. 
+Dette er en type generativ KI som er spesialisert på tekst, og som har lært av enorme mengder tekst fra internett, bøker, artikler og andre kilder.
 
-Det er viktig å forstå forskjellen mellom en LLM og en tjeneste bygget rundt LLMen. 
-GPT er en LLM, men ChatGPT er en tjeneste som har en rekke andre funksjonaliteter på toppen av LLMen. 
-Et eksempel er muligheten til å søke etter oppdatert informasjon på internett.
+I dette kurset skal vi fokusere på LLMer, og ikke gå nærmere inn på de andre typene generativ KI.
 
-La oss konsentrere oss om hva en ren LLM er nå i første omgang.
 
-.. canvas-tabs::
+Hvordan genererer en LLM tekst?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. canvas-tab:: Hva er LLM-er gode til?
+En LLM genererer tekst ved å beregne hva som er det mest sannsynlige neste ordet basert på konteksten. 
+Akkurat som hjernen din automatisk foreslår "varmt" eller "kaldt" hvis noen sier "I dag er det veldig...", gjør LLM-en det samme - bare mye mer avansert.
 
-      Store språkmodeller er gode til:
+**Transformer-teknologien**
 
-      * **Skrive og redigere tekst** - artikler, rapporter, e-poster
-      * **Oppsummere** - lange dokumenter, møtereferater, artikler
-      * **Oversette** - mellom ulike språk
-      * **Strukturere informasjon** - lage tabeller, punktlister, organisere data
-      * **Idémyldring** - hjelpe med kreative prosesser
-      * **Forklare komplekse konsepter** - tilpasset den måten du ber den om, f.eks. til et barn, eller til en doktorgradsstudent i emnet
+Moderne LLM-er er bygget på *transformer*-teknologi som gjør at de kan se på hele teksten samtidig og forstå sammenhenger. For eksempel: i setningen "Katten jaget musen fordi *den* var sulten" kan modellen forstå at "den" refererer til katten, ikke musen.
 
-   .. canvas-tab:: Hva LLM-er IKKE er
+**Mønstre, ikke kunnskap**
 
-      Det er viktig å forstå at LLM-er:
+LLM-er lærer *mønstre* i tekst, ikke *fakta*. Hvis modellen har sett at "Oslo" ofte følger etter "hovedstaden i Norge er", vil den generere "Oslo" når du spør - men den "vet" ikke egentlig at dette er riktig. 
+Dette er grunnen til at LLM-er kan gi svært overbevisende, men feil informasjon.
 
-      * **IKKE er søkemotorer** - de søker ikke på internett (med mindre spesifikt utvidet med den funksjonen)
-      * **IKKE har en database med fakta** - de genererer tekst basert på mønstre de har lært
-      * **IKKE vet hva som er sant eller usant** - de kan produsere feil informasjon med stor overbevisning
-      * **IKKE har bevissthet eller forståelse** - de er statistiske modeller, ikke tenkende vesener (mer om dette senere)
-      * **IKKE kan huske tidligere samtaler** (med mindre det er bygd inn som en funksjon)
+.. uio-note:: Oppsummert
+
+   LLM-er genererer tekst ved å beregne sannsynligheten for neste ord basert på mønstre de har lært. 
+   Transformer-teknologien gjør at de kan forstå sammenhenger i hele teksten. 
+   De lærer mønstre, ikke fakta, og kan derfor produsere overbevisende tekst som likevel er feil.
 
 
