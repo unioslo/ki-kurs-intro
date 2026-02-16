@@ -1,7 +1,0 @@
-a.context_external_tool_1764 {
-    display: none !important;
-}
-
-#nav-tray-portal a[href$="external_tools/1764"] {
-    display: none;
-}
