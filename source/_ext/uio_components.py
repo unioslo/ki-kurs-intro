@@ -287,7 +287,7 @@ class UioDetailDirective(SphinxDirective):
         if self.arguments:
             node['summary'] = ' '.join(self.arguments)
         else:
-            node['summary'] = 'Details'
+            node['summary'] = 'Detaljer'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -346,7 +346,7 @@ def html_depart_uio_question(self, node):
 def html_visit_uio_solution(self, node):
     """Generate collapsible solution HTML (accordion inside exercise)."""
     self.body.append('<details>\n')
-    self.body.append('<summary class="uio-solution-summary"><strong>Løsning / Solution</strong></summary>\n')
+    self.body.append('<summary class="uio-solution-summary"><strong>Løsning</strong></summary>\n')
 
 
 def html_depart_uio_solution(self, node):
@@ -357,7 +357,7 @@ def html_depart_uio_solution(self, node):
 def html_visit_uio_answer(self, node):
     """Generate collapsible answer HTML (accordion inside question)."""
     self.body.append('<details>\n')
-    self.body.append('<summary class="uio-answer-summary"><strong>Svar / Answer</strong></summary>\n')
+    self.body.append('<summary class="uio-answer-summary"><strong>Svar</strong></summary>\n')
 
 
 def html_depart_uio_answer(self, node):
@@ -483,13 +483,13 @@ def cleanup_html_post_build(app, exception):
             nav_html = '<div class="page-navigation">'
             if prev_link:
                 prev_href = prev_link.group(2)
-                nav_html += f'<div class="prev-link"><a href="{prev_href}">← Prev</a></div>'
+                nav_html += f'<div class="prev-link"><a href="{prev_href}">← Forrige</a></div>'
             else:
                 nav_html += '<div class="prev-link"></div>'
 
             if next_link:
                 next_href = next_link.group(2)
-                nav_html += f'<div class="next-link"><a href="{next_href}">Next →</a></div>'
+                nav_html += f'<div class="next-link"><a href="{next_href}">Neste →</a></div>'
             else:
                 nav_html += '<div class="next-link"></div>'
             nav_html += '</div>\n'
