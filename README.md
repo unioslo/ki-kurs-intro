@@ -29,7 +29,7 @@ Denne automatikken er satt opp til å "bygge" html filer av rst filene. Alle rst
 <img width="300" alt="github-unioslo-actions" src="https://github.com/user-attachments/assets/d6c2f096-e5a8-4bd8-a891-e1b337356f2b" />
 
 ## 5. Hvor er html filene?
-Html-filene lagres i en egen branch 
+Html-filene lagres i en egen branch [html-pages](https://github.com/unioslo/ki-kurs-intro/tree/html-pages)
 
 <img width="300" alt="github-unioslo-html-pages-branch" src="https://github.com/user-attachments/assets/827ffaf8-4734-47bb-985d-7bde147f1367" />
 
