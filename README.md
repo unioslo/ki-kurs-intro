@@ -1,29 +1,74 @@
-# ki-kurs-intro
+Kurssidene bygges automatisk (det tar noen minutter etter at du har lagret endringene dine) og kan sees her: https://unioslo.github.io/ki-kurs-intro
 
-## test - web edits - does it need signed commits, or is this considered signed?
-New test after added signing in settings
-
-Alt innhold er KI-generert. Innholdet er foreløpig kun for å ha noe relevant innhold for å få på plass automatiseringen av html genereringen. 
-
-Kurssidene bygges automatisk og kan sees her: https://unioslo.github.io/ki-kurs-intro
-OBS: Funksjonaliteten er laget for canvas for å laste opp html i _build som "Sider" i canvas. Kildekoden bruker mye av canvas sine innebygde [Designelementer](https://www.uio.no/for-ansatte/arbeidsstotte/sta/canvas/veiledninger/utnytt-mulighetene/designelementer.html) Dette ser ikke bra ut i https://unioslo.github.io/ki-kurs-intro som forventer sphinx tema. 
+OBS: Funksjonaliteten er laget for canvas for å laste opp html i _build som "Sider" i canvas. Siden her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet. 
 
 
-### Hvordan bruke i Canvas
+# Hvordan jobbe i github og Canvas
 
-Innholdet bygges automatisk med Actions - se konfigurasjon i ```.gitlab/workflows/static_pages.yml```. Html filene finner du i Actions artifacts. Gå inn på siste Action og klikk på den. Du ser artifacts neders, som du kan laste ned. 
+Selve kursinnholdet finner du i folderen `source/episodes`
 
-<img width="500"  alt="Screenshot 2026-02-02 at 18 35 59" src="https://github.com/user-attachments/assets/03fa8c0f-7318-44fc-99e8-6cc18ee4c9c5" />
+Filene er delt opp slik at de blir passelige "Sider" i Canvas, målet er at man ikke må scrolle for mye per side.
 
-Html filene finner du i:  ```artifact/episodes``` når du har unzippet den nedlastede artifacts zip fila. 
+## 1. Naviger til filen du ønsker å editere, og åpne den for editering: 
+<img width="400" height="468" alt="github-unioslo-edit-file" src="https://github.com/user-attachments/assets/f5d7b5fd-b09e-4fad-aa85-f5d3940d2e91" />
 
-Da må du manuelt åpne hver fil, og copy-paste innholdet til Canvas. 
+## 2. Når du er ferdig, trykk den store grønne "Commit changes" knappen
+<img width="400" alt="github-unioslo-commit-change" src="https://github.com/user-attachments/assets/ff770c1a-d3eb-4ab9-8770-9958e0deab3f" />
 
-1. Lage en ny side og gi den en tittel - f.eks. samme tittel som `<h1>` elemented i html-en du skal kopiere inn
-2. Klikk på `<``>`iconet for å laste inn rå html.
-3. Copy html fra artifacts, paste inn i Siden
+## 3. Skriv en fornuftig endringsmelding (Commit message). 
+
+Velg ellers default og trykk "Commit changes" for å laste opp endringene i github.com
+
+<img width="300" alt="github-unioslo-commit-message" src="https://github.com/user-attachments/assets/2b49e59a-dee1-4a03-8709-2c7ea44df491" />
+
+## 4. Automatisk bygging av html filene
+Når endringen er blitt lastet opp (commited) så starter en automasjon i bakgrunnen - du kan følge med i Actions taben i github. 
+
+Denne automatikken er satt opp til å "bygge" html filer av rst filene. Alle rst filene blir bygget på nytt hver gang en fil er endret (selv de som ikke har noen endringer).
+
+<img width="300" alt="github-unioslo-actions" src="https://github.com/user-attachments/assets/d6c2f096-e5a8-4bd8-a891-e1b337356f2b" />
+
+## 5. Hvor er html filene?
+Html-filene lagres i en egen branch 
+
+<img width="300" alt="github-unioslo-html-pages-branch" src="https://github.com/user-attachments/assets/827ffaf8-4734-47bb-985d-7bde147f1367" />
+
+Du har nå valget mellom å bruke et python skript til å oppdatere filen(e) i Canvas med REST API, eller manuelt oppdatere de ved å copy/paste html-koden til hver fil. 
+
+### 5a. Automatisk oppdatering
+Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen. 
+Skriptet er ikke testet 100% og er produsert av KI. Det jeg har gjort hittil er 
+
+- Lastet opp en ny Side - side-urlen lages automatisk basert på tittelen i `<h1>` elementet i filen
+- Oppdatert en eksisterende side basert på url (ikke page id)
+- Lastet opp alle sidene og automatisk lenket de til hver sine moduler i Canvas
+
+Det jeg ikke enda har prøvd
+
+- Oppdatere en side basert på page id.
+- Endre tittel på siden og se om oppdatering fungerer som forventet på eksisterende Side i Canvas
+  
+Se ellers beskrivelse av skriptet under, den gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
+
+### 5b. Manuell oppdatering
+Naviger til branchen `html-pages`. Du finner de genererte html filene i folderen `html/episodes`.  
+
+1. For hver fil/side du ønsker å ooppdatere, klikk inn på den og klikk på kopier-ikonet. 
+<img width="500" alt="github-unioslo-html-raw-copy" src="https://github.com/user-attachments/assets/146a1079-532f-4a79-99d3-8df1408ebea2" />
+
+
+2. Gå deretter til Canvas, finn riktig side, klikk "Rediger" og videre `</>` knappen nede til høyre under redigeringsboksen. 
+
+<img width="500" alt="canvas-rediger-html" src="https://github.com/user-attachments/assets/c275505e-f74b-4bf3-8630-77c8cdf539bd" />
+
+3. Paste inn html koden du kopierte fra github.
+   
 4. Lagre
-5. Legg til Siden i en Modul. 
+
+Siden er nå oppdatert i Canvas. 
+
+
+
 
 ### Tekstinnholdet
 Brukt følgende prompt for å generere innhold med Claude Code: 
