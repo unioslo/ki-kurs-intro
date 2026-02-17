@@ -36,19 +36,9 @@ Html-filene lagres i en egen branch [html-pages](https://github.com/unioslo/ki-k
 Du har nå valget mellom å bruke et python skript til å oppdatere filen(e) i Canvas med REST API, eller manuelt oppdatere de ved å copy/paste html-koden til hver fil. 
 
 ### 5a. Automatisk oppdatering
-Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen. 
-Skriptet er ikke testet 100% og er produsert av KI. Det jeg har gjort hittil er 
+Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen og i avsnittet "Canvas API Skript" lenger ned.
 
-- Lastet opp en ny Side - side-urlen lages automatisk basert på tittelen i `<h1>` elementet i filen
-- Oppdatert en eksisterende side basert på url (ikke page id)
-- Lastet opp alle sidene og automatisk lenket de til hver sine moduler i Canvas
-
-Det jeg ikke enda har prøvd
-
-- Oppdatere en side basert på page id.
-- Endre tittel på siden og se om oppdatering fungerer som forventet på eksisterende Side i Canvas
-  
-Se ellers beskrivelse av skriptet under, den gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
+Skriptet gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
 
 ### 5b. Manuell oppdatering
 Naviger til branchen `html-pages`. Du finner de genererte html filene i folderen `html/episodes`.  
@@ -71,13 +61,110 @@ Siden er nå oppdatert i Canvas.
 
 
 ### Tekstinnholdet
-Brukt følgende prompt for å generere innhold med Claude Code: 
+Brukt følgende prompt for å generere start-innhold med Claude Code:
 
-Populate the source/episodes folder with the content that I want. This is an AI introduction course for administrativ staffat the University of Oslo. The course is in Norwegian. It should be a course that the participants go through digitally by themselves, and should take no more than 45 minutes. The topics I want to cover are: 
+Populate the source/episodes folder with the content that I want. This is an AI introduction course for administrativ staffat the University of Oslo. The course is in Norwegian. It should be a course that the participants go through digitally by themselves, and should take no more than 45 minutes. The topics I want to cover are:
 
 1. What is AI and what is generative AI - what are language models
 2. LLMs are not a knowledge source, but construct contents/sentences based on what is statistically most probable with some added randomness
 3. Can you trust what comes out of generative AI? Quality control, understand the contents
 4. What AI services do we have at UiO https://www.uio.no/tjenester/it/ki/
 5. Try prompting and simple prompt engineering
-6. Other things you think are essential in an intro course in AI tools for administrative staff at UiO.  
+6. Other things you think are essential in an intro course in AI tools for administrative staff at UiO.
+
+
+---
+
+# Canvas API Skript
+
+Skriptet `div-support-filer/update_canvas_pages.py` kan automatisk oppdatere Canvas-sider basert på de genererte HTML-filene.
+
+## Funksjonalitet
+
+Skriptet gjør følgende:
+- Leser HTML-filer fra `_build/html/episodes/`
+- Henter ut hovedinnholdet og fjerner `<h1>` elementer og navigasjon (siden Canvas legger til tittel automatisk)
+- Oppdaterer Canvas-sider via REST API
+- Kan legge til sider i moduler med riktig posisjonering og innrykk
+
+## Sette opp API-nøkkel
+
+For å bruke skriptet trenger du en Canvas API-nøkkel:
+
+1. Gå til https://uio.instructure.com/profile/settings
+2. Scroll ned til "Approved Integrations"
+3. Klikk "+ New Access Token"
+4. Generer og kopier nøkkelen
+5. Sett miljøvariabelen:
+   ```bash
+   export CANVAS_API_TOKEN="din_token_her"
+   ```
+
+## Hvordan page_url opprettes
+
+Skriptet konverterer HTML-filnavn til Canvas page URLs ved å:
+1. Fjerne `.html` extension
+2. Erstatte understrek (`_`) med bindestrek (`-`)
+
+Eksempler:
+- `episode1_0.html` → `episode-1-0`
+- `episode2_3.html` → `episode-2-3`
+
+Dette betyr at Canvas-siden må ha en URL som matcher denne konvensjonen for at oppdateringen skal fungere.
+
+## Brukseksempler
+
+**Liste alle sider med ID-er, titler og moduler:**
+```bash
+python update_canvas_pages.py --list-pages
+```
+
+**Oppdater alle sider (kun innhold):**
+```bash
+python update_canvas_pages.py
+```
+
+**Oppdater alle sider og legg til i moduler:**
+```bash
+python update_canvas_pages.py --add-to-modules
+```
+
+**Oppdater en enkelt side:**
+```bash
+python update_canvas_pages.py --page episode1_0
+```
+
+**Oppdater en side med Canvas page ID (stabilt når tittel endres):**
+```bash
+python update_canvas_pages.py --page-id 12345 --page episode1_0
+```
+
+**Oppdater alle sider i en spesifikk modul:**
+```bash
+python update_canvas_pages.py --module 1 --add-to-modules
+```
+
+**Dry run (se hva som ville blitt oppdatert uten å gjøre endringer):**
+```bash
+python update_canvas_pages.py --dry-run
+python update_canvas_pages.py --module 2 --add-to-modules --dry-run
+```
+
+## Modul-funksjonalitet
+
+Når `--add-to-modules` brukes:
+- Sider legges til i moduler basert på episode-nummer i filnavnet
+  - `episode1_X` → Modul 1
+  - `episode2_X` → Modul 2
+  - osv.
+- Innrykk settes automatisk:
+  - Sider som heter `episodeX_0` får innrykk 0 (hovedside)
+  - Andre sider får innrykk 1 (undersider)
+- Posisjon i modulen settes basert på rekkefølgen filene prosesseres i
+
+## Notater
+
+- Skriptet er produsert av KI og testet for grunnleggende operasjoner
+- HTML-filene renses for `<h1>` elementer og navigasjon før opplasting
+- Canvas legger automatisk til tittel basert på `<h1>` elementet i den originale HTML-filen
+- Page ID er mer stabilt enn page URL når titler endres  
