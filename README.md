@@ -35,12 +35,8 @@ Html-filene lagres i en egen branch [html-pages](https://github.com/unioslo/ki-k
 
 Du har nå valget mellom å bruke et python skript til å oppdatere filen(e) i Canvas med REST API, eller manuelt oppdatere de ved å copy/paste html-koden til hver fil. 
 
-### 5a. Automatisk oppdatering
-Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen og i avsnittet "Canvas API Skript" lenger ned.
 
-Skriptet gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
-
-### 5b. Manuell oppdatering
+### 5a. Manuell oppdatering
 Naviger til branchen `html-pages`. Du finner de genererte html filene i folderen `html/episodes`.  
 
 1. For hver fil/side du ønsker å ooppdatere, klikk inn på den og klikk på kopier-ikonet. 
@@ -57,7 +53,11 @@ Naviger til branchen `html-pages`. Du finner de genererte html filene i folderen
 
 Siden er nå oppdatert i Canvas. 
 
+### 5b. Oppdatering via REST API 
 
+Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen og i avsnittet "Canvas API Skript" lenger ned.
+
+Skriptet gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
 
 
 ### Tekstinnholdet
