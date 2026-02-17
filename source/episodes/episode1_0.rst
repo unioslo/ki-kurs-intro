@@ -3,6 +3,8 @@ Episode 1: Hva er KI og generativ KI?
 
 I denne episoden blir du introdusert til grunnleggende konsepter og informasjon om kunstig intelligens (KI) og ikke minst om såkalt *generativ KI*.
 
+Her kommer noe mer....
+
 Temaer som dekkes
 ~~~~~~~~~~~~~~~~~
 
