@@ -9,7 +9,7 @@ Selve kursinnholdet finner du i folderen `source/episodes`
 
 Filene er delt opp slik at de blir passelige "Sider" i Canvas, målet er at man ikke må scrolle for mye per side.
 
-## 1. Naviger til filen du ønsker å editere, og åpne den for editering: 
+## 1. Naviger til filen du ønsker å editere, og åpne den for editering
 <img width="400" height="468" alt="github-unioslo-edit-file" src="https://github.com/user-attachments/assets/f5d7b5fd-b09e-4fad-aa85-f5d3940d2e91" />
 
 ## 2. Når du er ferdig, trykk den store grønne "Commit changes" knappen
