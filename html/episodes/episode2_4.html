@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hva er “hallusinering”? &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=537671ae" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Begrensninger du bør kjenne til" href="episode2_5.html" />
+    <link rel="prev" title="Et praktisk eksempel" href="episode2_3.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hva-er-hallusinering">
+<h1>Hva er “hallusinering”?</h1>
+<p>Når LLM-er genererer informasjon som høres troverdig ut, men som er feil, kaller vi det “hallusinering” (eller “konfabulering” på fagspråket).</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-1004ebdf-1">Eksempler på hallusinering</a></li>
+<li><a href="#fragment-1004ebdf-2">Hvorfor skjer det?</a></li>
+<li><a href="#fragment-1004ebdf-3">Hallusinering med selvtillit</a></li>
+</ul>
+<div id="fragment-1004ebdf-1">
+<p><strong>Typiske situasjoner:</strong></p>
+<ul class="simple">
+<li><strong>Oppdiktede referanser</strong>: Modellen lager titler på artikler som ikke finnes</li>
+<li><strong>Feil fakta</strong>: Oppgir feil datoer, tall eller navn</li>
+<li><strong>Blandede personer</strong>: Blander sammen biografier fra ulike personer</li>
+<li><strong>Oppfunnet programvare</strong>: Beskriver funksjoner som ikke eksisterer</li>
+<li><strong>Feil prosedyrer</strong>: Beskriver arbeidsprosesser som ikke stemmer</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>“Studien av Hansen et al. (2023) publisert i Nature viste at…” - der både studien og forfatterne kan være oppfunnet.</p>
+</div>
+<div id="fragment-1004ebdf-2">
+<p><strong>Årsaker til hallusinering:</strong></p>
+<ol class="arabic simple">
+<li><strong>Modellen vil alltid gi et svar</strong> - Den sier ikke “jeg vet ikke”</li>
+<li><strong>Mønstre fra trening</strong> - Den har lært hvordan svar “skal se ut”</li>
+<li><strong>Manglende faktasjekk</strong> - Den verifiserer ikke mot noen database</li>
+<li><strong>Overgeneralisering</strong> - Den kombinerer mønstre fra ulike kilder</li>
+<li><strong>Utdatert treningsdata</strong> - Modellen vet ikke hva som har skjedd etter den ble trent</li>
+</ol>
+<p><strong>Viktig å forstå:</strong></p>
+<p>Hallusinering er ikke en “bug” som kan fikses fullstendig - det er en iboende egenskap ved hvordan språkmodeller fungerer.</p>
+</div>
+<div id="fragment-1004ebdf-3">
+<p><strong>Det mest problematiske:</strong></p>
+<p>LLM-er hallusinerer ofte med stor <strong>selvsikkerhet</strong>. De sier ikke:</p>
+<ul class="simple">
+<li>“Jeg er usikker, men…”</li>
+<li>“Dette kan være feil, men…”</li>
+<li>“Jeg vet ikke sikkert, men…”</li>
+</ul>
+<p>I stedet presenterer de feil informasjon med samme overbevisning som riktig informasjon.</p>
+<p><strong>Derfor:</strong></p>
+<p>Du kan IKKE stole på om et svar er korrekt basert på hvor selvsikkert det fremstår.</p>
+</div>
+</div>
+<section id="hva-med-internett-sok">
+<h2>Hva med internett-søk?</h2>
+<p>Mange tjenester som ChatGPT, Copilot og Gemini har nå mulighet til å søke på internett for å få oppdatert informasjon. Men selv dette garanterer ikke at svaret er faktisk korrekt. Hvorfor ikke? Fordi LLM-en fortsatt må <em>tolke</em> og <em>oppsummere</em> informasjonen den finner, og det gjør den på samme måte som alltid - ved å generere tekst basert på mønstre. Den kan derfor fortsatt hallusinere selv om den har tilgang til korrekt informasjon fra nettet.</p>
+<div class="uio-icon-box task">
+<h3>Spørsmål</h3>
+<p><strong>Hvorfor kan en språkmodell gi feil informasjon selv om svaret høres veldig troverdig ut?</strong></p>
+<details>
+<summary class="uio-answer-summary"><strong>Svar</strong></summary>
+<p>Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk. Den har lært hvordan troverdige svar “ser ut”, men vet ikke forskjellen på sant og usant. Derfor kan den produsere feil informasjon med samme selvtillit som riktig informasjon.</p>
+</details>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode2_3.html">← Forrige</a></div><div class="next-link"><a href="episode2_5.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
