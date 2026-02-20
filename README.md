@@ -53,11 +53,18 @@ Naviger til branchen `html-pages`. Du finner de genererte html filene i folderen
 
 Siden er nå oppdatert i Canvas. 
 
-### 5b. Oppdatering via REST API 
+### 5b. Oppdatering via REST API (for "eksperter")
 
 Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen og i avsnittet "Canvas API Skript" lenger ned.
 
 Skriptet gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
+
+## Caveat
+OBS!
+Dersom man gjør manuelle endringer i Siden på Canvas vil ikke denne endringen eksistere på github. 
+Det beste er derfor alltid å gjøre endringen i github, og følge prosessen som forklart her.
+
+**Ved tidspress og behov for direkte endring i Canvas - noter endringene og foreta de ved et senere tidspunkt også i github.**
 
 
 ### Tekstinnholdet
@@ -71,6 +78,7 @@ Populate the source/episodes folder with the content that I want. This is an AI 
 4. What AI services do we have at UiO https://www.uio.no/tjenester/it/ki/
 5. Try prompting and simple prompt engineering
 6. Other things you think are essential in an intro course in AI tools for administrative staff at UiO.
+
 
 
 ---
