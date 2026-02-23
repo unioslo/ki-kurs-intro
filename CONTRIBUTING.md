@@ -32,6 +32,9 @@ Container directive for creating tabbed content.
       Content for tab 2
 ```
 
+**Example result**
+<img src="div-support-filer/figs/Screenshot\ 2026-02-23 at 8.25.35 PM.png" alt="Screenshot 4">
+
 #### `.. canvas-tab:: Tab Title`
 
 Individual tab directive. The title is specified as an argument after the directive.
@@ -86,6 +89,9 @@ Reflection exercise container with a reflection icon. Can include a collapsible 
       Some points to consider...
 ```
 
+**Example result**
+<img src="div-support-filer/figs/Screenshot\ 2026-02-23\ at\ 8.25.05 PM.png" alt="Screenshot 2">
+
 #### `.. uio-question:: Custom Title`
 
 Question container with a task icon. Can include a collapsible answer.
@@ -103,6 +109,9 @@ Question container with a task icon. Can include a collapsible answer.
 
       A language model is...
 ```
+
+**Example result**
+<img src="div-support-filer/figs/Screenshot 2026-02-23 at 8.25.48 PM.png" alt="Screenshot 5">
 
 #### `.. uio-solution::`
 
@@ -142,6 +151,10 @@ Warning/don't container with a warning icon.
    Never share sensitive personal data with public AI tools.
 ```
 
+**Example result**
+<img src="div-support-filer/figs/Screenshot 2026-02-23 at 8.26.08 PM.png" alt="Screenshot 6">
+
+
 #### `.. uio-note:: Custom Title`
 
 Note container with a source icon.
@@ -170,6 +183,10 @@ Tip/do container with a checkmark icon.
    Always verify AI-generated content before using it in your work.
 ```
 
+**Example result**
+<img src="div-support-filer/figs/Screenshot 2026-02-23 at 8.26.26 PM.png" alt="Screenshot 7">
+
+
 #### `.. uio-icon-box::`
 
 Generic icon box container. Use this when you need a custom-styled container.
@@ -183,6 +200,9 @@ Generic icon box container. Use this when you need a custom-styled container.
 
       Additional details that can be collapsed.
 ```
+
+**Example result**
+<img src="div-support-filer/figs/Screenshot\ 2026-02-23 at 8.25.25 PM.png" alt="Screenshot 3">
 
 #### `.. uio-detail:: Summary text`
 
@@ -266,3 +286,11 @@ All custom directives are designed to be compatible with UiO Canvas. The generat
 - Uses UiO-specific CSS classes (`uio-icon-box`, `task`, `reflect`, `source`, `do`, `dont`)
 - Avoids JavaScript where possible (tabs use URL fragments)
 - Follows UiO design guidelines for accessibility and visual consistency
+
+
+
+
+
+
+
+
