@@ -14,6 +14,8 @@ The project includes custom Sphinx extensions in the `source/_ext/` directory th
 
 Canvas-compatible tabs that use HTML with URL fragments (no JavaScript required).
 
+
+
 #### `.. canvas-tabs::`
 
 Container directive for creating tabbed content.
@@ -33,7 +35,11 @@ Container directive for creating tabbed content.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/tabs.png" alt="Screenshot tabs">
+
+<img src="div-support-filer/figs/tabs.png" alt="Screenshot tabs" width="500">
+
+
+-------------------------
 
 #### `.. canvas-tab:: Tab Title`
 
@@ -47,7 +53,8 @@ Individual tab directive. The title is specified as an argument after the direct
    This is the introduction tab content.
 ```
 
----
+-------------------------
+
 
 ### UiO Components (`uio_components.py`)
 
@@ -71,6 +78,9 @@ Exercise container with a task icon. Can include a collapsible solution.
       Here's an example solution...
 ```
 
+-------------------------
+
+
 #### `.. uio-reflect:: Custom Title`
 
 Reflection exercise container with a reflection icon. Can include a collapsible solution.
@@ -90,7 +100,12 @@ Reflection exercise container with a reflection icon. Can include a collapsible 
 ```
 
 **Example result**
-<img src="div-support-filer/figs/reflect.png" alt="Screenshot reflect">
+
+<img src="div-support-filer/figs/refleksjon.png" alt="Screenshot reflect" width="500">
+
+
+-------------------------
+
 
 #### `.. uio-question:: Custom Title`
 
@@ -111,7 +126,11 @@ Question container with a task icon. Can include a collapsible answer.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/spm_svar.png" alt="Screenshot spm og svar">
+
+<img src="div-support-filer/figs/spm_svar.png" alt="Screenshot spm og svar" width="500">
+
+
+-------------------------
 
 #### `.. uio-solution::`
 
@@ -125,6 +144,9 @@ Collapsible solution directive (accordion). Must be nested inside `.. uio-exerci
    This content will be hidden behind a "Løsning" (Solution) toggle.
 ```
 
+-------------------------
+
+
 #### `.. uio-answer::`
 
 Collapsible answer directive (accordion). Must be nested inside `.. uio-question::`.
@@ -136,6 +158,8 @@ Collapsible answer directive (accordion). Must be nested inside `.. uio-question
 
    This content will be hidden behind a "Svar" (Answer) toggle.
 ```
+
+-------------------------
 
 #### `.. uio-dont:: Custom Title`
 
@@ -152,7 +176,10 @@ Warning/don't container with a warning icon.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/dontpng" alt="Screenshot dont">
+
+<img src="div-support-filer/figs/dont.png" alt="Screenshot dont" width="500">
+
+-------------------------
 
 
 #### `.. uio-note:: Custom Title`
@@ -169,6 +196,8 @@ Note container with a source icon.
    UiO provides several AI services for staff and students.
 ```
 
+-------------------------
+
 #### `.. uio-do:: Custom Title`
 
 Tip/do container with a checkmark icon.
@@ -184,7 +213,10 @@ Tip/do container with a checkmark icon.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/do.png" alt="Screenshot do">
+
+<img src="div-support-filer/figs/do.png" alt="Screenshot do" width="500">
+
+-------------------------
 
 
 #### `.. uio-icon-box::`
@@ -202,7 +234,12 @@ Generic icon box container. Use this when you need a custom-styled container.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/info.png" alt="Screenshot info">
+
+<img src="div-support-filer/figs/info.png" alt="Screenshot info" width="500">
+
+
+-------------------------
+
 
 #### `.. uio-detail:: Summary text`
 
@@ -218,40 +255,25 @@ Details/accordion element using HTML `<details>` and `<summary>` tags.
    This content is hidden by default and can be expanded by clicking.
 ```
 
----
 
-## Standard Sphinx Directives
+## Add figures
 
-In addition to the custom UiO directives, you can use any standard Sphinx/reStructuredText directives. For comprehensive documentation on standard directives, see:
+You can add figures in the following way:
 
-- [Sphinx Directives Reference](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
+```rst
+.. figure:: ../images/ChatGPT_howLLMswork.png
+   :align: center
+   :width: 60%
+   :alt: LLM text generation illustration
+```
+
+-------------------------
+
+## Some Sphinx docs 
+
 - [reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
 - [Read the Docs Theme Documentation](https://sphinx-rtd-theme.readthedocs.io/)
 
-### Common Standard Directives
-
-```rst
-.. note::
-
-   This is a standard note directive.
-
-.. warning::
-
-   This is a standard warning directive.
-
-.. tip::
-
-   This is a standard tip directive.
-
-.. code-block:: python
-
-   def example():
-       return "Hello, World!"
-
-.. image:: path/to/image.png
-   :alt: Alternative text
-   :width: 500px
-```
 
 ---
 
@@ -261,10 +283,13 @@ To build the documentation locally:
 
 ```bash
 cd ki-kurs-intro
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 make html
 ```
 
-The built HTML will be in `_build/html/`.
+The built HTML will be in `_build/html/episodes`.
 
 ---
 
