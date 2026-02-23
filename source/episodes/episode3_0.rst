@@ -3,15 +3,6 @@ Episode 3: Hvordan trygt bruke KI?
 
 I denne episoden lærer du hvordan du kan kvalitetssikre output fra generativ KI og hva du må tenke på når du bruker disse verktøyene.
 
-Temaer som dekkes
-~~~~~~~~~~~~~~~~~
-
-* Når kan du stole på generativ KI?
-* Hvordan kvalitetssikre innhold fra LLM-er
-* Beste praksis for bruk av KI-verktøy
-* Vanlige feil og hvordan unngå dem
-* Personvern og datasikkerhet
-
 Læringsmål
 ~~~~~~~~~~
 

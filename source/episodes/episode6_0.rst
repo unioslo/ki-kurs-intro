@@ -3,15 +3,6 @@ Episode 6: Oppsummering og veien videre
 
 I denne siste episoden oppsummerer vi det viktigste fra kurset, diskuterer etiske betraktninger, og gir deg tips for videre læring.
 
-Temaer som dekkes
-~~~~~~~~~~~~~~~~~
-
-* Oppsummering av kursets hovedpunkter
-* Etiske betraktninger og AI-kompetanse
-* Vanlige spørsmål og misforståelser
-* Ressurser for videre læring
-* Neste steg i din KI-reise
-
 Læringsmål
 ~~~~~~~~~~
 

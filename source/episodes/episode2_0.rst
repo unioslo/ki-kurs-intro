@@ -3,15 +3,6 @@ Episode 2: Hvordan fungerer språkmodeller?
 
 I denne episoden skal du lære mer om hvordan store språkmodeller (LLM) faktisk fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.
 
-Temaer som dekkes
-~~~~~~~~~~~~~~~~~
-
-* Språkmodeller er ikke kunnskapsbaser
-* Hvordan LLM-er genererer tekst
-* Statistisk sannsynlighet og tilfeldighet
-* Begrensninger ved LLM-er
-* Hvorfor LLM-er kan "hallusinere"
-
 Læringsmål
 ~~~~~~~~~~
 
