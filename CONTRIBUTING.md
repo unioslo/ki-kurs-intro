@@ -33,7 +33,7 @@ Container directive for creating tabbed content.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/Screenshot\ 2026-02-23 at 8.25.35 PM.png" alt="Screenshot 4">
+<img src="div-support-filer/figs/tabs.png" alt="Screenshot tabs">
 
 #### `.. canvas-tab:: Tab Title`
 
@@ -90,7 +90,7 @@ Reflection exercise container with a reflection icon. Can include a collapsible 
 ```
 
 **Example result**
-<img src="div-support-filer/figs/Screenshot\ 2026-02-23\ at\ 8.25.05 PM.png" alt="Screenshot 2">
+<img src="div-support-filer/figs/reflect.png" alt="Screenshot reflect">
 
 #### `.. uio-question:: Custom Title`
 
@@ -111,7 +111,7 @@ Question container with a task icon. Can include a collapsible answer.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/Screenshot 2026-02-23 at 8.25.48 PM.png" alt="Screenshot 5">
+<img src="div-support-filer/figs/spm_svar.png" alt="Screenshot spm og svar">
 
 #### `.. uio-solution::`
 
@@ -152,7 +152,7 @@ Warning/don't container with a warning icon.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/Screenshot 2026-02-23 at 8.26.08 PM.png" alt="Screenshot 6">
+<img src="div-support-filer/figs/dontpng" alt="Screenshot dont">
 
 
 #### `.. uio-note:: Custom Title`
@@ -184,7 +184,7 @@ Tip/do container with a checkmark icon.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/Screenshot 2026-02-23 at 8.26.26 PM.png" alt="Screenshot 7">
+<img src="div-support-filer/figs/do.png" alt="Screenshot do">
 
 
 #### `.. uio-icon-box::`
@@ -202,7 +202,7 @@ Generic icon box container. Use this when you need a custom-styled container.
 ```
 
 **Example result**
-<img src="div-support-filer/figs/Screenshot\ 2026-02-23 at 8.25.25 PM.png" alt="Screenshot 3">
+<img src="div-support-filer/figs/info.png" alt="Screenshot info">
 
 #### `.. uio-detail:: Summary text`
 
