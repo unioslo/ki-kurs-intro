@@ -10,12 +10,12 @@ Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hv
 
       **Situasjoner hvor du ALLTID må sjekke output:**
 
+      - **Fakta og tall**
       * **Fakta og tall** - befolkningstall, datoer, statistikk
       * **Lover og regler** - lovparagrafer, regelverket ved UiO
       * **Referanser** - kildehenvisninger, studier, publikasjoner
       * **Kontaktinformasjon** - telefonnumre, e-postadresser, åpningstider
       * **Tekniske detaljer** - programvare-kommandoer, konfigurasjon
-      * **Medisinske/juridiske råd** - Bruk profesjonelle kilder i stedet
       * **Kritisk kommunikasjon** - Viktige e-poster til ledelse, eksterne
 
       **Hvorfor?**
