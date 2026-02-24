@@ -1,3 +1,6 @@
+.project
+.pydevproject
+
 # Sphinx build outputs
 _build/
 _templates/
