@@ -1,147 +1,183 @@
-# Contributing to Grunnkurs KI
+# Bidra til Grunnkurs KI
 
-This document provides guidelines for contributing to the Grunnkurs KI course content, with a focus on the custom UiO directives used throughout the project.
+Dette dokumentet gir retningslinjer for å bidra til innholdet i Grunnkurs KI, med fokus på de tilpassede UiO-direktivene som brukes i prosjektet.
 
-## Overview
+## VIKTIG: Linjeskift og innrykk i reStructuredText
 
-This project uses Sphinx with the Read the Docs theme to build course content that is compatible with UiO Canvas. The course content is written in reStructuredText (RST) format and located in the `source/episodes/` directory.
+**reStructuredText (RST) er svært følsomt for linjeskift og innrykk.** Feil formatering kan føre til at direktivene ikke fungerer eller at innholdet ikke vises korrekt.
 
-## Custom UiO Directives
+### Viktige regler:
 
-The project includes custom Sphinx extensions in the `source/_ext/` directory that provide UiO-specific components. These directives generate HTML following UiO design guidelines from [UiO Canvas design elements](https://www.uio.no/for-ansatte/arbeidsstotte/sta/canvas/veiledninger/utnytt-mulighetene/designelementer.html).
+1. **Blank linje etter direktivet**: Etter et direktiv (f.eks. `.. uio-exercise::`) må det alltid være en blank linje før innholdet starter.
 
-### Canvas Tabs (`canvas_tabs.py`)
+2. **Konsistent innrykk**: Alt innhold som hører til et direktiv må ha samme innrykk (vanligvis 3 mellomrom).
 
-Canvas-compatible tabs that use HTML with URL fragments (no JavaScript required).
+3. **Ingen ekstra mellomrom**: Pass på at du ikke har ekstra mellomrom på slutten av linjer eller blanke linjer med mellomrom.
+
+4. **Nøstede direktiver**: Når du nøster direktiver (f.eks. `.. uio-solution::` inne i `.. uio-exercise::`), må det indre direktivet ha ytterligere innrykk (3 ekstra mellomrom).
+
+### Riktig eksempel:
+```rst
+.. uio-exercise:: Øvelse 1
+
+   Dette er innholdet i øvelsen.
+
+   .. uio-solution::
+
+      Dette er løsningen.
+```
+
+### Feil eksempel (vil IKKE fungere):
+```rst
+.. uio-exercise:: Øvelse 1
+   Dette er innholdet i øvelsen.    (mangler blank linje)
+
+.. uio-exercise:: Øvelse 2
+Dette er feil innrykk.    (mangler innrykk)
+```
+
+---
+
+## Oversikt
+
+Dette prosjektet bruker Sphinx med Read the Docs-temaet for å bygge kursinnhold som er kompatibelt med UiO Canvas. Kursinnholdet er skrevet i reStructuredText (RST)-format og ligger i `source/episodes/`-katalogen.
+
+## Tilpassede UiO-direktiver
+
+Prosjektet inkluderer tilpassede Sphinx-utvidelser i `source/_ext/`-katalogen som tilbyr UiO-spesifikke komponenter. Disse direktivene genererer HTML i henhold til UiOs designretningslinjer fra [UiO Canvas designelementer](https://www.uio.no/for-ansatte/arbeidsstotte/sta/canvas/veiledninger/utnytt-mulighetene/designelementer.html).
+
+### Canvas-faner (`canvas_tabs.py`)
+
+Canvas-kompatible faner som bruker HTML med URL-fragmenter (ingen JavaScript nødvendig).
 
 
 
 #### `.. canvas-tabs::`
 
-Container directive for creating tabbed content.
+Containerdirektiv for å lage faneinnhold.
 
-**Usage:**
+**Bruk:**
 
 ```rst
 .. canvas-tabs::
 
-   .. canvas-tab:: Tab Title 1
+   .. canvas-tab:: Fanetittel 1
 
-      Content for tab 1
+      Innhold for fane 1
 
-   .. canvas-tab:: Tab Title 2
+   .. canvas-tab:: Fanetittel 2
 
-      Content for tab 2
+      Innhold for fane 2
 ```
 
-**Example result**
+**Eksempel på resultat**
 
-<img src="div-support-filer/figs/tabs.png" alt="Screenshot tabs" width="500">
+<img src="div-support-filer/figs/tabs.png" alt="Skjermbilde faner" width="500">
 
 
 -------------------------
 
-#### `.. canvas-tab:: Tab Title`
+#### `.. canvas-tab:: Fanetittel`
 
-Individual tab directive. The title is specified as an argument after the directive.
+Individuelt fanedirektiv. Tittelen oppgis som et argument etter direktivet.
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. canvas-tab:: Introduction
+.. canvas-tab:: Introduksjon
 
-   This is the introduction tab content.
+   Dette er innholdet i introduksjonsfanen.
 ```
 
 -------------------------
 
 
-### UiO Components (`uio_components.py`)
+### UiO-komponenter (`uio_components.py`)
 
-UiO-specific components that follow the University of Oslo's design guidelines.
+UiO-spesifikke komponenter som følger Universitetet i Oslos designretningslinjer.
 
-#### `.. uio-exercise:: Custom Title`
+#### `.. uio-exercise:: Egendefinert tittel`
 
-Exercise container with a task icon. Can include a collapsible solution.
+Øvelsescontainer med oppgaveikon. Kan inkludere en sammenleggbar løsning.
 
-**Default title:** `Oppgave`
+**Standardtittel:** `Oppgave`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-exercise:: Practice Prompting
+.. uio-exercise:: Øv på å lage prompter
 
-   Try writing a prompt to generate a summary of this text.
+   Prøv å skrive en prompt for å generere et sammendrag av denne teksten.
 
    .. uio-solution::
 
-      Here's an example solution...
+      Her er en eksempelløsning...
 ```
 
 -------------------------
 
 
-#### `.. uio-reflect:: Custom Title`
+#### `.. uio-reflect:: Egendefinert tittel`
 
-Reflection exercise container with a reflection icon. Can include a collapsible solution.
+Refleksjonsøvelsescontainer med refleksjonsikon. Kan inkludere en sammenleggbar løsning.
 
-**Default title:** `Refleksjon`
+**Standardtittel:** `Refleksjon`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-reflect:: AI Ethics
+.. uio-reflect:: KI-etikk
 
-   Consider the ethical implications of using AI in your daily work.
+   Vurder de etiske implikasjonene ved å bruke KI i ditt daglige arbeid.
 
    .. uio-solution::
 
-      Some points to consider...
+      Noen punkter å vurdere...
 ```
 
-**Example result**
+**Eksempel på resultat**
 
-<img src="div-support-filer/figs/refleksjon.png" alt="Screenshot reflect" width="500">
+<img src="div-support-filer/figs/refleksjon.png" alt="Skjermbilde refleksjon" width="500">
 
 
 -------------------------
 
 
-#### `.. uio-question:: Custom Title`
+#### `.. uio-question:: Egendefinert tittel`
 
-Question container with a task icon. Can include a collapsible answer.
+Spørsmålscontainer med oppgaveikon. Kan inkludere et sammenleggbart svar.
 
-**Default title:** `Spørsmål`
+**Standardtittel:** `Spørsmål`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-question:: What is a language model?
+.. uio-question:: Hva er en språkmodell?
 
-   How would you explain a language model to a colleague?
+   Hvordan ville du forklart en språkmodell til en kollega?
 
    .. uio-answer::
 
-      A language model is...
+      En språkmodell er...
 ```
 
-**Example result**
+**Eksempel på resultat**
 
-<img src="div-support-filer/figs/spm_svar.png" alt="Screenshot spm og svar" width="500">
+<img src="div-support-filer/figs/spm_svar.png" alt="Skjermbilde spørsmål og svar" width="500">
 
 
 -------------------------
 
 #### `.. uio-solution::`
 
-Collapsible solution directive (accordion). Must be nested inside `.. uio-exercise::` or `.. uio-reflect::`.
+Sammenleggbart løsningsdirektiv (trekkspill). Må være nøstet inni `.. uio-exercise::` eller `.. uio-reflect::`.
 
-**Usage:**
+**Bruk:**
 
 ```rst
 .. uio-solution::
 
-   This content will be hidden behind a "Løsning" (Solution) toggle.
+   Dette innholdet vil være skjult bak en "Løsning"-knapp.
 ```
 
 -------------------------
@@ -149,137 +185,137 @@ Collapsible solution directive (accordion). Must be nested inside `.. uio-exerci
 
 #### `.. uio-answer::`
 
-Collapsible answer directive (accordion). Must be nested inside `.. uio-question::`.
+Sammenleggbart svardirektiv (trekkspill). Må være nøstet inni `.. uio-question::`.
 
-**Usage:**
+**Bruk:**
 
 ```rst
 .. uio-answer::
 
-   This content will be hidden behind a "Svar" (Answer) toggle.
+   Dette innholdet vil være skjult bak en "Svar"-knapp.
 ```
 
 -------------------------
 
-#### `.. uio-dont:: Custom Title`
+#### `.. uio-dont:: Egendefinert tittel`
 
-Warning/don't container with a warning icon.
+Advarsel/ikke-gjør-container med advarselsikon.
 
-**Default title:** `OBS!`
+**Standardtittel:** `OBS!`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-dont:: Important Warning
+.. uio-dont:: Viktig advarsel
 
-   Never share sensitive personal data with public AI tools.
+   Del aldri sensitive personopplysninger med offentlige KI-verktøy.
 ```
 
-**Example result**
+**Eksempel på resultat**
 
-<img src="div-support-filer/figs/dont.png" alt="Screenshot dont" width="500">
+<img src="div-support-filer/figs/dont.png" alt="Skjermbilde dont" width="500">
 
 -------------------------
 
 
-#### `.. uio-note:: Custom Title`
+#### `.. uio-note:: Egendefinert tittel`
 
-Note container with a source icon.
+Notatcontainer med kildeikon.
 
-**Default title:** `Merk`
+**Standardtittel:** `Merk`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-note:: Additional Information
+.. uio-note:: Tilleggsinformasjon
 
-   UiO provides several AI services for staff and students.
+   UiO tilbyr flere KI-tjenester for ansatte og studenter.
 ```
 
 -------------------------
 
-#### `.. uio-do:: Custom Title`
+#### `.. uio-do:: Egendefinert tittel`
 
-Tip/do container with a checkmark icon.
+Tips/gjør-container med avkryssingsikon.
 
-**Default title:** `Tips`
+**Standardtittel:** `Tips`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-do:: Best Practice
+.. uio-do:: God praksis
 
-   Always verify AI-generated content before using it in your work.
+   Alltid verifiser KI-generert innhold før du bruker det i arbeidet ditt.
 ```
 
-**Example result**
+**Eksempel på resultat**
 
-<img src="div-support-filer/figs/do.png" alt="Screenshot do" width="500">
+<img src="div-support-filer/figs/do.png" alt="Skjermbilde do" width="500">
 
 -------------------------
 
 
 #### `.. uio-icon-box::`
 
-Generic icon box container. Use this when you need a custom-styled container.
+Generisk ikonbokscontainer. Bruk denne når du trenger en tilpasset container.
 
-**Usage:**
+**Bruk:**
 
 ```rst
 .. uio-icon-box::
 
-   .. uio-detail:: More Information
+   .. uio-detail:: Mer informasjon
 
-      Additional details that can be collapsed.
+      Ytterligere detaljer som kan være skjult.
 ```
 
-**Example result**
+**Eksempel på resultat**
 
-<img src="div-support-filer/figs/info.png" alt="Screenshot info" width="500">
+<img src="div-support-filer/figs/info.png" alt="Skjermbilde info" width="500">
 
 
 -------------------------
 
 
-#### `.. uio-detail:: Summary text`
+#### `.. uio-detail:: Oppsummeringstekst`
 
-Details/accordion element using HTML `<details>` and `<summary>` tags.
+Detaljer/trekkspill-element som bruker HTML `<details>`- og `<summary>`-tagger.
 
-**Default summary:** `Detaljer`
+**Standard oppsummering:** `Detaljer`
 
-**Usage:**
+**Bruk:**
 
 ```rst
-.. uio-detail:: Click to expand
+.. uio-detail:: Klikk for å utvide
 
-   This content is hidden by default and can be expanded by clicking.
+   Dette innholdet er skjult som standard og kan utvides ved å klikke.
 ```
 
 
-## Add figures
+## Legge til figurer
 
-You can add figures in the following way:
+Du kan legge til figurer på følgende måte:
 
 ```rst
 .. figure:: ../images/ChatGPT_howLLMswork.png
    :align: center
    :width: 60%
-   :alt: LLM text generation illustration
+   :alt: Illustrasjon av tekstgenerering med LLM
 ```
 
 -------------------------
 
-## Some Sphinx docs 
+## Nyttig Sphinx-dokumentasjon
 
 - [reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
-- [Read the Docs Theme Documentation](https://sphinx-rtd-theme.readthedocs.io/)
+- [Read the Docs Theme-dokumentasjon](https://sphinx-rtd-theme.readthedocs.io/)
 
 
 ---
 
-## Building the Documentation
+## Bygge dokumentasjonen
 
-To build the documentation locally:
+For å bygge dokumentasjonen lokalt:
 
 ```bash
 cd ki-kurs-intro
@@ -289,28 +325,28 @@ pip install -r requirements.txt
 make html
 ```
 
-The built HTML will be in `_build/html/episodes`.
+Den bygde HTML-en vil være i `_build/html/episodes`.
 
 ---
 
-## Workflow
+## Arbeidsflyt
 
-1. Edit RST files in `source/episodes/`
-2. Commit changes to GitHub
-3. GitHub Actions will automatically build the HTML files
-4. HTML files are stored in the `html-pages` branch
-5. Update Canvas pages either manually or via the REST API script
+1. Rediger RST-filer i `source/episodes/`
+2. Commit endringer til GitHub
+3. GitHub Actions vil automatisk bygge HTML-filene
+4. HTML-filer lagres i `html-pages`-grenen
+5. Oppdater Canvas-sider enten manuelt eller via REST API-skriptet
 
-For detailed workflow instructions, see the main [README.md](README.md).
+For detaljerte arbeidsflysinstruksjoner, se hoved-[README.md](README.md).
 
 ---
 
-## Canvas Compatibility
+## Canvas-kompatibilitet
 
-All custom directives are designed to be compatible with UiO Canvas. The generated HTML:
-- Uses UiO-specific CSS classes (`uio-icon-box`, `task`, `reflect`, `source`, `do`, `dont`)
-- Avoids JavaScript where possible (tabs use URL fragments)
-- Follows UiO design guidelines for accessibility and visual consistency
+Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. Den genererte HTML-en:
+- Bruker UiO-spesifikke CSS-klasser (`uio-icon-box`, `task`, `reflect`, `source`, `do`, `dont`)
+- Unngår JavaScript der det er mulig (faner bruker URL-fragmenter)
+- Følger UiOs designretningslinjer for tilgjengelighet og visuell konsistens
 
 
 
