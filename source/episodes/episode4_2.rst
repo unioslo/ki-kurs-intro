@@ -1,43 +1,91 @@
 
-Hvorfor bruke UiOs versjoner?
-==============================
+Prinsipper for god prompting
+=============================
 
 .. canvas-tabs::
 
-   .. canvas-tab:: Personvern og datasikkerhet
+   .. canvas-tab:: 1. Vær spesifikk
 
-      **Institusjonelle avtaler gir bedre beskyttelse:**
+      **Dårlig prompt:**
 
-      * **Databehandleravtaler** - UiO har avtaler med leverandørene om hvordan data behandles
-      * **Ingen bruk til trening** - Dine samtaler brukes IKKE til å trene modellen
-      * **Bedre kontroll** - UiO kan stille krav til leverandørene
-      * **GDPR-compliance** - Avtalene sikrer at personvernregelverket følges
-      * **Europeiske servere** - Data lagres ofte i EU/EØS-området
+      .. code-block:: text
 
-      **Gratis versjoner:**
+         Skriv en e-post.
 
-      * Ingen garantier for hvordan data brukes
-      * Kan brukes til modelltrening
-      * Ofte amerikanske servere
-      * Mindre kontroll
+      **Bedre prompt:**
 
-   .. canvas-tab:: Tilleggsfunksjonalitet
+      .. code-block:: text
 
-      **Institusjonelle versjoner har ofte flere funksjoner:**
+         Skriv en e-post til mine kolleger hvor jeg informerer om
+         at møterommet Gaia er stengt for vedlikehold uke 15.
+         Tonen skal være vennlig men profesjonell.
 
-      * **Større kontekstvindu** - Kan håndtere lengre dokumenter
-      * **Nyere modeller** - Tilgang til de siste og beste modellene
-      * **Fileopplasting** - Kan laste opp dokumenter for analyse
-      * **Integrasjoner** - Kan integreres med andre UiO-tjenester
-      * **Bedre ytelse** - Raskere responstider
-      * **Færre begrensninger** - Flere spørsmål per dag/time
+      **Hvorfor bedre?**
 
-   .. canvas-tab:: Støtte og opplæring
+      Den spesifiserer hva e-posten skal handle om, hvem den er til, og hvilken tone den skal ha.
 
-      **Ved bruk av UiOs versjoner:**
+   .. canvas-tab:: 2. Gi kontekst
 
-      * IT-avdelingen kan hjelpe med tekniske problemer
-      * Opplæringsressurser tilpasset UiO
-      * Support på norsk
-      * Felles retningslinjer og beste praksis
-      * Erfaringsdeling med kolleger
+      **Dårlig prompt:**
+
+      .. code-block:: text
+
+         Lag et møtereferat.
+
+      **Bedre prompt:**
+
+      .. code-block:: text
+
+         Basert på disse notatene fra møtet, lag et møtereferat:
+         [dine notater her]
+
+         Strukturer referatet med:
+         - Deltakere
+         - Agenda
+         - Beslutninger
+         - Oppgaver (hvem skal gjøre hva)
+
+      **Hvorfor bedre?**
+
+      Du gir både innholdet (notatene) og strukturen du ønsker.
+
+   .. canvas-tab:: 3. Spesifiser format
+
+      **Dårlig prompt:**
+
+      .. code-block:: text
+
+         Gi meg informasjon om UiOs fakulteter.
+
+      **Bedre prompt:**
+
+      .. code-block:: text
+
+         Lag en tabell med UiOs 8 fakulteter.
+         Kolonner: Navn, Forkortelse, Antall studenter (omtrent)
+         Sorter alfabetisk etter navn.
+
+      **Hvorfor bedre?**
+
+      Du får et strukturert svar som er lett å bruke videre.
+
+   .. canvas-tab:: 4. Definer rollen
+
+      **Dårlig prompt:**
+
+      .. code-block:: text
+
+         Hvordan kan jeg forbedre min skriving?
+
+      **Bedre prompt:**
+
+      .. code-block:: text
+
+         Du er en erfaren kommunikasjonsrådgiver. Jeg jobber
+         administrativt ved et universitet og skal ofte skrive
+         formelle brev og e-poster. Gi meg 5 konkrete tips til
+         hvordan jeg kan forbedre min administrative skriving.
+
+      **Hvorfor bedre?**
+
+      Ved å gi KI-en en rolle, får du svar som er mer relevant for din situasjon.

@@ -1,55 +1,59 @@
 
-Hvor finner du hjelp?
-=====================
+Tips for å bli bedre til prompting
+===================================
 
-.. canvas-tabs::
+.. uio-note::
 
-   .. canvas-tab:: Dokumentasjon og veiledninger
+   **Slik lærer du god prompting:**
 
-      **UiOs ressurser:**
+   1. **Eksperimenter**
+      - Prøv ulike måter å formulere spørsmål på
+      - Se hva som gir best resultat
+      - Lek deg med ulike teknikker
 
-      * **Hovedside:** https://www.uio.no/tjenester/it/ki/
-      * **IT-hjelp:** https://hjelp.uio.no
-      * **Personvern:** UiOs personvernombud
-      * **IT-sikkerhet:** USIT/IT-avdelingen
+   2. **Lagre gode prompts**
+      - Når du finner en prompt som fungerer godt, lagre den
+      - Bygg opp en samling du kan gjenbruke
+      - Del med kolleger
 
-      **Eksterne ressurser:**
+   3. **Iterer**
+      - Første svar er sjelden perfekt
+      - Følg opp og rafiner
+      - Det er helt greit å justere underveis
 
-      * Dokumentasjon fra KI-leverandørene
-      * Nettkurs og tutorials
-      * Faglige forum og communities
+   4. **Lær av andre**
+      - Se på eksempler på prompts online
+      - Spør kolleger hva som fungerer for dem
+      - Del egne erfaringer
 
-   .. canvas-tab:: Kurs og opplæring
+   5. **Vær spesifikk om hva som er galt**
+      - I stedet for "Dette var ikke bra", si
+      - "Dette var for langt, gjør det kortere" eller
+      - "Tonen var for formell, jeg trenger mer avslappet språk"
 
-      **UiO tilbyr:**
+.. uio-exercise::
 
-      * Innføringskurs i KI-verktøy
-      * Spesifikke kurs for ulike verktøy
-      * Webinarer og workshops
-      * E-læringskurs
+   **Praktisk øvelse: Forbedre prompts**
 
-      **Sjekk:**
+   Her er noen dårlige prompts. Hvordan ville du forbedret dem?
 
-      * Kurskatalog på uio.no
-      * Interne opplæringssider
-      * Invitasjoner fra HR eller din enhet
+   1. "Skriv noe fint"
+   2. "Hjelp meg"
+   3. "Hva med den tingen?"
+   4. "Lag en liste"
 
-   .. canvas-tab:: Support og hjelp
+   .. uio-solution::
 
-      **Teknisk support:**
+      **Mulige forbedringer:**
 
-      * IT-helpdesk: hjelp.uio.no
-      * E-post: orakel@usit.uio.no (generell IT-support)
-      * Telefon: Finn nummer på hjelp.uio.no
+      1. **Original:** "Skriv noe fint"
+         **Forbedret:** "Skriv en gratulasjon til en kollega som har jobbet her i 25 år. Tonen skal være varm og personlig, ca 100 ord."
 
-      **Faglig support:**
+      2. **Original:** "Hjelp meg"
+         **Forbedret:** "Jeg skal lede mitt første møte neste uke med 6 kolleger. Kan du gi meg konkrete tips for hvordan jeg forbereder meg og leder møtet profesjonelt?"
 
-      * Kolleger som bruker samme verktøy
-      * Fagnettverk ved UiO
-      * Interne chat-kanaler eller forum
+      3. **Original:** "Hva med den tingen?"
+         **Forbedret:** "Jeg har skrevet denne e-posten om endringer i lunsjordningen. Kan du sjekke om budskapet er klart og om jeg har glemt noe viktig? [e-post her]"
 
-      **Sikkerhet og personvern:**
-
-      * Personvernombud
-      * IT-sikkerhet ved USIT
-      * Din leder
+      4. **Original:** "Lag en liste"
+         **Forbedret:** "Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging."

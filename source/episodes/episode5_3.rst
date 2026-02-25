@@ -1,121 +1,63 @@
 
-Nyttige prompt-teknikker
-=========================
+Tilgjengelige tjenester
+=======================
+
+.. uio-note::
+
+   **Viktig:** Listen under kan være utdatert. Sjekk alltid https://www.uio.no/tjenester/it/ki/ for oppdatert informasjon.
+
+Typiske tjenester som kan være tilgjengelige (eksempler):
 
 .. canvas-tabs::
 
-   .. canvas-tab:: Chain of thought (Tankekjede)
+   .. canvas-tab:: Tekstgenerering (LLM)
 
-      **Teknikk:**
+      **Microsoft Copilot (Business/Enterprise):**
 
-      Be KI-en "tenke høyt" eller "forklare steg for steg".
+      * Integrert med Microsoft 365
+      * Kan brukes i Word, Outlook, Teams, PowerPoint
+      * Tilgang via UiO-konto
+      * Databehandleravtale på plass
 
-      **Eksempel:**
+      **ChatGPT Enterprise/Team:**
 
-      .. code-block:: text
+      * Kan være tilgjengelig for visse bruksområder
+      * Bedre personvern enn gratis versjon
+      * Ingen bruk til trening av modellen
 
-         Forklar trinn for trinn hvordan jeg kan
-         organisere et sommerarrangement for 50 personer.
+      **Andre verktøy:**
 
-      **Fordel:**
+      * Sjekk UiOs nettsider for fullstendig liste
 
-      * Får mer gjennomtenkte svar
-      * Enklere å følge resonnementet
-      * Bedre for komplekse oppgaver
+   .. canvas-tab:: Spesialiserte KI-verktøy
 
-   .. canvas-tab:: Few-shot prompting (Gi eksempler)
+      **For forskning:**
 
-      **Teknikk:**
+      * Verktøy for dataanalyse
+      * Forskningsassistenter
+      * Litteraturgjennomgang
 
-      Gi eksempler på hva du vil ha.
+      **For undervisning:**
 
-      **Eksempel:**
+      * Verktøy for å lage undervisningsmateriell
+      * Vurderingsverktøy
+      * Automatisk tilbakemelding
 
-      .. code-block:: text
+      **For administrasjon:**
 
-         Jeg skal skrive titler til nyhetssaker. Her er eksempler
-         på stilen jeg ønsker:
+      * Dokumentbehandling
+      * Automatisering av rutineoppgaver
+      * Møteassistenter
 
-         - "Nytt tilbud: Gratis språkkurs for ansatte"
-         - "Viktig: Endringer i møterom-booking fra 1. april"
-         - "Påminnelse: Personalseminar 15. mai"
+      Sjekk med IT-avdelingen eller din enhet hva som er tilgjengelig for deg.
 
-         Skriv en tittel for denne saken:
-         "Vi får nytt IT-system for reiseregninger neste måned"
+   .. canvas-tab:: Bildegenereering og andre
 
-      **Fordel:**
+      **Andre KI-verktøy:**
 
-      * Får svar i ønsket stil
-      * Lettere enn å forklare stilen med ord
+      * Bildegenerering
+      * Transkripsjon av møter
+      * Oversettelse
+      * Tilgjengelighetsverktøy
 
-   .. canvas-tab:: Rollespill
-
-      **Teknikk:**
-
-      Be KI-en ta rollen som en bestemt type ekspert.
-
-      **Eksempel:**
-
-      .. code-block:: text
-
-         Du er en erfaren prosjektleder ved et norsk universitet.
-         Jeg skal lede mitt første prosjekt og er nervøs.
-         Gi meg dine beste råd for å lykkes.
-
-      **Fordel:**
-
-      * Får perspektiv fra en bestemt rolle
-      * Mer fokuserte svar
-
-   .. canvas-tab:: Strukturert output
-
-      **Teknikk:**
-
-      Be om svaret i et bestemt format.
-
-      **Eksempel:**
-
-      .. code-block:: text
-
-         Oppsummer dette møtereferatet i følgende format:
-
-         BESLUTNINGER:
-         -
-         -
-
-         OPPGAVER:
-         - [Person]: [oppgave] - [frist]
-
-         NESTE MØTE:
-         [dato og tid]
-
-         [ditt møtereferat her]
-
-      **Fordel:**
-
-      * Får svar klart til bruk
-      * Konsistent format
-
-   .. canvas-tab:: Iterativ prompting
-
-      **Teknikk:**
-
-      Bygg videre på svarene i en samtale.
-
-      **Eksempel:**
-
-      .. code-block:: text
-
-         Første prompt:
-         "Skriv et utkast til e-post om nytt bookingsystem"
-
-         Oppfølging 1:
-         "Gjør den mer konsis, maks 3 avsnitt"
-
-         Oppfølging 2:
-         "Legg til en setning om hvor de kan få hjelp"
-
-      **Fordel:**
-
-      * Gradvis forbedring
-      * Lettere enn å skrive perfekt prompt med én gang
+      Tilgjengeligheten varierer - sjekk UiOs oversikt.

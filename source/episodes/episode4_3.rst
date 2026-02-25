@@ -1,63 +1,121 @@
 
-Tilgjengelige tjenester
-=======================
-
-.. uio-note::
-
-   **Viktig:** Listen under kan være utdatert. Sjekk alltid https://www.uio.no/tjenester/it/ki/ for oppdatert informasjon.
-
-Typiske tjenester som kan være tilgjengelige (eksempler):
+Nyttige prompt-teknikker
+=========================
 
 .. canvas-tabs::
 
-   .. canvas-tab:: Tekstgenerering (LLM)
+   .. canvas-tab:: Chain of thought (Tankekjede)
 
-      **Microsoft Copilot (Business/Enterprise):**
+      **Teknikk:**
 
-      * Integrert med Microsoft 365
-      * Kan brukes i Word, Outlook, Teams, PowerPoint
-      * Tilgang via UiO-konto
-      * Databehandleravtale på plass
+      Be KI-en "tenke høyt" eller "forklare steg for steg".
 
-      **ChatGPT Enterprise/Team:**
+      **Eksempel:**
 
-      * Kan være tilgjengelig for visse bruksområder
-      * Bedre personvern enn gratis versjon
-      * Ingen bruk til trening av modellen
+      .. code-block:: text
 
-      **Andre verktøy:**
+         Forklar trinn for trinn hvordan jeg kan
+         organisere et sommerarrangement for 50 personer.
 
-      * Sjekk UiOs nettsider for fullstendig liste
+      **Fordel:**
 
-   .. canvas-tab:: Spesialiserte KI-verktøy
+      * Får mer gjennomtenkte svar
+      * Enklere å følge resonnementet
+      * Bedre for komplekse oppgaver
 
-      **For forskning:**
+   .. canvas-tab:: Few-shot prompting (Gi eksempler)
 
-      * Verktøy for dataanalyse
-      * Forskningsassistenter
-      * Litteraturgjennomgang
+      **Teknikk:**
 
-      **For undervisning:**
+      Gi eksempler på hva du vil ha.
 
-      * Verktøy for å lage undervisningsmateriell
-      * Vurderingsverktøy
-      * Automatisk tilbakemelding
+      **Eksempel:**
 
-      **For administrasjon:**
+      .. code-block:: text
 
-      * Dokumentbehandling
-      * Automatisering av rutineoppgaver
-      * Møteassistenter
+         Jeg skal skrive titler til nyhetssaker. Her er eksempler
+         på stilen jeg ønsker:
 
-      Sjekk med IT-avdelingen eller din enhet hva som er tilgjengelig for deg.
+         - "Nytt tilbud: Gratis språkkurs for ansatte"
+         - "Viktig: Endringer i møterom-booking fra 1. april"
+         - "Påminnelse: Personalseminar 15. mai"
 
-   .. canvas-tab:: Bildegenereering og andre
+         Skriv en tittel for denne saken:
+         "Vi får nytt IT-system for reiseregninger neste måned"
 
-      **Andre KI-verktøy:**
+      **Fordel:**
 
-      * Bildegenerering
-      * Transkripsjon av møter
-      * Oversettelse
-      * Tilgjengelighetsverktøy
+      * Får svar i ønsket stil
+      * Lettere enn å forklare stilen med ord
 
-      Tilgjengeligheten varierer - sjekk UiOs oversikt.
+   .. canvas-tab:: Rollespill
+
+      **Teknikk:**
+
+      Be KI-en ta rollen som en bestemt type ekspert.
+
+      **Eksempel:**
+
+      .. code-block:: text
+
+         Du er en erfaren prosjektleder ved et norsk universitet.
+         Jeg skal lede mitt første prosjekt og er nervøs.
+         Gi meg dine beste råd for å lykkes.
+
+      **Fordel:**
+
+      * Får perspektiv fra en bestemt rolle
+      * Mer fokuserte svar
+
+   .. canvas-tab:: Strukturert output
+
+      **Teknikk:**
+
+      Be om svaret i et bestemt format.
+
+      **Eksempel:**
+
+      .. code-block:: text
+
+         Oppsummer dette møtereferatet i følgende format:
+
+         BESLUTNINGER:
+         -
+         -
+
+         OPPGAVER:
+         - [Person]: [oppgave] - [frist]
+
+         NESTE MØTE:
+         [dato og tid]
+
+         [ditt møtereferat her]
+
+      **Fordel:**
+
+      * Får svar klart til bruk
+      * Konsistent format
+
+   .. canvas-tab:: Iterativ prompting
+
+      **Teknikk:**
+
+      Bygg videre på svarene i en samtale.
+
+      **Eksempel:**
+
+      .. code-block:: text
+
+         Første prompt:
+         "Skriv et utkast til e-post om nytt bookingsystem"
+
+         Oppfølging 1:
+         "Gjør den mer konsis, maks 3 avsnitt"
+
+         Oppfølging 2:
+         "Legg til en setning om hvor de kan få hjelp"
+
+      **Fordel:**
+
+      * Gradvis forbedring
+      * Lettere enn å skrive perfekt prompt med én gang

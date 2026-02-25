@@ -1,79 +1,77 @@
 
-Retningslinjer og policies
-===========================
-
-Når du bruker KI-verktøy på jobb, er det viktig å følge UiOs retningslinjer.
-
-.. uio-dont::
-
-   **Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.**
+Vanlige feil og hvordan unngå dem
+==================================
 
 .. canvas-tabs::
 
-   .. canvas-tab:: Generelle retningslinjer
+   .. canvas-tab:: Feil 1: For vage prompts
 
-      **Kjerneprinsippers:**
+      **Problem:**
 
-      * **Personvern først** - Beskytt personopplysninger og sensitiv data
-      * **Kvalitetssikring** - Verifiser alltid output før bruk
-      * **Åpenhet** - Vær transparent om bruk av KI når relevant
-      * **Etisk bruk** - Bruk KI på en ansvarlig og etisk måte
-      * **Følg lover og regler** - GDPR, opphavsrett, UiOs retningslinjer
+      .. code-block:: text
 
-      **Husk:**
+         "Skriv noe om møter"
 
-      Retningslinjer kan endre seg. Sjekk jevnlig for oppdateringer.
+      **Resultat:** Generelt, ubrukelig svar.
 
-   .. canvas-tab:: Hva er tillatt?
+      **Løsning:**
 
-      **Typisk tillatt bruk:**
+      .. code-block:: text
 
-      * Skrive utkast til tekster
-      * Forbedre og redigere egne tekster
-      * Oversette dokumenter (ikke-sensitive)
-      * Brainstorming og idéutvikling
-      * Lære nye konsepter
-      * Oppsummere ikke-sensitiv informasjon
-      * Strukturere data og informasjon
-      * Få forklaringer på faglige emner
+         "Skriv 5 tips for hvordan jeg kan gjøre våre
+         ukentlige teammøter mer effektive. Vi er en gruppe
+         på 8 personer som møtes i 1 time."
 
-      **Avhenger av:**
+   .. canvas-tab:: Feil 2: For mange krav på én gang
 
-      * Type informasjon (sensitiv eller ikke)
-      * Formål (forskning, undervisning, administrasjon)
-      * Spesifikke retningslinjer for din enhet
+      **Problem:**
 
-   .. canvas-tab:: Hva er IKKE tillatt?
+      .. code-block:: text
 
-      **Typisk ikke tillatt:**
+         "Skriv en e-post om det nye systemet, lag også
+         en FAQ, en guide, og en presentasjon, og oversett
+         alt til engelsk"
 
-      * Dele personopplysninger med KI-verktøy uten hjemmel
-      * Dele graderte eller konfidensielle dokumenter
-      * Bruke output uten kvalitetssikring i kritiske situasjoner
-      * Presentere KI-generert innhold som ditt eget uten kvalitetssikring
-      * Omgå sikkerhetsmekanismer
-      * Bruke KI til uetiske formål
+      **Resultat:** Overfladisk behandling av alt.
 
-      **Usikker?**
+      **Løsning:**
 
-      Spør leder, personvernombud, eller IT-sikkerhet før du gjør noe du er usikker på.
+      Del opp i separate prompts - én oppgave om gangen.
 
-   .. canvas-tab:: Spesielle hensyn
+   .. canvas-tab:: Feil 3: Ikke gi nok kontekst
 
-      **For undervisning:**
+      **Problem:**
 
-      * Sjekk retningslinjer for bruk av KI i vurdering
-      * Vær åpen med studenter om hvordan KI brukes
-      * Vurder om KI-bruk må dokumenteres
+      .. code-block:: text
 
-      **For forskning:**
+         "Hva synes du om dette?"
+         [uten å forklare hva "dette" er]
 
-      * Sjekk med REK (Regional etisk komité) hvis relevant
-      * Vurder om bruk av KI må rapporteres i publikasjoner
-      * Tenk på hvordan KI-bruk påvirker reproduserbarhet
+      **Resultat:** KI-en gjetter hva du mener.
 
-      **For administrasjon:**
+      **Løsning:**
 
-      * Sjekk om det finnes spesifikke retningslinjer for ditt arbeidsområde
-      * Vurder personvern ved behandling av personalsaker
-      * Dokumenter viktige beslutninger tatt med KI-assistanse
+      .. code-block:: text
+
+         "Jeg har skrevet et utkast til invitasjon for
+         et personalseminar. Kan du vurdere om tonen
+         er passende og om all viktig info er med?
+
+         [ditt utkast]"
+
+   .. canvas-tab:: Feil 4: Forvente perfeksjon med én gang
+
+      **Problem:**
+
+      Bli frustrert hvis første svar ikke er perfekt.
+
+      **Løsning:**
+
+      Bruk iterativ prompting:
+
+      .. code-block:: text
+
+         1. Start med grunnleggende prompt
+         2. "Kan du gjøre den kortere?"
+         3. "Legg til et avsnitt om hvor de får hjelp"
+         4. "Endre tonen til å være mer formell"
