@@ -46,7 +46,11 @@ from bs4 import BeautifulSoup
 # Configuration
 CANVAS_URL = "https://uio.instructure.com"
 COURSE_ID = "63248"
-HTML_DIR = "../_build/html/episodes"
+
+# Simple path resolution: try current dir first, then parent
+HTML_DIR = Path("_build/html/episodes")
+if not HTML_DIR.exists():
+    HTML_DIR = Path("../_build/html/episodes")
 
 
 def get_api_token():
