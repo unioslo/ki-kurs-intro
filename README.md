@@ -55,20 +55,31 @@ Siden er nå oppdatert i Canvas.
 
 ### 5b. Oppdatering via REST API (for "eksperter")
 
-Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen og i avsnittet "Canvas API Skript" lenger ned.
+Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du trenger en API nøkkel for å gjøre dette, se instruksjoner i python filen og/eller i [README_UPDATE_CANVAS.md](README_UPDATE_CANVAS.md). 
 
-Skriptet gjør noen ekstra opprydninger av html filen før opplasting (f.eks. fjerner `<h1>` elementene og navigasjonen). 
+Kort oppsummert:
+- Skriptet oppdaterer Canvas-sider automatisk basert på HTML-filer (lokale eller fra GitHub)
+- Bruker en mapping-fil (`page_id_mapping.json`) for å koble HTML-filer til Canvas page IDs
+- Støtter deploy fra lokale filer via `make deploy-from-local`
+- Støtter deploy fra GitHub html-pages branch via `make deploy-from-github`
+- Støtter dry-run mode for å teste uten å gjøre endringer
+
+Se dokumentasjonen for:
+- Oppsett av API-nøkkel
+- Generering av page ID mapping
+- Vanlige workflows og kommandoer
+- Troubleshooting og beste praksis  
+
 
 ## Caveat
-OBS!
 Dersom man gjør manuelle endringer i Siden på Canvas vil ikke denne endringen eksistere på github. 
 Det beste er derfor alltid å gjøre endringen i github, og følge prosessen som forklart her.
 
 **Ved tidspress og behov for direkte endring i Canvas - noter endringene og foreta de ved et senere tidspunkt også i github.**
 
 
-### Tekstinnholdet
-Brukt følgende prompt for å generere start-innhold med Claude Code:
+## Tekstinnholdet opprinnelig generert av Claude Code
+Jeg har brukt følgende prompt for å generere start-innhold med Claude Code:
 
 Populate the source/episodes folder with the content that I want. This is an AI introduction course for administrativ staffat the University of Oslo. The course is in Norwegian. It should be a course that the participants go through digitally by themselves, and should take no more than 45 minutes. The topics I want to cover are:
 
@@ -83,19 +94,4 @@ Populate the source/episodes folder with the content that I want. This is an AI 
 
 ---
 
-# Canvas API Skript
 
-For detaljert dokumentasjon om hvordan bruke `update_canvas_pages.py` skriptet til å oppdatere Canvas-sider, se [README_UPDATE_CANVAS.md](README_UPDATE_CANVAS.md).
-
-Kort oppsummert:
-- Skriptet oppdaterer Canvas-sider automatisk basert på HTML-filer (lokale eller fra GitHub)
-- Bruker en mapping-fil (`page_id_mapping.json`) for å koble HTML-filer til Canvas page IDs
-- Støtter deploy fra lokale filer via `make deploy-from-local`
-- Støtter deploy fra GitHub html-pages branch via `make deploy-from-github`
-- Støtter dry-run mode for å teste uten å gjøre endringer
-
-Se dokumentasjonen for:
-- Oppsett av API-nøkkel
-- Generering av page ID mapping
-- Vanlige workflows og kommandoer
-- Troubleshooting og beste praksis  

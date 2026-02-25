@@ -69,7 +69,7 @@ python div-support-filer/update_canvas_pages.py --generate-mapping --from-github
 Dette alternativet:
 - Henter HTML-filer fra GitHub html-pages branch (fra `html/episodes/`)
 - Krever IKKE at du bygger HTML lokalt først
-- Perfekt for brukere som ikke vil kjøre `make html` lokalt
+- Passer om du ikke vil kjøre `make html` lokalt
 
 **Hva skjer under genereringen:**
 
@@ -207,7 +207,7 @@ python div-support-filer/update_canvas_pages.py --page-id 395816 --page episode1
 
 ### Arbeidsflyt 1: Kun GitHub (anbefalt - ingen lokal bygging)
 
-Denne flyten er perfekt hvis du ikke vil bygge HTML lokalt:
+Denne flyten er passer hvis du ikke vil bygge HTML lokalt:
 
 **Første gangs oppsett:**
 ```bash
