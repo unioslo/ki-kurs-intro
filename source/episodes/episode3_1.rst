@@ -10,7 +10,6 @@ Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hv
 
       **Situasjoner hvor du ALLTID må sjekke output:**
 
-      - **Fakta og tall**
       * **Fakta og tall** - befolkningstall, datoer, statistikk
       * **Lover og regler** - lovparagrafer, regelverket ved UiO
       * **Referanser** - kildehenvisninger, studier, publikasjoner
