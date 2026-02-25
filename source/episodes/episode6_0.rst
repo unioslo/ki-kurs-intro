@@ -1,4 +1,4 @@
-Episode 6: Oppsummering og veien videre
+Oppsummering og veien videre
 ========================================
 
 I denne siste episoden oppsummerer vi det viktigste fra kurset, diskuterer etiske betraktninger, og gir deg tips for videre læring.

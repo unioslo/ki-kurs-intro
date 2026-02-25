@@ -1,4 +1,4 @@
-Episode 2: Hvordan fungerer språkmodeller?
+Hvordan fungerer språkmodeller?
 ==========================================
 
 I denne episoden skal du lære mer om hvordan store språkmodeller (LLM) faktisk fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.

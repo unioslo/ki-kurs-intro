@@ -1,4 +1,4 @@
-Episode 3: Hvordan trygt bruke KI?
+Hvordan trygt bruke KI?
 ===============================================
 
 I denne episoden lærer du hvordan du kan kvalitetssikre output fra generativ KI og hva du må tenke på når du bruker disse verktøyene.
