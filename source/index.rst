@@ -12,7 +12,6 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode1_2
    episodes/episode1_3
    episodes/episode1_4
-   episodes/episode1_5
 
 .. toctree::
    :maxdepth: 1
