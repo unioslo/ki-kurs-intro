@@ -1,5 +1,5 @@
 
-Oppsummering og veien videre
+Oppsummering av introduksjon
 ==============================
 
 Du har nå blitt introdusert til grunnleggende konsepter om kunstig intelligens og generativ KI. La oss ta en kort oppsummering før vi går videre.
