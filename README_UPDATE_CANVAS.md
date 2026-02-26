@@ -13,6 +13,63 @@ Skriptet gjør følgende:
 - Kan bygge opp mapping mellom HTML-filer og Canvas page IDs
 - Støtter deploy fra GitHub html-pages branch (henter HTML fra `html/episodes/` i html-pages branch)
 - Støtter dry-run mode for å se hva som vil bli oppdatert uten å gjøre endringer
+- **Automatisk bildehåndtering**: Finner alle bilder i HTML, laster dem opp til Canvas, og oppdaterer `<img>` tags med Canvas URLer
+
+## Bildehåndtering
+
+Skriptet håndterer automatisk bilder i HTML-filene:
+
+### Hvordan det fungerer
+
+1. **Finner bilder**: Skanner HTML-innholdet etter `<img>` tags
+2. **Sjekker eksisterende**: Hopper over bilder som allerede er lastet opp til Canvas
+3. **Løser filstier**: Håndterer relative stier (f.eks. `../_images/bilde.png`) både for lokale filer og GitHub-filer
+4. **Laster opp til Canvas**: Følger Canvas sin offisielle 3-stegs opplastingsworkflow
+5. **Oppdaterer HTML**: Erstatter bildestier med Canvas URLer i riktig format
+
+### Canvas bildeformat
+
+Bilder blir konvertert fra dette formatet:
+```html
+<img src="../_images/ChatGPT_howLLMswork.png" alt="LLM text generation" style="width: 60%;" />
+```
+
+Til Canvas-format:
+```html
+<img src="https://uio.instructure.com/courses/63248/files/3757441/preview"
+     alt="LLM text generation"
+     data-api-endpoint="https://uio.instructure.com/api/v1/courses/63248/files/3757441"
+     data-api-returntype="File"
+     data-ally-user-updated-alt="LLM text generation"
+     width="60%" />
+```
+
+### Hvor lagres bildene?
+
+- Bilder lagres i en egen mappe `course_images` i Canvas
+- Hvis samme filnavn eksisterer, blir det overskrevet automatisk
+- Bildene blir tilgjengelige for hele kurset
+
+### Output-informasjon
+
+For hver fil med bilder vil du se:
+```
+Processing: episode2_2.html
+  Found 1 image(s) to process
+    • Uploading: ../_images/ChatGPT_howLLMswork.png
+      Local path: /path/to/_images/ChatGPT_howLLMswork.png
+      ✓ Uploaded: ChatGPT_howLLMswork.png (file_id: 3757441)
+      Canvas URL: https://uio.instructure.com/courses/63248/files/3757441/preview
+  Image summary: 1 uploaded, 0 skipped
+```
+
+### Viktige notater
+
+- Alt-tekst fra originale `<img>` tags blir bevart
+- Width/height attributter blir bevart
+- Bilder som allerede er på Canvas blir automatisk hoppet over
+- Fungerer både med lokale filer og filer fra GitHub
+- Dry-run mode viser hvilke bilder som ville blitt lastet opp uten å faktisk gjøre det
 
 ## Sette opp API-nøkkel
 
@@ -193,8 +250,14 @@ Viser en tabell med:
 
 ### Oppdater en enkelt side
 
+**Fra lokale filer:**
 ```bash
 python div-support-filer/update_canvas_pages.py --page episode1_0
+```
+
+**Fra GitHub:**
+```bash
+python div-support-filer/update_canvas_pages.py --page episode1_0 --from-github
 ```
 
 ### Oppdater med spesifikk page ID
@@ -202,6 +265,8 @@ python div-support-filer/update_canvas_pages.py --page episode1_0
 ```bash
 python div-support-filer/update_canvas_pages.py --page-id 395816 --page episode1_0
 ```
+
+**Merk:** `--page-id` fungerer kun med lokale filer (ikke med `--from-github`).
 
 ## Workflows
 
