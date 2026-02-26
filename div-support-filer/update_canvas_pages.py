@@ -333,8 +333,14 @@ def get_last_build_info(repo_dir):
     }
 
 
-def ask_deploy_confirmation(build_info, dry_run=False):
-    """Ask user to confirm deployment."""
+def ask_deploy_confirmation(build_info, html_files, dry_run=False):
+    """Ask user to confirm deployment.
+
+    Args:
+        build_info: Dictionary with build information (date, hash, message)
+        html_files: List of Path objects for HTML files to be deployed
+        dry_run: Whether this is a dry run
+    """
     print("="*70)
     print("LAST BUILD INFORMATION:")
     print("="*70)
@@ -366,11 +372,20 @@ def ask_deploy_confirmation(build_info, dry_run=False):
     except Exception:
         pass
 
+    # Show files to be deployed
+    print("="*70)
+    print(f"FILES TO BE DEPLOYED ({len(html_files)}):")
+    print("="*70)
+    for html_file in html_files:
+        print(f"  - {html_file.name}")
+    print("="*70)
+    print()
+
     # Different prompt based on dry-run mode
     if dry_run:
-        prompt = "Preview this build? (DRY RUN - no changes will be made to Canvas) [yes/no]: "
+        prompt = "Preview these files? (DRY RUN - no changes will be made to Canvas) [yes/no]: "
     else:
-        prompt = "Deploy this build to Canvas? [yes/no]: "
+        prompt = "Deploy these files to Canvas? [yes/no]: "
 
     while True:
         response = input(prompt).lower().strip()
@@ -739,8 +754,206 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
         return False
 
 
-def extract_content(html_path):
-    """Extract the main content from an HTML file, removing h1 tags and navigation."""
+def upload_image_to_canvas(token, image_path):
+    """Upload an image file to Canvas following the official file upload workflow.
+
+    Workflow:
+    1. POST to /api/v1/courses/:course_id/files to get upload URL and params
+    2. POST the actual file to the upload_url with upload_params
+    3. Follow redirect to confirm and get file object with ID
+
+    Args:
+        token: Canvas API token
+        image_path: Path to the image file
+
+    Returns:
+        Tuple of (file_id, preview_url) or (None, None) if upload fails
+    """
+    import mimetypes
+
+    image_path = Path(image_path)
+
+    if not image_path.exists():
+        print(f"  Warning: Image file not found: {image_path}")
+        return None, None
+
+    # Determine MIME type
+    mime_type, _ = mimetypes.guess_type(str(image_path))
+    if not mime_type:
+        mime_type = 'application/octet-stream'
+
+    # Step 1: Notify Canvas and obtain upload token
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/files"
+    headers = {"Authorization": f"Bearer {token}"}
+
+    payload = {
+        "name": image_path.name,
+        "size": image_path.stat().st_size,
+        "content_type": mime_type,
+        "parent_folder_path": "course_images",  # Store images in dedicated folder
+        "on_duplicate": "overwrite"  # Overwrite if same filename exists
+    }
+
+    response = requests.post(api_endpoint, headers=headers, data=payload)
+
+    if response.status_code not in [200, 201]:
+        print(f"  Warning: Failed to initiate image upload for {image_path.name}")
+        print(f"  Status: {response.status_code}, Response: {response.text}")
+        return None, None
+
+    upload_info = response.json()
+    upload_url = upload_info.get('upload_url')
+    upload_params = upload_info.get('upload_params', {})
+
+    if not upload_url:
+        print(f"  Warning: No upload URL received for {image_path.name}")
+        return None, None
+
+    # Step 2: Upload the actual file
+    # Important: Do NOT send the access token with this request
+    # File must be the last field in the multipart form
+    with open(image_path, 'rb') as f:
+        files = {'file': (image_path.name, f, mime_type)}
+        upload_response = requests.post(upload_url, data=upload_params, files=files)
+
+    # Step 3: Follow redirect to confirm upload success
+    if upload_response.status_code in [301, 302, 303]:
+        # Follow redirect with authenticated GET request
+        location = upload_response.headers.get('Location')
+        if location:
+            confirm_headers = {"Authorization": f"Bearer {token}"}
+            upload_response = requests.get(location, headers=confirm_headers)
+
+    if upload_response.status_code not in [200, 201]:
+        print(f"  Warning: Failed to upload image {image_path.name}")
+        print(f"  Status: {upload_response.status_code}, Response: {upload_response.text}")
+        return None, None
+
+    # Get file info from response
+    try:
+        file_info = upload_response.json()
+        file_id = file_info.get('id')
+        preview_url = f"{CANVAS_URL}/courses/{COURSE_ID}/files/{file_id}/preview"
+
+        print(f"    ✓ Uploaded: {image_path.name} (file_id: {file_id})")
+        return file_id, preview_url
+    except Exception as e:
+        print(f"  Warning: Could not parse upload response for {image_path.name}: {e}")
+        return None, None
+
+
+def process_images_in_html(token, html_content, html_path, dry_run=False):
+    """Find all images in HTML, upload to Canvas, and update img tags with Canvas URLs.
+
+    Args:
+        token: Canvas API token
+        html_content: HTML content as string
+        html_path: Path to the HTML file (used to resolve relative image paths)
+        dry_run: If True, don't actually upload images
+
+    Returns:
+        Updated HTML content with Canvas image URLs
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    html_path = Path(html_path)
+
+    # Find all img tags
+    img_tags = soup.find_all('img')
+
+    if not img_tags:
+        return html_content
+
+    print(f"  Found {len(img_tags)} image(s) to process")
+
+    uploaded_count = 0
+    skipped_count = 0
+
+    for img in img_tags:
+        src = img.get('src')
+        if not src:
+            continue
+
+        # Skip if already a Canvas URL
+        if 'instructure.com' in src:
+            print(f"    • Skipping (already Canvas URL): {src}")
+            skipped_count += 1
+            continue
+
+        # Resolve relative path
+        # Images are typically referenced as ../images/filename.png or ../_images/filename.png
+        if src.startswith('../'):
+            # Resolve relative to HTML file directory
+            image_path = (html_path.parent / src).resolve()
+        elif src.startswith('/'):
+            # Absolute path
+            image_path = Path(src)
+        else:
+            # Relative path without ../
+            image_path = (html_path.parent / src).resolve()
+
+        if not image_path.exists():
+            print(f"    ✗ Image not found: {src}")
+            print(f"      Resolved to: {image_path}")
+            continue
+
+        # Get alt text
+        alt_text = img.get('alt', image_path.name)
+
+        if dry_run:
+            print(f"    • [DRY RUN] Would upload: {src}")
+            print(f"      Local path: {image_path}")
+            uploaded_count += 1
+            continue
+
+        # Upload image to Canvas
+        print(f"    • Uploading: {src}")
+        print(f"      Local path: {image_path}")
+        file_id, preview_url = upload_image_to_canvas(token, image_path)
+
+        if file_id and preview_url:
+            uploaded_count += 1
+            print(f"      Canvas URL: {preview_url}")
+
+            # Preserve existing width/height if set
+            width = img.get('width') or img.get('style', '').split('width:')[-1].split(';')[0].strip()
+            height = img.get('height') or img.get('style', '').split('height:')[-1].split(';')[0].strip()
+
+            # Update img tag with Canvas URL format
+            img['src'] = preview_url
+            img['data-api-endpoint'] = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/files/{file_id}"
+            img['data-api-returntype'] = "File"
+
+            # Preserve or add alt text
+            if alt_text:
+                img['alt'] = alt_text
+                img['data-ally-user-updated-alt'] = alt_text
+
+            # Preserve width/height if they existed
+            if width and 'width' in img.attrs:
+                img['width'] = width
+            if height and 'height' in img.attrs:
+                img['height'] = height
+        else:
+            print(f"      ✗ Upload failed")
+
+    # Summary
+    if uploaded_count > 0 or skipped_count > 0:
+        print(f"  Image summary: {uploaded_count} uploaded, {skipped_count} skipped")
+
+    return str(soup)
+
+
+def extract_content(html_path, token=None, dry_run=False):
+    """Extract the main content from an HTML file, removing h1 tags and navigation.
+
+    Args:
+        html_path: Path to the HTML file
+        token: Canvas API token (optional, needed for image uploads)
+        dry_run: If True, don't actually upload images
+
+    Returns:
+        HTML content string with processed images
+    """
     with open(html_path, 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
 
@@ -762,7 +975,13 @@ def extract_content(html_path):
     for nav in content.find_all('div', class_='page-navigation'):
         nav.decompose()
 
-    return str(content)
+    content_html = str(content)
+
+    # Process images if token is provided
+    if token:
+        content_html = process_images_in_html(token, content_html, html_path, dry_run)
+
+    return content_html
 
 
 def extract_title(html_path):
@@ -1051,30 +1270,46 @@ def main():
             # Step 2: Get last build info
             build_info = get_last_build_info(temp_dir)
 
-            # Step 3: Ask for confirmation
-            if not ask_deploy_confirmation(build_info, args.dry_run):
-                return
-
-            if args.dry_run:
-                print("\nProceeding with preview (DRY RUN)...\n")
-            else:
-                print("\nProceeding with deployment...\n")
-
-            # Step 4: Process HTML files from the cloned repo
+            # Step 3: Determine which files to process (before asking for confirmation)
             episodes_dir = Path(temp_dir) / "html" / "episodes"
 
             if not episodes_dir.exists():
                 print(f"Error: Episodes directory not found: {episodes_dir}")
                 sys.exit(1)
 
-            # Get all episode HTML files
-            html_files = sorted(episodes_dir.glob("episode*.html"))
+            # Determine which files to process
+            if args.page:
+                # Single page mode - convert page name to filename if needed
+                page_name = args.page
+                if not page_name.endswith('.html'):
+                    # Convert episode-1-0 or episode1_0 to episode1_0.html
+                    page_name = page_name.replace('-', '_') + '.html'
 
-            if not html_files:
-                print(f"No episode HTML files found in {episodes_dir}")
-                sys.exit(1)
+                html_file = episodes_dir / page_name
+                if not html_file.exists():
+                    print(f"Error: HTML file not found in GitHub: {html_file}")
+                    print(f"Available files in {episodes_dir}:")
+                    for f in sorted(episodes_dir.glob("episode*.html")):
+                        print(f"  - {f.name}")
+                    sys.exit(1)
 
-            print(f"Found {len(html_files)} HTML files to upload\n")
+                html_files = [html_file]
+            else:
+                # Get all episode HTML files
+                html_files = sorted(episodes_dir.glob("episode*.html"))
+
+                if not html_files:
+                    print(f"No episode HTML files found in {episodes_dir}")
+                    sys.exit(1)
+
+            # Step 4: Ask for confirmation (showing which files will be deployed)
+            if not ask_deploy_confirmation(build_info, html_files, args.dry_run):
+                return
+
+            if args.dry_run:
+                print("\nProceeding with preview (DRY RUN)...\n")
+            else:
+                print("\nProceeding with deployment...\n")
 
             # Load page ID mapping from file (includes module info)
             print("Loading page ID mapping file...")
@@ -1097,8 +1332,8 @@ def main():
             for html_file in html_files:
                 print(f"Processing: {html_file.name}")
 
-                # Extract content
-                content = extract_content(html_file)
+                # Extract content (includes image processing and upload)
+                content = extract_content(html_file, token=token, dry_run=args.dry_run)
 
                 # Extract title from h1 (use descriptive title)
                 title = extract_title(html_file)
@@ -1306,8 +1541,8 @@ def main():
     for html_file in html_files:
         print(f"Processing: {html_file.name}")
 
-        # Extract content
-        content = extract_content(html_file)
+        # Extract content (includes image processing and upload)
+        content = extract_content(html_file, token=token, dry_run=args.dry_run)
 
         # Extract title from h1 tag (descriptive title)
         title = extract_title(html_file)

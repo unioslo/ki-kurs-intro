@@ -64,6 +64,7 @@ Du finner python skriptet i `div-support-filer/update_canvas_pages.py`. Du treng
 Kort oppsummert:
 - Skriptet oppdaterer Canvas-sider automatisk basert på HTML-filer (lokale eller fra GitHub)
 - Bruker en mapping-fil (`page_id_mapping.json`) for å koble HTML-filer til Canvas page IDs
+- Håndterer automatisk bilder: laster opp til Canvas og oppdaterer `<img>` tags
 - Støtter deploy fra lokale filer via `make deploy-from-local`
 - Støtter deploy fra GitHub html-pages branch via `make deploy-from-github`
 - Støtter dry-run mode for å teste uten å gjøre endringer
