@@ -28,12 +28,16 @@ Denne automatikken er satt opp til å "bygge" html filer av rst filene. Alle rst
 
 <img width="300" alt="github-unioslo-actions" src="https://github.com/user-attachments/assets/d6c2f096-e5a8-4bd8-a891-e1b337356f2b" />
 
-## 5. Hvor er html filene?
-Html-filene lagres i en egen branch [html-pages](https://github.com/unioslo/ki-kurs-intro/tree/html-pages)
+### Kontroller resultatet
+Når denne prosessen er ferdig, kan du kikke på resultatet på github sin egen publiseringløsning: https://unioslo.github.io/ki-kurs-intro - dette er bare "for convenience" for å få en rask sjekk at ting ser bra ut. Dersom du er fornøyd så er du klar for å oppdatere innholdet i Canvas - se punkt 5. 
+
+## 5. Oppdater Canvas
+
+Html-filene lagres i en egen branch i github [html-pages](https://github.com/unioslo/ki-kurs-intro/tree/html-pages)
 
 <img width="300" alt="github-unioslo-html-pages-branch" src="https://github.com/user-attachments/assets/827ffaf8-4734-47bb-985d-7bde147f1367" />
 
-Du har nå valget mellom å bruke et python skript til å oppdatere filen(e) i Canvas med REST API, eller manuelt oppdatere de ved å copy/paste html-koden til hver fil. 
+Du har nå valget mellom å bruke et python skript til å oppdatere filen(e) i Canvas med REST API, eller manuelt oppdatere de ved å copy/paste html-koden for hver fil. 
 
 
 ### 5a. Manuell oppdatering
