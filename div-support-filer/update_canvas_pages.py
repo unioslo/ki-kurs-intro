@@ -920,6 +920,7 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
 
             # Update img tag with Canvas URL format
             img['src'] = preview_url
+            img['id'] = str(file_id)  # Add id attribute with file_id
             img['data-api-endpoint'] = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/files/{file_id}"
             img['data-api-returntype'] = "File"
 
@@ -933,6 +934,12 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
                 img['width'] = width
             if height and 'height' in img.attrs:
                 img['height'] = height
+
+            # Remove parent <a> tag if it's wrapping the image (to prevent clickable images)
+            parent = img.parent
+            if parent and parent.name == 'a' and 'image-reference' in parent.get('class', []):
+                # Replace the <a> tag with just the <img> tag
+                parent.replace_with(img)
         else:
             print(f"      ✗ Upload failed")
 
