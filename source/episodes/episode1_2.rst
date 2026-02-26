@@ -35,9 +35,9 @@ Det er ofte generativ KI vi mener når vi idag snakker om kunstig intelligens.
 
 .. uio-question::
 
-   Hva er hovedforskjellen mellom diskriminativ KI og generativ KI?
+   	Hva er hovedforskjellen mellom diskriminativ KI og generativ KI?
 
-    .. uio-answer::
+	.. uio-answer::
 
-	Diskriminativ KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre),
-	mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.
+		Diskriminativ KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre),
+		mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.
