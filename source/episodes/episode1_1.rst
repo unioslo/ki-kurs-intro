@@ -9,7 +9,7 @@ KI er ikke en ny teknologi - den har utviklet seg over flere tiår: allerede i 1
 Men siden ChatGTP ble sluppet i 2022 har vi sett en eksplosjonsartet utvikling av KI. ChatGPT var milevis fra de "dumme chatbotene" som kun klarte å svare på et smalt spekter av spørsmål. 
 Plutselig hadde alle tilgang til en tjeneste som kunne *generere* side på side med tekst av overraskende god kvalitet.  
 
-Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder treningsdata fra internett*, kraftige *GPU-er* som kan behandle massive datamengder parallelt, og nye *revolusjonerende teknikker* som gir bedre resultater enn før.
+Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder treningsdata fra internett*, kraftige *GPU-er* som kan behandle massive datamengder parallelt, og nye *revolusjonerende teknikker* (*transformers* mer om dette senere) som gir bedre resultater enn før.
 
 .. uio-note:: Oppsummert
 
