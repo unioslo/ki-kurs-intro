@@ -1,4 +1,0 @@
-export CLAUDE_CODE_USE_VERTEX=1
-export ANTHROPIC_VERTEX_PROJECT_ID=usit-ffu-ai-claude-project
-export GOOGLE_APPLICATION_CREDENTIALS=/Users/maikenp/vault/maikenp-claude.json
-export CLOUD_ML_REGION=global
