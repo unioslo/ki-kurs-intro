@@ -333,14 +333,18 @@ def get_last_build_info(repo_dir):
     }
 
 
-def ask_deploy_confirmation(build_info, html_files, dry_run=False):
+def ask_deploy_confirmation(build_info, html_files, dry_run=False, skip_confirmation=False):
     """Ask user to confirm deployment.
 
     Args:
         build_info: Dictionary with build information (date, hash, message)
         html_files: List of Path objects for HTML files to be deployed
         dry_run: Whether this is a dry run
+        skip_confirmation: Skip confirmation prompt and return True automatically
     """
+    if skip_confirmation:
+        return True
+
     print("="*70)
     print("LAST BUILD INFORMATION:")
     print("="*70)
@@ -1206,6 +1210,11 @@ def main():
         action="store_true",
         help="Show what would be updated without making actual changes"
     )
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Skip confirmation prompt and proceed automatically"
+    )
     args = parser.parse_args()
 
     # Validate argument dependencies
@@ -1310,7 +1319,7 @@ def main():
                     sys.exit(1)
 
             # Step 4: Ask for confirmation (showing which files will be deployed)
-            if not ask_deploy_confirmation(build_info, html_files, args.dry_run):
+            if not ask_deploy_confirmation(build_info, html_files, args.dry_run, args.yes):
                 return
 
             if args.dry_run:
