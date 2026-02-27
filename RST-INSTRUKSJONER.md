@@ -119,7 +119,7 @@ UiO-spesifikke komponenter som følger Universitetet i Oslos designretningslinje
 
 #### `.. uio-reflect:: Egendefinert tittel`
 
-Refleksjonsøvelsescontainer med refleksjonsikon. Kan inkludere en sammenleggbar løsning.
+Refleksjonsøvelsescontainer med refleksjonsikon (lilla farge). Brukes for refleksjonsøvelser der deltakerne skal tenke over et tema. Kan inkludere en sammenleggbar løsning.
 
 **Standardtittel:** `Refleksjon`
 
@@ -218,18 +218,38 @@ Advarsel/ikke-gjør-container med advarselsikon.
 -------------------------
 
 
-#### `.. uio-note:: Egendefinert tittel`
+#### `.. uio-info:: Egendefinert tittel`
 
-Notatcontainer med kildeikon.
+Informasjonsboks med informasjonsikon (blå "i"-ikon).
 
-**Standardtittel:** `Merk`
+**Standardtittel:** `Info`
 
 **Bruk:**
 
 ```rst
-.. uio-note:: Tilleggsinformasjon
+.. uio-info:: Viktig informasjon
 
    UiO tilbyr flere KI-tjenester for ansatte og studenter.
+```
+
+**Merk:** Dette direktivet erstatter det tidligere `uio-note` direktivet.
+
+-------------------------
+
+#### `.. uio-source:: Egendefinert tittel`
+
+Kilde/ressurser-container med kildeikon. Brukes for å liste kilder, ressurser eller nettsider.
+
+**Standardtittel:** `Kilder / Ressurser`
+
+**Bruk:**
+
+```rst
+.. uio-source:: Nyttige ressurser
+
+   - https://www.uio.no/tjenester/it/ki/
+   - ChatGPT dokumentasjon
+   - Claude AI dokumentasjon
 ```
 
 -------------------------
@@ -291,6 +311,31 @@ Detaljer/trekkspill-element som bruker HTML `<details>`- og `<summary>`-tagger.
    Dette innholdet er skjult som standard og kan utvides ved å klikke.
 ```
 
+-------------------------
+
+#### `.. uio-colorbox-1::`, `.. uio-colorbox-2::`, `.. uio-colorbox-3::`
+
+Fargede bokser uten ikon. Brukes for å fremheve innhold med ulike farger.
+
+**Bruk:**
+
+```rst
+.. uio-colorbox-1:: Valgfri overskrift
+
+   Innhold i fargeboks 1.
+
+.. uio-colorbox-2::
+
+   Innhold uten overskrift i fargeboks 2.
+
+.. uio-colorbox-3:: En annen overskrift
+
+   Innhold i fargeboks 3.
+```
+
+**Merk:** Overskriften er valgfri. Hvis du ikke angir overskrift, vil boksen kun inneholde innholdet uten `<h3>`-tag.
+
+-------------------------
 
 ## Legge til figurer
 
@@ -344,9 +389,21 @@ For detaljerte arbeidsflysinstruksjoner, se hoved-[README.md](README.md).
 ## Canvas-kompatibilitet
 
 Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. Den genererte HTML-en:
-- Bruker UiO-spesifikke CSS-klasser (`uio-icon-box`, `task`, `reflect`, `source`, `do`, `dont`)
+- Bruker UiO-spesifikke CSS-klasser:
+  - Ikonbokser: `uio-icon-box` med varianter `task`, `reflect`, `source`, `do`, `dont`, `info`
+  - Fargebokser: `uio-color-box-1`, `uio-color-box-2`, `uio-color-box-3`
 - Unngår JavaScript der det er mulig (faner bruker URL-fragmenter)
 - Følger UiOs designretningslinjer for tilgjengelighet og visuell konsistens
+
+## Endringer og oppdateringer
+
+**Fjernede direktiver:**
+- `uio-note` - erstattet med `uio-info` for informasjonsbokser og `uio-source` for kilder/ressurser
+
+**Nye direktiver:**
+- `uio-info` - informasjonsboks med blått info-ikon
+- `uio-source` - kilde/ressurser-boks med kildeikon
+- `uio-colorbox-1`, `uio-colorbox-2`, `uio-colorbox-3` - fargede bokser uten ikon
 
 
 
