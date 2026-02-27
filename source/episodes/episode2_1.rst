@@ -10,7 +10,7 @@ Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
 Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
 Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
-.. uio-icon-box:: Eksempel
+.. uio-dont:: Eksempel
 
    Spør du "Hva er befolkning i Norge 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
