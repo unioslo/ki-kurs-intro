@@ -13,7 +13,7 @@ Etter denne episoden vil du kunne:
 * Forstå grunnleggende om hvordan språkmodeller fungerer
 * Gjenkjenne eksempler på generativ KI i dagliglivet
 
-.. uio-reflect:: Hva legger du i KI?
+.. uio-reflect:: Refleksjon
 
     Hva er KI for deg? Bruk et minutt på å tenke på hva du forstår med KI, og hvordan du bruker KI i din hverdag. 
 
