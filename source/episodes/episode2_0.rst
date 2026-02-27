@@ -1,7 +1,7 @@
 Hvordan fungerer språkmodeller?
 ==========================================
 
-I denne delen av kurset skal du lære mer om hvordan store språkmodeller (LLM) fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.
+I denne delen av kurset skal du lære mer om hvordan store språkmodeller (LLM-er) fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.
 
 En type enkle språkmodeller som mange har brukt, er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
