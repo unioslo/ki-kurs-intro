@@ -8,31 +8,31 @@ Dette dokumentet gir retningslinjer for å bidra til innholdet i Grunnkurs KI, m
 
 ### Viktige regler:
 
-1. **Blank linje etter direktivet**: Etter et direktiv (f.eks. `.. uio-exercise::`) må det alltid være en blank linje før innholdet starter.
+1. **Blank linje etter direktivet**: Etter et direktiv (f.eks. `.. uio-task::`) må det alltid være en blank linje før innholdet starter.
 
 2. **Konsistent innrykk**: Alt innhold som hører til et direktiv må ha samme innrykk (vanligvis 3 mellomrom).
 
 3. **Ingen ekstra mellomrom**: Pass på at du ikke har ekstra mellomrom på slutten av linjer eller blanke linjer med mellomrom.
 
-4. **Nøstede direktiver**: Når du nøster direktiver (f.eks. `.. uio-solution::` inne i `.. uio-exercise::`), må det indre direktivet ha ytterligere innrykk (3 ekstra mellomrom).
+4. **Nøstede direktiver**: Når du nøster direktiver (f.eks. `.. uio-answer::` inne i `.. uio-task::`), må det indre direktivet ha ytterligere innrykk (3 ekstra mellomrom).
 
 ### Riktig eksempel:
 ```rst
-.. uio-exercise:: Øvelse 1
+.. uio-task:: Øvelse 1
 
    Dette er innholdet i øvelsen.
 
-   .. uio-solution::
+   .. uio-answer::
 
-      Dette er løsningen.
+      Dette er svaret.
 ```
 
 ### Feil eksempel (vil IKKE fungere):
 ```rst
-.. uio-exercise:: Øvelse 1
+.. uio-task:: Øvelse 1
    Dette er innholdet i øvelsen.    (mangler blank linje)
 
-.. uio-exercise:: Øvelse 2
+.. uio-task:: Øvelse 2
 Dette er feil innrykk.    (mangler innrykk)
 ```
 
@@ -70,24 +70,16 @@ Containerdirektiv for å lage faneinnhold.
       Innhold for fane 2
 ```
 
+**Merk:**
+- `.. canvas-tab::` må alltid være nøstet inne i `.. canvas-tabs::`
+- Tittelen for hver fane oppgis som et argument etter `.. canvas-tab::`
+
 **Eksempel på resultat**
 
-<img src="div-support-filer/figs/tabs.png" alt="Skjermbilde faner" width="500">
+<img src="div-support-filer/figs/canvas-tab-fane1.png" alt="Skjermbilde faner" width="500">
 
 
--------------------------
-
-#### `.. canvas-tab:: Fanetittel`
-
-Individuelt fanedirektiv. Tittelen oppgis som et argument etter direktivet.
-
-**Bruk:**
-
-```rst
-.. canvas-tab:: Introduksjon
-
-   Dette er innholdet i introduksjonsfanen.
-```
+<img src="div-support-filer/figs/canvas-tab-fane2.png" alt="Skjermbilde faner" width="500">
 
 -------------------------
 
@@ -96,70 +88,37 @@ Individuelt fanedirektiv. Tittelen oppgis som et argument etter direktivet.
 
 UiO-spesifikke komponenter som følger Universitetet i Oslos designretningslinjer.
 
-#### `.. uio-exercise:: Egendefinert tittel`
+#### `.. uio-task:: Egendefinert tittel`
 
-Øvelsescontainer med oppgaveikon. Kan inkludere en sammenleggbar løsning.
+Oppgavecontainer med oppgaveikon. Kan inkludere et sammenleggbart svar.
 
 **Standardtittel:** `Oppgave`
 
 **Bruk:**
 
 ```rst
-.. uio-exercise:: Øv på å lage prompter
+.. uio-task:: Øv på å lage prompter
 
    Prøv å skrive en prompt for å generere et sammendrag av denne teksten.
 
-   .. uio-solution::
+   .. uio-answer::
 
       Her er en eksempelløsning...
 ```
 
--------------------------
-
-
-#### `.. uio-question:: Egendefinert tittel`
-
-Spørsmålscontainer med oppgaveikon. Kan inkludere et sammenleggbart svar.
-
-**Standardtittel:** `Spørsmål`
-
-**Bruk:**
-
-```rst
-.. uio-question:: Hva er en språkmodell?
-
-   Hvordan ville du forklart en språkmodell til en kollega?
-
-   .. uio-answer::
-
-      En språkmodell er...
-```
-
 **Eksempel på resultat**
 
-<img src="div-support-filer/figs/spm_svar.png" alt="Skjermbilde spørsmål og svar" width="500">
+<img src="div-support-filer/figs/uio-task-egendef-med-losn.png" alt="Skjermbilde oppgave med svar" width="500">
 
 
 -------------------------
 
-#### `.. uio-solution::`
 
-Sammenleggbart løsningsdirektiv (trekkspill). Må være nøstet inni `.. uio-exercise::` eller `.. uio-reflect::`.
+#### `.. uio-answer:: Egendefinert tittel`
 
-**Bruk:**
+Sammenleggbart svardirektiv (trekkspill). Kan være nøstet inni alle ikonboksdirektiver (mest brukt i `.. uio-task::` og `.. uio-reflect::`).
 
-```rst
-.. uio-solution::
-
-   Dette innholdet vil være skjult bak en "Løsning"-knapp.
-```
-
--------------------------
-
-
-#### `.. uio-answer::`
-
-Sammenleggbart svardirektiv (trekkspill). Må være nøstet inni `.. uio-question::`.
+**Standardtittel:** `Svar`
 
 **Bruk:**
 
@@ -168,6 +127,19 @@ Sammenleggbart svardirektiv (trekkspill). Må være nøstet inni `.. uio-questio
 
    Dette innholdet vil være skjult bak en "Svar"-knapp.
 ```
+
+
+<img src="div-support-filer/figs/svar.png" alt="Skjermbilde svar" width="700">
+
+
+```rst 
+.. uio-answer:: Løsningsforslag
+
+   Du kan også gi en egendefinert tittel.
+```
+
+
+<img src="div-support-filer/figs/detaljer-egendef.png" alt="Skjermbilde svar" width="700">
 
 -------------------------
 
@@ -184,14 +156,14 @@ Refleksjonsøvelsescontainer med refleksjonsikon (lilla farge). Brukes for refle
 
    Vurder de etiske implikasjonene ved å bruke KI i ditt daglige arbeid.
 
-   .. uio-solution::
+   .. uio-answer::
 
       Noen punkter å vurdere...
 ```
 
 **Eksempel på resultat**
 
-<img src="div-support-filer/figs/refleksjon.png" alt="Skjermbilde refleksjon" width="500">
+<img src="div-support-filer/figs/uio-reflect-egendef-med-losning.png" alt="Skjermbilde refleksjon" width="500">
 
 
 -------------------------
@@ -212,7 +184,7 @@ Tips/gjør-container med avkryssingsikon.
 
 **Eksempel på resultat**
 
-<img src="div-support-filer/figs/do.png" alt="Skjermbilde do" width="500">
+<img src="div-support-filer/figs/uio-do-egendef.png" alt="Skjermbilde do" width="500">
 
 -------------------------
 
@@ -232,7 +204,7 @@ Advarsel/ikke-gjør-container med advarselsikon.
 
 **Eksempel på resultat**
 
-<img src="div-support-filer/figs/dont.png" alt="Skjermbilde dont" width="500">
+<img src="div-support-filer/figs/uio-dont-egendef.png" alt="Skjermbilde dont" width="500">
 
 -------------------------
 
@@ -253,6 +225,9 @@ Informasjonsboks med informasjonsikon (blå "i"-ikon).
 
 **Merk:** Dette direktivet erstatter det tidligere `uio-note` direktivet.
 
+<img src="div-support-filer/figs/uio-info-egendef.png" alt="Skjermbilde info  " width="500">
+
+
 -------------------------
 
 #### `.. uio-source:: Egendefinert tittel`
@@ -271,7 +246,7 @@ Kilde/ressurser-container med kildeikon. Brukes for å liste kilder, ressurser e
    - Claude AI dokumentasjon
 ```
 
-
+<img src="div-support-filer/figs/uio-source-egendef2.png" alt="Skjermbilde source" width="500">
 
 -------------------------
 
@@ -285,6 +260,8 @@ Generisk ikonbokscontainer. Bruk denne når du trenger en tilpasset container.
 ```rst
 .. uio-icon-box::
 
+   Her kommer diverse tekst som skal inn i boksen.
+
    .. uio-detail:: Mer informasjon
 
       Ytterligere detaljer som kan være skjult.
@@ -292,7 +269,7 @@ Generisk ikonbokscontainer. Bruk denne når du trenger en tilpasset container.
 
 **Eksempel på resultat**
 
-<img src="div-support-filer/figs/info.png" alt="Skjermbilde info" width="500">
+<img src="div-support-filer/figs/uio-icon-box-med-detaljer.png" alt="Skjermbilde icon boks" width="500">
 
 
 -------------------------
@@ -312,11 +289,15 @@ Detaljer/trekkspill-element som bruker HTML `<details>`- og `<summary>`-tagger.
    Dette innholdet er skjult som standard og kan utvides ved å klikke.
 ```
 
+<img src="div-support-filer/figs/uio-details.png" alt="Skjermbilde detaljer" width="700">
+
 -------------------------
 
 #### `.. uio-colorbox-1::`, `.. uio-colorbox-2::`, `.. uio-colorbox-3::`
 
 Fargede bokser uten ikon. Brukes for å fremheve innhold med ulike farger.
+
+**NB** Usikker på hvorfor disse blir røde i Canvas, kan være Maiken som har rotet til stylingen.. FIXME!
 
 **Bruk:**
 
@@ -335,6 +316,8 @@ Fargede bokser uten ikon. Brukes for å fremheve innhold med ulike farger.
 ```
 
 **Merk:** Overskriften er valgfri. Hvis du ikke angir overskrift, vil boksen kun inneholde innholdet uten `<h3>`-tag.
+
+<img src="div-support-filer/figs/uio-colorbox-1-2-3.png" alt="Skjermbilde colorbox" width="500">
 
 -------------------------
 
@@ -400,8 +383,12 @@ Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. D
 
 **Fjernede direktiver:**
 - `uio-note` - erstattet med `uio-info` for informasjonsbokser og `uio-source` for kilder/ressurser
+- `uio-exercise` - erstattet med `uio-task` for konsistens med Canvas CSS-klassenavn
+- `uio-question` - erstattet med `uio-task` for konsistens med Canvas CSS-klassenavn
+- `uio-solution` - erstattet med `uio-answer` for å forenkle (begge er sammenleggbare svar)
 
 **Nye direktiver:**
+- `uio-task` - oppgavecontainer som kan bruke `uio-answer` (erstatter `uio-exercise` og `uio-question`)
 - `uio-info` - informasjonsboks med blått info-ikon
 - `uio-source` - kilde/ressurser-boks med kildeikon
 - `uio-colorbox-1`, `uio-colorbox-2`, `uio-colorbox-3` - fargede bokser uten ikon
