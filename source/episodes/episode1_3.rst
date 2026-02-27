@@ -14,11 +14,13 @@ Hvordan genererer en LLM tekst?
 En LLM genererer tekst ved å beregne hva som er det mest sannsynlige neste ordet basert på konteksten. 
 Akkurat som hjernen din automatisk foreslår "varmt" eller "kaldt" hvis noen sier "I dag er det veldig...", gjør LLM-en det samme - bare mye mer avansert.
 
-**Transformer-teknologien**
+Transformer-teknologien
+----------------------------------
 
 Moderne LLM-er er bygget på *transformer*-teknologi som gjør at de kan se på hele teksten samtidig og forstå sammenhenger. For eksempel: i setningen "Katten jaget musen fordi *den* var sulten" kan modellen forstå at "den" refererer til katten, ikke musen.
 
-**Mønstre, ikke kunnskap**
+Mønstre, ikke kunnskap
+----------------------------------
 
 LLM-er lærer *mønstre* i tekst, ikke *fakta*. Hvis modellen har sett at "Oslo" ofte følger etter "hovedstaden i Norge er", vil den generere "Oslo" når du spør - men den "vet" ikke egentlig at dette er riktig. 
 Dette er grunnen til at LLM-er kan gi svært overbevisende, men feil informasjon.
