@@ -2,6 +2,8 @@
 Avslutning
 ==========
 
+Testing, testing
+
 .. uio-note::
 
    **Gratulerer!**
