@@ -1,41 +1,19 @@
-
-LLM-er er IKKE kunnskapsbaser
+LLM-er har *ikke* kunnskap
 ==============================
 
-Dette er kanskje den viktigste forståelsen du kan ha om språkmodeller:
+Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
+De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
+Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
 
-.. uio-dont::
+Hvis en språkmodell skal fullføre setningen «Jeg vil ha et glass…», så er noen mulige fortsettelser «vann» og «melk».
+Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
+Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
+Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
-   **Store språkmodeller er IKKE databaser med fakta. De er statistiske modeller som genererer tekst basert på mønstre de har lært.**
+.. uio-icon-box::
 
-La oss sammenligne med noe du kjenner:
+   .. uio-detail:: Eksempel
 
-.. canvas-tabs::
+      Spør du "Hva er befolkning i Norge 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
-   .. canvas-tab:: Kunnskapsbase (f.eks. Wikipedia)
-
-      **Slik fungerer det:**
-
-      * Informasjon er lagret som strukturerte data
-      * Når du søker, henter systemet frem eksakt informasjon
-      * Informasjonen er (ideelt sett) verifisert og referert
-      * Du får samme svar hver gang på samme spørsmål
-      * Hvis informasjonen ikke finnes, får du ingen treff
-
-      **Eksempel:**
-
-      Søker du "befolkning i Norge 2024", får du det eksakte tallet som er lagret.
-
-   .. canvas-tab:: Språkmodell (f.eks. ChatGPT)
-
-      **Slik fungerer det:**
-
-      * Ingen informasjon er direkte "lagret" som fakta
-      * Modellen har lært mønstre fra millioner av tekster
-      * Når du stiller et spørsmål, genererer den ny tekst som ligner på mønstre den har sett
-      * Du kan få ulike svar på samme spørsmål
-      * Modellen vil alltid forsøke å gi et svar, selv om den ikke "vet" svaret
-
-      **Eksempel:**
-
-      Spør du "befolkning i Norge 2024", konstruerer modellen et svar basert på mønstre fra lignende spørsmål den har sett - og kan gi feil tall.
+.. [Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», *Ethics and Information Technology 26*, nr. 2 (2024): 38, (https://doi.org/10.1007/s10676-024-09775-5), på s. 2.
