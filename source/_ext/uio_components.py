@@ -14,18 +14,13 @@ class uio_heading_stripe(nodes.General, nodes.Element):
     pass
 
 
-class uio_exercise(nodes.General, nodes.Element):
-    """Exercise container - uses uio-icon-box task class."""
+class uio_task(nodes.General, nodes.Element):
+    """Task container - uses uio-icon-box task class."""
     pass
 
 
 class uio_reflect(nodes.General, nodes.Element):
     """Reflection exercise container - uses uio-icon-box reflect class."""
-    pass
-
-
-class uio_question(nodes.General, nodes.Element):
-    """Question container - uses uio-icon-box task class."""
     pass
 
 
@@ -84,19 +79,23 @@ class uio_detail(nodes.General, nodes.Element):
     pass
 
 
-class UioExerciseDirective(SphinxDirective):
+class UioTaskDirective(SphinxDirective):
     """
-    UiO exercise directive.
+    UiO task directive.
 
     Usage::
 
-        .. uio-exercise:: Custom Title
+        .. uio-task:: Custom Title
 
-           Exercise content here
+           Task content here
 
            .. uio-solution::
 
               Solution content here (will be collapsible accordion)
+
+           .. uio-answer::
+
+              Answer content here (will be collapsible accordion)
     """
     has_content = True
     required_arguments = 0
@@ -104,7 +103,7 @@ class UioExerciseDirective(SphinxDirective):
     final_argument_whitespace = True
 
     def run(self):
-        node = uio_exercise()
+        node = uio_task()
         if self.arguments:
             node['title'] = ' '.join(self.arguments)
         else:
@@ -138,35 +137,6 @@ class UioReflectDirective(SphinxDirective):
             node['title'] = ' '.join(self.arguments)
         else:
             node['title'] = 'Refleksjon'
-        self.state.nested_parse(self.content, self.content_offset, node)
-        return [node]
-
-
-class UioQuestionDirective(SphinxDirective):
-    """
-    UiO question directive.
-
-    Usage::
-
-        .. uio-question:: Custom Title
-
-           Question content here
-
-           .. uio-answer::
-
-              Answer content here (will be collapsible accordion)
-    """
-    has_content = True
-    required_arguments = 0
-    optional_arguments = 100
-    final_argument_whitespace = True
-
-    def run(self):
-        node = uio_question()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Spørsmål'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -424,20 +394,16 @@ class UioDetailDirective(SphinxDirective):
         return [node]
 
 
-def html_visit_uio_exercise(self, node):
-    """Generate UiO exercise HTML."""
-    has_solution = any(isinstance(child, uio_solution) for child in node.children)
+def html_visit_uio_task(self, node):
+    """Generate UiO task HTML."""
     title = node.get('title', 'Oppgave')
 
     self.body.append('<div class="uio-icon-box task">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
 
-    # Store state for depart function
-    node['has_solution'] = has_solution
 
-
-def html_depart_uio_exercise(self, node):
-    """Close exercise HTML."""
+def html_depart_uio_task(self, node):
+    """Close task HTML."""
     self.body.append('</div>\n')  # Close uio-icon-box task
 
 
@@ -456,23 +422,6 @@ def html_visit_uio_reflect(self, node):
 def html_depart_uio_reflect(self, node):
     """Close reflection HTML."""
     self.body.append('</div>\n')  # Close uio-icon-box reflect
-
-
-def html_visit_uio_question(self, node):
-    """Generate UiO question HTML."""
-    has_answer = any(isinstance(child, uio_answer) for child in node.children)
-    title = node.get('title', 'Spørsmål')
-
-    self.body.append('<div class="uio-icon-box task">\n')
-    self.body.append(f'<h3>{self.encode(title)}</h3>\n')
-
-    # Store state for depart function
-    node['has_answer'] = has_answer
-
-
-def html_depart_uio_question(self, node):
-    """Close question HTML."""
-    self.body.append('</div>\n')  # Close uio-icon-box task
 
 
 def html_visit_uio_solution(self, node):
@@ -718,16 +667,12 @@ def setup(app):
 
     # Add nodes
     app.add_node(
-        uio_exercise,
-        html=(html_visit_uio_exercise, html_depart_uio_exercise)
+        uio_task,
+        html=(html_visit_uio_task, html_depart_uio_task)
     )
     app.add_node(
         uio_reflect,
         html=(html_visit_uio_reflect, html_depart_uio_reflect)
-    )
-    app.add_node(
-        uio_question,
-        html=(html_visit_uio_question, html_depart_uio_question)
     )
     app.add_node(
         uio_solution,
@@ -775,9 +720,8 @@ def setup(app):
     )
 
     # Add directives
-    app.add_directive('uio-exercise', UioExerciseDirective)
+    app.add_directive('uio-task', UioTaskDirective)
     app.add_directive('uio-reflect', UioReflectDirective)
-    app.add_directive('uio-question', UioQuestionDirective)
     app.add_directive('uio-solution', UioSolutionDirective)
     app.add_directive('uio-answer', UioAnswerDirective)
     app.add_directive('uio-dont', UioDontDirective)

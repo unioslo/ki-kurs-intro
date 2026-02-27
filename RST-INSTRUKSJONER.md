@@ -117,32 +117,6 @@ UiO-spesifikke komponenter som følger Universitetet i Oslos designretningslinje
 -------------------------
 
 
-#### `.. uio-reflect:: Egendefinert tittel`
-
-Refleksjonsøvelsescontainer med refleksjonsikon (lilla farge). Brukes for refleksjonsøvelser der deltakerne skal tenke over et tema. Kan inkludere en sammenleggbar løsning.
-
-**Standardtittel:** `Refleksjon`
-
-**Bruk:**
-
-```rst
-.. uio-reflect:: KI-etikk
-
-   Vurder de etiske implikasjonene ved å bruke KI i ditt daglige arbeid.
-
-   .. uio-solution::
-
-      Noen punkter å vurdere...
-```
-
-**Eksempel på resultat**
-
-<img src="div-support-filer/figs/refleksjon.png" alt="Skjermbilde refleksjon" width="500">
-
-
--------------------------
-
-
 #### `.. uio-question:: Egendefinert tittel`
 
 Spørsmålscontainer med oppgaveikon. Kan inkludere et sammenleggbart svar.
@@ -194,6 +168,51 @@ Sammenleggbart svardirektiv (trekkspill). Må være nøstet inni `.. uio-questio
 
    Dette innholdet vil være skjult bak en "Svar"-knapp.
 ```
+
+-------------------------
+
+#### `.. uio-reflect:: Egendefinert tittel`
+
+Refleksjonsøvelsescontainer med refleksjonsikon (lilla farge). Brukes for refleksjonsøvelser der deltakerne skal tenke over et tema. Kan inkludere en sammenleggbar løsning.
+
+**Standardtittel:** `Refleksjon`
+
+**Bruk:**
+
+```rst
+.. uio-reflect:: KI-etikk
+
+   Vurder de etiske implikasjonene ved å bruke KI i ditt daglige arbeid.
+
+   .. uio-solution::
+
+      Noen punkter å vurdere...
+```
+
+**Eksempel på resultat**
+
+<img src="div-support-filer/figs/refleksjon.png" alt="Skjermbilde refleksjon" width="500">
+
+
+-------------------------
+
+#### `.. uio-do:: Egendefinert tittel`
+
+Tips/gjør-container med avkryssingsikon.
+
+**Standardtittel:** `Tips`
+
+**Bruk:**
+
+```rst
+.. uio-do:: God praksis
+
+   Alltid verifiser KI-generert innhold før du bruker det i arbeidet ditt.
+```
+
+**Eksempel på resultat**
+
+<img src="div-support-filer/figs/do.png" alt="Skjermbilde do" width="500">
 
 -------------------------
 
@@ -252,25 +271,7 @@ Kilde/ressurser-container med kildeikon. Brukes for å liste kilder, ressurser e
    - Claude AI dokumentasjon
 ```
 
--------------------------
 
-#### `.. uio-do:: Egendefinert tittel`
-
-Tips/gjør-container med avkryssingsikon.
-
-**Standardtittel:** `Tips`
-
-**Bruk:**
-
-```rst
-.. uio-do:: God praksis
-
-   Alltid verifiser KI-generert innhold før du bruker det i arbeidet ditt.
-```
-
-**Eksempel på resultat**
-
-<img src="div-support-filer/figs/do.png" alt="Skjermbilde do" width="500">
 
 -------------------------
 
