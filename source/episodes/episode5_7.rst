@@ -30,7 +30,7 @@ Praktiske tips for å komme i gang
       - Les nyhetsbrev om KI ved UiO
       - Delta i faglige oppdateringer
 
-.. uio-exercise::
+.. uio-task::
 
    **Oppgave: Utforsk UiOs KI-tjenester**
 

@@ -55,7 +55,7 @@ Hva med internett-søk?
 
 Mange tjenester som ChatGPT, Copilot og Gemini har nå mulighet til å søke på internett for å få oppdatert informasjon. Men selv dette garanterer ikke at svaret er faktisk korrekt. Hvorfor ikke? Fordi LLM-en fortsatt må *tolke* og *oppsummere* informasjonen den finner, og det gjør den på samme måte som alltid - ved å generere tekst basert på mønstre. Den kan derfor fortsatt hallusinere selv om den har tilgang til korrekt informasjon fra nettet.
 
-.. uio-question::
+.. uio-task::
 
    **Hvorfor kan en språkmodell gi feil informasjon selv om svaret høres veldig troverdig ut?**
 

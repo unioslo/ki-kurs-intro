@@ -14,7 +14,7 @@ Oppsummering
    6. **Eksperimenter** - Test ulike tilnærminger
    7. **Vær tålmodig** - God prompting er en ferdighet som utvikles over tid
 
-.. uio-exercise::
+.. uio-task::
 
    **Oppgave: Skriv din egen prompt**
 

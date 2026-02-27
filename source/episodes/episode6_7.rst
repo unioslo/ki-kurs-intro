@@ -62,9 +62,3 @@ Avslutning
    * Fagnettverk og kollegaer
 
    **Takk for at du deltok!**
-
-
-
-.. uio-info::
-
-   Test for å finne ikon-info.svg filen

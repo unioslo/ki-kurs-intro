@@ -79,7 +79,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
 
       Hvis du får tre ulike datoer, vet du at du må finne informasjonen på en annen måte.
 
-.. uio-exercise::
+.. uio-task::
 
    **Praktisk øvelse: Kvalitetssikring**
 
@@ -90,7 +90,7 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
    3. "Hjelp meg å strukturere disse møtenotatene" (du har limt inn notatene)
    4. "Generer ideer til et sommerarrangement for ansatte"
 
-   .. uio-solution::
+   .. uio-answer::
 
       1. **E-post-utkast:**
          - Les grundig gjennom

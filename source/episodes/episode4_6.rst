@@ -31,7 +31,7 @@ Tips for å bli bedre til prompting
       - "Dette var for langt, gjør det kortere" eller
       - "Tonen var for formell, jeg trenger mer avslappet språk"
 
-.. uio-exercise::
+.. uio-task::
 
    **Praktisk øvelse: Forbedre prompts**
 
@@ -42,7 +42,7 @@ Tips for å bli bedre til prompting
    3. "Hva med den tingen?"
    4. "Lag en liste"
 
-   .. uio-solution::
+   .. uio-answer::
 
       **Mulige forbedringer:**
 

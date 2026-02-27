@@ -33,7 +33,7 @@ Generativ KI er en type KI som kan *skape* nytt innhold, i stedet for bare å an
 Den kan generere tekst, bilder, lyd, video og mye mer.
 Det er ofte generativ KI vi mener når vi idag snakker om kunstig intelligens.
 
-.. uio-question::
+.. uio-task::
 
    	Hva er hovedforskjellen mellom diskriminativ KI og generativ KI?
 

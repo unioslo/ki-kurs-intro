@@ -76,7 +76,7 @@ Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensi
 
 
 
-.. uio-question::
+.. uio-task::
 
    **Hvorfor er det ikke nok å anonymisere data før du deler det med en LLM?**
 

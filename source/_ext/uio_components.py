@@ -24,11 +24,6 @@ class uio_reflect(nodes.General, nodes.Element):
     pass
 
 
-class uio_solution(nodes.General, nodes.Element):
-    """Solution container (accordion) - nested in exercise."""
-    pass
-
-
 class uio_answer(nodes.General, nodes.Element):
     """Answer container (accordion) - nested in question."""
     pass
@@ -141,22 +136,19 @@ class UioReflectDirective(SphinxDirective):
         return [node]
 
 
-class UioSolutionDirective(SphinxDirective):
-    """Collapsible solution directive (accordion)."""
-    has_content = True
-
-    def run(self):
-        node = uio_solution()
-        self.state.nested_parse(self.content, self.content_offset, node)
-        return [node]
-
-
 class UioAnswerDirective(SphinxDirective):
     """Collapsible answer directive (accordion)."""
     has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
 
     def run(self):
         node = uio_answer()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Svar'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -409,14 +401,14 @@ def html_depart_uio_task(self, node):
 
 def html_visit_uio_reflect(self, node):
     """Generate UiO reflection HTML."""
-    has_solution = any(isinstance(child, uio_solution) for child in node.children)
+    has_answer = any(isinstance(child, uio_answer) for child in node.children)
     title = node.get('title', 'Refleksjon')
 
     self.body.append('<div class="uio-icon-box reflect">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
 
     # Store state for depart function
-    node['has_solution'] = has_solution
+    node['has_answer'] = has_answer
 
 
 def html_depart_uio_reflect(self, node):
@@ -424,21 +416,11 @@ def html_depart_uio_reflect(self, node):
     self.body.append('</div>\n')  # Close uio-icon-box reflect
 
 
-def html_visit_uio_solution(self, node):
-    """Generate collapsible solution HTML (accordion inside exercise)."""
-    self.body.append('<details>\n')
-    self.body.append('<summary class="uio-solution-summary"><strong>Løsning</strong></summary>\n')
-
-
-def html_depart_uio_solution(self, node):
-    """Close solution HTML."""
-    self.body.append('</details>\n')
-
-
 def html_visit_uio_answer(self, node):
     """Generate collapsible answer HTML (accordion inside question)."""
+    title = node.get('title', 'Svar')
     self.body.append('<details>\n')
-    self.body.append('<summary class="uio-answer-summary"><strong>Svar</strong></summary>\n')
+    self.body.append(f'<summary class="uio-answer-summary"><strong>{self.encode(title)}</strong></summary>\n')
 
 
 def html_depart_uio_answer(self, node):
@@ -675,10 +657,6 @@ def setup(app):
         html=(html_visit_uio_reflect, html_depart_uio_reflect)
     )
     app.add_node(
-        uio_solution,
-        html=(html_visit_uio_solution, html_depart_uio_solution)
-    )
-    app.add_node(
         uio_answer,
         html=(html_visit_uio_answer, html_depart_uio_answer)
     )
@@ -722,7 +700,6 @@ def setup(app):
     # Add directives
     app.add_directive('uio-task', UioTaskDirective)
     app.add_directive('uio-reflect', UioReflectDirective)
-    app.add_directive('uio-solution', UioSolutionDirective)
     app.add_directive('uio-answer', UioAnswerDirective)
     app.add_directive('uio-dont', UioDontDirective)
     app.add_directive('uio-do', UioDoDirective)

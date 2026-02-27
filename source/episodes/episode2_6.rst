@@ -26,7 +26,7 @@ Hva betyr dette for deg som bruker?
    * Få oppgitt kontaktinformasjon til en bestemt person
    * Oppsummere et dokument du har limt inn i chatten
 
-   .. uio-solution::
+   .. uio-answer::
 
       **Ekstra forsiktig (verifiser alltid):**
 
