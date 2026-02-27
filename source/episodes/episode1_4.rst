@@ -7,15 +7,13 @@ Du har nå blitt introdusert til grunnleggende konsepter om kunstig intelligens 
 Hva har vi lært?
 ~~~~~~~~~~~~~~~~~
 
-**Kunstig intelligens har utviklet seg**
-
-Vi har sett hvordan KI har utviklet seg fra tradisjonelle algoritmer og regelstyrt KI til moderne maskinlæring. Gjennombruddet kom med kombinasjonen av enorme treningsdata, kraftige GPU-er, og transformer-teknologi.
-
-**Generativ KI skaper nytt innhold**
+Generativ KI skaper nytt innhold
+----------------------------------
 
 I motsetning til tradisjonell KI som kun analyserer og kategoriserer, kan generativ KI *skape* nytt innhold - tekst, bilder, musikk og mer. Dette er det vi vanligvis mener når vi snakker om "KI" i dag.
 
-**LLM-er - språkets "auto-fullføring" på steroider**
+LLM-er - språkets "auto-fullføring" på steroider
+----------------------------------
 
 Store språkmodeller (LLM) genererer tekst ved å beregne sannsynligheten for neste ord basert på mønstre de har lært fra enorme mengder data. De lærer mønstre i språk, ikke fakta eller kunnskap.
 
