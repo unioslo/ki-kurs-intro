@@ -46,13 +46,13 @@ Dette prosjektet bruker Sphinx med Read the Docs-temaet for å bygge kursinnhold
 
 Prosjektet inkluderer tilpassede Sphinx-utvidelser i `source/_ext/`-katalogen som tilbyr UiO-spesifikke komponenter. Disse direktivene genererer HTML i henhold til UiOs designretningslinjer fra [UiO Canvas designelementer](https://www.uio.no/for-ansatte/arbeidsstotte/sta/canvas/veiledninger/utnytt-mulighetene/designelementer.html).
 
-### Canvas-faner (`canvas_tabs.py`)
+## Canvas-faner (`canvas_tabs.py`)
 
 Canvas-kompatible faner som bruker HTML med URL-fragmenter (ingen JavaScript nødvendig).
 
 
 
-#### `.. canvas-tabs::`
+### canvas-tabs
 
 Containerdirektiv for å lage faneinnhold.
 
@@ -84,11 +84,11 @@ Containerdirektiv for å lage faneinnhold.
 -------------------------
 
 
-### UiO-komponenter (`uio_components.py`)
+## UiO-komponenter (`uio_components.py`)
 
 UiO-spesifikke komponenter som følger Universitetet i Oslos designretningslinjer.
 
-#### `.. uio-task:: Egendefinert tittel`
+### uio-task
 
 Oppgavecontainer med oppgaveikon. Kan inkludere et sammenleggbart svar.
 
@@ -114,7 +114,7 @@ Oppgavecontainer med oppgaveikon. Kan inkludere et sammenleggbart svar.
 -------------------------
 
 
-#### `.. uio-answer:: Egendefinert tittel`
+### uio-answer
 
 Sammenleggbart svardirektiv (trekkspill). Kan være nøstet inni alle ikonboksdirektiver (mest brukt i `.. uio-task::` og `.. uio-reflect::`).
 
@@ -143,7 +143,29 @@ Sammenleggbart svardirektiv (trekkspill). Kan være nøstet inni alle ikonboksdi
 
 -------------------------
 
-#### `.. uio-reflect:: Egendefinert tittel`
+
+### uio-detail
+
+Detaljer/trekkspill-element som bruker HTML `<details>`- og `<summary>`-tagger.
+
+**Standard oppsummering:** `Detaljer`
+
+**Bruk:**
+
+```rst
+.. uio-detail:: Klikk for å utvide
+
+   Dette innholdet er skjult som standard og kan utvides ved å klikke.
+```
+
+<img src="div-support-filer/figs/uio-details.png" alt="Skjermbilde detaljer" width="700">
+
+-------------------------
+
+
+
+
+### uio-reflect
 
 Refleksjonsøvelsescontainer med refleksjonsikon (lilla farge). Brukes for refleksjonsøvelser der deltakerne skal tenke over et tema. Kan inkludere en sammenleggbar løsning.
 
@@ -168,7 +190,7 @@ Refleksjonsøvelsescontainer med refleksjonsikon (lilla farge). Brukes for refle
 
 -------------------------
 
-#### `.. uio-do:: Egendefinert tittel`
+### uio-do
 
 Tips/gjør-container med avkryssingsikon.
 
@@ -188,7 +210,7 @@ Tips/gjør-container med avkryssingsikon.
 
 -------------------------
 
-#### `.. uio-dont:: Egendefinert tittel`
+### uio-dont
 
 Advarsel/ikke-gjør-container med advarselsikon.
 
@@ -209,7 +231,7 @@ Advarsel/ikke-gjør-container med advarselsikon.
 -------------------------
 
 
-#### `.. uio-info:: Egendefinert tittel`
+### uio-info
 
 Informasjonsboks med informasjonsikon (blå "i"-ikon).
 
@@ -230,7 +252,7 @@ Informasjonsboks med informasjonsikon (blå "i"-ikon).
 
 -------------------------
 
-#### `.. uio-source:: Egendefinert tittel`
+### uio-source
 
 Kilde/ressurser-container med kildeikon. Brukes for å liste kilder, ressurser eller nettsider.
 
@@ -251,7 +273,7 @@ Kilde/ressurser-container med kildeikon. Brukes for å liste kilder, ressurser e
 -------------------------
 
 
-#### `.. uio-icon-box::`
+### uio-icon-box
 
 Generisk ikonbokscontainer. Bruk denne når du trenger en tilpasset container.
 
@@ -275,25 +297,11 @@ Generisk ikonbokscontainer. Bruk denne når du trenger en tilpasset container.
 -------------------------
 
 
-#### `.. uio-detail:: Oppsummeringstekst`
 
-Detaljer/trekkspill-element som bruker HTML `<details>`- og `<summary>`-tagger.
-
-**Standard oppsummering:** `Detaljer`
-
-**Bruk:**
-
-```rst
-.. uio-detail:: Klikk for å utvide
-
-   Dette innholdet er skjult som standard og kan utvides ved å klikke.
-```
-
-<img src="div-support-filer/figs/uio-details.png" alt="Skjermbilde detaljer" width="700">
 
 -------------------------
 
-#### `.. uio-colorbox-1::`, `.. uio-colorbox-2::`, `.. uio-colorbox-3::`
+### uio-colorbox-1, uio-colorbox-2, uio-colorbox-3
 
 Fargede bokser uten ikon. Brukes for å fremheve innhold med ulike farger.
 
@@ -331,6 +339,8 @@ Du kan legge til figurer på følgende måte:
    :width: 60%
    :alt: Illustrasjon av tekstgenerering med LLM
 ```
+
+**NB** Husk å også laste opp figurene til github i folderen `source/images` - ellers vil ikke byggingen finne filen!
 
 -------------------------
 
