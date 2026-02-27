@@ -44,13 +44,33 @@ class uio_dont(nodes.General, nodes.Element):
     pass
 
 
-class uio_note(nodes.General, nodes.Element):
-    """Note container - uses uio-icon-box source class."""
+class uio_do(nodes.General, nodes.Element):
+    """Do/tip container - uses uio-icon-box do class."""
     pass
 
 
-class uio_do(nodes.General, nodes.Element):
-    """Do/tip container - uses uio-icon-box do class."""
+class uio_info(nodes.General, nodes.Element):
+    """Info container - uses uio-icon-box info class."""
+    pass
+
+
+class uio_source(nodes.General, nodes.Element):
+    """Source/resources container - uses uio-icon-box source class."""
+    pass
+
+
+class uio_colorbox_1(nodes.General, nodes.Element):
+    """Color box 1 container - uses uio-color-box-1 class."""
+    pass
+
+
+class uio_colorbox_2(nodes.General, nodes.Element):
+    """Color box 2 container - uses uio-color-box-2 class."""
+    pass
+
+
+class uio_colorbox_3(nodes.General, nodes.Element):
+    """Color box 3 container - uses uio-color-box-3 class."""
     pass
 
 
@@ -196,31 +216,6 @@ class UioDontDirective(SphinxDirective):
         return [node]
 
 
-class UioNoteDirective(SphinxDirective):
-    """
-    UiO note directive.
-
-    Usage::
-
-        .. uio-note:: Custom Title
-
-           Note content here
-    """
-    has_content = True
-    required_arguments = 0
-    optional_arguments = 100
-    final_argument_whitespace = True
-
-    def run(self):
-        node = uio_note()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Merk'
-        self.state.nested_parse(self.content, self.content_offset, node)
-        return [node]
-
-
 class UioDoDirective(SphinxDirective):
     """
     UiO do/tip directive.
@@ -242,6 +237,143 @@ class UioDoDirective(SphinxDirective):
             node['title'] = ' '.join(self.arguments)
         else:
             node['title'] = 'Tips'
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioInfoDirective(SphinxDirective):
+    """
+    UiO info directive.
+
+    Usage::
+
+        .. uio-info:: Custom Title
+
+           Info content here
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_info()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Info'
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioSourceDirective(SphinxDirective):
+    """
+    UiO source/resources directive.
+
+    Usage::
+
+        .. uio-source:: Custom Title
+
+           Source content here
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_source()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Kilder / Ressurser'
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioColorbox1Directive(SphinxDirective):
+    """
+    UiO color box 1 directive.
+
+    Usage::
+
+        .. uio-colorbox-1::
+
+           Content without title
+
+        .. uio-colorbox-1:: Optional Title
+
+           Content with title
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_colorbox_1()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = None
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioColorbox2Directive(SphinxDirective):
+    """
+    UiO color box 2 directive.
+
+    Usage::
+
+        .. uio-colorbox-2::
+
+           Content without title
+
+        .. uio-colorbox-2:: Optional Title
+
+           Content with title
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_colorbox_2()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = None
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+class UioColorbox3Directive(SphinxDirective):
+    """
+    UiO color box 3 directive.
+
+    Usage::
+
+        .. uio-colorbox-3::
+
+           Content without title
+
+        .. uio-colorbox-3:: Optional Title
+
+           Content with title
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_colorbox_3()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = None
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -378,19 +510,6 @@ def html_depart_uio_dont(self, node):
     self.body.append('</div>\n')  # Close uio-icon-box dont
 
 
-def html_visit_uio_note(self, node):
-    """Generate UiO note HTML."""
-    title = node.get('title', 'Merk')
-
-    self.body.append('<div class="uio-icon-box source">\n')
-    self.body.append(f'<h3>{self.encode(title)}</h3>\n')
-
-
-def html_depart_uio_note(self, node):
-    """Close note HTML."""
-    self.body.append('</div>\n')  # Close uio-icon-box source
-
-
 def html_visit_uio_do(self, node):
     """Generate UiO do/tip HTML."""
     title = node.get('title', 'Tips')
@@ -402,6 +521,74 @@ def html_visit_uio_do(self, node):
 def html_depart_uio_do(self, node):
     """Close do HTML."""
     self.body.append('</div>\n')  # Close uio-icon-box do
+
+
+def html_visit_uio_info(self, node):
+    """Generate UiO info HTML."""
+    title = node.get('title', 'Info')
+
+    self.body.append('<div class="uio-icon-box info">\n')
+    self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_info(self, node):
+    """Close info HTML."""
+    self.body.append('</div>\n')  # Close uio-icon-box info
+
+
+def html_visit_uio_source(self, node):
+    """Generate UiO source/resources HTML."""
+    title = node.get('title', 'Kilder / Ressurser')
+
+    self.body.append('<div class="uio-icon-box source">\n')
+    self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_source(self, node):
+    """Close source HTML."""
+    self.body.append('</div>\n')  # Close uio-icon-box source
+
+
+def html_visit_uio_colorbox_1(self, node):
+    """Generate UiO color box 1 HTML."""
+    title = node.get('title')
+
+    self.body.append('<div class="uio-color-box-1">\n')
+    if title:
+        self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_colorbox_1(self, node):
+    """Close color box 1 HTML."""
+    self.body.append('</div>\n')
+
+
+def html_visit_uio_colorbox_2(self, node):
+    """Generate UiO color box 2 HTML."""
+    title = node.get('title')
+
+    self.body.append('<div class="uio-color-box-2">\n')
+    if title:
+        self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_colorbox_2(self, node):
+    """Close color box 2 HTML."""
+    self.body.append('</div>\n')
+
+
+def html_visit_uio_colorbox_3(self, node):
+    """Generate UiO color box 3 HTML."""
+    title = node.get('title')
+
+    self.body.append('<div class="uio-color-box-3">\n')
+    if title:
+        self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_colorbox_3(self, node):
+    """Close color box 3 HTML."""
+    self.body.append('</div>\n')
 
 
 def html_visit_uio_icon_box(self, node):
@@ -555,12 +742,28 @@ def setup(app):
         html=(html_visit_uio_dont, html_depart_uio_dont)
     )
     app.add_node(
-        uio_note,
-        html=(html_visit_uio_note, html_depart_uio_note)
-    )
-    app.add_node(
         uio_do,
         html=(html_visit_uio_do, html_depart_uio_do)
+    )
+    app.add_node(
+        uio_info,
+        html=(html_visit_uio_info, html_depart_uio_info)
+    )
+    app.add_node(
+        uio_source,
+        html=(html_visit_uio_source, html_depart_uio_source)
+    )
+    app.add_node(
+        uio_colorbox_1,
+        html=(html_visit_uio_colorbox_1, html_depart_uio_colorbox_1)
+    )
+    app.add_node(
+        uio_colorbox_2,
+        html=(html_visit_uio_colorbox_2, html_depart_uio_colorbox_2)
+    )
+    app.add_node(
+        uio_colorbox_3,
+        html=(html_visit_uio_colorbox_3, html_depart_uio_colorbox_3)
     )
     app.add_node(
         uio_icon_box,
@@ -578,8 +781,12 @@ def setup(app):
     app.add_directive('uio-solution', UioSolutionDirective)
     app.add_directive('uio-answer', UioAnswerDirective)
     app.add_directive('uio-dont', UioDontDirective)
-    app.add_directive('uio-note', UioNoteDirective)
     app.add_directive('uio-do', UioDoDirective)
+    app.add_directive('uio-info', UioInfoDirective)
+    app.add_directive('uio-source', UioSourceDirective)
+    app.add_directive('uio-colorbox-1', UioColorbox1Directive)
+    app.add_directive('uio-colorbox-2', UioColorbox2Directive)
+    app.add_directive('uio-colorbox-3', UioColorbox3Directive)
     app.add_directive('uio-icon-box', UioIconBoxDirective)
     app.add_directive('uio-detail', UioDetailDirective)
 
