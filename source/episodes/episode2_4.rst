@@ -66,7 +66,7 @@ Copilot fant ikke opplysningene som brukeren spurte etter, og fant derfor på et
       Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
       Hvis det ikke mulig å finne kilden, er opplysningen ofte feil.
 
-.. uio-question:: 
+.. uio-reflect:: Refleksjon
 
    Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
 
@@ -75,5 +75,6 @@ Copilot fant ikke opplysningene som brukeren spurte etter, og fant derfor på et
       Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
       Derfor kan den produsere feilinformasjon med samme selvtillit som riktig informasjon.
 
+.. uio-source::
 
-.. [Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462.
+   .. [Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462.
