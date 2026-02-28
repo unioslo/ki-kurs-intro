@@ -50,13 +50,13 @@ Hva med internett-søk?
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
-Men det garanterer ikke at svaret er faktisk korrekt.
+Men det garanterer ikke at svaret er riktig.
 Det er fordi LLM-en fortsatt må *tolke* og *oppsummere* informasjonen den finner, og det gjør den på samme måte som alltid – ved å generere tekst basert på mønstre.
 Modellen kan derfor fortsatt hallusinere selv om den har tilgang til korrekt informasjon fra nettet.
 
-Et eksempel på det er en sak fra Politihøgskolen. [Svarstad]_
+Et eksempel på hallusinering er en sak fra Politihøgskolen. [Svarstad]_
 Der ble feilinformasjon generert av Copilot brukt som saksgrunnlag.
-Copilot fant ikke opplysningene som bruker spurte etter, og fant derfor på et svar.
+Copilot fant ikke opplysningene som brukeren spurte etter, og fant derfor på et svar.
 
 .. uio-reflect:: Refleksjon
 
