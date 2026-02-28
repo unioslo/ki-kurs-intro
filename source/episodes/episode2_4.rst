@@ -15,7 +15,7 @@ Her er noen eksempler, det finnes flere.
 * **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
 * **Blandede personer**: Modellen blander sammen biografier fra ulike personer.
 
- .. uio-info:: Eksempel
+.. uio-info:: Eksempel
 
    "Studien av Hansen et al. (2023) publisert i Nature viste at …", der både studien og forfatterne er oppfunnet.
    Det kan også være en tittel som høres troverdig ut, fordi temaet er innenfor fagområdet til en virkelig forfatter.
@@ -31,7 +31,7 @@ Det er mange årsaker til hallusinering:
 4. *Overgeneralisering*, modellen kombinerer mønstre fra ulike kilder.
 5. *Utdaterte treningsdata*, modellen vet ikke hva som har skjedd etter den ble trent.
 
- .. uio-info:: Viktig å forstå:
+.. uio-info:: Viktig å forstå:
 
    Hallusinering er ikke en "bug" som kan fikses fullstendig.
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
@@ -58,7 +58,7 @@ Et eksempel på det er en sak fra Politihøgskolen. [Svarstad]_
 Der ble feilinformasjon generert av Copilot brukt som saksgrunnlag.
 Copilot fant ikke opplysningene som bruker spurte etter, og fant derfor på et svar.
 
- .. uio-reflect:: Refleksjon
+.. uio-reflect:: Refleksjon
 
    Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?
    
@@ -67,7 +67,7 @@ Copilot fant ikke opplysningene som bruker spurte etter, og fant derfor på et s
       Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
       Hvis det ikke mulig å finne kilden, er opplysningen ofte feil.
 
- .. uio-question:: 
+.. uio-question:: 
 
    Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
 
