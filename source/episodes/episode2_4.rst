@@ -41,7 +41,6 @@ Hallusinering med selvtillit
 
 Det er et stort problem at LLM-er ofte hallusinerer med stor *selvsikkerhet*.
 De sier ikke: "Jeg er usikker, men …".
-
 I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
 Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
 Du må alltid sjekke fakta med en pålitelig kilde.
