@@ -1,62 +1,19 @@
+LLM-er har *ikke* kunnskap
+==============================
 
-Hvordan genererer LLM-er tekst?
-================================
+Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
+De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
+Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
 
-For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:
+Hvis en språkmodell skal fullføre setningen «Jeg vil ha et glass…», så er noen mulige fortsettelser «vann» og «melk».
+Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
+Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
+Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
-.. figure:: ../images/ChatGPT_howLLMswork.png
-   :align: center
-   :width: 60%
-   :alt: LLM text generation illustration
+.. uio-dont:: Eksempel på dårlig bruk
 
+   Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
-Trening
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. uio-source::
 
-En språkmodell trenes før den tas i bruk.
-Modellen lærer ikke mens den brukes.
-Men noen leverandører av språkmodeller lagrer brukerdata for å trene neste versjon av modellen.
-Det skal vi komme tilbake til senere, i delen om personvern og data.
-
-Her er en forenklet oppsummering av hva som skjer når modellen trenes:
-
-* Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
-* Den lærer hvilke ord som ofte kommer etter hverandre.
-* Den lærer mønstre i språk, grammatikk og hvordan setninger bygges opp.
-* Den lærer sammenhenger mellom begreper og emner.
-
-.. uio-info:: Eksempel
-
-   Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
-
-Generering
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Hva skjer når du stiller et spørsmål:
-
-1. Modellen leser spørsmålet eller instruksjonen din.
-2. Basert på mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
-3. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
-4. Den gjentar prosessen for neste ord, og neste ord, osv.
-5. Modellen stopper når den "mener" svaret er fullstendig.
-
-.. uio-info:: Viktig
-
-   Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
-
-Temperatur og tilfeldighet
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
-Den mest brukte innstillingen er *temperatur*.
-De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
-
-.. uio-info:: Hva er "temperatur"?
-
-   Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
-   Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
-
-   * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
-   * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
-
-   Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
+   .. [Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», *Ethics and Information Technology 26*, nr. 2 (2024): 38, (https://doi.org/10.1007/s10676-024-09775-5), på s. 2.
