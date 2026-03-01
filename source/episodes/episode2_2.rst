@@ -9,49 +9,54 @@ For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hv
    :width: 60%
    :alt: LLM text generation illustration
 
-.. canvas-tabs::
 
-   .. canvas-tab:: Trening
+Trening
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      **Hva skjer under treningen:**
+En språkmodell trenes før den tas i bruk.
+Modellen lærer ikke mens den brukes.
+Men noen leverandører av språkmodeller lagrer brukerdata for å trene neste versjon av modellen.
+Det skal vi komme tilbake til senere, i delen om personvern og data.
 
-      1. Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
-      2. Den lærer hvilke ord som ofte kommer etter hverandre
-      3. Den lærer mønstre i språk, grammatikk, og hvordan setninger bygges opp
-      4. Den lærer sammenhenger mellom begreper og emner
+Her er en forenklet oppsummering av hva som skjer når modellen trenes:
 
-      **Eksempel:**
+* Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
+* Den lærer hvilke ord som ofte kommer etter hverandre.
+* Den lærer mønstre i språk, grammatikk og hvordan setninger bygges opp.
+* Den lærer sammenhenger mellom begreper og emner.
 
-      Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
+.. uio-info:: Eksempel
 
-   .. canvas-tab:: Generering
+   Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
 
-      **Hva skjer når du stiller et spørsmål:**
+Generering
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      1. Modellen analyserer din tekst (prompten)
-      2. Basert på mønstre den har lært, beregner den hva som er statistisk sannsynlig som neste ord
-      3. Den velger et ord (med litt tilfeldighet)
-      4. Den gjentar prosessen for neste ord, og neste ord, osv.
-      5. Den stopper når den "mener" svaret er fullstendig
+Hva skjer når du stiller et spørsmål:
 
-      **Viktig:**
+1. Modellen leser spørsmålet eller instruksjonen din.
+2. Basert på mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
+3. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
+4. Den gjentar prosessen for neste ord, og neste ord, osv.
+5. Modellen stopper når den "mener" svaret er fullstendig.
 
-      Modellen "tenker" ikke på om informasjonen er korrekt - den genererer bare det som er statistisk sannsynlig basert på mønstre.
+.. uio-info:: Viktig
 
-   .. canvas-tab:: Temperatur og tilfeldighet
+   Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
-      Graden av tilfeldighet på teksten LLMen genererer og hvor "kreativ" teksten er kan vanligvis justeres.
-      Den vanligste og mest brukte er *temperatur*". Mange tjenester har en default temperatur som ikke kan justeres, mens andre lar deg sette denne etter behov. 
+Temperatur og tilfeldighet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      
-      **Hva er "temperatur"?**
+Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
+Den mest brukte innstillingen er *temperatur*.
+De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
 
-      * En parameter som styrer hvor kreativ/tilfeldig modellen skal være
-      * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene
-      * **Høy temperatur** (f.eks. 0.8): Mer kreativ, kan velge mindre sannsynlige ord
+.. uio-info:: Hva er "temperatur"?
 
-      **Derfor:**
+   Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
+   Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
 
-      * Du kan få ulike svar på samme spørsmål
-      * Noen ganger kan svarene være mer kreative, andre ganger mer "standard"
-      * Ingen garanti for at samme spørsmål gir samme svar
+   * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
+   * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
+
+   Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
