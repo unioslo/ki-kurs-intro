@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyttige prompt-teknikker &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=537671ae" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Praktiske eksempler for administrativt arbeid" href="episode4_4.html" />
+    <link rel="prev" title="Prinsipper for god prompting" href="episode4_2.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nyttige-prompt-teknikker">
+<h1>Nyttige prompt-teknikker</h1>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-0a018500-1">Chain of thought (Tankekjede)</a></li>
+<li><a href="#fragment-0a018500-2">Few-shot prompting (Gi eksempler)</a></li>
+<li><a href="#fragment-0a018500-3">Rollespill</a></li>
+<li><a href="#fragment-0a018500-4">Strukturert output</a></li>
+<li><a href="#fragment-0a018500-5">Iterativ prompting</a></li>
+</ul>
+<div id="fragment-0a018500-1">
+<p><strong>Teknikk:</strong></p>
+<p>Be KI-en “tenke høyt” eller “forklare steg for steg”.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Forklar trinn for trinn hvordan jeg kan
+organisere et sommerarrangement for 50 personer.
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får mer gjennomtenkte svar</li>
+<li>Enklere å følge resonnementet</li>
+<li>Bedre for komplekse oppgaver</li>
+</ul>
+</div>
+<div id="fragment-0a018500-2">
+<p><strong>Teknikk:</strong></p>
+<p>Gi eksempler på hva du vil ha.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Jeg skal skrive titler til nyhetssaker. Her er eksempler
+på stilen jeg ønsker:
+
+- &quot;Nytt tilbud: Gratis språkkurs for ansatte&quot;
+- &quot;Viktig: Endringer i møterom-booking fra 1. april&quot;
+- &quot;Påminnelse: Personalseminar 15. mai&quot;
+
+Skriv en tittel for denne saken:
+&quot;Vi får nytt IT-system for reiseregninger neste måned&quot;
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får svar i ønsket stil</li>
+<li>Lettere enn å forklare stilen med ord</li>
+</ul>
+</div>
+<div id="fragment-0a018500-3">
+<p><strong>Teknikk:</strong></p>
+<p>Be KI-en ta rollen som en bestemt type ekspert.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en erfaren prosjektleder ved et norsk universitet.
+Jeg skal lede mitt første prosjekt og er nervøs.
+Gi meg dine beste råd for å lykkes.
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får perspektiv fra en bestemt rolle</li>
+<li>Mer fokuserte svar</li>
+</ul>
+</div>
+<div id="fragment-0a018500-4">
+<p><strong>Teknikk:</strong></p>
+<p>Be om svaret i et bestemt format.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Oppsummer dette møtereferatet i følgende format:
+
+BESLUTNINGER:
+-
+-
+
+OPPGAVER:
+- [Person]: [oppgave] - [frist]
+
+NESTE MØTE:
+[dato og tid]
+
+[ditt møtereferat her]
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Får svar klart til bruk</li>
+<li>Konsistent format</li>
+</ul>
+</div>
+<div id="fragment-0a018500-5">
+<p><strong>Teknikk:</strong></p>
+<p>Bygg videre på svarene i en samtale.</p>
+<p><strong>Eksempel:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Første prompt:
+&quot;Skriv et utkast til e-post om nytt bookingsystem&quot;
+
+Oppfølging 1:
+&quot;Gjør den mer konsis, maks 3 avsnitt&quot;
+
+Oppfølging 2:
+&quot;Legg til en setning om hvor de kan få hjelp&quot;
+</pre></div>
+</div>
+<p><strong>Fordel:</strong></p>
+<ul class="simple">
+<li>Gradvis forbedring</li>
+<li>Lettere enn å skrive perfekt prompt med én gang</li>
+</ul>
+</div>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="episode4_2.html">← Forrige</a></div><div class="next-link"><a href="episode4_4.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

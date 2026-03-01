@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hvordan genererer LLM-er tekst? &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=537671ae" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LLM-er har ikke kunnskap" href="episode2_2.html" />
+    <link rel="prev" title="Hvordan fungerer språkmodeller?" href="episode2_0.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hvordan-genererer-llm-er-tekst">
+<h1>Hvordan genererer LLM-er tekst?</h1>
+<p>For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/ChatGPT_howLLMswork.png"><img alt="LLM text generation illustration" src="../_images/ChatGPT_howLLMswork.png" style="width: 60%;" />
+</a>
+</figure>
+<section id="trening">
+<h2>Trening</h2>
+<p>En språkmodell trenes før den tas i bruk.
+Modellen lærer ikke mens den brukes.
+Men noen leverandører av språkmodeller lagrer brukerdata for å trene neste versjon av modellen.
+Det skal vi komme tilbake til senere, i delen om personvern og data.</p>
+<p>Her er en forenklet oppsummering av hva som skjer når modellen trenes:</p>
+<ul class="simple">
+<li>Modellen får lese milliarder av ord fra internett, bøker, artikler osv.</li>
+<li>Den lærer hvilke ord som ofte kommer etter hverandre.</li>
+<li>Den lærer mønstre i språk, grammatikk og hvordan setninger bygges opp.</li>
+<li>Den lærer sammenhenger mellom begreper og emner.</li>
+</ul>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>Hvis modellen har sett setningen “hovedstaden i Norge er Oslo” tusenvis av ganger, lærer den at “Oslo” er et sannsynlig ord som kommer etter “hovedstaden i Norge er”.</p>
+</div>
+</section>
+<section id="generering">
+<h2>Generering</h2>
+<p>Hva skjer når du stiller et spørsmål:</p>
+<ol class="arabic simple">
+<li>Modellen leser spørsmålet eller instruksjonen din.</li>
+<li>Basert på mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.</li>
+<li>Den trekker et ord, med litt tilfeldighet, og legger det til svaret.</li>
+<li>Den gjentar prosessen for neste ord, og neste ord, osv.</li>
+<li>Modellen stopper når den “mener” svaret er fullstendig.</li>
+</ol>
+<div class="uio-icon-box info">
+<h3>Viktig</h3>
+<p>Modellen “tenker” ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.</p>
+</div>
+</section>
+<section id="temperatur-og-tilfeldighet">
+<h2>Temperatur og tilfeldighet</h2>
+<p>Vi kan justere hvor “tilfeldig” eller “kreativ” tekst språkmodellen skal generere.
+Den mest brukte innstillingen er <em>temperatur</em>.
+De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.</p>
+<div class="uio-icon-box info">
+<h3>Hva er &quot;temperatur&quot;?</h3>
+<p>Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
+Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.</p>
+<ul class="simple">
+<li><strong>Lav temperatur</strong> (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.</li>
+<li><strong>Høy temperatur</strong> (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.</li>
+</ul>
+<p>Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer “standard”. Det er ingen garanti for at samme spørsmål gir samme svar neste gang.</p>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode2_0.html">← Forrige</a></div><div class="next-link"><a href="episode2_2.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Språkmodeller finner på ting &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=537671ae" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Begrensninger du bør kjenne til" href="episode2_5.html" />
+    <link rel="prev" title="Et praktisk eksempel" href="episode2_3.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sprakmodeller-finner-pa-ting">
+<h1>Språkmodeller finner på ting</h1>
+<p>Siden store språkmodeller ikke har kunnskap, kan de finne på ting som ikke stemmer.
+Det kalles ofte <em>hallusinering</em>, men har egentlig ingenting med menneskelig hallusinering å gjøre.
+Derfor er det noen som foretrekker å kalle det <em>konfabulering</em> når språkmodeller finner på ting.</p>
+<section id="eksempler-pa-hallusinering">
+<h2>Eksempler på hallusinering</h2>
+<p>Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
+Her er noen eksempler, det finnes flere.</p>
+<ul class="simple">
+<li><strong>Feil fakta</strong>: Modellen oppgir feil datoer, tall eller navn.</li>
+<li><strong>Oppdiktede referanser</strong>: Modellen lager titler på artikler eller bøker som ikke finnes.</li>
+<li><strong>Blandede personer</strong>: Modellen blander sammen biografier fra ulike personer.</li>
+</ul>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>“Studien av Hansen et al. (2023) publisert i Nature viste at …”, der både studien og forfatterne er oppfunnet.
+Det kan også være en tittel som høres troverdig ut, fordi temaet er innenfor fagområdet til en virkelig forfatter.</p>
+</div>
+</section>
+<section id="hvorfor-skjer-det">
+<h2>Hvorfor skjer det?</h2>
+<p>Det er mange årsaker til hallusinering:</p>
+<ol class="arabic simple">
+<li><em>Modellen vil alltid gi et svar</em>, den sier ikke “jeg vet ikke”.</li>
+<li><em>Mønstre fra trening</em>, modellen har lært hvordan svar “skal se ut”.</li>
+<li><em>Manglende faktasjekk</em>, modellen har ikke kunnskap.</li>
+<li><em>Overgeneralisering</em>, modellen kombinerer mønstre fra ulike kilder.</li>
+<li><em>Utdaterte treningsdata</em>, modellen vet ikke hva som har skjedd etter den ble trent.</li>
+</ol>
+<div class="uio-icon-box info">
+<h3>Viktig å forstå:</h3>
+<p>Hallusinering er ikke en “bug” som kan fikses fullstendig.
+Det er en iboende egenskap ved hvordan språkmodeller fungerer.</p>
+</div>
+</section>
+<section id="hallusinering-med-selvtillit">
+<h2>Hallusinering med selvtillit</h2>
+<p>Det er et stort problem at LLM-er ofte hallusinerer med stor <em>selvsikkerhet</em>.
+De sier ikke: “Jeg er usikker, men …”.
+I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
+Derfor kan du <em>ikke</em> stole på at et svar er riktig bare fordi det fremstår selvsikkert.
+Du må alltid sjekke fakta med en pålitelig kilde.</p>
+</section>
+<section id="hva-med-internett-sok">
+<h2>Hva med internett-søk?</h2>
+<p>Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
+Men det garanterer ikke at svaret er riktig.
+Det er fordi LLM-en fortsatt må <em>tolke</em> og <em>oppsummere</em> informasjonen den finner, og det gjør den på samme måte som alltid – ved å generere tekst basert på mønstre.
+Modellen kan derfor fortsatt hallusinere selv om den har tilgang til korrekt informasjon fra nettet.</p>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>Et eksempel på hallusinering er en sak fra Politihøgskolen. <a class="reference internal" href="#svarstad" id="id1"><span>[Svarstad]</span></a>
+Der ble feilinformasjon generert av Copilot brukt som saksgrunnlag.
+Copilot fant ikke opplysningene som brukeren spurte etter, og fant derfor på et svar.</p>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p>Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Svar</strong></summary>
+<p>Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
+Hvis det ikke mulig å finne kilden, er opplysningen ofte feil.</p>
+</details>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p>Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Svar</strong></summary>
+<p>Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
+Den har lært hvordan troverdige svar “ser ut”, men vet ikke forskjellen på sant og usant.
+Derfor kan den produsere feilinformasjon med samme selvtillit som riktig informasjon.</p>
+</details>
+</div>
+<div class="uio-icon-box source">
+<h3>Kilder / Ressurser</h3>
+<div role="list" class="citation-list">
+<div class="citation" id="svarstad" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Svarstad</a><span class="fn-bracket">]</span></span>
+<p>Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, <a class="reference external" href="https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462">https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode2_3.html">← Forrige</a></div><div class="next-link"><a href="episode2_5.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

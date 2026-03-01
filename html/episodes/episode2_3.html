@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Et praktisk eksempel &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=537671ae" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Språkmodeller finner på ting" href="episode2_4.html" />
+    <link rel="prev" title="LLM-er har ikke kunnskap" href="episode2_2.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="et-praktisk-eksempel">
+<h1>Et praktisk eksempel</h1>
+<p>La oss se på et konkret eksempel:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>DU: &quot;Hva er åpningstidene til biblioteket på Blindern?&quot;
+</pre></div>
+</div>
+<p><strong>Hva skjer i modellen:</strong></p>
+<ol class="arabic simple">
+<li>Modellen ser at dette er et spørsmål om åpningstider</li>
+<li>Den har sett mange lignende spørsmål under trening</li>
+<li>Den har lært mønsteret: spørsmål om åpningstider → svar med tider</li>
+<li>Den genererer et svar som <em>ser ut</em> som åpningstider</li>
+</ol>
+<p><strong>Problemet:</strong></p>
+<p>Modellen kan konstruere et helt plausibelt svar som “Biblioteket på Blindern er åpent 08:00-20:00 mandag-fredag og 10:00-16:00 i helgene” - selv om dette er fullstendig feil!</p>
+<div class="uio-icon-box dont">
+<h3>OBS!</h3>
+<p><strong>Modellen “vet” ikke hva åpningstidene faktisk er. Den genererer bare tekst som ligner på svar om åpningstider.</strong></p>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="episode2_2.html">← Forrige</a></div><div class="next-link"><a href="episode2_4.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

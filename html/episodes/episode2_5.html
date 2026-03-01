@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Begrensninger du bør kjenne til &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=537671ae" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hva betyr dette for deg som bruker?" href="episode2_6.html" />
+    <link rel="prev" title="Språkmodeller finner på ting" href="episode2_4.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="begrensninger-du-bor-kjenne-til">
+<h1>Begrensninger du bør kjenne til</h1>
+<p>Vi har sett at LLM-er lærer mønstre fra treningsdata, og at de kan hallusinere - produsere overbevisende men feil informasjon.
+Men det er flere praktiske begrensninger du bør være klar over når du bruker disse verktøyene i hverdagen.</p>
+<p>Disse begrensningene handler ikke om at teknologien er “dårlig”, men om å forstå <em>hva slags verktøy</em> du faktisk bruker.
+En hammer er utmerket til å slå inn spiker, men håpløs til å sage i tre - det handler ikke (nødvendigvis) om kvalitet, men om å bruke riktig verktøy til riktig formål.</p>
+<p>På samme måte er det viktig å vite når en LLM er et godt verktøy, og når den mangler viktig informasjon eller kontekst som påvirker svarene du får.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/ChatGPT_usingTheRightTool.png"><img alt="LLM using the right tool - placeholder image" src="../_images/ChatGPT_usingTheRightTool.png" style="width: 60%;" />
+</a>
+</figure>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-c26fb20b-1">Utdatert informasjon</a></li>
+<li><a href="#fragment-c26fb20b-2">Manglende kontekst</a></li>
+<li><a href="#fragment-c26fb20b-3">Språk og kulturforståelse</a></li>
+</ul>
+<div id="fragment-c26fb20b-1">
+<p><strong>Problemet:</strong></p>
+<ul class="simple">
+<li>LLM-er trenes på data fra et bestemt tidspunkt</li>
+<li>De vet ikke hva som har skjedd etter treningsdataen ble samlet</li>
+<li>Mange modeller har en “kunnskapsgrense” (cutoff date)</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>En modell trent i 2023 vet ikke hvem som vant fotball-VM i 2024, eller nye lover som ble vedtatt i 2024.</p>
+<p><strong>Merk:</strong></p>
+<p>Noen verktøy (som Bing Chat/Copilot) kan søke på internett for oppdatert informasjon - men da bruker de en søkemotor i tillegg til språkmodellen.</p>
+</div>
+<div id="fragment-c26fb20b-2">
+<p><strong>Problemet:</strong></p>
+<ul class="simple">
+<li>LLM-er kjenner ikke til interne prosedyrer ved UiO (med mindre de fortelles)</li>
+<li>De vet ikke om spesifikke systemer dere bruker</li>
+<li>De har ikke tilgang til deres dokumenter eller databaser</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Spør du “Hvordan registrerer jeg fravær i vårt system?”, kan modellen gi et generisk svar om fraværsregistrering - men ikke det spesifikke systemet dere bruker.</p>
+<p><strong>Løsning:</strong></p>
+<p>Gi kontekst i prompten: “Vi bruker systemet X ved UiO. Hvordan registrerer jeg fravær?”</p>
+</div>
+<div id="fragment-c26fb20b-3">
+<p><strong>Problemet:</strong></p>
+<ul class="simple">
+<li>De fleste LLM-er er primært trent på engelsk</li>
+<li>Norsk fungerer, men kvaliteten kan være noe lavere</li>
+<li>Norske forhold og kontekst kan være underrepresentert</li>
+</ul>
+<p><strong>Eksempel:</strong></p>
+<p>Juridiske eller administrative spørsmål om norske forhold kan få svar basert på amerikanske eller britiske systemer.</p>
+<p><strong>Tips:</strong></p>
+<ul class="simple">
+<li>Vær eksplisitt: “i Norge”, “ved norske universiteter”, “etter norsk lovverk”</li>
+<li>Sjekk alltid svar om lover, regler og prosedyrer</li>
+</ul>
+</div>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="episode2_4.html">← Forrige</a></div><div class="next-link"><a href="episode2_6.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
