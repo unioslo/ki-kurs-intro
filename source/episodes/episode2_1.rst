@@ -60,3 +60,10 @@ De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, me
    * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
 
    Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
+
+
+.. uio-source:: GPT simulator
+
+   Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer! 
+
+   https://poloclub.github.io/transformer-explainer/
