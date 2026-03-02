@@ -113,7 +113,7 @@ def save_page_mapping(mapping):
     try:
         with open(MAPPING_FILE, 'w', encoding='utf-8') as f:
             json.dump(mapping, f, indent=2, ensure_ascii=False)
-        print(f"✓ Saved mapping to {MAPPING_FILE}")
+        print(f"Saved mapping to {MAPPING_FILE}")
     except Exception as e:
         print(f"Error: Could not save mapping file: {e}")
 
@@ -203,7 +203,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
         h1_title = extract_title(html_file)
 
         if not h1_title:
-            print(f"  ✗ {html_file.name}: No h1 title found")
+            print(f"{html_file.name}: No h1 title found")
             unmatched_count += 1
             continue
 
@@ -226,7 +226,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
                     matching_urls.append((canvas_url, suffix_num))
 
         if not matching_urls:
-            print(f"  ✗ {html_file.name}: No Canvas match in modules for '{h1_title}' (expected URL: {expected_url})")
+            print(f"{html_file.name}: No Canvas match in modules for '{h1_title}' (expected URL: {expected_url})")
             # Debug: show if similar URLs exist
             similar = [url for url in pages_in_modules.keys() if expected_url in url]
             if similar:
@@ -241,7 +241,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
         # Get the Canvas page and module info
         canvas_page = pages_by_url.get(canvas_url)
         if not canvas_page:
-            print(f"  ✗ {html_file.name}: Canvas page data not found for URL '{canvas_url}'")
+            print(f"{html_file.name}: Canvas page data not found for URL '{canvas_url}'")
             unmatched_count += 1
             continue
 
@@ -259,7 +259,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
             'module_name': module_info['module_name']
         }
 
-        print(f"  ✓ {html_file.name} -> page_id: {page_id} | Module: {module_info['module_name']} | Title: {canvas_title}")
+        print(f"{html_file.name} -> page_id: {page_id} | Module: {module_info['module_name']} | Title: {canvas_title}")
         matched_count += 1
 
     print(f"\n{'='*70}")
@@ -303,7 +303,7 @@ def fetch_html_pages_branch(temp_dir):
         capture=False
     )
 
-    print(f"✓ Successfully fetched {HTML_BRANCH} branch\n")
+    print(f"Successfully fetched {HTML_BRANCH} branch\n")
 
 
 def get_last_build_info(repo_dir):
@@ -495,7 +495,7 @@ def create_page_id_mapping(token):
                     'module_name': module_name
                 }
 
-    print(f"✓ Mapped {len(mapping)} episode pages")
+    print(f"Mapped {len(mapping)} episode pages")
     print(f"  Episode keys found: {sorted(mapping.keys())[:10]}...")  # Show first 10 keys
     print()
     return mapping, page_to_module
@@ -744,16 +744,16 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
             response_data = response.json()
             if "message" in response_data or "errors" in response_data:
                 # Error in response body despite success status
-                print(f"    ✗ Failed to add to module (Status: {response.status_code})")
+                print(f"Failed to add to module (Status: {response.status_code})")
                 print(f"      Response: {response.text}")
                 return False
         except:
             pass  # Not JSON or no error, continue as success
 
-        print(f"    ✓ Added to module {module_id}: position={position}, indent={indent}")
+        print(f"Added to module {module_id}: position={position}, indent={indent}")
         return True
     else:
-        print(f"    ✗ Failed to add to module (Status: {response.status_code})")
+        print(f"Failed to add to module (Status: {response.status_code})")
         print(f"      Response: {response.text}")
         return False
 
@@ -839,7 +839,7 @@ def upload_image_to_canvas(token, image_path):
         file_id = file_info.get('id')
         preview_url = f"{CANVAS_URL}/courses/{COURSE_ID}/files/{file_id}/preview"
 
-        print(f"    ✓ Uploaded: {image_path.name} (file_id: {file_id})")
+        print(f"Uploaded: {image_path.name} (file_id: {file_id})")
         return file_id, preview_url
     except Exception as e:
         print(f"  Warning: Could not parse upload response for {image_path.name}: {e}")
@@ -896,7 +896,7 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
             image_path = (html_path.parent / src).resolve()
 
         if not image_path.exists():
-            print(f"    ✗ Image not found: {src}")
+            print(f"Image not found: {src}")
             print(f"      Resolved to: {image_path}")
             continue
 
@@ -945,7 +945,7 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
                 # Replace the <a> tag with just the <img> tag
                 parent.replace_with(img)
         else:
-            print(f"      ✗ Upload failed")
+            print(f"Upload failed")
 
     # Summary
     if uploaded_count > 0 or skipped_count > 0:
@@ -1142,7 +1142,7 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
             response_data = response.json()
             if "message" in response_data or "errors" in response_data:
                 # Error in response body despite 200 status
-                print(f"  ✗ Failed: {page_url_or_id} (Status: {response.status_code})")
+                print(f"Failed: {page_url_or_id} (Status: {response.status_code})")
                 print(f"    Response: {response.text}")
                 return False, None, None
 
@@ -1151,7 +1151,7 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
             updated_at = response_data.get('updated_at', 'N/A')
 
             title_msg = f" (title: {title})" if title else ""
-            print(f"  ✓ Updated: {page_url_or_id}{title_msg}")
+            print(f"Updated: {page_url_or_id}{title_msg}")
             print(f"    Canvas URL: {actual_url}")
             return True, actual_url, updated_at
         except Exception as e:
@@ -1159,7 +1159,7 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
             return True, page_url_or_id, None
 
     else:
-        print(f"  ✗ Failed: {page_url_or_id} (Status: {response.status_code})")
+        print(f"Failed: {page_url_or_id} (Status: {response.status_code})")
         print(f"    Response: {response.text}")
         return False, None, None
 
@@ -1336,7 +1336,7 @@ def main():
                 print("Run with --generate-mapping first to create the mapping file")
                 print("Continuing anyway, will use URL-based fallback...\n")
             else:
-                print(f"✓ Loaded {len(page_mapping)} page mappings\n")
+                print(f"Loaded {len(page_mapping)} page mappings\n")
 
             # Track deployment results for summary table
             deploy_results = []
@@ -1419,7 +1419,7 @@ def main():
             print("-"*220)
 
             for result in deploy_results:
-                status = "✓ Success" if result['success'] else "✗ Failed"
+                status = "Success" if result['success'] else "Failed"
                 # Format timestamp to be more readable if it's in ISO format
                 timestamp = result['timestamp']
                 if timestamp != "N/A" and 'T' in str(timestamp):
@@ -1441,9 +1441,9 @@ def main():
             print("="*220)
 
             if fail_count == 0:
-                print("\n✓ Deployment completed successfully!")
+                print("\nDeployment completed successfully!")
             else:
-                print("\n✗ Deployment completed with errors.")
+                print("\nDeployment completed with errors.")
 
         return
 
@@ -1484,7 +1484,7 @@ def main():
         print("Run with --generate-mapping first to create the mapping file")
         print("Continuing anyway, will use URL-based fallback...\n")
     else:
-        print(f"✓ Loaded {len(page_mapping)} page mappings\n")
+        print(f"Loaded {len(page_mapping)} page mappings\n")
 
     # Handle page ID mode
     page_id_override = None
