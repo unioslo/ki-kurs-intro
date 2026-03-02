@@ -715,12 +715,66 @@ def list_pages_with_modules(token):
 
 
 def add_page_to_module(token, module_id, page_url, title, position, indent, dry_run=False):
-    """Add a page to a module."""
-    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}/items"
-
+    """Add a page to a module, checking for duplicates first and replacing old versions."""
     headers = {
         "Authorization": f"Bearer {token}"
     }
+
+    # First, check if this page is already in the module
+    existing_items = get_module_items(token, module_id)
+
+    # Extract base URL (remove trailing -2, -3, etc. for duplicate detection)
+    import re
+    base_url = re.sub(r'-\d+$', '', page_url)
+
+    # Check if page_url or similar URL already exists in module
+    existing_item = None
+    similar_items = []
+
+    for item in existing_items:
+        if item.get('type') == 'Page':
+            item_url = item.get('page_url', '')
+            item_base_url = re.sub(r'-\d+$', '', item_url)
+
+            # Exact match
+            if item_url == page_url:
+                existing_item = item
+                break
+            # Similar URL (same base, different number suffix)
+            elif item_base_url == base_url and item_base_url != item_url:
+                similar_items.append(item)
+
+    if existing_item:
+        # Exact page URL already exists in module
+        existing_position = existing_item.get('position', 'unknown')
+        existing_indent = existing_item.get('indent', 'unknown')
+        print(f"    ⚠ Page already in module at position={existing_position}, indent={existing_indent} - skipping")
+        return True
+
+    if similar_items:
+        # Found similar pages (same base URL, different suffix) - replace the old one(s)
+        print(f"    ⚠ Found {len(similar_items)} old version(s) in module - replacing with new version:")
+        for similar in similar_items:
+            old_url = similar.get('page_url', '')
+            item_id = similar.get('id')
+            print(f"      - Removing old: {old_url} (item_id: {item_id})")
+
+            if not dry_run:
+                # Delete the old module item
+                delete_api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}/items/{item_id}"
+                delete_response = requests.delete(delete_api_endpoint, headers=headers)
+
+                if delete_response.status_code == 200:
+                    print(f"        ✓ Removed old version")
+                else:
+                    print(f"        ✗ Failed to remove old version (Status: {delete_response.status_code})")
+            else:
+                print(f"        [DRY RUN] Would remove old version")
+
+        print(f"    ℹ Adding new version: {page_url}")
+
+    # Page doesn't exist, add it
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}/items"
 
     data = {
         "module_item[title]": title,
@@ -730,8 +784,6 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
         "module_item[indent]": indent
     }
 
-
-    print(f"Attempting to update page url: {page_url} with api_endpoint: {api_endpoint}")
     if dry_run:
         print(f"    [DRY RUN] Would add to module {module_id}: position={position}, indent={indent}")
         return True
@@ -744,16 +796,16 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
             response_data = response.json()
             if "message" in response_data or "errors" in response_data:
                 # Error in response body despite success status
-                print(f"Failed to add to module (Status: {response.status_code})")
+                print(f"    ✗ Failed to add to module (Status: {response.status_code})")
                 print(f"      Response: {response.text}")
                 return False
         except:
             pass  # Not JSON or no error, continue as success
 
-        print(f"Added to module {module_id}: position={position}, indent={indent}")
+        print(f"    ✓ Added to module {module_id}: position={position}, indent={indent}")
         return True
     else:
-        print(f"Failed to add to module (Status: {response.status_code})")
+        print(f"    ✗ Failed to add to module (Status: {response.status_code})")
         print(f"      Response: {response.text}")
         return False
 
@@ -1164,6 +1216,111 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
         return False, None, None
 
 
+def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_override=None):
+    """
+    Process HTML files and update Canvas pages.
+
+    This is the common processing logic used regardless of whether files
+    come from local build or GitHub.
+
+    Args:
+        token: Canvas API token
+        html_files: List of Path objects for HTML files to process
+        html_dir: Base directory containing HTML files (for relative paths)
+        page_mapping: Dictionary mapping filenames to page info
+        args: Command line arguments
+        page_id_override: Optional page ID to use instead of mapped ID (for single page updates)
+
+    Returns:
+        Tuple of (success_count, fail_count)
+    """
+    # Fetch modules if --add-to-modules is set
+    modules = {}
+    if args.add_to_modules:
+        print("Fetching modules...")
+        modules = get_modules(token)
+        if modules:
+            print(f"Found {len(modules)} modules")
+            print("Will add pages to modules after updating\n")
+        else:
+            print("Warning: No modules found or failed to fetch modules")
+            print("Pages will be updated but not added to modules\n")
+    else:
+        print("Module addition disabled (use --add-to-modules to enable)\n")
+
+    # Process each file
+    success_count = 0
+    fail_count = 0
+
+    # Track position within each module
+    module_positions = {}
+
+    for html_file in html_files:
+        print(f"Processing: {html_file.name}")
+
+        # Extract content (includes image processing and upload)
+        content = extract_content(html_file, token=token, dry_run=args.dry_run)
+
+        # Extract title from h1 tag (descriptive title)
+        title = extract_title(html_file)
+        if title:
+            print(f"  Title: {title}")
+
+        # Try to find page info from mapping file
+        page_info = page_mapping.get(html_file.name)
+
+        if page_info:
+            # Use page ID from mapping file (or override if provided)
+            page_identifier = page_id_override if page_id_override else page_info['page_id']
+            print(f"  Page ID: {page_info['page_id']}")
+            print(f"  Module: {page_info.get('module_name', 'N/A')} (ID: {page_info.get('module_id', 'N/A')})")
+        else:
+            # Fallback to URL-based identifier
+            page_url = get_page_url(html_file.name)
+            page_identifier = page_id_override if page_id_override else page_url
+            print(f"  Warning: No mapping found for {html_file.name}, using URL: {page_url}")
+
+        # Update page (let Canvas auto-generate URL from title)
+        page_updated, actual_page_url, _ = update_canvas_page(token, page_identifier, content, title, None, args.dry_run)
+
+        if page_updated:
+            success_count += 1
+
+            # Add to module if modules are available
+            if modules and actual_page_url:
+                # Parse episode number from filename (e.g., episode1_0 -> module 1)
+                filename_base = html_file.stem  # e.g., episode1_0
+                match = re.match(r'episode(\d+)_(\d+)', filename_base)
+                if match:
+                    episode_num = int(match.group(1))  # 1, 2, 3, etc.
+                    sub_num = int(match.group(2))      # 0, 1, 2, etc.
+
+                    # Get module ID for this episode
+                    module_id = modules.get(episode_num)
+
+                    if module_id:
+                        # Determine indent: 0 for _0 pages, 1 for others
+                        indent = 0 if sub_num == 0 else 1
+
+                        # Get position within this module
+                        if episode_num not in module_positions:
+                            module_positions[episode_num] = 1
+                        position = module_positions[episode_num]
+                        module_positions[episode_num] += 1
+
+                        # Add page to module using the actual Canvas URL
+                        add_page_to_module(token, module_id, actual_page_url, title or actual_page_url,
+                                          position, indent, args.dry_run)
+                    else:
+                        print(f"    Warning: No module found for episode {episode_num}")
+        else:
+            fail_count += 1
+
+        print()
+
+    return success_count, fail_count
+
+
 def main():
     """Main function to update all Canvas pages."""
     # Parse command-line arguments
@@ -1310,6 +1467,15 @@ def main():
                     sys.exit(1)
 
                 html_files = [html_file]
+            elif args.module:
+                # Module mode - filter by episode number
+                html_files = sorted(episodes_dir.glob(f"episode{args.module}_*.html"))
+
+                if not html_files:
+                    print(f"No episode HTML files found for module {args.module} in {episodes_dir}")
+                    sys.exit(1)
+
+                print(f"Module {args.module} mode: Found {len(html_files)} HTML files to process\n")
             else:
                 # Get all episode HTML files
                 html_files = sorted(episodes_dir.glob("episode*.html"))
@@ -1338,107 +1504,19 @@ def main():
             else:
                 print(f"Loaded {len(page_mapping)} page mappings\n")
 
-            # Track deployment results for summary table
-            deploy_results = []
-
-            # Process each file
-            success_count = 0
-            fail_count = 0
-
-            for html_file in html_files:
-                print(f"Processing: {html_file.name}")
-
-                # Extract content (includes image processing and upload)
-                content = extract_content(html_file, token=token, dry_run=args.dry_run)
-
-                # Extract title from h1 (use descriptive title)
-                title = extract_title(html_file)
-                if title:
-                    print(f"  Title: {title}")
-
-                # Try to find the Canvas page ID from mapping file
-                page_info = page_mapping.get(html_file.name)
-
-                if page_info:
-                    # Use page ID from mapping file (includes module info)
-                    page_identifier = page_info['page_id']
-                    old_url = page_info['url']
-                    module_id = page_info.get('module_id', 'N/A')
-                    module_name = page_info.get('module_name', 'N/A')
-                    print(f"  Canvas page ID: {page_identifier}")
-                    print(f"  Current URL: {old_url}")
-                    if module_name != 'N/A':
-                        print(f"  Module: {module_name}")
-                else:
-                    # Fallback to URL-based matching
-                    page_identifier = get_page_url(html_file.name)
-                    old_url = "N/A"
-                    module_id = 'N/A'
-                    module_name = 'N/A'
-                    print(f"  Warning: No page ID found in mapping for '{html_file.name}'")
-                    print(f"    Using fallback URL: {page_identifier}")
-                    print(f"    (Run --generate-mapping to update the mapping file)")
-
-                # Update page (without URL field - let Canvas auto-generate from title)
-                page_updated, actual_page_url, updated_at = update_canvas_page(
-                    token,
-                    page_identifier,
-                    content,
-                    title,
-                    None,  # Don't set URL - let Canvas auto-generate
-                    args.dry_run
-                )
-
-                # Track result for summary table
-                new_url = actual_page_url if actual_page_url else "N/A"
-                timestamp = updated_at if updated_at else "N/A"
-
-                deploy_results.append({
-                    'file': html_file.name,
-                    'page_id': page_info['page_id'] if page_info else 'N/A',
-                    'old_url': old_url,
-                    'new_url': new_url,
-                    'module_id': module_id,
-                    'module_name': module_name,
-                    'timestamp': timestamp,
-                    'success': page_updated
-                })
-
-                if page_updated:
-                    success_count += 1
-                else:
-                    fail_count += 1
-
-                print()
+            # Use common processing function
+            success_count, fail_count = process_html_files(
+                token, html_files, episodes_dir, page_mapping, args
+            )
 
             # Summary
-            print("="*220)
+            print("="*80)
             print("DEPLOYMENT SUMMARY:")
-            print("="*220)
-            print(f"{'File':<20} {'Page ID':<10} {'Old URL':<50} {'Expected URL':<50} {'Module ID':<12} {'Module Name':<30} {'Updated At':<20} {'Status':<10}")
-            print("-"*220)
-
-            for result in deploy_results:
-                status = "Success" if result['success'] else "Failed"
-                # Format timestamp to be more readable if it's in ISO format
-                timestamp = result['timestamp']
-                if timestamp != "N/A" and 'T' in str(timestamp):
-                    try:
-                        # Parse and reformat ISO timestamp
-                        from datetime import datetime as dt
-                        parsed = dt.fromisoformat(timestamp.replace('Z', '+00:00'))
-                        timestamp = parsed.strftime('%Y-%m-%d %H:%M:%S')
-                    except:
-                        pass  # Keep original if parsing fails
-
-                module_name_truncated = str(result['module_name'])[:28]  # Truncate if too long
-                print(f"{result['file']:<20} {str(result['page_id']):<10} {result['old_url']:<50} "
-                      f"{result['new_url']:<50} {str(result['module_id']):<12} {module_name_truncated:<30} "
-                      f"{str(timestamp):<20} {status:<10}")
-
-            print("="*220)
-            print(f"Total: {len(html_files)} | Successful: {success_count} | Failed: {fail_count}")
-            print("="*220)
+            print("="*80)
+            print(f"Total files: {len(html_files)}")
+            print(f"Successful: {success_count}")
+            print(f"Failed: {fail_count}")
+            print("="*80)
 
             if fail_count == 0:
                 print("\nDeployment completed successfully!")
@@ -1547,73 +1625,10 @@ def main():
 
         print(f"Found {len(html_files)} HTML files to process\n")
 
-    # Process each file
-    success_count = 0
-    fail_count = 0
-
-    # Track position within each module
-    module_positions = {}
-
-    for html_file in html_files:
-        print(f"Processing: {html_file.name}")
-
-        # Extract content (includes image processing and upload)
-        content = extract_content(html_file, token=token, dry_run=args.dry_run)
-
-        # Extract title from h1 tag (descriptive title)
-        title = extract_title(html_file)
-        if title:
-            print(f"  Title: {title}")
-
-        # Try to find page info from mapping file
-        page_info = page_mapping.get(html_file.name)
-
-        if page_info:
-            # Use page ID from mapping file
-            page_identifier = page_id_override if page_id_override else page_info['page_id']
-            print(f"  Page ID: {page_info['page_id']}")
-            print(f"  Module: {page_info.get('module_name', 'N/A')} (ID: {page_info.get('module_id', 'N/A')})")
-        else:
-            # Fallback to URL-based identifier
-            page_url = get_page_url(html_file.name)
-            page_identifier = page_id_override if page_id_override else page_url
-            print(f"  Warning: No mapping found for {html_file.name}, using URL: {page_url}")
-
-        # Update page (let Canvas auto-generate URL from title)
-        page_updated, actual_page_url, _ = update_canvas_page(token, page_identifier, content, title, None, args.dry_run)
-
-        if page_updated:
-            success_count += 1
-
-            # Add to module if modules are available
-            if modules and actual_page_url:
-                # Parse episode number from filename (e.g., episode1_0 -> module 1)
-                filename_base = html_file.stem  # e.g., episode1_0
-                match = re.match(r'episode(\d+)_(\d+)', filename_base)
-                if match:
-                    episode_num = int(match.group(1))  # 1, 2, 3, etc.
-                    sub_num = int(match.group(2))      # 0, 1, 2, etc.
-
-                    # Get module ID for this episode
-                    module_id = modules.get(episode_num)
-
-                    if module_id:
-                        # Determine indent: 0 for _0 pages, 1 for others
-                        indent = 0 if sub_num == 0 else 1
-
-                        # Get position within this module
-                        if episode_num not in module_positions:
-                            module_positions[episode_num] = 1
-                        position = module_positions[episode_num]
-                        module_positions[episode_num] += 1
-
-                        # Add page to module using the actual Canvas URL
-                        add_page_to_module(token, module_id, actual_page_url, title or actual_page_url,
-                                          position, indent, args.dry_run)
-                    else:
-                        print(f"    Warning: No module found for episode {episode_num}")
-        else:
-            fail_count += 1
+    # Use common processing function
+    success_count, fail_count = process_html_files(
+        token, html_files, html_dir, page_mapping, args, page_id_override
+    )
 
     # Summary
     print(f"\n{'='*50}")
