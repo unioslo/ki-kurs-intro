@@ -1,7 +1,7 @@
-Hva er KI og generativ KI?
+Hva er kunstig intelligens (KI)? 
 =====================================
 
-I denne episoden blir du introdusert til grunnleggende konsepter og informasjon om kunstig intelligens (KI) og ikke minst om såkalt *generativ KI*.
+I første del av kurset skal du lære hva kunstig intelligens egentlig er, og forskjellen mellom maskinlæring (?) og generativt KI. 
 
 Læringsmål
 ~~~~~~~~~~
@@ -13,9 +13,9 @@ Etter denne episoden vil du kunne:
 * Forstå grunnleggende om hvordan språkmodeller fungerer
 * Gjenkjenne eksempler på generativ KI i dagliglivet
 
-.. uio-reflect:: Refleksjon
+.. uio-reflect:: Refleksjon (2 minutter) 
 
-    Hva er KI for deg? Bruk et minutt på å tenke på hva du forstår med KI, og hvordan du bruker KI i din hverdag. 
+    Hva tenker du på når du hører ordet KI?
 
     .. uio-answer::
 
