@@ -765,9 +765,9 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
                 delete_response = requests.delete(delete_api_endpoint, headers=headers)
 
                 if delete_response.status_code == 200:
-                    print(f"        ✓ Removed old version")
+                    print(f"Removed old version")
                 else:
-                    print(f"        ✗ Failed to remove old version (Status: {delete_response.status_code})")
+                    print(f"Failed to remove old version (Status: {delete_response.status_code})")
             else:
                 print(f"        [DRY RUN] Would remove old version")
 
@@ -796,16 +796,16 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
             response_data = response.json()
             if "message" in response_data or "errors" in response_data:
                 # Error in response body despite success status
-                print(f"    ✗ Failed to add to module (Status: {response.status_code})")
+                print(f"Failed to add to module (Status: {response.status_code})")
                 print(f"      Response: {response.text}")
                 return False
         except:
             pass  # Not JSON or no error, continue as success
 
-        print(f"    ✓ Added to module {module_id}: position={position}, indent={indent}")
+        print(f"Added to module {module_id}: position={position}, indent={indent}")
         return True
     else:
-        print(f"    ✗ Failed to add to module (Status: {response.status_code})")
+        print(f"Failed to add to module (Status: {response.status_code})")
         print(f"      Response: {response.text}")
         return False
 
