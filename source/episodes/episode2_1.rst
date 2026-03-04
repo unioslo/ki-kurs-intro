@@ -44,26 +44,29 @@ Hva skjer når du stiller et spørsmål:
 
    Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
-Temperatur og tilfeldighet
+Fordypning
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. uio-colorbox-3::
 
-Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
-Den mest brukte innstillingen er *temperatur*.
-De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
+   .. uio-detail:: Temperatur og tilfeldighet
 
-.. uio-info:: Hva er "temperatur"?
+      Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
+      Den mest brukte innstillingen er *temperatur*.
+      De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
 
-   Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
-   Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
+   .. uio-detail:: Hva er "temperatur"?
 
-   * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
-   * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
+      Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
+      Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
 
-   Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
+      * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
+      * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
+
+      Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
 
 
-.. uio-source:: GPT simulator
+   .. uio-detail:: GPT simulator
 
-   Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer! 
+      Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer! 
 
-   https://poloclub.github.io/transformer-explainer/
+      https://poloclub.github.io/transformer-explainer/
