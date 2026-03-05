@@ -12,5 +12,3 @@ Etter denne episoden vil du kunne:
 * Bruke ulike prompt-teknikker for forskjellige oppgaver
 * Iterere og forbedre prompts basert på resultatene
 * Gjenkjenne vanlige feil i prompting
-
-**Estimert tid:** 12 minutter

@@ -12,5 +12,3 @@ Etter denne episoden vil du kunne:
 * Bruke strategier for å kvalitetssikre KI-generert innhold
 * Forstå personvernhensyn ved bruk av generativ KI
 * Unngå vanlige feil ved bruk av KI-verktøy
-
-**Estimert tid:** 10 minutter

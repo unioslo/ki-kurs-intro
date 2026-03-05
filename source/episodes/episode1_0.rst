@@ -1,7 +1,8 @@
 Hva er kunstig intelligens (KI)? 
 =====================================
 
-I første del av kurset skal du lære hva kunstig intelligens egentlig er, og forskjellen mellom maskinlæring (?) og generativt KI. 
+I første del av kurset skal du lære hva kunstig intelligens egentlig er, og du vil få innsikt i byggeblokkene til generativ KI og språkmodeller.
+Dette vil gjøre deg i stand til å forstå begrensningene som er innebygget i teknologien, og vil legge grunnen for trygg bruk. 
 
 Læringsmål
 ~~~~~~~~~~
@@ -19,14 +20,12 @@ Etter denne episoden vil du kunne:
 
     .. uio-answer::
 
-        .. rubric:: Privat bruk
+        **Privat bruk**
 
         For mange er KI ensbetydende med ChatGPT eller kanskje DALL-E for bildegenerering.
         Et annet eksempel: Når du googler nå til dags kommer opp et KI-sammendrag.
 
-        .. rubric:: Arbeidshverdagen
+        **Arbeidshverdagen**
 
         I arbeidshverdagen bruker du kanskje gpt.uio.no, NotebookLM, eller Copilot innebygget i eposten din?
 
-        
-**Estimert tid:** 10 minutter

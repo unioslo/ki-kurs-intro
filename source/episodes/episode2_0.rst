@@ -29,5 +29,3 @@ Etter denne episoden vil du kunne:
 * Forklare hvorfor LLM-er ikke er pålitelige kunnskapsbaser
 * Gjenkjenne når en LLM kan gi feil informasjon
 * Forstå betydningen av tilfeldighet i KI-svar
-
-**Estimert tid:** 10 minutter

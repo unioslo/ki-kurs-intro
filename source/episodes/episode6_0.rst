@@ -12,5 +12,3 @@ Etter denne episoden vil du kunne:
 * Forstå etiske aspekter ved bruk av KI
 * Vite hvor du kan lære mer
 * Ha en plan for hvordan du skal bruke KI i ditt arbeid
-
-**Estimert tid:** 5 minutter

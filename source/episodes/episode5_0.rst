@@ -12,5 +12,3 @@ Etter denne episoden vil du kunne:
 * Forstå forskjellen på gratis og institusjonelle KI-versjoner
 * Vite hvordan du får tilgang til KI-verktøy ved UiO
 * Kjenne til UiOs retningslinjer for bruk av KI
-
-**Estimert tid:** 8 minutter
