@@ -8,7 +8,7 @@ Læringsmål
 
 Etter denne episoden vil du kunne:
 
-* Oppsummere kjernekonspetene fra kurset
+* Oppsummere kjernekonseptene fra kurset
 * Forstå etiske aspekter ved bruk av KI
 * Vite hvor du kan lære mer
 * Ha en plan for hvordan du skal bruke KI i ditt arbeid
