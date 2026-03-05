@@ -6,11 +6,18 @@ Tilgjengelige tjenester
 
    **Viktig:** Listen under kan være utdatert. Sjekk alltid https://www.uio.no/tjenester/it/ki/ for oppdatert informasjon.
 
-Typiske tjenester som kan være tilgjengelige (eksempler):
 
 .. canvas-tabs::
 
    .. canvas-tab:: Tekstgenerering (LLM)
+
+
+      **gpt.uio.no**
+
+      * UiO sin personvernvennlig GPT
+      * Tilgang til OpenAI's GPT modelltrening
+      * Tilgang til modeller som kjører i Norge og hvor ingen data forlater UiO eller vår samarbeidspartner NTNU
+      * Tilgang til språkmodeller trent på norsk 
 
       **Microsoft Copilot (Business/Enterprise):**
 
@@ -19,45 +26,14 @@ Typiske tjenester som kan være tilgjengelige (eksempler):
       * Tilgang via UiO-konto
       * Databehandleravtale på plass
 
-      **ChatGPT Enterprise/Team:**
+      **NotebookLM**
 
-      * Kan være tilgjengelig for visse bruksområder
-      * Bedre personvern enn gratis versjon
-      * Ingen bruk til trening av modellen
+      * KI tjeneste fra Google
+      * Spesialisert på arbeid mot dokumenter
+      * Databehandleravtale på plass
 
-      **Andre verktøy:**
+      **Autotekst**
+      
+      * Tale til tekst, sikkert behandlet på UiO
+      * Kan behandle opptil sorte data hvis tjenesten kjører i Tjenester for Sensitiv Data
 
-      * Sjekk UiOs nettsider for fullstendig liste
-
-   .. canvas-tab:: Spesialiserte KI-verktøy
-
-      **For forskning:**
-
-      * Verktøy for dataanalyse
-      * Forskningsassistenter
-      * Litteraturgjennomgang
-
-      **For undervisning:**
-
-      * Verktøy for å lage undervisningsmateriell
-      * Vurderingsverktøy
-      * Automatisk tilbakemelding
-
-      **For administrasjon:**
-
-      * Dokumentbehandling
-      * Automatisering av rutineoppgaver
-      * Møteassistenter
-
-      Sjekk med IT-avdelingen eller din enhet hva som er tilgjengelig for deg.
-
-   .. canvas-tab:: Bildegenereering og andre
-
-      **Andre KI-verktøy:**
-
-      * Bildegenerering
-      * Transkripsjon av møter
-      * Oversettelse
-      * Tilgjengelighetsverktøy
-
-      Tilgjengeligheten varierer - sjekk UiOs oversikt.

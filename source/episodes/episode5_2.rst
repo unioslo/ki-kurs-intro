@@ -21,17 +21,6 @@ Hvorfor bruke UiOs versjoner?
       * Ofte amerikanske servere
       * Mindre kontroll
 
-   .. canvas-tab:: Tilleggsfunksjonalitet
-
-      **Institusjonelle versjoner har ofte flere funksjoner:**
-
-      * **Større kontekstvindu** - Kan håndtere lengre dokumenter
-      * **Nyere modeller** - Tilgang til de siste og beste modellene
-      * **Fileopplasting** - Kan laste opp dokumenter for analyse
-      * **Integrasjoner** - Kan integreres med andre UiO-tjenester
-      * **Bedre ytelse** - Raskere responstider
-      * **Færre begrensninger** - Flere spørsmål per dag/time
-
    .. canvas-tab:: Støtte og opplæring
 
       **Ved bruk av UiOs versjoner:**
