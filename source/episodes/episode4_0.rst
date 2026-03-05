@@ -1,5 +1,5 @@
-Prompting og prompt engineering
-===========================================
+Instruksjoner
+==============
 
 I denne episoden lærer du hvordan du skriver gode instruksjoner (prompts) til KI-verktøy for å få best mulige resultater.
 
