@@ -1,7 +1,7 @@
-Hva er kunstig intelligens (KI)? 
-=====================================
+Hva er kunstig intelligens og generativ kunstig intelligens ? 
+===============================================================
 
-I første del av kurset skal du lære hva kunstig intelligens egentlig er, og du vil få innsikt i byggeblokkene til generativ KI og språkmodeller.
+I første del av kurset skal du lære hva kunstig intelligens (KI) egentlig er, og du vil få innsikt i byggeblokkene til generativ KI og språkmodeller.
 Dette vil gjøre deg i stand til å forstå begrensningene som er innebygget i teknologien, og vil legge grunnen for trygg bruk. 
 
 Læringsmål
