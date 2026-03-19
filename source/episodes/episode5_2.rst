@@ -1,6 +1,6 @@
 
-Hvorfor bruke UiOs versjoner?
-==============================
+Hvorfor bruke UiOs godkjente tjenester?
+========================================
 
 Universitetet i Oslo tilbyr ulike KI-verktøy som ansatte kan bruke. 
 Om du skal bruke KI-tjenester på UiO data så *skal* du benytte godkjente tjenester. 
