@@ -2,9 +2,42 @@
 Tilgjengelige tjenester
 =======================
 
-.. uio-note::
+.. uio-source::
 
-   **Viktig:** Listen under kan være utdatert. Sjekk alltid https://www.uio.no/tjenester/it/ki/ for oppdatert informasjon.
+   **Viktig:** Sjekk alltid https://www.uio.no/tjenester/it/ki/ for oppdatert informasjon.
+
+
+GPT UiO
+---------
+GPT UiO er UiOs personverntrygge KI-chat. Til forskjell fra ChatGPT som er en *agent*, så er GPT UiO kun en enkel chat tjeneste. 
+Det betyr at den kun bruker en språkmodell til å genere et svar, og utfører ikke handlinger som f.eks. å gjøre nettsøk eller hente informasjon fra andre systemer. 
+
+GPT UiO har allikevel en *assisten* funksjonalitet. Med den kan man lage egne instruksjoner som ligger som et ekstra lag i tillegg til instruksjonene i chaten, man kan laste opp filer, slik at når man gjør spørringer, så vil modellen lete gjennom filene og finne relevant informasjon som den benytter i svaret, og man kan velge en spesifikk modell som assistenten benytter. 
+Assistenten kan deles med andre, og låses eller våre åpen for redigering. 
+
+Eksempler på bruk: 
+
+
+
+
+
+NotebookLM
+------------
+
+
+Autotekst
+---------
+
+
+Microsoft Copilot
+------------------
+
+
+UiO Local LLM på Educloud OnDemand
+------------------------------------
+
+
+
 
 
 .. canvas-tabs::
