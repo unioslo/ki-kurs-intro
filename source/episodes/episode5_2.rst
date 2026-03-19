@@ -19,11 +19,11 @@ Dvs at generelle spørsmål er greit, men ikke om man sender med informasjon om 
 
 Et viktig aspekt ved bruk av UiO godkjente tjenester er at du kan regne med at
 
-   * IT-avdelingen kan hjelpe med tekniske problemer
-   * Opplæringsressurser er tilpasset UiO
-   * Support på norsk
-   * Felles retningslinjer og beste praksis
-   * Erfaringsdeling med kolleger
+* IT-avdelingen kan hjelpe med tekniske problemer
+* Opplæringsressurser er tilpasset UiO
+* Support på norsk
+* Felles retningslinjer og beste praksis
+* Erfaringsdeling med kolleger
 
 
 .. uio-source:: Offisiell informasjon om KI-tjenester ved UiO:
