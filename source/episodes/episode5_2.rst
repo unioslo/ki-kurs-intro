@@ -2,31 +2,35 @@
 Hvorfor bruke UiOs versjoner?
 ==============================
 
-.. canvas-tabs::
+Universitetet i Oslo tilbyr ulike KI-verktøy som ansatte kan bruke. 
+Om du skal bruke KI-tjenester på UiO data så *skal* du benytte godkjente tjenester. 
+Grunnen til det er at UiO har databehandleravtale med leverandørene for disse tjenestene, og det sikrer at dataene som utveksles med tjenestene blir behandlet på en slik måte at GDPR kravene overholdes. 
 
-   .. canvas-tab:: Personvern og datasikkerhet
+Dette innebærer blant annet at data blir lagret på servere i Europa, og at de ikke blir brukt til å trene KI modeller videre. 
 
-      **Institusjonelle avtaler gir bedre beskyttelse:**
+Dersom man derimot bruker tjenester direkte fra private aktører som ChatGPT eller har egne private kontoer på Claude Code, så kan leverandørene i praksis gjøre hva de vil med dine data. 
+Du har ikke kontroll på hvor dataene dine lagres, dvs at de kan lagres på servere i USA hvor GDPR kravene ikke gjelder, og man kan som oftest ikke reservere seg mot at dataene benyttes til videre trening av modellene. 
 
-      * **Databehandleravtaler** - UiO har avtaler med leverandørene om hvordan data behandles
-      * **Ingen bruk til trening** - Dine samtaler brukes IKKE til å trene modellen
-      * **Bedre kontroll** - UiO kan stille krav til leverandørene
-      * **GDPR-compliance** - Avtalene sikrer at personvernregelverket følges
-      * **Europeiske servere** - Data lagres ofte i EU/EØS-området
+Det er allikevel slik at mange av oss benytter disse private tjenestene blant annet pga kvalitet og de avanserte funksjonalitetene de tilbyr. 
+Dette kan være greit så fremt man **ikke** sender UiO data med spørringen. 
+Dvs at generelle spørsmål er greit, men ikke om man sender med informasjon om f.eks. UiOs systemer eller ansatte, altså UiO data. 
 
-      **Gratis versjoner:**
 
-      * Ingen garantier for hvordan data brukes
-      * Kan brukes til modelltrening
-      * Ofte amerikanske servere
-      * Mindre kontroll
+Et viktig aspekt ved bruk av UiO godkjente tjenester er at du kan regne med at
 
-   .. canvas-tab:: Støtte og opplæring
+   * IT-avdelingen kan hjelpe med tekniske problemer
+   * Opplæringsressurser er tilpasset UiO
+   * Support på norsk
+   * Felles retningslinjer og beste praksis
+   * Erfaringsdeling med kolleger
 
-      **Ved bruk av UiOs versjoner:**
 
-      * IT-avdelingen kan hjelpe med tekniske problemer
-      * Opplæringsressurser tilpasset UiO
-      * Support på norsk
-      * Felles retningslinjer og beste praksis
-      * Erfaringsdeling med kolleger
+.. important::
+
+   **Offisiell informasjon om KI-tjenester ved UiO:**
+
+   https://www.uio.no/tjenester/it/ki/
+
+   Denne siden oppdateres jevnlig med nye tjenester og informasjon. Anbefaler at du besøker den for mest oppdatert informasjon.
+
+
