@@ -8,14 +8,16 @@ Grunnen til det er at UiO har databehandleravtale med leverandørene for disse t
 Dette innebærer blant annet at data blir lagret på servere i Europa, og at de ikke blir brukt til å trene KI modeller videre. 
 
 **Bruk av tjenester som ikke tilbys via UiO**
+
 Dersom man derimot bruker tjenester direkte fra private aktører som ChatGPT eller har egne private kontoer på Claude Code, så kan leverandørene i praksis gjøre hva de vil med dine data. 
 Du har ikke kontroll på hvor dataene dine lagres, dvs at de kan lagres på servere i USA hvor GDPR kravene ikke gjelder, og man kan som oftest ikke reservere seg mot at dataene benyttes til videre trening av modellene. 
 
 **Når er det allikevel greit å bruke andre tjenester enn de UiO-godkjente?**
+
 Det er allikevel slik at mange av oss benytter disse private tjenestene blant annet pga kvalitet og de avanserte funksjonalitetene de tilbyr. 
 Dette kan være greit så fremt man *ikke* sender UiO data med spørringen. 
 Dvs at generelle spørsmål er greit, men ikke om man sender med informasjon om f.eks. UiOs systemer eller ansatte, altså UiO data. 
-
+NB! Her må jeg undersøke hva som er et akseptabelt utsagn!
 
 Et viktig aspekt ved bruk av UiO godkjente tjenester er at du kan regne med at
 
