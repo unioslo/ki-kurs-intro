@@ -2,7 +2,7 @@
 Tilgjengelige tjenester
 =======================
 
-.. uio-source::
+.. uio-source:: Oppdatert liste over tjenester
 
    **Viktig:** Sjekk alltid https://www.uio.no/tjenester/it/ki/ for oppdatert informasjon.
 
@@ -27,13 +27,13 @@ Assistenten kan deles med andre, og låses eller våre åpen for redigering.
 * Støtter opptil røde data
 * Personlige API nøkler for integrasjon mot andre applikasjoner
 * Du trenger kun din UiO brukerkonto for å få tilgang
+* Gratis for ansatte og studenter ved UiO
 
 
 
 .. uio-colorbox-3::
 
    **Fordypning**
-
 
    .. uio-detail:: Eksempel på assistent til bruk i administrasjon og i undervisning
 
@@ -91,15 +91,33 @@ Assistenten kan deles med andre, og låses eller våre åpen for redigering.
 
 NotebookLM
 -------------
-Notat: Noe tekst her som beskriver hva tjenesten
+NotebookLM er en KI-drevet assistent fra Google spesialisert for å arbeide med dokumenter. 
+
+I NotebookLM bygger man seg først en egen "kunnskapshub" som inneholder dokumenter og lenker til nettsteder, eller til og med lydopptak fra forelesninger. 
+Dette er deretter grunnlaget NotebookLM benytter for å generere svar på spørsmål, eller produkter som oppsummeringer i tekst eller audio, quizer eller presentasjoner. 
+NotebookLM har med andre ord en hel del spennende funksjonaliteter. 
+
+NotebookLM er tro mot kildene du benytter, og du kan derfor oppleve å få mer presise svar enn for eksempel ved bruk av gpt.uio.no. 
+Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
+
+.. uio-viktig::
+
+   * Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: Ikke last opp dokumenter du ikke har rettigheter til å dele.
+   * Ikke last opp dokumenter som inneholder sensitiv informasjon. NotebookLM er kun godkjent til opptil gule data.
+
+.. uio-info:: 
+
+   Les om [NotebookLM på UiO sine nettsider](https://www.uio.no/tjenester/it/ki/notebooklm/). Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM: 
 
 **Nøkkelpunkter**
 
 * KI tjeneste fra Google
+* Benytter Google sin Gemini språkmodell
 * Spesialisert på arbeid mot dokumenter
-* Tilgang via din Google UiO konto
+* Du må ha Google Workspace konto gjennom UiO for å få tilgang
 * Databehandleravtale på plass
-* Du må opprette en UiO Google konto for å få tilgang
+* Gratis for ansatte og studenter ved UiO
+* *Tjenesten skal kun brukes med UiO konto* - sjekk at du er logget inn med UiO konto og ikke din egen private Google konto!
 
 Autotekst
 -----------
