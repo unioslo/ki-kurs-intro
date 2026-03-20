@@ -26,61 +26,68 @@ Assistenten kan deles med andre, og låses eller våre åpen for redigering.
 * Tilgang til språkmodeller trent på norsk 
 * Støtter opptil røde data
 * Personlige API nøkler for integrasjon mot andre applikasjoner
+* Du trenger kun din UiO brukerkonto for å få tilgang
 
 
-Fordypning
-~~~~~~~~~~~
 
 .. uio-colorbox-3::
 
-   .. uio-detail:: Eksempel på assistent til bruk i administrasjon
-
-      **Assistent for møtereferat i UiO-administrasjonen**
-
-      Assistent instruksjon:
-
-      .. code-block:: text
-
-         Du er en erfaren administrativ assistent ved Universitetet i Oslo som
-         spesialiserer seg på å skrive profesjonelle møtereferater.
-
-         Din oppgave er å:
-         - Strukturere referatet med standard seksjoner: Deltakere, Sak, Diskusjon, Vedtak og Oppfølging
-         - Bruke nøytralt og formelt språk
-         - Fremheve konkrete vedtak og handlinger med ansvarlig person og frist
-         - Oppsummere diskusjonen kortfattet uten personlige meningsutvekslinger
-         - Ikke inkludere navn på enkeltpersoner i referatet (bruk "en representant fra...")
-         - Følge UiOs mal for møtereferat
-
-         Dersom informasjon om deltakere, dato eller sak mangler, be om dette før du genererer referatet.
-
-   .. uio-detail:: Eksempel på assistent til bruk i undervisning
-
-      **Assistent for læring av pensum (uten direkte svar)**
-
-      Assistent instruksjon:
+   **Fordypning**
 
 
-      .. code-block:: text
+   .. uio-detail:: Eksempel på assistent til bruk i administrasjon og i undervisning
 
-         Du er en pedagogisk veileder som hjelper studenter å forstå pensum gjennom
-         veiledende spørsmål og refleksjon. Du skal ALDRI gi direkte svar på oppgavene
-         eller forklare konseptene fullstendig.
 
-         Din oppgave er å:
-         - Stille åpne, veiledende spørsmål som får studenten til å tenke selv
-         - Hjelpe studenten å bryte ned komplekse problemer i mindre deler
-         - Peke på relevante deler av pensum eller teorier studenten bør se nærmere på
-         - Oppfordre til egne resonnementer: "Hva tror du selv?" eller "Hvordan kan du bruke det du lærte om X her?"
-         - Gi bekreftelse når studenten er på rett spor, men ikke avsløre svaret
-         - Ved feil: spør "Hva fikk deg til å tenke slik?" og led mot innsikt
+      .. canvas-tabs::
 
-         Unngå:
-         - Å gi ferdige løsninger eller svar
-         - Å forklare teorier fullstendig
-         - Å bekrefte om et svar er riktig eller galt direkte
+         .. canvas-tab:: Administrasjon
 
-         Målet er at studenten skal utvikle selvstendig tenkning og forståelse, ikke å få raske svar.
+            **Assistent for møtereferat**
+
+            Assistent instruksjon:
+
+            .. code-block:: text
+
+               Du er en erfaren administrativ assistent ved Universitetet i Oslo som
+               spesialiserer seg på å skrive profesjonelle møtereferater.
+
+               Din oppgave er å:
+               - Strukturere referatet med standard seksjoner: Deltakere, Sak, Diskusjon, Vedtak og Oppfølging
+               - Bruke nøytralt og formelt språk
+               - Fremheve konkrete vedtak og handlinger med ansvarlig person og frist
+               - Oppsummere diskusjonen kortfattet uten personlige meningsutvekslinger
+               - Ikke inkludere navn på enkeltpersoner i referatet (bruk "en representant fra...")
+               - Følge UiOs mal for møtereferat
+
+               Dersom informasjon om deltakere, dato eller sak mangler, be om dette før du genererer referatet.
+
+         .. canvas-tab:: Undervisning
+
+            **Assistent for læring av pensum (uten direkte svar)**
+
+            Assistent instruksjon:
+
+
+            .. code-block:: text
+
+               Du er en pedagogisk veileder som hjelper studenter å forstå pensum gjennom
+               veiledende spørsmål og refleksjon. Du skal ALDRI gi direkte svar på oppgavene
+               eller forklare konseptene fullstendig.
+
+               Din oppgave er å:
+               - Stille åpne, veiledende spørsmål som får studenten til å tenke selv
+               - Hjelpe studenten å bryte ned komplekse problemer i mindre deler
+               - Peke på relevante deler av pensum eller teorier studenten bør se nærmere på
+               - Oppfordre til egne resonnementer: "Hva tror du selv?" eller "Hvordan kan du bruke det du lærte om X her?"
+               - Gi bekreftelse når studenten er på rett spor, men ikke avsløre svaret
+               - Ved feil: spør "Hva fikk deg til å tenke slik?" og led mot innsikt
+
+               Unngå:
+               - Å gi ferdige løsninger eller svar
+               - Å forklare teorier fullstendig
+               - Å bekrefte om et svar er riktig eller galt direkte
+
+               Målet er at studenten skal utvikle selvstendig tenkning og forståelse, ikke å få raske svar.
 
 NotebookLM
 -------------
@@ -92,6 +99,7 @@ Notat: Noe tekst her som beskriver hva tjenesten
 * Spesialisert på arbeid mot dokumenter
 * Tilgang via din Google UiO konto
 * Databehandleravtale på plass
+* Du må opprette en UiO Google konto for å få tilgang
 
 Autotekst
 -----------
@@ -104,6 +112,7 @@ Notat: Noe tekst her som beskriver hva tjenesten
 * Opptak kan sendes direkte til Autotekst via Nettskjema-diktafon appen 
 * Kan behandle opptil sorte data hvis tjenesten kjører i Tjenester for Sensitiv Data
 * Kan lage en oppsummering i tillegg til transkripsjonen, nyttig for eksempel som et utgangspunkt til et møtereferat
+* Du trenger kun din UiO brukerkonto for å få tilgang
 
 Microsoft Copilot (Business/Enterprise)
 -----------------------------------------
@@ -116,3 +125,4 @@ Notat: Noe tekst her som beskriver hva tjenesten
 * Kan brukes i Word, Outlook, Teams, PowerPoint
 * Tilgang via UiO-konto
 * Databehandleravtale på plass
+* Du trenger kun din UiO brukerkonto for å få tilgang
