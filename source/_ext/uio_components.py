@@ -43,6 +43,10 @@ class uio_info(nodes.General, nodes.Element):
     """Info container - uses uio-icon-box info class."""
     pass
 
+class uio_viktig(nodes.General, nodes.Element):
+    """Viktig container - uses uio-icon-box viktig class."""
+    pass
+
 
 class uio_source(nodes.General, nodes.Element):
     """Source/resources container - uses uio-icon-box source class."""
@@ -224,6 +228,30 @@ class UioInfoDirective(SphinxDirective):
             node['title'] = ' '.join(self.arguments)
         else:
             node['title'] = 'Info'
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+class UioViktigDirective(SphinxDirective):
+    """
+    UiO viktig (important) directive.
+
+    Usage::
+
+        .. uio-viktig:: Custom Title
+
+           Viktig content here
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_viktig()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Viktig'
         self.state.nested_parse(self.content, self.content_offset, node)
         return [node]
 
@@ -467,6 +495,20 @@ def html_depart_uio_info(self, node):
     self.body.append('</div>\n')  # Close uio-icon-box info
 
 
+# New vikt ig node handling
+
+def html_visit_uio_viktig(self, node):
+    """Generate UiO viktig (important) HTML."""
+    title = node.get('title', 'Viktig')
+    self.body.append('<div class="uio-icon-box viktig">\n')
+    self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_viktig(self, node):
+    """Close viktig HTML."""
+    self.body.append('</div>\n')  # Close uio-icon-box viktig
+
+
 def html_visit_uio_source(self, node):
     """Generate UiO source/resources HTML."""
     title = node.get('title', 'Kilder / Ressurser')
@@ -672,6 +714,11 @@ def setup(app):
         uio_info,
         html=(html_visit_uio_info, html_depart_uio_info)
     )
+    # Register the new viktig node
+    app.add_node(
+        uio_viktig,
+        html=(html_visit_uio_viktig, html_depart_uio_viktig)
+    )
     app.add_node(
         uio_source,
         html=(html_visit_uio_source, html_depart_uio_source)
@@ -704,6 +751,7 @@ def setup(app):
     app.add_directive('uio-dont', UioDontDirective)
     app.add_directive('uio-do', UioDoDirective)
     app.add_directive('uio-info', UioInfoDirective)
+    app.add_directive('uio-viktig', UioViktigDirective)
     app.add_directive('uio-source', UioSourceDirective)
     app.add_directive('uio-colorbox-1', UioColorbox1Directive)
     app.add_directive('uio-colorbox-2', UioColorbox2Directive)

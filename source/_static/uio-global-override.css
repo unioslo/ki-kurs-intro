@@ -322,6 +322,13 @@ details {
 	background-size: 30px;
 }
 
+.viktig {
+	border-top: 10px solid #f5c6cb; /* light red */
+	border-bottom: 5px solid #f5c6cb;
+	background: url("./images/ikon-viktig.svg") calc(100% - 10px) 10px no-repeat;
+	background-size: 30px;
+}
+
 .reflect {
 	border-top: 10px solid #8F59A4;
 	border-bottom: 5px solid #8F59A4;
