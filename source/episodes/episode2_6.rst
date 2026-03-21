@@ -2,20 +2,17 @@
 Hva betyr dette for deg som bruker?
 ====================================
 
-.. uio-note::
+Viktigste takeaways
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   **Viktigste takeaways:**
-
-   1. **LLM-er er verktøy for å generere tekst** - ikke oppslagsverk for fakta
-   2. **Verifiser alltid viktig informasjon** - spesielt fakta, tall, referanser
-   3. **Bruk LLM-er til hva de er gode på** - strukturering, formulering, idémyldring
-   4. **Vær kritisk** - spesielt når svaret virker veldig detaljert og spesifikt
-   5. **Gi god kontekst** - hjelp modellen ved å gi relevant informasjon i prompten
+1. **LLM-er er verktøy for å generere tekst** - ikke oppslagsverk for fakta
+2. **Verifiser alltid viktig informasjon** - spesielt fakta, tall, referanser
+3. **Bruk LLM-er til hva de er gode på** - strukturering, formulering, idémyldring
+4. **Vær kritisk** - spesielt når svaret virker veldig detaljert og spesifikt
+5. **Gi god kontekst** - hjelp modellen ved å gi relevant informasjon i prompten
 
 .. uio-reflect::
-
-   **Refleksjonsoppgave**
-
+   
    Tenk over følgende situasjoner. I hvilke av disse bør du være EKSTRA forsiktig med å stole på et LLM-svar?
 
    * Skrive et utkast til en e-post
@@ -41,6 +38,4 @@ Hva betyr dette for deg som bruker?
       * Brainstorme ideer (kreativ prosess, ikke faktabasert)
       * Oppsummere dokument du ga (basert på tekst du ga, ikke hallusinert)
 
-.. uio-note::
-
-   I neste episode skal vi se nærmere på hvordan du kan kvalitetssikre output fra generativ KI, og hva du må tenke på når du bruker disse verktøyene.
+I neste episode skal vi se nærmere på hvordan du kan kvalitetssikre output fra generativ KI, og hva du må tenke på når du bruker disse verktøyene.
