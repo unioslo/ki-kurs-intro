@@ -15,53 +15,63 @@ På samme måte er det viktig å vite når en LLM er et godt verktøy, og når d
    :width: 60%
    :alt: LLM using the right tool - placeholder image
 
-.. canvas-tabs::
+Utdatert informasjon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. canvas-tab:: Utdatert informasjon
+Problemet:
+--------------------
 
-      **Problemet:**
+* LLM-er trenes på data fra et bestemt tidspunkt
+* De vet ikke hva som har skjedd etter treningsdataen ble samlet
+* Mange modeller har en "kunnskapsgrense" (cutoff date)
 
-      * LLM-er trenes på data fra et bestemt tidspunkt
-      * De vet ikke hva som har skjedd etter treningsdataen ble samlet
-      * Mange modeller har en "kunnskapsgrense" (cutoff date)
+Eksempel
+--------------------
 
-      **Eksempel:**
+En modell trent i 2023 vet ikke hvem som vant fotball-VM i 2024, eller nye lover som ble vedtatt i 2024.
 
-      En modell trent i 2023 vet ikke hvem som vant fotball-VM i 2024, eller nye lover som ble vedtatt i 2024.
+Merk:
+--------------------
 
-      **Merk:**
+Noen verktøy (som Bing Chat/Copilot) kan søke på internett for oppdatert informasjon - men da bruker de en søkemotor i tillegg til språkmodellen.
 
-      Noen verktøy (som Bing Chat/Copilot) kan søke på internett for oppdatert informasjon - men da bruker de en søkemotor i tillegg til språkmodellen.
+Manglende kontekst
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. canvas-tab:: Manglende kontekst
+Problemet:
+--------------------
 
-      **Problemet:**
+* LLM-er kjenner ikke til interne prosedyrer ved UiO (med mindre de fortelles)
+* De vet ikke om spesifikke systemer dere bruker
+* De har ikke tilgang til deres dokumenter eller databaser
 
-      * LLM-er kjenner ikke til interne prosedyrer ved UiO (med mindre de fortelles)
-      * De vet ikke om spesifikke systemer dere bruker
-      * De har ikke tilgang til deres dokumenter eller databaser
+Eksempel:
+--------------------
 
-      **Eksempel:**
+Spør du "Hvordan registrerer jeg fravær i vårt system?", kan modellen gi et generisk svar om fraværsregistrering - men ikke det spesifikke systemet dere bruker.
 
-      Spør du "Hvordan registrerer jeg fravær i vårt system?", kan modellen gi et generisk svar om fraværsregistrering - men ikke det spesifikke systemet dere bruker.
+Løsning:
+--------------------
 
-      **Løsning:**
+Gi kontekst i prompten: "Vi bruker systemet X ved UiO. Hvordan registrerer jeg fravær?"
 
-      Gi kontekst i prompten: "Vi bruker systemet X ved UiO. Hvordan registrerer jeg fravær?"
+Språk og kulturforståelse
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. canvas-tab:: Språk og kulturforståelse
+Problemet:
+--------------------
 
-      **Problemet:**
+* De fleste LLM-er er primært trent på engelsk
+* Norsk fungerer, men kvaliteten kan være noe lavere
+* Norske forhold og kontekst kan være underrepresentert
 
-      * De fleste LLM-er er primært trent på engelsk
-      * Norsk fungerer, men kvaliteten kan være noe lavere
-      * Norske forhold og kontekst kan være underrepresentert
+Eksempel:
+--------------------
 
-      **Eksempel:**
+Juridiske eller administrative spørsmål om norske forhold kan få svar basert på amerikanske eller britiske systemer.
 
-      Juridiske eller administrative spørsmål om norske forhold kan få svar basert på amerikanske eller britiske systemer.
+Tips
+--------------------
 
-      **Tips:**
-
-      * Vær eksplisitt: "i Norge", "ved norske universiteter", "etter norsk lovverk"
-      * Sjekk alltid svar om lover, regler og prosedyrer
+* Vær eksplisitt: "i Norge", "ved norske universiteter", "etter norsk lovverk"
+* Sjekk alltid svar om lover, regler og prosedyrer
