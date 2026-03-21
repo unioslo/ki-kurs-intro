@@ -31,7 +31,7 @@ Det er mange årsaker til hallusinering:
 4. *Overgeneralisering*, modellen kombinerer mønstre fra ulike kilder.
 5. *Utdaterte treningsdata*, modellen vet ikke hva som har skjedd etter den ble trent.
 
-.. uio-info:: Viktig å forstå:
+.. uio-viktig:: Viktig å forstå
 
    Hallusinering er ikke en "bug" som kan fikses fullstendig.
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
