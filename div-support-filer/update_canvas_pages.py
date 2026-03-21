@@ -230,7 +230,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
             # Debug: show if similar URLs exist
             similar = [url for url in pages_in_modules.keys() if expected_url in url]
             if similar:
-                print(f"     Similar URLs in modules: {similar[:3]}")
+                print(f"Similar URLs in modules: {similar[:3]}")
             unmatched_count += 1
             continue
 
@@ -348,9 +348,9 @@ def ask_deploy_confirmation(build_info, html_files, dry_run=False, skip_confirma
     print("="*70)
     print("LAST BUILD INFORMATION:")
     print("="*70)
-    print(f"  Date:    {build_info['date']}")
-    print(f"  Commit:  {build_info['hash']}")
-    print(f"  Message: {build_info['message']}")
+    print(f"Date:    {build_info['date']}")
+    print(f"Commit:  {build_info['hash']}")
+    print(f"Message: {build_info['message']}")
     print("="*70)
     print()
 
@@ -381,7 +381,7 @@ def ask_deploy_confirmation(build_info, html_files, dry_run=False, skip_confirma
     print(f"FILES TO BE DEPLOYED ({len(html_files)}):")
     print("="*70)
     for html_file in html_files:
-        print(f"  - {html_file.name}")
+        print(f"- {html_file.name}")
     print("="*70)
     print()
 
@@ -439,8 +439,8 @@ def create_page_id_mapping(token):
                         'module_name': module_names.get(module_id, f'Module {module_position}')
                     }
 
-    print(f"  Found {len(pages_in_modules)} pages linked to modules")
-    print(f"  Processing all Canvas pages for episode matching...")
+    print(f"Found {len(pages_in_modules)} pages linked to modules")
+    print(f"Processing all Canvas pages for episode matching...")
 
     # Create mapping: episode pattern -> page info
     # If duplicates exist, keep the one with highest page_id (latest)
@@ -478,7 +478,7 @@ def create_page_id_mapping(token):
 
             if key in mapping:
                 if page_id > mapping[key]['page_id']:
-                    print(f"  Found newer version of {key}: {url} (page_id: {page_id})")
+                    print(f"Found newer version of {key}: {url} (page_id: {page_id})")
                     mapping[key] = {
                         'page_id': page_id,
                         'url': url,
@@ -496,7 +496,7 @@ def create_page_id_mapping(token):
                 }
 
     print(f"Mapped {len(mapping)} episode pages")
-    print(f"  Episode keys found: {sorted(mapping.keys())[:10]}...")  # Show first 10 keys
+    print(f"Episode keys found: {sorted(mapping.keys())[:10]}...")  # Show first 10 keys
     print()
     return mapping, page_to_module
 
@@ -748,16 +748,16 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
         # Exact page URL already exists in module
         existing_position = existing_item.get('position', 'unknown')
         existing_indent = existing_item.get('indent', 'unknown')
-        print(f"    ⚠ Page already in module at position={existing_position}, indent={existing_indent} - skipping")
+        print(f"Page already in module at position={existing_position}, indent={existing_indent} - skipping")
         return True
 
     if similar_items:
         # Found similar pages (same base URL, different suffix) - replace the old one(s)
-        print(f"    ⚠ Found {len(similar_items)} old version(s) in module - replacing with new version:")
+        print(f"Found {len(similar_items)} old version(s) in module - replacing with new version:")
         for similar in similar_items:
             old_url = similar.get('page_url', '')
             item_id = similar.get('id')
-            print(f"      - Removing old: {old_url} (item_id: {item_id})")
+            print(f"- Removing old: {old_url} (item_id: {item_id})")
 
             if not dry_run:
                 # Delete the old module item
@@ -769,9 +769,9 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
                 else:
                     print(f"Failed to remove old version (Status: {delete_response.status_code})")
             else:
-                print(f"        [DRY RUN] Would remove old version")
+                print(f"[DRY RUN] Would remove old version")
 
-        print(f"    ℹ Adding new version: {page_url}")
+        print(f"Adding new version: {page_url}")
 
     # Page doesn't exist, add it
     api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}/items"
@@ -785,7 +785,7 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
     }
 
     if dry_run:
-        print(f"    [DRY RUN] Would add to module {module_id}: position={position}, indent={indent}")
+        print(f"[DRY RUN] Would add to module {module_id}: position={position}, indent={indent}")
         return True
 
     response = requests.post(api_endpoint, headers=headers, data=data)
@@ -797,7 +797,7 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
             if "message" in response_data or "errors" in response_data:
                 # Error in response body despite success status
                 print(f"Failed to add to module (Status: {response.status_code})")
-                print(f"      Response: {response.text}")
+                print(f"Response: {response.text}")
                 return False
         except:
             pass  # Not JSON or no error, continue as success
@@ -806,7 +806,7 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
         return True
     else:
         print(f"Failed to add to module (Status: {response.status_code})")
-        print(f"      Response: {response.text}")
+        print(f"Response: {response.text}")
         return False
 
 
@@ -830,7 +830,7 @@ def upload_image_to_canvas(token, image_path):
     image_path = Path(image_path)
 
     if not image_path.exists():
-        print(f"  Warning: Image file not found: {image_path}")
+        print(f"Warning: Image file not found: {image_path}")
         return None, None
 
     # Determine MIME type
@@ -853,8 +853,8 @@ def upload_image_to_canvas(token, image_path):
     response = requests.post(api_endpoint, headers=headers, data=payload)
 
     if response.status_code not in [200, 201]:
-        print(f"  Warning: Failed to initiate image upload for {image_path.name}")
-        print(f"  Status: {response.status_code}, Response: {response.text}")
+        print(f"Warning: Failed to initiate image upload for {image_path.name}")
+        print(f"Status: {response.status_code}, Response: {response.text}")
         return None, None
 
     upload_info = response.json()
@@ -862,7 +862,7 @@ def upload_image_to_canvas(token, image_path):
     upload_params = upload_info.get('upload_params', {})
 
     if not upload_url:
-        print(f"  Warning: No upload URL received for {image_path.name}")
+        print(f"Warning: No upload URL received for {image_path.name}")
         return None, None
 
     # Step 2: Upload the actual file
@@ -881,8 +881,8 @@ def upload_image_to_canvas(token, image_path):
             upload_response = requests.get(location, headers=confirm_headers)
 
     if upload_response.status_code not in [200, 201]:
-        print(f"  Warning: Failed to upload image {image_path.name}")
-        print(f"  Status: {upload_response.status_code}, Response: {upload_response.text}")
+        print(f"Warning: Failed to upload image {image_path.name}")
+        print(f"Status: {upload_response.status_code}, Response: {upload_response.text}")
         return None, None
 
     # Get file info from response
@@ -894,7 +894,7 @@ def upload_image_to_canvas(token, image_path):
         print(f"Uploaded: {image_path.name} (file_id: {file_id})")
         return file_id, preview_url
     except Exception as e:
-        print(f"  Warning: Could not parse upload response for {image_path.name}: {e}")
+        print(f"Warning: Could not parse upload response for {image_path.name}: {e}")
         return None, None
 
 
@@ -919,7 +919,7 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
     if not img_tags:
         return html_content
 
-    print(f"  Found {len(img_tags)} image(s) to process")
+    print(f"Found {len(img_tags)} image(s) to process")
 
     uploaded_count = 0
     skipped_count = 0
@@ -931,7 +931,7 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
 
         # Skip if already a Canvas URL
         if 'instructure.com' in src:
-            print(f"    • Skipping (already Canvas URL): {src}")
+            print(f"- Skipping (already Canvas URL): {src}")
             skipped_count += 1
             continue
 
@@ -949,26 +949,26 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
 
         if not image_path.exists():
             print(f"Image not found: {src}")
-            print(f"      Resolved to: {image_path}")
+            print(f"Resolved to: {image_path}")
             continue
 
         # Get alt text
         alt_text = img.get('alt', image_path.name)
 
         if dry_run:
-            print(f"    • [DRY RUN] Would upload: {src}")
-            print(f"      Local path: {image_path}")
+            print(f"- [DRY RUN] Would upload: {src}")
+            print(f"Local path: {image_path}")
             uploaded_count += 1
             continue
 
         # Upload image to Canvas
-        print(f"    • Uploading: {src}")
-        print(f"      Local path: {image_path}")
+        print(f"- Uploading: {src}")
+        print(f"Local path: {image_path}")
         file_id, preview_url = upload_image_to_canvas(token, image_path)
 
         if file_id and preview_url:
             uploaded_count += 1
-            print(f"      Canvas URL: {preview_url}")
+            print(f"Canvas URL: {preview_url}")
 
             # Preserve existing width/height if set
             width = img.get('width') or img.get('style', '').split('width:')[-1].split(';')[0].strip()
@@ -1001,7 +1001,7 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
 
     # Summary
     if uploaded_count > 0 or skipped_count > 0:
-        print(f"  Image summary: {uploaded_count} uploaded, {skipped_count} skipped")
+        print(f"Image summary: {uploaded_count} uploaded, {skipped_count} skipped")
 
     return str(soup)
 
@@ -1182,7 +1182,7 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
         else:
             expected_url = page_url_or_id
         url_msg = f" (new URL: {expected_url})" if expected_url else ""
-        print(f"  [DRY RUN] Would update: {page_url_or_id}{title_msg}{url_msg}")
+        print(f"[DRY RUN] Would update: {page_url_or_id}{title_msg}{url_msg}")
         return True, expected_url, None
 
     response = requests.put(api_endpoint, headers=headers, json=data)
@@ -1195,7 +1195,7 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
             if "message" in response_data or "errors" in response_data:
                 # Error in response body despite 200 status
                 print(f"Failed: {page_url_or_id} (Status: {response.status_code})")
-                print(f"    Response: {response.text}")
+                print(f"Response: {response.text}")
                 return False, None, None
 
             # Get the actual URL and timestamp from Canvas response
@@ -1204,15 +1204,15 @@ def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None,
 
             title_msg = f" (title: {title})" if title else ""
             print(f"Updated: {page_url_or_id}{title_msg}")
-            print(f"    Canvas URL: {actual_url}")
+            print(f"Canvas URL: {actual_url}")
             return True, actual_url, updated_at
         except Exception as e:
-            print(f"  Warning: Could not parse response: {e}")
+            print(f"Warning: Could not parse response: {e}")
             return True, page_url_or_id, None
 
     else:
         print(f"Failed: {page_url_or_id} (Status: {response.status_code})")
-        print(f"    Response: {response.text}")
+        print(f"Response: {response.text}")
         return False, None, None
 
 
@@ -1264,7 +1264,7 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
         # Extract title from h1 tag (descriptive title)
         title = extract_title(html_file)
         if title:
-            print(f"  Title: {title}")
+            print(f"Title: {title}")
 
         # Try to find page info from mapping file
         page_info = page_mapping.get(html_file.name)
@@ -1272,13 +1272,13 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
         if page_info:
             # Use page ID from mapping file (or override if provided)
             page_identifier = page_id_override if page_id_override else page_info['page_id']
-            print(f"  Page ID: {page_info['page_id']}")
-            print(f"  Module: {page_info.get('module_name', 'N/A')} (ID: {page_info.get('module_id', 'N/A')})")
+            print(f"Page ID: {page_info['page_id']}")
+            print(f"Module: {page_info.get('module_name', 'N/A')} (ID: {page_info.get('module_id', 'N/A')})")
         else:
             # Fallback to URL-based identifier
             page_url = get_page_url(html_file.name)
             page_identifier = page_id_override if page_id_override else page_url
-            print(f"  Warning: No mapping found for {html_file.name}, using URL: {page_url}")
+            print(f"Warning: No mapping found for {html_file.name}, using URL: {page_url}")
 
         # Update page (let Canvas auto-generate URL from title)
         page_updated, actual_page_url, _ = update_canvas_page(token, page_identifier, content, title, None, args.dry_run)
@@ -1312,7 +1312,7 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
                         add_page_to_module(token, module_id, actual_page_url, title or actual_page_url,
                                           position, indent, args.dry_run)
                     else:
-                        print(f"    Warning: No module found for episode {episode_num}")
+                        print(f"Warning: No module found for episode {episode_num}")
         else:
             fail_count += 1
 
@@ -1398,9 +1398,9 @@ def main():
                 # Get last build info
                 build_info = get_last_build_info(temp_dir)
                 print(f"\nUsing HTML files from:")
-                print(f"  Branch: {HTML_BRANCH}")
-                print(f"  Last commit: {build_info.get('commit_hash', 'N/A')}")
-                print(f"  Build time: {build_info.get('build_time', 'N/A')}")
+                print(f"Branch: {HTML_BRANCH}")
+                print(f"Last commit: {build_info.get('commit_hash', 'N/A')}")
+                print(f"Build time: {build_info.get('build_time', 'N/A')}")
                 print()
 
                 # Generate mapping from GitHub HTML files
@@ -1463,7 +1463,7 @@ def main():
                     print(f"Error: HTML file not found in GitHub: {html_file}")
                     print(f"Available files in {episodes_dir}:")
                     for f in sorted(episodes_dir.glob("episode*.html")):
-                        print(f"  - {f.name}")
+                        print(f"- {f.name}")
                     sys.exit(1)
 
                 html_files = [html_file]
@@ -1539,7 +1539,7 @@ def main():
         if modules:
             print(f"Found {len(modules)} modules")
             for pos, mod_id in sorted(modules.items()):
-                print(f"  Module {pos}: ID {mod_id}")
+                print(f"Module {pos}: ID {mod_id}")
         else:
             print("Warning: No modules found or failed to fetch modules")
         print()
@@ -1571,8 +1571,8 @@ def main():
         current_url, current_title = get_page_by_id(token, args.page_id)
         if not current_url:
             sys.exit(1)
-        print(f"  Current URL: {current_url}")
-        print(f"  Current title: {current_title}")
+        print(f"Current URL: {current_url}")
+        print(f"Current title: {current_title}")
         page_id_override = args.page_id
         print()
 
@@ -1633,9 +1633,9 @@ def main():
     # Summary
     print(f"\n{'='*50}")
     print(f"Summary:")
-    print(f"  Successful: {success_count}")
-    print(f"  Failed: {fail_count}")
-    print(f"  Total: {len(html_files)}")
+    print(f"Successful: {success_count}")
+    print(f"Failed: {fail_count}")
+    print(f"Total: {len(html_files)}")
 
     if args.dry_run:
         print("\nThis was a DRY RUN. Run without --dry-run to actually update pages.")
