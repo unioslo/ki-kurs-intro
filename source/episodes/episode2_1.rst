@@ -40,7 +40,7 @@ Hva skjer når du stiller et spørsmål:
 4. Den gjentar prosessen for neste ord, og neste ord, osv.
 5. Modellen stopper når den "mener" svaret er fullstendig.
 
-.. uio-info:: Viktig
+.. uio-viktig::
 
    Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
