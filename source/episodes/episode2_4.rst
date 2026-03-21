@@ -23,7 +23,7 @@ Her er noen eksempler, det finnes flere.
 Hvorfor skjer det?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Det er mange årsaker til hallusinering:
+Det er mange årsaker til at modellene finner på ting:
 
 1. *Modellen vil alltid gi et svar*, den sier ikke "jeg vet ikke".
 2. *Mønstre fra trening*, modellen har lært hvordan svar "skal se ut".
@@ -33,7 +33,7 @@ Det er mange årsaker til hallusinering:
 
 .. uio-viktig:: Viktig å forstå
 
-   Hallusinering er ikke en "bug" som kan fikses fullstendig.
+   At språkmodeller finner på ting er ikke en "bug" som kan fikses fullstendig.
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
 
 Hallusinering med selvtillit
@@ -55,9 +55,9 @@ Modellen kan derfor fortsatt hallusinere selv om den har tilgang til korrekt inf
 
 .. uio-info:: Eksempel
 
-   Et eksempel på hallusinering er en sak fra Politihøgskolen. [Svarstad]_
+   Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen. [Svarstad]_
    Der ble feilinformasjon generert av Copilot brukt som saksgrunnlag.
-   Copilot fant ikke opplysningene som brukeren spurte etter, og fant derfor på et svar.
+   Copilot fant ikke opplysningene som brukeren spurte etter på nettet, og fant derfor på et svar.
 
 .. uio-reflect:: Refleksjon
 
