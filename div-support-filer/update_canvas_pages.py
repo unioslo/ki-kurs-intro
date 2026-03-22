@@ -74,6 +74,8 @@ MAPPING_FILE = Path(__file__).parent / "page_id_mapping.json"
 HTML_DIR = Path("_build/html/episodes")
 if not HTML_DIR.exists():
     HTML_DIR = Path("../_build/html/episodes")
+    if not HTML_DIR.exists():
+        HTML_DIR = Path("_build/episodes")
 
 
 def get_api_token():
