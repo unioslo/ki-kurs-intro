@@ -191,9 +191,7 @@ I Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til interne
 Bildegenerering basert på tekst er også mulig, og i tillegg har den verktøy for diverse oppgaver relatert til undervising. 
 
 
-.. uio-dont:: Viktig
 
-   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot.
 
 **Nøkkelpunkter**
 
@@ -204,3 +202,11 @@ Bildegenerering basert på tekst er også mulig, og i tillegg har den verktøy f
 * Kun godkjent for grønne data
 * Databehandleravtale på plass
 * Du trenger kun din UiO brukerkonto for å få tilgang
+
+.. uio-dont:: Viktig
+
+   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot.
+.. uio-source:: Dokumentasjon
+
+   * `Om Microsoft Copilot <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
+   * `Retningslinjer for bruk av Copilot <https://www.uio.no/tjenester/it/ki/copilot/hjelp/index.html>`_
