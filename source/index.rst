@@ -20,7 +20,6 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode2_0
    episodes/episode2_1
    episodes/episode2_2
-   episodes/episode2_3
    episodes/episode2_4
    episodes/episode2_5
    episodes/episode2_6
@@ -54,14 +53,9 @@ Velkommen til grunnkurs i generativ KI!
    :caption: Episode 5: Prompting og prompt engineering
 
    episodes/episode5_0
-   episodes/episode5_1
    episodes/episode5_2
    episodes/episode5_3
-   episodes/episode5_4
    episodes/episode5_5
-   episodes/episode5_6
-   episodes/episode5_7
-   episodes/episode5_8
 
 .. toctree::
    :maxdepth: 1
