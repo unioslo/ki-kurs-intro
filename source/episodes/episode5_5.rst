@@ -12,7 +12,7 @@ Du skal nå lese gjennom retningslinjene vi har på UiO og deretter svare på en
 https://www-int.uio.no/tjenester/it/ki/adm-ki/hjelp/retningslinjer_generelle.html
 
 
-**Retningslinjer for KI-generert innhold i UiOs digitale kanaler **
+**Retningslinjer for KI-generert innhold i UiOs digitale kanaler**
 
 https://www.uio.no/for-ansatte/arbeidsstotte/kommunikasjon/ki/
 
