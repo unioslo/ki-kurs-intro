@@ -46,6 +46,6 @@ En **prompt** er instruksjonen eller spørsmålet du gir til en KI-modell. Det e
 
       Du får et svar som er tilpasset din spesifikke situasjon.
 
-.. uio-note::
+.. uio-info::
 
    **Hovedregel:** Jo mer spesifikk og detaljert prompten din er, jo bedre blir resultatet.

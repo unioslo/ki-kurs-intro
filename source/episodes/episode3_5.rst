@@ -28,6 +28,6 @@ Beste praksis - oppsummering
 
    Dette er refleksjonsøvelse uten fasit - målet er å tenke gjennom hvordan du kan bruke KI på en trygg og ansvarlig måte.
 
-.. uio-note::
+.. uio-info::
 
    I neste episode skal vi se på konkrete KI-tjenester som er tilgjengelige ved UiO, og hvordan du får tilgang til dem.

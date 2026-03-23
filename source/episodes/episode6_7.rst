@@ -4,7 +4,7 @@ Avslutning
 
 Testing, testing
 
-.. uio-note::
+.. uio-info::
 
    **Gratulerer!**
 
@@ -47,7 +47,7 @@ Testing, testing
 
    Skriv ned svarene - det vil hjelpe deg å komme i gang!
 
-.. uio-note::
+.. uio-info::
 
    **Tilbakemelding?**
 

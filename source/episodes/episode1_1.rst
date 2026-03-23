@@ -11,7 +11,7 @@ Plutselig hadde alle tilgang til en tjeneste som kunne *generere* side på side 
 
 Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder treningsdata fra internett*, kraftige *GPU-er* som kan behandle massive datamengder parallelt, og nye *revolusjonerende teknikker* som gir bedre resultater enn før.
 
-.. uio-note:: Oppsummert
+.. uio-info:: Oppsummert
 
    * Kunstig intelligens har utviklet seg fra regelstyrt tradisjonell KI til moderne KI som lærer av enorme datamengder. 
    * Den eksplosjonsartede utviklingen siden 2022 ble muliggjort av transformer-teknologi og dype nevrale nettverk. 

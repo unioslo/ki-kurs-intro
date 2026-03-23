@@ -2,7 +2,7 @@
 Oppsummering
 ============
 
-.. uio-note::
+.. uio-info::
 
    **Nøkkelpunkter for god prompting:**
 
@@ -29,6 +29,6 @@ Oppsummering
 
    Prøv prompten i et KI-verktøy og iterer til du er fornøyd!
 
-.. uio-note::
+.. uio-info::
 
    **Gratulerer!** Du har nå fullført hoveddelen av KI-introduksjonskurset. I siste episode oppsummerer vi det viktigste og gir tips til videre læring.

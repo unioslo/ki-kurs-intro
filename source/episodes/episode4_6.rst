@@ -2,7 +2,7 @@
 Tips for å bli bedre til prompting
 ===================================
 
-.. uio-note::
+.. uio-info::
 
    **Slik lærer du god prompting:**
 

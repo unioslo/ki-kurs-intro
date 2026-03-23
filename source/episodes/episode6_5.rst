@@ -2,7 +2,7 @@
 Neste steg i din KI-reise
 ==========================
 
-.. uio-note::
+.. uio-info::
 
    **Din handlingsplan:**
 
