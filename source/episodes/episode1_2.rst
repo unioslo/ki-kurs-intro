@@ -2,7 +2,9 @@
 Hva er generativ KI?
 ====================
 
-Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer. Et vanlig skille går mellom *generativ*, *diskriminativ* og *prediktiv* kunstig intelligens. Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra data. Forskjellen er hva slags type oppgave de er laget for. Klikk på fanene under for å se noen forskjeller mellom de tre typene.
+Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer. 
+Et vanlig skille går mellom *generativ*, *diskriminativ* og *prediktiv* kunstig intelligens. 
+Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra data. Forskjellen er hva slags type oppgave de er laget for. Klikk på fanene under for å se noen forskjeller mellom de tre typene.
 
 .. canvas-tabs::
 
@@ -29,15 +31,4 @@ Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer. Et
 		Værmelding er et velkjent eksempel på at det kan være nyttig å forutsi hva som kommer til å skje.
 		Prediktiv kunstig intelligens leter etter mønstre i data som kan si noe om sannsynligheten for hendelser.
 
-Generativ KI er en type KI som kan *skape* nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon.
-Den kan generere tekst, bilder, lyd, video og mye mer.
-Det er ofte generativ KI vi mener når vi idag snakker om kunstig intelligens.
-
-.. uio-task::
-
-   	Hva er hovedforskjellen mellom diskriminativ KI og generativ KI?
-
-	.. uio-answer::
-
-		Diskriminativ KI analyserer og klassifiserer eksisterende data (f.eks. spam-filtre),
-		mens generativ KI skaper nytt innhold som tekst, bilder eller lyd basert på det den har lært.
+Oppsummert: Generativ KI er en type KI som kan *skape* nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon.
