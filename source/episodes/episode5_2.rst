@@ -9,8 +9,8 @@ Dette innebærer blant annet at data blir lagret på servere i Europa, og at de 
 
 **Bruk av tjenester som ikke tilbys via UiO**
 
-Dersom man derimot bruker tjenester direkte fra private aktører som ChatGPT eller har egne private kontoer på Claude Code, så kan leverandørene i større grad gjøre hva de vil med dine data. 
-Selv om du kan reservere deg mot treningsbruk i tjenester som ChatGPT, er det en stor forskjell på en forbrukerkonto og en løsning der virksomheten har en databehandleravtale med f.eks. Azure. 
+Dersom man derimot bruker tjenester direkte fra private aktører som for eksempel ChatGPT eller Claude Code, så kan leverandørene i større grad gjøre hva de vil med dine data. 
+Selv om du kan reservere deg mot treningsbruk i tjenester som ChatGPT, er det en stor forskjell på en forbrukerkonto og en løsning der virksomheten har en databehandleravtale på plass. 
 Med databehandleravtale mellom UiO og leverandørene av KI-tjenester, har UiO kontroll, innsyn og klare rettigheter etter GDPR. 
 Med en privat konto har du det ikke det - det er du som privatperson som “tar risikoen”, og dataene dine behandles på leverandørens vilkår, ikke på virksomhetens.
 
@@ -19,17 +19,10 @@ Med en privat konto har du det ikke det - det er du som privatperson som “tar 
 
 Det er allikevel slik at mange av oss benytter disse private tjenestene blant annet pga kvalitet og de avanserte funksjonalitetene de tilbyr. 
 Dette kan være greit så fremt man *ikke* sender *UiO data* med spørringen. 
-Dvs at generelle spørsmål kan være greit, men ikke om man sender med informasjon om f.eks. UiOs systemer eller ansatte, altså UiO data. 
+Dvs at generelle spørsmål kan være greit, men ikke om man sender med informasjon om for eksempel UiOs systemer eller ansatte, 
+eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informasjon som UiO eier.
 NB! Her må jeg undersøke hva som er et akseptabelt utsagn!
 
-
-**Andre viktige aspekter ved bruk av UiO godkjente tjenester**
-
-* IT-avdelingen kan hjelpe med tekniske problemer
-* Opplæringsressurser er tilpasset UiO
-* Support på norsk
-* Felles retningslinjer og beste praksis
-* Erfaringsdeling med kolleger
 
 
 .. uio-source:: Offisiell informasjon om KI-tjenester ved UiO:
@@ -41,3 +34,13 @@ NB! Her må jeg undersøke hva som er et akseptabelt utsagn!
 
    Aldri del UiO data med KI tjenester som ikke er godkjent ved UiO.
 .. 
+
+
+.. uio-colorbox-3:: Test fargeboks
+   Hvilken farge får denne fargeboksen?
+
+.. uio-colorbox-2:: Test fargeboks
+   Hvilken farge får denne fargeboksen?
+
+.. uio-colorbox-1:: Test fargeboks
+   Hvilken farge får denne fargeboksen?
