@@ -197,14 +197,42 @@
   },
   "episode5_3.html": {
     "page_id": 395899,
-    "url": "tilgjengelige-tjenester-4",
-    "title": "Tilgjengelige tjenester",
+    "url": "gpt-uio",
+    "title": "GPT UiO",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode5_4.html": {
+    "page_id": 398612,
+    "url": "notebooklm",
+    "title": "NotebookLM",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
   "episode5_5.html": {
     "page_id": 395901,
-    "url": "retningslinjer-og-policies-4",
+    "url": "autotekst",
+    "title": "Autotekst",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode5_6.html": {
+    "page_id": 398615,
+    "url": "microsoft-copilot-3",
+    "title": "Microsoft Copilot",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode5_7.html": {
+    "page_id": 398616,
+    "url": "retningslinjer-og-policies-5",
+    "title": "Retningslinjer og policies",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode5_8.html": {
+    "page_id": 398616,
+    "url": "retningslinjer-og-policies-5",
     "title": "Retningslinjer og policies",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
