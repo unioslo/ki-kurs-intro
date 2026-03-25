@@ -1,32 +1,29 @@
 
-Retningslinjer og policies
-===========================
+Autotekst
+===========
+
+Autotekst er en tjeneste utviklet av UiO som transkriberer tale til tekst ved hjelp av OpenAI sin automatiske språkgjenkjenningsmodell Whisper.
+Tjenesten kjører i sin helhet på UiOs servere, og støtter derfor opp til røde data. 
+
+Autotekst kan benyttes til å transkribere opptak av møter, av forelesninger eller av intervjuer for å nevne noen bruksområder. 
+Man kan benytte Nettskjema-diktafon appen for automatisk transkribering, eller laste opp lydfiler fra f.eks. Panopto eller Zoom. 
+
+Whisper er god på norsk, takket være Nasjonalbibliotekets norsk-trente Whisper modell. 
 
 
-Når du bruker KI-verktøy på jobb eller studier ved UiO, er det viktig å følge UiOs retningslinjer.
+**Nøkkelpunkter**
 
-Du skal nå lese gjennom retningslinjene vi har på UiO og deretter svare på en quiz. 
+* Tale til tekst, sikkert behandlet på UiO
+* Opptak kan sendes direkte til Autotekst via Nettskjema-diktafon appen 
+* Kan behandle opptil sorte data hvis tjenesten kjører i Tjenester for Sensitiv Data
+* Kan lage en oppsummering i tillegg til transkripsjonen, nyttig for eksempel som et utgangspunkt til et møtereferat
+* Du trenger kun din UiO brukerkonto for å få tilgang
 
-**Generelle retningslinjer for bruk av KI**
+.. uio-source:: Dokumentasjon
 
-https://www-int.uio.no/tjenester/it/ki/adm-ki/hjelp/retningslinjer_generelle.html
+   .. raw:: html
 
-
-**Retningslinjer for KI-generert innhold i UiOs digitale kanaler**
-
-https://www.uio.no/for-ansatte/arbeidsstotte/kommunikasjon/ki/
-
-
-**Etikk og samfunnsansvar**
-
-https://www.uio.no/tjenester/ki/etikk.html
-
-
-**Juridiske føringer for bruk av kunstig intelligens ved UiO**
-
-https://www.uio.no/tjenester/ki/juridiskeforinger.html
-
-.. uio-dont::
-
-   **Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.**
-
+      <ul>
+      <li><a href="https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html" target="_blank">Autotekst</a></li>
+      <li><a href="https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html" target="_blank">Nettskjema-diktafon</a></li>
+      </ul>
