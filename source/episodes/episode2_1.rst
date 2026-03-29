@@ -45,9 +45,7 @@ Hva skjer når du stiller et spørsmål:
    Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
 
-.. uio-colorbox-3::
-
-   **Fordypning**
+.. uio-colorbox-3:: Fordypning
 
    .. uio-detail:: Temperatur og tilfeldighet
 
