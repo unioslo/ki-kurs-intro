@@ -58,7 +58,8 @@ Oppsummert: Generativ KI er en type KI som kan *skape* nytt innhold, i stedet fo
 		   Tradisjonell programmering
 
 		Med maskinlæring er algoritmen ukjent, og det er nettopp den vi ønsker å lære.
-		I veiledet læring har vi et sett med inndata og tilhørende ønskede utdata.
+		I veiledet læring har vi et sett med treningsdata og tilhørende ønskede utdata.
+		Hvis oppgaven er å merke bilder, så kan utdataene være merkelappen til bildet, som for eksempel "hund" eller "katt".
 		Fra dette vil vi lære en algoritme eller funksjon som kan produsere de ønskede utdataene fra de gitte inndataene.
 		Figuren :ref:`figure-maskinlaring` illustrerer denne forskjellen.
 
@@ -68,7 +69,7 @@ Oppsummert: Generativ KI er en type KI som kan *skape* nytt innhold, i stedet fo
 		   :alt: 
 		   		En figur som illustrerer maskinlæring.
 				Midt på er det en datamaskin.
-				Til venstre er det to piler inn til datamaskinen, merket «input: treningsdata» og «ønsket output».
-				Til høyre er det en pil ut fra datamaskinen merket «algoritme».
+				Til venstre er det to piler inn til datamaskinen, merket "input: treningsdata" og "ønsket output".
+				Til høyre er det en pil ut fra datamaskinen merket "algoritme".
 
 		   Maskinlæring
