@@ -2,23 +2,23 @@
 Microsoft Copilot 
 ===================
 
-Dette er Microsoft sin egen tjeneste, og den kjører i sin helhet på utenlandske servere. UiO har Databehandleravtale med Microsoft, 
+Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til internett søk. Den kan jobbe både med tekst, bilder og videoer.  
+Den har endel innebygde instruksjonsforslag (prompt gallery) for å hjelpe deg igang, og er derfor en fin tjeneste å benytte om du ønsker KI assistanse som er  intuitiv og enkel.
+
+MS Copilot ved UiO er ikke integrert med de andre Microsoft produktene. 
+Du kan allikevel benytte MS Copilot chat tjenesten til å f.eks. laste opp en Powerpoint presentasjon og be MS Copilot om å lage illustrasjoner, lage oppsummeringer eller annet. 
+
+Vær oppmerksom på at tjenesten i sin helhet kjører på utenlandske servere. UiO har Databehandleravtale med Microsoft, 
 og dette sikrer at data ikke lekkes utenfor organisasjonen, og ikke blir benyttet til å trene modeller videre. 
-Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grønne data (åpne data.) Du må derfor være spesielt forsiktig når du benytter tjenesten. 
+Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grønne data (åpne data.) 
+Du må derfor være spesielt forsiktig når du benytter tjenesten. 
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot. 
-
-I Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til internett søk. 
-Bildegenerering basert på tekst er også mulig, og i tillegg har den verktøy for diverse oppgaver relatert til undervising. 
-
-
-
 
 **Nøkkelpunkter**
 
-* Integrert med Microsoft 365
-* Kan brukes i Word, Outlook, Teams, PowerPoint
-* Bildegenerering
-* Verktøy relatert til undervisning
+* Microsoft sin egen KI tjeneste
+* Generering av tekst, bilder og videoer
+* Kjører i sin helhet på utenlandske servere
 * Kun godkjent for grønne data
 * Databehandleravtale på plass
 * Du trenger kun din UiO brukerkonto for å få tilgang
