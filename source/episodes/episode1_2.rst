@@ -43,7 +43,7 @@ Oppsummert: Generativ KI er en type KI som kan *skape* nytt innhold, i stedet fo
 		Maskinlæring er et sett av statistiske metoder som kan brukes til å trekke ut informasjon fra data.
 
 		Maskinlæring skiller seg fra tradisjonell programmering i hvordan vi løser problemer.
-		Et tradisjonelt program bruker en algoritme på noen inndata for å produsere et resultat, som vist på figuren
+		Et tradisjonelt program bruker en algoritme på noen inndata (input) for å produsere et resultat (output), som vist på figuren
 		:ref:`figure-tradisjonelt_program`.
 
 		.. _figure-tradisjonelt_program:
