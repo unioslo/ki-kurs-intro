@@ -26,4 +26,4 @@ Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder
       Men de kan også brukes som generelle matematikk-prosessorer.
       GPU-er har tusenvis av små, effektive regne-enheter.
       Det gjør at de kan regne på mange tall samtidig.
-      Det er nyttig for kunstig intelligens, som gjør enorme mengder beregninger på store datamengder.
+      Det er nyttig for kunstig intelligens, som gjør svært mange beregninger på store datamengder.
