@@ -112,6 +112,11 @@ Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem?
   * 4. «Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»
 
 
+Oppsummering
+~~~~~~~~~~~~~~~~~~~~~~
+Denne episoden har dekt både den underliggende logikken i generativ KI og de praktiske ferdighetene du trenger for å bruke den godt. Her er de viktigste punktene:
+
+
 
 Tillit og kvalitetssikring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
