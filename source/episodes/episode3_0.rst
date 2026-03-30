@@ -1,14 +1,16 @@
 Hvordan trygt bruke KI?
 ===============================================
 
-I denne episoden lærer du hvordan du kan kvalitetssikre output fra generativ KI og hva du må tenke på når du bruker disse verktøyene.
+I denne episoden lærer du hva som er trygg bruk av KI, hvordan du vurderer og kvalitetssikrer output fra generativ KI, og hvordan du kan bruke prompting-teknikker for å få bedre resultater
 
 Læringsmål
 ~~~~~~~~~~
 
 Etter denne episoden vil du kunne:
 
-* Vurdere når generativ KI er pålitelig og når den ikke er det
+* Forklare hvorfor KI-modeller ikke er pålitelige 
+* Vurdere når generativ KI er pålitelig – og når den ikke er det
 * Bruke strategier for å kvalitetssikre KI-generert innhold
-* Forstå personvernhensyn ved bruk av generativ KI
-* Unngå vanlige feil ved bruk av KI-verktøy
+* Skrive gode og effektive prompts
+* Bruke preprompting for gjentakende oppgaver
+
