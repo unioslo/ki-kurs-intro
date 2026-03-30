@@ -2,26 +2,26 @@
 Når kan du stole på generativ KI?
 ==================================
 
-Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hva du bruker den til.
+Generativ KI er ikke enten «pålitelig» eller «upålitelig» – det avhenger av hva du bruker den til. En enkel huskeregel er å tenke på risikoen ved å få et feil svar. Hvis feil eller unøyaktigheter fra modellen ikke medfører risiko, kan dette være et godt bruksområde. Hvis det mefører risiko må du kunne ettergå informasjonen modellen gir deg før videre bruk, eller avstå fra å bruke verktøyet. Nedenfor er eksempler på bruk med lav, medium og høy risiko. 
 
 .. canvas-tabs::
 
-   .. canvas-tab:: Høy risiko - MÅ verifiseres
+   .. canvas-tab:: Lav risiko – Kan brukes mer fritt
 
-      **Situasjoner hvor du ALLTID må sjekke output:**
+      **Når du har kontroll, eller konsekvensene av feil er lave:**
 
-      * **Fakta og tall** - befolkningstall, datoer, statistikk
-      * **Lover og regler** - lovparagrafer, regelverket ved UiO
-      * **Referanser** - kildehenvisninger, studier, publikasjoner
-      * **Kontaktinformasjon** - telefonnumre, e-postadresser, åpningstider
-      * **Tekniske detaljer** - programvare-kommandoer, konfigurasjon
-      * **Kritisk kommunikasjon** - Viktige e-poster til ledelse, eksterne
+      * **Brainstorming og idémyldring** - kreative prosesser uten fasitsvar
+      * **Formulere tekst du selv har kontekst på** - du vet hva som er riktig
+      * **Språklig forbedring** - grammatikk, tonefall, struktur
+      * **Oppsummere tekst DU har skrevet** - Du kan kvalitetssikre enkelt
+      * **Lage utkast** - som utgangspunkt for videre arbeid
+      * **Idéer og brainstorming** - der du bruker ideene som inspirasjon og vurderer selv
 
       **Hvorfor?**
 
-      Her kan hallusinering få alvorlige konsekvenser - feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover/regler.
+      Sjansene for feil er mindre, og konsekvenser ved feil er små. 
 
-   .. canvas-tab:: Medium risiko - Bør sjekkes
+   .. canvas-tab:: Medium risiko - Må sjekkes
 
       **Situasjoner hvor du bør være kritisk:**
 
@@ -29,23 +29,22 @@ Generativ KI er ikke enten "pålitelig" eller "upålitelig" - det avhenger av hv
       * **Historisk informasjon** - Sjekk viktige detaljer
       * **Tekniske forklaringer** - Bekreft med fagressurser
       * **Oppgaveplanlegging** - Vurder om forslagene er realistiske
-      * **Oppsummeringer** - Sammenlign med originaldokumentet
+      * **Oppsummering av tekst** - Sammenlign med originaldokumentet
 
       **Hvorfor?**
 
-      Feil her kan føre til ineffektivitet, misforståelser, eller bortkastet tid.
+      Feil her kan føre til ineffektivitet, feil, eller svekket tillit
 
-   .. canvas-tab:: Lav risiko - Kan brukes mer fritt
+   .. canvas-tab:: Høy risiko - bør unngås eller sjekkes grundig 
 
-      **Situasjoner hvor KI er tryggere å bruke:**
+      **I disse situasjonene kan hallusinering få alvorlige konsekvenser. Feilinformasjon kan skade tilliten, føre til       feil beslutninger, eller bryte lover og regler:**
 
-      * **Brainstorming og idémyldring** - Kreative prosesser uten fasitsvar
-      * **Formulere tekst du selv har kontekst på** - Du vet hva som er riktig
-      * **Språklig forbedring** - Grammatikk, tonefall, struktur
-      * **Oppsummere tekst DU har gitt** - Basert på din input, ikke hallusinert
-      * **Lage utkast** - Som utgangspunkt for videre arbeid
-      * **Lære nye konsepter** - Når du følger opp med verifiserte kilder
+      * **Fakta og tall ** - befolkningstall, datoer, statistikk
+      * **Lover og regler** - lovparagrafer, regelverk ved UiO etc.
+      * **Referanser** - kildehenvisninger, studier, publikasjoner
+      * **Kontaktinformasjon** - telefonnumre, e-postadresser, åpningstider
+      * **Medisinske eller juridiske råd** - 
 
       **Hvorfor?**
 
-      Her er du i kontroll, eller konsekvensene av feil er lave.
+      Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser. 
