@@ -9,8 +9,8 @@ Hva er generativ KI?
 
 * Generativ KI skaper nytt innhold (tekst, bilder, lyd)
 * Store språkmodeller (LLM) er spesialisert på tekst
-* Eksempler: ChatGPT, Claude, Copilot, Gemini
-* KI-verktøy kan hjelpe med skriving, oppsummering, oversettelse, idémyldring
+* Eksempler: GPT UiO, ChatGPT
+* KI-verktøy kan hjelpe med skriving, oppsummering, oversettelse, idémyldring osv osv
 
 
 .. uio-viktig:: 
@@ -22,12 +22,12 @@ Hvordan fungerer språkmodeller?
 
 * LLM-er er IKKE kunnskapsbaser - de genererer tekst basert på statistiske mønstre
 * De konstruerer svar ord for ord basert på hva som er sannsynlig
-* "Hallusinering" = KI-en finner på troverdig-høresende, men feil informasjon
+* "Hallusinering" = KI-en finner på troverdig, men feil informasjon
 * Litt tilfeldighet er innebygd - samme spørsmål kan gi ulike svar
 
 .. uio-viktig::
 
-   Forstå begrensningene - da kan du bruke KI smartere.
+   Forstå begrensningene - da kan du bruke KI smartere og tryggere.
 
 Hvordan trygt bruke KI?
 --------------------------
@@ -36,7 +36,7 @@ Hvordan trygt bruke KI?
 * **Høy risiko:** Lover, kontaktinfo, tekniske detaljer - MÅ sjekkes
 * **Medium risiko:** Prosedyrer, historikk - BØR sjekkes
 * **Lav risiko:** Brainstorming, formulering, utkast - tryggere å bruke
-* **Personvern:** Aldri del sensitiv info med offentlige KI-verktøy
+* **Personvern:** Aldri del sensitiv eller konfidensiell informasjon med offentlige KI-verktøy
 
 .. uio-viktig:: 
 
@@ -53,7 +53,7 @@ Gode instruksjoner
 
 .. uio-viktig:: 
 
-   God prompting er en ferdighet som læres gjennom praksis.
+   Gode instruksjoner er en ferdighet som læres gjennom praksis.
 
 UiOs tjenester
 ----------------
@@ -67,8 +67,3 @@ UiOs tjenester
 
    Bruk godkjente verktøy når du håndterer data relatert til UiO.
 
-   
-UiOs retningslinjer
----------------------
-
-Kjenn UiOs retningslinjer. Dette vil hjelpe deg til å bruke teknologien på en trygg, forsvarlig og bærekraftig måte.
