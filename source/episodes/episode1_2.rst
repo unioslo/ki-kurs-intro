@@ -1,7 +1,9 @@
 
 Hva er generativ KI?
 ====================
-Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på. Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer. Et vanlig skille går mellom *generativ*, *diskriminativ* og *prediktiv* kunstig intelligens. 
+Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på. Generativ KI er en type kunstig intelligens som skaper nytt innhold i stedet for bare å analysere eller klassifisere det som finnes. Den kan produsere tekst, bilder, lyd, video eller kode som ikke eksisterte før. Når du for eksempel spør ChatGpT UiO om å oppsummere en artikkel for deg er det generativ KI som genererer svaret for deg basert på mønstre den har lært. Det spesielle med denne type KI er at den skaper noe nytt og ikke bare kopierer. For å lære bruker KI-systemet det som kalles maskinlæring. Frem til nå har de fleste datamaskiner blitt instruert til hvordan en oppgave skal løses med forhåndsdefinerte regler. Maskinlæring er en metode der maskinen lærer fra data i stedet, og der systemet finner mønstre på egen hånd.
+
+Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer. Et vanlig skille går mellom *generativ*, *diskriminativ* og *prediktiv* kunstig intelligens. 
 Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra data. Forskjellen er hva slags type oppgave de er laget for. Klikk på fanene under for å se noen forskjeller mellom de tre typene.
 
 .. canvas-tabs::
