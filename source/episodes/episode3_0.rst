@@ -4,7 +4,7 @@ Hvordan trygt bruke KI?
 I denne episoden lærer du hva som er trygg bruk av KI, hvordan du vurderer og kvalitetssikrer output fra generativ KI, og hvordan du kan bruke prompting-teknikker for å få bedre resultater
 
 Læringsmål
-~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Etter denne episoden vil du kunne:
 
