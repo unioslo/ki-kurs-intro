@@ -78,6 +78,16 @@ class uio_detail(nodes.General, nodes.Element):
     pass
 
 
+class uio_do_dont_container(nodes.General, nodes.Element):
+    """Container for do/dont grid row - uses uio-grid-row class."""
+    pass
+
+
+class uio_do_dont_item(nodes.General, nodes.Element):
+    """Individual do or dont item in grid - uses uio-icon-box do/dont col-lg."""
+    pass
+
+
 class UioTaskDirective(SphinxDirective):
     """
     UiO task directive.
@@ -414,6 +424,30 @@ class UioDetailDirective(SphinxDirective):
         return [node]
 
 
+class UioDoDontDirective(SphinxDirective):
+    """
+    UiO do/don't grid directive.
+
+    Usage::
+
+        .. uio-do-dont::
+
+           .. uio-do:: Gjør / Do / Positivt
+
+              Content for do section
+
+           .. uio-dont:: Ikke gjør / Don't / Negativt
+
+              Content for dont section
+    """
+    has_content = True
+
+    def run(self):
+        container = uio_do_dont_container()
+        self.state.nested_parse(self.content, self.content_offset, container)
+        return [container]
+
+
 def html_visit_uio_task(self, node):
     """Generate UiO task HTML."""
     title = node.get('title', 'Oppgave')
@@ -460,7 +494,11 @@ def html_visit_uio_dont(self, node):
     """Generate UiO don't/warning HTML."""
     title = node.get('title', 'OBS!')
 
-    self.body.append('<div class="uio-icon-box dont">\n')
+    # Check if this is inside a do-dont grid container
+    in_grid = isinstance(node.parent, uio_do_dont_container)
+    css_class = 'uio-icon-box dont col-lg' if in_grid else 'uio-icon-box dont'
+
+    self.body.append(f'<div class="{css_class}">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
 
 
@@ -473,7 +511,11 @@ def html_visit_uio_do(self, node):
     """Generate UiO do/tip HTML."""
     title = node.get('title', 'Tips')
 
-    self.body.append('<div class="uio-icon-box do">\n')
+    # Check if this is inside a do-dont grid container
+    in_grid = isinstance(node.parent, uio_do_dont_container)
+    css_class = 'uio-icon-box do col-lg' if in_grid else 'uio-icon-box do'
+
+    self.body.append(f'<div class="{css_class}">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
 
 
@@ -584,6 +626,16 @@ def html_visit_uio_detail(self, node):
 def html_depart_uio_detail(self, node):
     """Close details HTML."""
     self.body.append('</details>\n')
+
+
+def html_visit_uio_do_dont_container(self, node):
+    """Generate UiO do/dont grid row HTML."""
+    self.body.append('<div class="uio-grid-row">\n')
+
+
+def html_depart_uio_do_dont_container(self, node):
+    """Close do/dont grid row HTML."""
+    self.body.append('</div>\n')
 
 
 def add_heading_stripe(app, pagename, templatename, context, doctree):
@@ -743,6 +795,10 @@ def setup(app):
         uio_detail,
         html=(html_visit_uio_detail, html_depart_uio_detail)
     )
+    app.add_node(
+        uio_do_dont_container,
+        html=(html_visit_uio_do_dont_container, html_depart_uio_do_dont_container)
+    )
 
     # Add directives
     app.add_directive('uio-task', UioTaskDirective)
@@ -758,6 +814,7 @@ def setup(app):
     app.add_directive('uio-colorbox-3', UioColorbox3Directive)
     app.add_directive('uio-icon-box', UioIconBoxDirective)
     app.add_directive('uio-detail', UioDetailDirective)
+    app.add_directive('uio-do-dont', UioDoDontDirective)
 
     # Connect to html-page-context to add heading stripe
     app.connect('html-page-context', add_heading_stripe)
