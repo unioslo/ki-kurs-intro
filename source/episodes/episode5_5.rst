@@ -20,11 +20,7 @@ Nøkkelpunkter
 * Kan lage en oppsummering i tillegg til transkripsjonen, nyttig for eksempel som et utgangspunkt til et møtereferat
 * Du trenger kun din UiO brukerkonto for å få tilgang
 
-.. uio-source:: Dokumentasjon
+.. uio-source::  Lenker til UiOs nettsider
 
-   .. raw:: html
-
-      <ul>
-      <li><a href="https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html" target="_blank">Autotekst</a></li>
-      <li><a href="https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html" target="_blank">Nettskjema-diktafon</a></li>
-      </ul>
+   * `Autotekst <https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html>`_
+   * `Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html>`_

@@ -26,7 +26,11 @@ extensions = [
     'canvas_tabs',  # Canvas-compatible tabs (no JavaScript)
     'sphinx_rtd_theme',
     'uio_components',  # UiO Canvas design components
+    "sphinx_new_tab_link" #for å automatisk åpne eksterne lenker i ny tab i nettleseren
 ]
+
+# Icon for external links
+new_tab_link_show_external_link_icon = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

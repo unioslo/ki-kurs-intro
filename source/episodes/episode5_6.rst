@@ -27,12 +27,8 @@ Nøkkelpunkter
 .. uio-dont:: Viktig
 
    Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot.
-.. uio-source:: Dokumentasjon
 
+.. uio-source::  Lenker til UiOs nettsider
 
-   .. raw:: html
-      
-      <ul>
-      <li><a href="https://www.uio.no/tjenester/it/ki/copilot/index.html" target="_blank">Om Microsoft Copilot</a></li>
-      <li><a href="https://www.uio.no/tjenester/it/ki/copilot/hjelp/index.html" target="_blank">Retningslinjer for bruk av Copilot</a></li>
-      </ul>
+   * `Om Microsoft Copilot <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
+   * `Retningslinjer for bruk av Copilot <https://www.uio.no/tjenester/it/ki/copilot/hjelp/index.html>`_

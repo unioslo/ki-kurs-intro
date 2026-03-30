@@ -31,11 +31,9 @@ Nøkkelpunkter
 * Du trenger kun din UiO brukerkonto for å få tilgang
 * Gratis for ansatte og studenter ved UiO
 
-.. uio-source:: Dokumentasjon
+.. uio-source::  Lenke til UiOs nettsider
 
-   .. raw:: html
-
-      <p><a href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" target="_blank">GPT UiO</a></p>
+   `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
 
 
 

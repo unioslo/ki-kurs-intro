@@ -27,12 +27,8 @@ Nøkkelpunkter
    * Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: Ikke last opp dokumenter du ikke har rettigheter til å dele.
    * Ikke last opp dokumenter som inneholder sensitiv informasjon. NotebookLM er kun godkjent for opptil gule data.
 
-.. uio-source:: Dokumentasjon
+.. uio-source:: Lenke til UiOs nettsider
 
+   `NotebookLM på UiO sine nettsider <https://www.uio.no/tjenester/it/ki/notebooklm>`_
 
-   .. raw:: html
-
-      <p><a href="https://www.uio.no/tjenester/it/ki/notebooklm" target="_blank">NotebookLM på UiO sine nettsider</a></p>
-
-   
    Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM.
