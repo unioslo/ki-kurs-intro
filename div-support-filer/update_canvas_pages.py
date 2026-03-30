@@ -1384,7 +1384,7 @@ def main():
     if args.generate_mapping:
         token = get_api_token()
 
-        # Check if --deploy flag is also set (generate from GitHub instead of local)
+        # Check if --from-github flag is also set (generate from GitHub build instead of local build)
         if args.from_github:
             print("\n" + "="*70)
             print("GENERATE MAPPING FROM GITHUB")
