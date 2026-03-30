@@ -12,8 +12,18 @@ Plutselig hadde alle tilgang til en tjeneste som kunne *generere* side på side 
 Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder treningsdata fra internett*, kraftige *GPU-er* som kan behandle massive datamengder parallelt, og nye *teknikker* som gir bedre resultater enn før.
 
 .. uio-colorbox-3:: Fordypning
-   
 
-   .. uio-detail::
+   .. uio-detail:: Hva er treningsdata?
       
-      En GPU er..m
+      Treningsdataene er det materialet KI-modeller lærer av. 
+      For språkmodeller som ChatGPT, består treningsdata av tekst hentet fra internett, bøker, artikler og andre kilder.
+      Jo mer variert og omfattende treningsdataene er, desto bedre kan modellen lære mønstre i språket og sammenhenger mellom begreper.
+
+   .. uio-detail:: Hva er en GPU?
+      
+      GPU er en forkortelse for "Graphics Processing Unit".
+      Navnet kommer av at GPU-er opprinnelig ble utviklet for å lage grafikk, for eksempel i spill.
+      Men de kan også brukes som generelle matematikk-prosessorer.
+      GPU-er har tusenvis av små, effektive regne-enheter.
+      Det gjør at de kan regne på mange tall samtidig.
+      Det er nyttig for kunstig intelligens, som gjør enorme mengder beregninger på store datamengder.
