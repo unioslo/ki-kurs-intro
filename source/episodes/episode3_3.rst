@@ -1,6 +1,6 @@
 
-Personvern og datasikkerhet
-============================
+ Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil? 
+====================================================================================
 
 Et kritisk aspekt ved bruk av generativ KI er personvern og beskyttelse av sensitiv informasjon.
 
