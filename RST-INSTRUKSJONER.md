@@ -230,6 +230,40 @@ Advarsel/ikke-gjør-container med advarselsikon.
 
 -------------------------
 
+### uio-do-dont
+
+Container for å vise gjør/ikke-gjør-innhold side-ved-side i et rutenett. Dette direktivet er perfekt for å vise sammenligninger og kontraster mellom anbefalte og ikke-anbefalte handlinger.
+
+**Bruk:**
+
+```rst
+.. uio-do-dont::
+
+   .. uio-do:: Gjør 
+
+      Anbefalte handlinger:
+
+      - Bruk spesifikke og klare instruksjoner
+      - Oppgi kontekst i promptene dine
+      - Verifiser alltid KI-generert innhold
+
+   .. uio-dont:: Ikke gjør 
+
+      Handlinger å unngå:
+
+      - Ikke stol blindt på KI-svar
+      - Ikke del sensitive data med offentlige KI-verktøy
+      - Ikke hopp over kvalitetskontroll
+```
+
+<img src="div-support-filer/figs/uio-do-dont.png" alt="Skjermbilde do og dont" width="500">
+
+**Merk:**
+- `uio-do` og `uio-dont` direktivene inne i `uio-do-dont` får automatisk `col-lg`-klassen for riktig rutenettsoppsett
+- Både `uio-do` og `uio-dont` kan også brukes standalone (utenfor `uio-do-dont`) for enkeltkolonneoppsett
+
+-------------------------
+
 
 ### uio-info
 
@@ -386,6 +420,7 @@ Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. D
 - Bruker UiO-spesifikke CSS-klasser:
   - Ikonbokser: `uio-icon-box` med varianter `task`, `reflect`, `source`, `do`, `dont`, `info`
   - Fargebokser: `uio-color-box-1`, `uio-color-box-2`, `uio-color-box-3`
+  - Rutenett: `uio-grid-row` med kolonner `col-lg`
 - Unngår JavaScript der det er mulig (faner bruker URL-fragmenter)
 - Følger UiOs designretningslinjer for tilgjengelighet og visuell konsistens
 
@@ -402,6 +437,7 @@ Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. D
 - `uio-info` - informasjonsboks med blått info-ikon
 - `uio-source` - kilde/ressurser-boks med kildeikon
 - `uio-colorbox-1`, `uio-colorbox-2`, `uio-colorbox-3` - fargede bokser uten ikon
+- `uio-do-dont` - rutenettcontainer for å vise gjør/ikke-gjør-innhold side-ved-side
 
 
 
