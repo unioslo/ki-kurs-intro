@@ -7,8 +7,6 @@ La oss oppsummere det viktigste du har lært:
 Hva er generativ KI?
 -----------------------
 
-**Viktige punkter:**
-
 * Generativ KI skaper nytt innhold (tekst, bilder, lyd)
 * Store språkmodeller (LLM) er spesialisert på tekst
 * Eksempler: ChatGPT, Claude, Copilot, Gemini
@@ -22,8 +20,6 @@ Hva er generativ KI?
 Hvordan fungerer språkmodeller?
 ----------------------------------
 
-**Viktige punkter:**
-
 * LLM-er er IKKE kunnskapsbaser - de genererer tekst basert på statistiske mønstre
 * De konstruerer svar ord for ord basert på hva som er sannsynlig
 * "Hallusinering" = KI-en finner på troverdig-høresende, men feil informasjon
@@ -35,8 +31,6 @@ Hvordan fungerer språkmodeller?
 
 Hvordan trygt bruke KI?
 --------------------------
-
-**Viktige punkter:**
 
 * **Verifiser alltid** viktig informasjon - spesielt fakta, tall, referanser
 * **Høy risiko:** Lover, kontaktinfo, tekniske detaljer - MÅ sjekkes
@@ -52,9 +46,6 @@ Hvordan trygt bruke KI?
 Gode instruksjoner
 -------------------
 
-
-**Viktige punkter:**
-
 * Vær spesifikk og gi kontekst
 * Spesifiser format og struktur
 * Iterer - første forsøk er sjelden perfekt
@@ -66,8 +57,6 @@ Gode instruksjoner
 
 UiOs tjenester
 ----------------
-
-**Viktige punkter:**
 
 * UiO tilbyr KI-tjenester med bedre personverngarantier
 * Sjekk https://www.uio.no/tjenester/it/ki/ for oppdatert info
