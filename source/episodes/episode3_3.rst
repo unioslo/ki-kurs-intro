@@ -111,13 +111,14 @@ Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem?
 
 
 Tillit og kvalitetssikring
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 •	Språkmodeller er motivert for å gi sannsynlige svar – ikke sanne svar
 •	Verifiser alltid fakta, lover, referanser og kontaktinformasjon
-•	Del aldri sensitiv informasjon med offentlige KI-verktøy
-•	Bruk KI til kreativt arbeid og tekstbearbeiding – ikke som oppslagsverk
+•	Bruk KI til kreativt arbeid og bearbeiding – ikke som oppslagsverk
 •	Du er ansvarlig for det som går ut under ditt navn
 
 Prompting
+~~~~~~~~~~~~~~~~~~~~~~
 •	Jo mer spesifikk og kontekstuell prompten er, jo bedre blir svaret
 •	Definer rolle, oppgave, informasjonstype, ønsket output og hva du ikke vil ha
 •	Be modellen stille spørsmål hvis noe er uklart
