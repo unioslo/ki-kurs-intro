@@ -1,83 +1,40 @@
 
-Hvordan kvalitetssikre KI-generert innhold
+Strategier for å kvalitetssikre KI-generert innhold
 ===========================================
 
-Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ KI:
+Ved bruk av KI-tjenester må du alltid ta et ansvar for å faktasjekke materiale du får fra en språkmodell dersom du skal videreformidle det eller bruke det i videre arbeid. Her er noen konkrete strategier:
 
-.. canvas-tabs::
+1. Behandle KI-output som en ukjent kilde 
+~~~~~~~~~~~~~~~~~~~~~~
+Ville du stolt på denne informasjonen fra en tilfeldig person på gaten? Har du fagkunnskap til å vurdere om det virker riktig? Er dette noe du kan verifisere? Sjekk fakta mot pålitelige kilder som UiO.no eller lovdata.no, og søk opp referanser for å bekrefte at de faktisk eksisterer.
 
-   .. canvas-tab:: 1. Kildekritikk
+2. Bruk strategiske spørsmål
+~~~~~~~~~~~~~~~~~~~~~~
+Du kan be modellen gi deg kilder til påstander, eller spørre hvor informasjonen kommer fra. Merk at selv når en språkmodell gir deg «kilder», kan disse være oppdiktede. Sjekk alltid at kildene faktisk eksisterer. En bedre tilnærming er ofte å søke selv på pålitelige nettsider og bruke KI til å hjelpe deg forstå eller oppsummere det du finner. Slik blir du den som leverer fakta til KI, ikke omvendt. 
 
-      **Behandle KI-output som ukjent kilde:**
+3. Bruk din egen ekspertise
+~~~~~~~~~~~~~~~~~~~~~~
+Hvis noe føles feil, er det godt mulig at det er feil. Språkmodeller er flinke til å virke troverdig og overbevisende, også når de tar feil. Vær særlig skeptisk til svært spesifikke eller detaljerte påstander – detaljer er ofte det første stedet hallusinering viser seg.
 
-      * Ville du stolt på denne informasjonen fra en tilfeldig person på gaten?
-      * Er dette noe du kan verifisere?
-      * Har du fagkunnskap til å vurdere om det virker riktig?
+Vanlige feil
+===========================================
 
-      **Verifiser alltid:**
+Feil 1: Blind tillit
+~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å kopiere KI-output direkte uten å lese gjennom eller sjekke det. Konsekvensene kan være at feilinformasjon spres, eller at du må stå til ansvar for påstander du ikke har sjekket. Løsningen er enkel: les alltid, forstå og verifiser før du bruker output.
 
-      * Sjekk fakta mot pålitelige kilder (UiO.no, lovdata.no, osv.)
-      * Søk opp referanser - eksisterer de faktisk?
-      * Sammenlign med offisiell dokumentasjon
+Feil 2: Dele sensitiv informasjon
+~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å lime inn konfidensielle dokumenter eller persondata i KI-verktøy. Dette kan være et brudd på GDPR og medføre sikkerhetsrisiko for organisasjonen. Bruk alltid generiske eksempler i stedet.
 
-   .. canvas-tab:: 2. Be om kilder
+Feil 3: Avhengighet
+~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å slutte å tenke selv og overlate all skriving og analyse til KI-en. Dette fører gradvis til tap av faglige ferdigheter og lavere kvalitet over tid. Bruk KI som et verktøy, ikke som erstatning. Du er eksperten – KI-en er assistenten.
 
-      **Bruk strategiske spørsmål:**
+Feil 4: Feil bruksområde
+~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å bruke språkmodeller til oppgaver de ikke egner seg for, som å slå opp eksakte prosedyrer, finne faktainformasjon eller spørre om gjeldende regelverk. For fakta: bruk søkemotorer og offisielle nettsider. For kreativ hjelp og tekstarbeid: bruk gjerne en KI-tjeneste. For faktasjekking: gjør det på gamlemåten. 
 
-      * "Kan du gi meg kilder for denne påstanden?"
-      * "Hvor kommer denne informasjonen fra?"
-      * "Kan du peke meg til offisiell dokumentasjon?"
-
-      **Merk:**
-
-      Selv når LLM-en gir "kilder", kan disse være hallusinerte! Sjekk alltid at kildene faktisk eksisterer.
-
-      **Bedre tilnærming:**
-
-      Søk selv etter informasjonen på pålitelige nettsider, og bruk KI-en til å hjelpe deg forstå eller oppsummere det du finner.
-
-   .. canvas-tab:: 3. Kryss-sjekk
-
-      **Sammenlign flere verktøy:**
-
-      * Spør samme spørsmål til ChatGPT, Claude, og Copilot
-      * Hvis de gir ulike svar, er dette et rødt flagg
-      * Bruk tradisjonell søk (Google, UiO.no) for å verifisere
-
-      **Sjekk mot dokumentasjon:**
-
-      * Interne prosedyrer ved UiO
-      * Offisielle nettsider
-      * Lover og regler
-      * Faglige kilder
-
-   .. canvas-tab:: 4. Bruk din egen ekspertise
-
-      **Stol på din kunnskap:**
-
-      * Hvis noe føles feil, er det sannsynligvis feil
-      * Bruk din fagkunnskap og erfaring
-      * Vær spesielt skeptisk til svært spesifikke eller detaljerte påstander
-
-      **Eksempel:**
-
-      Hvis KI-en påstår at "alle møtereferater ved UiO skal sendes til Arkivverket innen 24 timer", og dette høres rart ut - så er det sannsynligvis feil.
-
-   .. canvas-tab:: 5. Test og iterasjon
-
-      **Stille spørsmålet på nytt:**
-
-      * Omformulere spørsmålet ditt
-      * Hvis du får helt ulike svar, er ikke KI-en pålitelig for dette spørsmålet
-      * Konsistente svar er (litt) mer troverdige - men fortsatt ikke garantert korrekte
-
-      **Eksempel:**
-
-      * "Hva er søknadsfristen for X?"
-      * "Når må søknaden om X leveres?"
-      * "Har du informasjon om tidsfrister for X?"
-
-      Hvis du får tre ulike datoer, vet du at du må finne informasjonen på en annen måte.
 
 .. uio-task::
 
@@ -100,9 +57,9 @@ Her er konkrete strategier for å sikre kvaliteten på det du får fra generativ
 
       2. **Universitetsloven:**
          - **VERIFISER ALT!** Sjekk på lovdata.no
-         - LLM-er hallusinerer ofte lovtekster
-         - Bruk i stedet: Søk på lovdata.no og be KI-en forklare det du finner
-         - Kontakt HR hvis det er viktig
+         - LLM-er kan dikte opp lovtekster
+         - Vurder å heller finne lovteksten selv, og få KI-tjenesten til å forklare den
+        
 
       3. **Strukturere notater:**
          - Sammenlign med originalnotatene dine
