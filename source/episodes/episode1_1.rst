@@ -16,7 +16,7 @@ Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder
    .. uio-detail:: Hva er treningsdata?
       
       Treningsdataene er det materialet KI-modeller lærer av. 
-      For språkmodeller som ChatGPT, består treningsdata av tekst hentet fra internett, bøker, artikler og andre kilder.
+      For språkmodeller som ChatGPT, består treningsdataene av tekst hentet fra internett, bøker, artikler og andre kilder.
       Jo mer variert og omfattende treningsdataene er, desto bedre kan modellen lære mønstre i språket og sammenhenger mellom begreper.
 
    .. uio-detail:: Hva er en GPU?
