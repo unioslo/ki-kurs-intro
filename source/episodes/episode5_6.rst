@@ -14,7 +14,8 @@ Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grø
 Du må derfor være spesielt forsiktig når du benytter tjenesten. 
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot. 
 
-**Nøkkelpunkter**
+Nøkkelpunkter
+--------------
 
 * Microsoft sin egen KI tjeneste
 * Generering av tekst, bilder og videoer

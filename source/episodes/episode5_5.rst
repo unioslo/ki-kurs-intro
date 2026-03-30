@@ -11,7 +11,8 @@ Man kan benytte Nettskjema-diktafon appen for automatisk transkribering, eller l
 Whisper er god på norsk, takket være Nasjonalbibliotekets norsk-trente Whisper modell. 
 
 
-**Nøkkelpunkter**
+Nøkkelpunkter
+--------------
 
 * Tale til tekst, sikkert behandlet på UiO
 * Opptak kan sendes direkte til Autotekst via Nettskjema-diktafon appen 

@@ -19,7 +19,8 @@ Assistenten kan deles med andre, og låses eller våre åpen for redigering.
 Med personlige API nøkler kan du knytte GPT sine språkmodeller opp mot andre applikasjoner, enten de du selv har skrevet, eller applikasjoner fra andre leverandører (om de støtter dette).
 
 
-**Nøkkelpunkter**
+Nøkkelpunkter
+--------------
 
 * UiO sin personvernvennlig chat tjeneste
 * Tilgang til OpenAI's GPT modeller

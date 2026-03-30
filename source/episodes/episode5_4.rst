@@ -11,7 +11,8 @@ NotebookLM har med andre ord en hel del spennende funksjonaliteter.
 NotebookLM er tro mot kildene du benytter, og du kan derfor oppleve å få mer presise svar enn for eksempel ved bruk av gpt.uio.no. 
 Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
 
-**Nøkkelpunkter**
+Nøkkelpunkter
+--------------
 
 * KI tjeneste fra Google
 * Benytter Google sin Gemini språkmodell
@@ -34,4 +35,4 @@ Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
       <p><a href="https://www.uio.no/tjenester/it/ki/notebooklm" target="_blank">NotebookLM på UiO sine nettsider</a></p>
 
    
-   Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM: 
+   Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM.
