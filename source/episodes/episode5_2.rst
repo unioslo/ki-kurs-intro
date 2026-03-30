@@ -34,13 +34,3 @@ NB! Her må jeg undersøke hva som er et akseptabelt utsagn!
 
    Aldri del UiO data med KI tjenester som ikke er godkjent ved UiO.
 .. 
-
-
-.. uio-colorbox-3:: Test fargeboks
-   Hvilken farge får denne fargeboksen?
-
-.. uio-colorbox-2:: Test fargeboks
-   Hvilken farge får denne fargeboksen?
-
-.. uio-colorbox-1:: Test fargeboks
-   Hvilken farge får denne fargeboksen?
