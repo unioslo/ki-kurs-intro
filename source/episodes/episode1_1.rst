@@ -2,7 +2,7 @@
 Hva er kunstig intelligens (KI)?
 ================================
 
-Kunstig intelligens (KI) er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. 
+KI er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. 
 Dette kan være alt fra å gjenkjenne ansikter i bilder til å svare på spørsmål.
 
 KI er ikke en ny teknologi - den har utviklet seg over flere tiår: allerede i 1956 ble det etablert et forskningsfelt innen KI.
