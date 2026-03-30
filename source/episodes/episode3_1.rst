@@ -37,9 +37,9 @@ Generativ KI er ikke enten «pålitelig» eller «upålitelig» – det avhenger
 
    .. canvas-tab:: Høy risiko - bør unngås eller sjekkes grundig 
 
-      **I disse situasjonene kan hallusinering få alvorlige konsekvenser. Feilinformasjon kan skade tilliten, føre          til feil beslutninger, eller bryte lover og regler:**
+      **I disse situasjonene kan hallusinering få alvorlige konsekvenser. Feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover og regler:**
 
-      * **Fakta og tall ** - befolkningstall, datoer, statistikk
+      * **Fakta og tall** - befolkningstall, datoer, statistikk
       * **Lover og regler** - lovparagrafer, regelverk ved UiO etc.
       * **Referanser** - kildehenvisninger, studier, publikasjoner
       * **Kontaktinformasjon** - telefonnumre, e-postadresser, åpningstider
