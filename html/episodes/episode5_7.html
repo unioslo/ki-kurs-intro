@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API tilgang &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Retningslinjer og policies" href="episode5_8.html" />
+    <link rel="prev" title="Microsoft Copilot" href="episode5_6.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-tilgang">
+<h1>API tilgang</h1>
+<p>API (Application Programming Interface) er en teknisk “bro” som lar ulike programvarer snakke med hverandre.
+Med API-tilgang til GPT UiO kan du koble språkmodellene til egne applikasjoner eller tredjepartsverktøy som for eksempel en agent.</p>
+<section id="hvordan-fungerer-det-med-lokale-llm-er">
+<h2>Hvordan fungerer det med lokale LLM-er?</h2>
+<p>UiO og NTNU tilbyr språkmodeller som kjører på egne servere i Norge (lokale språkmodeller).</p>
+<p>Ved å bruke API-nøkler kan du:</p>
+<ul class="simple">
+<li>Koble disse sikre, lokale modellene til KI-verktøy du allerede bruker (såfremt verktøyet tillater det)</li>
+<li>Integrere KI-funksjonalitet i interne systemer</li>
+<li>Sette opp automatikk som benytter LLMen, f.eks i programmeringsspråk som Python eller R</li>
+</ul>
+<p>Det er veldig viktig å forstå at API tilgang til de lokale LLMene <em>ikke</em> automatisk betyr at du kan behandle personsensitiv informasjon eller annen konfidensiell informasjon trygt.
+Det kommer helt an på hvilken applikasjon bruker, og om du har kontroll på at denne applikasjonen ikke sender informasjon ut til tredjepartssystemer.</p>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-cf70d2ab-1">Utrygg bruk</a></li>
+<li><a href="#fragment-cf70d2ab-2">Trygg bruk</a></li>
+</ul>
+<div id="fragment-cf70d2ab-1">
+<p>Du har koblet opp en lokal språkmodell til en agentisk kode assistent.
+Agenten kommuniserer med en utenlands server, og sender for eksempel logger eller annen data systemet anser som relevant fra din maskin til den utenlandske serveren.
+Med andre ord: selv om du benytter en lokal språkmodell, så sendes allikevel informasjon ut.</p>
+</div>
+<div id="fragment-cf70d2ab-2">
+<p>Et forskningsprosjekt kan bruke API-et til å analysere konfidensielle dokumenter med en lokal LLM,
+ved hjelp av egenutviklet lokal KI applikasjon som ikke sender noe data ut fra systemet.
+All data blir trygt værende på maskinen du kjører agenten på (f.eks. din laptop) og på UiOs/NTNUs infrastruktur.</p>
+</div>
+</div>
+</section>
+<section id="hvordan-vaere-nesten-helt-trygg">
+<h2>Hvordan være (nesten) helt trygg</h2>
+<p>Om du vil være (nesten) helt trygg, så kan benytte en lokal LLM og kjøre agenten i en virtuell maskin (VM) eller i en container uten nettverkstilgang.
+Om du velger aktivt hvilke filer du flytter over inn i VMen eller containeren sikrer du en høy grad av kontroll.</p>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode5_6.html">← Forrige</a></div><div class="next-link"><a href="episode5_8.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
