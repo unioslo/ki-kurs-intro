@@ -4,70 +4,82 @@ Oppsummering av kurset
 
 La oss oppsummere det viktigste du har lært:
 
-.. canvas-tabs::
+Hva er generativ KI?
+-----------------------
 
-   .. canvas-tab:: Hva er generativ KI?
+   **Viktige punkter:**
 
-      **Viktige punkter:**
+   * Generativ KI skaper nytt innhold (tekst, bilder, lyd)
+   * Store språkmodeller (LLM) er spesialisert på tekst
+   * Eksempler: ChatGPT, Claude, Copilot, Gemini
+   * KI-verktøy kan hjelpe med skriving, oppsummering, oversettelse, idémyldring
 
-      * Generativ KI skaper nytt innhold (tekst, bilder, lyd)
-      * Store språkmodeller (LLM) er spesialisert på tekst
-      * Eksempler: ChatGPT, Claude, Copilot, Gemini
-      * KI-verktøy kan hjelpe med skriving, oppsummering, oversettelse, idémyldring
 
-      **Husk:**
+   .. uio-viktig:: 
 
       Generativ KI er et verktøy, ikke en erstatning for menneskelig tenkning og ekspertise.
 
-   .. canvas-tab:: Hvordan fungerer det?
+Hvordan fungerer språkmodeller?
+----------------------------------
 
-      **Viktige punkter:**
+   **Viktige punkter:**
 
-      * LLM-er er IKKE kunnskapsbaser - de genererer tekst basert på statistiske mønstre
-      * De konstruerer svar ord for ord basert på hva som er sannsynlig
-      * "Hallusinering" = KI-en finner på troverdig-høresende, men feil informasjon
-      * Litt tilfeldighet er innebygd - samme spørsmål kan gi ulike svar
+   * LLM-er er IKKE kunnskapsbaser - de genererer tekst basert på statistiske mønstre
+   * De konstruerer svar ord for ord basert på hva som er sannsynlig
+   * "Hallusinering" = KI-en finner på troverdig-høresende, men feil informasjon
+   * Litt tilfeldighet er innebygd - samme spørsmål kan gi ulike svar
 
-      **Husk:**
+   .. uio-viktig::
 
       Forstå begrensningene - da kan du bruke KI smartere.
 
-   .. canvas-tab:: Når kan du stole på det?
+Hvordan trygt bruke KI?
+--------------------------
 
-      **Viktige punkter:**
+   **Viktige punkter:**
 
-      * **Verifiser alltid** viktig informasjon - spesielt fakta, tall, referanser
-      * **Høy risiko:** Lover, kontaktinfo, tekniske detaljer - MÅ sjekkes
-      * **Medium risiko:** Prosedyrer, historikk - BØR sjekkes
-      * **Lav risiko:** Brainstorming, formulering, utkast - tryggere å bruke
-      * **Personvern:** Aldri del sensitiv info med offentlige KI-verktøy
+   * **Verifiser alltid** viktig informasjon - spesielt fakta, tall, referanser
+   * **Høy risiko:** Lover, kontaktinfo, tekniske detaljer - MÅ sjekkes
+   * **Medium risiko:** Prosedyrer, historikk - BØR sjekkes
+   * **Lav risiko:** Brainstorming, formulering, utkast - tryggere å bruke
+   * **Personvern:** Aldri del sensitiv info med offentlige KI-verktøy
 
-      **Husk:**
+   .. uio-viktig:: 
 
       Du er ansvarlig for det du publiserer, ikke KI-en.
 
-   .. canvas-tab:: UiOs tjenester
 
-      **Viktige punkter:**
+Gode instruksjoner
+-------------------
 
-      * UiO tilbyr KI-tjenester med bedre personverngarantier
-      * Sjekk https://www.uio.no/tjenester/it/ki/ for oppdatert info
-      * Institusjonelle versjoner: Databehandleravtaler, ingen bruk til trening
-      * Følg UiOs retningslinjer for bruk av KI
 
-      **Husk:**
+**Viktige punkter:**
 
-      Bruk godkjente verktøy når du håndterer data relatert til UiO.
+* Vær spesifikk og gi kontekst
+* Spesifiser format og struktur
+* Iterer - første forsøk er sjelden perfekt
+* Bruk teknikker: rollespill, eksempler, steg-for-steg
 
-   .. canvas-tab:: God prompting
+.. uio-viktig:: 
 
-      **Viktige punkter:**
+   God prompting er en ferdighet som læres gjennom praksis.
 
-      * Vær spesifikk og gi kontekst
-      * Spesifiser format og struktur
-      * Iterer - første forsøk er sjelden perfekt
-      * Bruk teknikker: rollespill, eksempler, steg-for-steg
+UiOs tjenester
+----------------
 
-      **Husk:**
+**Viktige punkter:**
 
-      God prompting er en ferdighet som læres gjennom praksis.
+* UiO tilbyr KI-tjenester med bedre personverngarantier
+* Sjekk https://www.uio.no/tjenester/it/ki/ for oppdatert info
+* Institusjonelle versjoner: Databehandleravtaler, ingen bruk til trening
+* Følg UiOs retningslinjer for bruk av KI
+
+.. uio-viktig::
+
+   Bruk godkjente verktøy når du håndterer data relatert til UiO.
+
+   
+UiOs retningslinjer
+---------------------
+
+Kjenn UiOs retningslinjer. Dette vil hjelpe deg til å bruke teknologien på en trygg, forsvarlig og bærekraftig måte.
