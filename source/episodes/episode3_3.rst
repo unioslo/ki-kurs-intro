@@ -53,6 +53,7 @@ Chain of thought – tankekrekke
 Be KI-en «tenke høyt» eller «forklare steg for steg». Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.
 
 .. uio-info:: Eksempel
+
    Forklar trinn for trinn hvordan jeg kan organisere et sommerarrangement for 50 personer.
 
 
@@ -71,6 +72,7 @@ Strukturert output
 Be om svaret i et bestemt format. Dette gir deg svar som er klare til bruk og konsistente fra gang til gang.
 
 .. uio-info:: Eksempel
+
    Oppsummer dette møtereferatet i følgende format:  BESLUTNINGER: -  OPPGAVER: - [Person]: [oppgave] - [frist]  NESTE MØTE: [dato og tid]
 
 Iterative instruksjoner
@@ -79,6 +81,7 @@ Iterative instruksjoner
 Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det er helt normalt.
 
 .. uio-info:: Eksempel
+
    Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.» Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.» Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»
 
 Pre-instruksjon og KI-assistenter
@@ -88,6 +91,7 @@ Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner
 
 
 .. uio-viktig:: Tips: 
+
    Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din – og legg det til neste gang. Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine.
 
 
@@ -102,14 +106,15 @@ Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem?
   * 4. Lag en liste
 
 .. uio-info:: Mulige forbedringer: 
-  Mulige forbedringer:
-  * 1. «Skriv en gratulasjon til en kollega som har jobbet her i 25 år. Tonen skal være varm og personlig, ca. 100 ord.»
 
-  * 2. «Jeg skal lede mitt første møte neste uke med 6 kolleger. Kan du gi meg konkrete tips for hvordan jeg forbereder meg og leder møtet profesjonelt?»
+     Mulige forbedringer:
+     * 1. «Skriv en gratulasjon til en kollega som har jobbet her i 25 år. Tonen skal være varm og personlig, ca. 100 ord.»
 
-  * 3. «Jeg har skrevet denne e-posten om endringer i lunsjordningen. Kan du sjekke om budskapet er klart og om jeg har glemt noe viktig? [e-post her]»
+     * 2. «Jeg skal lede mitt første møte neste uke med 6 kolleger. Kan du gi meg konkrete tips for hvordan jeg forbereder meg og leder møtet         profesjonelt?»
 
-  * 4. «Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»
+     * 3. «Jeg har skrevet denne e-posten om endringer i lunsjordningen. Kan du sjekke om budskapet er klart og om jeg har glemt noe viktig? [e-post     her]»
+
+     * 4. «Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»
 
 
 Oppsummering
