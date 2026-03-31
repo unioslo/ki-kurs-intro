@@ -2,46 +2,58 @@
 GPT UiO
 =======================
 
-GPT UiO er UiOs personverntrygge KI-chat. GPT UiO tilbyr en rekke forskjellige språkmodeller, både OpenAI sine GPT modeller som kjører i skyen, og språkmodeller som kjører på servere som UiO eller vår samarbeidspartner NTNU eier og drifter (lokale språkmodeller). 
-I begge tilfeller lagres all logg- og inn- og utdata på UiOs servere, og ditt brukernavn blir ikke utlevert.
+GPT UiO er UiOs personverntrygge KI-chat. 
 
-Når du velger en av de lokale språkmodellene har du ekstra kontroll på dataene og kan være trygg på at ingenting lastes opp "i skyen". 
-Hvis du velger en av OpenAI sine modeller må du være oppmerksom på at inn- og utdata blir behandlet midlertidig av Microsoft Azure OpenAI innenfor GDPR-kompatible regioner.
+I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken «hjerne» tjenesten bruker.  
+Modellene forskjellig kapabilitet (som støtte av bilder) og bruksområder, men en spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT modeller i Microsoft Azure skyen) og modeller som kjører lokalt på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
+Modellene som kjører hos UiO eller NTNU er klassifisert til å håndtere opp til `røde data <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_.
 
-Til forskjell fra ChatGPT som har en rekke andre tjenester knyttet til seg som f.eks. internettsøk, så er GPT UiO kun en enkel chat tjeneste (enn så lenge). 
-Det betyr at den kun bruker en språkmodell til å genere tekst, og har ikke annen funksjonalitet som f.eks. å gjøre internettsøk, hente ut informasjon fra andre systemer, eller utføre handlinger som for eksempel opprette/endre filer.
+.. uio-colorbox-3:: Fordypning
 
-GPT UiO har allikevel en *assistent* funksjonalitet. Med den kan man lage egne instruksjoner som ligger som et ekstra lag i tillegg til instruksjonene i chatten, man kan laste opp filer, slik at når man gjør spørringer, 
-så vil modellen lete gjennom filene og finne relevant informasjon som den benytter i svaret, og man kan velge en spesifikk modell som assistenten benytter. 
-Assistenten kan deles med andre, og låses eller våre åpen for redigering. 
+   .. uio-detail:: Velge en annen modell enn standard
+
+      .. figure:: ../images/gpt-modell-meny.png                                                                                                                  
+            :align: center                                                                                                                                         
+            :width: 75%                                                                                                                                            
+            :alt: Meny i GPT som viser de forskjellige språkmodellene man kan velge blant                                        
+                                                                                                                                                               
+      Klikk på nedover-pilen for å se hvilke språkmodeller du kan velge mellom
 
 
-Med personlige API nøkler kan du knytte GPT sine språkmodeller opp mot andre applikasjoner, enten de du selv har skrevet, eller applikasjoner fra andre leverandører (om de støtter dette).
+   .. uio-detail:: Eksempel på språkmodeller i GPT UiO
+
+      .. figure:: ../images/gpt-uio-modeller.png                                                                                                                 
+            :align: center                                                                                                                                         
+            :width: 75%                                                                                                                                            
+            :alt: Meny i GPT som viser de forskjellige språkmodellene man kan velge blant                                        
+                                                                                                                                                               
+      Her ser du listen over de forskjellige språkmodellen som GPT UiO tilbyr. Listen oppdateres når nye modeller eller versjoner blir tilgjengelig.
+      De røde boksene viser at noen av modellene kjører lokalt på NTNU. De andre kjører i Microsoft Azure skyen.
+
+Velger du en lokal språkmodell, har du ekstra kontroll over dataene dine og kan være trygg på at ingenting lastes opp i skyen.  
+Velger du en skybasert modell, behandles inn- og utdata midlertidig av Microsoft Azure OpenAI innenfor GDPR-kompatible regioner.
+
+Uavhengig av om du bruker en lokal eller skybasert modell, lagres all logg samt inn- og utdata kun på UiOs servere. Ditt brukernavn deles ikke med Microsoft.
+Derfor er GPT UiO GDPR-kompatibel. 
 
 
-Nøkkelpunkter
---------------
 
-* UiO sin personvernvennlig chat tjeneste
-* Tilgang til OpenAI's GPT modeller
-* Tilgang til modeller som kjører i Norge og hvor ingen data forlater UiO eller vår samarbeidspartner NTNU
-* Tilgang til språkmodeller trent på norsk 
-* Støtter opptil røde data
-* Personlige API nøkler for integrasjon mot andre applikasjoner
-* Du trenger kun din UiO brukerkonto for å få tilgang
-* Gratis for ansatte og studenter ved UiO
+GPT UiO KI-assistenter
+------------------------
 
-.. uio-source::  Lenke til UiOs nettsider
+GPT UiO har en egen *assistent*-funksjon. Med denne kan du opprette faste instruksjoner som legges som et ekstra lag oppå det du skriver i selve chatten.  
 
-   `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
+Når du lager assistenten kan du kan blant annet:
 
+- laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine  
+- velge en spesifikk språkmodell som assistenten skal benytte  
+
+Assistenten kan deles med andre, og kan enten låses for redigering eller gjøres åpen slik at flere kan endre den.
 
 
 .. uio-colorbox-3:: Fordypning
 
-
-   .. uio-detail:: Eksempel på assistent til bruk i administrasjon og i undervisning
-
+   .. uio-detail:: Eksempel på assistenter
 
       .. canvas-tabs::
 
@@ -70,6 +82,10 @@ Nøkkelpunkter
 
             **Assistent for læring av pensum (uten direkte svar)**
 
+            Som underviser har du lastet opp egenprodusert litteratur som benyttes som pensum i kurset. 
+            Dette er kilder assistenten har tilgang til.            
+            Assistenten benytter disse som del av *konteksten* slik at svarene den gir er i henhold til kildene.
+
             Assistent instruksjon:
 
             .. code-block:: text
@@ -92,3 +108,47 @@ Nøkkelpunkter
                - Å bekrefte om et svar er riktig eller galt direkte
 
                Målet er at studenten skal utvikle selvstendig tenkning og forståelse, ikke å få raske svar.
+
+
+GPT UiO personlige API-nøkler
+-------------------------------
+
+Med personlige API-nøkler kan du koble GPT UiOs språkmodeller til andre applikasjoner, både egenutviklede løsninger og tredjepartsapplikasjoner som støtter dette.
+
+Eksempler på bruk av API-nøkler:
+
+1. **Interne og/eller egenutviklede systemer ved UiO**
+
+   API-nøkkelen legges inn i konfigurasjonen til et internt system (for eksempel et fagsystem eller webverktøy), som så kan sende tekst til GPT UiO og vise svarene direkte i løsningen.
+
+
+2. **Eksterne verktøy brukeren selv kobler til**
+
+   API-nøkkelen legges inn i et eksternt verktøy (for eksempel et notat-, analyse- eller kodeverktøy) som støtter «egen API-nøkkel», og verktøyet bruker da GPT UiO til tekstgenerering eller analyse.   
+   Sikkerhet og databehandling avhenger både av GPT UiO og det eksterne verktøyet.
+
+
+
+.. uio-dont:: Viktig!
+   
+   * Del aldri API-nøkkelen din offentlig eller i kode som ligger åpent.  
+   * Behandle nøkkelen som et passord, og oppbevar den sikkert (for eksempel i miljøvariabler eller en hemmelighets‑/secret‑tjeneste).
+
+
+Nøkkelpunkter
+--------------
+
+* UiO sin personvernvennlig chat tjeneste
+* Tilgang til OpenAI's GPT modeller
+* Tilgang til åpne modeller som kjører i Norge og hvor ingen data forlater UiO eller vår samarbeidspartner NTNU
+* Støtter opptil røde data
+* Personlige API nøkler for integrasjon mot andre applikasjoner
+* Du trenger kun din UiO brukerkonto for å få tilgang
+* Gratis for ansatte og studenter ved UiO
+
+.. uio-source::  Lenke til UiOs nettsider
+
+   `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
+
+
+
