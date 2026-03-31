@@ -2,7 +2,7 @@
 Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil? 
 ====================================================================================
 Hva er egentlig en instruksjon?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. Det er din måte å kommunisere med KI-en på. Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.
 
@@ -46,9 +46,9 @@ Modeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvi
 
 
 Nyttige instruksjons-teknikker 
-============================
+===============================
 
-Chain of thought – tankekrekke
+Chain of thought - tankekrekke
 --------------------------------
 Be KI-en «tenke høyt» eller «forklare steg for steg». Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.
 
@@ -57,8 +57,8 @@ Be KI-en «tenke høyt» eller «forklare steg for steg». Dette gir mer gjennom
    Forklar trinn for trinn hvordan jeg kan organisere et sommerarrangement for 50 personer.
 
 
-Few-shot-instruksjoner – gi eksempler
------------------------------------------
+Few-shot-instruksjoner - gi eksempler
+--------------------------------------
 
 Gi eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å forklare stilen med ord.
 
@@ -67,7 +67,7 @@ Gi eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å 
    Jeg skal skrive titler til nyhetssaker. Her er eksempler på stilen jeg ønsker: - «Nytt tilbud: Gratis språkkurs       for ansatte» - «Viktig: Endringer i møterom-booking fra 1. april»  Skriv en tittel for denne saken: «Vi får nytt      IT-system for reiseregninger neste måned.
 
 Strukturert output
------------------------------------------
+--------------------
 
 Be om svaret i et bestemt format. Dette gir deg svar som er klare til bruk og konsistente fra gang til gang.
 
@@ -76,7 +76,7 @@ Be om svaret i et bestemt format. Dette gir deg svar som er klare til bruk og ko
    Oppsummer dette møtereferatet i følgende format:  BESLUTNINGER: -  OPPGAVER: - [Person]: [oppgave] - [frist]  NESTE MØTE: [dato og tid]
 
 Iterative instruksjoner
------------------------------------------
+------------------------
 
 Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det er helt normalt.
 
@@ -85,7 +85,7 @@ Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det
    Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.» Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.» Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»
 
 Pre-instruksjon og KI-assistenter
-====================================
+==================================
 
 Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner det seg å investere tid i å skrive en god pre-instruksjon – en grunnleggende instruksjon som definerer rollen, oppgaven og rammene for all videre kommunikasjon. I GPT-UiO kan du lagre dette som en KI-assistent. Du vil da ha en spesialtilpasset samtalepartner som kan gjenbrukes. 
 
@@ -97,13 +97,13 @@ Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner
 
 
 Praktisk øvelse: Forbedre insturksjoner
-=============================================
+========================================
 Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem? 
 
-  * 1. Skriv noe fint
-  * 2. Hjelp meg
-  * 3. Hva med den tingen?
-  * 4. Lag en liste
+* 1. Skriv noe fint
+* 2. Hjelp meg
+* 3. Hva med den tingen?
+* 4. Lag en liste
 
 .. uio-info:: Mulige forbedringer: 
 
@@ -118,20 +118,23 @@ Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem?
 
 
 Oppsummering
-~~~~~~~~~~~~~~~~~~~~~~
+------------------------
+
 Denne episoden har dekt både den underliggende logikken i generativ KI og de praktiske ferdighetene du trenger for å bruke den godt. Her er de viktigste punktene:
 
 
 
 Tillit og kvalitetssikring
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
+
 •	Språkmodeller er motivert for å gi sannsynlige svar – ikke sanne svar
 •	Verifiser alltid fakta, lover, referanser og kontaktinformasjon
 •	Bruk KI til kreativt arbeid og bearbeiding – ikke som oppslagsverk
 •	Du er ansvarlig for det som går ut under ditt navn
 
 Prompting
-~~~~~~~~~~~~~~~~~~~~~~
+-----------
+
 •	Jo mer spesifikk og kontekstuell prompten er, jo bedre blir svaret
 •	Definer rolle, oppgave, informasjonstype, ønsket output og hva du ikke vil ha
 •	Be modellen stille spørsmål hvis noe er uklart
