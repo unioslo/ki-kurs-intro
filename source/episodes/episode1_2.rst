@@ -6,9 +6,10 @@ ChatGPT, Copilot og NotebookLM er eksempler på generativ KI som kan lage både 
 Generativ kunstig intelligens er programmer som *lager* (genererer) nytt innhold, i stedet for bare å analysere eller klassifisere det som finnes fra før.
 Det er ofte tekst eller bilder vi bruker generativ KI til å lage.
 Men generativ KI kan også lage andre typer data, for eksempel tabeller.
+I dette kurset skal vi for det meste ta for oss generativ KI.
+
 Generativ KI trenes opp på store mengder data av den typen den skal generere.
 For å "lære" bruker KI-systemet det som kalles *maskinlæring*, som du kan lære mer om under "Fordypning" nedenfor.
-I dette kurset skal vi for det meste ta for oss generativ KI.
 
 Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer.
 Et vanlig skille går mellom *generativ*, *diskriminativ* og *prediktiv* kunstig intelligens.
