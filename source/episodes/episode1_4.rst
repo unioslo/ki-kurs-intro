@@ -48,7 +48,7 @@ En agent må håndtere instruksjoner fra en bruker, den må håndtere og hente u
 Risiko knyttet til KI-agenter
 ------------------------------
 
-Det er mye høyere risiko involvert når man jobber meg agenter sammenlignet med en ren chat tjeneste. 
+Det er mye høyere risiko involvert med agenter sammenlignet med en ren chat tjeneste. 
 Begge har de samme svakheter og begrensninger alle systemer har som genererer output fra en språkmodell (troverdighet, hallusinasjon, ikke fakta basert, ikke reproduserbart).
 Men fordi en agent samhandler med den fysiske, virkelige verden kan konsekvensene av en feil bli betydelig større. 
 Spesielt hvis man lar agenten operere autonomt, det vil si uten at et menneske godkjenner eller kontrollerer handlingen.
