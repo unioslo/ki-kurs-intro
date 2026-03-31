@@ -372,6 +372,8 @@ Du kan legge til figurer på følgende måte:
    :align: center
    :width: 60%
    :alt: Illustrasjon av tekstgenerering med LLM
+
+   Og dette blir bildeteksten
 ```
 
 **NB** Husk å også laste opp figurene til github i folderen `source/images` - ellers vil ikke byggingen finne filen!
