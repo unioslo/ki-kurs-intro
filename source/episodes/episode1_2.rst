@@ -16,10 +16,6 @@ Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes op
 Forskjellen er hva slags type oppgave de er laget for.
 Du kan lese litt om hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
 
-.. uio-info:: Oppsummert
-
-	Generativ KI er en type KI som kan *skape* nytt innhold, i stedet for bare å analysere eller klassifisere eksisterende informasjon.
-
 .. uio-colorbox-3:: Fordypning
 
     .. uio-detail:: Diskriminativ KI
