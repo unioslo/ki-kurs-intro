@@ -49,6 +49,7 @@ Oppsummert: Generativ KI er en type KI som kan *skape* nytt innhold, i stedet fo
 		.. _figure-tradisjonelt_program:
 		.. figure:: ../images/tradisjonelt_program.svg
 		   :align: center
+		   :width: 100%
 		   :alt:
 		   		En figur som illustrerer et tradisjonelt program.
 				Midt på er det en datamaskin.
@@ -66,6 +67,7 @@ Oppsummert: Generativ KI er en type KI som kan *skape* nytt innhold, i stedet fo
 		.. _figure-maskinlaring:
 		.. figure:: ../images/maskinlaring.svg
 		   :align: center
+		   :width: 100%
 		   :alt: 
 		   		En figur som illustrerer maskinlæring.
 				Midt på er det en datamaskin.
