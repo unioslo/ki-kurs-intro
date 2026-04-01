@@ -47,6 +47,14 @@ Hva skjer når du stiller et spørsmål:
 
 .. uio-colorbox-3:: Fordypning
 
+   .. uio-detail:: Determinisme/forutsigbarhet
+
+      Språkmodeller kan være deterministiske (forutsigbare) hvis de alltid bruker det mest sannsynlige ordet.
+      Men det ville vært ganske kjedelig hvis for eksempel ChatGPT alltid ga samme svar på samme spørsmål.
+      Derfor er det med hensikt lagt inn litt tilfeldighet i hvordan modellene svarer.
+      I stedet for å velge det mest sannsynlige ordet, trekker modellen det neste ordet basert på sannsynlighetene.
+      Det er altså mer sannsynlig å trekke et ord som ofte kommer etter ordene som er generert til nå.
+
    .. uio-detail:: Temperatur og tilfeldighet
 
       Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
