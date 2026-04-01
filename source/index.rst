@@ -54,7 +54,7 @@ Velkommen til grunnkurs i generativ KI!
    :caption: Episode 5: Prompting og prompt engineering
 
    episodes/episode5_0
-   episodes/episode5_2
+   episodes/episode5_1
    episodes/episode5_3
    episodes/episode5_4
    episodes/episode5_5
