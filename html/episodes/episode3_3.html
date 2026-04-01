@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil? &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vanlige feil og fallgruver" href="episode3_4.html" />
+    <link rel="prev" title="Strategier for å kvalitetssikre KI-generert innhold" href="episode3_2.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil">
+<h1>Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?</h1>
+<section id="hva-er-egentlig-en-instruksjon">
+<h2>Hva er egentlig en instruksjon?</h2>
+<p>En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. Det er din måte å kommunisere med KI-en på. Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.</p>
+<div class="uio-icon-box info">
+<h3>Enkel instruksjon:</h3>
+<p>Hva er klimaendringer? → Du får et generelt svar om klimaendringer.</p>
+</div>
+<div class="uio-icon-box info">
+<h3>Detaljert instruksjon</h3>
+<p>Forklar klimaendringer på en enkel måte for en 10-åring. Bruk 3–4 setninger og unngå faguttrykk. → Du får et svar     tilpasset målgruppen og lengden du ba om.</p>
+</div>
+<div class="uio-icon-box info">
+<h3>Kontekstrik instruksjon:</h3>
+<p>Jeg skal skrive en e-post til alle ansatte om nytt møterom-bookingsystem. Målgruppen er administrativt ansatte som    ikke er teknisk kyndige. Tonen skal være vennlig og informativ. Kan du hjelpe meg med et utkast? → Du får et svar     tilpasset din spesifikke situasjon.</p>
+</div>
+</section>
+</section>
+<section id="prinsipper-for-gode-instruksjoner">
+<h1>Prinsipper for gode instruksjoner</h1>
+<section id="vaer-spesifikk">
+<h2>1. Vær spesifikk</h2>
+<p>Dårlig: «Skriv en e-post.»  Bedre: «Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold uke 15. Tonen skal være vennlig men profesjonell.»
+Den gode instruksjonen spesifiserer hva e-posten skal handle om, hvem den er til, og hvilken tone den skal ha.</p>
+</section>
+<section id="gi-kontekst">
+<h2>2. Gi kontekst</h2>
+<p>Dårlig: «Lag et møtereferat.»  Bedre: «Basert på disse notatene fra møtet, lag et møtereferat: [dine notater]. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver.»</p>
+</section>
+<section id="spesifiser-format">
+<h2>3. Spesifiser format</h2>
+<p>Dårlig: «Gi meg informasjon om UiOs fakulteter.»  Bedre: «Lag en tabell med UiOs 8 fakulteter. Kolonner: Navn, Forkortelse, Antall studenter (omtrent). Sorter alfabetisk etter navn.»</p>
+</section>
+<section id="definer-en-rolle">
+<h2>4. Definer en rolle</h2>
+<p>Dårlig: «Hvordan kan jeg forbedre min skriving?»  Bedre: «Du er en erfaren kommunikasjonsarbeider. Jeg jobber administrativt ved et universitet og skriver ofte formelle brev og e-poster. Gi meg 5 konkrete tips til å forbedre min administrative skriving.»
+Modeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.</p>
+</section>
+</section>
+<section id="nyttige-instruksjons-teknikker">
+<h1>Nyttige instruksjons-teknikker</h1>
+<section id="chain-of-thought-tankekrekke">
+<h2>Chain of thought - tankekrekke</h2>
+<p>Be KI-en «tenke høyt» eller «forklare steg for steg». Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.</p>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>Forklar trinn for trinn hvordan jeg kan organisere et sommerarrangement for 50 personer.</p>
+</div>
+</section>
+<section id="few-shot-instruksjoner-gi-eksempler">
+<h2>Few-shot-instruksjoner - gi eksempler</h2>
+<p>Gi eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å forklare stilen med ord.</p>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>Jeg skal skrive titler til nyhetssaker. Her er eksempler på stilen jeg ønsker: - «Nytt tilbud: Gratis språkkurs       for ansatte» - «Viktig: Endringer i møterom-booking fra 1. april»  Skriv en tittel for denne saken: «Vi får nytt      IT-system for reiseregninger neste måned.</p>
+</div>
+</section>
+<section id="strukturert-output">
+<h2>Strukturert output</h2>
+<p>Be om svaret i et bestemt format. Dette gir deg svar som er klare til bruk og konsistente fra gang til gang.</p>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>Oppsummer dette møtereferatet i følgende format:  BESLUTNINGER: -  OPPGAVER: - [Person]: [oppgave] - [frist]  NESTE MØTE: [dato og tid]</p>
+</div>
+</section>
+<section id="iterative-instruksjoner">
+<h2>Iterative instruksjoner</h2>
+<p>Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det er helt normalt.</p>
+<div class="uio-icon-box info">
+<h3>Eksempel</h3>
+<p>Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.» Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.» Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»</p>
+</div>
+</section>
+</section>
+<section id="pre-instruksjon-og-ki-assistenter">
+<h1>Pre-instruksjon og KI-assistenter</h1>
+<p>Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner det seg å investere tid i å skrive en god pre-instruksjon – en grunnleggende instruksjon som definerer rollen, oppgaven og rammene for all videre kommunikasjon. I GPT-UiO kan du lagre dette som en KI-assistent. Du vil da ha en spesialtilpasset samtalepartner som kan gjenbrukes.</p>
+<div class="uio-icon-box viktig">
+<h3>Tips:</h3>
+<p>Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din – og legg det til neste gang. Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine.</p>
+</div>
+</section>
+<section id="praktisk-ovelse-forbedre-insturksjoner">
+<h1>Praktisk øvelse: Forbedre insturksjoner</h1>
+<p>Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem?</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li>Skriv noe fint</li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li>Hjelp meg</li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li>Hva med den tingen?</li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li>Lag en liste</li>
+</ol>
+</li>
+</ul>
+<div class="uio-icon-box info">
+<h3>Mulige forbedringer:</h3>
+<p>Mulige forbedringer:
+* 1. «Skriv en gratulasjon til en kollega som har jobbet her i 25 år. Tonen skal være varm og personlig, ca. 100 ord.»</p>
+<ul class="simple">
+<li><ol class="arabic simple" start="2">
+<li>«Jeg skal lede mitt første møte neste uke med 6 kolleger. Kan du gi meg konkrete tips for hvordan jeg forbereder meg og leder møtet         profesjonelt?»</li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li>«Jeg har skrevet denne e-posten om endringer i lunsjordningen. Kan du sjekke om budskapet er klart og om jeg har glemt noe viktig? [e-post     her]»</li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li>«Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»</li>
+</ol>
+</li>
+</ul>
+</div>
+<section id="oppsummering">
+<h2>Oppsummering</h2>
+<p>Denne episoden har dekt både den underliggende logikken i generativ KI og de praktiske ferdighetene du trenger for å bruke den godt. Her er de viktigste punktene:</p>
+</section>
+<section id="tillit-og-kvalitetssikring">
+<h2>Tillit og kvalitetssikring</h2>
+<ul class="simple">
+<li>Språkmodeller er motivert for å gi sannsynlige svar – ikke sanne svar</li>
+<li>Verifiser alltid fakta, lover, referanser og kontaktinformasjon</li>
+<li>Bruk KI til kreativt arbeid og bearbeiding – ikke som oppslagsverk</li>
+<li>Du er ansvarlig for det som går ut under ditt navn</li>
+</ul>
+</section>
+<section id="prompting">
+<h2>Prompting</h2>
+<ul class="simple">
+<li>Jo mer spesifikk og kontekstuell prompten er, jo bedre blir svaret</li>
+<li>Definer rolle, oppgave, informasjonstype, ønsket output og hva du ikke vil ha</li>
+<li>Be modellen stille spørsmål hvis noe er uklart</li>
+<li>Iterer: første svar er sjelden perfekt, og det er greit</li>
+<li>Invester i preprompts for oppgaver du gjør om og om igjen</li>
+</ul>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode3_2.html">← Forrige</a></div><div class="next-link"><a href="episode3_4.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

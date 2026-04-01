@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPT UiO &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="NotebookLM" href="episode5_4.html" />
+    <link rel="prev" title="Hvorfor bruke UiOs godkjente tjenester?" href="episode5_1.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gpt-uio">
+<h1>GPT UiO</h1>
+<p>GPT UiO er UiOs personverntrygge KI-chat.</p>
+<p>I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken «hjerne» tjenesten bruker.
+Modellene forskjellig kapabilitet (som støtte av bilder) og bruksområder, men en spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT modeller i Microsoft Azure skyen) og modeller som kjører lokalt på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
+Modellene som kjører hos UiO eller NTNU er klassifisert til å håndtere opp til <a class="reference external" href="https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html" rel="noreferrer" target="_blank">røde data <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+<div class="uio-color-box-3">
+<h3>Fordypning</h3>
+<details>
+<summary><strong>Velge en annen modell enn standard</strong></summary>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/gpt-modell-meny.png"><img alt="Meny i GPT som viser de forskjellige språkmodellene man kan velge blant" src="../_images/gpt-modell-meny.png" style="width: 75%;" />
+</a>
+</figure>
+<p>Klikk på nedover-pilen for å se hvilke språkmodeller du kan velge mellom</p>
+</details>
+<details>
+<summary><strong>Eksempel på språkmodeller i GPT UiO</strong></summary>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/gpt-uio-modeller.png"><img alt="Meny i GPT som viser de forskjellige språkmodellene man kan velge blant" src="../_images/gpt-uio-modeller.png" style="width: 75%;" />
+</a>
+</figure>
+<p>Her ser du listen over de forskjellige språkmodellen som GPT UiO tilbyr. Listen oppdateres når nye modeller eller versjoner blir tilgjengelig.
+De røde boksene viser at noen av modellene kjører lokalt på NTNU. De andre kjører i Microsoft Azure skyen.</p>
+</details>
+</div>
+<p>Velger du en lokal språkmodell, har du ekstra kontroll over dataene dine og kan være trygg på at ingenting lastes opp i skyen.
+Velger du en skybasert modell, behandles inn- og utdata midlertidig av Microsoft Azure OpenAI innenfor GDPR-kompatible regioner.</p>
+<p>Uavhengig av om du bruker en lokal eller skybasert modell, lagres all logg samt inn- og utdata kun på UiOs servere. Ditt brukernavn deles ikke med Microsoft.
+Derfor er GPT UiO GDPR-kompatibel.</p>
+<section id="gpt-uio-ki-assistenter">
+<h2>GPT UiO KI-assistenter</h2>
+<p>GPT UiO har en egen <em>assistent</em>-funksjon. Med denne kan du opprette faste instruksjoner som legges som et ekstra lag oppå det du skriver i selve chatten.</p>
+<p>Når du lager assistenten kan du kan blant annet:</p>
+<ul class="simple">
+<li>laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine</li>
+<li>velge en spesifikk språkmodell som assistenten skal benytte</li>
+</ul>
+<p>Assistenten kan deles med andre, og kan enten låses for redigering eller gjøres åpen slik at flere kan endre den.</p>
+<div class="uio-color-box-3">
+<h3>Fordypning</h3>
+<details>
+<summary><strong>Eksempel på assistenter</strong></summary>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-2915dd6e-1">Administrasjon</a></li>
+<li><a href="#fragment-2915dd6e-2">Undervisning</a></li>
+</ul>
+<div id="fragment-2915dd6e-1">
+<p><strong>Assistent for møtereferat</strong></p>
+<p>Assistent instruksjon:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en erfaren administrativ assistent ved Universitetet i Oslo som
+spesialiserer seg på å skrive profesjonelle møtereferater.
+
+Din oppgave er å:
+- Strukturere referatet med standard seksjoner: Deltakere, Sak, Diskusjon, Vedtak og Oppfølging
+- Bruke nøytralt og formelt språk
+- Fremheve konkrete vedtak og handlinger med ansvarlig person og frist
+- Oppsummere diskusjonen kortfattet uten personlige meningsutvekslinger
+- Ikke inkludere navn på enkeltpersoner i referatet (bruk &quot;en representant fra...&quot;)
+- Følge UiOs mal for møtereferat
+
+Dersom informasjon om deltakere, dato eller sak mangler, be om dette før du genererer referatet.
+</pre></div>
+</div>
+</div>
+<div id="fragment-2915dd6e-2">
+<p><strong>Assistent for læring av pensum (uten direkte svar)</strong></p>
+<p>Som underviser har du lastet opp egenprodusert litteratur som benyttes som pensum i kurset.
+Dette er kilder assistenten har tilgang til.
+Assistenten benytter disse som del av <em>konteksten</em> slik at svarene den gir er i henhold til kildene.</p>
+<p>Assistent instruksjon:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en pedagogisk veileder som hjelper studenter å forstå pensum gjennom
+veiledende spørsmål og refleksjon. Du skal ALDRI gi direkte svar på oppgavene
+eller forklare konseptene fullstendig.
+
+Din oppgave er å:
+- Stille åpne, veiledende spørsmål som får studenten til å tenke selv
+- Hjelpe studenten å bryte ned komplekse problemer i mindre deler
+- Peke på relevante deler av pensum eller teorier studenten bør se nærmere på
+- Oppfordre til egne resonnementer: &quot;Hva tror du selv?&quot; eller &quot;Hvordan kan du bruke det du lærte om X her?&quot;
+- Gi bekreftelse når studenten er på rett spor, men ikke avsløre svaret
+- Ved feil: spør &quot;Hva fikk deg til å tenke slik?&quot; og led mot innsikt
+
+Unngå:
+- Å gi ferdige løsninger eller svar
+- Å forklare teorier fullstendig
+- Å bekrefte om et svar er riktig eller galt direkte
+
+Målet er at studenten skal utvikle selvstendig tenkning og forståelse, ikke å få raske svar.
+</pre></div>
+</div>
+</div>
+</div>
+</details>
+</div>
+</section>
+<section id="gpt-uio-personlige-api-nokler">
+<h2>GPT UiO personlige API-nøkler</h2>
+<p>Med personlige API-nøkler kan du koble GPT UiOs språkmodeller til andre applikasjoner, både egenutviklede løsninger og tredjepartsapplikasjoner som støtter dette.</p>
+<p>Eksempler på bruk av API-nøkler:</p>
+<ol class="arabic">
+<li><strong>Interne og/eller egenutviklede systemer ved UiO</strong></p>
+<p>API-nøkkelen legges inn i konfigurasjonen til et internt system (for eksempel et fagsystem eller webverktøy), som så kan sende tekst til GPT UiO og vise svarene direkte i løsningen.</p>
+</li>
+<li><strong>Eksterne verktøy brukeren selv kobler til</strong>
+<p>API-nøkkelen legges inn i et eksternt verktøy (for eksempel et notat-, analyse- eller kodeverktøy) som støtter «egen API-nøkkel», og verktøyet bruker da GPT UiO til tekstgenerering eller analyse.
+Sikkerhet og databehandling avhenger både av GPT UiO og det eksterne verktøyet.</p>
+</li>
+</ol>
+<div class="uio-icon-box dont">
+<h3>Viktig!</h3>
+<ul class="simple">
+<li>Del aldri API-nøkkelen din offentlig eller i kode som ligger åpent.</li>
+<li>Behandle nøkkelen som et passord, og oppbevar den sikkert (for eksempel i miljøvariabler eller en hemmelighets‑/secret‑tjeneste).</li>
+</ul>
+</div>
+</section>
+<section id="nokkelpunkter">
+<h2>Nøkkelpunkter</h2>
+<ul class="simple">
+<li>UiO sin personvernvennlig chat tjeneste</li>
+<li>Tilgang til OpenAI’s GPT modeller</li>
+<li>Tilgang til åpne modeller som kjører i Norge og hvor ingen data forlater UiO eller vår samarbeidspartner NTNU</li>
+<li>Støtter opptil røde data</li>
+<li>Personlige API nøkler for integrasjon mot andre applikasjoner</li>
+<li>Du trenger kun din UiO brukerkonto for å få tilgang</li>
+<li>Gratis for ansatte og studenter ved UiO</li>
+</ul>
+<div class="uio-icon-box source">
+<h3>Lenke til UiOs nettsider</h3>
+<p><a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode5_1.html">← Forrige</a></div><div class="next-link"><a href="episode5_4.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

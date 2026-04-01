@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hvordan fungerer språkmodeller? &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=4259ad9e" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=832830ac" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hvordan genererer LLM-er tekst?" href="episode2_1.html" />
+    <link rel="prev" title="Hva er agentisk KI?" href="episode1_4.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hvordan-fungerer-sprakmodeller">
+<h1>Hvordan fungerer språkmodeller?</h1>
+<p>I denne delen av kurset skal du lære mer om hvordan store språkmodeller (LLM-er) fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.</p>
+<p>En type enkle språkmodeller som mange har brukt, er smarte tastaturer på mobiltelefoner.
+De foreslår neste ord basert på teksten du har skrevet så langt.
+Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
+Vi kan si at forslaget er betinget av teksten du har skrevet, som vi kaller <em>konteksten</em>.</p>
+<p>Selv om store språkmodeller er mye mer avanserte enn smarte tastaturer, fungerer de grunnleggende sett på samme måte.
+De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
+Konteksten kan være en instruksjon eller spørsmål.
+Men ofte legger vi til ekstra kontekst, for eksempel ved å laste opp filer.
+Mange KI-systemer som for eksempel chat-tjenesten MS Copilot kan også hente relevant informasjon fra internett, som deretter brukes som kontekst.</p>
+<p>Store språkmodeller trenes altså på tekster fra internett.
+Men det er mange tekster de ikke har tilgang til.
+For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
+De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære.</p>
+<p>Dette gir ulikt utslag for ulike bruksområder.
+For eksempel er det for visse fagområder lite informasjon på nett, og da vil naturligvis også språkmodellen ha lite informasjon om disse områdene.
+Det betyr at modellene har tilgang til mindre eller kanskje ingen informasjon på noen områder!</p>
+<section id="laeringsmal">
+<h2>Læringsmål</h2>
+<p>Etter denne episoden vil du kunne:</p>
+<ul class="simple">
+<li>Forstå at LLM-er konstruerer tekst basert på statistiske mønstre</li>
+<li>Forklare hvorfor LLM-er ikke er pålitelige kunnskapsbaser</li>
+<li>Gjenkjenne når en LLM kan gi feil informasjon</li>
+<li>Forstå betydningen av tilfeldighet i KI-svar</li>
+</ul>
+<div class="uio-color-box-3">
+<h3>Fordypning</h3>
+<details>
+<summary><strong>Hva er kontekst?</strong></summary>
+<p>Når vi snakker om store språkmodeller, bruker vi ofte <em>kontekst</em> om alt det vi gir modellen som input.
+Det kan være et spørsmål eller instruksjon, men også for eksempel dokumenter, bilder eller andre ting i vi laster opp til modellen.
+Alle store språkmodeller har et <em>kontekstvindu</em>, som har en begrenset størrelse.
+Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.
+Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet som styrer språkmodellen bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen.
+Språkmodellen har ikke tilgang til informasjon som ikke er i konteksten.
+Den kan heller ikke kan “huske” informasjon fra tidligere samtaler.</p>
+</details>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode1_4.html">← Forrige</a></div><div class="next-link"><a href="episode2_1.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
