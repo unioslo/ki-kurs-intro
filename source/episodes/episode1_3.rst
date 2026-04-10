@@ -6,7 +6,7 @@ Store språkmodeller (LLM) er en spesifikk type generativ KI, som er spesialiser
 
 I dette kurset vil du hovedsakelig lære om kunstig intelligens som bygger på store språkmodeller. Du vil også lære litt om KI til bildegenererig. 
 
-Hvordan genererer en LLM tekst?
+Hvordan genererer(forslag: lager?) en LLM tekst?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 En LLM genererer tekst ved å beregne hva som er det mest sannsynlige neste ordet basert på konteksten. 
