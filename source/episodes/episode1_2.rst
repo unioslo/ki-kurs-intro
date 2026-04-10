@@ -1,5 +1,4 @@
-
-Hva er generativ KI?
+Generativ KI
 ====================
 Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på.
 ChatGPT, Copilot og NotebookLM er eksempler på generativ KI som kan lage både tekst og bilder.
