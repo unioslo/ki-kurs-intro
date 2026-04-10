@@ -1,5 +1,5 @@
 
-Hva er kunstig intelligens (KI)?
+Kunstig intelligens
 ================================
 
 KI er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. 
