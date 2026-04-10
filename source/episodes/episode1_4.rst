@@ -1,8 +1,8 @@
 KI-agenter
 ====================
 
-Du har kanskje hørt om agentisk KI eller KI agenter?
-Dette er en type KI som er mer enn bare en chat tjeneste, den benytter en språkmodell som motor/hjerne på samme måte som med chat, men kan i tillegg utføre handlinger.
+Du har kanskje hørt om KI-agenter eller agentisk KI? 
+Dette er en type KI som er mer enn bare en chat-tjeneste, den har en språkmodell som motor på samme måte som med chat, men kan i tillegg utføre bestemte handlinger.
 
 Agenter er laget for en eller flere spesifikke formål. En agent kan for eksempel hente informasjon fra andre systemer som internett eller en database, 
 den kan kanskje bestille togbiletter for deg, eller slå av en datamaskin som har symptomer på å være under angrep utenfra. 
