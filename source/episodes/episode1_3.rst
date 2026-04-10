@@ -1,5 +1,5 @@
 
-Hva er store språkmodeller (LLM)?
+Store språkmodeller (LLM)?
 ==================================
 
 Store språkmodeller (LLM) er en spesifikk type generativ KI som er spesialisert på språk og tekst, som har lært av enorme mengder tekst fra internett, bøker, artikler og andre kilder. Store språkmodeller er selve "motoren" eller "hjernen" bak tjenester som GPT UiO, NotebookLM og Microsoft Copilot. 
