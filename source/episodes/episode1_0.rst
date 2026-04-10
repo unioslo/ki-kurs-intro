@@ -1,4 +1,4 @@
-Hva er kunstig intelligens og generativ kunstig intelligens ? 
+Introduksjon
 ===============================================================
 
 .. uio-reflect:: Refleksjon (2 minutter) 
@@ -17,16 +17,12 @@ Hva er kunstig intelligens og generativ kunstig intelligens ?
         I arbeidshverdagen bruker du kanskje gpt.uio.no, NotebookLM, eller Copilot innebygget i eposten din?
 
 
-I første del av kurset skal du lære hva kunstig intelligens (KI) egentlig er, og du vil få innsikt i byggeblokkene til generativ KI og språkmodeller.
-Dette vil gjøre deg i stand til å forstå begrensningene som er innebygget i teknologien, og vil legge grunnen for trygg bruk. 
+I første del av kurset vil du bli kjent med de grunnleggende begreper innenfor kunstig intelligens og hva kunstig intelligens (KI) egentlig er. Du vil også få innsikt i byggeblokkene til generativ KI og språkmodeller. Dette vil gjøre deg i stand til å forstå begrensningene som er innebygget i teknologien, og vil legge grunnlaget for trygg bruk. 
 
-Læringsmål
-~~~~~~~~~~
+Etter dette kapitellet kan du:
 
-Etter denne episoden vil du kunne:
-
-* Forstå forskjellen mellom ulike typer KI
+* Bruke sentrale begreper om kunstig intelligens
+* Beskrive forskjellen mellom ulike typer KI
 * Forklare hva KI og generativ KI er
-* Forstå grunnleggende om hvordan språkmodeller fungerer
+* Fortelle hvordan språkmodeller helt grunnleggende fungerer
 * Gjenkjenne eksempler på generativ KI i dagliglivet
-
