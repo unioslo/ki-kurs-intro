@@ -16,7 +16,7 @@ Eller helt andre ting avhengig av hva som er formålet med akkurat den agenten.
    Forskjellen mellom en vanlig språkmodell (venstre) og en agentisk KI med tilgang til verktøy (høyre). 
    En agent kan ta autonome beslutninger om å bruke verktøy for å aksessere eller endre ekstern data. 
 
-Komponenter i en KI-agent
+Hvordan er en KI-agent bygd opp?
 --------------------------
 
 En KI-agent består av flere komponenter som jobber sammen. 
