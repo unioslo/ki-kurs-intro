@@ -1,4 +1,4 @@
-Hva er agentisk KI?
+KI-agenter
 ====================
 
 Du har kanskje hørt om agentisk KI eller KI agenter?
