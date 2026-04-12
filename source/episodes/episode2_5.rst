@@ -2,6 +2,8 @@
 Begrensninger du bør kjenne til
 ================================
 
+**NB Denne teksten er fortsatt det opprinnelige Claude forslaget - fjerne/endre?**
+
 Vi har sett at LLM-er lærer mønstre fra treningsdata, og at de kan hallusinere - produsere overbevisende men feil informasjon. 
 Men det er flere praktiske begrensninger du bør være klar over når du bruker disse verktøyene i hverdagen.
 
