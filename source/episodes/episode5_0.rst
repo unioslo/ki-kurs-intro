@@ -3,7 +3,7 @@ KI-tjenester ved UiO
 
 I denne episoden får du en oversikt over hvilke KI-tjenester som er tilgjengelige ved Universitetet i Oslo, og hvordan du får tilgang til dem.
 
-Læringsmål
+
 ~~~~~~~~~~
 
 Etter denne episoden vil du kunne:

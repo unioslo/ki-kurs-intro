@@ -23,7 +23,7 @@ Dette gir ulikt utslag for ulike bruksområder.
 For eksempel er det for visse fagområder lite informasjon på nett, og da vil naturligvis også språkmodellen ha lite informasjon om disse områdene.
 Det betyr at modellene har tilgang til mindre eller kanskje ingen informasjon på noen områder!
 
-Læringsmål
+
 ~~~~~~~~~~
 
 Etter denne episoden vil du kunne:
