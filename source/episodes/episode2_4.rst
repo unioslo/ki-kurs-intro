@@ -33,7 +33,7 @@ Lange samtaler krever mer ressurser
 Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.
 Ressursene som brukes er for eksempel maskinvare, strøm og vann.
 For å spare ressurser, bør du holde samtalene korte.
-Start en ny samtale, når samtalen begynner å bli lang.
+Start en ny samtale når samtalen begynner å bli lang.
 
 .. uio-source::
 
