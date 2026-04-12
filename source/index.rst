@@ -5,7 +5,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 1: Hva er KI og generativ KI?
+   :caption: Episode 1: Grunnbegreper i kunstig intelligens
 
    episodes/episode1_0
    episodes/episode1_1
@@ -27,14 +27,15 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 3: Kan du stole på generativ KI?
+   :caption: Episode 3: Hvordan trygt bruke KI?
 
    episodes/episode3_0
    episodes/episode3_1
    episodes/episode3_2
    episodes/episode3_3
-   episodes/episode3_4
    episodes/episode3_5
+   episodes/episode5_8
+   episodes/episode3_4
 
 .. toctree::
    :maxdepth: 1
@@ -50,27 +51,11 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode4_7
    episodes/episode4_8
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Episode 5: Prompting og prompt engineering
-
-   episodes/episode5_0
-   episodes/episode5_1
-   episodes/episode5_3
-   episodes/episode5_4
-   episodes/episode5_5
-   episodes/episode5_6
-   episodes/episode5_7
-   episodes/episode5_8
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 6: Oppsummering og veien videre
+   :caption: Episode 5: Oppsummering og veien videre
 
    episodes/episode6_1
-   episodes/episode6_2
-   episodes/episode6_3
-   episodes/episode6_4
    episodes/episode6_5
-   episodes/episode6_6
    episodes/episode6_7
