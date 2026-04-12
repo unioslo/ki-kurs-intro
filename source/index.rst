@@ -33,7 +33,6 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode3_1
    episodes/episode3_2
    episodes/episode3_3
-   episodes/episode3_5
    episodes/episode5_8
    episodes/episode3_4
 
@@ -41,15 +40,14 @@ Velkommen til grunnkurs i generativ KI!
    :maxdepth: 1
    :caption: Episode 4: KI-tjenester ved UiO
 
-   episodes/episode4_0
-   episodes/episode4_1
-   episodes/episode4_2
-   episodes/episode4_3
-   episodes/episode4_4
-   episodes/episode4_5
-   episodes/episode4_6
-   episodes/episode4_7
-   episodes/episode4_8
+   episodes/episode5_0
+   episodes/episode5_1
+   episodes/episode5_3
+   episodes/episode5_4
+   episodes/episode5_5
+   episodes/episode5_6
+   episodes/episode5_7
+   episodes/episode5_8
 
 
 .. toctree::
