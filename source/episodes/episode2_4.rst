@@ -1,83 +1,40 @@
-Språkmodeller finner på ting
+Språkmodeller har ikke hukommelse
 ================================================
 
-Siden store språkmodeller ikke har kunnskap, kan de finne på ting som ikke stemmer.
-Det kalles ofte *hallusinering*, men har egentlig ingenting med menneskelig hallusinering å gjøre.
-Derfor er det noen som foretrekker å kalle det *konfabulering* når språkmodeller finner på ting.
+Selve den matematiske språkmodellen har ikke hukommelse.
+Det er systemet rundt modellen som husker samtalen du har hatt.
+Når du sender en ny instruksjon, sender chat-systemet hele samtalen og den nye instruksjonen til språkmodellen.
+Modellen genererer så et nytt svar basert på hele samtalen og den nye instruksjonen.
+Det betyr at språkmodellene prosesserer hele samtalen på nytt for hver instruksjon du gir.
 
-Eksempler på hallusinering
+
+Korte samtaler gir bedre svar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
-Her er noen eksempler, det finnes flere.
+Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar.
+Særlig hvis du bytter tema er det viktig å starte en ny samtale.
+La oss si at du først har stilt noen spørsmål om økonomireglementet til UiO.
+Hvis du så stiller spørsmål om hvordan du formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO.
+Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.
 
-* **Feil fakta**: Modellen oppgir feil datoer, tall eller navn.
-* **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
-* **Blandede personer**: Modellen blander sammen biografier fra ulike personer.
+Men selv om du ikke skifter tema, kan modellen gi dårligere svar når samtalen blir lengre.
+Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon. [Laban]_
+En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.
 
-.. uio-info:: Eksempel
+Språkmodellene er dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
+Derfor bør du sørge for at gale svar ikke blir liggende i samtalen.
+Det kan du gjøre ved å redigere spørsmål som du får feil svar på.
+Trykk på rediger-knappen, ✏️, og legg til informasjon som modellen trenger for å svare riktig.
+Revider instruksjonen til du får et svar uten feil.
 
-   "Studien av Hansen et al. (2023) publisert i Nature viste at …", der både studien og forfatterne er oppfunnet.
-   Det kan også være en tittel som høres troverdig ut, fordi temaet er innenfor fagområdet til en virkelig forfatter.
-
-Hvorfor skjer det?
-~~~~~~~~~~~~~~~~~~~~~~
-
-Det er mange årsaker til at modellene finner på ting:
-
-1. *Modellen vil alltid gi et svar*, den sier ikke "jeg vet ikke".
-2. *Mønstre fra trening*, modellen har lært hvordan svar "skal se ut".
-3. *Manglende faktasjekk*, modellen har ikke kunnskap.
-4. *Overgeneralisering*, modellen kombinerer mønstre fra ulike kilder.
-5. *Utdaterte treningsdata*, modellen vet ikke hva som har skjedd etter den ble trent.
-
-.. uio-viktig:: Viktig å forstå
-
-   At språkmodeller finner på ting er ikke en "bug" som kan fikses fullstendig.
-   Det er en iboende egenskap ved hvordan språkmodeller fungerer.
-
-Hallusinering med selvtillit
+Lange samtaler krever mer ressurser
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Det er et stort problem at LLM-er ofte hallusinerer med stor *selvsikkerhet*.
-De sier ikke: "Jeg er usikker, men …".
-I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
-Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
-Du må alltid sjekke fakta med en pålitelig kilde.
-
-Hva med internett-søk?
-~~~~~~~~~~~~~~~~~~~~~~
-
-Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
-Men det garanterer ikke at svaret er riktig.
-Det er fordi LLM-en fortsatt må *tolke* og *oppsummere* informasjonen den finner, og det gjør den på samme måte som alltid – ved å generere tekst basert på mønstre.
-Modellen kan derfor fortsatt hallusinere selv om den har tilgang til korrekt informasjon fra nettet.
-
-.. uio-info:: Eksempel
-
-   Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen. [Svarstad]_
-   Der ble feilinformasjon generert av Copilot brukt som saksgrunnlag.
-   Copilot fant ikke opplysningene som brukeren spurte etter på nettet, og fant derfor på et svar.
-
-.. uio-reflect:: Refleksjon
-
-   Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?
-   
-   .. uio-answer::
-   
-      Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
-      Hvis det ikke mulig å finne kilden, er opplysningen ofte feil.
-
-.. uio-reflect:: Refleksjon
-
-   Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
-
-   .. uio-answer::
-
-      Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
-      Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
-      Derfor kan den produsere feilinformasjon med samme selvtillit som riktig informasjon.
+Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.
+Ressursene som brukes er for eksempel maskinvare, strøm og vann.
+For å spare ressurser, bør du holde samtalene korte.
+Start en ny samtale, når samtalen begynner å bli lang.
 
 .. uio-source::
 
-   .. [Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462.
+   .. [Laban] Philippe Laban, Hiroaki Hayashi, Yingbo Zhou, og Jennifer Neville, «LLMs Get Lost In Multi-Turn Conversation», arXiv:2505.06120, arXiv, 9. mai 2025, https://doi.org/10.48550/arXiv.2505.06120, på s. 1.
