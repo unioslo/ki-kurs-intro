@@ -52,7 +52,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 5: KI og etikk
+   :caption: Episode 5: Prompting og prompt engineering
 
    episodes/episode5_0
    episodes/episode5_1
