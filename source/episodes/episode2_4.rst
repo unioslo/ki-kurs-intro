@@ -27,13 +27,12 @@ Det kan du gjøre ved å redigere spørsmål som du får feil svar på.
 Trykk på rediger-knappen, ✏️, og legg til informasjon som modellen trenger for å svare riktig.
 Revider instruksjonen til du får et svar uten feil.
 
-Lange samtaler krever mer ressurser
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. uio-info:: Lange samtaler krever mer ressurser
 
-Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.
-Ressursene som brukes er for eksempel maskinvare, strøm og vann.
-For å spare ressurser, bør du holde samtalene korte.
-Start en ny samtale når samtalen begynner å bli lang.
+   Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.
+   Ressursene som brukes er for eksempel maskinvare, strøm og vann.
+   For å spare ressurser, bør du holde samtalene korte.
+   Start en ny samtale når samtalen begynner å bli lang.
 
 .. uio-source::
 
