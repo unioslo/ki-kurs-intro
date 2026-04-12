@@ -17,6 +17,12 @@ Usage:
     # List all pages with IDs, titles, and modules
     python update_canvas_pages.py --list-pages
 
+    # Interactively remap unmapped files to existing Canvas pages
+    python update_canvas_pages.py --remap
+
+    # Remap a specific file (even if already mapped)
+    python update_canvas_pages.py --remap --page episode1_0
+
     # Update all pages (content only)
     python update_canvas_pages.py
 
@@ -31,6 +37,12 @@ Usage:
 
     # Update all pages in a specific module and add to modules
     python update_canvas_pages.py --module 1 --add-to-modules
+
+    # Upload a new page (script will prompt for creation and placement)
+    python update_canvas_pages.py --page episode5_2 --add-to-module 5
+
+    # Create and add to bottom without prompting
+    python update_canvas_pages.py --page episode5_2 --create-new --add-to-module 5 --no-placement-prompt
 
     # Dry run (no actual updates)
     python update_canvas_pages.py --dry-run
@@ -614,6 +626,200 @@ def get_module_items(token, module_id):
     return all_items
 
 
+def remap_pages(token, html_dir=None, specific_page=None):
+    """Interactively remap unmapped local HTML files to existing Canvas pages.
+
+    Args:
+        token: Canvas API token
+        html_dir: Directory containing HTML files (default: HTML_DIR)
+        specific_page: Optional filename to remap only that specific page
+    """
+    if html_dir is None:
+        html_dir = HTML_DIR
+    else:
+        html_dir = Path(html_dir)
+
+    print("\n" + "="*70)
+    print("INTERACTIVE PAGE REMAPPING")
+    print("="*70 + "\n")
+
+    # Load existing mapping
+    page_mapping = load_page_mapping()
+    print(f"Current mapping has {len(page_mapping)} entries\n")
+
+    # Determine which files to remap
+    if specific_page:
+        # Remap a specific page
+        page_name = specific_page
+        if not page_name.endswith('.html'):
+            # Convert episode-1-0 or episode1_0 to episode1_0.html
+            page_name = page_name.replace('-', '_') + '.html'
+
+        html_file = html_dir / page_name
+        if not html_file.exists():
+            print(f"Error: HTML file not found: {html_file}")
+            return
+
+        unmapped_files = [html_file]
+        if page_name in page_mapping:
+            current_mapping = page_mapping[page_name]
+            print(f"Remapping specific file: {page_name}")
+            print(f"Currently mapped to: {current_mapping.get('title')} (page_id: {current_mapping.get('page_id')})\n")
+        else:
+            print(f"Remapping specific file: {page_name} (currently unmapped)\n")
+    else:
+        # Get all local HTML files
+        html_files = sorted(html_dir.glob("episode*.html"))
+        if not html_files:
+            print(f"No episode HTML files found in {html_dir}")
+            return
+
+        # Find unmapped files
+        unmapped_files = []
+        for html_file in html_files:
+            if html_file.name not in page_mapping:
+                unmapped_files.append(html_file)
+
+        if not unmapped_files:
+            print("All HTML files are already mapped!")
+            print("No remapping needed.")
+            return
+
+        print(f"Found {len(unmapped_files)} unmapped file(s):\n")
+        for f in unmapped_files:
+            title = extract_title(f)
+            print(f"  - {f.name} (title: {title})")
+        print()
+
+    # Fetch all Canvas pages
+    print("Fetching Canvas pages and modules...\n")
+    pages = list_all_pages(token)
+    if not pages:
+        print("No pages found in Canvas.")
+        return
+
+    # Get module information
+    modules_map = get_modules(token)
+    page_to_module = {}
+    module_names = {}
+
+    for position, module_id in modules_map.items():
+        # Get module details
+        module_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}"
+        response = requests.get(module_endpoint, headers={"Authorization": f"Bearer {token}"})
+        if response.status_code == 200:
+            module_data = response.json()
+            module_names[module_id] = module_data.get('name', f'Module {position}')
+
+        # Get items in this module
+        items = get_module_items(token, module_id)
+        for item in items:
+            if item.get('type') == 'Page':
+                page_url = item.get('page_url')
+                if page_url:
+                    page_to_module[page_url] = {
+                        'module_id': module_id,
+                        'module_name': module_names.get(module_id, f'Module {position}'),
+                        'position': item.get('position'),
+                        'indent': item.get('indent', 0)
+                    }
+
+    # Sort pages by module and position
+    pages_sorted = sorted(pages, key=lambda p: (
+        page_to_module.get(p['url'], {}).get('module_id', 999),
+        page_to_module.get(p['url'], {}).get('position', 999)
+    ))
+
+    # Interactive remapping
+    new_mappings = {}
+
+    for html_file in unmapped_files:
+        print("\n" + "="*70)
+        print(f"Remapping: {html_file.name}")
+        title = extract_title(html_file)
+        if title:
+            print(f"Title: {title}")
+        print("="*70 + "\n")
+
+        # Display Canvas pages
+        print("Available Canvas pages:\n")
+        print(f"{'#':<5} {'Page ID':<10} {'Title':<40} {'Module':<30}")
+        print("-" * 90)
+
+        for idx, page in enumerate(pages_sorted, 1):
+            page_id = page.get('page_id')
+            page_title = page.get('title', 'Untitled')[:38]
+            page_url = page.get('url', '')
+
+            module_info = page_to_module.get(page_url)
+            if module_info:
+                module_name = module_info['module_name'][:28]
+            else:
+                module_name = "(not in module)"
+
+            print(f"{idx:<5} {page_id:<10} {page_title:<40} {module_name:<30}")
+
+        print("\n" + "-" * 90)
+
+        # Ask user to select
+        while True:
+            response = input(f"\nSelect Canvas page # for '{html_file.name}' (or 'skip'): ").strip().lower()
+
+            if response == 'skip':
+                print(f"Skipping {html_file.name}")
+                break
+
+            try:
+                page_num = int(response)
+                if 1 <= page_num <= len(pages_sorted):
+                    selected_page = pages_sorted[page_num - 1]
+                    page_id = selected_page['page_id']
+                    canvas_page_url = selected_page['url']
+
+                    # Use the NEW title from the local HTML file
+                    new_title = extract_title(html_file)
+                    if not new_title:
+                        print(f"Warning: Could not extract title from {html_file.name}")
+                        new_title = html_file.stem.replace('_', '-').title()
+
+                    # Generate the expected NEW URL from the new title
+                    expected_url = title_to_canvas_url(new_title)
+
+                    module_info = page_to_module.get(canvas_page_url, {})
+
+                    # Add to new mappings with NEW title and expected URL
+                    new_mappings[html_file.name] = {
+                        'page_id': page_id,
+                        'url': expected_url,  # Expected URL from new title
+                        'title': new_title,   # New title from HTML
+                        'module_id': module_info.get('module_id', 'N/A'),
+                        'module_name': module_info.get('module_name', 'N/A')
+                    }
+
+                    print(f"✓ Mapped {html_file.name} -> Canvas page ID {page_id}")
+                    print(f"  New title: {new_title}")
+                    print(f"  Expected URL: {expected_url}")
+                    break
+                else:
+                    print(f"Invalid number. Choose 1-{len(pages_sorted)}")
+            except ValueError:
+                print("Invalid input. Enter a number or 'skip'")
+
+    # Update mapping file
+    if new_mappings:
+        print("\n" + "="*70)
+        print(f"Adding {len(new_mappings)} new mapping(s):")
+        print("="*70)
+        for filename, info in new_mappings.items():
+            print(f"  {filename} -> {info['title']} (page_id: {info['page_id']})")
+            page_mapping[filename] = info
+
+        save_page_mapping(page_mapping)
+        print(f"\n✓ Mapping file updated with {len(page_mapping)} total entries")
+    else:
+        print("\nNo new mappings created.")
+
+
 def list_pages_with_modules(token):
     """List all pages with their IDs, titles, URLs, and which module they belong to."""
     print("Fetching pages and modules...\n")
@@ -714,6 +920,82 @@ def list_pages_with_modules(token):
         print(f"{page_id:<12} {title:<35} {url:<45} {html_file:<20} {str(created_at):<20} {str(updated_at):<20} {mod_id:<10} {module_str:<30}")
 
     print(f"\nTotal: {len(pages)} pages")
+
+
+def ask_page_placement(token, module_id):
+    """Ask user where to place a new page in a module.
+
+    Args:
+        token: Canvas API token
+        module_id: ID of the module
+
+    Returns:
+        Tuple of (position, indent) where to insert the page
+    """
+    # Get existing items in module
+    items = get_module_items(token, module_id)
+    page_items = [item for item in items if item.get('type') == 'Page']
+
+    if not page_items:
+        print("Module is currently empty")
+        return 1, 0
+
+    # Display current pages
+    print("\nCurrent pages in this module:")
+    print("=" * 70)
+    for idx, item in enumerate(page_items, 1):
+        item_title = item.get('title', 'Untitled')
+        item_indent = item.get('indent', 0)
+        indent_str = "  " * item_indent
+        print(f"{idx}. {indent_str}{item_title}")
+    print("=" * 70)
+
+    # Ask for placement
+    print("\nWhere should the new page be placed?")
+    print("  top    - At the top of the module")
+    print("  bottom - At the bottom of the module (default)")
+    print("  before <number> - Before page <number>")
+    print("  after <number>  - After page <number>")
+
+    while True:
+        response = input("\nPlacement [bottom]: ").strip().lower()
+
+        # Default to bottom
+        if not response or response == 'bottom':
+            # Place at end, no indent
+            last_position = max([item.get('position', 0) for item in page_items])
+            return last_position + 1, 0
+
+        elif response == 'top':
+            # Place at beginning, no indent
+            return 1, 0
+
+        elif response.startswith('before '):
+            try:
+                page_num = int(response.split()[1])
+                if 1 <= page_num <= len(page_items):
+                    target_item = page_items[page_num - 1]
+                    # Insert before this item (use its position)
+                    return target_item.get('position', page_num), 0
+                else:
+                    print(f"Invalid page number. Choose 1-{len(page_items)}")
+            except (ValueError, IndexError):
+                print("Invalid format. Use: before <number>")
+
+        elif response.startswith('after '):
+            try:
+                page_num = int(response.split()[1])
+                if 1 <= page_num <= len(page_items):
+                    target_item = page_items[page_num - 1]
+                    # Insert after this item (position + 1)
+                    return target_item.get('position', page_num) + 1, 0
+                else:
+                    print(f"Invalid page number. Choose 1-{len(page_items)}")
+            except (ValueError, IndexError):
+                print("Invalid format. Use: after <number>")
+
+        else:
+            print("Invalid choice. Use: top, bottom, before <number>, or after <number>")
 
 
 def add_page_to_module(token, module_id, page_url, title, position, indent, dry_run=False):
@@ -1141,6 +1423,67 @@ def generate_title_from_filename(filename):
     return name.replace('_', '-').title()
 
 
+def create_canvas_page(token, content, title, dry_run=False):
+    """Create a new Canvas page via API.
+
+    Args:
+        token: Canvas API token
+        content: Page body content
+        title: Page title (required for new pages)
+        dry_run: If True, don't make actual changes
+
+    Returns: (success, page_url, page_id, updated_at)
+    """
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/pages"
+
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+
+    data = {
+        "wiki_page": {
+            "title": title,
+            "body": content,
+            "published": True  # Publish immediately
+        }
+    }
+
+    if dry_run:
+        expected_url = title_to_canvas_url(title)
+        print(f"[DRY RUN] Would create new page: {title} (expected URL: {expected_url})")
+        return True, expected_url, None, None
+
+    response = requests.post(api_endpoint, headers=headers, json=data)
+
+    # Check for successful response
+    if response.status_code in [200, 201]:
+        try:
+            response_data = response.json()
+            if "message" in response_data or "errors" in response_data:
+                # Error in response body despite success status
+                print(f"Failed to create page: {title} (Status: {response.status_code})")
+                print(f"Response: {response.text}")
+                return False, None, None, None
+
+            # Get page info from Canvas response
+            page_url = response_data.get('url')
+            page_id = response_data.get('page_id')
+            updated_at = response_data.get('updated_at', 'N/A')
+
+            print(f"Created new page: {title}")
+            print(f"Canvas URL: {page_url}")
+            print(f"Page ID: {page_id}")
+            return True, page_url, page_id, updated_at
+        except Exception as e:
+            print(f"Warning: Could not parse response: {e}")
+            return False, None, None, None
+    else:
+        print(f"Failed to create page: {title} (Status: {response.status_code})")
+        print(f"Response: {response.text}")
+        return False, None, None, None
+
+
 def update_canvas_page(token, page_url_or_id, content, title=None, new_url=None, dry_run=False):
     """Update a Canvas page via API.
 
@@ -1234,25 +1577,36 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
         page_id_override: Optional page ID to use instead of mapped ID (for single page updates)
 
     Returns:
-        Tuple of (success_count, fail_count)
+        Tuple of (success_count, fail_count, new_pages_created, mapping_updated)
     """
-    # Fetch modules if --add-to-modules is set
+    # Fetch modules if --add-to-modules or --add-to-module is set
     modules = {}
-    if args.add_to_modules:
+    if args.add_to_modules or args.add_to_module:
         print("Fetching modules...")
         modules = get_modules(token)
         if modules:
             print(f"Found {len(modules)} modules")
-            print("Will add pages to modules after updating\n")
+            if args.add_to_module:
+                if args.add_to_module in modules:
+                    print(f"Will add pages to module {args.add_to_module}\n")
+                else:
+                    print(f"Warning: Module {args.add_to_module} not found")
+                    print(f"Available modules: {sorted(modules.keys())}")
+                    print("Pages will be updated but not added to modules\n")
+                    modules = {}
+            else:
+                print("Will add pages to modules after updating\n")
         else:
             print("Warning: No modules found or failed to fetch modules")
             print("Pages will be updated but not added to modules\n")
     else:
-        print("Module addition disabled (use --add-to-modules to enable)\n")
+        print("Module addition disabled (use --add-to-modules or --add-to-module to enable)\n")
 
     # Process each file
     success_count = 0
     fail_count = 0
+    new_pages_created = []
+    mapping_updated = False  # Track if mapping was updated
 
     # Track position within each module
     module_positions = {}
@@ -1271,48 +1625,170 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
         # Try to find page info from mapping file
         page_info = page_mapping.get(html_file.name)
 
+        # Determine if we should create a new page
+        should_create_new = False
+        page_identifier = None
+        skip_this_page = False
+
         if page_info:
             # Use page ID from mapping file (or override if provided)
             page_identifier = page_id_override if page_id_override else page_info['page_id']
             print(f"Page ID: {page_info['page_id']}")
             print(f"Module: {page_info.get('module_name', 'N/A')} (ID: {page_info.get('module_id', 'N/A')})")
         else:
-            # Fallback to URL-based identifier
-            page_url = get_page_url(html_file.name)
-            page_identifier = page_id_override if page_id_override else page_url
-            print(f"Warning: No mapping found for {html_file.name}, using URL: {page_url}")
+            # No mapping found - this is a new page
+            print(f"No mapping found for {html_file.name}")
 
-        # Update page (let Canvas auto-generate URL from title)
-        page_updated, actual_page_url, _ = update_canvas_page(token, page_identifier, content, title, None, args.dry_run)
+            # Ask user if they want to create a new page (unless --create-new flag skips prompt)
+            if args.dry_run:
+                print("Would prompt to create new page (dry run mode)")
+                should_create_new = True
+            elif hasattr(args, 'create_new') and args.create_new:
+                # Auto-create without prompting
+                print("Creating new Canvas page (--create-new flag set)")
+                should_create_new = True
+            else:
+                # Prompt user
+                page_title = title or html_file.name
+                while True:
+                    response = input(f"Create new Canvas page for '{page_title}'? [yes/no]: ").lower().strip()
+                    if response in ['yes', 'y']:
+                        should_create_new = True
+                        break
+                    elif response in ['no', 'n']:
+                        print("Skipping this page")
+                        skip_this_page = True
+                        break
+                    else:
+                        print("Please answer 'yes' or 'no'")
+
+        # Skip this file if user said no
+        if skip_this_page:
+            fail_count += 1
+            print()
+            continue
+
+        # Create or update page
+        page_updated = False
+        actual_page_url = None
+        new_page_id = None
+
+        if should_create_new:
+            # Create new page
+            if not title:
+                print(f"Error: Cannot create page without a title")
+                fail_count += 1
+                print()
+                continue
+
+            page_created, actual_page_url, new_page_id, _ = create_canvas_page(token, content, title, args.dry_run)
+            page_updated = page_created
+
+            if page_created and new_page_id:
+                # Track new page for mapping update
+                new_pages_created.append({
+                    'filename': html_file.name,
+                    'page_id': new_page_id,
+                    'url': actual_page_url,
+                    'title': title
+                })
+        else:
+            # Update existing page (let Canvas auto-generate URL from title)
+            page_updated, actual_page_url, _ = update_canvas_page(token, page_identifier, content, title, None, args.dry_run)
+
+            # Update mapping with actual Canvas URL and title (if page was updated successfully)
+            if page_updated and actual_page_url and not args.dry_run:
+                if page_info:
+                    # Update existing mapping with actual URL from Canvas
+                    page_mapping[html_file.name]['url'] = actual_page_url
+                    if title:
+                        page_mapping[html_file.name]['title'] = title
+                    print(f"Updated mapping: URL={actual_page_url}")
+                    mapping_updated = True
 
         if page_updated:
             success_count += 1
 
             # Add to module if modules are available
             if modules and actual_page_url:
-                # Parse episode number from filename (e.g., episode1_0 -> module 1)
-                filename_base = html_file.stem  # e.g., episode1_0
-                match = re.match(r'episode(\d+)_(\d+)', filename_base)
-                if match:
-                    episode_num = int(match.group(1))  # 1, 2, 3, etc.
-                    sub_num = int(match.group(2))      # 0, 1, 2, etc.
+                # Determine which module to use
+                if hasattr(args, 'add_to_module') and args.add_to_module:
+                    # Use explicitly specified module
+                    episode_num = args.add_to_module
+                    # Default to no indent for explicitly added pages
+                    sub_num = 0
+                else:
+                    # Parse episode number from filename (e.g., episode1_0 -> module 1)
+                    filename_base = html_file.stem  # e.g., episode1_0
+                    match = re.match(r'episode(\d+)_(\d+)', filename_base)
+                    if not match:
+                        print(f"Warning: Could not parse episode number from {html_file.name}")
+                        episode_num = None
+                        sub_num = None
+                    else:
+                        episode_num = int(match.group(1))  # 1, 2, 3, etc.
+                        sub_num = int(match.group(2))      # 0, 1, 2, etc.
 
+                if episode_num is not None:
                     # Get module ID for this episode
                     module_id = modules.get(episode_num)
 
                     if module_id:
-                        # Determine indent: 0 for _0 pages, 1 for others
-                        indent = 0 if sub_num == 0 else 1
+                        # For new pages or when using --add-to-module, ask user where to place it
+                        ask_placement = should_create_new or (hasattr(args, 'add_to_module') and args.add_to_module)
+                        skip_prompt = hasattr(args, 'no_placement_prompt') and args.no_placement_prompt
 
-                        # Get position within this module
-                        if episode_num not in module_positions:
-                            module_positions[episode_num] = 1
-                        position = module_positions[episode_num]
-                        module_positions[episode_num] += 1
+                        if ask_placement and not args.dry_run and not skip_prompt:
+                            # Get module name for display
+                            module_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}"
+                            response = requests.get(module_endpoint, headers={"Authorization": f"Bearer {token}"})
+                            module_name = "this module"
+                            if response.status_code == 200:
+                                module_data = response.json()
+                                module_name = module_data.get('name', f'Module {episode_num}')
+
+                            print(f"\nAdding page to: {module_name}")
+                            position, indent = ask_page_placement(token, module_id)
+                        elif ask_placement and (args.dry_run or skip_prompt):
+                            # Dry run or --no-placement-prompt: default to bottom, no indent
+                            if args.dry_run:
+                                print("[DRY RUN] Would prompt for page placement (defaulting to bottom)")
+                            else:
+                                print("Adding page at bottom of module (--no-placement-prompt)")
+                            indent = 0
+                            # Get current max position
+                            items = get_module_items(token, module_id)
+                            if items:
+                                max_pos = max([item.get('position', 0) for item in items])
+                                position = max_pos + 1
+                            else:
+                                position = 1
+                        else:
+                            # Determine indent: 0 for _0 pages, 1 for others (for --add-to-modules)
+                            indent = 0 if sub_num == 0 else 1
+
+                            # Get position within this module
+                            if episode_num not in module_positions:
+                                module_positions[episode_num] = 1
+                            position = module_positions[episode_num]
+                            module_positions[episode_num] += 1
 
                         # Add page to module using the actual Canvas URL
                         add_page_to_module(token, module_id, actual_page_url, title or actual_page_url,
                                           position, indent, args.dry_run)
+
+                        # Update new page info with module details
+                        if should_create_new and new_page_id:
+                            for page in new_pages_created:
+                                if page['page_id'] == new_page_id:
+                                    page['module_id'] = module_id
+                                    # Get module name
+                                    module_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules/{module_id}"
+                                    response = requests.get(module_endpoint, headers={"Authorization": f"Bearer {token}"})
+                                    if response.status_code == 200:
+                                        module_data = response.json()
+                                        page['module_name'] = module_data.get('name', f'Module {episode_num}')
+                                    break
                     else:
                         print(f"Warning: No module found for episode {episode_num}")
         else:
@@ -1320,7 +1796,7 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
 
         print()
 
-    return success_count, fail_count
+    return success_count, fail_count, new_pages_created, mapping_updated
 
 
 def main():
@@ -1350,9 +1826,19 @@ def main():
         help="Add pages to Canvas modules after updating (default: only update page content)"
     )
     parser.add_argument(
+        "--add-to-module",
+        type=int,
+        help="Add page to a specific module number (e.g., --add-to-module 5)"
+    )
+    parser.add_argument(
         "--list-pages",
         action="store_true",
         help="List all pages with their IDs, titles, URLs, and modules (does not update anything)"
+    )
+    parser.add_argument(
+        "--remap",
+        action="store_true",
+        help="Interactively remap unmapped local HTML files to existing Canvas pages (use with --page to remap a specific file)"
     )
     parser.add_argument(
         "--from-github",
@@ -1373,6 +1859,16 @@ def main():
         "--yes",
         action="store_true",
         help="Skip confirmation prompt and proceed automatically"
+    )
+    parser.add_argument(
+        "--create-new",
+        action="store_true",
+        help="Auto-create new Canvas pages without prompting (script will prompt by default for unmapped files)"
+    )
+    parser.add_argument(
+        "--no-placement-prompt",
+        action="store_true",
+        help="Skip placement prompt and add new pages at the bottom of the module"
     )
     args = parser.parse_args()
 
@@ -1423,6 +1919,22 @@ def main():
     if args.list_pages:
         token = get_api_token()
         list_pages_with_modules(token)
+        return
+
+    # Handle remap mode
+    if args.remap:
+        token = get_api_token()
+
+        # Check if HTML directory exists
+        html_dir = Path(HTML_DIR)
+        if not html_dir.exists():
+            print(f"Error: HTML directory not found: {HTML_DIR}")
+            print("Please run 'make html' first to build the documentation")
+            sys.exit(1)
+
+        # Check if specific page was requested
+        specific_page = args.page if hasattr(args, 'page') and args.page else None
+        remap_pages(token, html_dir, specific_page)
         return
 
     # Handle deploy mode
@@ -1507,9 +2019,26 @@ def main():
                 print(f"Loaded {len(page_mapping)} page mappings\n")
 
             # Use common processing function
-            success_count, fail_count = process_html_files(
+            success_count, fail_count, new_pages_created, mapping_updated = process_html_files(
                 token, html_files, episodes_dir, page_mapping, args
             )
+
+            # Update mapping file with newly created pages
+            if new_pages_created and not args.dry_run:
+                print(f"\nUpdating mapping file with {len(new_pages_created)} new page(s)...")
+                for new_page in new_pages_created:
+                    page_mapping[new_page['filename']] = {
+                        'page_id': new_page['page_id'],
+                        'url': new_page['url'],
+                        'title': new_page['title'],
+                        'module_id': new_page.get('module_id', 'N/A'),
+                        'module_name': new_page.get('module_name', 'N/A')
+                    }
+                save_page_mapping(page_mapping)
+            elif mapping_updated and not args.dry_run:
+                # Save mapping if it was updated (even without new pages)
+                print(f"\nSaving updated mapping file...")
+                save_page_mapping(page_mapping)
 
             # Summary
             print("="*80)
@@ -1518,6 +2047,8 @@ def main():
             print(f"Total files: {len(html_files)}")
             print(f"Successful: {success_count}")
             print(f"Failed: {fail_count}")
+            if new_pages_created:
+                print(f"New pages created: {len(new_pages_created)}")
             print("="*80)
 
             if fail_count == 0:
@@ -1533,20 +2064,28 @@ def main():
     # Get API token
     token = get_api_token()
 
-    # Fetch modules only if --add-to-modules is set
+    # Fetch modules only if --add-to-modules or --add-to-module is set
     modules = {}
-    if args.add_to_modules:
+    if args.add_to_modules or args.add_to_module:
         print("Fetching modules...")
         modules = get_modules(token)
         if modules:
             print(f"Found {len(modules)} modules")
-            for pos, mod_id in sorted(modules.items()):
-                print(f"Module {pos}: ID {mod_id}")
+            if args.add_to_module:
+                if args.add_to_module in modules:
+                    print(f"Will add page to module {args.add_to_module}")
+                else:
+                    print(f"Warning: Module {args.add_to_module} not found")
+                    print(f"Available modules: {sorted(modules.keys())}")
+                    modules = {}
+            else:
+                for pos, mod_id in sorted(modules.items()):
+                    print(f"Module {pos}: ID {mod_id}")
         else:
             print("Warning: No modules found or failed to fetch modules")
         print()
     else:
-        print("Module addition disabled (use --add-to-modules to enable)\n")
+        print("Module addition disabled (use --add-to-modules or --add-to-module to enable)\n")
 
     # Check if HTML directory exists
     html_dir = Path(HTML_DIR)
@@ -1628,15 +2167,34 @@ def main():
         print(f"Found {len(html_files)} HTML files to process\n")
 
     # Use common processing function
-    success_count, fail_count = process_html_files(
+    success_count, fail_count, new_pages_created, mapping_updated = process_html_files(
         token, html_files, html_dir, page_mapping, args, page_id_override
     )
+
+    # Update mapping file with newly created pages
+    if new_pages_created and not args.dry_run:
+        print(f"\nUpdating mapping file with {len(new_pages_created)} new page(s)...")
+        for new_page in new_pages_created:
+            page_mapping[new_page['filename']] = {
+                'page_id': new_page['page_id'],
+                'url': new_page['url'],
+                'title': new_page['title'],
+                'module_id': new_page.get('module_id', 'N/A'),
+                'module_name': new_page.get('module_name', 'N/A')
+            }
+        save_page_mapping(page_mapping)
+    elif mapping_updated and not args.dry_run:
+        # Save mapping if it was updated (even without new pages)
+        print(f"\nSaving updated mapping file...")
+        save_page_mapping(page_mapping)
 
     # Summary
     print(f"\n{'='*50}")
     print(f"Summary:")
     print(f"Successful: {success_count}")
     print(f"Failed: {fail_count}")
+    if new_pages_created:
+        print(f"New pages created: {len(new_pages_created)}")
     print(f"Total: {len(html_files)}")
 
     if args.dry_run:
