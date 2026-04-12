@@ -1,38 +1,38 @@
 {
   "episode1_0.html": {
     "page_id": 395816,
-    "url": "hva-er-kunstig-intelligens-og-generativ-kunstig-intelligens",
-    "title": "Hva er kunstig intelligens og generativ kunstig intelligens ?",
+    "url": "introduksjon",
+    "title": "Introduksjon",
     "module_id": 233819,
-    "module_name": "Hva er KI og generativ KI?"
+    "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode1_1.html": {
     "page_id": 395871,
-    "url": "hva-er-kunstig-intelligens-ki-5",
-    "title": "Hva er kunstig intelligens (KI)?",
+    "url": "kunstig-intelligens",
+    "title": "Kunstig intelligens",
     "module_id": 233819,
-    "module_name": "Hva er KI og generativ KI?"
+    "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode1_2.html": {
     "page_id": 395872,
-    "url": "hva-er-generativ-ki-5",
-    "title": "Hva er generativ KI?",
+    "url": "generativ-ki",
+    "title": "Generativ KI",
     "module_id": 233819,
-    "module_name": "Hva er KI og generativ KI?"
+    "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode1_3.html": {
     "page_id": 396877,
-    "url": "hva-er-store-sprakmodeller-llm-8",
-    "title": "Hva er store språkmodeller (LLM)?",
+    "url": "store-sprakmodeller-llm",
+    "title": "Store språkmodeller (LLM)",
     "module_id": 233819,
-    "module_name": "Hva er KI og generativ KI?"
+    "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode1_4.html": {
     "page_id": 395874,
-    "url": "hva-er-agentisk-ki",
-    "title": "Hva er agentisk KI?",
+    "url": "ki-agenter",
+    "title": "KI-agenter",
     "module_id": 233819,
-    "module_name": "Hva er KI og generativ KI?"
+    "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode2_0.html": {
     "page_id": 395875,
@@ -55,10 +55,17 @@
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
+  "episode2_3.html": {
+    "page_id": 398969,
+    "url": "sprakmodeller-finner-pa-ting-5",
+    "title": "Språkmodeller finner på ting",
+    "module_id": 233820,
+    "module_name": "Hvordan fungerer språkmodeller"
+  },
   "episode2_4.html": {
     "page_id": 396879,
-    "url": "sprakmodeller-finner-pa-ting-2",
-    "title": "Språkmodeller finner på ting",
+    "url": "sprakmodeller-har-ikke-hukommelse",
+    "title": "Språkmodeller har ikke hukommelse",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
@@ -92,103 +99,26 @@
   },
   "episode3_2.html": {
     "page_id": 395884,
-    "url": "hvordan-kvalitetssikre-ki-generert-innhold-3",
-    "title": "Hvordan kvalitetssikre KI-generert innhold",
+    "url": "strategier-for-a-kvalitetssikre-ki-generert-innhold",
+    "title": "Strategier for å kvalitetssikre KI-generert innhold",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
   "episode3_3.html": {
     "page_id": 395885,
-    "url": "personvern-og-datasikkerhet-3",
-    "title": "Personvern og datasikkerhet",
+    "url": "instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil",
+    "title": "Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
-  },
-  "episode3_4.html": {
-    "page_id": 395886,
-    "url": "vanlige-feil-og-fallgruver-3",
-    "title": "Vanlige feil og fallgruver",
-    "module_id": 233811,
-    "module_name": "Hvordan trygt bruke KI?"
-  },
-  "episode3_5.html": {
-    "page_id": 395887,
-    "url": "beste-praksis-oppsummering-2",
-    "title": "Beste praksis - oppsummering",
-    "module_id": 233811,
-    "module_name": "Hvordan trygt bruke KI?"
-  },
-  "episode4_0.html": {
-    "page_id": 395888,
-    "url": "instruksjoner",
-    "title": "Instruksjoner",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_1.html": {
-    "page_id": 395889,
-    "url": "hva-er-en-prompt-4",
-    "title": "Hva er en prompt?",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_2.html": {
-    "page_id": 395890,
-    "url": "prinsipper-for-god-prompting-4",
-    "title": "Prinsipper for god prompting",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_3.html": {
-    "page_id": 395891,
-    "url": "nyttige-prompt-teknikker-4",
-    "title": "Nyttige prompt-teknikker",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_4.html": {
-    "page_id": 395892,
-    "url": "praktiske-eksempler-for-administrativt-arbeid-4",
-    "title": "Praktiske eksempler for administrativt arbeid",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_5.html": {
-    "page_id": 395893,
-    "url": "vanlige-feil-og-hvordan-unnga-dem-4",
-    "title": "Vanlige feil og hvordan unngå dem",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_6.html": {
-    "page_id": 395894,
-    "url": "tips-for-a-bli-bedre-til-prompting-4",
-    "title": "Tips for å bli bedre til prompting",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_7.html": {
-    "page_id": 395895,
-    "url": "eksempel-fra-darlig-til-god-prompt-4",
-    "title": "Eksempel: Fra dårlig til god prompt",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
-  },
-  "episode4_8.html": {
-    "page_id": 395904,
-    "url": "oppsummering-2",
-    "title": "Oppsummering",
-    "module_id": 233822,
-    "module_name": "Instruksjoner (prompter)"
   },
   "episode5_0.html": {
-    "page_id": 395896,
-    "url": "ki-tjenester-ved-uio-2",
-    "title": "KI-tjenester ved UiO",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
+    "page_id": 398968,
+    "url": "ki-og-etikk",
+    "title": "KI og etikk",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
   },
-  "episode5_2.html": {
+  "episode5_1.html": {
     "page_id": 395898,
     "url": "hvorfor-bruke-uios-godkjente-tjenester",
     "title": "Hvorfor bruke UiOs godkjente tjenester?",
@@ -234,8 +164,8 @@
     "page_id": 398665,
     "url": "retningslinjer-og-policies-8",
     "title": "Retningslinjer og policies",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
   },
   "episode6_1.html": {
     "page_id": 395906,
@@ -244,38 +174,10 @@
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
-  "episode6_2.html": {
-    "page_id": 395907,
-    "url": "etiske-betraktninger-og-ai-kompetanse-2",
-    "title": "Etiske betraktninger og AI-kompetanse",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_3.html": {
-    "page_id": 395908,
-    "url": "vanlige-sporsmal-og-misforstaelser-2",
-    "title": "Vanlige spørsmål og misforståelser",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_4.html": {
-    "page_id": 395909,
-    "url": "ressurser-for-videre-laering-2",
-    "title": "Ressurser for videre læring",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
   "episode6_5.html": {
     "page_id": 395910,
     "url": "neste-steg-i-din-ki-reise-2",
     "title": "Neste steg i din KI-reise",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_6.html": {
-    "page_id": 395911,
-    "url": "viktige-prinsipper-a-huske-2",
-    "title": "Viktige prinsipper å huske",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
