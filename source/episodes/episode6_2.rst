@@ -2,6 +2,8 @@
 Etiske betraktninger og AI-kompetanse
 ======================================
 
+(Claude laget tekst, men bruker som placeholder)
+
 Når du bruker KI, er det viktig å tenke på de etiske aspektene.
 
 .. canvas-tabs::
