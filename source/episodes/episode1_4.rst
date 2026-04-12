@@ -17,7 +17,7 @@ Eller helt andre ting avhengig av hva som er formålet med akkurat den agenten.
    En agent kan ta autonome beslutninger om å bruke verktøy for å aksessere eller endre ekstern data. 
 
 Hvordan er en KI-agent bygd opp?
---------------------------
+-----------------------------------
 
 En KI-agent består av flere komponenter som jobber sammen. 
 
