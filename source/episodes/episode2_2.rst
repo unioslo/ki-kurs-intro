@@ -14,7 +14,7 @@ Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
    Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
-.. uio-note:: Manipulering (LLM poisoning)
+.. uio-info:: Manipulering (LLM poisoning)
 
    Store språkmodeller kan være sårbare for bevisst manipulering, såkalt "LLM poisoning".
    Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
