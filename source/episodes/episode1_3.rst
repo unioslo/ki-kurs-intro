@@ -2,31 +2,8 @@
 Store språkmodeller (LLM)
 ==================================
 
-Store språkmodeller (large language models/LLM) er en type generativ KI som har trent på enorme mengder tekst og lært seg å forstå og produsere tekst. Store språkmodeller er selve "motoren" i tjenester som GPT UiO, NotebookLM og Microsoft Copilot. 
+Store språkmodeller (large language models/LLM) er en type generativ KI som har trent på enorme mengder tekst og lært seg å "forstå" og produsere tekst.
+Store språkmodeller er selve "motoren" i tjenester som GPT UiO, NotebookLM og Microsoft Copilot. 
 
-I dette kurset vil du hovedsakelig lære om kunstig intelligens som bygger på store språkmodeller. Du vil også lære litt om KI til bildegenererig. 
-
-Gammel: 
-Store språkmodeller (large language models/LLM) er en type generativ KI som er spesialisert på språk og tekst. Den har trent og "lært" av enorme mengder tekst fra internett, bøker, artikler og andre kilder. Store språkmodeller er selve "motoren" bak tjenester som GPT UiO, NotebookLM og Microsoft Copilot. 
-
-I dette kurset vil du hovedsakelig lære om kunstig intelligens som bygger på store språkmodeller. Du vil også lære litt om KI til bildegenererig. 
-
-Hvordan lager en LLM tekst?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Forslag: Se for deg at du skal bruke KI til hjelp i planlegging av et møte. Du stiller Chatgpt UIO spørsmålet
-"Kan du sette sammen et forslag til agenda for et evalueringsmøte av et prosjekt" 
-
-Når LLM genererer svaret på spørsmålet ditt gjør den det ved å beregne hva som er det mest sannsynlige neste ordet basert på konteksten. Det er litt som at hjernen din automatisk foreslår "sola" hvis vi sier "I dag skinner ...".
-I setningen: "Katten jaget musen fordi *den* var sulten" kan modellen kanskje forstå at "den" refererer til katten, ikke musen.
-
-LLM-er lærer *mønstre* i tekst, ikke *fakta*. 
-
-I tekst som modellen har blitt trent på vil "Norge" og "hovedstad" ha forekommet sammen med "Oslo", og derfor er ordene tett assosiert med hverandre i modellen.  
-Derfor vil den generere "Oslo" når du spør hva hovedstaden i Norge er. Men den "vet" ikke egentlig at dette er riktig.
-Dersom modellen hadde sett ordet "Stockholm" i stedet, så ville den svart dette. Dette er grunnen til at LLM-er kan gi svært overbevisende, men feil informasjon.
-
-Dette gjør også modellen sårbar for bevisst manipulering.
-Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den, 
-og dermed gi svar som er manipulert og ikke stemmer overens med virkeligheten.
-
+I dette kurset vil du hovedsakelig lære om kunstig intelligens som bygger på store språkmodeller.
+Du vil også lære litt om KI til bildegenererig. 
