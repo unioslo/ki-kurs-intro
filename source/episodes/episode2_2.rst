@@ -14,6 +14,12 @@ Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
    Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
+.. uio-note:: Manipulering (LLM poisoning)
+
+   Store språkmodeller kan være sårbare for bevisst manipulering, såkalt "LLM poisoning".
+   Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
+   Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
+
 .. uio-source::
 
    .. [Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», *Ethics and Information Technology 26*, nr. 2 (2024): 38, (https://doi.org/10.1007/s10676-024-09775-5), på s. 2.
