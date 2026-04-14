@@ -3,6 +3,8 @@ KI økosystemet
 
 
 Når vi snakker om kunstig intelligens, blander vi ofte sammen "hjernen" som tenker, og systemet som lar oss snakke med den.
+Systemer for KI-chat, som ChatGPT, består ikke bare av en språkmodell, men også en chat-del som håndterer kommunikasjonen.
+Chat-systemet tar imot meldinger og filer fra brukeren og sender det videre til språkmodellen.
 For å forstå hvordan alt henger sammen, kan vi bruke en arbeidsplass som analogi.
 
 .. figure:: ../images/hjerne-analogi.png
@@ -17,7 +19,7 @@ Språkmodellen (LLM): "Hjernen"
 
 Dette er selve den kunstige intelligensen (f.eks. GPT-5.4 eller Gemini 3). 
 Tenk på dette som en enorm, superintelligent hjerne, men uten noen kropp. 
-Den kan utrolig mye, men den har ingen munn til å snakke med, ingen hukommelse om hvem du er, og ingen en skrivepult å jobbe ved. 
+Den kan utrolig mye, men den har ingen munn til å snakke med, ingen hukommelse, og ingen skrivepult å jobbe ved. 
 Den er ren regnekraft og språkforståelse.
 
 KI-tjenesten:  "Kontoret og resepsjonen"
