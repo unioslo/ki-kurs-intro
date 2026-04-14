@@ -34,6 +34,13 @@
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
+  "episode1_5.html": {
+    "page_id": 399001,
+    "url": "ki-okosystemet",
+    "title": "KI økosystemet",
+    "module_id": 233819,
+    "module_name": "Grunnbegreper i kunstig intelligens"
+  },
   "episode2_0.html": {
     "page_id": 395875,
     "url": "hvordan-fungerer-sprakmodeller",
@@ -71,15 +78,8 @@
   },
   "episode2_5.html": {
     "page_id": 395880,
-    "url": "begrensninger-du-bor-kjenne-til-2",
-    "title": "Begrensninger du bør kjenne til",
-    "module_id": 233820,
-    "module_name": "Hvordan fungerer språkmodeller"
-  },
-  "episode2_6.html": {
-    "page_id": 395881,
-    "url": "hva-betyr-dette-for-deg-som-bruker-2",
-    "title": "Hva betyr dette for deg som bruker?",
+    "url": "oppgaver",
+    "title": "Oppgaver",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
@@ -108,13 +108,6 @@
     "page_id": 395885,
     "url": "instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil",
     "title": "Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?",
-    "module_id": 233811,
-    "module_name": "Hvordan trygt bruke KI?"
-  },
-  "episode3_4.html": {
-    "page_id": 398968,
-    "url": "ki-og-etikk",
-    "title": "KI og etikk",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
