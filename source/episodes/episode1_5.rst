@@ -9,7 +9,7 @@ For å forstå hvordan alt henger sammen, kan vi bruke en arbeidsplass som analo
 
 .. figure:: ../images/notebooklm-ki-oekosystem-udetaljerttekst.png 
    :align: center
-   :width: 70%
+   :width: 110%
    :alt: Illustrasjon av KI-økosystemet som en arbeidsplass
 
    KI-økosystemet illustrert som en arbeidsplass med hjerne, kontor, assistenter og agenter.
