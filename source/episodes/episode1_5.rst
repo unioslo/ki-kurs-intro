@@ -7,7 +7,7 @@ Systemer for KI-chat, som ChatGPT, består ikke bare av en språkmodell, men ogs
 Chat-systemet tar imot meldinger og filer fra brukeren og sender det videre til språkmodellen.
 For å forstå hvordan alt henger sammen, kan vi bruke en arbeidsplass som analogi.
 
-.. figure:: ../images/hjerne-analogi.png
+.. figure:: ../images/notebooklm-ki-oekosystem-udetaljerttekst.png 
    :align: center
    :width: 70%
    :alt: Illustrasjon av KI-økosystemet som en arbeidsplass
