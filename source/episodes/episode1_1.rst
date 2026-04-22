@@ -2,14 +2,10 @@
 Kunstig intelligens
 ================================
 
-KI er teknologi som gjør det mulig for datamaskiner å utføre oppgaver som normalt krever menneskelig intelligens. 
-Dette kan være alt fra å gjenkjenne ansikter i bilder til å svare på spørsmål.
+KI er en samlebetegnelse for teknologi som utfører en oppgave på en måte som etterligner menneskelig intelligens, i tekst, bilde, tale eller tall. 
+Veldig grovt forklart er dagens KI komplekse statistiske modeller inspirert av hvordan hjernens nevrale nettverk er bygget opp. 
 
-Kan vi ta inn noe av dette? 
-KI er en samlebetegnelse for teknologi som utfører en oppgave på en måte som etterligner menneskelig intelligens, i tekst, bilde, tale eller tall. KI er statistiske modeller som etterligner menneskelig atferd med utgangspunkt trening fra gjennkjenne mønstre i store datamengder. 
-
-
-KI er ikke en ny teknologi,  den har utviklet seg over flere tiår. Allerede i 1956 ble det etablert et forskningsfelt innen KI.
+KI er ikke en ny teknologi, den har utviklet seg over flere tiår. Allerede i 1956 ble det etablert et forskningsfelt innen KI.
 Men siden ChatGTP ble sluppet i 2022 har vi sett en eksplosjonsartet utvikling av KI. ChatGPT var milevis fra de "dumme chatbottene" som kun klarte å svare på helt enkle spørsmål. 
 Plutselig hadde alle tilgang til en tjeneste som kunne *generere* side på side med tekst av overraskende god kvalitet.  
 
