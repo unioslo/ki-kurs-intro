@@ -27,7 +27,7 @@ Sosiale kostnader
 --------------------------------
 
 Trening og bruk av kunstig intelligens har også sosiale kostnader.
-Noen av KI-leverandørene bruker underleverandører i lavkostland som betaler ansatte svært dårlig.
+Noen av KI-leverandørene bruker underleverandører i lavkostland som betaler ansatte svært dårlig. [ILO]_
 De ansatte hos underleverandørene kan også ha midlertidige stillinger med dårlige arbeidsvilkår.
 Noen er kritiske til at KI-leverandørene bruker enorme beløp på å bygge datasentre,
 men ikke betaler menneskene som er med på å lage modellene skikkelig.
@@ -47,3 +47,7 @@ Ressurssvake studenter må kanskje ta til takke med gratisversjonen med dårlige
 .. uio-reflect::
 
    Hvilke oppgaver har du som det hadde vært fint å få en KI-assistent til å gjøre?
+
+.. uio-source::
+
+   .. [ILO] Uma Rani og Rishabh Kumar Dhir, «The Artificial Intelligence Illusion: How Invisible Workers Fuel the 'Automated' Economy», International Labour Organization, 10. desember 2024, https://www.ilo.org/resource/article/artificial-intelligence-illusion-how-invisible-workers-fuel-automated.
