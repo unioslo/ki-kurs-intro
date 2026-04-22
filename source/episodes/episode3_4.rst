@@ -18,6 +18,11 @@ For første kan arealene som brukes til å bygge datasentre gå på bekostning a
 Det går også med mye mineraler og andre begrensede naturressurser til å lage serverne i datasentrene.
 Den store økningen i bruk av kunstig intelligens gjør at KI-leverandørene bygger nye datasentre i et høyt tempo.
 
+.. uio-reflect::
+
+   Hva kan du gjøre for å redusere miljøpåvirkningen av KI-tjenester?
+
+
 Sosiale kostnader
 --------------------------------
 
@@ -31,7 +36,14 @@ En annen problemstilling er at ulik tilgang til KI-tjenester kan forsterke eksis
 Ressurssterke studenter kan abonnere på dyre KI-tjenester for å få en fordel i studiene.
 Ressurssvake studenter må kanskje ta til takke med gratisversjonen med dårligere funksjonalitet.
 
-Noen er bekymret for at KI-tjenester vil føre til færre arbeidsplasser på sikt.
-Kunstig intelligens vil kunne overta kjedelige og repetitive oppgaver.
-I stedet for at det blir færre ansatte, vil forhåpentligvis de ansatte kunne bruke tiden
-sin på mer interessante oppgaver som fortsatt krever menneskelig innsats.
+.. uio-info:: KI og arbeidsplasser
+
+   Noen er bekymret for at KI-tjenester vil føre til færre arbeidsplasser på sikt.
+   Kunstig intelligens vil kunne overta kjedelige og repetitive oppgaver.
+   I stedet for at det blir færre ansatte, vil forhåpentligvis de ansatte kunne bruke tiden
+   sin på mer interessante oppgaver som fortsatt krever menneskelig innsats.
+
+
+.. uio-reflect::
+
+   Hvilke oppgaver har du som det har vært fint å få en KI-assistent til å gjøre?
