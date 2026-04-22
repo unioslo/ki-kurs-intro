@@ -62,21 +62,11 @@ Modellen kan derfor fortsatt hallusinere selv om den har tilgang til korrekt inf
 .. uio-reflect:: Refleksjon
 
    Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?
-   
+
    .. uio-answer::
-   
+
       Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
       Hvis det ikke mulig å finne kilden, er opplysningen ofte feil.
-
-.. uio-reflect:: Refleksjon
-
-   Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
-
-   .. uio-answer::
-
-      Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
-      Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
-      Derfor kan den produsere feilinformasjon med samme selvtillit som riktig informasjon.
 
 .. uio-source::
 
