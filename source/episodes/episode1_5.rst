@@ -2,9 +2,9 @@ KI økosystemet
 ===============
 
 
-Når vi snakker om kunstig intelligens, blander vi ofte sammen "hjernen" som tenker, og systemet som lar oss snakke med den.
-Systemer for KI-chat, som ChatGPT, består ikke bare av en språkmodell, men også en chat-del som håndterer kommunikasjonen.
-Chat-systemet tar imot meldinger og filer fra brukeren og sender det videre til språkmodellen.
+Når vi snakker om kunstig intelligens, blander vi ofte sammen "hjernen" eller rettere sagt *språkmodellen* som tenker, og systemet eller tjenesten som lar oss snakke med den.
+Tjenester for KI-chat, som ChatGPT, består ikke bare av en språkmodell, men også en chat-del som håndterer kommunikasjonen.
+Chat-tjenesten tar imot meldinger og filer fra brukeren og sender det videre til språkmodellen.
 For å forstå hvordan alt henger sammen, kan vi bruke en arbeidsplass som analogi.
 
 .. figure:: ../images/notebooklm-ki-oekosystem-udetaljerttekst.png 
