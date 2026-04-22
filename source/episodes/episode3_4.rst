@@ -46,4 +46,4 @@ Ressurssvake studenter må kanskje ta til takke med gratisversjonen med dårlige
 
 .. uio-reflect::
 
-   Hvilke oppgaver har du som det har vært fint å få en KI-assistent til å gjøre?
+   Hvilke oppgaver har du som det hadde vært fint å få en KI-assistent til å gjøre?
