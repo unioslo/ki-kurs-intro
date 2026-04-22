@@ -4,6 +4,7 @@ Kunstig intelligens
 
 KI er en samlebetegnelse for teknologi som utfører en oppgave på en måte som etterligner menneskelig intelligens, i tekst, bilde, tale eller tall. 
 Veldig grovt forklart er dagens KI komplekse statistiske modeller inspirert av hvordan hjernens nevrale nettverk er bygget opp. 
+Det nevrale nettverket *trenes opp* ved å fore det massive mengder tekst (eller bilder eller audio avhengig av hva modellen er spesialisert på) helt til modellen har *lært* hvordan tolke og identifisere det den har blitt trent på. 
 
 KI er ikke en ny teknologi, den har utviklet seg over flere tiår. Allerede i 1956 ble det etablert et forskningsfelt innen KI.
 Men siden ChatGTP ble sluppet i 2022 har vi sett en eksplosjonsartet utvikling av KI. ChatGPT var milevis fra de "dumme chatbottene" som kun klarte å svare på helt enkle spørsmål. 
