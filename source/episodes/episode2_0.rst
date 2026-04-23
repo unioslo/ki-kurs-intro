@@ -19,9 +19,8 @@ Men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
 De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære.
 
-Dette gir ulikt utslag for ulike bruksområder. 
+Dette gir ulikt utslag for ulike bruksområder.
 For eksempel er det for visse fagområder lite informasjon på nett, og da vil naturligvis også språkmodellen ha lite informasjon om disse områdene.
-Det betyr at modellene har tilgang til mindre eller kanskje ingen informasjon på noen områder!
 
 
 ~~~~~~~~~~
