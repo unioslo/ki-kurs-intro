@@ -47,6 +47,15 @@ Hva skjer når du stiller et spørsmål:
 
 .. uio-colorbox-3:: Fordypning
 
+   .. uio-detail:: Tokens og tokenisering
+
+      Før språkmodellen kan behandle teksten må den deles opp i mindre biter, kalt tokens.
+      Hvert token gjøres om til et tall, fordi datamaskiner regner på tall.
+      For eksempel kan ordet "er" representeres av tallet *2781* hvert sted i teksten det står.
+      Et token kan være et helt ord, men det kan også være en mindre del av et ord.
+      Denne oppdelingen kalles tokenisering, og programmet som gjør oppdelingen kalles en tokeniserer (tokenizer).
+      På websiden `Tiktokenizer <https://tiktokenizer.vercel.app/?model=cl100k_base>`__ kan du skrive inn tekst og se hvordan den deles opp i tokens.
+
    .. uio-detail:: Determinisme/forutsigbarhet
 
       Språkmodeller kan være deterministiske (forutsigbare) hvis de alltid bruker det mest sannsynlige ordet.
@@ -74,6 +83,6 @@ Hva skjer når du stiller et spørsmål:
 
    .. uio-detail:: GPT simulator
 
-      Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer! 
+      Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer!
 
       https://poloclub.github.io/transformer-explainer/
