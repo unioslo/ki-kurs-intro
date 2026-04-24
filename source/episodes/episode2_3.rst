@@ -5,7 +5,7 @@ Siden store språkmodeller ikke har kunnskap, kan de finne på ting som ikke ste
 Det kalles ofte *hallusinering*, men har egentlig ingenting med menneskelig hallusinering å gjøre.
 Derfor er det noen som foretrekker å kalle det *konfabulering* når språkmodeller finner på ting.
 
-Eksempler på hallusinering
+Eksempler på at språkmodeller finner på ting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
@@ -36,10 +36,10 @@ Det er mange årsaker til at modellene finner på ting:
    At språkmodeller finner på ting er ikke en "bug" som kan fikses fullstendig.
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
 
-Hallusinering med selvtillit
+"Hallusinering" med selvtillit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Det er et stort problem at LLM-er ofte hallusinerer med stor *selvsikkerhet*.
+Det er et stort problem at LLM-er ofte finner på ting med stor *selvsikkerhet*.
 De sier ikke: "Jeg er usikker, men …".
 I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
 Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
@@ -51,7 +51,7 @@ Hva med internett-søk?
 Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
 Men det garanterer ikke at svaret er riktig.
 Det er fordi LLM-en fortsatt må *tolke* og *oppsummere* informasjonen den finner, og det gjør den på samme måte som alltid – ved å generere tekst basert på mønstre.
-Modellen kan derfor fortsatt hallusinere selv om den har tilgang til korrekt informasjon fra nettet.
+Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt informasjon fra nettet.
 
 .. uio-info:: Eksempel
 
