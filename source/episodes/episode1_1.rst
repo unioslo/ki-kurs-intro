@@ -1,6 +1,6 @@
 
 Kunstig intelligens
-================================
+====================
 
 KI er en samlebetegnelse for teknologi som utfører en oppgave på en måte som etterligner menneskelig intelligens, i tekst, bilde, tale eller tall. 
 Veldig grovt forklart er dagens KI komplekse statistiske modeller inspirert av hvordan hjernens nevrale nettverk er bygget opp. 

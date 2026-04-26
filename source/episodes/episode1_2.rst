@@ -1,20 +1,24 @@
 Generativ KI
-====================
+==============
+
 Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på.
-ChatGPT, Copilot og NotebookLM er eksempler på generativ KI som kan lage både tekst og bilder.
-Generativ kunstig intelligens er programmer som *lager* (genererer) nytt innhold, i stedet for bare å analysere eller klassifisere det som finnes fra før.
-Det er ofte tekst eller bilder vi bruker generativ KI til å lage.
-Men generativ KI kan også lage andre typer data, for eksempel tabeller.
-I dette kurset skal vi for det meste ta for oss generativ KI.
+ChatGPT, Copilot og NotebookLM er eksempler på generativ KI.
 
-Generativ KI trenes opp på store mengder data av den typen den skal generere.
-For å "lære" bruker KI-systemet det som kalles *maskinlæring*, som du kan lære mer om under "Fordypning" nedenfor.
+Det kalles *generativ kunstig intelligens* fordi KIen *genererer* (lager) nytt innhold som tekst, bilder eller lyd, 
+til forskjell fra for eksempel *diskriminativ*  kunstig intelligens som "bare" klassifiserer det som finnes fra før. 
+Et eksempel på sistnevnte er en KI som kan "se" gjennom bilder av katter og hunder, og "si" hvilke som er kattebilder og hvilke som er hundebilder.
 
-Det finnes forskjellige måter å dele inn kunstig intelligens i ulike typer.
-Et vanlig skille går mellom *generativ*, *diskriminativ* og *prediktiv* kunstig intelligens.
-Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra data.
+Generativ og deskriptiv KI er eksempler på er en måte man deler inn kunstig intelligens på. 
+I denne klassifiseringen har vi i tillegg *prediktiv* kunstig intelligens som har som mål å *prediktere* (beregne/forutse) en sannsynlig utvikling av gitt data. 
+Her er et klassisk eksempel værmeldingen.
+
+Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra (store mengder) data. 
 Forskjellen er hva slags type oppgave de er laget for.
-Du kan lese litt om hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
+Du kan lese litt mer om makskinlæring og om hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
+
+I dette kurset vil du hovedsakelig lære om generativ kunstig intelligens som bygger på store språkmodeller og derfor genererer tekst.
+Du vil også lære litt om KI til bildegenererig, som er en annen type generativ KI, men da spesialisert på bilder. 
+
 
 .. uio-colorbox-3:: Fordypning
 
