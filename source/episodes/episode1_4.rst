@@ -6,6 +6,4 @@ Store språkmodeller er selve "motoren" eller "hjernen" i tjenester som GPT UiO,
 
 Eksempler på LLMer er GPT-5.4 eller Gemini 3. 
 
-Tenk på dette som en enorm, superintelligent hjerne, men uten noen kropp. 
-Den kan utrolig mye, men den har ingen munn til å snakke med, ingen hukommelse, og ingen skrivepult å jobbe ved. 
-Den er ren regnekraft og språkforståelse.
+Vi kan ikke kommunisere med LLMen uten at det er noen systemer rundt den, som f.eks. en chat tjeneste.
