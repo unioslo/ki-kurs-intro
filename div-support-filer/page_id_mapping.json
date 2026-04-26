@@ -22,22 +22,22 @@
   },
   "episode1_3.html": {
     "page_id": 396877,
-    "url": "store-sprakmodeller-llm",
-    "title": "Store språkmodeller (LLM)",
+    "url": "ki-okosystemet-2",
+    "title": "KI økosystemet",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode1_4.html": {
     "page_id": 395874,
-    "url": "ki-agenter",
-    "title": "KI-agenter",
+    "url": "sprakmodellen-llmen",
+    "title": "Språkmodellen - LLMen",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode1_5.html": {
     "page_id": 399001,
-    "url": "ki-okosystemet",
-    "title": "KI økosystemet",
+    "url": "ki-tjenester",
+    "title": "KI-tjenester",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
@@ -194,5 +194,19 @@
     "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
+  },
+  "episode1_6.html": {
+    "page_id": 402125,
+    "url": "ki-assistenter",
+    "title": "KI-assistenter",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode1_7.html": {
+    "page_id": 402126,
+    "url": "ki-agenter-2",
+    "title": "KI-agenter",
+    "module_id": "N/A",
+    "module_name": "N/A"
   }
 }
