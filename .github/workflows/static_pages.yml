@@ -41,6 +41,8 @@ jobs:
         run: |
           make html
           ls -l
+          ls -l _build
+          ls -l source
         working-directory: ./
 
       # Upload the book's HTML as an artifact
