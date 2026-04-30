@@ -2,7 +2,6 @@
 Hvordan genererer LLM-er tekst?
 ================================
 
-For å forstå språkmodeller bedre, la oss se på en forenklet forklaring av hvordan de fungerer:
 
 .. figure:: ../images/ChatGPT_howLLMswork.png
    :align: center
