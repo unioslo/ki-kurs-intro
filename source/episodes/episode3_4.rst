@@ -27,7 +27,7 @@ Sosiale kostnader
 --------------------------------
 
 Trening og bruk av kunstig intelligens har også sosiale kostnader.
-Noen av KI-leverandørene bruker underleverandører i lavkostland som betaler ansatte svært dårlig. [ILO]_
+Noen av KI-leverandørene bruker underleverandører i lavkostland som betaler ansatte dårlig. [ILO]_
 De ansatte hos underleverandørene kan også ha midlertidige stillinger med dårlige arbeidsvilkår.
 Noen er kritiske til at KI-leverandørene bruker enorme beløp på å bygge datasentre,
 men ikke betaler menneskene som er med på å lage modellene skikkelig.
