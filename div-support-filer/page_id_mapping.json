@@ -208,5 +208,12 @@
     "title": "KI-agenter",
     "module_id": "N/A",
     "module_name": "N/A"
+  },
+  "episode1_8.html": {
+    "page_id": 402786,
+    "url": "oppsummering-av-episode-1",
+    "title": "Oppsummering av Episode 1",
+    "module_id": 233819,
+    "module_name": "Grunnbegreper i kunstig intelligens"
   }
 }

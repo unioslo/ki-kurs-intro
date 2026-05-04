@@ -26,11 +26,12 @@ Dette gjør at man kan lage en mer nøyaktig "chat-bot" som har ekspertkunnskap 
 
         * Bruker-instruksjon: Hva sier Pytagoras læresetning?
         * KI-assistent instruksjon: Aldri gi studenten direkte svar på et spørsmål, men still spørsmål eller gi hint som kan hjelpe studenten til å komme på rett svar selv.
-        * KI-svar: Ja, hva sier den tro? Kan det ha noe med hypotenus å gjøre?
+        * KI-svar: Jeg gir deg ikke svaret, men kan gi deg et hint: Kan det ha noe med hypotenus å gjøre? 
 
 
 Hva er forskjellen på en KI-assistent og en *KI-agent*?
 ---------------------------------------------------------
+Men vi har også *KI-agenter*: hva er det sammenlignet med en KI-assistent? Hovedforskjellen er at agenten kan utføre *handlinger*.
 
 .. canvas-tabs::
 

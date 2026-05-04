@@ -12,15 +12,20 @@ En agent kan for eksempel hente informasjon fra andre systemer som internett ell
 den kan kanskje bestille togbiletter for deg, eller slå av en datamaskin som har symptomer på å være under angrep utenfra. 
 Eller helt andre ting avhengig av hva som er formålet med akkurat den agenten.
 
-.. canvas-tabs:: Hvis jeg ber henholdsvis en KI-assistent og en KI-agent om å bestille en flybillett fra Norwegian for meg så vil
 
-    .. canvas-tab:: KI-assistenten
+.. uio-colorbox-3:: 
 
-        *fortelle meg* hvordan bestille billetten
+    Hvis jeg ber henholdsvis en KI-assistent og en KI-agent om å bestille en flybillett fra Norwegian for meg så vil
+    
+    .. canvas-tabs:: 
 
-    .. canvas-tab:: KI-agenten
+        .. canvas-tab:: KI-assistenten
 
-        gå til norwegian.no og *bestille* den for meg. 
+            *fortelle meg* hvordan bestille flybilletten
+
+        .. canvas-tab:: KI-agenten
+
+            gå til norwegian.no og *bestille* den for meg. 
 
 
 Risiko knyttet til KI-agenter
