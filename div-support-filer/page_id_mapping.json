@@ -139,49 +139,42 @@
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
-  "episode5_0.html": {
+  "episode4_0.html": {
     "page_id": 395896,
     "url": "ki-tjenester-ved-uio-2",
     "title": "KI-tjenester ved UiO",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode5_1.html": {
-    "page_id": 395898,
-    "url": "hvorfor-bruke-uios-godkjente-tjenester",
-    "title": "Hvorfor bruke UiOs godkjente tjenester?",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode5_3.html": {
+  "episode4_1.html": {
     "page_id": 395899,
     "url": "gpt-uio",
     "title": "GPT UiO",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode5_4.html": {
-    "page_id": 398612,
-    "url": "notebooklm",
-    "title": "NotebookLM",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode5_5.html": {
+  "episode4_2.html": {
     "page_id": 395901,
     "url": "autotekst-og-nettskjema-diktafon",
     "title": "Autotekst og Nettskjema-diktafon",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode5_6.html": {
+  "episode4_3.html": {
+    "page_id": 398612,
+    "url": "notebooklm",
+    "title": "NotebookLM",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_4.html": {
     "page_id": 398615,
     "url": "microsoft-copilot-3",
     "title": "Microsoft Copilot",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode5_7.html": {
+  "episode4_5.html": {
     "page_id": 398616,
     "url": "api-tilgang",
     "title": "API tilgang",

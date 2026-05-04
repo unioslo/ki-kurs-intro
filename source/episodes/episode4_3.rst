@@ -1,6 +1,6 @@
 
 NotebookLM
-=======================
+===========
 
 NotebookLM er en KI-drevet assistent fra Google spesialisert for å arbeide med dokumenter. 
 

@@ -1,6 +1,6 @@
 
-Microsoft Copilot 
-===================
+Microsoft Copilot
+=================
 
 Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til internett søk. Den kan jobbe både med tekst, bilder og videoer.  
 Den har endel innebygde instruksjonsforslag (prompt gallery) for å hjelpe deg igang, og er derfor en fin tjeneste å benytte om du ønsker KI assistanse som er  intuitiv og enkel.

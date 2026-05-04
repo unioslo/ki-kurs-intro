@@ -1,6 +1,6 @@
 
 GPT UiO
-=======================
+========
 
 GPT UiO er UiOs personverntrygge KI-chat. 
 

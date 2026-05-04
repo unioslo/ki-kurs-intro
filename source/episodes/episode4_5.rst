@@ -1,5 +1,5 @@
 API tilgang
-==============
+============
 
 
 API (Application Programming Interface) er en teknisk "bro" som lar ulike programvarer snakke med hverandre.
