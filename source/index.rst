@@ -46,11 +46,10 @@ Velkommen til grunnkurs i generativ KI!
 
    episodes/episode5_0
    episodes/episode5_1
+   episodes/episode5_2
    episodes/episode5_3
    episodes/episode5_4
    episodes/episode5_5
-   episodes/episode5_6
-   episodes/episode5_7
    episodes/episode5_8
 
 
