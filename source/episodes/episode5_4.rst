@@ -1,34 +1,34 @@
 
-NotebookLM
-=======================
+Microsoft Copilot 
+===================
 
-NotebookLM er en KI-drevet assistent fra Google spesialisert for å arbeide med dokumenter. 
+Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til internett søk. Den kan jobbe både med tekst, bilder og videoer.  
+Den har endel innebygde instruksjonsforslag (prompt gallery) for å hjelpe deg igang, og er derfor en fin tjeneste å benytte om du ønsker KI assistanse som er  intuitiv og enkel.
 
-I NotebookLM bygger man seg først en egen "kunnskapshub" som inneholder dokumenter og lenker til nettsteder, eller til og med lydopptak fra forelesninger. 
-Dette er grunnlaget NotebookLM benytter for å generere svar på spørsmål, eller produkter som oppsummeringer i tekst eller audio, quizer eller presentasjoner. 
-NotebookLM har med andre ord en hel del spennende funksjonaliteter. 
+MS Copilot ved UiO er ikke integrert med de andre Microsoft produktene. 
+Du kan allikevel benytte MS Copilot chat tjenesten til å f.eks. laste opp en Powerpoint presentasjon og be MS Copilot om å lage illustrasjoner, lage oppsummeringer eller annet. 
 
-NotebookLM er tro mot kildene du benytter, og du kan derfor oppleve å få mer presise svar enn for eksempel ved bruk av gpt.uio.no. 
-Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
+Vær oppmerksom på at tjenesten i sin helhet kjører på utenlandske servere. UiO har Databehandleravtale med Microsoft, 
+og dette sikrer at data ikke lekkes utenfor organisasjonen, og ikke blir benyttet til å trene modeller videre. 
+Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grønne data (åpne data.) 
+Du må derfor være spesielt forsiktig når du benytter tjenesten. 
+Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot. 
 
 Nøkkelpunkter
 --------------
 
-* KI tjeneste fra Google
-* Benytter Google sin Gemini språkmodell
-* Spesialisert på arbeid mot dokumenter
-* Du må ha Google Workspace konto gjennom UiO for å få tilgang
+* Microsoft sin egen KI tjeneste
+* Generering av tekst, bilder og videoer
+* Kjører i sin helhet på utenlandske servere
+* Kun godkjent for grønne data
 * Databehandleravtale på plass
-* Gratis for ansatte og studenter ved UiO
-* *Tjenesten skal kun brukes med UiO konto* - sjekk at du er logget inn med UiO konto og ikke din egen private Google konto!
+* Du trenger kun din UiO brukerkonto for å få tilgang
 
 .. uio-dont:: Viktig
 
-   * Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: Ikke last opp dokumenter du ikke har rettigheter til å dele.
-   * Ikke last opp dokumenter som inneholder sensitiv informasjon. NotebookLM er kun godkjent for opptil gule data.
+   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot.
 
-.. uio-source:: Lenke til UiOs nettsider
+.. uio-source::  Lenker til UiOs nettsider
 
-   `NotebookLM på UiO sine nettsider <https://www.uio.no/tjenester/it/ki/notebooklm>`_
-
-   Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM.
+   * `Om Microsoft Copilot <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
+   * `Retningslinjer for bruk av Copilot <https://www.uio.no/tjenester/it/ki/copilot/hjelp/index.html>`_
