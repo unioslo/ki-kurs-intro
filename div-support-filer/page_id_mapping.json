@@ -41,6 +41,27 @@
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
+  "episode1_6.html": {
+    "page_id": 402125,
+    "url": "ki-assistenter",
+    "title": "KI-assistenter",
+    "module_id": 233819,
+    "module_name": "Grunnbegreper i kunstig intelligens"
+  },
+  "episode1_7.html": {
+    "page_id": 402126,
+    "url": "ki-agenter-2",
+    "title": "KI-agenter",
+    "module_id": 233819,
+    "module_name": "Grunnbegreper i kunstig intelligens"
+  },
+  "episode1_8.html": {
+    "page_id": 402786,
+    "url": "oppsummering-av-episode-1",
+    "title": "Oppsummering av Episode 1",
+    "module_id": 233819,
+    "module_name": "Grunnbegreper i kunstig intelligens"
+  },
   "episode2_0.html": {
     "page_id": 395875,
     "url": "hvordan-fungerer-sprakmodeller",
@@ -194,26 +215,5 @@
     "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
-  },
-  "episode1_6.html": {
-    "page_id": 402125,
-    "url": "ki-assistenter",
-    "title": "KI-assistenter",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "episode1_7.html": {
-    "page_id": 402126,
-    "url": "ki-agenter-2",
-    "title": "KI-agenter",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "episode1_8.html": {
-    "page_id": 402786,
-    "url": "oppsummering-av-episode-1",
-    "title": "Oppsummering av Episode 1",
-    "module_id": 233819,
-    "module_name": "Grunnbegreper i kunstig intelligens"
   }
 }
