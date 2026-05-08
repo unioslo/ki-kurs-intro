@@ -11,7 +11,7 @@ Mange KI-tjenester tilbyr i tillegg funksjoner som nettsøk og mulighet til å l
 Kombinasjonen av selve språkmodellen og all funksjonaliteten rundt den er det vi kaller en KI-tjeneste.
 
 Med noen KI-tjenester kan man velge hvilken språkmodell man benytter. I GPT UiO har man en rekke forskjellige språkmodeller å velge mellom.
-KI-tjenesten er den sammen, man bare "bytter ut hjernen". 
+KI-tjenesten er den sammen, man bare byttet ut motoren. 
 
 
 .. uio-colorbox-3:: 
