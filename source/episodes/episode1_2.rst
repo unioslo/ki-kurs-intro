@@ -4,9 +4,9 @@ Generativ KI
 Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på.
 ChatGPT, Copilot og NotebookLM er eksempler på generativ KI.
 
-Det kalles *generativ kunstig intelligens* fordi den *genererer* (lager) helt nytt innhold som tekst, bilder eller lyd. 
-En annen type KI er *diskriminativ*  kunstig intelligens som "bare" klassifiserer det som finnes fra før. 
-Generativ og diskriminativ KI er eksempler på er en måte man deler inn kunstig intelligens på. 
+Det kalles *generativ kunstig intelligens* fordi den *genererer* (lager) helt nytt innhold som for eksempel tekst, bilde eller lyd. 
+En annen type KI er *diskriminativ*  kunstig intelligens som klassifiserer det som finnes fra før. 
+Generativ og diskriminativ KI er èn måte å bryte opp hva kunstig intelligens er. 
 I denne klassifiseringen har vi i tillegg *prediktiv* kunstig intelligens som har som mål å *prediktere* (beregne/forutse) en sannsynlig utvikling av gitt data. 
 
 .. uio-colorbox-3:: 
@@ -29,12 +29,12 @@ I denne klassifiseringen har vi i tillegg *prediktiv* kunstig intelligens som ha
 
 
 
-Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra (store mengder) data. 
+Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra store mengder data. 
 Forskjellen er hva slags type oppgave de er laget for.
-Du kan lese litt mer om makskinlæring og om hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
+Du kan lese litt mer om makskinlæring og hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
 
 I dette kurset vil du hovedsakelig lære om generativ kunstig intelligens som bygger på store språkmodeller og derfor genererer tekst.
-Du vil også lære litt om KI til bildegenererig, som er en annen type generativ KI, men da spesialisert på bilder. 
+Du vil også lære litt om KI til bildegenererig, som er en annen type generativ KI, spesialisert på bilder. 
 
 
 .. uio-colorbox-3:: Fordypning
