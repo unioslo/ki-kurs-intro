@@ -16,7 +16,7 @@ En språkmodell er ingenting alene
 
 Men en språkmodell kan ikke brukes direkte,den må være del av et helt system.
 
-Tenk på språkmodellen som en motor i en bil. Motoren alene kan ikke kjøre deg noe sted. For at du skal kunne benytte deg av språkmodellen trenger du også: 
+Tenk på språkmodellen som en motor i en bil. Motoren alene kan ikke kjøre deg noe sted, du trenger hjul, karosseri, et ratt, sete, pedaler osv. For at du skal kunne benytte deg av motoren eller språkmodellen trenger du også: 
 
 * **Chat-grensesnitt** - så du kan kommunisere med modellen
 * **Brukerautentisering** - så systemet vet hvem du er
@@ -25,7 +25,7 @@ Tenk på språkmodellen som en motor i en bil. Motoren alene kan ikke kjøre deg
 * **API-er** - for å integrere med andre verktøy
 
 
-Derfor snakker vi ofte om "KI-tjenester" eller "KI-verktøy" når vi mener hele pakken - ikke bare språkmodellen. 
+Bregepet "KI-tjenester" eller "KI-verktøy" brukes når vi refererer til hele pakken, og ikke bare språkmodellen.  
 I KI-tjenester kan du ofte velge hvilken KI-modell du benytter. KI-tjenesten er den samme, men motoren kan byttes ut. 
 
 
