@@ -1,5 +1,5 @@
 
-Hvordan genererer LLM-er tekst?
+Hvordan genererer språkmodeller tekst?
 ================================
 
 
