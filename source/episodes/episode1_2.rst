@@ -28,10 +28,15 @@ I denne klassifiseringen har vi i tillegg *prediktiv* kunstig intelligens som ha
 			Her er et klassisk eksempel værmeldingen.
 
 
+Ny versjon: 
+Alle tre bygger på det som kalles *maskinlæring*. Maskinlæring er en metode der teknologien lærer fra store mengder date, og der systemet finner mønstre på egen hånd.
+Forskjellen på dem er hva slags type oppgave de er laget for. Du kan lære mer om makskinlæring og hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning".
 
+Gammel versjon:
 Alle tre er ulike former for *maskinlæring*, som betyr at algoritmene trenes opp ved å lære fra store mengder data. 
 Forskjellen er hva slags type oppgave de er laget for.
 Du kan lese litt mer om makskinlæring og hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
+
 
 I dette kurset vil du hovedsakelig lære om generativ kunstig intelligens som bygger på store språkmodeller og derfor genererer tekst.
 Du vil også lære litt om KI til bildegenererig, som er en annen type generativ KI, spesialisert på bilder. 
