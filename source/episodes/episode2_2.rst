@@ -1,5 +1,5 @@
-LLM-er har *ikke* kunnskap
-==============================
+Språkmodeller har *ikke* kunnskap
+==============================================
 
 Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
 De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
