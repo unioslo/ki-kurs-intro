@@ -1,4 +1,4 @@
-Oppsummering av Episode 1
+Oppsummering av kapittel 1
 ==========================
 
 Du har nå fått en grunnleggende forståelse av kunstig intelligens og generativ KI:
