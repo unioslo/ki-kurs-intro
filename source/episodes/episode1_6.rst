@@ -31,7 +31,7 @@ Dette gjør at man kan lage en mer nøyaktig "chat-bot" som har ekspertkunnskap 
 
 Hva er forskjellen på en KI-assistent og en *KI-agent*?
 ---------------------------------------------------------
-Men vi har også *KI-agenter*: hva er det sammenlignet med en KI-assistent? Hovedforskjellen er at agenten kan utføre *handlinger*.
+I tillegg til KI-assistender finnes også *KI-agenter*. Hovedforskjellen mellom disse to er at agenten kan utføre *handlinger*.
 
 .. canvas-tabs::
 
