@@ -4,7 +4,7 @@ Generativ KI
 Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på.
 ChatGPT, Copilot og NotebookLM er eksempler på generativ KI.
 
-Det kalles *generativ kunstig intelligens* fordi KIen *genererer* (lager) nytt innhold som tekst, bilder eller lyd. 
+Det kalles *generativ kunstig intelligens* fordi den *genererer* (lager) helt nytt innhold som tekst, bilder eller lyd. 
 En annen type KI er *diskriminativ*  kunstig intelligens som "bare" klassifiserer det som finnes fra før. 
 Generativ og diskriminativ KI er eksempler på er en måte man deler inn kunstig intelligens på. 
 I denne klassifiseringen har vi i tillegg *prediktiv* kunstig intelligens som har som mål å *prediktere* (beregne/forutse) en sannsynlig utvikling av gitt data. 
