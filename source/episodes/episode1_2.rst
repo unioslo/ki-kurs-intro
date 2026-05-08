@@ -38,7 +38,7 @@ Forskjellen er hva slags type oppgave de er laget for.
 Du kan lese litt mer om makskinlæring og hva som skiller diskriminativ og prediktiv KI fra generativ KI under "Fordypning" nedenfor.
 
 
-I dette kurset vil du hovedsakelig lære om generativ kunstig intelligens som bygger på store språkmodeller og derfor genererer tekst.
+I dette kurset vil du hovedsakelig lære om generativ kunstig intelligens, som bygger på store språkmodeller og derfor genererer tekst.
 Du vil også lære litt om KI til bildegenererig, som er en annen type generativ KI, spesialisert på bilder. 
 
 
