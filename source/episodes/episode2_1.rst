@@ -1,6 +1,6 @@
 
 Hvordan genererer språkmodeller tekst?
-================================
+================================================
 
 
 .. figure:: ../images/ChatGPT_howLLMswork.png
