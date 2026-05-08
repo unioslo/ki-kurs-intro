@@ -3,7 +3,7 @@ Hvordan fungerer språkmodeller?
 
 I denne delen av kurset skal du lære mer om hvordan store språkmodeller (LLM-er) fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.
 
-En type enkle språkmodeller som mange har brukt, er smarte tastaturer på mobiltelefoner.
+En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
 Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
 Vi kan si at forslaget er *betinget* av teksten du har skrevet, som vi kaller *konteksten*.
