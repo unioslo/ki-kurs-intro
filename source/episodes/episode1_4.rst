@@ -14,9 +14,9 @@ En *språkmodell* er en KI-modell av typen *generativ KI* som har trent på enor
 En språkmodell er ingenting alene
 ----------------------------------
 
-Men en språkmodell kan ikke brukes direkte - den må pakkes inn i et system.
+Men en språkmodell kan ikke brukes direkte,den må være del av et helt system.
 
-Tenk på språkmodellen som en motor i en bil: Motoren alene kan ikke kjøre deg noe sted. Du trenger også ting som:
+Tenk på språkmodellen som en motor i en bil. Motoren alene kan ikke kjøre deg noe sted. For at du skal kunne benytte deg av språkmodellen trenger du også: 
 
 * **Chat-grensesnitt** - så du kan kommunisere med modellen
 * **Brukerautentisering** - så systemet vet hvem du er
@@ -26,7 +26,7 @@ Tenk på språkmodellen som en motor i en bil: Motoren alene kan ikke kjøre deg
 
 
 Derfor snakker vi ofte om "KI-tjenester" eller "KI-verktøy" når vi mener hele pakken - ikke bare språkmodellen. 
-I KI-tjenester kan man ofte velge hvilken KI-modell man benytter i bunn. KI-tjenesten er den samme, men hjernen eller motoren kan byttes ut. 
+I KI-tjenester kan du ofte velge hvilken KI-modell du benytter. KI-tjenesten er den samme, men motoren kan byttes ut. 
 
 
 .. uio-colorbox-3:: Eksempler på KI-modell versus KI-tjenesten
