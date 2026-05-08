@@ -1,9 +1,7 @@
 Oppsummering av kapittel 1
 ==========================
 
-Du har nå fått en grunnleggende forståelse av kunstig intelligens og generativ KI:
-
-**Hva du har lært:**
+**I dette kapitellet har du lært:**
 
 * **Kunstig intelligens (KI)** er teknologi som etterligner menneskelig intelligens, basert på komplekse statistiske modeller inspirert av hjernens nevrale nettverk
 
