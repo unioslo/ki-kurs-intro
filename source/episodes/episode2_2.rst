@@ -1,4 +1,4 @@
-Språkmodeller har *ikke* kunnskap
+Språkmodeller har ikke *kunnskap*
 ==============================================
 
 Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
