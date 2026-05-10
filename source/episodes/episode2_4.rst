@@ -12,9 +12,9 @@ Korte samtaler gir bedre svar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar.
-Særlig hvis du bytter tema er det viktig å starte en ny samtale.
-La oss si at du først har stilt noen spørsmål om økonomireglementet til UiO.
-Hvis du så stiller spørsmål om hvordan du formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO.
+Særlig når du bytter tema, er det viktig å starte en ny samtale.
+Se for deg at du har stilt KI spørsmål om økonomireglementet til UiO.
+Hvis du så stiller spørsmål om hvordan man formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO.
 Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.
 
 Men selv om du ikke skifter tema, kan modellen gi dårligere svar når samtalen blir lengre.
