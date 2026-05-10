@@ -11,6 +11,6 @@ Etter dette kan du:
 * Forklare hvorfor KI-modeller ikke er pålitelige 
 * Vurdere når generativ KI er pålitelig – og når den ikke er det
 * Bruke strategier for å kvalitetssikre KI-generert innhold
-* Skrive gode og effektive prompts
+* Skrive gode og effektive instruksjoner (promts)
 * Bruke preprompting for gjentakende oppgaver
 
