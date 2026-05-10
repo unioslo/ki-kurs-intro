@@ -7,7 +7,7 @@ I dette kapitelet skal du lære hvorfor det er viktig å bruke UiOs godkjente tj
 UiOs godkjente tjenester
 -------------------------
 
-Når du skal bruke KI-tjenester på *UiO data* så *skal* du benytte de godkjente tjenestene.
+Når du skal bruke KI-tjenester på *UiO data*, *skal* de godkjente tjenestene brukes.
 Grunnen til det er at UiO har databehandleravtale med leverandørene for disse tjenestene, og det sikrer at dataene som utveksles med tjenestene blir behandlet på en slik måte at GDPR kravene overholdes.
 Dette innebærer blant annet at data blir lagret på servere i Europa, og at de ikke blir brukt til å trene KI modeller videre.
 
