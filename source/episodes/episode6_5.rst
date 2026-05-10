@@ -1,12 +1,12 @@
 
-Neste steg i din KI-reise
+Neste steg i din læringsreise
 ==========================
 
 .. uio-info::
 
-   **Din handlingsplan:**
+   **Din læringsplan:**
 
-   **De neste 7 dagene:**
+   **Den første uken:**
 
    1. **Utforsk** UiOs KI-tjenester - søk tilgang hvis nødvendig
    2. **Prøv** et KI-verktøy på én konkret arbeidsoppgave
@@ -14,7 +14,9 @@ Neste steg i din KI-reise
 
    **Den neste måneden:**
 
-   1. **Lag** en samling av prompts som fungerer for dine oppgaver
+   1. Velg 3 prosesser eller oppgaver som du tror egner seg for å bruke KI. (Hva kan være hjelpeord her) 
+  2. Kartlegg prosessen ved å tegne opp stegene. bla bla bla. 
+**Lag** en samling av prompts som fungerer for dine oppgaver
    2. **Del** erfaringer med minimum én kollega
    3. **Identifiser** 3 arbeidsoppgaver der KI kan spare deg tid
 
