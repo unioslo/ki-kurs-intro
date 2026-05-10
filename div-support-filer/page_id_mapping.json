@@ -57,8 +57,8 @@
   },
   "episode1_8.html": {
     "page_id": 402786,
-    "url": "oppsummering-av-episode-1",
-    "title": "Oppsummering av Episode 1",
+    "url": "oppsummering-av-kapittel-1",
+    "title": "Oppsummering av kapittel 1",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
@@ -71,15 +71,15 @@
   },
   "episode2_1.html": {
     "page_id": 395877,
-    "url": "hvordan-genererer-llm-er-tekst-2",
-    "title": "Hvordan genererer LLM-er tekst?",
+    "url": "hvordan-genererer-sprakmodeller-tekst",
+    "title": "Hvordan genererer språkmodeller tekst?",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode2_2.html": {
     "page_id": 396878,
-    "url": "llm-er-har-ikke-kunnskap-2",
-    "title": "LLM-er har ikke kunnskap",
+    "url": "sprakmodeller-har-ikke-kunnskap",
+    "title": "Språkmodeller har ikke kunnskap",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
@@ -162,8 +162,8 @@
   },
   "episode4_3.html": {
     "page_id": 398612,
-    "url": "notebooklm",
-    "title": "NotebookLM",
+    "url": "gemini-og-notebooklm",
+    "title": "Gemini og NotebookLM",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
