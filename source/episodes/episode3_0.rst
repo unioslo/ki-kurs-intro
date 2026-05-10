@@ -6,7 +6,7 @@ I dette kapittelet lærer du hva som er trygg bruk av KI, hvordan du vurderer og
 
 ~~~~~~~~~~~~~~~
 
-Etter denne episoden vil du kunne:
+Etter dette kapittelet vil du kunne:
 
 * Forklare hvorfor KI-modeller ikke er pålitelige 
 * Vurdere når generativ KI er pålitelig – og når den ikke er det
