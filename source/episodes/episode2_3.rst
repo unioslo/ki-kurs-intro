@@ -6,7 +6,7 @@ Det kalles ofte *hallusinering*, men har egentlig ingenting med menneskelig hall
 Derfor er det noen som foretrekker å kalle det *konfabulering* når språkmodeller finner på ting.
 
 Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
-Her er noen eksempler, det finnes flere.
+Her er noen eksempler: 
 
 * **Feil fakta**: Modellen oppgir feil datoer, tall eller navn.
 * **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
