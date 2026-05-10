@@ -2,7 +2,7 @@
 Når kan du stole på generativ KI?
 ==================================
 
-Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av hva du bruker den til. En enkel huskeregel er å tenke på risikoen ved å få et feil svar. Hvis feil eller unøyaktigheter fra modellen ikke medfører risiko, kan dette være et godt bruksområde. Hvis det mefører risiko må du kunne ettergå informasjonen modellen gir deg før videre bruk, eller avstå fra å bruke verktøyet. Nedenfor er eksempler på bruk med lav, medium og høy risiko. 
+Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av hva du bruker den til. En enkel huskeregel er å vurdere risikoen for å få et feil svar. Hvis feil eller unøyaktigheter fra modellen ikke medfører risiko, kan dette være et godt bruksområde. Hvis det mefører risiko må du kunne ettergå informasjonen modellen gir deg før videre bruk, eller avstå fra å bruke verktøyet. Nedenfor er eksempler på bruk med lav, medium og høy risiko. 
 
 .. canvas-tabs::
 
