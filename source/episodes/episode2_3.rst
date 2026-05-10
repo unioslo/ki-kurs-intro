@@ -1,7 +1,7 @@
 Språkmodeller finner på ting
 ================================================
 
-Siden store språkmodeller ikke har kunnskap, kan de finne på ting som ikke stemmer.
+Store språkmodeller har ikke kunnskap, og kan derfor finne på ting som ikke stemmer.
 Det kalles ofte *hallusinering*, men har egentlig ingenting med menneskelig hallusinering å gjøre.
 Derfor er det noen som foretrekker å kalle det *konfabulering* når språkmodeller finner på ting.
 
