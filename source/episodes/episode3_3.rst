@@ -28,7 +28,7 @@ Prinsipper for gode instruksjoner
 1. Vær spesifikk 
 -----------------------
 
-Dårlig: «Skriv en e-post.»  Bedre: «Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold uke 15. Tonen skal være vennlig men profesjonell.»
+Dårlig: «Skriv en e-post.»  Bedre: «Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold i uke 15. Tonen skal være vennlig men profesjonell.»
 Den gode instruksjonen spesifiserer hva e-posten skal handle om, hvem den er til, og hvilken tone den skal ha.
 
 2. Gi kontekst
@@ -87,7 +87,7 @@ Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det
 Pre-instruksjon og KI-assistenter
 ==================================
 
-Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner det seg å investere tid i å skrive en god pre-instruksjon – en grunnleggende instruksjon som definerer rollen, oppgaven og rammene for all videre kommunikasjon. I GPT-UiO kan du lagre dette som en KI-assistent. Du vil da ha en spesialtilpasset samtalepartner som kan gjenbrukes. 
+Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner det seg å investere tid i å skrive en god pre-instruksjon – en grunnleggende instruksjon som definerer rollen, oppgaven og rammene for all videre kommunikasjon. I GPT-UiO kan du lagre dette som en KI-assistent. Du vil da ha en spesialtilpasset samtalepartner som kan gjenbrukes. Mer info om KI-assistenter i GPT UiO finnes her: https://www.uio.no/tjenester/it/ki/gpt-uio/hjelp/opprette-og-bruke-ki-assistenter.html
 
 
 .. uio-viktig:: Tips: 
@@ -100,7 +100,7 @@ Praktisk øvelse: Forbedre insturksjoner
 ========================================
 Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem? 
 
-* 1. Skriv noe fint
+* 1. Skriv noe fint om min kollega
 * 2. Hjelp meg
 * 3. Hva med den tingen?
 * 4. Lag en liste
@@ -139,4 +139,4 @@ Prompting
 •	Definer rolle, oppgave, informasjonstype, ønsket output og hva du ikke vil ha
 •	Be modellen stille spørsmål hvis noe er uklart
 •	Iterer: første svar er sjelden perfekt, og det er greit
-•	Invester i preprompts for oppgaver du gjør om og om igjen
+•	Invester tid i å lage preprompts for oppgaver du gjør om og om igjen - gjerne med en KI-assistent i GPT UiO 
