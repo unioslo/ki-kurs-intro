@@ -10,26 +10,26 @@ Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av
 
       **Når du har kontroll, eller konsekvensene av feil er lave:**
 
-      * **Brainstorming og idémyldring** - kreative prosesser uten fasitsvar
-      * **Formulere tekst du selv har kontekst på** - du vet hva som er riktig
-      * **Språklig forbedring** - grammatikk, tonefall, struktur
-      * **Oppsummere tekst DU har skrevet** - Du kan kvalitetssikre enkelt
-      * **Lage utkast** - som utgangspunkt for videre arbeid
-      * **Idéer og brainstorming** - der du bruker ideene som inspirasjon og vurderer selv
+      * **Brainstorming og idémyldring** - Du ønsker andre perspektiver og innfallsvinkler på dine ideer. 
+      * **Formulere tekst du selv har kontekst på** - Utforming av materiale hvor du lett kan se om det er riktig eller ikke
+      * **Språklig forbedring** - Lingvistiske og retoriske endringer på tekst du har gitt til KI-en. Her kan du enkelt vurdere om endringene er gode eller ikke
+      * **Oppsummere tekst DU har skrevet** - Du har produsert materialet, og kan lett vurdere om KI-en har gjort en god jobb 
+      * **Lage utkast** - Du trenger hjelp til å begynne et arbeid, men kvalitetssikrer materialet før du jobber videre med det. 
+      * **Idéer og brainstorming** - Du du bruker resultatet som inspirasjon for videre arbeid 
 
       **Hvorfor?**
 
       Sjansene for feil er mindre, og konsekvenser ved feil er små. 
 
-   .. canvas-tab:: Medium risiko - Må sjekkes
+   .. canvas-tab:: Medium risiko - Innholdet som produseres må sjekkes
 
-      **Situasjoner hvor du bør være kritisk:**
+      **Situasjoner hvor du må være kritisk:**
 
-      * **Forslag til prosedyrer** - Verifiser mot faktiske retningslinjer
-      * **Historisk informasjon** - Sjekk viktige detaljer
-      * **Tekniske forklaringer** - Bekreft med fagressurser
-      * **Oppgaveplanlegging** - Vurder om forslagene er realistiske
-      * **Oppsummering av tekst** - Sammenlign med originaldokumentet
+      * **Forslag til prosedyrer** - Du lager materiale som må stemme overens med andre kilder (retningslinjer, dokumentasjon, lovverk etc.) 
+      * **Historisk informasjon** - Du får generert materiale som inneholder faktiske påstander om historikk. 
+      * **Tekniske forklaringer** - KI gir deg beskrivelser av verden som kan være feil selv om de høres overbevistende ut. 
+      * **Oppgaveplanlegging** - KI gir beskrivelse av arbeid, men kan mangle viktig kontekst og forståelse for verden rundt arbeidet. 
+      * **Oppsummering av tekst du ikke kjenner godt** - KI kan missforstå og utelate viktig info, som skaper følgefeil i din forståelse. 
 
       **Hvorfor?**
 
@@ -39,11 +39,10 @@ Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av
 
       **I disse situasjonene kan hallusinering få alvorlige konsekvenser. Feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover og regler:**
 
-      * **Fakta og tall** - befolkningstall, datoer, statistikk
-      * **Lover og regler** - lovparagrafer, regelverk ved UiO etc.
-      * **Referanser** - kildehenvisninger, studier, publikasjoner
-      * **Kontaktinformasjon** - telefonnumre, e-postadresser, åpningstider
-      * **Medisinske eller juridiske råd** - 
+      * **Fakta og tall** - Du henter faktuell informasjon fra KIen, som kan være feil. 
+      * **Lover og regler** - Du stoler på KIs evne til å gjengi eller oppsummere juridiske dokumenter. 
+      * **Referanser** - Du har tiltro til kildene KI oppgir, selv om disse kan være oppdiktede. 
+      * **Medisinske råd** - Du lar KI diktere beslutninger om din egen eller andres helse. 
 
       **Hvorfor?**
 
