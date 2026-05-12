@@ -6,7 +6,7 @@ Ved bruk av KI-tjenester må du alltid ta et ansvar for å faktasjekke materiale
 
 1. Behandle KI-output som en ukjent kilde 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Ville du stolt på denne informasjonen fra en tilfeldig person på gaten? Har du fagkunnskap til å vurdere om det virker riktig? Er dette noe du kan verifisere? Sjekk fakta mot pålitelige kilder som UiO.no eller lovdata.no, og søk opp referanser for å bekrefte at de faktisk eksisterer.
+Ville du stolt på denne informasjonen fra en tilfeldig person på gaten? Har du fagkunnskap til å vurdere om det virker riktig? Er dette noe du kan verifisere? Sjekk fakta mot pålitelige kilder (som faglitteratur eller troverdige nettsider), og søk opp referanser for å bekrefte at de faktisk eksisterer. KI-tjenester er kjent for å kunne dikte opp kilder. 
 
 2. Bruk strategiske spørsmål
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,11 +21,11 @@ Vanlige feil
 
 Feil 1: Blind tillit
 ~~~~~~~~~~~~~~~~~~~~~~
-Feilen er å kopiere KI-output direkte uten å lese gjennom eller sjekke det. Konsekvensene kan være at feilinformasjon spres, eller at du må stå til ansvar for påstander du ikke har sjekket. Løsningen er enkel: les alltid, forstå og verifiser før du bruker output.
+Feilen er å kopiere eller bruke KI-output direkte uten å lese gjennom eller sjekke det. Konsekvensene kan være at feilinformasjon spres, eller at du må stå til ansvar for påstander du ikke har sjekket. Løsningen er enkel: les, forstå og verifiser informasjonen før du bruker den videre.
 
 Feil 2: Dele sensitiv informasjon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Feilen er å lime inn konfidensielle dokumenter eller persondata i KI-verktøy. Dette kan være et brudd på GDPR og medføre sikkerhetsrisiko for organisasjonen. Bruk alltid generiske eksempler i stedet.
+Feilen er å lime inn konfidensielle dokumenter eller persondata i KI-verktøy. Dette kan være et brudd på lov eller regelverk, og medføre sikkerhetsrisiko for organisasjonen. Sjekk alltid hvilke typer data en tjeneste er godkjent for. 
 
 Feil 3: Avhengighet
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +43,7 @@ Feilen er å bruke språkmodeller til oppgaver de ikke egner seg for, som å sl�
    Tenk deg at du har bedt en LLM om hjelp med følgende oppgaver. Hvordan ville du kvalitetssikret hvert svar?
 
    1. "Skriv et utkast til e-post hvor jeg informerer om møtetidspunkt"
-   2. "Hva sier universitetsloven om arbeidskontrakter?"
+   2. "Hva sier universitets- og høyskoleloven om arbeidskontrakter?"
    3. "Hjelp meg å strukturere disse møtenotatene" (du har limt inn notatene)
    4. "Generer ideer til et sommerarrangement for ansatte"
 
@@ -53,22 +53,21 @@ Feilen er å bruke språkmodeller til oppgaver de ikke egner seg for, som å sl�
          - Les grundig gjennom
          - Sjekk at alle fakta (tid, sted, dato) stemmer
          - Vurder om tonen passer
-         - Legg til personlig touch
+         - Vurder å legge til personlig touch
 
       2. **Universitetsloven:**
          - **VERIFISER ALT!** Sjekk på lovdata.no
-         - LLM-er kan dikte opp lovtekster
-         - Vurder å heller finne lovteksten selv, og få KI-tjenesten til å forklare den
+         - Sjekk om andre kilder også burde inkluderes (f.eks. forvaltningsloven)
+         - Vurder å heller finne lovteksten selv, og få KI-tjenesten til å forklare den eller hente ut relevant info. 
         
 
       3. **Strukturere notater:**
          - Sammenlign med originalnotatene dine
          - Sjekk at ingenting viktig er utelatt
-         - Bekreft at tolkninger stemmer
-         - Relativt trygt siden du ga konteksten
+         - Bekreft at tolkninger i notatet stemmer med ditt inntrykk
+         - Verifiser resultatet med møtedeltakerne 
 
       4. **Idémyldring:**
-         - Relativt trygt - ingen fasitsvar
-         - Bruk ideene som inspirasjon
-         - Vurder selv hva som passer for deres kultur
+         - Bruk ideene som inspirasjon, ikke fasit
+         - Vurder selv om resultatet passer for deres kultur og forutsetninger
          - Tilpass til budsjett og ressurser
