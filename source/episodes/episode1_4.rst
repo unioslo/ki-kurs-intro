@@ -1,5 +1,5 @@
-Språkmodellen - LLMen
-=========================
+Språkmodellen - motoren i KI-tjenesten
+======================================
 
 Når vi snakker om KI-tjenester som UiO GPT eller Microsoft Copilot, er *språkmodellen* (LLM - Large Language Model) selve "motoren" i tjenesten.
 En *språkmodell* er en KI-modell av typen *generativ KI* som har trent på enorme mengder tekst, og dermed lært seg mønstre i språk som gjør den i stand til å "forstå" og produsere tekst.
