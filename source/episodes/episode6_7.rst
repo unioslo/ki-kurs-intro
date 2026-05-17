@@ -2,50 +2,27 @@
 Avslutning
 ==========
 
-Testing, testing
+Gratulerer! Du har nå fullført introduksjonskurset i KI for administrativt ansatte ved UiO.
 
-.. uio-info::
+Du har lært:
 
-   **Gratulerer!**
+* ✓ Hva generativ KI er og hvordan det fungerer
+* ✓ Begrensninger og hvordan kvalitetssikre svar
+* ✓ Instruksjonsteknikker og beste praksis
+* ✓ Hvordan få tilgang til og bruke UiOs KI-tjenester
 
-   Du har nå fullført introduksjonskurset i KI for administrativt ansatte ved UiO.
+Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:
 
-   Du har lært:
+* Bruk kunnskapen du har fått, det er først med litt erfaring at KI kan bli et nyttig verktøy
+* Vær kritisk og ansvarlig, husk at KI har begrensninger!
+* Teknologien utvikler seg raskt. Fortsett å lære og hold deg oppdatert ved å følge med på UiOs nettsider om KI, kurs og workshops ved UiO, og bruk dine fagnettverk og kollegaer til å dele KI erfaringer med!
 
-   * ✓ Hva generativ KI er og hvordan det fungerer
-   * ✓ Begrensninger og hvordan kvalitetssikre output
-   * ✓ Personvern og sikkerhetshensyn
-   * ✓ Hvordan få tilgang til UiOs KI-tjenester
-   * ✓ Prompt engineering og beste praksis
+.. uio-viktig::
 
-   **Nå er det opp til deg:**
+   KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som gjør forskjellen.
 
-   * Bruk kunnskapen du har fått
-   * Eksperimenter i en trygg kontekst
-   * Vær kritisk og ansvarlig
-   * Fortsett å lære
+Lykke til videre på din KI-reise!
 
-   **Husk:** KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som gjør forskjellen.
-
-   Lykke til på din KI-reise!
-
-.. uio-reflect::
-
-   **Refleksjonsoppgave: Din KI-plan**
-
-   Ta deg noen minutter til å svare på følgende:
-
-   1. **Hva er det viktigste du har lært fra dette kurset?**
-
-   2. **Hvilken én konkret oppgave vil du prøve KI på denne uken?**
-
-   3. **Hva er dine største bekymringer eller spørsmål om KI?**
-
-   4. **Hvem kan du dele denne kunnskapen med?**
-
-   5. **Hva er ditt neste steg for å lære mer om KI?**
-
-   Skriv ned svarene - det vil hjelpe deg å komme i gang!
 
 .. uio-info::
 
@@ -54,13 +31,4 @@ Testing, testing
    Har du tilbakemelding på kurset eller spørsmål om KI ved UiO?
    Kontakt IT-avdelingen eller kursets ansvarlige.
 
-   **Fortsett læringen:**
-
-   Teknologien utvikler seg raskt. Hold deg oppdatert via:
-
-   * UiOs nettsider om KI
-   * Nyhetsbrev fra IT-avdelingen
-   * Kurs og workshops ved UiO
-   * Fagnettverk og kollegaer
-
-   **Takk for at du deltok!**
+   [Lenke til nettskjema? Spørreundersøkelsen? Epost? Quiz for å avslutte? ]
