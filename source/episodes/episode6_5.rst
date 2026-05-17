@@ -1,6 +1,6 @@
 
 Neste steg i din læringsreise
-==========================
+==============================
 
 .. uio-info::
 
@@ -15,10 +15,10 @@ Neste steg i din læringsreise
    **Den neste måneden:**
 
    1. Velg 3 prosesser eller oppgaver som du tror egner seg for å bruke KI. (Hva kan være hjelpeord her) 
-  2. Kartlegg prosessen ved å tegne opp stegene. bla bla bla. 
-**Lag** en samling av prompts som fungerer for dine oppgaver
-   2. **Del** erfaringer med minimum én kollega
-   3. **Identifiser** 3 arbeidsoppgaver der KI kan spare deg tid
+   2. Kartlegg prosessen ved å tegne opp stegene. bla bla bla. 
+   3. **Lag** en samling av prompts som fungerer for dine oppgaver
+   4. **Del** erfaringer med minimum én kollega
+   5. **Identifiser** 3 arbeidsoppgaver der KI kan spare deg tid
 
    **De neste 3 månedene:**
 
