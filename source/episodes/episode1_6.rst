@@ -1,9 +1,10 @@
 KI-assistenter
 ===============
 
-En KI assistent er KI som har en bestemt personlighet eller rolle, og ofte et sett med spesifiserte oppslagsverk. 
+Et annet begrep du helt sikkert har møtt på er *KI-assistent*. 
+En KI assistent er KI som har en bestemt *personlighet* eller *rolle*, og ofte et sett med spesifiserte oppslagsverk. 
 Dette styrer hvordan språkmodellen svarer, og hva den fokuserer på.
-Du kan ha en "Fransk-lærer", en "Kodesjekker" eller en "Eksamens-hjelper" som alltid holder seg i rollen. 
+Da kan du ha en "fransk-lærer", en "kodesjekker" eller en "eksamens-hjelper" som alltid holder seg i rollen. 
 
 Hva er forskjellen på en KI-assistent og en vanlig KI-chat?
 -------------------------------------------------------------
@@ -12,7 +13,7 @@ Denne instruksjonen kan være skjult eller synlig for brukeren.
 Når brukeren skriver en instruksjon til KI-assistenten sendes den forhåndsprogrammerte assistent-instruksjonen sammen med brukerens instruksjon. 
 
 I tillegg kan man ofte laste opp materialer i form av for eksempel pdf-dokumenter eller lenker til nettsider som assistenten bruker som svargrunnlag.
-Dette gjør at man kan lage en mer nøyaktig "chat-bot" som har ekspertkunnskap på et felt. 
+Den får et eget oppslagsverk som den benytter til å generere et svar. Dette gjør at man kan lage en mer nøyaktig "chat-bot" som har ekspertkunnskap på et felt. 
 
 .. canvas-tabs:: KI chat versus KI assistent
 
@@ -29,37 +30,11 @@ Dette gjør at man kan lage en mer nøyaktig "chat-bot" som har ekspertkunnskap 
         * KI-svar: Jeg gir deg ikke svaret, men kan gi deg et hint: Kan det ha noe med hypotenus å gjøre? 
 
 
-Hva er forskjellen på en KI-assistent og en *KI-agent*?
----------------------------------------------------------
-I tillegg til KI-assistender finnes også *KI-agenter*. Hovedforskjellen mellom disse to er at agenten kan utføre *handlinger*.
-
-.. canvas-tabs::
-
-    .. canvas-tab:: KI-assistent
-
-        * Gir deg forslag, svar og utkast til innhold
-        * Produserer kun tekst (eller bilder, lyd, etc.)
-        * Du må selv utføre handlingene basert på forslagene
-
-    .. canvas-tab:: KI-agent
-
-        * Kan utføre handlinger på vegne av deg
-        * Har tilgang til verktøy og systemer
-        * Kan interagere med eksterne tjenester
-
-
-    .. canvas-tab:: KI-assistent med agent funksjonalitet
-
-        For å gjøre det hele enda mer forvirrende: man kan ha en KI-assistent med *agent-funksjonalitet* kombinerer som begge deler: 
-        Den har en definert rolle/personlighet OG kan utføre handlinger.
-
-        Eksempel: En "Reiseplanlegger-agent" som ikke bare foreslår reiseruter, men også bestiller billetter for deg. 
-
 .. uio-colorbox-3:: 
 
     **Eksempler på KI-assistenter**
 
-    - I GPT UiO kan du lage dine egne KI-assistenter
+    - I GPT UiO kan du lage dine egne KI-assistenter.
     - NotebookLM - er en avansert form for KI-assistent. 
 
 

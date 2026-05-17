@@ -1,8 +1,7 @@
 KI-agenter
 ===============
 
-
-Til slutt har vi KI-agenten. 
+Vi har allerede snakket om neste begrep, nemlig KI-agenten. 
 Mens KI-assistenten egentlig ikke er så mye mer enn en KI med spesifikke instruksjoner på hvordan den skal oppføre seg, 
 så er KI agenten gjerne en avansert KI-assistent som i tillegg kan utføre *handlinger* i den digitale verden.
 KI-agenten nøyer seg ikke med å fortelle deg hvordan du løser en oppgave, den utfører oppgaven for deg. 
@@ -11,7 +10,6 @@ Agenter er laget for en eller flere spesifikke formål.
 En agent kan for eksempel hente informasjon fra andre systemer som internett eller en database, 
 den kan kanskje bestille togbiletter for deg, eller slå av en datamaskin som har symptomer på å være under angrep utenfra. 
 Eller helt andre ting avhengig av hva som er formålet med akkurat den agenten.
-
 
 .. uio-colorbox-3:: 
 
@@ -26,6 +24,29 @@ Eller helt andre ting avhengig av hva som er formålet med akkurat den agenten.
         .. canvas-tab:: KI-agenten
 
             gå til norwegian.no og *bestille* den for meg. 
+
+
+.. canvas-tabs::
+
+    .. canvas-tab:: KI-chat
+
+        En generell chat-tjeneste som svarer utfra det du spør den om. 
+
+        * Gir deg forslag, svar og utkast til innhold
+        * Produserer kun tekst (eller bilder, lyd, etc.)
+        * Du må selv utføre handlingene basert på forslagene
+
+
+    .. canvas-tab:: KI-assistent
+
+        En KI-chat med en forhåndsdefinert *rolle* eller *personlighet*.
+
+    .. canvas-tab:: KI-agent
+
+        * Kan utføre handlinger på vegne av deg
+        * Har tilgang til verktøy (for eksempel internettsøk) og systemer (for eksempel dit filsystem)
+        * Kan samhandle med eksterne tjenester (som for eksempel et bestillingssystem)
+
 
 
 Risiko knyttet til KI-agenter
