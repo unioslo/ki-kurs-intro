@@ -117,26 +117,3 @@ Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem?
      * 4. «Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»
 
 
-Oppsummering
-------------------------
-
-Denne episoden har dekt både den underliggende logikken i generativ KI og de praktiske ferdighetene du trenger for å bruke den godt. Her er de viktigste punktene:
-
-
-
-Tillit og kvalitetssikring
-----------------------------
-
-•	Språkmodeller er motivert for å gi sannsynlige svar – ikke sanne svar
-•	Verifiser alltid fakta, lover, referanser og kontaktinformasjon
-•	Bruk KI til kreativt arbeid og bearbeiding – ikke som oppslagsverk
-•	Du er ansvarlig for det som går ut under ditt navn
-
-Prompting
------------
-
-•	Jo mer spesifikk og kontekstuell prompten er, jo bedre blir svaret
-•	Definer rolle, oppgave, informasjonstype, ønsket output og hva du ikke vil ha
-•	Be modellen stille spørsmål hvis noe er uklart
-•	Iterer: første svar er sjelden perfekt, og det er greit
-•	Invester tid i å lage preprompts for oppgaver du gjør om og om igjen - gjerne med en KI-assistent i GPT UiO 
