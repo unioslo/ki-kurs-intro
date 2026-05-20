@@ -180,5 +180,33 @@
     "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
+  },
+  "episode1_3.html": {
+    "page_id": 405069,
+    "url": "ki-okosystemet-6",
+    "title": "KI økosystemet",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode1_5.html": {
+    "page_id": 405070,
+    "url": "ki-tjenester-4",
+    "title": "KI-tjenester",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode4_5.html": {
+    "page_id": 405071,
+    "url": "api-tilgang-5",
+    "title": "API tilgang",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode6_5.html": {
+    "page_id": 405072,
+    "url": "neste-steg-i-din-laeringsreise-3",
+    "title": "Neste steg i din læringsreise",
+    "module_id": "N/A",
+    "module_name": "N/A"
   }
 }
