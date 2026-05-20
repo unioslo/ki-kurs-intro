@@ -3,11 +3,6 @@ Hvordan genererer språkmodeller tekst?
 ================================================
 
 
-.. figure:: ../images/ChatGPT_howLLMswork.png
-   :align: center
-   :width: 60%
-   :alt: LLM text generation illustration
-
 
 Trening
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
