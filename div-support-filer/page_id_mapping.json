@@ -127,8 +127,8 @@
   },
   "episode4_0.html": {
     "page_id": 395896,
-    "url": "ki-tjenester-ved-uio-2",
-    "title": "KI-tjenester ved UiO",
+    "url": "uios-godkjente-ki-tjenester",
+    "title": "UiOs godkjente KI-tjenester",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
@@ -206,6 +206,13 @@
     "page_id": 405072,
     "url": "neste-steg-i-din-laeringsreise-3",
     "title": "Neste steg i din læringsreise",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode4_6.html": {
+    "page_id": 405087,
+    "url": "ki-tjenester-ved-uio-3",
+    "title": "KI-tjenester ved UiO",
     "module_id": "N/A",
     "module_name": "N/A"
   }
