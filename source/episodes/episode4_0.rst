@@ -1,9 +1,6 @@
 KI-tjenester ved UiO
 =======================
 
-Universitetet i Oslo tilbyr ulike godkjente KI-verktøy som ansatte kan bruke på en trygg måte.
-I dette kapitelet skal du lære hvorfor det er viktig å bruke UiOs godkjente tjenester, hvilke tjenester som er tilgjengelige, og hvordan du får tilgang til dem.
-
 UiOs godkjente tjenester
 -------------------------
 
