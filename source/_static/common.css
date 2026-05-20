@@ -3480,6 +3480,22 @@ a.thumbnail:hover {
     border-radius: 3px
 }
 
+/* Transparent background for custom citation labels */
+.citation-label {
+    background-color: transparent !important;
+    color: inherit !important;
+    text-shadow: none !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    font-size: inherit !important;
+    vertical-align: baseline !important;
+}
+
+.citation-label:hover {
+    background-color: transparent !important;
+    text-decoration: underline;
+}
+
 .badge {
     padding-left: 9px;
     padding-right: 9px;

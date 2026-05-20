@@ -26,7 +26,8 @@ extensions = [
     'canvas_tabs',  # Canvas-compatible tabs (no JavaScript)
     'sphinx_rtd_theme',
     'uio_components',  # UiO Canvas design components
-    "sphinx_new_tab_link" #for å automatisk åpne eksterne lenker i ny tab i nettleseren
+    'sphinx_new_tab_link',  # for å automatisk åpne eksterne lenker i ny tab i nettleseren
+    'citation_override',
 ]
 
 # Icon for external links
