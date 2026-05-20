@@ -1,8 +1,5 @@
-KI-tjenester ved UiO
-=======================
-
-UiOs godkjente tjenester
--------------------------
+UiOs godkjente KI-tjenester
+============================
 
 Når du skal bruke KI-tjenester på *UiO data*, *skal* de godkjente tjenestene brukes.
 Grunnen til det er at UiO har databehandleravtale med leverandørene for disse tjenestene, og det sikrer at dataene som utveksles med tjenestene blir behandlet på en slik måte at GDPR kravene overholdes.

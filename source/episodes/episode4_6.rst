@@ -1,5 +1,5 @@
 KI-tjenester ved UiO
-===============================================
+====================
 
 
 Universitetet i Oslo tilbyr en rekke godkjente KI-verktøy. I dette kapittelet skal du lære disse verktøyene, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
