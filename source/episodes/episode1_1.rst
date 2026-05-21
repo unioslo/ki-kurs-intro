@@ -10,7 +10,7 @@ KI er faktisk ikke en ny teknologi, den har utviklet seg over flere tiår, og al
 Etter at ChatGTP ble sluppet i 2022 har vi sett en eksplosjonsartet utvikling av KI. ChatGPT var milevis fra de "dumme chatbottene" som kun klarte å svare på helt enkle spørsmål, og
 plutselig hadde alle tilgang til en tjeneste som kunne *generere* side på side med tekst av overraskende god kvalitet.  
 
-Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder treningsdata fra internett*, kraftige *GPU-er* som kan behandle massive datamengder parallelt, og nye *teknikker* som gir bedre resultater enn før.
+Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder treningsdata fra internett*, kraftige *GPU-er* som kan behandle massive datamengder parallelt, og nye teknikker som gir bedre resultater enn før.
 
 .. uio-colorbox-3:: Fordypning
 
@@ -23,8 +23,15 @@ Denne utviklingen har vært mulig takket være tre gjennombrudd: *enorme mengder
    .. uio-detail:: Hva er en GPU?
       
       GPU er en forkortelse for "Graphics Processing Unit".
+      Det er en komponent inne i en datamaskin som gjør mye av det samme som *CPU*en som er datamaskinens hjerne. 
+      Hva er så en CPU? Du har sikkert hørt om Intel chip, M5 chip osv, dette er eksempler på CPUer fra forskjellige leverandører.  
+      Intel benyttes ofte i Windows maskiner, M-chipene produseres av Apple og benyttes i de nyeste Macene. 
+      
+      *GPU*ene fungerer på en annen måte enn CPUene, selv om de også er å regne som hjernen (eller en av hjernene) i en datamaskin.
       Navnet kommer av at GPU-er opprinnelig ble utviklet for å lage grafikk, for eksempel i spill.
       Men de kan også brukes som generelle matematikk-prosessorer.
       GPU-er har tusenvis av små, effektive regne-enheter.
       Det gjør at de kan regne på mange tall samtidig.
       Det er nyttig for kunstig intelligens, som gjør svært mange beregninger på store datamengder.
+      En veldig stor leverandør av *GPU*er er NVIDIA. 
+
