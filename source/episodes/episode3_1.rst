@@ -10,11 +10,11 @@ Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av
 
       **Når du har kontroll, eller konsekvensene av feil er lave:**
 
-      * **Brainstorming og idémyldring** - Du ønsker andre perspektiver og innfallsvinkler på dine ideer. 
-      * **Formulere tekst du selv har kontekst på** - Utforming av materiale hvor du lett kan se om det er riktig eller ikke
-      * **Språklig forbedring** - Lingvistiske og retoriske endringer på tekst du har gitt til KI-en. Her kan du enkelt vurdere om endringene er gode eller ikke
-      * **Oppsummere tekst DU har skrevet** - Du har produsert materialet, og kan lett vurdere om KI-en har gjort en god jobb 
-      * **Lage utkast** - Du trenger hjelp til å begynne et arbeid, men kvalitetssikrer materialet før du jobber videre med det. 
+      * **Brainstorming og idémyldring** - Eksempel: Du bruker KI for å få andre perspektiver og innfallsvinkler på dine ideer. 
+      * **Formulere tekst du selv har kontekst på** - Eksempel: Utforming av materiale hvor du lett kan se om det er riktig eller ikke
+      * **Språklig forbedring** - Eksempel: Lingvistiske og retoriske endringer på tekst du har gitt til KI-en. Her kan du enkelt vurdere om endringene er gode eller ikke
+      * **Oppsummere tekst DU har skrevet** - Eksempel: Du har produsert materialet, og kan lett vurdere om KI-en har gjort en god jobb 
+      * **Lage utkast** - Eksempel: Du trenger hjelp til å begynne et arbeid, men kvalitetssikrer materialet før du jobber videre med det. 
       * **Idéer og brainstorming** - Du du bruker resultatet som inspirasjon for videre arbeid 
 
       **Hvorfor?**
