@@ -40,4 +40,4 @@ Den får et eget oppslagsverk som den benytter til å generere et svar. Dette gj
 
 .. uio-reflect:: Refleksjonsoppgave
 
-   Hva slags KI-assistent kunne støttet deg i dine oppgaver
+   Hva slags KI-assistent kunne støttet deg i dine oppgaver?
