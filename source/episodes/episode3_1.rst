@@ -47,3 +47,11 @@ Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av
       **Hvorfor?**
 
       Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser. 
+
+
+
+
+
+.. uio-reflect::
+
+   Tenk på en arbeidsoppgave du utfører som del av din jobb. Vurder hvilken kategori den faller inn i: Lav, medium eller høy risiko 
