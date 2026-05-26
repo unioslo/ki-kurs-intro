@@ -19,7 +19,7 @@ Hvis noe føles feil, er det godt mulig at det er feil. Språkmodeller er flinke
 Vanlige feil
 ===========================================
 
-Når bruk av KI skaper problemer kan det ofte spores tilbake til de samme feilene som mange av oss gjør. Dersom vi vet om disse feilene er det lettere å unngå dem, og vår bruk av KI blir tryggere.
+Når bruk av KI skaper problemer kan det ofte spores tilbake til de samme feilene som mange av oss gjør. Dersom vi vet om disse feilene er det lettere å unngå dem, og vår bruk av KI blir tryggere. Nedenfor følger noen av de vanligste feilene vi begår i vår bruk av KI, og hvorfor disse kan skape problemer. 
 
 Feil 1: Blind tillit
 ~~~~~~~~~~~~~~~~~~~~~~
