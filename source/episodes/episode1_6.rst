@@ -37,6 +37,7 @@ Den får et eget oppslagsverk som den benytter til å generere et svar. Dette gj
     - I GPT UiO kan du lage dine egne KI-assistenter.
     - NotebookLM - er en avansert form for KI-assistent. 
 
-.. uio-reflect: Refleksjonsoppgave
+
+.. uio-reflect:: Refleksjonsoppgave
 
    Hva slags KI-assistent kunne støttet deg i dine oppgaver
