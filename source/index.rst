@@ -27,8 +27,7 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode2_2
    episodes/episode2_3
    episodes/episode2_4
-   episodes/episode2_5
-
+   
 .. toctree::
    :maxdepth: 1
    :caption: Episode 3: Hvordan trygt bruke KI?
