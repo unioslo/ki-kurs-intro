@@ -113,15 +113,15 @@
   },
   "episode3_3.html": {
     "page_id": 395885,
-    "url": "instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil",
-    "title": "Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?",
+    "url": "vanlige-feil-ved-bruk-av-ki",
+    "title": "Vanlige feil ved bruk av KI",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
   "episode3_4.html": {
     "page_id": 398968,
-    "url": "baerekraft",
-    "title": "Bærekraft",
+    "url": "instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil-2",
+    "title": "Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
@@ -215,5 +215,33 @@
     "title": "KI-tjenester ved UiO",
     "module_id": "N/A",
     "module_name": "N/A"
+  },
+  "episode3_5.html": {
+    "page_id": 407189,
+    "url": "prinsipper-for-gode-instruksjoner",
+    "title": "Prinsipper for gode instruksjoner",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode3_6.html": {
+    "page_id": 407190,
+    "url": "nyttige-instruksjons-teknikker",
+    "title": "Nyttige instruksjons-teknikker",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
+  },
+  "episode3_7.html": {
+    "page_id": 407191,
+    "url": "praktisk-ovelse-forbedre-instruksjoner",
+    "title": "Praktisk øvelse: Forbedre instruksjoner",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
+  },
+  "episode3_8.html": {
+    "page_id": 407192,
+    "url": "baerekraft-2",
+    "title": "Bærekraft",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
   }
 }

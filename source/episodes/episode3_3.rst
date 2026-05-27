@@ -1,119 +1,57 @@
+Vanlige feil ved bruk av KI
+===========================
 
-Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil? 
-====================================================================================
-Hva er egentlig en instruksjon?
---------------------------------
+Når bruk av KI skaper problemer kan det ofte spores tilbake til de samme feilene som mange av oss gjør. Dersom vi vet om disse feilene er det lettere å unngå dem, og vår bruk av KI blir tryggere. Nedenfor følger noen av de vanligste feilene vi begår i vår bruk av KI, og hvorfor disse kan skape problemer. 
 
-En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. Det er din måte å kommunisere med KI-en på. Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.
+Feil 1: Blind tillit
+~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å kopiere eller bruke KI-output direkte uten å lese gjennom eller sjekke det. Konsekvensene kan være at feilinformasjon spres, eller at du må stå til ansvar for påstander du ikke har sjekket. Løsningen er enkel: les, forstå og verifiser informasjonen før du bruker den videre.
 
+Feil 2: Dele sensitiv informasjon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å lime inn konfidensielle dokumenter eller persondata i KI-verktøy. Dette kan være et brudd på lov eller regelverk, og medføre sikkerhetsrisiko for organisasjonen. Sjekk alltid hvilke typer data en tjeneste er godkjent for. 
 
-.. uio-info:: Enkel instruksjon: 
+Feil 3: Avhengighet
+~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å slutte å tenke selv og overlate all skriving og analyse til KI-en. Dette fører gradvis til tap av faglige ferdigheter og lavere kvalitet over tid. Bruk KI som et verktøy, ikke som erstatning. Du er eksperten – KI-en er assistenten.
 
-   Hva er klimaendringer? → Du får et generelt svar om klimaendringer.
-
-
-.. uio-info:: Detaljert instruksjon
-
-   Forklar klimaendringer på en enkel måte for en 10-åring. Bruk 3–4 setninger og unngå faguttrykk. → Du får et svar     tilpasset målgruppen og lengden du ba om.
-
-
-.. uio-info:: Kontekstrik instruksjon: 
-
-   Jeg skal skrive en e-post til alle ansatte om nytt møterom-bookingsystem. Målgruppen er administrativt ansatte som    ikke er teknisk kyndige. Tonen skal være vennlig og informativ. Kan du hjelpe meg med et utkast? → Du får et svar     tilpasset din spesifikke situasjon.
+Feil 4: Feil bruksområde
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Feilen er å bruke språkmodeller til oppgaver de ikke egner seg for, som å slå opp eksakte prosedyrer, finne faktainformasjon eller spørre om gjeldende regelverk. For fakta: bruk søkemotorer og offisielle nettsider. For kreativ hjelp og tekstarbeid: bruk gjerne en KI-tjeneste. For faktasjekking: gjør det på gamlemåten. 
 
 
-Prinsipper for gode instruksjoner
-====================================================================================
+.. uio-task::
 
-1. Vær spesifikk 
------------------------
+   **Praktisk øvelse: Kvalitetssikring**
 
-Dårlig: «Skriv en e-post.»  Bedre: «Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold i uke 15. Tonen skal være vennlig men profesjonell.»
-Den gode instruksjonen spesifiserer hva e-posten skal handle om, hvem den er til, og hvilken tone den skal ha.
+   Tenk deg at du har bedt en LLM om hjelp med følgende oppgaver. Hvordan ville du kvalitetssikret hvert svar?
 
-2. Gi kontekst
-----------------------
-Dårlig: «Lag et møtereferat.»  Bedre: «Basert på disse notatene fra møtet, lag et møtereferat: [dine notater]. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver.»
+   1. "Skriv et utkast til e-post hvor jeg informerer om møtetidspunkt"
+   2. "Hva sier universitets- og høyskoleloven om arbeidskontrakter?"
+   3. "Hjelp meg å strukturere disse møtenotatene" (du har limt inn notatene)
+   4. "Generer ideer til et sommerarrangement for ansatte"
 
-3. Spesifiser format
-----------------------
-Dårlig: «Gi meg informasjon om UiOs fakulteter.»  Bedre: «Lag en tabell med UiOs 8 fakulteter. Kolonner: Navn, Forkortelse, Antall studenter (omtrent). Sorter alfabetisk etter navn.»
+   .. uio-answer::
 
-4. Definer en rolle
---------------------
-Dårlig: «Hvordan kan jeg forbedre min skriving?»  Bedre: «Du er en erfaren kommunikasjonsarbeider. Jeg jobber administrativt ved et universitet og skriver ofte formelle brev og e-poster. Gi meg 5 konkrete tips til å forbedre min administrative skriving.»
-Modeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.
+      1. **E-post-utkast:**
+         - Les grundig gjennom
+         - Sjekk at alle fakta (tid, sted, dato) stemmer
+         - Vurder om tonen passer
+         - Vurder å legge til personlig touch
 
+      2. **Universitetsloven:**
+         - **VERIFISER ALT!** Sjekk på lovdata.no
+         - Sjekk om andre kilder også burde inkluderes (f.eks. forvaltningsloven)
+         - Vurder å heller finne lovteksten selv, og få KI-tjenesten til å forklare den eller hente ut relevant info. 
+        
 
-Nyttige instruksjons-teknikker 
-===============================
+      3. **Strukturere notater:**
+         - Sammenlign med originalnotatene dine
+         - Sjekk at ingenting viktig er utelatt
+         - Bekreft at tolkninger i notatet stemmer med ditt inntrykk
+         - Verifiser resultatet med møtedeltakerne 
 
-Chain of thought - tankekrekke
---------------------------------
-Be KI-en «tenke høyt» eller «forklare steg for steg». Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.
-
-.. uio-info:: Eksempel
-
-   Forklar trinn for trinn hvordan jeg kan organisere et sommerarrangement for 50 personer.
-
-
-Few-shot-instruksjoner - gi eksempler
---------------------------------------
-
-Gi eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å forklare stilen med ord.
-
-.. uio-info:: Eksempel
-
-   Jeg skal skrive titler til nyhetssaker. Her er eksempler på stilen jeg ønsker: - «Nytt tilbud: Gratis språkkurs       for ansatte» - «Viktig: Endringer i møterom-booking fra 1. april»  Skriv en tittel for denne saken: «Vi får nytt      IT-system for reiseregninger neste måned.
-
-Strukturert output
---------------------
-
-Be om svaret i et bestemt format. Dette gir deg svar som er klare til bruk og konsistente fra gang til gang.
-
-.. uio-info:: Eksempel
-
-   Oppsummer dette møtereferatet i følgende format:  BESLUTNINGER: -  OPPGAVER: - [Person]: [oppgave] - [frist]  NESTE MØTE: [dato og tid]
-
-Iterative instruksjoner
-------------------------
-
-Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det er helt normalt.
-
-.. uio-info:: Eksempel
-
-   Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.» Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.» Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»
-
-Pre-instruksjon og KI-assistenter
-==================================
-
-Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner det seg å investere tid i å skrive en god pre-instruksjon – en grunnleggende instruksjon som definerer rollen, oppgaven og rammene for all videre kommunikasjon. I GPT-UiO kan du lagre dette som en KI-assistent. Du vil da ha en spesialtilpasset samtalepartner som kan gjenbrukes. Mer info om KI-assistenter i GPT UiO finnes her: https://www.uio.no/tjenester/it/ki/gpt-uio/hjelp/opprette-og-bruke-ki-assistenter.html
-
-
-.. uio-viktig:: Tips: 
-
-   Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din – og legg det til neste gang. Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine.
-
-
-
-Praktisk øvelse: Forbedre insturksjoner
-========================================
-Her er noen dårlige instruksjoner. Hvordan ville du forbedret dem? 
-
-* 1. Skriv noe fint om min kollega
-* 2. Hjelp meg
-* 3. Hva med den tingen?
-* 4. Lag en liste
-
-.. uio-info:: Mulige forbedringer: 
-
-     Mulige forbedringer:
-     * 1. «Skriv en gratulasjon til en kollega som har jobbet her i 25 år. Tonen skal være varm og personlig, ca. 100 ord.»
-
-     * 2. «Jeg skal lede mitt første møte neste uke med 6 kolleger. Kan du gi meg konkrete tips for hvordan jeg forbereder meg og leder møtet         profesjonelt?»
-
-     * 3. «Jeg har skrevet denne e-posten om endringer i lunsjordningen. Kan du sjekke om budskapet er klart og om jeg har glemt noe viktig? [e-post     her]»
-
-     * 4. «Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»
-
-
+      4. **Idémyldring:**
+         - Bruk ideene som inspirasjon, ikke fasit
+         - Vurder selv om resultatet passer for deres kultur og forutsetninger
+         - Tilpass til budsjett og ressurser
