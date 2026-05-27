@@ -76,31 +76,3 @@ Spesielt hvis man lar agenten operere autonomt, det vil si uten at et menneske g
 
     * `Microsoft Copilot <https://copilot.microsoft.com/>`_ (men ikke Microsoft Chat som er en enkel chat løsning uten agent funksjonalitet)
     * Agentiske kode-verktøy som `Claude Code <https://claude.com/product/claude-code>`_ , `opencode <https://opencode.ai/>`_ og `codex <https://openai.com/codex/>`_. 
-
-.. uio-task:: Refleksjonsoppgave
-
-
-    Kommentar: skal vi ha dette?
-
-    Tenk deg en fremtid der Universitetet i Oslo har tatt i bruk en agent som skal avdekke og reagere på fusk på eksamen.
-
-    Agenten 
-
-    * leser gjennom eksamensoppgaven, sensorveiledningen og besvarelsen
-    * har tilgang til kandidatens tidligere besvarelser
-    * har tilgang til reglene for fusk ved Universitetet i Oslo
-    * har en innebygget fusk-detektor
-    * tar en beslutning om besvarelsen er gyldig eller anses som fusk
-    * dersom fusk: annulerer eksamen og utestenger hen fra Universitetet dersom alvorlighetsgraden tilsier det
-
-
-    Risikoen ved et slikt system er åpenbar: hva om systemet tar feil og feilaktig bedømmer en besvarelse som fusk? 
-    Hva kan man gjøre for å redusere denne risikoen? 
-    
-    .. uio-detail:: Forslag til svar
-
-        * Kunne kjenne til hvordan fusk detektoren fungerer, ingen "black box".
-        * Kunne gå vurderingen grundig i sømmene
-           * Sikre at det er loggført hva beslutningen er basert på
-           * Sikre at en sensor lett kan finne frem til steder i besvarelsen som anses som fusk
-        * Ikke under noen omstendighet la agenten faktisk *ta beslutningen selv*, det vil si faktisk annulere eksamen eller utføre andre handlinger som får konsekvenser for kandidaten, uten at et menneske har godkjent handlingen
