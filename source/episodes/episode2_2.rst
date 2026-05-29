@@ -30,7 +30,7 @@ Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
 .. uio-task:: Oppgave
 
-   Åpne `GPT UiO <gpt.uio.no>`_
+   Åpne `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
 
    1. Skriv inn følgende instruksjoner
          a) Forklar fotball for en 10-åring.
