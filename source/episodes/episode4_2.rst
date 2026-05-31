@@ -23,6 +23,25 @@ Noen av de lokale modellene kan i tillegg håndtere opp til `røde data <https:/
    Uavhengig av om du bruker en lokal eller skybasert modell, lagres all logg samt inn- og utdata kun på UiOs servere. Ditt brukernavn deles ikke med Microsoft.
    Derfor er GPT UiO GDPR-kompatibel. 
 
+
+Så hvilken modell skal du velge?
+---------------------------------
+
+De lokale språkmodellen er gode, men de er mye *mindre* enn de som kjører i skyen. 
+Det betyr at om oppgaven du skal løse er veldig kompleks, så kan det være at du får bedre kvalitet om du velger en sky-modell.
+
+Vi foreslår at du prøver ut forskjellige modeller, og om du kan nøye deg med en mindre og lokal modell, så velg denne.
+Den bruker totalt sett mindre regneressurser enn de store modellene i skyen. 
+
+Noen relevante spørsmål som kan hjelpe deg med å velge modell:
+
+* Er svaret godt nok med en mindre modell? Bra, gå for den mindre modellen og spar ressurser!
+* Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell.
+* Er det kode du vil språkmodellen skal generere? Sjekk modellvelgeren for en *kodeks* modell.
+* Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opp til røde data.
+* Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder.
+
+
 .. uio-colorbox-3:: Fordypning
 
    .. uio-detail:: Velge en annen modell enn standard
