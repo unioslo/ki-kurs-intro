@@ -1,46 +1,71 @@
 
-Gemini og NotebookLM
-====================== 
+GPT UiO KI-assistenter
+------------------------
 
-Gemini og NotebookLM er to KI-tjenester fra Google som UiO tilbyr til studenter og ansatte.
+GPT UiO har en egen *assistent*-funksjon. Med denne kan du opprette faste instruksjoner som legges som et ekstra lag oppå det du skriver i selve chatten.  
 
-Gemini
---------------
+Når du lager assistenten kan du kan blant annet:
 
-Gemini er Google sin generelle KI-chat, som ligner på ChatGPT.
-I motsetning til gpt.uio.no kan Gemini hente informasjon fra nettsider.
-Det betyr at den er bedre til å svare på spørsmål om fakta enn gpt.uio.no.
-Gemini kan også kobles til kilder du har lagret i NotebookLM, se nedenfor.
+- laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine  
+- velge en spesifikk språkmodell som assistenten skal benytte  
 
-NotebookLM
-----------------------------
+Assistenten kan deles med andre, og kan enten låses for redigering eller gjøres åpen slik at flere kan endre den.
 
-NotebookLM er en KI-drevet assistent fra Google spesialisert for å arbeide med dokumenter. NotebookLM vil ikke svare på noen spørsmål før du har lastet opp informasjon den kan bruke som kilde.
-NotebookLM bruker Gemini som «motoren» som genererer tekst.
 
-I NotebookLM bygger man seg først en egen "kunnskapsbank" som inneholder dokumenter og nettsider, eller til og med lydopptak fra forelesninger. 
-Dette er grunnlaget NotebookLM benytter for å generere svar på spørsmål, eller produkter som oppsummeringer i tekst eller lyd, quizer eller presentasjoner. 
-NotebookLM har med andre ord en hel del spennende funksjonaliteter. 
+.. uio-colorbox-3:: Fordypning
 
-NotebookLM forsøker å være tro mot kildene du benytter, og du kan derfor oppleve å få mer presise svar enn for eksempel ved bruk av gpt.uio.no. 
-Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
+   .. uio-detail:: Eksempel på assistenter
 
-Nøkkelpunkter
---------------
+      .. canvas-tabs::
 
-* Benytter Google sin språkmodell Gemini
-* Spesialisert på arbeid mot dokumenter
-* Du må ha Google Workspace konto gjennom UiO for å få tilgang
-* Databehandleravtale på plass
-* *Tjenesten skal kun brukes med UiO konto* - sjekk at du er logget inn med UiO konto og ikke din egen private Google konto!
+         .. canvas-tab:: Administrasjon
 
-.. uio-dont:: Viktig
+            **Assistent for møtereferat**
 
-   * Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: Ikke last opp dokumenter du ikke har rettigheter til å dele.
-   * Ikke last opp dokumenter som inneholder sensitiv informasjon. NotebookLM er kun godkjent for opptil gule data.
+            Assistent instruksjon:
 
-.. uio-source:: Lenke til UiOs nettsider
+            .. code-block:: text
 
-   `NotebookLM på UiO sine nettsider <https://www.uio.no/tjenester/it/ki/notebooklm>`_
+               Du er en erfaren administrativ assistent ved Universitetet i Oslo som
+               spesialiserer seg på å skrive profesjonelle møtereferater.
 
-   Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM.
+               Din oppgave er å:
+               - Strukturere referatet med standard seksjoner: Deltakere, Sak, Diskusjon, Vedtak og Oppfølging
+               - Bruke nøytralt og formelt språk
+               - Fremheve konkrete vedtak og handlinger med ansvarlig person og frist
+               - Oppsummere diskusjonen kortfattet uten personlige meningsutvekslinger
+               - Ikke inkludere navn på enkeltpersoner i referatet (bruk "en representant fra...")
+               - Følge UiOs mal for møtereferat
+
+               Dersom informasjon om deltakere, dato eller sak mangler, be om dette før du genererer referatet.
+
+         .. canvas-tab:: Undervisning
+
+            **Assistent for læring av pensum (uten direkte svar)**
+
+            Som underviser har du lastet opp egenprodusert litteratur som benyttes som pensum i kurset. 
+            Dette er kilder assistenten har tilgang til.            
+            Assistenten benytter disse som del av *konteksten* slik at svarene den gir er i henhold til kildene.
+
+            Assistent instruksjon:
+
+            .. code-block:: text
+
+               Du er en pedagogisk veileder som hjelper studenter å forstå pensum gjennom
+               veiledende spørsmål og refleksjon. Du skal ALDRI gi direkte svar på oppgavene
+               eller forklare konseptene fullstendig.
+
+               Din oppgave er å:
+               - Stille åpne, veiledende spørsmål som får studenten til å tenke selv
+               - Hjelpe studenten å bryte ned komplekse problemer i mindre deler
+               - Peke på relevante deler av pensum eller teorier studenten bør se nærmere på
+               - Oppfordre til egne resonnementer: "Hva tror du selv?" eller "Hvordan kan du bruke det du lærte om X her?"
+               - Gi bekreftelse når studenten er på rett spor, men ikke avsløre svaret
+               - Ved feil: spør "Hva fikk deg til å tenke slik?" og led mot innsikt
+
+               Unngå:
+               - Å gi ferdige løsninger eller svar
+               - Å forklare teorier fullstendig
+               - Å bekrefte om et svar er riktig eller galt direkte
+
+               Målet er at studenten skal utvikle selvstendig tenkning og forståelse, ikke å få raske svar.

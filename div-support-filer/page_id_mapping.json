@@ -57,43 +57,43 @@
   },
   "episode2_1.html": {
     "page_id": 395877,
-    "url": "hvordan-genererer-sprakmodeller-tekst",
-    "title": "Hvordan genererer språkmodeller tekst?",
+    "url": "trening-og-kontekst",
+    "title": "Trening og kontekst",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode2_2.html": {
     "page_id": 396878,
-    "url": "sprakmodeller-har-ikke-kunnskap",
-    "title": "Språkmodeller har ikke kunnskap",
+    "url": "hvordan-genererer-sprakmodeller-tekst-2",
+    "title": "Hvordan genererer språkmodeller tekst?",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode2_3.html": {
     "page_id": 398969,
-    "url": "sprakmodeller-finner-pa-ting-5",
-    "title": "Språkmodeller finner på ting",
+    "url": "sprakmodeller-har-ikke-kunnskap-2",
+    "title": "Språkmodeller har ikke kunnskap",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode2_4.html": {
     "page_id": 396879,
-    "url": "sprakmodeller-har-ikke-hukommelse",
-    "title": "Språkmodeller har ikke hukommelse",
+    "url": "sprakmodeller-finner-pa-ting-2",
+    "title": "Språkmodeller finner på ting",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode2_5.html": {
-    "page_id": 395880,
-    "url": "oppgaver",
-    "title": "Oppgaver",
+    "page_id": 409296,
+    "url": "sprakmodeller-har-ikke-hukommelse-3",
+    "title": "Språkmodeller har ikke hukommelse",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode3_0.html": {
     "page_id": 395882,
-    "url": "hvordan-trygt-bruke-ki",
-    "title": "Hvordan trygt bruke KI?",
+    "url": "hvordan-bruke-ki",
+    "title": "Hvordan bruke KI?",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
@@ -125,103 +125,12 @@
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
-  "episode4_0.html": {
-    "page_id": 395896,
-    "url": "uios-godkjente-ki-tjenester",
-    "title": "UiOs godkjente KI-tjenester",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode4_1.html": {
-    "page_id": 395899,
-    "url": "gpt-uio",
-    "title": "GPT UiO",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode4_2.html": {
-    "page_id": 395901,
-    "url": "autotekst-og-nettskjema-diktafon",
-    "title": "Autotekst og Nettskjema-diktafon",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode4_3.html": {
-    "page_id": 398612,
-    "url": "gemini-og-notebooklm",
-    "title": "Gemini og NotebookLM",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode4_4.html": {
-    "page_id": 398615,
-    "url": "microsoft-copilot-3",
-    "title": "Microsoft Copilot",
-    "module_id": 233821,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "episode5_8.html": {
-    "page_id": 398665,
-    "url": "retningslinjer-og-policies-8",
-    "title": "Retningslinjer og policies",
-    "module_id": 233811,
-    "module_name": "Hvordan trygt bruke KI?"
-  },
-  "episode6_1.html": {
-    "page_id": 395906,
-    "url": "oppsummering-av-kurset-2",
-    "title": "Oppsummering av kurset",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_7.html": {
-    "page_id": 395912,
-    "url": "avslutning-2",
-    "title": "Avslutning",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode1_3.html": {
-    "page_id": 405069,
-    "url": "ki-okosystemet-6",
-    "title": "KI økosystemet",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "episode1_5.html": {
-    "page_id": 405070,
-    "url": "ki-tjenester-4",
-    "title": "KI-tjenester",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "episode4_5.html": {
-    "page_id": 405071,
-    "url": "api-tilgang-5",
-    "title": "API tilgang",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "episode6_5.html": {
-    "page_id": 405072,
-    "url": "neste-steg-i-din-laeringsreise-3",
-    "title": "Neste steg i din læringsreise",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "episode4_6.html": {
-    "page_id": 405087,
-    "url": "ki-tjenester-ved-uio-3",
-    "title": "KI-tjenester ved UiO",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
   "episode3_5.html": {
     "page_id": 407189,
     "url": "prinsipper-for-gode-instruksjoner",
     "title": "Prinsipper for gode instruksjoner",
-    "module_id": "N/A",
-    "module_name": "N/A"
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
   },
   "episode3_6.html": {
     "page_id": 407190,
@@ -243,5 +152,96 @@
     "title": "Bærekraft",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
+  },
+  "episode4_0.html": {
+    "page_id": 395896,
+    "url": "ki-tjenester-ved-uio-2",
+    "title": "KI-tjenester ved UiO",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_1.html": {
+    "page_id": 395899,
+    "url": "uios-godkjente-ki-tjenester-2",
+    "title": "UiOs godkjente KI-tjenester",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_2.html": {
+    "page_id": 395901,
+    "url": "gpt-uio-2",
+    "title": "GPT UiO",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_3.html": {
+    "page_id": 398612,
+    "url": "gpt-uio-ki-assistenter",
+    "title": "GPT UiO KI-assistenter",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_4.html": {
+    "page_id": 398615,
+    "url": "gpt-uio-personlige-api-nokler",
+    "title": "GPT UiO personlige API-nøkler",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_5.html": {
+    "page_id": 405071,
+    "url": "oppsummert-om-gpt-uio",
+    "title": "Oppsummert om GPT UiO",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_6.html": {
+    "page_id": 405087,
+    "url": "autotekst-og-nettskjema-diktafon-3",
+    "title": "Autotekst og Nettskjema-diktafon",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_7.html": {
+    "page_id": 409298,
+    "url": "gemini-og-notebooklm-3",
+    "title": "Gemini og NotebookLM",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode4_8.html": {
+    "page_id": 409299,
+    "url": "microsoft-copilot-6",
+    "title": "Microsoft Copilot",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "episode5_8.html": {
+    "page_id": 398665,
+    "url": "retningslinjer-og-policies-8",
+    "title": "Retningslinjer og policies",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode6_1.html": {
+    "page_id": 395906,
+    "url": "oppsummering-av-kurset-2",
+    "title": "Oppsummering av kurset",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode6_7.html": {
+    "page_id": 395912,
+    "url": "avslutning-2",
+    "title": "Avslutning",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode6_5.html": {
+    "page_id": 395910,
+    "url": "neste-steg-i-din-laeringsreise-4",
+    "title": "Neste steg i din læringsreise",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
   }
 }

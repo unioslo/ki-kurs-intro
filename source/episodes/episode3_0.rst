@@ -1,5 +1,5 @@
 Hvordan bruke KI?
-===============================================
+==================
 
 I dette kapittelet lærer du hva som er trygg bruk av KI, hvordan du vurderer og kvalitetssikrer svar du får fra generativ KI, og hvordan du kan bruke godt utformede instruksjoner for å få bedre resultater
 

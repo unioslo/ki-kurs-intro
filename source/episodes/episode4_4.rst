@@ -1,34 +1,39 @@
 
-Microsoft Copilot
-=================
+GPT UiO personlige API-nøkler
+==============================
 
-Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til internett søk. Den kan jobbe både med tekst, bilder og videoer.  
-Den har endel innebygde instruksjonsforslag (prompt gallery) for å hjelpe deg igang, og er derfor en fin tjeneste å benytte om du ønsker KI assistanse som er  intuitiv og enkel.
+API (Application Programming Interface) er en teknisk "bro" som lar ulike programvarer snakke med hverandre.
+Med API-tilgang til GPT UiO kan du koble språkmodellene til egne applikasjoner eller tredjepartsverktøy som for eksempel en agent.
 
-MS Copilot ved UiO er ikke integrert med de andre Microsoft produktene. 
-Du kan allikevel benytte MS Copilot chat tjenesten til å f.eks. laste opp en Powerpoint presentasjon og be MS Copilot om å lage illustrasjoner, lage oppsummeringer eller annet. 
+.. uio-info:: Avansert bruk
 
-Vær oppmerksom på at tjenesten i sin helhet kjører på utenlandske servere. UiO har Databehandleravtale med Microsoft, 
-og dette sikrer at data ikke lekkes utenfor organisasjonen, og ikke blir benyttet til å trene modeller videre. 
-Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grønne data (åpne data.) 
-Du må derfor være spesielt forsiktig når du benytter tjenesten. 
-Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot. 
+   API oppkobling er en litt mer avansert KI-bruk og er ikke for alle. 
+   Du kan derfor hoppe over denne delen om API tilgang ikke er relevant for deg.
 
-Nøkkelpunkter
---------------
+Kode-agenter som for eksempel Codex, OpenCode eller Claude Code er eksempler på en type agenter.
+Vi nevner disse spesielt fordi de er så mye mer enn bare programmeringshjelpere. 
+De kan hjelpe med alt fra dokumentgenerering og dataanalyse til integrering av ulike programvaresystemer, helt uten at du må skrive kode selv. 
+Tenk på dem som tekniske assistenter som bygger bro mellom administrative behov og automatisering, noe som sparer tid og reduserer manuelt arbeid.
 
-* Microsoft sin egen KI tjeneste
-* Generering av tekst, bilder og videoer
-* Kjører i sin helhet på utenlandske servere
-* Kun godkjent for grønne data
-* Databehandleravtale på plass
-* Du trenger kun din UiO brukerkonto for å få tilgang
+Ofte vil en gitt kode-agent ha et standardoppsett meg en egen språkmodell som kjører i en skytjeneste. 
+For eksempel kommer Codex med en av OpenAI sine GPT modeller som standard, og for å bruke den må du ha konto hos OpenAI.
+Men de fleste har også mulighet til å koble opp andre språkmodeller via API. 
+Man kan altså bytte motoren i agenten, slik vi forklarte i episode 1. 
 
-.. uio-dont:: Viktig
+Språkmodeller på UiO og NTNU
++++++++++++++++++++++++++++++
 
-   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot.
+For å ivareta datasikkerhet og personvern skal man på UiO benytte `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_. 
+Kode-agentene med sitt standardoppsett ivaretar ikke disse hensynene. 
 
-.. uio-source::  Lenker til UiOs nettsider
+Men på UiO tilbyr vi språkmodeller via GPT UiO som kjører på egne servere i Norge (lokale LLMer). 
+Kobler du agenten opp mot en av disse modellene er personvern og datasikkerhet mye bedre ivaretatt. 
 
-   * `Om Microsoft Copilot <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
-   * `Retningslinjer for bruk av Copilot <https://www.uio.no/tjenester/it/ki/copilot/hjelp/index.html>`_
+Det er veldig viktig å forstå at API tilgang til de lokale LLMene *ikke* automatisk betyr at du kan behandle personsensitiv informasjon eller annen konfidensiell informasjon trygt.
+Det kommer helt an på hvilken applikasjon bruker, og om du har kontroll på at denne applikasjonen ikke sender informasjon ut til tredjepartssystemer.
+
+
+.. uio-dont:: Viktig!
+   
+   * Del aldri API-nøkkelen din offentlig eller i kode som ligger åpent.  
+   * Behandle nøkkelen som et passord, og oppbevar den sikkert (for eksempel i miljøvariabler eller en hemmelighets‑/secret‑tjeneste).
