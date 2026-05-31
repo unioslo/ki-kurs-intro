@@ -39,7 +39,7 @@ Nøkkelpunkter
 * Til Autotekst trenger du kun din UiO brukerkonto for å få tilgang
 * Til TSD-Autotekst må du ha et TSD prosjekt for å få tilgang
 
-.. uio-source::  Lenker til UiOs nettsider
+.. uio-source::  Lenker til UiOs tjenestesider
 
    * `Autotekst <https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html>`_
    * `TSD-Autotekst <https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-tsd.html>`_

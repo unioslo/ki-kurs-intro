@@ -37,10 +37,11 @@ Nøkkelpunkter
 .. uio-dont:: Viktig
 
    * Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: Ikke last opp dokumenter du ikke har rettigheter til å dele.
-   * Ikke last opp dokumenter som inneholder sensitiv informasjon. NotebookLM er kun godkjent for opptil gule data.
+   * Ikke last opp dokumenter som inneholder sensitiv informasjon. NotebookLM og Gemini er kun godkjent for opptil gule data.
 
-.. uio-source:: Lenke til UiOs nettsider
+.. uio-source:: Lenker til UiOs tjenestesider
 
-   `NotebookLM på UiO sine nettsider <https://www.uio.no/tjenester/it/ki/notebooklm>`_
+   * `NotebookLM <https://www.uio.no/tjenester/it/ki/notebooklm>`_
+   * `Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_ 
 
-   Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM.
+   Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med NotebookLM og Gemini.
