@@ -10,9 +10,7 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode1_0
    episodes/episode1_1
    episodes/episode1_2
-   episodes/episode1_3
    episodes/episode1_4
-   episodes/episode1_5
    episodes/episode1_6
    episodes/episode1_7
    episodes/episode1_8
@@ -61,7 +59,7 @@ Velkommen til grunnkurs i generativ KI!
    :maxdepth: 1
    :caption: Episode 5: Oppsummering og veien videre
 
+   episodes/episode6_0
    episodes/episode6_1
-   episodes/episode6_5
-   episodes/episode5_8
-   episodes/episode6_7
+   episodes/episode6_2
+   episodes/episode6_3

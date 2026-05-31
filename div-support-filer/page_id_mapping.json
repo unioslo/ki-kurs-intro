@@ -216,31 +216,31 @@
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode5_8.html": {
-    "page_id": 398665,
-    "url": "retningslinjer-og-policies-8",
-    "title": "Retningslinjer og policies",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_1.html": {
+  "episode6_0.html": {
     "page_id": 395906,
     "url": "oppsummering-av-kurset-2",
     "title": "Oppsummering av kurset",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
-  "episode6_7.html": {
-    "page_id": 395912,
-    "url": "avslutning-2",
-    "title": "Avslutning",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_5.html": {
+  "episode6_1.html": {
     "page_id": 395910,
     "url": "neste-steg-i-din-laeringsreise-4",
     "title": "Neste steg i din læringsreise",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode6_2.html": {
+    "page_id": 398665,
+    "url": "retningslinjer-og-policies-8",
+    "title": "Retningslinjer og policies",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode6_3.html": {
+    "page_id": 395912,
+    "url": "avslutning-2",
+    "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   }

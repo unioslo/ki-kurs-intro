@@ -1,58 +1,33 @@
 
-Oppsummering av kurset
-======================
+Neste steg i din læringsreise
+==============================
 
-La oss oppsummere det viktigste du har lært:
+.. uio-info::
 
-Grunnbegreper i kunstig intelligens
--------------------------------------
+   **Din læringsplan:**
 
-* Generativ KI er en type KI som skaper nytt innhold (tekst, bilder, lyd)
-* Store språkmodeller (LLM) er spesialisert på tekst og er motoren i KI-tjenesten
-* KI-assistenter *gir forslag*, mens KI-agenten *utfører*
+   **Den første uken:**
 
+   1. **Utforsk** UiOs KI-tjenester - søk tilgang hvis nødvendig
+   2. **Prøv** et KI-verktøy på én konkret arbeidsoppgave
+   3. **Reflekter** over hva som fungerte og hva du lærte
 
-Hvordan fungerer språkmodeller?
-----------------------------------
+   **Den neste måneden:**
 
-* LLM-er er *ikke* kunnskapsbaser - de genererer tekst basert på statistiske mønstre: de konstruerer svar ord for ord basert på hva som er sannsynlig
-* "Hallusinering" = KI-en finner på troverdig, men feil informasjon
-* Litt tilfeldighet er innebygd - samme spørsmål kan gi ulike svar
+   1. Velg 3 prosesser eller oppgaver som du tror egner seg for å bruke KI. (Hva kan være hjelpeord her) 
+   2. Kartlegg prosessen ved å tegne opp stegene. bla bla bla. 
+   3. **Lag** en samling av prompts som fungerer for dine oppgaver
+   4. **Del** erfaringer med minimum én kollega
+   5. **Identifiser** 3 arbeidsoppgaver der KI kan spare deg tid
 
-.. uio-viktig::
+   **De neste 3 månedene:**
 
-   Forstå begrensningene - da kan du bruke KI smartere og tryggere.
+   1. **Integrer** KI i din daglige arbeidsflyt der det gir verdi
+   2. **Ta** et viderekommende kurs eller workshop
+   3. **Vurder** om det er områder der teamet ditt kan bruke KI mer effektivt
 
-Hvordan trygt bruke KI?
---------------------------
+   **Langsiktig:**
 
-* **Verifiser alltid** informasjon som må være riktig som fakta, tall og referanser
-* Det er lav risiko å bruke KI om det KI genererer ikke må være sant, og høy risiko om det må være sant
-* **Personvern:** Aldri del sensitiv eller konfidensiell informasjon med offentlige KI-verktøy.
-
-.. uio-viktig:: 
-
-   Du er ansvarlig for det du publiserer, ikke KI-en.
-
-
-Gode instruksjoner
--------------------
-
-* Vær spesifikk, gi kontekst, spesifiser format og struktur
-* Iterer - første forsøk er sjelden perfekt
-* Bruk teknikker som chain of thought (steg-for-steg instruksjoner) eller few-shot instruksjoner (legg til eksempler)
-
-.. uio-viktig:: 
-
-   Gode instruksjoner er en ferdighet som læres gjennom praksis.
-
-KI-tjenester ved UiO
---------------------
-
-* UiO tilbyr KI-tjenester med bedre personverngarantier
-* Sjekk https://www.uio.no/tjenester/it/ki/ for oppdatert info
-* Følg UiOs retningslinjer for bruk av KI
-
-.. uio-viktig::
-
-   Bruk godkjente verktøy når du håndterer data relatert til UiO.
+   1. **Hold deg oppdatert** - feltet utvikler seg raskt
+   2. **Vær nysgjerrig** - test nye verktøy og teknikker
+   3. **Del kunnskap** - hjelp kolleger med å komme i gang
