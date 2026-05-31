@@ -246,8 +246,8 @@
   },
   "episode2_6.html": {
     "page_id": 409300,
-    "url": "oppsummering-av-kapittel-2",
-    "title": "Oppsummering av kapittel 2",
+    "url": "oppsummering-av-episode-2",
+    "title": "Oppsummering av episode 2",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
@@ -264,5 +264,12 @@
     "title": "Oppsummering av episode 4",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
+  },
+  "episode3_9.html": {
+    "page_id": 409303,
+    "url": "baerekraft-3",
+    "title": "Bærekraft",
+    "module_id": "N/A",
+    "module_name": "N/A"
   }
 }
