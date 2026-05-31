@@ -4,14 +4,6 @@ Avslutning
 
 Gratulerer! Du har nå fullført introduksjonskurset i KI for administrativt ansatte ved UiO.
 
-Du har lært:
-
-* ✓ Hva generativ KI er og hvordan det fungerer
-* ✓ Begrensninger og hvordan kvalitetssikre svar
-* ✓ Instruksjonsteknikker og beste praksis
-* ✓ Hvordan få tilgang til og bruke UiOs KI-tjenester
-
-
 Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:
 
 * Bruk kunnskapen du har fått, det er først med litt erfaring at KI kan bli et nyttig verktøy
