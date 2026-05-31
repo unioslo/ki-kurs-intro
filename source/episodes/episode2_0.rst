@@ -5,7 +5,7 @@ I denne delen av kurset skal du lære mer om hvordan store språkmodeller (LLM-e
 Du vil forstå hvordan modellene genererer tekst, og hvorfor de ikke kan fungere som pålitelige kunnskapsbaser.
 Denne innsikten er avgjørende for å kunne bruke KI-verktøy på en trygg og fornuftig måte.
 
-Etter dette kapittelet kan du:
+Etter denne episoden kan du:
 
 * Forstå at LLM-er konstruerer tekst basert på statistiske mønstre
 * Forklare hvorfor LLM-er ikke er pålitelige kunnskapsbaser

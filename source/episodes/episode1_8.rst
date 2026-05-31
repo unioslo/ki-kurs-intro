@@ -1,38 +1,15 @@
-Oppsummering av kapittel 1
+Oppsummering av episode 1
 ==========================
 
-**I dette kapitellet har du lært:**
+**I denne episoden har du lært at:**
 
-* **Kunstig intelligens (KI)** er teknologi som etterligner menneskelig intelligens, basert på komplekse statistiske modeller inspirert av hjernens nevrale nettverk
+* **Kunstig intelligens (KI)** er en teknologi som etterligner menneskelig intelligens
+* **Generativ KI** skaper nytt innhold, i motsetning til KI som klassifiserer eller forutsier
+* **Språkmodellen** er "motoren" i KI og er trent på store mengder tekst
+* **KI-assistenter og agenter** er spesialiserte varianter av KI med ulike roller og muligheter
 
-* **Generativ KI** skaper nytt innhold (tekst, bilder, lyd), i motsetning til diskriminativ KI som klassifiserer, eller prediktiv KI som forutser
+Neste episode
+---------------
 
-* **Språkmodellen (LLM)** er selve "motoren" eller "hjernen" - den er trent på enorme mengder tekst og lærer mønstre i språket
-
-* **KI-tjenesten** er hele pakken rundt språkmodellen: chat-grensesnitt, sikkerhet, autentisering og integrasjoner
-
-* **KI-assistenter** har en definert rolle eller personlighet, og får ekstra instruksjoner som styrer hvordan de svarer
-
-* **KI-agenter** går ett skritt videre - de kan ikke bare gi forslag, men faktisk utføre handlinger i digitale systemer
-
-.. uio-reflect:: Sjekk din forståelse
-
-    Kan du forklare forskjellen mellom en språkmodell (som GPT-5.4) og en KI-tjeneste (som ChatGPT)?
-
-    .. uio-answer::
-
-        Språkmodellen er selve "hjernen" som genererer tekst. KI-tjenesten er hele systemet rundt: chat-vinduet du bruker, innlogging, sikkerhet, samtalehistorikk, osv.
-
-Neste steg
-----------
-
-Nå som du vet **hva** generativ KI er og de ulike byggeklossene i KI-økosystemet, er det på tide å forstå **hvordan** det fungerer under panseret.
-
-I neste episode skal du lære:
-
-* Hvordan språkmodeller konstruerer tekst ord for ord
-* Hvorfor de bygger på statistiske mønstre, ikke faktakunnskap
-* Når du kan stole på svarene - og når du ikke kan
-* Hva som gjør at samme spørsmål kan gi ulike svar
-
-Denne forståelsen er avgjørende for å kunne bruke KI på en trygg og effektiv måte.
+I neste episode lærer du hvordan språkmodeller faktisk fungerer - hvordan de konstruerer tekst, og hvorfor de ikke er pålitelige kunnskapsbaser. 
+Dette er avgjørende kunnskap for å kunne bruke KI trygt.

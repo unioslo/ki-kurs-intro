@@ -43,8 +43,8 @@
   },
   "episode1_8.html": {
     "page_id": 402786,
-    "url": "oppsummering-av-kapittel-1",
-    "title": "Oppsummering av kapittel 1",
+    "url": "oppsummering-av-episode-1",
+    "title": "Oppsummering av episode 1",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
@@ -92,8 +92,8 @@
   },
   "episode3_0.html": {
     "page_id": 395882,
-    "url": "hvordan-bruke-ki",
-    "title": "Hvordan bruke KI?",
+    "url": "hvordan-trygt-bruke-ki",
+    "title": "Hvordan trygt bruke KI?",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
@@ -148,8 +148,8 @@
   },
   "episode3_8.html": {
     "page_id": 407192,
-    "url": "baerekraft-2",
-    "title": "Bærekraft",
+    "url": "tips-om-pre-instruksjon-og-ki-assistenter",
+    "title": "Tips om pre-instruksjon og KI-assistenter",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
@@ -243,5 +243,26 @@
     "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
+  },
+  "episode2_6.html": {
+    "page_id": 409300,
+    "url": "oppsummering-av-kapittel-2",
+    "title": "Oppsummering av kapittel 2",
+    "module_id": 233820,
+    "module_name": "Hvordan fungerer språkmodeller"
+  },
+  "episode3_10.html": {
+    "page_id": 409301,
+    "url": "oppsummering-av-episode-3",
+    "title": "Oppsummering av episode 3",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
+  },
+  "episode4_9.html": {
+    "page_id": 409302,
+    "url": "oppsummering-av-episode-4",
+    "title": "Oppsummering av episode 4",
+    "module_id": 233821,
+    "module_name": "KI-tjenester ved UiO"
   }
 }

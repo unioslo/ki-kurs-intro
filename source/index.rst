@@ -26,6 +26,7 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode2_3
    episodes/episode2_4
    episodes/episode2_5
+   episodes/episode2_6
    
 .. toctree::
    :maxdepth: 1
@@ -40,6 +41,8 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode3_6
    episodes/episode3_7
    episodes/episode3_8
+   episodes/episode3_9
+   episodes/episode3_10
 
 .. toctree::
    :maxdepth: 1
@@ -54,6 +57,7 @@ Velkommen til grunnkurs i generativ KI!
    episodes/episode4_6
    episodes/episode4_7
    episodes/episode4_8
+   episodes/episode4_9
 
 .. toctree::
    :maxdepth: 1
