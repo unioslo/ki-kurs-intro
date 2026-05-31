@@ -1,69 +1,53 @@
-Språkmodeller finner på ting
-================================================
+Språkmodeller har ikke *kunnskap*
+==============================================
 
-Store språkmodeller har ikke kunnskap, og kan derfor finne på ting som ikke stemmer.
-Det kalles ofte *hallusinering* eller *konfabulering* når språkmodeller finner på ting.
+Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
+De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
+Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
 
-Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
-Her er noen eksempler: 
+Hvis en språkmodell skal fullføre setningen «Jeg vil ha et glass…», så er noen mulige fortsettelser «vann» og «melk».
+Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
+Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
+Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
 
-* **Feil fakta**: Modellen oppgir feil datoer, tall eller navn.
-* **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
-* **Blandede personer**: Modellen blander sammen biografier fra ulike personer.
+.. uio-dont:: Eksempel på dårlig bruk
 
-.. uio-info:: Eksempel
+   Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
-   "Studien av Hansen et al. (2023) publisert i Nature viste at …", der både studien og forfatterne er oppfunnet.
-   Det kan også være en tittel som høres troverdig ut, fordi temaet er innenfor fagområdet til en virkelig forfatter.
+.. uio-info:: Manipulering (LLM poisoning)
 
-Hvorfor skjer det?
-~~~~~~~~~~~~~~~~~~~~~~
+   Store språkmodeller kan være sårbare for bevisst manipulering, såkalt "LLM poisoning".
+   Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
+   Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
-Det er mange årsaker til at modellene finner på ting:
+   Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [Germain]_
 
-1. *Modellen vil alltid gi et svar*, den sier ikke "jeg vet ikke".
-2. *Mønstre fra trening*, modellen har lært hvordan svar "skal se ut".
-3. *Manglende faktasjekk*, modellen har ikke kunnskap.
-4. *Overgeneralisering*, modellen kombinerer mønstre fra ulike kilder.
-5. *Utdaterte treningsdata*, modellen vet ikke hva som har skjedd etter den ble trent.
+   Et annet eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
+   Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
+   Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
+   Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [Stokel-Walker]_
 
-.. uio-viktig:: Viktig å forstå
 
-   At språkmodeller finner på ting er ikke en "bug" som kan fikses fullstendig.
-   Det er en iboende egenskap ved hvordan språkmodeller fungerer.
+.. uio-task:: Oppgave
 
-"Hallusinering" med selvtillit
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Åpne `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
 
-Det er et stort problem at LLM-er ofte finner på ting med stor *selvsikkerhet*.
-De sier ikke: "Jeg er usikker, men …".
-I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
-Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
-Du må alltid sjekke fakta med en pålitelig kilde.
+   1. Skriv inn følgende instruksjoner
+         a) Forklar fotball for en 10-åring.
+         b) Forklar fotball for en toppleder.
 
-Hva med internett-søk?
-~~~~~~~~~~~~~~~~~~~~~~
+   2. Diskuter hvilke forskjeller du ser mellom svar a) og b)?
+         a) Ordvalg (enkelt vs. avansert språk)
+         b) Lengde og detaljer
+         c) Eksempler som brukes
 
-Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
-Men det garanterer ikke at svaret er riktig.
-Det er fordi LLM-en fortsatt må *tolke* og *oppsummere* informasjonen den finner, og det gjør den på samme måte som alltid – ved å generere tekst basert på mønstre.
-Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt informasjon fra nettet.
+   3. Hva tror du KI-modellen bruker fra spørsmålet for å lage passende svar?
 
-.. uio-info:: Eksempel
-
-   Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen. [Svarstad]_
-   Der ble feilinformasjon generert av Copilot brukt som saksgrunnlag.
-   Copilot fant ikke opplysningene som brukeren spurte etter på nettet, og fant derfor på et svar.
-
-.. uio-reflect:: Refleksjon
-
-   Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?
-
-   .. uio-answer::
-
-      Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
-      Hvis det ikke mulig å finne kilden, er opplysningen ofte feil.
 
 .. uio-source::
 
-   .. [Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462.
+   .. [Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», *Ethics and Information Technology 26*, nr. 2 (2024): 38, (https://doi.org/10.1007/s10676-024-09775-5), på s. 2.
+
+   .. [Germain] Thomas Germain, «I Hacked ChatGPT and Google's AI - and It Only Took 20 Minutes», BBC, 18. februar 2026, https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes
+
+   .. [Stokel-Walker] Chris Stokel-Walker, «Scientists Invented a Fake Disease. AI Told People It Was Real», Nature 652, nr. 8110 (2026): 559–61, https://doi.org/10.1038/d41586-026-01100-y

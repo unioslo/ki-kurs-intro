@@ -1,94 +1,36 @@
+Trening og kontekst
+=====================
 
-Hvordan genererer språkmodeller tekst?
-================================================
+En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
+De foreslår neste ord basert på teksten du har skrevet så langt.
+Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
+Vi kan si at forslaget er *betinget* av teksten du har skrevet, og dette kalles *konteksten*.
 
+Selv om store språkmodeller er mye mer avanserte enn smarte tastaturer, fungerer de grunnleggende sett på samme måte.
+De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
+Konteksten kan være en instruksjon eller et spørsmål.
+Ofte legger vi til ekstra kontekst, for eksempel ved å laste opp filer.
+Mange KI-tjenester, som for eksempel chat-tjenesten MS Copilot, kan også hente relevant informasjon fra internett, som deretter brukes som kontekst.
 
+Store språkmodeller trenes altså på tekster fra internett.
+Men det er mange tekster de ikke har tilgang til.
+For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
+De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære.
 
-Trening
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dette gir ulikt utslag for ulike bruksområder.
+For eksempel er det for visse fagområder lite informasjon på nett, og da vil naturligvis også språkmodellen ha lite informasjon om disse områdene.
 
-En språkmodell trenes før den tas i bruk.
-Modellen lærer ikke mens den brukes.
-Men noen leverandører av språkmodeller lagrer brukerdata for å trene neste versjon av modellen.
-Det skal vi komme tilbake til senere, i delen om personvern og data.
-
-Her er en forenklet oppsummering av hva som skjer når modellen trenes:
-
-* Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
-* Den lærer hvilke ord som ofte kommer etter hverandre.
-* Den lærer mønstre i språk, grammatikk og hvordan setninger bygges opp.
-* Den lærer sammenhenger mellom begreper og emner.
-
-.. uio-info:: Eksempel
-
-   Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
-
-Generering
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Hva skjer når du stiller et spørsmål:
-
-1. Modellen leser spørsmålet eller instruksjonen din.
-2. Basert på mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
-3. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
-4. Den gjentar prosessen for neste ord, og neste ord, osv.
-5. Modellen stopper når den "mener" svaret er fullstendig.
-
-.. uio-viktig::
-
-   Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
 
 .. uio-colorbox-3:: Fordypning
 
-   .. uio-detail:: Tokens og tokenisering
+    .. uio-detail:: Hva er kontekst?
 
-      Før språkmodellen kan behandle teksten må den deles opp i mindre biter, kalt tokens.
-      Hvert token gjøres om til et tall, fordi datamaskiner regner på tall.
-      For eksempel kan ordet "er" representeres av tallet *2781* hvert sted i teksten det står.
-      Et token kan være et helt ord, men det kan også være en mindre del av et ord.
-      Denne oppdelingen kalles tokenisering, og programmet som gjør oppdelingen kalles en tokeniserer (tokenizer).
-      På websiden `Tiktokenizer <https://tiktokenizer.vercel.app/?model=cl100k_base>`__ kan du skrive inn tekst og se hvordan den deles opp i tokens.
-
-   .. uio-detail:: Determinisme/forutsigbarhet
-
-      Språkmodeller kan være deterministiske (forutsigbare) hvis de alltid bruker det mest sannsynlige ordet.
-      Men det ville vært ganske kjedelig hvis for eksempel ChatGPT alltid ga samme svar på samme spørsmål.
-      Derfor er det med hensikt lagt inn litt tilfeldighet i hvordan modellene svarer.
-      I stedet for å velge det mest sannsynlige ordet, trekker modellen det neste ordet basert på sannsynlighetene.
-      Det er altså mer sannsynlig å trekke et ord som ofte kommer etter ordene som er generert til nå.
-
-   .. uio-detail:: Temperatur og tilfeldighet
-
-      Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
-      Den mest brukte innstillingen er *temperatur*.
-      De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
-
-   .. uio-detail:: Hva er "temperatur"?
-
-      Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
-      Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
-
-      * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
-      * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
-
-      Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
-
-
-   .. uio-detail:: GPT simulator
-
-      Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer!
-
-      https://poloclub.github.io/transformer-explainer/
-
-
-.. uio-reflect:: Refleksjon
-
-   Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
-
-   .. uio-answer::
-
-      Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
-      Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
-      Derfor kan den produsere feilinformasjon med samme selvtillit som riktig informasjon.
+        Når vi snakker om store språkmodeller, bruker vi ofte *kontekst* om alt det vi gir modellen som input.
+        Det kan være et spørsmål eller instruksjon, men også for eksempel dokumenter, bilder eller andre ting i vi laster opp til modellen.
+        Alle store språkmodeller har et *kontekstvindu*, som har en begrenset størrelse.
+        Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.
+        Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet som styrer språkmodellen bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen.
+        Språkmodellen har ikke tilgang til informasjon som ikke er i konteksten.
+        Den kan heller ikke kan "huske" informasjon fra tidligere samtaler.
 

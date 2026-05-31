@@ -1,53 +1,94 @@
-Språkmodeller har ikke *kunnskap*
-==============================================
 
-Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
-De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
-Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
-
-Hvis en språkmodell skal fullføre setningen «Jeg vil ha et glass…», så er noen mulige fortsettelser «vann» og «melk».
-Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
-Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
-Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
-
-.. uio-dont:: Eksempel på dårlig bruk
-
-   Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
-
-.. uio-info:: Manipulering (LLM poisoning)
-
-   Store språkmodeller kan være sårbare for bevisst manipulering, såkalt "LLM poisoning".
-   Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
-   Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
-
-   Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [Germain]_
-
-   Et annet eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
-   Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
-   Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
-   Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [Stokel-Walker]_
+Hvordan genererer språkmodeller tekst?
+================================================
 
 
-.. uio-task:: Oppgave
 
-   Åpne `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
+Trening
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   1. Skriv inn følgende instruksjoner
-         a) Forklar fotball for en 10-åring.
-         b) Forklar fotball for en toppleder.
+En språkmodell trenes før den tas i bruk.
+Modellen lærer ikke mens den brukes.
+Men noen leverandører av språkmodeller lagrer brukerdata for å trene neste versjon av modellen.
+Det skal vi komme tilbake til senere, i delen om personvern og data.
 
-   2. Diskuter hvilke forskjeller du ser mellom svar a) og b)?
-         a) Ordvalg (enkelt vs. avansert språk)
-         b) Lengde og detaljer
-         c) Eksempler som brukes
+Her er en forenklet oppsummering av hva som skjer når modellen trenes:
 
-   3. Hva tror du KI-modellen bruker fra spørsmålet for å lage passende svar?
+* Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
+* Den lærer hvilke ord som ofte kommer etter hverandre.
+* Den lærer mønstre i språk, grammatikk og hvordan setninger bygges opp.
+* Den lærer sammenhenger mellom begreper og emner.
+
+.. uio-info:: Eksempel
+
+   Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
+
+Generering
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hva skjer når du stiller et spørsmål:
+
+1. Modellen leser spørsmålet eller instruksjonen din.
+2. Basert på mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
+3. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
+4. Den gjentar prosessen for neste ord, og neste ord, osv.
+5. Modellen stopper når den "mener" svaret er fullstendig.
+
+.. uio-viktig::
+
+   Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
 
-.. uio-source::
+.. uio-colorbox-3:: Fordypning
 
-   .. [Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», *Ethics and Information Technology 26*, nr. 2 (2024): 38, (https://doi.org/10.1007/s10676-024-09775-5), på s. 2.
+   .. uio-detail:: Tokens og tokenisering
 
-   .. [Germain] Thomas Germain, «I Hacked ChatGPT and Google's AI - and It Only Took 20 Minutes», BBC, 18. februar 2026, https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes
+      Før språkmodellen kan behandle teksten må den deles opp i mindre biter, kalt tokens.
+      Hvert token gjøres om til et tall, fordi datamaskiner regner på tall.
+      For eksempel kan ordet "er" representeres av tallet *2781* hvert sted i teksten det står.
+      Et token kan være et helt ord, men det kan også være en mindre del av et ord.
+      Denne oppdelingen kalles tokenisering, og programmet som gjør oppdelingen kalles en tokeniserer (tokenizer).
+      På websiden `Tiktokenizer <https://tiktokenizer.vercel.app/?model=cl100k_base>`__ kan du skrive inn tekst og se hvordan den deles opp i tokens.
 
-   .. [Stokel-Walker] Chris Stokel-Walker, «Scientists Invented a Fake Disease. AI Told People It Was Real», Nature 652, nr. 8110 (2026): 559–61, https://doi.org/10.1038/d41586-026-01100-y
+   .. uio-detail:: Determinisme/forutsigbarhet
+
+      Språkmodeller kan være deterministiske (forutsigbare) hvis de alltid bruker det mest sannsynlige ordet.
+      Men det ville vært ganske kjedelig hvis for eksempel ChatGPT alltid ga samme svar på samme spørsmål.
+      Derfor er det med hensikt lagt inn litt tilfeldighet i hvordan modellene svarer.
+      I stedet for å velge det mest sannsynlige ordet, trekker modellen det neste ordet basert på sannsynlighetene.
+      Det er altså mer sannsynlig å trekke et ord som ofte kommer etter ordene som er generert til nå.
+
+   .. uio-detail:: Temperatur og tilfeldighet
+
+      Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
+      Den mest brukte innstillingen er *temperatur*.
+      De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
+
+   .. uio-detail:: Hva er "temperatur"?
+
+      Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
+      Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
+
+      * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
+      * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
+
+      Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
+
+
+   .. uio-detail:: GPT simulator
+
+      Lek med GPT 2 simulatoren for en forenklet model av hvordan LLMer som GPT fungerer!
+
+      https://poloclub.github.io/transformer-explainer/
+
+
+.. uio-reflect:: Refleksjon
+
+   Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
+
+   .. uio-answer::
+
+      Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
+      Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
+      Derfor kan den produsere feilinformasjon med samme selvtillit som riktig informasjon.
+
