@@ -39,31 +39,36 @@ For faktasjekking: gjør det på gamlemåten.
    Tenk deg at du har bedt en LLM om hjelp med følgende oppgaver. Hvordan ville du kvalitetssikret hvert svar?
 
    1. "Skriv et utkast til e-post hvor jeg informerer om møtetidspunkt"
-   2. "Hva sier universitets- og høyskoleloven om arbeidskontrakter?"
-   3. "Hjelp meg å strukturere disse møtenotatene" (du har limt inn notatene)
-   4. "Generer ideer til et sommerarrangement for ansatte"
 
-   .. uio-answer::
+      .. uio-answer::
 
-      1. **E-post-utkast:**
          - Les grundig gjennom
          - Sjekk at alle fakta (tid, sted, dato) stemmer
          - Vurder om tonen passer
          - Vurder å legge til personlig touch
 
-      2. **Universitetsloven:**
+   2. "Hva sier universitets- og høyskoleloven om arbeidskontrakter?"
+
+      .. uio-answer::
+
          - **VERIFISER ALT!** Sjekk på lovdata.no
          - Sjekk om andre kilder også burde inkluderes (f.eks. forvaltningsloven)
          - Vurder å heller finne lovteksten selv, og få KI-tjenesten til å forklare den eller hente ut relevant info. 
         
 
-      3. **Strukturere notater:**
+   3. "Hjelp meg å strukturere disse møtenotatene" (du har limt inn notatene)
+
+      .. uio-answer::
+
          - Sammenlign med originalnotatene dine
          - Sjekk at ingenting viktig er utelatt
          - Bekreft at tolkninger i notatet stemmer med ditt inntrykk
          - Verifiser resultatet med møtedeltakerne 
 
-      4. **Idémyldring:**
+   4. "Generer ideer til et sommerarrangement for ansatte"
+
+      .. uio-answer::
+
          - Bruk ideene som inspirasjon, ikke fasit
          - Vurder selv om resultatet passer for deres kultur og forutsetninger
          - Tilpass til budsjett og ressurser
