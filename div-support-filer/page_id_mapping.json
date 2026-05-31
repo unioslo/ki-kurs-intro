@@ -271,5 +271,33 @@
     "title": "Bærekraft",
     "module_id": "N/A",
     "module_name": "N/A"
+  },
+  "episode5_0.html": {
+    "page_id": 395906,
+    "url": "oppsummering-av-kurset",
+    "title": "Oppsummering av kurset",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode5_1.html": {
+    "page_id": 395910,
+    "url": "neste-steg-i-din-laeringsreise",
+    "title": "Neste steg i din læringsreise",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode5_2.html": {
+    "page_id": 398665,
+    "url": "retningslinjer-og-policies",
+    "title": "Retningslinjer og policies",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "episode5_3.html": {
+    "page_id": 395912,
+    "url": "avslutning",
+    "title": "Avslutning",
+    "module_id": 233823,
+    "module_name": "Oppsummering og veien videre"
   }
 }
