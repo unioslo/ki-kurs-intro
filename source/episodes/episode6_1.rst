@@ -4,24 +4,18 @@ Oppsummering av kurset
 
 La oss oppsummere det viktigste du har lært:
 
-Hva er generativ KI?
------------------------
+Grunnbegreper i kunstig intelligens
+-------------------------------------
 
-* Generativ KI skaper nytt innhold (tekst, bilder, lyd)
-* Store språkmodeller (LLM) er spesialisert på tekst
-* Eksempler: GPT UiO, ChatGPT
-* KI-verktøy kan hjelpe med skriving, oppsummering, oversettelse, idémyldring osv osv
+* Generativ KI er en type KI som skaper nytt innhold (tekst, bilder, lyd)
+* Store språkmodeller (LLM) er spesialisert på tekst og er motoren i KI-tjenesten
+* KI-assistenter *gir forslag*, mens KI-agenten *utfører*
 
-
-.. uio-viktig:: 
-
-   Generativ KI er et verktøy, ikke en erstatning for menneskelig tenkning og ekspertise.
 
 Hvordan fungerer språkmodeller?
 ----------------------------------
 
-* LLM-er er IKKE kunnskapsbaser - de genererer tekst basert på statistiske mønstre
-* De konstruerer svar ord for ord basert på hva som er sannsynlig
+* LLM-er er *ikke* kunnskapsbaser - de genererer tekst basert på statistiske mønstre: de konstruerer svar ord for ord basert på hva som er sannsynlig
 * "Hallusinering" = KI-en finner på troverdig, men feil informasjon
 * Litt tilfeldighet er innebygd - samme spørsmål kan gi ulike svar
 
@@ -32,11 +26,9 @@ Hvordan fungerer språkmodeller?
 Hvordan trygt bruke KI?
 --------------------------
 
-* **Verifiser alltid** viktig informasjon - spesielt fakta, tall, referanser
-* **Høy risiko:** Lover, kontaktinfo, tekniske detaljer - MÅ sjekkes
-* **Medium risiko:** Prosedyrer, historikk - BØR sjekkes
-* **Lav risiko:** Brainstorming, formulering, utkast - tryggere å bruke
-* **Personvern:** Aldri del sensitiv eller konfidensiell informasjon med offentlige KI-verktøy
+* **Verifiser alltid** informasjon som må være riktig som fakta, tall og referanser
+* Det er lav risiko å bruke KI om det KI genererer ikke må være sant, og høy risiko om det må være sant
+* **Personvern:** Aldri del sensitiv eller konfidensiell informasjon med offentlige KI-verktøy.
 
 .. uio-viktig:: 
 
@@ -46,24 +38,21 @@ Hvordan trygt bruke KI?
 Gode instruksjoner
 -------------------
 
-* Vær spesifikk og gi kontekst
-* Spesifiser format og struktur
+* Vær spesifikk, gi kontekst, spesifiser format og struktur
 * Iterer - første forsøk er sjelden perfekt
-* Bruk teknikker: rollespill, eksempler, steg-for-steg
+* Bruk teknikker som chain of thought (steg-for-steg instruksjoner) eller few-shot instruksjoner (legg til eksempler)
 
 .. uio-viktig:: 
 
    Gode instruksjoner er en ferdighet som læres gjennom praksis.
 
-UiOs tjenester
-----------------
+KI-tjenester ved UiO
+--------------------
 
 * UiO tilbyr KI-tjenester med bedre personverngarantier
 * Sjekk https://www.uio.no/tjenester/it/ki/ for oppdatert info
-* Institusjonelle versjoner: Databehandleravtaler, ingen bruk til trening
 * Følg UiOs retningslinjer for bruk av KI
 
 .. uio-viktig::
 
    Bruk godkjente verktøy når du håndterer data relatert til UiO.
-
