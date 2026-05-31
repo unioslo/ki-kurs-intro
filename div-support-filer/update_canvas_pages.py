@@ -48,6 +48,12 @@ Usage:
     python update_canvas_pages.py --dry-run
     python update_canvas_pages.py --module 2 --add-to-modules --dry-run
 
+Automatic Module Creation:
+    When using --add-to-modules or --add-to-module, the script will automatically
+    create new modules if they don't exist. Episode files are mapped to modules by
+    episode number: episode1_X goes to Module 1, episode2_X to Module 2, etc.
+    New modules are created with the name "Episode N" where N is the module number.
+
 Mapping File:
     The script uses page_id_mapping.json to map filenames to Canvas page IDs.
     This allows you to use descriptive titles (which change the URL) while still
@@ -539,6 +545,81 @@ def get_modules(token):
         print(f"Warning: Failed to fetch modules (Status: {response.status_code})")
         print(f"Response: {response.text}")
         return {}
+
+
+def create_module(token, name, position, dry_run=False):
+    """Create a new Canvas module.
+
+    Args:
+        token: Canvas API token
+        name: Module name
+        position: Module position (1-based)
+        dry_run: If True, don't actually create the module
+
+    Returns:
+        Module ID if successful, None otherwise
+    """
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/modules"
+
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+
+    data = {
+        "module": {
+            "name": name,
+            "position": position,
+            "published": True
+        }
+    }
+
+    if dry_run:
+        print(f"[DRY RUN] Would create module: {name} (position {position})")
+        return None
+
+    response = requests.post(api_endpoint, headers=headers, json=data)
+
+    if response.status_code in [200, 201]:
+        module_data = response.json()
+        module_id = module_data.get('id')
+        print(f"Created module: {name} (ID: {module_id}, position: {position})")
+        return module_id
+    else:
+        print(f"Failed to create module: {name} (Status: {response.status_code})")
+        print(f"Response: {response.text}")
+        return None
+
+
+def ensure_module_exists(token, episode_num, modules, dry_run=False):
+    """Ensure a module exists for the given episode number, creating it if necessary.
+
+    Args:
+        token: Canvas API token
+        episode_num: Episode number (e.g., 1, 2, 3)
+        modules: Dict mapping position to module_id
+        dry_run: If True, don't actually create the module
+
+    Returns:
+        Module ID if exists or created, None otherwise
+    """
+    # Check if module already exists at this position
+    if episode_num in modules:
+        return modules[episode_num]
+
+    # Module doesn't exist, create it
+    # Generate a default name for the module
+    module_name = f"Episode {episode_num}"
+
+    print(f"\nModule {episode_num} does not exist. Creating new module: '{module_name}'")
+
+    module_id = create_module(token, module_name, episode_num, dry_run)
+
+    if module_id:
+        # Add to modules dict
+        modules[episode_num] = module_id
+
+    return module_id
 
 
 def get_page_by_id(token, page_id):
@@ -1730,8 +1811,8 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
                         sub_num = int(match.group(2))      # 0, 1, 2, etc.
 
                 if episode_num is not None:
-                    # Get module ID for this episode
-                    module_id = modules.get(episode_num)
+                    # Get module ID for this episode, creating it if it doesn't exist
+                    module_id = ensure_module_exists(token, episode_num, modules, args.dry_run)
 
                     if module_id:
                         # For new pages or when using --add-to-module, ask user where to place it

@@ -58,6 +58,7 @@ Risiko knyttet til KI-agenter
 
 Det er mye høyere risiko involvert med agenter sammenlignet med en ren chat eller assistent tjeneste. 
 Begge har de samme svakheter og begrensninger alle KI-systemer har som genererer tekst basert på en språkmodell (troverdighet, hallusinasjon, ikke fakta basert, ikke reproduserbart).
+Du skal lære om dette i neste episode.
 Men fordi en agent samhandler med andre digitale systemer i den "virkelige" verden, kan konsekvensene av en feil bli betydelig større. 
 Spesielt hvis man lar agenten operere autonomt, det vil si uten at et menneske godkjenner eller kontrollerer handlingen.
 

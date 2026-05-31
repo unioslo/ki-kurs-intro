@@ -90,6 +90,13 @@
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
+  "episode2_6.html": {
+    "page_id": 409300,
+    "url": "oppsummering-av-episode-2",
+    "title": "Oppsummering av episode 2",
+    "module_id": 233820,
+    "module_name": "Hvordan fungerer språkmodeller"
+  },
   "episode3_0.html": {
     "page_id": 395882,
     "url": "hvordan-trygt-bruke-ki",
@@ -101,6 +108,13 @@
     "page_id": 395883,
     "url": "nar-kan-du-stole-pa-generativ-ki-3",
     "title": "Når kan du stole på generativ KI?",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
+  },
+  "episode3_10.html": {
+    "page_id": 409301,
+    "url": "oppsummering-av-episode-3",
+    "title": "Oppsummering av episode 3",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
@@ -150,6 +164,13 @@
     "page_id": 407192,
     "url": "tips-om-pre-instruksjon-og-ki-assistenter",
     "title": "Tips om pre-instruksjon og KI-assistenter",
+    "module_id": 233811,
+    "module_name": "Hvordan trygt bruke KI?"
+  },
+  "episode3_9.html": {
+    "page_id": 409303,
+    "url": "baerekraft-3",
+    "title": "Bærekraft",
     "module_id": 233811,
     "module_name": "Hvordan trygt bruke KI?"
   },
@@ -216,48 +237,6 @@
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode6_0.html": {
-    "page_id": 395906,
-    "url": "oppsummering-av-kurset-2",
-    "title": "Oppsummering av kurset",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_1.html": {
-    "page_id": 395910,
-    "url": "neste-steg-i-din-laeringsreise-4",
-    "title": "Neste steg i din læringsreise",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_2.html": {
-    "page_id": 398665,
-    "url": "retningslinjer-og-policies-8",
-    "title": "Retningslinjer og policies",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode6_3.html": {
-    "page_id": 395912,
-    "url": "avslutning-2",
-    "title": "Avslutning",
-    "module_id": 233823,
-    "module_name": "Oppsummering og veien videre"
-  },
-  "episode2_6.html": {
-    "page_id": 409300,
-    "url": "oppsummering-av-episode-2",
-    "title": "Oppsummering av episode 2",
-    "module_id": 233820,
-    "module_name": "Hvordan fungerer språkmodeller"
-  },
-  "episode3_10.html": {
-    "page_id": 409301,
-    "url": "oppsummering-av-episode-3",
-    "title": "Oppsummering av episode 3",
-    "module_id": 233811,
-    "module_name": "Hvordan trygt bruke KI?"
-  },
   "episode4_9.html": {
     "page_id": 409302,
     "url": "oppsummering-av-episode-4",
@@ -265,37 +244,30 @@
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
-  "episode3_9.html": {
-    "page_id": 409303,
-    "url": "baerekraft-3",
-    "title": "Bærekraft",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
   "episode5_0.html": {
     "page_id": 395906,
-    "url": "oppsummering-av-kurset",
+    "url": "oppsummering-av-kurset-2",
     "title": "Oppsummering av kurset",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
   "episode5_1.html": {
     "page_id": 395910,
-    "url": "neste-steg-i-din-laeringsreise",
+    "url": "neste-steg-i-din-laeringsreise-4",
     "title": "Neste steg i din læringsreise",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
   "episode5_2.html": {
     "page_id": 398665,
-    "url": "retningslinjer-og-policies",
+    "url": "retningslinjer-og-policies-8",
     "title": "Retningslinjer og policies",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
   "episode5_3.html": {
     "page_id": 395912,
-    "url": "avslutning",
+    "url": "avslutning-2",
     "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
