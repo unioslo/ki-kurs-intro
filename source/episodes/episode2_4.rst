@@ -29,7 +29,7 @@ Det er mange årsaker til at modellene finner på ting:
 
 .. uio-viktig:: Viktig å forstå
 
-   At språkmodeller finner på ting er ikke en "bug" som kan fikses fullstendig.
+   At språkmodeller finner på ting er ikke en feil som kan fikses fullstendig.
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
 
 "Hallusinering" med selvtillit
