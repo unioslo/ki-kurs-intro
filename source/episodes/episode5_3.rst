@@ -20,6 +20,6 @@ KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som 
    **Tilbakemelding?**
 
    Har du tilbakemelding på kurset eller spørsmål om KI ved UiO?
-   Kontakt IT-avdelingen eller kursets ansvarlige.
+   Kontakt IT-avdelingen (`it-hjelp@uio.no <mailto:it-hjelp@uio.no>`_) eller kursets ansvarlige `ai-contact@usit.uio.no <mailto:ai-contact@usit.uio.no>`_).
 
-   [Lenke til nettskjema? Spørreundersøkelsen? Epost? Quiz for å avslutte? ]
+   `Tilbakemeldingsskjema brukertesting <https://nettskjema.no/a/632397>`_
