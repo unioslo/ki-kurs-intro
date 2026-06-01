@@ -6,7 +6,7 @@ Du vil også lære hvordan generativ KI og språkmodeller er bygd opp. Dette vil
 
 .. figure:: ../images/1.0-studying-the-basics.png
     :align: center
-    :width: 100%
+    :width: 65%
     :alt: Illustrasjon av en person som leser en bok om KI 101 - som er plugget inn i strømuttak
 
 
