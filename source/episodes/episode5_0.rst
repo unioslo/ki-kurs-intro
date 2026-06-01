@@ -23,7 +23,7 @@ Hvordan fungerer språkmodeller?
 
    Forstå begrensningene - da kan du bruke KI smartere og tryggere.
 
-Hvordan trygt bruke KI?
+Hvordan bruke KI?
 --------------------------
 
 * **Verifiser alltid** informasjon som må være riktig som fakta, tall og referanser
