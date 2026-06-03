@@ -246,22 +246,22 @@
   },
   "episode5_0.html": {
     "page_id": 395906,
-    "url": "oppsummering-av-kurset-2",
-    "title": "Oppsummering av kurset",
+    "url": "treningsoppgaver",
+    "title": "Treningsoppgaver",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
   "episode5_1.html": {
     "page_id": 395910,
-    "url": "neste-steg-i-din-laeringsreise-4",
-    "title": "Neste steg i din læringsreise",
+    "url": "sett-1",
+    "title": "Sett 1",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
   "episode5_2.html": {
     "page_id": 398665,
-    "url": "retningslinjer-og-policies-8",
-    "title": "Retningslinjer og policies",
+    "url": "sett-2",
+    "title": "Sett 2",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
   },
@@ -271,5 +271,26 @@
     "title": "Avslutning",
     "module_id": 233823,
     "module_name": "Oppsummering og veien videre"
+  },
+  "episode6_0.html": {
+    "page_id": 409833,
+    "url": "oppsummering-av-kurset-4",
+    "title": "Oppsummering av kurset",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode6_1.html": {
+    "page_id": 409834,
+    "url": "retningslinjer-og-policies-10",
+    "title": "Retningslinjer og policies",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode6_2.html": {
+    "page_id": 409835,
+    "url": "avslutning-4",
+    "title": "Avslutning",
+    "module_id": 240591,
+    "module_name": "Oppsummering og avslutning"
   }
 }

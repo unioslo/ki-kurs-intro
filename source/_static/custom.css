@@ -1,5 +1,14 @@
 /* Custom CSS for sphinx-lesson solution buttons */
 
+/* Spaced list styling - adds vertical spacing between list items */
+.spaced-list-task ol > li {
+    margin-bottom: 1.5em;
+}
+
+.spaced-list-task ol > li:last-child {
+    margin-bottom: 0;
+}
+
 /* Fix solution button text being cut off */
 .solution .admonition-title {
     padding: 12px 15px;

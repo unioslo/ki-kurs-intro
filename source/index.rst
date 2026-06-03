@@ -61,9 +61,16 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 5: Oppsummering og veien videre
+   :caption: Episode 5: Treningsoppgaver
 
    episodes/episode5_0
    episodes/episode5_1
    episodes/episode5_2
-   episodes/episode5_3
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Episode 6: Oppsummering
+
+   episodes/episode6_0
+   episodes/episode6_1
+   episodes/episode6_2
