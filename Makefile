@@ -12,7 +12,7 @@ BUILDDIR      = _build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile deploy-from-local deploy-from-local-dry-run deploy-from-github deploy-from-github-dry-run
+.PHONY: help Makefile deploy-from-local deploy-from-local-dry-run deploy-from-github deploy-from-github-dry-run episode5-pdf
 
 # Deploy to Canvas from local HTML files in _build/html/episodes
 deploy-from-local:
@@ -29,6 +29,12 @@ deploy-from-github:
 # Deploy from GitHub (dry-run): preview what would be deployed without making changes
 deploy-from-github-dry-run:
 	@python div-support-filer/update_canvas_pages.py --from-github --dry-run
+
+# Build PDF for Episode 5 only (without page numbers, cover, or TOC)
+episode5-pdf:
+	@echo "Building Episode 5 PDF (no page numbers, no cover, no TOC)..."
+	@EPISODE5_PDF=1 $(SPHINXBUILD) -b simplepdf "$(SOURCEDIR)" "_build/simplepdf-episode5"
+	@echo ""
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

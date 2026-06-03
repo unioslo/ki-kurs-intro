@@ -1,7 +1,64 @@
 Kurssidene bygges automatisk (det tar noen minutter etter at du har lagret endringene dine) og kan sees her: https://unioslo.github.io/ki-kurs-intro
 
-OBS: Funksjonaliteten er laget for canvas for å laste opp html i _build som "Sider" i canvas. Siden her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet. 
+OBS: Funksjonaliteten er laget for canvas for å laste opp html i _build som "Sider" i canvas. Siden her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet.
 
+# Lokal utvikling / Local Development
+
+## Forutsetninger / Prerequisites
+
+### Python og Virtual Environment
+
+```bash
+# Opprett virtual environment
+python3 -m venv .venv
+
+# Aktiver virtual environment
+source .venv/bin/activate  # På macOS/Linux
+# eller
+.venv\Scripts\activate     # På Windows
+
+# Installer Python-avhengigheter
+pip install -r requirements.txt
+```
+
+### Systembiblioteker for PDF-generering (macOS)
+
+For å bygge PDF-filer med `make simplepdf` trenger du følgende systembiblioteker:
+
+```bash
+# Installer med Homebrew (macOS)
+brew install cairo pango gdk-pixbuf libffi
+
+# Reinstaller WeasyPrint etter installasjon av systembiblioteker
+pip install --force-reinstall --no-cache-dir weasyprint
+```
+
+**Linux:** Se [WeasyPrint installasjonsinstruksjoner](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation) for din distribusjon.
+
+**Windows:** Se [WeasyPrint for Windows](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#windows).
+
+## Bygge dokumentasjonen
+
+```bash
+# Bygg HTML
+make html
+
+# Bygg PDF (krever systembiblioteker - se over)
+make simplepdf
+```
+
+HTML-filene genereres i `_build/html/` og PDF-filen i `_build/simplepdf/`.
+
+## Vanlige kommandoer / Common Commands
+
+```bash
+make html              # Bygg HTML
+make simplepdf         # Bygg PDF (krever systembiblioteker)
+make clean             # Rydd opp bygde filer
+make deploy-from-local # Deploy til Canvas fra lokale filer
+```
+
+Se [CONTRIBUTING.md](CONTRIBUTING.md) for detaljert utviklingsveiledning.
 
 # Hvordan jobbe i github og Canvas
 

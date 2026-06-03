@@ -1,11 +1,11 @@
 Sett 2
 ========
 
-Oppgaver for å utforske muligheter i egen arbeidshverdag
+Oppgaver for å utforske muligheter i egen arbeidshverdag. 
 
-Kartlegg egne arbeidsoppgaver
 
-.. uio-task::
+.. uio-task:: Kartlegg egne arbeidsoppgaver
+
 
    1. Skriv ned 5-10 arbeidsoppgaver du jobber med i løpet av en arbeidsuke. (Eks. Svare på e-poster, lage presentasjoner, skrive eller oppdatere nettsidetekst, utarbeide rapporter eller saksframlegg, planlegge undervisning, seminarer eller møter, veilede studenter, databehandling / analyse, saksbehandling)
 

@@ -1175,8 +1175,8 @@ def add_page_to_module(token, module_id, page_url, title, position, indent, dry_
         return False
 
 
-def upload_image_to_canvas(token, image_path):
-    """Upload an image file to Canvas following the official file upload workflow.
+def upload_file_to_canvas(token, file_path, folder_path="course_files"):
+    """Upload a file to Canvas following the official file upload workflow.
 
     Workflow:
     1. POST to /api/v1/courses/:course_id/files to get upload URL and params
@@ -1185,21 +1185,22 @@ def upload_image_to_canvas(token, image_path):
 
     Args:
         token: Canvas API token
-        image_path: Path to the image file
+        file_path: Path to the file
+        folder_path: Canvas folder path (default: "course_files")
 
     Returns:
         Tuple of (file_id, preview_url) or (None, None) if upload fails
     """
     import mimetypes
 
-    image_path = Path(image_path)
+    file_path = Path(file_path)
 
-    if not image_path.exists():
-        print(f"Warning: Image file not found: {image_path}")
+    if not file_path.exists():
+        print(f"Warning: File not found: {file_path}")
         return None, None
 
     # Determine MIME type
-    mime_type, _ = mimetypes.guess_type(str(image_path))
+    mime_type, _ = mimetypes.guess_type(str(file_path))
     if not mime_type:
         mime_type = 'application/octet-stream'
 
@@ -1208,17 +1209,17 @@ def upload_image_to_canvas(token, image_path):
     headers = {"Authorization": f"Bearer {token}"}
 
     payload = {
-        "name": image_path.name,
-        "size": image_path.stat().st_size,
+        "name": file_path.name,
+        "size": file_path.stat().st_size,
         "content_type": mime_type,
-        "parent_folder_path": "course_images",  # Store images in dedicated folder
+        "parent_folder_path": folder_path,
         "on_duplicate": "overwrite"  # Overwrite if same filename exists
     }
 
     response = requests.post(api_endpoint, headers=headers, data=payload)
 
     if response.status_code not in [200, 201]:
-        print(f"Warning: Failed to initiate image upload for {image_path.name}")
+        print(f"Warning: Failed to initiate file upload for {file_path.name}")
         print(f"Status: {response.status_code}, Response: {response.text}")
         return None, None
 
@@ -1227,14 +1228,14 @@ def upload_image_to_canvas(token, image_path):
     upload_params = upload_info.get('upload_params', {})
 
     if not upload_url:
-        print(f"Warning: No upload URL received for {image_path.name}")
+        print(f"Warning: No upload URL received for {file_path.name}")
         return None, None
 
     # Step 2: Upload the actual file
     # Important: Do NOT send the access token with this request
     # File must be the last field in the multipart form
-    with open(image_path, 'rb') as f:
-        files = {'file': (image_path.name, f, mime_type)}
+    with open(file_path, 'rb') as f:
+        files = {'file': (file_path.name, f, mime_type)}
         upload_response = requests.post(upload_url, data=upload_params, files=files)
 
     # Step 3: Follow redirect to confirm upload success
@@ -1246,7 +1247,7 @@ def upload_image_to_canvas(token, image_path):
             upload_response = requests.get(location, headers=confirm_headers)
 
     if upload_response.status_code not in [200, 201]:
-        print(f"Warning: Failed to upload image {image_path.name}")
+        print(f"Warning: Failed to upload file {file_path.name}")
         print(f"Status: {upload_response.status_code}, Response: {upload_response.text}")
         return None, None
 
@@ -1256,11 +1257,26 @@ def upload_image_to_canvas(token, image_path):
         file_id = file_info.get('id')
         preview_url = f"{CANVAS_URL}/courses/{COURSE_ID}/files/{file_id}/preview"
 
-        print(f"Uploaded: {image_path.name} (file_id: {file_id})")
+        print(f"Uploaded: {file_path.name} (file_id: {file_id})")
         return file_id, preview_url
     except Exception as e:
-        print(f"Warning: Could not parse upload response for {image_path.name}: {e}")
+        print(f"Warning: Could not parse upload response for {file_path.name}: {e}")
         return None, None
+
+
+def upload_image_to_canvas(token, image_path):
+    """Upload an image file to Canvas.
+
+    This is a wrapper around upload_file_to_canvas for backward compatibility.
+
+    Args:
+        token: Canvas API token
+        image_path: Path to the image file
+
+    Returns:
+        Tuple of (file_id, preview_url) or (None, None) if upload fails
+    """
+    return upload_file_to_canvas(token, image_path, folder_path="course_images")
 
 
 def process_images_in_html(token, html_content, html_path, dry_run=False):
@@ -1371,6 +1387,113 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
     return str(soup)
 
 
+def process_downloads_in_html(token, html_content, html_path, dry_run=False):
+    """Find all download links in HTML, upload files to Canvas, and update links with Canvas URLs.
+
+    Args:
+        token: Canvas API token
+        html_content: HTML content as string
+        html_path: Path to the HTML file (used to resolve relative file paths)
+        dry_run: If True, don't actually upload files
+
+    Returns:
+        Updated HTML content with Canvas file URLs
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    html_path = Path(html_path)
+
+    # Find all download links (Sphinx :download: directive)
+    # These render as <a class="reference download internal" href="...">
+    # Need to search for elements that have both 'reference' and 'download' classes
+    download_links = soup.find_all('a', class_=lambda x: x and 'download' in x and 'reference' in x)
+
+    if not download_links:
+        return html_content
+
+    print(f"Found {len(download_links)} download link(s) to process")
+
+    uploaded_count = 0
+    skipped_count = 0
+
+    for link in download_links:
+        href = link.get('href')
+        if not href:
+            continue
+
+        # Skip if already a Canvas URL
+        if 'instructure.com' in href:
+            print(f"- Skipping (already Canvas URL): {href}")
+            skipped_count += 1
+            continue
+
+        # Resolve relative path
+        # Download links are typically referenced as ../_downloads/hash/filename.pdf
+        if href.startswith('../'):
+            # Resolve relative to HTML file directory
+            file_path = (html_path.parent / href).resolve()
+        elif href.startswith('/'):
+            # Absolute path
+            file_path = Path(href)
+        else:
+            # Relative path without ../
+            file_path = (html_path.parent / href).resolve()
+
+        if not file_path.exists():
+            print(f"Warning: Download file not found: {href}")
+            print(f"Resolved to: {file_path}")
+            continue
+
+        if dry_run:
+            print(f"- [DRY RUN] Would upload: {href}")
+            print(f"  Local path: {file_path}")
+            uploaded_count += 1
+            continue
+
+        # Upload file to Canvas
+        print(f"- Uploading: {href}")
+        print(f"  Local path: {file_path}")
+        file_id, preview_url = upload_file_to_canvas(token, file_path, folder_path="course_files")
+
+        if file_id and preview_url:
+            uploaded_count += 1
+            # For download files, we want the direct download URL, not the preview
+            download_url = f"{CANVAS_URL}/courses/{COURSE_ID}/files/{file_id}/download"
+            print(f"  Canvas download URL: {download_url}")
+
+            # Update link with Canvas URL and add Canvas-specific attributes
+            link['href'] = download_url
+            link['class'] = 'instructure_file_link instructure_scribd_file'
+            link['title'] = file_path.name
+
+            # Keep the download attribute
+            if not link.get('download'):
+                link['download'] = file_path.name
+        else:
+            print(f"  Upload failed")
+
+    # Summary
+    if uploaded_count > 0 or skipped_count > 0:
+        print(f"Download file summary: {uploaded_count} uploaded, {skipped_count} skipped")
+
+    return str(soup)
+
+
+def fix_canvas_file_links(html_content, course_id=COURSE_ID):
+    """Replace COURSE_ID placeholder in Canvas file links with actual course ID.
+
+    Args:
+        html_content: HTML content string
+        course_id: Canvas course ID
+
+    Returns:
+        HTML content with fixed Canvas file links
+    """
+    # Replace /courses/COURSE_ID/ with actual course ID
+    html_content = html_content.replace('/courses/COURSE_ID/', f'/courses/{course_id}/')
+
+    return html_content
+
+
 def extract_content(html_path, token=None, dry_run=False):
     """Extract the main content from an HTML file, removing h1 tags and navigation.
 
@@ -1408,6 +1531,11 @@ def extract_content(html_path, token=None, dry_run=False):
     # Process images if token is provided
     if token:
         content_html = process_images_in_html(token, content_html, html_path, dry_run)
+        # Process download links
+        content_html = process_downloads_in_html(token, content_html, html_path, dry_run)
+
+    # Fix Canvas file links
+    content_html = fix_canvas_file_links(content_html)
 
     return content_html
 
