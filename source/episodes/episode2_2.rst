@@ -27,8 +27,7 @@ Generering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Språkmodeller er matematiske modeller som jobber med tall. Før modellen kan behandle instruksjonen din må den deles opp i mindre biter, kalt *tokens*, og hvert token gjøres så om til et tall.
-Instruksjonen din brukes også som kontekst for å generere ny tekst.
-
+Instruksjonen din brukes så som kontekst for å generere ny tekst.
 
 1. Basert på konteksten og mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
 2. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
