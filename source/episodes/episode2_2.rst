@@ -26,13 +26,14 @@ Her er en forenklet oppsummering av hva som skjer når modellen trenes:
 Generering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Hva skjer når du stiller et spørsmål:
+Språkmodeller er matematiske modeller som jobber med tall. Før modellen kan behandle instruksjonen din må den deles opp i mindre biter, kalt *tokens*, og hvert token gjøres så om til et tall.
+Instruksjonen din brukes også som kontekst for å generere ny tekst.
 
-1. Modellen leser spørsmålet eller instruksjonen din.
-2. Basert på mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
-3. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
-4. Den gjentar prosessen for neste ord, og neste ord, osv.
-5. Modellen stopper når den "mener" svaret er fullstendig.
+
+1. Basert på konteksten og mønstre den har lært, beregner den sannsynlighetene for neste ord i setningen.
+2. Den trekker et ord, med litt tilfeldighet, og legger det til svaret.
+3. Den gjentar prosessen for neste ord, og neste ord, osv.
+4. Modellen stopper når den "mener" svaret er fullstendig.
 
 .. uio-viktig::
 
