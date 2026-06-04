@@ -7,4 +7,5 @@ sphinxcontrib-jquery
 sphinx-new-tab-link
 
 # For PDF generation (requires system libraries - see README.md)
+sphinx-simplepdf
 weasyprint>=69.0
