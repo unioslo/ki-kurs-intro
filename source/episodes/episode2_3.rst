@@ -28,22 +28,6 @@ Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
    Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [Stokel-Walker]_
 
 
-.. uio-task:: Oppgave
-
-   Åpne `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
-
-   1. Skriv inn følgende instruksjoner
-         a) Forklar fotball for en 10-åring.
-         b) Forklar fotball for en toppleder.
-
-   2. Diskuter hvilke forskjeller du ser mellom svar a) og b)?
-         a) Ordvalg (enkelt vs. avansert språk)
-         b) Lengde og detaljer
-         c) Eksempler som brukes
-
-   3. Hva tror du KI-modellen bruker fra spørsmålet for å lage passende svar?
-
-
 .. uio-source::
 
    .. [Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», *Ethics and Information Technology 26*, nr. 2 (2024): 38, (https://doi.org/10.1007/s10676-024-09775-5), på s. 2.

@@ -21,3 +21,18 @@ En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. Det er d
 .. uio-info:: Kontekstrik instruksjon: 
 
    Jeg skal skrive en e-post til alle ansatte om nytt møterom-bookingsystem. Målgruppen er administrativt ansatte som    ikke er teknisk kyndige. Tonen skal være vennlig og informativ. Kan du hjelpe meg med et utkast? → Du får et svar     tilpasset din spesifikke situasjon.
+
+.. uio-task:: Oppgave
+
+   Åpne `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
+
+   1. Skriv inn følgende instruksjoner
+         a) Forklar fotball for en 10-åring.
+         b) Forklar fotball for en toppleder.
+
+   2. Diskuter hvilke forskjeller du ser mellom svar a) og b)?
+         a) Ordvalg (enkelt vs. avansert språk)
+         b) Lengde og detaljer
+         c) Eksempler som brukes
+
+   3. Hva tror du KI-modellen bruker fra spørsmålet for å lage passende svar?
