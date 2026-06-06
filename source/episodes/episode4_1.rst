@@ -16,12 +16,14 @@ Med en privat konto har du det ikke det - det er du som privatperson som "tar ri
 Er det forbudt å bruke andre KI verktøy enn de godkjente?
 -----------------------------------------------------------
 
-Det er ikke forbudt å bruke andre KI verktøy ved Universitet i Oslo enn de som er godkjent.
-Men det er ikke lov å benytte de dersom man sender *UiO data* med spørringen.
+Om du jobber på en privat maskin, din private laptop eller din private desktop er det ikke forbudt å bruke andre KI verktøy ved Universitet i Oslo enn de som er godkjent.
+*Men* det er ikke lov å benytte de dersom man sender *UiO data* med spørringen.
 Du må derfor være ekstra påpasselig med hva du bruker tjenesten til.
 
 Det betyr altså at generelle spørsmål kan være greit, men ikke om man sender med informasjon om for eksempel UiOs systemer eller ansatte,
 eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informasjon som UiO eier.
+
+Jobber du på en UiO driftet laptop, skal du bare bruke UiO godkjente tjenester.
 
 **NB! Her må vi undersøke hva som er et akseptabelt utsagn!**
 
