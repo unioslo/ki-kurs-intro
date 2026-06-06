@@ -33,7 +33,11 @@ Her er derfor noen dårlige instruksjoner. Hvordan ville du forbedret dem?
 
          «Lag en liste over 10 ting jeg må huske på når jeg arrangerer et jubileumsseminar for 50 ansatte. Inkluder både planlegging, gjennomføring og oppfølging.»
 
-
+   5. Her er alle møtereferater over seminarer vi har hatt i seksjonen. [Lim inn notater]. Lag en oppsummering over seminarer i seksjonen i 2025, med tidspunkt, sted, tema, deltakere. 
+   
+      .. uio-answer:: Mulig forbedringer
+         
+         Suppler med: "Jeg vil ha det i tabell format, med kolonner: "Tema", "Sted", "Tid", "Antall deltakere" 
 
 
 Vi har nå gitt deg noen verktøy for å bruke KI på en tryggere og bedre måte. 
