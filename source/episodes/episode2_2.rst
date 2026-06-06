@@ -58,21 +58,18 @@ Instruksjonen din brukes så som kontekst for å generere ny tekst.
       I stedet for å velge det mest sannsynlige ordet, trekker modellen det neste ordet basert på sannsynlighetene.
       Det er altså mer sannsynlig å trekke et ord som ofte kommer etter ordene som er generert til nå.
 
-   .. uio-detail:: Temperatur og tilfeldighet
+   .. uio-detail:: Tilfeldighet og temperatur
 
       Vi kan justere hvor "tilfeldig" eller "kreativ" tekst språkmodellen skal generere.
-      Den mest brukte innstillingen er *temperatur*.
-      De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
-
-   .. uio-detail:: Hva er "temperatur"?
-
-      Temperaturen kontrollerer hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
+      Den mest brukte innstillingen er *temperatur*. Temperaturen kontrollerer altså hvordan språkmodellen trekker ord fra sannsynlighetsfordelingen.
       Med høy temperatur øker sannsynligheten for å trekke sjeldne ord.
 
       * **Lav temperatur** (f.eks. 0.2): Mer forutsigbar, velger de mest sannsynlige ordene.
       * **Høy temperatur** (f.eks. 1.5): Mer kreativ, kan velge mindre sannsynlige ord.
 
       Du kan få dermed ulike svar på samme spørsmål. Noen ganger kan svarene være mer kreative, andre ganger mer "standard". Det er ingen garanti for at samme spørsmål gir samme svar neste gang.
+
+      De fleste vanlige tjenester har en standard temperatur som ikke kan justeres, men noen lar deg sette denne etter behov.
 
 
    .. uio-detail:: GPT simulator
