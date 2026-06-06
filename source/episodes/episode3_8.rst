@@ -13,7 +13,8 @@ Mer info om KI-assistenter i GPT UiO finnes her: https://www.uio.no/tjenester/it
 
    Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. 
    Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til neste gang. 
-   Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine.
+   Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine. 
+   Bruk tipsene du har fått i denne episoden til å hjelpe deg å forbedre dine instruksjoner.
 
 Vi har nå gitt deg noen verktøy for å bruke KI på en tryggere og bedre måte. 
 I den neste og siste delen av denne episoden skal vi snakke om et annet viktig aspekt ved KI og trygg og god bruk, nemlig bærekraft.
