@@ -38,7 +38,3 @@ Her er derfor noen dårlige instruksjoner. Hvordan ville du forbedret dem?
       .. uio-answer:: Mulig forbedringer
          
          Suppler med: "Jeg vil ha det i tabell format, med kolonner: "Tema", "Sted", "Tid", "Antall deltakere" 
-
-
-Vi har nå gitt deg noen verktøy for å bruke KI på en tryggere og bedre måte. 
-I den neste og siste del-episoden av "Hvordan trygt bruke KI" skal vi snakke om et annet viktig aspekt, nemlig bærekraft.
