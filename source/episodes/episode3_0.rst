@@ -1,7 +1,7 @@
-Hvordan trygt bruke KI?
-========================
+Hvordan bruke KI på en god måte?
+================================
 
-I denne episoden lærer du hva som er trygg bruk av KI, hvordan du vurderer og kvalitetssikrer svar du får fra generativ KI, og hvordan du kan bruke godt utformede instruksjoner for å få bedre resultater.
+I denne episoden lærer du hva som er god bruk av KI, hvordan du vurderer og kvalitetssikrer svar du får fra generativ KI, og hvordan du kan bruke godt utformede instruksjoner for å få bedre resultater.
 Du vil også lære om vanlige feil å unngå, og om bærekraftsutfordringer knyttet til KI-bruk.
 
 Etter denne episoden kan du:
