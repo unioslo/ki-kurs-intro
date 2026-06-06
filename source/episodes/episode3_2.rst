@@ -4,7 +4,7 @@ Strategier for å kvalitetssikre KI-generert innhold
 
 Ved bruk av KI-tjenester må du alltid ta et ansvar for å faktasjekke materiale du får fra en språkmodell dersom du skal videreformidle det eller bruke det i videre arbeid. 
 Som vi allerede har vært inne på, vil KI-tjenester ofte generere svar som virker korrekte og overbevisende, og de kan være veldig selvsikre i måten de kommuniserer på. 
-Men dette betyr ikke at det ikke er feil i materialet, og det er vårt ansvar som ansatte å kvalitetssikre før vi bruker innholdet vi får fra KI. Her er noen konkrete strategier:
+Men dette betyr ikke at det ikke er feil i materialet, og det er vårt ansvar å kvalitetssikre før vi bruker innholdet vi får fra KI. Her er noen konkrete strategier:
 
 1. Behandle KI-output som en ukjent kilde 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
