@@ -21,13 +21,13 @@ Eller helt andre ting avhengig av hva som er formålet med akkurat den agenten.
 
             forfatte et tekst forslag for meg 
 
-            Eksempel: Microsoft Chat
+            Eksempel: Microsoft Copilot Chat (den vi har aktivert ved UiO)
 
         .. canvas-tab:: KI-agenten
 
             forfatte et tekst forslag for meg, legge til relevante filer, legge til adressanter, og sende e-posten for meg
 
-            Eksempel: Microsoft Copilot
+            Eksempel: Microsoft Copilot integrert i MS produktene (ikke aktivert ved UiO)
 
 
 .. canvas-tabs::
