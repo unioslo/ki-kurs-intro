@@ -14,10 +14,8 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
 
 .. uio-info:: Microsoft KI produktene
 
-
    Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chattefunksjonaliteten.
    Denne tjenesten het tidligere Bing Chat Enterprise, men heter nå Microsoft Copilot (Chat).
-
 
    Ved UiO er Microsoft Copilot ikke integrert direkte i de andre Microsoft-produktene.
    Det betyr at den såkalte agent-funksjonaliteten ikke er aktivert.
@@ -27,7 +25,6 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
       :align: center
       :width: 10%
       :alt: MS Copilot ikon
-
 
    Du kan likevel bruke Microsoft Copilot (Chat) til blant annet å:
 
@@ -39,13 +36,6 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
    PowerPoint-, Word- eller andre Microsoft-applikasjoner. 
    Slike endringer må du fortsatt gjøre selv i programmet, basert på forslagene du får fra Copilot (Chat).
 
-
-   
-
-   
-
-   
-      
 
 Nøkkelpunkter
 --------------
