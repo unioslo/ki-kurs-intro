@@ -2,17 +2,50 @@
 Microsoft Copilot
 =================
 
-Microsoft Copilot fungerer som en vanlig chat-tjeneste med tilgang til internett søk. Den kan jobbe både med tekst, bilder og videoer.  
-Den har endel innebygde instruksjonsforslag (prompt gallery) for å hjelpe deg igang, og er derfor en fin tjeneste å benytte om du ønsker KI assistanse som er  intuitiv og enkel.
+Microsoft Copilot ved UiO fungerer som en vanlig chattetjeneste med tilgang til nettsøk. 
+Den kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video. 
+Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hjelper deg i gang, og er derfor godt egnet hvis du ønsker KI-assistanse som er intuitiv og enkel å bruke.
 
-MS Copilot ved UiO er ikke integrert med de andre Microsoft produktene. 
-Du kan allikevel benytte MS Copilot chat tjenesten til å f.eks. laste opp en Powerpoint presentasjon og be MS Copilot om å lage illustrasjoner, lage oppsummeringer eller annet. 
-
-Vær oppmerksom på at tjenesten i sin helhet kjører på utenlandske servere. UiO har Databehandleravtale med Microsoft, 
+Vær oppmerksom på at tjenesten i sin helhet kjører på utenlandske servere. UiO har databehandleravtale med Microsoft, 
 og dette sikrer at data ikke lekkes utenfor organisasjonen, og ikke blir benyttet til å trene modeller videre. 
-Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grønne data (åpne data.) 
+Men fordi data sendes til utenlandske servere er tjenesten kun godkjent for grønne data (åpne data). 
 Du må derfor være spesielt forsiktig når du benytter tjenesten. 
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot. 
+
+.. uio-info:: Microsoft KI produktene
+
+
+   Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chattefunksjonaliteten.
+   Denne tjenesten het tidligere Bing Chat Enterprise, men heter nå Microsoft Copilot (Chat).
+
+
+   Ved UiO er Microsoft Copilot ikke integrert direkte i de andre Microsoft-produktene.
+   Det betyr at den såkalte agent-funksjonaliteten ikke er aktivert.
+   Derfor ser du ikke Copilot-ikonet eller KI-funksjoner inne i for eksempel PowerPoint eller Word.
+
+   .. figure:: ../images/ms-copilot.png
+      :align: center
+      :width: 10%
+      :alt: MS Copilot ikon
+
+
+   Du kan likevel bruke Microsoft Copilot (Chat) til blant annet å:
+
+   - få hjelp til å lage en PowerPoint-presentasjon
+   - laste opp en presentasjon og be Copilot lage illustrasjoner
+   - få oppsummeringer eller andre typer analyser av innholdet
+
+   Det du ikke kan, er å be Copilot gjøre endringer direkte i en fil fra selve 
+   PowerPoint-, Word- eller andre Microsoft-applikasjoner. 
+   Slike endringer må du fortsatt gjøre selv i programmet, basert på forslagene du får fra Copilot (Chat).
+
+
+   
+
+   
+
+   
+      
 
 Nøkkelpunkter
 --------------
