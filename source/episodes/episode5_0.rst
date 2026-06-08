@@ -12,4 +12,4 @@ Dette er oppgaver som du kan jobbe med i dagene og ukene fremover.
 
 .. uio-do:: Tips!
 
-   Du kan laste ned en pdf med opppgavene slik at du ikke trenger å være logget inn i Canvas kurset for å jobbe med de: :download:`Last ned PDF <../downloads/KI-grunnkurs-treningsoppgaver.pdf>`
+   Du kan laste ned en pdf med opppgavene slik at du ikke trenger å være logget inn i Canvas kurset for å jobbe med dem: :download:`Last ned PDF <../downloads/KI-grunnkurs-treningsoppgaver.pdf>`
