@@ -10,7 +10,9 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
 
 .. canvas-tabs::
 
-   .. canvas-tab:: Lav risiko – Kan brukes mer fritt
+   .. canvas-tab:: Lav risiko  
+
+      **Kan brukes mer fritt**
 
       **Når du har kontroll, eller konsekvensene av feil er lave:**
 
@@ -24,7 +26,9 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
 
       Sjansene for feil er mindre, og konsekvenser ved feil er små. 
 
-   .. canvas-tab:: Medium risiko - Innholdet som produseres må sjekkes
+   .. canvas-tab:: Medium risiko
+
+      **Innholdet som produseres må sjekkes**
 
       **Situasjoner hvor du må være kritisk:**
 
@@ -38,8 +42,11 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
 
       Feil her kan føre til ineffektivitet, følgefeil, eller svekket tillit
 
-   .. canvas-tab:: Høy risiko - bør unngås eller sjekkes grundig 
+   .. canvas-tab:: Høy risiko
 
+
+      **Bør unngås eller sjekkes grundig**
+      
       **I disse situasjonene kan hallusinering få alvorlige konsekvenser. Feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover og regler:**
 
       * **Tall og statistikk** - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere  mot andre kilder.
