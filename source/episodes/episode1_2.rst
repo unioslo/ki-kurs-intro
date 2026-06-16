@@ -36,7 +36,7 @@ I dette kurset vil du hovedsakelig lære om generativ kunstig intelligens, som b
 Du vil også lære litt om KI til bildegenererig, som er en annen type generativ KI, spesialisert på bilder. 
 
 
-.. uio-colorbox-3:: Fordypning
+.. uio-colorbox-3:: Fordypning for de nysgjerrige
 
     .. uio-detail:: Diskriminativ KI
 

@@ -39,7 +39,7 @@ Instruksjonen din brukes så som kontekst for å generere ny tekst.
    Modellen "tenker" ikke på om informasjonen er korrekt. Den genererer bare det som er statistisk sannsynlig basert på mønstre.
 
 
-.. uio-colorbox-3:: Fordypning
+.. uio-colorbox-3:: Fordypning for de nysgjerrige
 
    .. uio-detail:: Tokens og tokenisering
 

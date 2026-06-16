@@ -12,7 +12,7 @@ Når du lager assistenten kan du kan blant annet:
 Assistenten kan deles med andre, og kan enten låses for redigering eller gjøres åpen slik at flere kan endre den.
 
 
-.. uio-colorbox-3:: Fordypning
+.. uio-colorbox-3:: Fordypning for de nysgjerrige
 
    .. uio-detail:: Eksempel på assistenter
 
