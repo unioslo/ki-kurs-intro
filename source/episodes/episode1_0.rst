@@ -1,5 +1,6 @@
-Introduksjon
-=============
+Grunnbegreper i kunstig intelligens
+=======================================
+
 I første del av kurset blir du kjent med de grunnleggende begrepene innenfor kunstig intelligens og hva kunstig intelligens (KI) egentlig er. 
 Du vil også lære hvordan generativ KI og språkmodeller er bygd opp. Dette vil gjøre deg i stand til å forstå begrensningene som er innebygget i teknologien, og vil legge grunnlaget for trygg bruk. 
 
