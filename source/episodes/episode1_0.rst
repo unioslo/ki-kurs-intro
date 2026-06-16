@@ -10,7 +10,7 @@ Du vil også lære hvordan generativ KI og språkmodeller er bygd opp. Dette vil
     :alt: Illustrasjon av en person som leser en bok om KI 101 - som er plugget inn i strømuttak
 
 
-Etter dette kapitellet kan du:
+Etter denne episoden kan du:
 
 * Bruke sentrale begreper om kunstig intelligens
 * Beskrive forskjellen mellom ulike typer KI
