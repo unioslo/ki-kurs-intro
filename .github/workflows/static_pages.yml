@@ -11,9 +11,7 @@ jobs:
   deploy-book:
     runs-on: ubuntu-latest
     permissions:
-      pages: write
-      id-token: write
-      contents: read
+      contents: write
     steps:
       - uses: actions/checkout@v5
 
@@ -33,24 +31,15 @@ jobs:
           ls -l
         working-directory: ./
 
-      # Upload for GitHub Pages deployment (main branch only)
-      - name: Upload Pages artifact
-        if: github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: _build/html
-
-      # Upload as downloadable artifact for other branches
-      - name: Upload branch artifact
-        if: github.ref != 'refs/heads/main'
-        uses: actions/upload-artifact@v4
-        with:
-          name: docs-${{ github.ref_name }}
-          path: _build/html
-
-      # Deploy to GitHub Pages only from main branch
+      # Deploy to GitHub Pages
+      # Main branch -> root, other branches -> branches/<branch-name>/
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
-        id: deployment
-        uses: actions/deploy-pages@v5
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html
+          destination_dir: ${{ github.ref_name != 'main' && format('branches/{0}', github.ref_name) || '.' }}
+          keep_files: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
         
