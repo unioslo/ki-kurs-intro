@@ -2,19 +2,20 @@
 Når kan du stole på generativ KI?
 ==================================
 
-Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av hva du bruker den til. 
-En enkel huskeregel er å tenke på risikoen for å få et feil svar. 
-Hvis feil eller unøyaktigheter fra modellen ikke medfører risiko, kan dette være et godt bruksområde. 
-Hvis det mefører risiko må du kunne ettergå informasjonen modellen gir deg før videre bruk, eller avstå fra å bruke verktøyet. 
+Generativ KI er ikke enten "pålitelig" eller "upålitelig", det avhenger av hva du bruker den til. 
+Som vi allerede har lært, så har ikke språkmodellen sikker kunnskap om hva som er sant, ei heller hukommelse. 
+Et bedre spørsmål er kanskje derfor:  I hvilke situasjoner kan du bruke KI uten at det medfører stor risiko? 
+Og hva kan vi gjøre for å redusere risikoen?
+
+En hovedregel er at hvis feil eller unøyaktigheter fra modellen ikke medfører risiko, kan dette være et godt bruksområde. 
+Hvis det mefører risiko må du kunne ettergå informasjonen modellen gir deg før videre bruk, eller rett og slett avstå fra å bruke verktøyet. 
 Nedenfor er eksempler på bruk med lav, medium og høy risiko. 
 
 .. canvas-tabs::
 
    .. canvas-tab:: Lav risiko  
 
-      **Kan brukes mer fritt**
-
-      **Når du har kontroll, eller konsekvensene av feil er lave:**
+      Hvis du har kontroll, eller konsekvensene av feil er lave:
 
       * **Brainstorming og idémyldring** - Eksempel: Du bruker KI for å få andre perspektiver og innfallsvinkler på dine ideer. 
       * **Formulere tekst du selv har kontekst på** - Eksempel: Du utformer materiale hvor du lett kan se om det er riktig eller ikke.
@@ -26,39 +27,46 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
 
       Sjansene for feil er mindre, og konsekvenser ved feil er små. 
 
+      **Tiltak for å begrense risiko**
+
+      - Utøv normal kritisk vurdering av resultatet KI gir deg
+
    .. canvas-tab:: Medium risiko
 
-      **Innholdet som produseres må sjekkes**
+      Hvis resultatet skal "ut i verden" eller du bruker KI på områder du ikke har ekspertise:
 
-      **Situasjoner hvor du må være kritisk:**
-
+      * **Utkast til faglig tekst, e-post eller rapport** - Eksempel: Teksten, e-posten eller rapporten skal deles med andre og det har betydning om noe er feil.
       * **Forslag til prosedyrer** - Eksempel: Du lager materiale som må stemme overens med andre kilder, som retningslinjer, dokumentasjon eller lovverk.  
-      * **Historisk informasjon** - Eksempel: Du får generert materiale som inneholder påstander om historiske forhold.  
       * **Tekniske forklaringer** - Eksempel: Du ber KI forklare hvordan noe fungerer, og forklaringen kan være feil selv om den høres overbevisende ut. 
-      * **Oppgaveplanlegging** - Eksempel: Du ber KI beskrive et arbeidsløp, men KI-en kan mangle viktig kontekst om situasjonen rundt arbeidet. 
       * **Oppsummering av tekst du ikke kjenner godt** - Eksempel: Du ber KI oppsummere en tekst du ikke har lest, og kan ikke se om noe er misforstått eller utelatt fra originalteksten
 
       **Hvorfor?**
 
-      Feil her kan føre til ineffektivitet, følgefeil, eller svekket tillit
+      Feil her kan føre til feil beslutninger, feil i tekniske systemer, ineffektivitet, eller svekket tillit utad.
 
+      **Tiltak for å begrense risiko**
+
+      - Kontrollere fakta mot andre kilder
+      - Justere språk og vinkling
+      - Ta det endelige ansvaret selv
+      
    .. canvas-tab:: Høy risiko
 
+      Hvis materialet som produseres må være faktuelt korrekt 
 
-      **Bør unngås eller sjekkes grundig**
-      
-      **I disse situasjonene kan hallusinering få alvorlige konsekvenser. Feilinformasjon kan skade tilliten, føre til feil beslutninger, eller bryte lover og regler:**
-
-      * **Tall og statistikk** - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere  mot andre kilder.
-      * **Lover og regler** - Eksempel: Du stoler på KI-ens evne til å gjengi eller oppsummere juridiske dokumenter korrekt, selv om den kan missforstå. 
+      * **Tall og statistikk** - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere mot andre kilder.
+      * **Lover og regler** - Eksempel: Du stoler på KI-ens evne til å gjengi eller oppsummere juridiske dokumenter korrekt, selv om den kan misforstå. 
       * **Referanser** - Eksempel: Du bruker kildene KI oppgir uten å sjekke at de faktisk eksisterer.
-      * **Medisinske råd** - Eksempel: Du lar KI styre beslutninger om din egen eller andres helse. 
-
+      * **Vurdering av enkeltpersoner** - Eksempel: Du lar KI-en gjøre en vurdering som påvirker enkeltpersoner direkte, for eksempel i en ansettelsesprosess.
+      
       **Hvorfor?**
 
       Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser. 
 
-
+      **Tiltak for å begrense risiko**
+      
+      - Vurder om KI bør unngås
+      - Om KI benyttes, sjekk KI resultatet grundig og involver kompetente fagpersoner
 
 
 
