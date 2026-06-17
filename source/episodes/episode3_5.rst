@@ -110,7 +110,7 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 
     **3. Refleksjon**
 
-    Diskuter i grupper eller skriv kort:
+    Tenk over følgende:
     
     a) Hva ble bedre i svarene etter at dere forbedret instruksjonene?  
     b) Hvilke av prinsippene (spesifikk, kontekst, format, rolle) hadde størst utslag på kvaliteten?  
