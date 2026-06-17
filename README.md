@@ -1,6 +1,19 @@
-Kurssidene bygges automatisk (det tar noen minutter etter at du har lagret endringene dine) og kan sees her: https://unioslo.github.io/ki-kurs-intro
+# Se kurssidene
+Kurssidene bygges automatisk (det tar noen minutter etter at du har lagret endringene dine) og kan sees i web-browseren din. Urlen avhenger av om du skal se sidene bygget fra "main" eller fra en annen branch. 
 
-OBS: Funksjonaliteten er laget for canvas for å laste opp html i _build som "Sider" i canvas. Siden her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet.
+OBS: Funksjonaliteten er laget for canvas for å laste opp html som "Sider" i canvas. Sidene her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet.
+
+## Fra "main" branches:
+
+https://unioslo.github.io/ki-kurs-intro
+
+## Fra en annen branch: 
+
+`https://unioslo.github.io/ki-kurs-intro/branches/<din-branch>/`
+
+
+
+
 
 # Lokal utvikling / Local Development
 
