@@ -6,10 +6,8 @@ Du vil også lære om vanlige feil å unngå, og om bærekraftsutfordringer knyt
 
 Etter denne episoden kan du:
 
+* Forklare hvorfor KI-modeller ikke er pålitelige
 * Vurdere når generativ KI er pålitelig - og når den ikke er det
 * Bruke strategier for å kvalitetssikre KI-generert innhold
-* Unngå vanlige feil ved bruk av KI
-* Skrive gode og effektive instruksjoner (prompts)
-* Bruke KI-assistenter med ferdigskrevne instruksjoner for gjentakende oppgaver
-* Vurdere bærekraftskonsekvensene ved bruk av KI
-
+* Skrive gode og effektive instruksjoner (promts)
+* Bruke ferdigskrevne instruksjoner for gjentakende oppgaver
