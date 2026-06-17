@@ -1,6 +1,19 @@
-Kurssidene bygges automatisk (det tar noen minutter etter at du har lagret endringene dine) og kan sees her: https://unioslo.github.io/ki-kurs-intro
+# Se kurssidene
+Kurssidene bygges automatisk (det tar noen minutter etter at du har lagret endringene dine) og kan sees i web-browseren din. Urlen avhenger av om du skal se sidene bygget fra "main" eller fra en annen branch. 
 
-OBS: Funksjonaliteten er laget for canvas for å laste opp html i _build som "Sider" i canvas. Siden her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet.
+OBS: Funksjonaliteten er laget for canvas for å laste opp html som "Sider" i canvas. Sidene her på github vil ikke være 100 % lik det vi ser i Canvas, men jeg har forsøkt å få det så nært som mulig, for å lette arbeidet.
+
+## Fra "main" branches:
+
+https://unioslo.github.io/ki-kurs-intro
+
+## Fra en annen branch: 
+
+`https://unioslo.github.io/ki-kurs-intro/branches/<din-branch>/`
+
+
+
+
 
 # Lokal utvikling / Local Development
 
@@ -67,7 +80,7 @@ Selve kursinnholdet finner du i folderen `source/episodes`
 Filene er delt opp slik at de blir passelige "Sider" i Canvas, målet er at man ikke må scrolle for mye per side.
 
 ## 1. Naviger til filen du ønsker å editere, og åpne den for editering
-<img width="400" height="468" alt="github-unioslo-edit-file" src="https://github.com/user-attachments/assets/f5d7b5fd-b09e-4fad-aa85-f5d3940d2e91" />
+<img width="400" alt="github-unioslo-edit-file" src="https://github.com/user-attachments/assets/f5d7b5fd-b09e-4fad-aa85-f5d3940d2e91" />
 
 ## 2. Når du er ferdig, trykk den store grønne "Commit changes" knappen
 <img width="400" alt="github-unioslo-commit-change" src="https://github.com/user-attachments/assets/ff770c1a-d3eb-4ab9-8770-9958e0deab3f" />

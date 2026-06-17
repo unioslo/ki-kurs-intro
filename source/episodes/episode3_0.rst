@@ -5,9 +5,8 @@ I denne episoden lærer du hva som er god bruk av KI, hvordan du vurderer og kva
 
 Etter denne episoden kan du:
 
+* Forklare hvorfor KI-modeller ikke er pålitelige
 * Vurdere når generativ KI er pålitelig - og når den ikke er det
 * Bruke strategier for å kvalitetssikre KI-generert innhold
-* Skrive gode og effektive instruksjoner (prompts)
-* Bruke KI-assistenter med ferdigskrevne instruksjoner for gjentakende oppgaver
-
-
+* Skrive gode og effektive instruksjoner (promts)
+* Bruke ferdigskrevne instruksjoner for gjentakende oppgaver
