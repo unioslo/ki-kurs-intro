@@ -2,14 +2,17 @@
 GPT UiO KI-assistenter
 ------------------------
 
-GPT UiO har en egen *assistent*-funksjon. Med denne kan du opprette faste instruksjoner som legges som et ekstra lag oppå det du skriver i selve chatten.  
+GPT UiO har en egen *assistent*-funksjon.
+Hvis du bruker en instruksjon ofte, kan du lagre den som en assistent.
+Da kan du raskt starte en samtale basert på instruksjonen, uten å måtte skrive den på nytt.
+Det kan være nyttig til oppgaver du gjør ofte, for eksempel oversetting eller å få kritiske tilbakemeldinger på tekst.
 
 Når du lager assistenten kan du kan blant annet:
 
 - laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine  
-- velge en spesifikk språkmodell som assistenten skal benytte  
+- velge en språkmodell som assistenten skal benytte  
 
-Assistenten kan deles med andre, og kan enten låses for redigering eller gjøres åpen slik at flere kan endre den.
+Assistenten kan deles med andre, for eksempel kolleger eller studenter.
 
 
 .. uio-colorbox-3:: Fordypning for de nysgjerrige
