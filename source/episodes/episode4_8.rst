@@ -37,15 +37,14 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
    Slike endringer må du fortsatt gjøre selv i programmet, basert på forslagene du får fra Copilot (Chat).
 
 
-Nøkkelpunkter
---------------
+.. uio-colorbox-1:: Nøkkelpunkter
 
-* Microsoft sin egen KI tjeneste
-* Generering av tekst, bilder og videoer
-* Kjører i sin helhet på utenlandske servere
-* Kun godkjent for grønne data
-* Databehandleravtale på plass
-* Du trenger kun din UiO brukerkonto for å få tilgang
+    * Microsoft sin egen KI tjeneste
+    * Generering av tekst, bilder og videoer
+    * Kjører i sin helhet på utenlandske servere
+    * Kun godkjent for grønne data
+    * Databehandleravtale på plass
+    * Du trenger kun din UiO brukerkonto for å få tilgang
 
 .. uio-dont:: Viktig
 
