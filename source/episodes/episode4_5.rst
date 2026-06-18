@@ -10,7 +10,6 @@ Nøkkelpunkter
 * Tilgang til OpenAI's GPT modeller
 * Tilgang til åpne modeller som kjører i Norge og hvor ingen data forlater UiO eller vår samarbeidspartner NTNU
 * Støtter opptil røde data
-* Personlige API nøkler for integrasjon mot andre applikasjoner
 * Du trenger kun din UiO brukerkonto for å få tilgang
 * Gratis for ansatte og studenter ved UiO
 
