@@ -37,12 +37,11 @@ Noen relevante spørsmål som kan hjelpe deg med å velge modell:
 
 * Er svaret godt nok med en mindre modell? Bra, gå for den mindre modellen og spar ressurser!
 * Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell.
-* Er det kode du vil språkmodellen skal generere? Sjekk modellvelgeren for en *kodeks* modell.
 * Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opp til røde data.
 * Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder.
 
 
-.. uio-colorbox-3:: Fordypning
+.. uio-colorbox-3:: Fordypning for de nysgjerrige
 
    .. uio-detail:: Velge en annen modell enn standard
 
