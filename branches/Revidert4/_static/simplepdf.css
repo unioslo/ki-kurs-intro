@@ -1,0 +1,115 @@
+/* Custom CSS for SimplePDF output */
+
+/* ===== COVER PAGE STYLING ===== */
+
+/* Force white text on cover page */
+h1.title-cover {
+    color: #ffffff !important;
+    font-size: 48px !important;
+    font-weight: bold !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#cover .title-cover,
+#cover h1,
+#cover h2,
+#cover .title,
+#cover .subtitle-cover,
+#cover .cover-middle,
+#cover .meta,
+#cover p,
+.title-cover,
+.cover-middle .title h1,
+.cover-middle .title {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Ensure cover background is UiO blue */
+#cover,
+article#cover,
+.cover,
+.cover-page {
+    background-color: #0d72c0 !important;
+    background: #0d72c0 !important;
+}
+
+/* Override any gradients or overlays */
+#cover .container {
+    background-color: transparent !important;
+}
+
+/* Remove/override red top stripe/border on cover */
+#cover::before,
+#cover::after,
+article#cover::before,
+.cover::before,
+.cover-page::before,
+.cover .header,
+.cover-page .header {
+    background-color: #0d72c0 !important;
+    border-top-color: #0d72c0 !important;
+    border-color: #0d72c0 !important;
+    border: none !important;
+}
+
+/* ===== PAGE NUMBERS IN BLUE ===== */
+
+/* Override page number color to UiO blue */
+@page {
+    @bottom-center {
+        color: #0d72c0 !important;
+    }
+    @bottom-right {
+        color: #0d72c0 !important;
+    }
+    @bottom-left {
+        color: #0d72c0 !important;
+    }
+}
+
+/* Counter for page numbers in blue */
+.pagenumber {
+    color: #0d72c0 !important;
+}
+
+/* Links in UiO blue */
+a {
+    color: #0d72c0 !important;
+}
+
+/* ===== HIDE IMAGE LINK PATHS IN PDF ===== */
+
+/* Completely hide image reference links */
+a.image-reference,
+a.reference.internal.image-reference,
+figure a.reference,
+a[href*="_images/"],
+a[href$=".png"],
+a[href$=".jpg"],
+a[href$=".svg"] {
+    /* Disable WeasyPrint link annotations */
+    -weasy-link: none !important;
+
+    /* Clear any string content */
+    string-set: none !important;
+
+    /* Make link invisible but keep image visible */
+    color: transparent !important;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+/* Remove ::before and ::after content */
+a.image-reference::before,
+a.image-reference::after,
+a.reference.internal.image-reference::before,
+a.reference.internal.image-reference::after,
+figure a.reference::before,
+figure a.reference::after {
+    content: '' !important;
+    display: none !important;
+}

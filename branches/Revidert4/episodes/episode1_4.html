@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Språkmodellen - motoren i KI-tjenesten &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=d6a0b8db" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dc637b1a" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KI-assistenter" href="episode1_6.html" />
+    <link rel="prev" title="Generativ KI" href="episode1_2.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sprakmodellen-motoren-i-ki-tjenesten">
+<h1>Språkmodellen - motoren i KI-tjenesten</h1>
+<p>Når vi snakker om KI-tjenester som UiO GPT eller Microsoft Copilot, er <em>språkmodellen</em> (LLM - Large Language Model) selve “motoren” i tjenesten.
+En <em>språkmodell</em> er en KI-modell av typen <em>generativ KI</em> som har trent på enorme mengder tekst, og dermed lært seg mønstre i språk som gjør den i stand til å “forstå” og produsere tekst.</p>
+<p>Vi skal lære mer om hvordan språkmodeller fungerer i neste episode, men først skal vi se litt på de forskjellige språkmodellene som tilbys og hvorfor man eventuelt skulle valgt en fremfor en annen.</p>
+<section id="et-mylder-av-sprakmodeller">
+<h2>Et mylder av språkmodeller</h2>
+<p>Det finnes veldig mange forskjellige språkmodeller der ute, store og små, gratisversjoner og modeller man må betale for å bruke, “åpne” og “lukkede” modeller.
+De åpne modellene kan man laste ned og kjøre på egne maskiner, mens de lukkede kun er tilgjengelige gjennom selskapets plattformer.
+Modellene kan være spesialisert til å yte best på visse oppgaver, f.eks. generell språk generering eller koding, de kan håndtere bilder i tillegg til tekst, eller bare tekst.
+Med andre ord, det finnes litt av hvert!</p>
+<p>De aller største og lukkede modellene kommer fra store selskaper som OpenAI (GPT), Gemini (Google) og Anthropic (Claude).
+Eksempler på selskaper som leverer åpne modeller, både store og små er Mistral AI (Mistral modellene), DeepSeek (DeepSeek modellene), Z.AI (GLM modellene), Moonshot AI (Kimi modellene).</p>
+<p>I mange KI-tjenester kan man <em>bytte ut</em> språkmodellen, men hvilken skal man i så fall velge?</p>
+</section>
+<section id="hvilken-sprakmodell-skal-man-velge">
+<h2>Hvilken språkmodell skal man velge?</h2>
+<p>Det kommer selvsagt an på hva du skal bruke den til.</p>
+<p>Hvis du bare vil ha enkle forslag til endringer i en tekst du allerede har skrevet, for eksempel språkvask av en e-post, kortfattet tilbakemelding på en oppgaveutkast, eller omformulering av noen setninger, holder det som oftest med en mindre og rimeligere modell.</p>
+<p>Hvis du derimot skal løse mer komplekse oppgaver, eller trenger svar av særlig høy kvalitet, for eksempel strukturering av en lang fagtekst, hjelp til å planlegge et større prosjekt, grundige forklaringer av faglige begreper eller generering av omfattende dokumenter, bør du velge en av de større modellene.</p>
+<p>Du kan også vurdere å bytte til en større modell dersom</p>
+<ul class="simple">
+<li>svarene du får blir upresise eller mangler detaljer</li>
+<li>modellen sliter med å forstå lange eller sammensatte problemstillinger</li>
+<li>du trenger bedre forslag til struktur, argumentasjon eller begrunnelser</li>
+<li>du jobber på tvers av flere språk og trenger god flerspråklig støtte.</li>
+</ul>
+<p>Det beste tipset er å starte med en liten modell, og gå over på en større hvis kvaliteten ikke blir god nok. Prøv deg frem!</p>
+<div class="uio-color-box-3">
+<p><strong>Hvorfor ikke bare bruke den beste modellen alltid?</strong></p>
+<p>Det handler ikke bare om kostnad: de største modellene bruker også mest regnekraft og energi, og gir derfor et større klimaavtrykk.
+Når en mindre modell gir gode nok svar til oppgaven din, er det derfor både mer ressurseffektivt og mer miljøvennlig å velge den.</p>
+<p><strong>Hva om modellen er gratis som på GPT UiO?</strong></p>
+<p>Selv om tjenesten er gratis for deg, koster de største modellene mer for UiO.
+I tillegg har vi modeller som kjører på begrensede ressurser på UiO- og NTNU-infrastruktur.
+Det er derfor lurt og solidarisk å starte med en mindre modell.
+Fungerer den godt nok, bidrar du til at de største modellene kan reserveres til de mest komplekse og krevende oppgavene.</p>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode1_2.html">← Forrige</a></div><div class="next-link"><a href="episode1_6.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prinsipper for gode instruksjoner &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=d6a0b8db" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dc637b1a" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nyttige instruksjons-teknikker" href="episode3_6.html" />
+    <link rel="prev" title="Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?" href="episode3_4.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prinsipper-for-gode-instruksjoner">
+<h1>Prinsipper for gode instruksjoner</h1>
+<p>Her får du servert noen litt banale eksempler på instruksjoner hvor det er rom for forbedring!
+Språkmodellen er god på å gjette hva et svar bør inneholde, men den kan ikke lese dine tanker!
+Med noen enkle triks kan du hjelpe språkmodellen å forme svar du vil bli mer fornøyd med.</p>
+<section id="vaer-spesifikk">
+<h2>1. Vær spesifikk</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>“Skriv en e-post.”</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>«Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold i uke 15. Tonen skal være vennlig, men profesjonell.»</p>
+<p><strong>Hva gjør denne bedre?</strong>
+Den gode instruksjonen spesifiserer både hva e-posten skal handle om, hvem målgruppen er, og hvilken tone den skal ha.</p>
+</div>
+</div>
+</section>
+<section id="gi-kontekst">
+<h2>2. Gi kontekst</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>“Lag en tekst om fravær.”</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>“Jeg jobber administrativt ved et universitet og skal oppdatere infosiden for førsteårs bachelorstudenter.
+Lag en kort, informativ tekst som forklarer rutiner for fravær fra obligatorisk undervisning i emner ved Det humanistiske fakultet.”</p>
+<p><strong>Hva gjør denne bedre?</strong>
+Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber språkmodellen produsere.</p>
+</div>
+</div>
+</section>
+<section id="spesifiser-format">
+<h2>3. Spesifiser format</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>“Lag et møtereferat av disse notatene: [dine notater]”</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>“Basert på mine notater fra møtet, lag et møtereferat. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver. Mine notater: [dine notater]. “</p>
+<p><strong>Hvorfor er den bedre?</strong>
+Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om.</p>
+</div>
+</div>
+</section>
+<section id="definer-en-rolle">
+<h2>4. Definer en rolle</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>«Hvordan kan jeg forbedre min skriving?»</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Du er en erfaren kommunikasjonsarbeider. Jeg jobber administrativt ved et universitet og skriver ofte formelle brev og e-poster. Gi meg 5 konkrete tips til å forbedre min administrative skriving.»</p>
+<p><strong>Hvorfor er den bedre?</strong></p>
+<p>Språkmodeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.</p>
+</div>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="episode3_4.html">← Forrige</a></div><div class="next-link"><a href="episode3_6.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
