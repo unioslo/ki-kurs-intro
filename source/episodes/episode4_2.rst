@@ -5,8 +5,8 @@ GPT UiO
 GPT UiO er UiOs personverntrygge KI-chat. 
 
 I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken «hjerne» tjenesten bruker.  
-Modellene har forskjellig størrelse og kapabilitet (som støtte av bilder) og bruksområder, 
-men en spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT modeller i Microsoft Azure skyen) eller *lokalt*.
+Modellene har forskjellig størrelse, funksjoner (som støtte av bilder) og bruksområder. 
+En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller *lokalt*.
 Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
 
 Mens alle modellene, både de i skyen og de som lokalt sikrer at GDPR reglene følges, er du ekstra godt beskyttet om du velger de lokale modellene.
@@ -31,7 +31,7 @@ De lokale språkmodellen er gode, men de er mye *mindre* enn de som kjører i sk
 Det betyr at om oppgaven du skal løse er veldig kompleks, så kan det være at du får bedre kvalitet om du velger en sky-modell.
 
 Vi foreslår at du prøver ut forskjellige modeller, og om du kan nøye deg med en mindre og lokal modell, så velg denne.
-Den bruker totalt sett mindre regneressurser enn de store modellene i skyen. 
+Den bruker totalt sett mindre ressurser, slik som strøm, enn de store modellene i skyen. 
 
 Noen relevante spørsmål som kan hjelpe deg med å velge modell:
 
