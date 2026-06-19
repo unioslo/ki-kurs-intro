@@ -28,6 +28,14 @@ Det finnes flere typer generativ KI. I dette kurset skal du lære mest om genera
 			Prøver å forutsi hva som kommer til å skje.
 			Eksempel: værmeldingen
 
+.. uio-colorbox-3:: Fordypning for de nysgjerrige
+
+    .. uio-detail:: Maskinlæring 
+	Mennesker lærer ved erfaring. Vi prøver noe, ser hvordan det går, og justerer oss. Maskinlæring er det samme prinsippet, bare for
+	dataprogrammer. I stedet for å lære av erfaring, lærer programmet av data. Når vi har store mengder data tilgjengelig, for eksempel
+	tekst, bilder eller tall, kan vi bruke maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende 
+	for mennesker å oppdage selv
+
 
 Gammel  versjon
 
