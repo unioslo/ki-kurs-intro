@@ -9,10 +9,10 @@ Modellene har forskjellig størrelse, funksjoner (som støtte av bilder) og bruk
 En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller *lokalt*.
 Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
 
-Mens alle modellene, både de i skyen og de som lokalt sikrer at GDPR reglene følges, er du ekstra godt beskyttet om du velger de lokale modellene.
+Alle modellene, både de i skyen og de lokale, sikrer at GDPR følges.
+Men du er ekstra godt beskyttet om du velger de lokale modellene.
 Det er da går *ingen* data til skyen, alt forblir på UiO eller NTNU sine systemer.
-
-Noen av de lokale modellene kan i tillegg håndtere opp til `røde data`_.
+Noen av de lokale modellene kan i tillegg håndtere opptil `røde data`_.
 
 .. _røde data: https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html
 
