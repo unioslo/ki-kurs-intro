@@ -10,6 +10,7 @@ Du vil også lære hvordan generativ KI og språkmodeller er bygd opp. Dette vil
     :width: 65%
     :alt: Illustrasjon av en person som leser en bok om KI 101 - som er plugget inn i strømuttak
 
+    Illustrasjon: Tina Morønning Ruud
 
 Etter denne episoden kan du:
 
