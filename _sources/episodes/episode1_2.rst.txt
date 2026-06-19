@@ -1,5 +1,35 @@
-Generativ KI
+Generativ kunstig intelligens
 ==============
+Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Copilot og NotebookLM er eksempler på dette.
+Generativ kunstig intelligens kalles «generativ» fordi den lager nytt innhold basert på det den har lært fra før. Du skriver inn en
+instruksjon og systemet genererer et forslag til svar eller innhold.
+
+Generativ KI bygger på det som kalles maskinlæring. Det betyr at systemet lærer av store mengder data og finner mønstre uten at mennesker forteller det nøyaktig hva det skal se etter.
+
+Det finnes flere typer generativ KI. I dette kurset skal du lære mest om generativ KI som lager tekst. 
+
+.. uio-colorbox-3:: 
+
+	Generativ, disktriminativ og prediktiv KI 
+
+	.. canvas-tabs::
+
+		.. canvas-tab:: Generativ KI
+
+			En KI-chat som genererer et møtereferat basert på dine møtenotater
+
+		.. canvas-tab:: Diskriminativ KI
+
+			Sorterer og gjenkjenner ting som allerede finnes. 
+			Eksempel: KI system som kan identifisere om et fotografi er av en hund eller en katt
+
+		.. canvas-tab:: Prediktiv KI
+			
+			Prøver å forutsi hva som kommer til å skje.
+			Eksempel: værmeldingen
+
+
+Gammel  versjon
 
 Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på.
 ChatGPT, Copilot og NotebookLM er eksempler på generativ KI.
