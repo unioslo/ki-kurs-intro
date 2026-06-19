@@ -40,7 +40,6 @@ Vi anbefaler at du heller bruker en av de andre KI-tjenestene, for å unngå å 
     * Generering av tekst, bilder og videoer
     * Kun godkjent for grønne data
     * Databehandleravtale på plass
-    * Du trenger kun din UiO brukerkonto for å få tilgang
 
 .. uio-dont:: Viktig
 
