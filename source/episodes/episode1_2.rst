@@ -1,4 +1,4 @@
-Generativ kunstig intelligens
+Generativ KI
 ==============
 Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Copilot og NotebookLM er eksempler på dette.
 Generativ kunstig intelligens kalles «generativ» fordi den lager nytt innhold basert på det den har lært fra før. Du skriver inn en
@@ -30,21 +30,32 @@ Det finnes flere typer generativ KI. I dette kurset skal du lære mest om genera
 
 .. uio-colorbox-3:: Fordypning for de nysgjerrige
 
-    .. uio-detail:: Maskinlæring
+    .. uio-detail:: Maskinlæring (Denne må jobbes mer med.)
 
 		Mennesker lærer ved erfaring. Maskinlæring er det samme prinsippet, bare for dataprogrammer. I stedet for å lære av erfaring,
 		lærer programmet av data. Når vi har store mengder data tilgjengelig,for eksempel tekst, bilder eller tall, kan vi bruke
-		maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv
+		maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv. 
 
-		Forskjellen på tradisjonell programmering og maskinlæring
+		Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer. 
+
  		Tradisjonell programmering foregår slik: 
 
 		- Et menneske lager klare regler: «Hvis X skjer, gjør Y».
 		- Programmet får input, som er det som skal behandles, og en algoritme, som er regler/instruksjoner. 
 		- Programmet gir output eller resultatet
+		
+		Eksempel på tradisjonell programering: 
+		Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
 
-Eksempel
-Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
+		I maskinlæring er algoritmen ukjent, og det vi ønsker å lære. Maskinlæring løser en problem slik:
+		- Vi har mange eksempler på input (data)  
+ 		- Vi leverer en instruksjon på ønsket resultat (output) 
+		- I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
+
+		Eksempel:
+		Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som «hund» eller «katt».
+		Systemet lærer da en «usynlig» regel (en algoritme?) som kan gjette riktig merkelapp for nye bilder det aldri har sett før.
+
 
 
 
