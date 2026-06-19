@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generativ kunstig intelligens &mdash; Grunnkurs KI  documentation</title>
+  <title>Generativ KI &mdash; Grunnkurs KI  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
@@ -38,8 +38,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="generativ-kunstig-intelligens">
-<h1>Generativ kunstig intelligens</h1>
+  <section id="generativ-ki">
+<h1>Generativ KI</h1>
 <p>Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Copilot og NotebookLM er eksempler på dette.
 Generativ kunstig intelligens kalles «generativ» fordi den lager nytt innhold basert på det den har lært fra før. Du skriver inn en
 instruksjon og systemet genererer et forslag til svar eller innhold.</p>
@@ -49,18 +49,18 @@ instruksjon og systemet genererer et forslag til svar eller innhold.</p>
 <p>Generativ, disktriminativ og prediktiv KI</p>
 <div class="enhanceable_content tabs" style="margin-bottom: 2em;">
 <ul>
-<li><a href="#fragment-594a7da3-1">Generativ KI</a></li>
-<li><a href="#fragment-594a7da3-2">Diskriminativ KI</a></li>
-<li><a href="#fragment-594a7da3-3">Prediktiv KI</a></li>
+<li><a href="#fragment-7cef6cdb-1">Generativ KI</a></li>
+<li><a href="#fragment-7cef6cdb-2">Diskriminativ KI</a></li>
+<li><a href="#fragment-7cef6cdb-3">Prediktiv KI</a></li>
 </ul>
-<div id="fragment-594a7da3-1">
+<div id="fragment-7cef6cdb-1">
 <p>En KI-chat som genererer et møtereferat basert på dine møtenotater</p>
 </div>
-<div id="fragment-594a7da3-2">
+<div id="fragment-7cef6cdb-2">
 <p>Sorterer og gjenkjenner ting som allerede finnes.
 Eksempel: KI system som kan identifisere om et fotografi er av en hund eller en katt</p>
 </div>
-<div id="fragment-594a7da3-3">
+<div id="fragment-7cef6cdb-3">
 <p>Prøver å forutsi hva som kommer til å skje.
 Eksempel: værmeldingen</p>
 </div>
@@ -69,21 +69,28 @@ Eksempel: værmeldingen</p>
 <div class="uio-color-box-3">
 <h3>Fordypning for de nysgjerrige</h3>
 <details>
-<summary><strong>Maskinlæring</strong></summary>
+<summary><strong>Maskinlæring (Denne må jobbes mer med.)</strong></summary>
 <p>Mennesker lærer ved erfaring. Maskinlæring er det samme prinsippet, bare for dataprogrammer. I stedet for å lære av erfaring,
 lærer programmet av data. Når vi har store mengder data tilgjengelig,for eksempel tekst, bilder eller tall, kan vi bruke
-maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv</p>
-<p>Forskjellen på tradisjonell programmering og maskinlæring
-Tradisjonell programmering foregår slik:</p>
+maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv.</p>
+<p>Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer.</p>
+<p>Tradisjonell programmering foregår slik:</p>
 <ul class="simple">
 <li>Et menneske lager klare regler: «Hvis X skjer, gjør Y».</li>
 <li>Programmet får input, som er det som skal behandles, og en algoritme, som er regler/instruksjoner.</li>
 <li>Programmet gir output eller resultatet</li>
 </ul>
+<p>Eksempel på tradisjonell programering:
+Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.</p>
+<p>I maskinlæring er algoritmen ukjent, og det vi ønsker å lære. Maskinlæring løser en problem slik:
+- Vi har mange eksempler på input (data)
+- Vi leverer en instruksjon på ønsket resultat (output)
+- I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.</p>
+<p>Eksempel:
+Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som «hund» eller «katt».
+Systemet lærer da en «usynlig» regel (en algoritme?) som kan gjette riktig merkelapp for nye bilder det aldri har sett før.</p>
 </details>
 </div>
-<p>Eksempel
-Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.</p>
 <p>Gammel  versjon</p>
 <p>Når vi snakker om KI i hverdagen er det som oftest generativ KI vi tenker på.
 ChatGPT, Copilot og NotebookLM er eksempler på generativ KI.</p>
@@ -95,17 +102,17 @@ I denne klassifiseringen har vi i tillegg <em>prediktiv</em> kunstig intelligens
 <p>Eksempler på generativ, disktriminativ og prediktiv KI</p>
 <div class="enhanceable_content tabs" style="margin-bottom: 2em;">
 <ul>
-<li><a href="#fragment-aae31f74-1">Generativ KI</a></li>
-<li><a href="#fragment-aae31f74-2">Diskriminativ KI</a></li>
-<li><a href="#fragment-aae31f74-3">Prediktiv KI</a></li>
+<li><a href="#fragment-f22b3f69-1">Generativ KI</a></li>
+<li><a href="#fragment-f22b3f69-2">Diskriminativ KI</a></li>
+<li><a href="#fragment-f22b3f69-3">Prediktiv KI</a></li>
 </ul>
-<div id="fragment-aae31f74-1">
+<div id="fragment-f22b3f69-1">
 <p>En KI-chat som genererer et møtereferat basert på dine møtenotater</p>
 </div>
-<div id="fragment-aae31f74-2">
+<div id="fragment-f22b3f69-2">
 <p>En KI som kan identifisere om et fotografi er av en hund eller en katt</p>
 </div>
-<div id="fragment-aae31f74-3">
+<div id="fragment-f22b3f69-3">
 <p>Her er et klassisk eksempel værmeldingen.</p>
 </div>
 </div>
