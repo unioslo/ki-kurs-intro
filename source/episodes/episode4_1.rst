@@ -1,25 +1,21 @@
 UiOs godkjente KI-tjenester
 ============================
 
-Når du skal bruke KI-tjenester på *UiO data*, *skal* de godkjente tjenestene brukes.
+Når du skal bruke KI-tjenester på *UiO-data*, skal de *godkjente* tjenestene brukes.
 Grunnen til det er at UiO har databehandleravtale med leverandørene for disse tjenestene.
-Det sikrer at dataene som utveksles med tjenestene blir behandlet på en slik måte at GDPR kravene overholdes.
-Dette innebærer blant annet at data blir lagret på servere i Europa, og at de ikke blir brukt til å trene KI modeller videre.
+Det sikrer at dataene som utveksles med tjenestene blir behandlet på en slik måte at GDPR-kravene overholdes.
 
 Hva er problemet med ikke-godkjente tjenester?
 -----------------------------------------------
 
 Dersom man bruker tjenester direkte fra private aktører som for eksempel ChatGPT eller Claude Code, så kan leverandørene i større grad gjøre hva de vil med dine data.
 Selv om du kan reservere deg mot treningsbruk i tjenester som ChatGPT, er det en stor forskjell på en forbrukerkonto og en løsning der virksomheten har en databehandleravtale på plass.
-Med databehandleravtale mellom UiO og leverandørene av KI-tjenester, har UiO mer kontroll og klare rettigheter etter GDPR.
-Med en privat konto har du det ikke det.
-Det er du som privatperson som "tar risikoen", og dataene dine behandles på leverandørens vilkår, ikke på dine.
 
 Er det forbudt å bruke andre KI verktøy enn de godkjente?
 -----------------------------------------------------------
 
 Om du jobber på en privat maskin, din private laptop eller din private desktop er det ikke forbudt å bruke andre KI verktøy ved Universitet i Oslo enn de som er godkjent.
-*Men* det er ikke lov å benytte de dersom man sender *UiO data* med spørringen.
+*Men* det er ikke lov å benytte de dersom man sender *UiO-data* med spørringen.
 Du må derfor være ekstra påpasselig med hva du bruker tjenesten til.
 
 Det betyr altså at generelle spørsmål kan være greit, men ikke om man sender med informasjon om for eksempel UiOs systemer eller ansatte,
@@ -37,7 +33,7 @@ Jobber du på en UiO driftet laptop, skal du bare bruke UiO godkjente tjenester.
 
 .. uio-dont::
 
-   Aldri del UiO data med KI tjenester som ikke er godkjent ved UiO.
+   Aldri del UiO-data med KI-tjenester som ikke er godkjent ved UiO.
 
 
 La oss se nærmere på de forskjellige KI-tjenestene som UiO tilbyr slik at du kan velge riktig tjeneste for ditt formål. 
