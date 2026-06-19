@@ -28,14 +28,6 @@ Det sies ofte at KI er inspirert av måten hjernens nerveceller (nevroner) samar
       3.	Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at KI kan lære mer effektivt.
 
 
-
-
-
-
-
-
-
-
 Gammel versjon: 
 KI er en samlebetegnelse for teknologi som utfører en oppgave på en måte som etterligner menneskelig intelligens, i tekst, bilde, tale eller tall. 
 Enkelt forklart er dagens KI, komplekse statistiske modeller som er inspirert av hvordan hjernens nevrale nettverk er bygget opp. 
