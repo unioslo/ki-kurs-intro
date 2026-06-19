@@ -1,5 +1,5 @@
 
-GPT UiO KI-assistenter
+GPT UiO: KI-assistenter
 ------------------------
 
 GPT UiO har en egen *assistent*-funksjon.
