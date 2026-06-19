@@ -12,8 +12,9 @@ Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbei
 Mens alle modellene, både de i skyen og de som lokalt sikrer at GDPR reglene følges, er du ekstra godt beskyttet om du velger de lokale modellene.
 Det er da går *ingen* data til skyen, alt forblir på UiO eller NTNU sine systemer.
 
-Noen av de lokale modellene kan i tillegg håndtere opp til `røde data <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_.
+Noen av de lokale modellene kan i tillegg håndtere opp til `røde data`_.
 
+.. _røde data: https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html
 
 .. uio-viktig::
    
