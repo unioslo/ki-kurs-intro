@@ -1,4 +1,4 @@
-GPT UiO - hvilken modell skal du velge?
+GPT UiO: hvilken modell skal du velge?
 ========================================================
 
 De lokale språkmodellen er gode, men de er mye *mindre* enn de som kjører i skyen.
