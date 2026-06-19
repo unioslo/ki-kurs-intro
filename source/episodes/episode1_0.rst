@@ -1,9 +1,7 @@
 Introduksjon til "KI-språket"
 =======================================
 
-I første del av kurset blir du kjent med de grunnleggende begrepene innenfor kunstig intelligens og hva kunstig intelligens (KI) egentlig er. 
-Du vil også lære hvordan generativ KI og språkmodeller er bygd opp. Dette vil gjøre deg i stand til å forstå begrensningene som er innebygget i teknologien, og vil legge grunnlaget for trygg bruk. 
-
+Første kapittel er en introduksjon til "KI-språket". Å forstå grunnleggende begreper legger grunnlaget for å utforske og bruke KI på en ansvarlig og trygg måte. 
 
 .. figure:: ../images/1.0-studying-the-basics.png
     :align: center
@@ -17,3 +15,5 @@ Etter denne episoden kan du:
 * Bruke sentrale begreper om kunstig intelligens
 * Beskrive forskjellen mellom ulike typer KI
 * Forklare hva KI og generativ KI er
+
+
