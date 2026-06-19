@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GPT UiO personlige API-nøkler &mdash; Grunnkurs KI  documentation</title>
+  <title>GPT UiO KI-assistenter &mdash; Grunnkurs KI  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
@@ -26,7 +26,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Oppsummert om GPT UiO" href="episode4_5.html" />
-    <link rel="prev" title="GPT UiO KI-assistenter" href="episode4_3.html" /> 
+    <link rel="prev" title="GPT UiO - hvilken modell skal du velge?" href="episode4_3.html" /> 
 </head>
 
 <body> 
@@ -38,39 +38,75 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="gpt-uio-personlige-api-nokler">
-<h1>GPT UiO personlige API-nøkler</h1>
-<p>API (Application Programming Interface) er en teknisk “bro” som lar ulike programvarer snakke med hverandre.
-Med API-tilgang til GPT UiO kan du koble språkmodellene til egne applikasjoner eller tredjepartsverktøy som for eksempel en agent.</p>
-<div class="uio-icon-box info">
-<h3>Avansert bruk</h3>
-<p>API oppkobling er en litt mer avansert KI-bruk og er ikke for alle.
-Du kan derfor hoppe over denne delen om API tilgang ikke er relevant for deg.</p>
-</div>
-<p>Kode-agenter som for eksempel Codex, OpenCode eller Claude Code er eksempler på en type agenter.
-Vi nevner disse spesielt fordi de er så mye mer enn bare programmeringshjelpere.
-De kan hjelpe med alt fra dokumentgenerering og dataanalyse til integrering av ulike programvaresystemer, helt uten at du må skrive kode selv.
-Tenk på dem som tekniske assistenter som bygger bro mellom administrative behov og automatisering, noe som sparer tid og reduserer manuelt arbeid.</p>
-<p>Ofte vil en gitt kode-agent ha et standardoppsett meg en egen språkmodell som kjører i en skytjeneste.
-For eksempel kommer Codex med en av OpenAI sine GPT modeller som standard, og for å bruke den må du ha konto hos OpenAI.
-Men de fleste har også mulighet til å koble opp andre språkmodeller via API.
-Man kan altså bytte motoren i agenten, slik vi forklarte i episode 1.</p>
-<section id="sprakmodeller-pa-uio-og-ntnu">
-<h2>Språkmodeller på UiO og NTNU</h2>
-<p>For å ivareta datasikkerhet og personvern skal man på UiO benytte <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">godkjente KI-tjenester <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
-Kode-agentene med sitt standardoppsett ivaretar ikke disse hensynene.</p>
-<p>Men på UiO tilbyr vi språkmodeller via GPT UiO som kjører på egne servere i Norge (lokale LLMer).
-Kobler du agenten opp mot en av disse modellene er personvern og datasikkerhet mye bedre ivaretatt.</p>
-<p>Det er veldig viktig å forstå at API tilgang til de lokale LLMene <em>ikke</em> automatisk betyr at du kan behandle personsensitiv informasjon eller annen konfidensiell informasjon trygt.
-Det kommer helt an på hvilken applikasjon bruker, og om du har kontroll på at denne applikasjonen ikke sender informasjon ut til tredjepartssystemer.</p>
-<div class="uio-icon-box dont">
-<h3>Viktig!</h3>
+  <section id="gpt-uio-ki-assistenter">
+<h1>GPT UiO KI-assistenter</h1>
+<p>GPT UiO har en egen <em>assistent</em>-funksjon.
+Hvis du bruker en instruksjon ofte, kan du lagre den som en assistent.
+Da kan du raskt starte en samtale basert på instruksjonen, uten å måtte skrive den på nytt.
+Det kan være nyttig til oppgaver du gjør ofte, for eksempel oversetting eller å få kritiske tilbakemeldinger på tekst.</p>
+<p>Når du lager assistenten kan du kan blant annet:</p>
 <ul class="simple">
-<li>Del aldri API-nøkkelen din offentlig eller i kode som ligger åpent.</li>
-<li>Behandle nøkkelen som et passord, og oppbevar den sikkert (for eksempel i miljøvariabler eller en hemmelighets‑/secret‑tjeneste).</li>
+<li>laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine</li>
+<li>velge en språkmodell som assistenten skal benytte</li>
 </ul>
+<p>Assistenten kan deles med andre, for eksempel kolleger eller studenter.</p>
+<div class="uio-color-box-3">
+<h3>Fordypning for de nysgjerrige</h3>
+<details>
+<summary><strong>Eksempel på assistenter</strong></summary>
+<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
+<ul>
+<li><a href="#fragment-a333fe93-1">Administrasjon</a></li>
+<li><a href="#fragment-a333fe93-2">Undervisning</a></li>
+</ul>
+<div id="fragment-a333fe93-1">
+<p><strong>Assistent for møtereferat</strong></p>
+<p>Assistent instruksjon:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en erfaren administrativ assistent ved Universitetet i Oslo som
+spesialiserer seg på å skrive profesjonelle møtereferater.
+
+Din oppgave er å:
+- Strukturere referatet med standard seksjoner: Deltakere, Sak, Diskusjon, Vedtak og Oppfølging
+- Bruke nøytralt og formelt språk
+- Fremheve konkrete vedtak og handlinger med ansvarlig person og frist
+- Oppsummere diskusjonen kortfattet uten personlige meningsutvekslinger
+- Ikke inkludere navn på enkeltpersoner i referatet (bruk &quot;en representant fra...&quot;)
+- Følge UiOs mal for møtereferat
+
+Dersom informasjon om deltakere, dato eller sak mangler, be om dette før du genererer referatet.
+</pre></div>
 </div>
-</section>
+</div>
+<div id="fragment-a333fe93-2">
+<p><strong>Assistent for læring av pensum (uten direkte svar)</strong></p>
+<p>Som underviser har du lastet opp egenprodusert litteratur som benyttes som pensum i kurset.
+Dette er kilder assistenten har tilgang til.
+Assistenten benytter disse som del av <em>konteksten</em> slik at svarene den gir er i henhold til kildene.</p>
+<p>Assistent instruksjon:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Du er en pedagogisk veileder som hjelper studenter å forstå pensum gjennom
+veiledende spørsmål og refleksjon. Du skal ALDRI gi direkte svar på oppgavene
+eller forklare konseptene fullstendig.
+
+Din oppgave er å:
+- Stille åpne, veiledende spørsmål som får studenten til å tenke selv
+- Hjelpe studenten å bryte ned komplekse problemer i mindre deler
+- Peke på relevante deler av pensum eller teorier studenten bør se nærmere på
+- Oppfordre til egne resonnementer: &quot;Hva tror du selv?&quot; eller &quot;Hvordan kan du bruke det du lærte om X her?&quot;
+- Gi bekreftelse når studenten er på rett spor, men ikke avsløre svaret
+- Ved feil: spør &quot;Hva fikk deg til å tenke slik?&quot; og led mot innsikt
+
+Unngå:
+- Å gi ferdige løsninger eller svar
+- Å forklare teorier fullstendig
+- Å bekrefte om et svar er riktig eller galt direkte
+
+Målet er at studenten skal utvikle selvstendig tenkning og forståelse, ikke å få raske svar.
+</pre></div>
+</div>
+</div>
+</div>
+</details>
+</div>
 <div class="page-navigation"><div class="prev-link"><a href="episode4_3.html">← Forrige</a></div><div class="next-link"><a href="episode4_5.html">Neste →</a></div></div>
 </section>
            </div>
