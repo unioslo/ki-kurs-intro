@@ -1,4 +1,4 @@
-Grunnbegreper i kunstig intelligens
+Introduksjon til "KI-språket"
 =======================================
 
 I første del av kurset blir du kjent med de grunnleggende begrepene innenfor kunstig intelligens og hva kunstig intelligens (KI) egentlig er. 
