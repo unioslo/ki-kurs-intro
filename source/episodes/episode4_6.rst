@@ -35,7 +35,6 @@ Avhengig av om opptaket er knyttet et Nettskjema i TSD eller ikke, støtter tjen
     * Opptak kan sendes direkte til Autotekst eller TSD-Autotekst via Nettskjema-diktafon appen 
     * Autotekst støtter opptil røde data, TSD-Autotekst støtter opptil sorte data
     * Kan lage en oppsummering i tillegg til transkripsjonen, nyttig for eksempel som et utgangspunkt til et møtereferat
-    * Til Autotekst trenger du kun din UiO-brukerkonto for å få tilgang
     * Til TSD-Autotekst må du ha et TSD prosjekt for å få tilgang
 
 .. uio-source::  Lenker til UiOs tjenestesider
