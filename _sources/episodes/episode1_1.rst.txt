@@ -18,14 +18,14 @@ Det sies ofte at KI er inspirert av måten hjernens nerveceller (nevroner) samar
       var det et tydelig vendepunkt. I stedet for «dumme chatbotter» som bare kunne svare på helt enkle spørsmål, fikk vi plutselig
       et verktøy som kunne:
 
-      •	skrive lange tekster
-      •	svare på komplekse spørsmål
-      •	formulere seg på en måte som ligner et menneske
+      • skrive lange tekster
+      • svare på komplekse spørsmål
+      • formulere seg på en måte som ligner et menneske
 
       Denne utviklingen har vært mulig på grunn av tre viktige ting:
-      1.	Store datamengder:  KI kan trenes på enorme mengder tekst, bilder og lyd fra internett, bøker, artikler osv.
-      2.	Kraftig maskinvare: Spesielle prosessorer (GPU-er) kan behandle veldig mye data samtidig.
-      3.	Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at KI kan lære mer effektivt.
+      1. Store datamengder:  KI kan trenes på enorme mengder tekst, bilder og lyd fra internett, bøker, artikler osv.
+      2. Kraftig maskinvare: Spesielle prosessorer (GPU-er) kan behandle veldig mye data samtidig.
+      3. Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at KI kan lære mer effektivt.
 
 
 Gammel versjon: 
