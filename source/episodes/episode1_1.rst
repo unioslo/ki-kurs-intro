@@ -2,6 +2,24 @@
 Kunstig intelligens
 ====================
 
+Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens, som for eksempel å forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall. Dagens KI fungerer i praksis som avansert mønstergjenkjenning. Systemene trenes ved å få enorme mengder eksempler, som tekst, bilder eller lyd. Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:
+
+- foreslå neste ord i en tekst  
+- gjenkjenne hva som er på et bilde  
+- forstå innholdet i et lydopptak
+
+Det sies ofte at KI er inspirert av måten hjernens nerveceller (nevroner) samarbeider på, men det er viktig å huske at KI ikke «forstår» eller «tenker» som et menneske. Den beregner sannsynlige svar basert på mønstrene den har lært fra treningsdataene sine.
+
+
+
+
+
+
+
+
+
+
+Gammel versjon: 
 KI er en samlebetegnelse for teknologi som utfører en oppgave på en måte som etterligner menneskelig intelligens, i tekst, bilde, tale eller tall. 
 Enkelt forklart er dagens KI, komplekse statistiske modeller som er inspirert av hvordan hjernens nevrale nettverk er bygget opp. 
 Det nevrale nettverket *trenes opp* ved å fore det med massive mengder tekst (eller bilder eller audio avhengig av hva modellen er spesialisert på) helt til modellen har *lært* hvordan den tolker og identifiserer det den har blitt trent på. 
