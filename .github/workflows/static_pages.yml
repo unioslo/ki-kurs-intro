@@ -41,9 +41,4 @@ jobs:
           destination_dir: ${{ github.ref_name != 'main' && format('branches/{0}', github.ref_name) || '.' }}
           keep_files: true
           user_name: 'github-actions[bot]'
-<<<<<<< HEAD
           user_email: 'github-actions[bot]@users.noreply.github.com'
-        
-=======
-          user_email: 'github-actions[bot]@users.noreply.github.com'
->>>>>>> main
