@@ -1,7 +1,7 @@
 KI-assistent
 ===============
 
-Du har kanskje sett ordet KI-assistent i tjenester som UiO GPT og co-pilot.En KI-assistent er en språkmodell med en bestemt rolle og personlighet. 
+Du har kanskje sett ordet KI-assistent i tjenester som UiO GPT og co-pilot. En KI-assistent er en språkmodell med en bestemt rolle og personlighet. 
 En KI-assistent kan for eksempel være, fransklærer, kodesjekker, eksamenshjelper eller studieveileder.  
 
 Assistenten får instrukser om hvordan den skal oppføre seg, hva den skal fokusere på, og ofte hvilket fagstoff den skal bruke som grunnlag for svarene sine. 
