@@ -1,20 +1,20 @@
 
-Microsoft Copilot
-=================
+Microsoft Copilot Chat
+=======================
 
-Microsoft Copilot ved UiO fungerer som en vanlig chattetjeneste med tilgang til nettsøk. 
+Microsoft Copilot Chat ved UiO fungerer som en vanlig chattetjeneste med tilgang til nettsøk. 
 Den kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video. 
 Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hjelper deg i gang, og er derfor godt egnet hvis du ønsker KI-assistanse som er intuitiv og enkel å bruke.
 
 UiO har bare godkjent Copilot for grønne data.
 Du må derfor være spesielt forsiktig når du benytter tjenesten. 
-Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot.
+Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat.
 Vi anbefaler at du heller bruker en av de andre KI-tjenestene, for å unngå å dele gule eller røde data med Copilot ved en feil.
 
 .. uio-info:: Microsoft KI produktene
 
    Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chatte-funksjonen.
-   Ved UiO er Microsoft Copilot ikke integrert direkte i de andre Microsoft-produktene.
+   Ved UiO er Microsoft Copilot Chat ikke integrert direkte i de andre Microsoft-produktene.
    Det betyr at den såkalte agent-funksjonen ikke er aktivert.
    Derfor ser du ikke Copilot-ikonet eller KI-funksjoner inne i for eksempel PowerPoint eller Word.
 
@@ -43,9 +43,8 @@ Vi anbefaler at du heller bruker en av de andre KI-tjenestene, for å unngå å 
 
 .. uio-dont:: Viktig
 
-   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot.
+   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot Chat.
 
 .. uio-source::  Lenker til UiOs tjenestesider
 
-   * `Om Microsoft Copilot <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
-   * `Retningslinjer for bruk av Copilot <https://www.uio.no/tjenester/it/ki/copilot/hjelp/index.html>`_
+   * `Om Microsoft Copilot Chat <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
