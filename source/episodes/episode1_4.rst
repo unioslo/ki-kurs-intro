@@ -46,12 +46,13 @@ _______
 Litt usikker på om vi skal ha med dette her. Kunne vi flyttet dette til det med bærekraft kanskje? 
 
 Hvorfor ikke bare bruke den beste modellen alltid?
-Det handler ikke bare om kostnad: de største modellene bruker også mest regnekraft og energi, og gir derfor et større klimaavtrykk. Når en mindre modell gir gode nok svar til oppgaven din, er det derfor både mer ressurseffektivt og mer miljøvennlig å velge den.
+Det handler ikke bare om kostnad: de største modellene bruker også mest regnekraft og energi, og gir derfor et større klimaavtrykk. 
+Når en mindre modell gir gode nok svar til oppgaven din, er det derfor både mer ressurseffektivt og mer miljøvennlig å velge den.
+
 Hva om modellen er gratis som på GPT UiO?
-Selv om tjenesten er gratis for deg, koster de største modellene mer for UiO. I tillegg har vi modeller som kjører på begrensede ressurser på UiO- og NTNU-infrastruktur. Det er derfor lurt og solidarisk å starte med en mindre modell. Fungerer den godt nok, bidrar du til at de største modellene kan reserveres til de mest komplekse og krevende oppgavene.
-
-
-
+Selv om tjenesten er gratis for deg, koster de største modellene mer for UiO. 
+I tillegg har vi modeller som kjører på begrensede ressurser på UiO- og NTNU-infrastruktur. 
+Det er derfor lurt og solidarisk å starte med en mindre modell. Fungerer den godt nok, bidrar du til at de største modellene kan reserveres til de mest komplekse og krevende oppgavene.
 
 
 Gammel tekst: 
