@@ -30,5 +30,5 @@ Alle store språkmodeller har et *kontekstvindu*, som har en begrenset størrels
 Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.
 Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet som styrer språkmodellen bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen.
 Språkmodellen har ikke tilgang til informasjon som ikke er i konteksten.
-Den kan heller ikke kan "huske" informasjon fra tidligere samtaler.
+Den kan heller ikke "huske" informasjon fra tidligere samtaler.
 
