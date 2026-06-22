@@ -3,7 +3,6 @@ Prinsipper for gode instruksjoner
 
 Her ser du noen enkle eksempler på instruksjoner som kan bli bedre.
 Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
-
 Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.
 Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 
