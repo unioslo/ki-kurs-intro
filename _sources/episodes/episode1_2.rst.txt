@@ -6,7 +6,7 @@ instruksjon og systemet genererer et forslag til svar eller innhold.
 
 Generativ KI bygger på det som kalles maskinlæring. Det betyr at systemet lærer av store mengder data og finner mønstre uten at mennesker forteller det nøyaktig hva det skal se etter.
 
-Det finnes flere typer generativ KI. I dette kurset skal du lære mest om generativ KI som lager tekst. 
+Det finnes flere typer generativ KI. I dette kurset skal du lære mest om store språkmodeller, som en en type genartiv KI. Det er selve motoren i mange KI-tjenester du bruker. 
 
 .. uio-colorbox-3:: 
 
