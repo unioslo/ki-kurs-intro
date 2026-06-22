@@ -6,7 +6,7 @@ Oppsummering av episode 1
 * **Kunstig intelligens (KI)** er en teknologi som etterligner menneskelig intelligens
 * **Generativ KI** skaper nytt innhold, i motsetning til KI som klassifiserer eller forutsier
 * **Språkmodellen** er "motoren" i KI og er trent på store mengder tekst
-* **KI-assistenter og agenter** er spesialiserte varianter av KI med ulike roller og muligheter
+* **KI-assistenter og agenter** er spesialiserte varianter av KI med ulike funksjoner og muligheter
 
 Neste episode
 ---------------
