@@ -20,12 +20,13 @@ Det finnes flere typer generativ KI. I dette kurset skal du lære mest om genera
 
 		.. canvas-tab:: Diskriminativ KI
 
-			Sorterer og gjenkjenner ting som allerede finnes. 
+			Diskrimitativ KI sorterer og gjenkjenner ting som allerede finnes. 
 			Eksempel: KI system som kan identifisere om et fotografi er av en hund eller en katt
 
 		.. canvas-tab:: Prediktiv KI
 			
-			Prøver å forutsi hva som kommer til å skje.
+			Prediktiv kunstig intelligens leter etter mønstre i data som kan si noe om sannsynligheten for hendelser.
+
 			Eksempel: værmeldingen
 
 .. uio-colorbox-3:: Fordypning for de nysgjerrige
