@@ -42,12 +42,8 @@ Assistenten får på den måten et eget oppslagsverk som den benytter til å gen
    Hva slags KI-assistent kunne støttet deg i dine oppgaver?
 
 
-
-
-
-
 Gammel tekst
-Et annet begrep du helt sikkert har møtt på er *KI-assistent*. 
+    Et annet begrep du helt sikkert har møtt på er *KI-assistent*. 
 En KI assistent er KI som har en bestemt *personlighet* eller *rolle*, og ofte et sett med spesifiserte oppslagsverk. 
 Dette styrer hvordan språkmodellen svarer, og hva den fokuserer på.
 Da kan du ha en "fransk-lærer", en "kodesjekker" eller en "eksamens-hjelper" som alltid holder seg i rollen. 
