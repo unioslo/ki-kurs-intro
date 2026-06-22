@@ -15,6 +15,43 @@ Store modeller kommer ofte fra store teknologiselskaper, som for eksempel:
 
 I mange KI-tjenester kan du bytte språkmodell i innstillingene og på den måten velge den som passer best til oppgaven du skal løse. 
 
+Hvilken språkmodell skal man velge?
+------------------------------------
+Små modeller 
+Bruk en mindre, og ofte rimeligere. modell hvis du skal gjennomføre enkle oppgaver, som for eksempel:
+   - språkvaske en e-post
+   - få kort tilbakemelding på et utkast
+   - få forslag til små omskrivinger av setninger
+   - gjøre enkle og oversiktlige oppgaver
+
+Eksempel på modeller: ?
+
+Store modeller 
+
+Velg en større modell hvis du skal gjøre mer krevende oppgaver, for eksempel:
+   - strukturere eller omarbeide en lang fagtekst
+   - få hjelp til å planlegge et større prosjekt
+   - få grundige forklaringer på faglige begreper eller komplekse temaer
+   - generere omfattende dokumenter
+
+Det kan også lønne seg å bytte til en større modell dersom du merker at:
+   - svarene blir upresise eller mangler viktige detaljer
+   - modellen strever med sammensatte problemstillinger
+   - du trenger bedre hjelp til struktur, argumentasjon eller begrunnelser
+
+Eksempler på modeller: 
+
+Det beste tipset er å starte med en liten modell, og gå over på en større hvis kvaliteten ikke blir god nok. Prøv deg frem! 
+
+_______
+Litt usikker på om vi skal ha med dette her. Kunne vi flyttet dette til det med bærekraft kanskje? 
+
+Hvorfor ikke bare bruke den beste modellen alltid?
+Det handler ikke bare om kostnad: de største modellene bruker også mest regnekraft og energi, og gir derfor et større klimaavtrykk. Når en mindre modell gir gode nok svar til oppgaven din, er det derfor både mer ressurseffektivt og mer miljøvennlig å velge den.
+Hva om modellen er gratis som på GPT UiO?
+Selv om tjenesten er gratis for deg, koster de største modellene mer for UiO. I tillegg har vi modeller som kjører på begrensede ressurser på UiO- og NTNU-infrastruktur. Det er derfor lurt og solidarisk å starte med en mindre modell. Fungerer den godt nok, bidrar du til at de største modellene kan reserveres til de mest komplekse og krevende oppgavene.
+
+
 
 
 
