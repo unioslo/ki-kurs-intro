@@ -1,9 +1,8 @@
 Nyttige instruksjons-teknikker 
 ===============================
 
-Nå som du har lært om prinsipper for gode instruksjoner, kan du kombinere disse med noen nyttige instruksjonsteknikker. 
-Disse kan kombineres, eller brukes hver for seg.
-
+Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike instruksjonsteknikker i tillegg.
+Du kan bruke teknikkene hver for seg, eller kombinere de.
 
 .. uio-colorbox-3::  Chain of thought - tankekrekke
 
