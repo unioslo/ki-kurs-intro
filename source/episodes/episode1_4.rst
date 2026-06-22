@@ -1,6 +1,24 @@
 Språkmodellen - motoren i KI-tjenesten
 ======================================
+Foreslår å flytte hele denne siden til kapittelet om LLM og forenkle teksten. Teksten kan hete språkmodeller 
 
+Et mylder av språkmodeller
+Det finnes mange ulike språkmodeller. Noen er små, andre er store. Noen er åpne og andre er lukkede. De åpne modellene kan du laste ned og kjøre på egen maskiner, mens de lukkede kun er tilgjengelige gjennom selskapets plattformer. Modellene er spesialisert på visse oppgaver, og det finnes modeller som:
+   - er best på generell tekstskriving
+   - er spesialisert på koding/programmering
+   - kan håndtere både tekst og bilder
+
+Store modeller kommer ofte fra store teknologiselskaper, som for eksempel:
+   - OpenAI: GPT-modellene
+   - Google: Gemini
+   - Anthropic:  Claude
+
+I mange KI-tjenester kan du bytte språkmodell i innstillingene og på den måten velge den som passer best til oppgaven du skal løse. 
+
+
+
+
+Gammel tekst: 
 Når vi snakker om KI-tjenester som UiO GPT eller Microsoft Copilot, er *språkmodellen* (LLM - Large Language Model) selve "motoren" i tjenesten.
 En *språkmodell* er en KI-modell av typen *generativ KI* som har trent på enorme mengder tekst, og dermed lært seg mønstre i språk som gjør den i stand til å "forstå" og produsere tekst.
 
