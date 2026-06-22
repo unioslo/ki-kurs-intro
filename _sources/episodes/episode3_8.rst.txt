@@ -10,7 +10,7 @@ Mer info om KI-assistenter i GPT UiO finnes her: https://www.uio.no/tjenester/it
 
 
 
-.. uio-viktig:: Tips
+.. uio-do:: Tips
 
    Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. 
    Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til neste gang. 
