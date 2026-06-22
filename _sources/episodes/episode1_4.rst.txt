@@ -15,8 +15,7 @@ Store modeller kommer ofte fra store teknologiselskaper, som for eksempel:
 
 I mange KI-tjenester kan du bytte språkmodell i innstillingene og på den måten velge den som passer best til oppgaven du skal løse. 
 
-Hvilken språkmodell skal man velge?
-------------------------------------
+Hvilken språkmodell bør man velge? 
 Små modeller 
 Bruk en mindre, og ofte rimeligere. modell hvis du skal gjennomføre enkle oppgaver, som for eksempel:
    - språkvaske en e-post
