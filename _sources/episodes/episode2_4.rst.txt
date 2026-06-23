@@ -11,11 +11,6 @@ Her er noen eksempler:
 * **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
 * **Blandede personer**: Modellen blander sammen biografier fra ulike personer.
 
-.. uio-info:: Eksempel
-
-   "Studien av Hansen et al. (2023) publisert i Nature viste at …", der både studien og forfatterne er oppfunnet.
-   Det kan også være en tittel som høres troverdig ut, fordi temaet er innenfor fagområdet til en virkelig forfatter.
-
 Hvorfor skjer det?
 ~~~~~~~~~~~~~~~~~~~~~~
 
