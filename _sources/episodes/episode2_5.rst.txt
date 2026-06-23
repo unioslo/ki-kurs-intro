@@ -1,7 +1,7 @@
 Språkmodeller har ikke hukommelse
 ================================================
 
-Selve den matematiske språkmodellen har ikke hukommelse.
+Språkmodellen i seg selv har ikke hukommelse.
 Det er systemet rundt modellen som husker samtalen du har hatt.
 Når du sender en ny instruksjon, sender chat-systemet hele samtalen og den nye instruksjonen til språkmodellen.
 Modellen genererer så et nytt svar basert på hele samtalen og den nye instruksjonen.
