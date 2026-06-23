@@ -21,7 +21,10 @@ I mange KI-tjenester kan du bytte språkmodell i innstillingene og på den måte
 
 Hvilken språkmodell bør man velge? 
 -------------------------------------------
+
 Små modeller 
++++++++++++++
+
 Bruk en mindre, og ofte rimeligere. modell hvis du skal gjennomføre enkle oppgaver, som for eksempel:
 
 - språkvaske en e-post
@@ -32,6 +35,7 @@ Bruk en mindre, og ofte rimeligere. modell hvis du skal gjennomføre enkle oppga
 Eksempel på modeller: ?
 
 Store modeller 
++++++++++++++++
 
 Velg en større modell hvis du skal gjøre mer krevende oppgaver, for eksempel:
 

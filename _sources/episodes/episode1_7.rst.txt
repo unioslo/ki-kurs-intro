@@ -5,6 +5,6 @@ En KI-agent er en avansert KI-assistent som kan utføre handlinger i IT-systemer
 Agenter er laget for en eller flere spesifikke formål og kan for eksempel:
 
   
-  - hente informasjon fra andre systemer, f.eks internett eller en database, 
-  - den kan kanskje bestille togbiletter for deg,
-  - slå av en datamaskin som har symptomer på å være under angrep utenfra. 
+- hente informasjon fra andre systemer, f.eks internett eller en database, 
+- den kan kanskje bestille togbiletter for deg,
+- slå av en datamaskin som har symptomer på å være under angrep utenfra. 
