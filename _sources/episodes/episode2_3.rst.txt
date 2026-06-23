@@ -9,10 +9,7 @@ Hvis en språkmodell skal fullføre setningen «Jeg vil ha et glass…», så er
 Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
 Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
 Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
-
-.. uio-dont:: Eksempel på dårlig bruk
-
-   Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
+Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
 .. uio-info:: Manipulering (LLM poisoning)
 
