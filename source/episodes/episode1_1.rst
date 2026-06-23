@@ -2,7 +2,10 @@
 Kunstig intelligens
 ====================
 
-Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens. Det kan for eksempel våre å forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall. Dagens KI fungerer i praksis som avansert mønstergjenkjenning. Systemene trenes ved å få enorme mengder eksempler fra tekst, bilder eller lyd. Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:
+Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens. 
+Det kan for eksempel være å forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall. 
+Dagens KI fungerer i praksis som avansert mønstergjenkjenning. Systemene trenes ved å få enorme mengder eksempler fra tekst, bilder eller lyd. 
+Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:
 
 - foreslå neste ord i en tekst  
 - gjenkjenne hva som er på et bilde  
