@@ -11,6 +11,12 @@ Her er noen eksempler:
 * **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
 * **Blandede personer**: Modellen blander sammen biografier fra ulike personer.
 
+Det er et stort problem at LLM-er ofte finner på ting med stor *selvsikkerhet*.
+De sier ikke: "Jeg er usikker, men …".
+I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
+Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
+Du må alltid sjekke fakta med en pålitelig kilde.
+
 Hvorfor skjer det?
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -26,15 +32,6 @@ Det er mange årsaker til at modellene finner på ting:
 
    At språkmodeller finner på ting er ikke en feil som kan fikses fullstendig.
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
-
-"Hallusinering" med selvtillit
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Det er et stort problem at LLM-er ofte finner på ting med stor *selvsikkerhet*.
-De sier ikke: "Jeg er usikker, men …".
-I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
-Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
-Du må alltid sjekke fakta med en pålitelig kilde.
 
 Hva med internett-søk?
 ~~~~~~~~~~~~~~~~~~~~~~
