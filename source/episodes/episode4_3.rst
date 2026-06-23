@@ -11,7 +11,7 @@ Noen relevante spørsmål som kan hjelpe deg med å velge modell:
 
 * Er svaret godt nok med en mindre modell? Bra, gå for den mindre modellen og spar ressurser!
 * Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell.
-* Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opp til røde data.
+* Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opptil røde data.
 * Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder.
 
 
