@@ -1,4 +1,4 @@
-Hvordan fungerer språkmodeller?
+Store språkmodeller 
 ================================
 
 I dette kapittelet vil du øke forståelen din for hvordan store språkmodeller (også kalt LLM-er) genererer tekst, og hvilke svakheter modellen har når den svarer deg. Denne kunnskapen er nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
@@ -8,9 +8,9 @@ I dette kapittelet vil du øke forståelen din for hvordan store språkmodeller 
     :width: 100%
     :alt: Illustrasjon av en språkmodell-maskin - trening inn, svar ut
 
-Etter denne episoden kan du:
+.. uio-colorbox-1:: Etter dette kapitellet kan du:
 
-* Forklare hvorda store sopråkmodeller generer tekst
-* Forklare hvorfor store språkmodeller ikke er pålitelige kunnskapsbaser
-* Gjenkjenne når en språkmodellene kan gi feil informasjon
+    * Forklare hvordan store sopråkmodeller generer tekst
+    * Forklare hvorfor store språkmodeller ikke er pålitelige kunnskapsbaser
+    * Gjenkjenne når en språkmodellene kan gi feil informasjon
 
