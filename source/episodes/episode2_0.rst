@@ -1,9 +1,7 @@
 Hvordan fungerer språkmodeller?
 ================================
 
-I denne delen av kurset skal du lære mer om hvordan store språkmodeller (LLM-er) fungerer, og hvorfor denne forståelsen er viktig når du bruker dem.
-Du vil forstå hvordan modellene genererer tekst, og hvorfor de ikke kan fungere som pålitelige kunnskapsbaser.
-Denne innsikten er avgjørende for å kunne bruke KI-verktøy på en trygg og fornuftig måte.
+I dette kapittelet vil du øke forståelen din for hvordan store språkmodeller (også kalt LLM-er) genererer tekst, og hvilke svakheter modellen har når den svarer deg. Denne kunnskapen er nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
 
 .. figure:: ../images/2.1-llm-machinery.png
     :align: center
@@ -12,7 +10,7 @@ Denne innsikten er avgjørende for å kunne bruke KI-verktøy på en trygg og fo
 
 Etter denne episoden kan du:
 
-* Forstå at LLM-er konstruerer tekst basert på statistiske mønstre
-* Forklare hvorfor LLM-er ikke er pålitelige kunnskapsbaser
-* Gjenkjenne når en LLM kan gi feil informasjon
-* Forstå betydningen av tilfeldighet i KI-svar
+* Forklare hvorda store sopråkmodeller generer tekst
+* Forklare hvorfor store språkmodeller ikke er pålitelige kunnskapsbaser
+* Gjenkjenne når en språkmodellene kan gi feil informasjon
+
