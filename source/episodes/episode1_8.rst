@@ -1,7 +1,7 @@
-Oppsummering av episode 1
+Oppsummering 
 ==========================
 
-**I denne episoden har du lært at:**
+**I kapittel 1 har du lært at:**
 
 * **Kunstig intelligens (KI)** er en teknologi som beregner sannsynlige svar basert på mønstrene den har lært fra treningsdataene sine
 * **Generativ KI** lager nytt innhold basert på det den har lært fra før
