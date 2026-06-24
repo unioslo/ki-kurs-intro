@@ -14,4 +14,3 @@ Etter denne episoden kan du:
 
 * Forklare sentrale begreper innenfor kunstig intelligens 
 
-
