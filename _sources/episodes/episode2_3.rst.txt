@@ -1,8 +1,8 @@
 Språkmodeller har ikke *faktakunnskap*
 ==============================================
 
-Store språkmodeller er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
-Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
+Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
+Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på hvilke ord som er mest sannsynlige.
 
 Hvis en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
 De har alle vært hovedstaden i Norge.
