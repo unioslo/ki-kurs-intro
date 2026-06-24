@@ -6,7 +6,7 @@ De foreslår neste ord basert på teksten du har skrevet så langt.
 Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
 Forslaget er *betinget* av teksten du har skrevet, og denne betingelsen kalles *konteksten*.
 
-Selv om store språkmodeller er mye mer avanserte enn smarte tastaturer, fungerer de grunnleggende sett på samme måte.
+Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte.
 De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
 Konteksten kan være en instruksjon, et spørsmål, nettsider eller filer du laster opp.
 
