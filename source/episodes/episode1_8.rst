@@ -11,5 +11,5 @@ Oppsummering av episode 1
 Neste episode
 ---------------
 
-I neste episode lærer du hvordan språkmodeller faktisk fungerer - hvordan de konstruerer tekst, og hvorfor de ikke er pålitelige kunnskapsbaser. 
-Dette er avgjørende kunnskap for å kunne bruke KI trygt.
+I neste episode lærer du hvordan språkmodeller fungerer og hvorfor de ikke er pålitelige kunnskapsbaser. 
+Dette er viktig kunnskap for å kunne bruke KI trygt.
