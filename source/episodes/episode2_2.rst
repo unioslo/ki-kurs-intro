@@ -2,30 +2,6 @@
 Hvordan genererer språkmodeller tekst?
 ================================================
 
-
-
-Trening
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-En språkmodell trenes før den tas i bruk.
-Modellen lærer ikke mens den brukes.
-Men noen leverandører av språkmodeller lagrer brukerdata for å trene neste versjon av modellen.
-Det skal vi komme tilbake til senere, i delen om personvern og data.
-
-Her er en forenklet oppsummering av hva som skjer når modellen trenes:
-
-* Modellen får lese milliarder av ord fra internett, bøker, artikler osv.
-* Den lærer hvilke ord som ofte kommer etter hverandre.
-* Den lærer mønstre i språk, grammatikk og hvordan setninger bygges opp.
-* Den lærer sammenhenger mellom begreper og emner.
-
-.. uio-info:: Eksempel
-
-   Hvis modellen har sett setningen "hovedstaden i Norge er Oslo" tusenvis av ganger, lærer den at "Oslo" er et sannsynlig ord som kommer etter "hovedstaden i Norge er".
-
-Generering
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 Språkmodeller er matematiske modeller som jobber med tall. Før modellen kan behandle instruksjonen din må den deles opp i mindre biter, kalt *tokens*, og hvert token gjøres så om til et tall.
 Instruksjonen din brukes så som kontekst for å generere ny tekst.
 
