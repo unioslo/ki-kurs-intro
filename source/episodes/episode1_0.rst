@@ -10,7 +10,8 @@ Første kapittel er en introduksjon til fire viktiger begreper i "KI-språket". 
 
     Illustrasjon: Tina Morønning Ruud
 
-Etter denne episoden kan du:
 
-* Forklare sentrale begreper innenfor kunstig intelligens 
+.. uio-colorbox-1:: Etter dette kapitellet kan du:
 
+       * Forklare sentrale begreper innenfor kunstig intelligens 
+   
