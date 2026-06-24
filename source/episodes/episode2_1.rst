@@ -4,7 +4,7 @@ Trening og kontekst
 En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
 Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
-Vi kan si at forslaget er *betinget* av teksten du har skrevet, og denne kalles *konteksten*.
+Forslaget er *betinget* av teksten du har skrevet, og denne betingelsen kalles *konteksten*.
 
 Selv om store språkmodeller er mye mer avanserte enn smarte tastaturer, fungerer de grunnleggende sett på samme måte.
 De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
