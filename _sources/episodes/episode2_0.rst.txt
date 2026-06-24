@@ -12,5 +12,5 @@ I dette kapittelet vil du øke forståelen din for hvordan store språkmodeller 
 
     * Forklare hvordan store sopråkmodeller generer tekst
     * Forklare hvorfor store språkmodeller ikke er pålitelige kunnskapsbaser
-    * Gjenkjenne når en språkmodellene kan gi feil informasjon
+    * Gjenkjenne når språkmodellene kan gi feil informasjon
 
