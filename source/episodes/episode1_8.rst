@@ -3,7 +3,7 @@ Oppsummering av episode 1
 
 **I denne episoden har du lært at:**
 
-* **Kunstig intelligens (KI)** er en teknologi som etterligner menneskelig intelligens
+* **Kunstig intelligens (KI)** er en teknologi som beregner sannsynlige svar basert på mønstrene den har lært fra treningsdataene sine.
 * **Generativ KI** skaper nytt innhold, i motsetning til KI som klassifiserer eller forutsier
 * **Språkmodellen** er "motoren" i KI og er trent på store mengder tekst
 * **KI-assistenter og agenter** er spesialiserte varianter av KI med ulike funksjoner og muligheter
