@@ -8,9 +8,7 @@ Vi kan si at forslaget er *betinget* av teksten du har skrevet, og denne kalles 
 
 Selv om store språkmodeller er mye mer avanserte enn smarte tastaturer, fungerer de grunnleggende sett på samme måte.
 De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
-Konteksten kan være en instruksjon eller et spørsmål.
-Ofte legger vi til ekstra kontekst, for eksempel ved å laste opp filer.
-De fleste chat-tjenestene kan også hente relevant informasjon fra internett, som deretter brukes som kontekst.
+Konteksten kan være en instruksjon, et spørsmål, nettsider eller filer du laster opp.
 
 Store språkmodeller trenes altså på tekster fra internett.
 Men det er mange tekster de ikke har tilgang til.
