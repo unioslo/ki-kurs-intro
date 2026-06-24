@@ -1,4 +1,4 @@
-Språkmodeller har ikke *faktakunnskap*
+Språkmodeller har ikke faktakunnskap
 ==============================================
 
 Språkmodeller har ikke noe forhold til sannhet [Hicks]_.Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på hvilke ord som er mest sannsynlige.
