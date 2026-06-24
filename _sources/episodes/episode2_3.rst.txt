@@ -5,11 +5,11 @@ Store språkmodeller er altså *statistiske* modeller som genererer tekst basert
 De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
 Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
 
-Hvis en språkmodell skal fullføre setningen «Jeg vil ha et glass…», så er noen mulige fortsettelser «vann» og «melk».
-Men det fins ikke nødvendigvis bare ett riktig svar, bare sannsynligheter.
-Og hvis en setning bare har én riktig fortsettelse, så har ikke språkmodeller *sikker kunnskap* om det.
+Hvis en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
+De har alle vært hovedstaden i Norge.
+Hvis du spør modellen hva som er hovedstaden i Norge, svarer den sannsynligvis «Oslo».
+Men det er en viss fare for at modellen svarer feil, særlig på spørsmål om tall, som for eksempel datoer og årstall.
 Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
-Spør du "Hva var befolkning i Norge i 2024", genererer modellen et svar basert på mønstre fra lignende spørsmål den har sett, og kan gi feil tall.
 
 .. uio-info:: Manipulering (LLM poisoning)
 
