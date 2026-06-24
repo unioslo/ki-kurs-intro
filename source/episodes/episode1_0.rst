@@ -12,8 +12,6 @@ Første kapittel er en introduksjon til fire viktiger begreper i "KI-språket": 
 
 Etter denne episoden kan du:
 
-* Bruke sentrale begreper om kunstig intelligens
-* Beskrive forskjellen mellom ulike typer KI
-* Forklare hva KI og generativ KI er
+* Forklare sentrale begreper innenfor kunstig intelligens 
 
 
