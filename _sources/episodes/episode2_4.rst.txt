@@ -20,13 +20,14 @@ Du må alltid sjekke fakta med en pålitelig kilde.
 Hvorfor skjer det?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Det er mange årsaker til at modellene finner på ting:
+Det er mange årsaker til at modellene finner på ting.
+Dette er noen av dem:
 
-1. *Modellen vil alltid gi et svar*, den sier ikke "jeg vet ikke".
-2. *Mønstre fra trening*, modellen har lært hvordan svar "skal se ut".
-3. *Manglende faktasjekk*, modellen har ikke kunnskap.
-4. *Overgeneralisering*, modellen kombinerer mønstre fra ulike kilder.
-5. *Utdaterte treningsdata*, modellen vet ikke hva som har skjedd etter den ble trent.
+- Modellene "vil" gjerne gi et svar, de er dårlige til å si "jeg vet ikke".
+- Manglende faktasjekk, modellene har ikke kunnskap.
+- Overgeneralisering, modellene kombinerer mønstre fra ulike kilder.
+- Utdaterte treningsdata, modellene vet ikke hva som har skjedd etter de ble trent.
+
 
 .. uio-viktig:: Viktig å forstå
 
