@@ -12,11 +12,7 @@ Konteksten kan være en instruksjon, et spørsmål, nettsider eller filer du las
 
 Store språkmodeller trenes på tekster fra internett, men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
-De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære.
-
-Dette gir ulikt utslag for ulike bruksområder.
-For eksempel er det for visse fagområder lite informasjon på nett, og da vil naturligvis også språkmodellen ha lite informasjon om disse områdene.
-
+De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskejllige bruksområder.
 
 Hva er konteksten?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
