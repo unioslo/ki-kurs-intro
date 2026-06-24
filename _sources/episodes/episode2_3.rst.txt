@@ -1,14 +1,13 @@
 Språkmodeller har ikke *faktakunnskap*
 ==============================================
 
-Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
-Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på hvilke ord som er mest sannsynlige.
+Språkmodeller har ikke noe forhold til sannhet [Hicks]_.Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på hvilke ord som er mest sannsynlige.
 
 Hvis en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
-De har alle vært hovedstaden i Norge.
+Alle disse stedene har vært hovedstaden i Norge.
 Hvis du spør modellen hva som er hovedstaden i Norge, svarer den sannsynligvis «Oslo».
 Men det er en viss fare for at modellen svarer feil, særlig på spørsmål om tall, som for eksempel datoer og årstall.
-Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
+
 
 .. uio-info:: Manipulering (LLM poisoning)
 
