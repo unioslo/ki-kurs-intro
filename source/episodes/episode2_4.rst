@@ -7,9 +7,9 @@ Noen kaller det *hallusinering* når språkmodeller finner på ting, men vi kan 
 Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
 Her er noen eksempler: 
 
-* **Feil fakta**: Modellen oppgir feil datoer, tall eller navn.
-* **Oppdiktede referanser**: Modellen lager titler på artikler eller bøker som ikke finnes.
-* **Blandede personer**: Modellen blander sammen biografier fra ulike personer.
+* *Feil fakta*: Modellen oppgir feil datoer, tall eller navn.
+* *Oppdiktede referanser*: Modellen lager titler på artikler eller bøker som ikke finnes.
+* *Forveksling*: Modellen blander sammen ulike personer.
 
 Det er et stort problem at LLM-er ofte finner på ting med stor *selvsikkerhet*.
 De sier ikke: "Jeg er usikker, men …".
