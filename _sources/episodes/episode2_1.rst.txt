@@ -1,14 +1,19 @@
-Trening og kontekst
+Hvordan fungerer store språkmodeller?
 =====================
 
 En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
-Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
-Forslaget er *betinget* av teksten du har skrevet, og denne betingelsen kalles *konteksten*.
+Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene. Forslaget er *betinget* av teksten du har skrevet, og denne betingelsen kalles *konteksten*.
 
-Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte.
-De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
-Konteksten kan være en instruksjon, et spørsmål, nettsider eller filer du laster opp.
+Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte. De er matematiske modeller som 
+
+  - basert på spørsmålet du stiller og mønstre den har lært, beregner sannsynlighetene for neste ord i setningen.
+  - trekker et ord, med litt tilfeldighet, og legger det til i svaret.
+  - gjentar prosessen for neste ord, og neste ord, osv.
+  - stopper når den "mener" svaret er fullstendig.
+
+Trening 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Store språkmodeller trenes på tekster fra internett, men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.

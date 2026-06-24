@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trening og kontekst &mdash; Grunnkurs KI  documentation</title>
+  <title>Hvordan fungerer store språkmodeller? &mdash; Grunnkurs KI  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
@@ -38,18 +38,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="trening-og-kontekst">
-<h1>Trening og kontekst</h1>
+  <section id="hvordan-fungerer-store-sprakmodeller">
+<h1>Hvordan fungerer store språkmodeller?</h1>
 <p>En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
-Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
-Forslaget er <em>betinget</em> av teksten du har skrevet, og denne betingelsen kalles <em>konteksten</em>.</p>
-<p>Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte.
-De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
-Konteksten kan være en instruksjon, et spørsmål, nettsider eller filer du laster opp.</p>
+Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene. Forslaget er <em>betinget</em> av teksten du har skrevet, og denne betingelsen kalles <em>konteksten</em>.</p>
+<p>Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte. De er matematiske modeller som</p>
+<blockquote>
+<div><ul class="simple">
+<li>basert på spørsmålet du stiller og mønstre den har lært, beregner sannsynlighetene for neste ord i setningen.</li>
+<li>trekker et ord, med litt tilfeldighet, og legger det til i svaret.</li>
+<li>gjentar prosessen for neste ord, og neste ord, osv.</li>
+<li>stopper når den “mener” svaret er fullstendig.</li>
+</ul>
+</div></blockquote>
+<section id="trening">
+<h2>Trening</h2>
 <p>Store språkmodeller trenes på tekster fra internett, men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
 De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskejllige bruksområder.</p>
+</section>
 <section id="hva-er-konteksten">
 <h2>Hva er konteksten?</h2>
 <p>Når vi snakker om store språkmodeller, bruker vi ofte <em>kontekst</em> om alt det vi gir modellen som input.
