@@ -10,8 +10,7 @@ Selv om store språkmodeller er mye mer avanserte enn smarte tastaturer, fungere
 De bygger opp teksten et ord av gangen, betinget av konteksten du gir den.
 Konteksten kan være en instruksjon, et spørsmål, nettsider eller filer du laster opp.
 
-Store språkmodeller trenes altså på tekster fra internett.
-Men det er mange tekster de ikke har tilgang til.
+Store språkmodeller trenes på tekster fra internett, men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
 De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære.
 
