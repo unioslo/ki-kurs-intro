@@ -1,7 +1,7 @@
 Språkmodeller har ikke *kunnskap*
 ==============================================
 
-Store språkmodeller er altså *statistiske* modeller som genererer tekst basert på mønstre de har lært.
+
 De er trent til å generere tekst som er *troverdig*, og som ligner på tekstene de er trent opp på.
 Språkmodellene har ikke *sikker kunnskap* om hva som er *sant*, de regner bare på hvilke ord som er mest *sannsynlige*.
 
