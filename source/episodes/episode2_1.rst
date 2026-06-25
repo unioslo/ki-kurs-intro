@@ -17,7 +17,8 @@ Trening
 
 Store språkmodeller trenes på tekster fra internett, men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
-De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskejllige bruksområder.
+De har også begrenset tilgang til trykte kilder.
+Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskjellige bruksområder.
 
 Hva er konteksten?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
