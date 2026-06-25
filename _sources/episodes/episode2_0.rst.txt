@@ -8,9 +8,11 @@ I dette kapittelet vil du øke forståelen din for hvordan store språkmodeller 
     :width: 100%
     :alt: Illustrasjon av en språkmodell-maskin - trening inn, svar ut
 
+    Illustrasjon: Tina Morønning Ruud
+
 .. uio-colorbox-1:: Etter dette kapitellet kan du:
 
-    * Forklare hvordan store sopråkmodeller generer tekst
+    * Forklare hvordan store språkmodeller generer tekst
     * Forklare hvorfor store språkmodeller ikke er pålitelige kunnskapsbaser
     * Gjenkjenne når språkmodellene kan gi feil informasjon
 
