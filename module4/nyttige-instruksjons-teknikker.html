@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyttige instruksjons-teknikker &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=d6a0b8db" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dc637b1a" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Praktisk øvelse: Forbedre instruksjoner" href="praktisk-ovelse-forbedre-instruksjoner.html" />
+    <link rel="prev" title="Prinsipper for gode instruksjoner" href="prinsipper-for-gode-instruksjoner.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nyttige-instruksjons-teknikker">
+<h1>Nyttige instruksjons-teknikker</h1>
+<p>Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike instruksjonsteknikker i tillegg.
+Du kan bruke teknikkene hver for seg, eller kombinere de.</p>
+<div class="uio-color-box-3">
+<h3>Chain of thought - tankekrekke</h3>
+<p>Be KI-en «tenke høyt» eller «forklare steg for steg».
+Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.</p>
+<p><strong>Eksempel</strong></p>
+<p>Du er en erfaren kursutvikler ved et universitet.
+Jeg skal holde et 2-timers introduksjonskurs i bruk av GPT UiO for ansatte ved Universitetet i Oslo som er nybegynnere.</p>
+<p>Tenk steg for steg før du svarer:</p>
+<ol class="arabic simple">
+<li>Identifiser målgruppen mer konkret (hvem de er, hva de kan fra før, hva de trenger).</li>
+<li>Foreslå 3-4 konkrete læringsmål for kurset.</li>
+<li>Del opp tiden i en enkel tidsplan (f.eks. 4 x 25 minutter med korte pauser).</li>
+<li>For hver bolk: beskriv innhold, arbeidsform (forelesning, demo, øvelse) og hva deltakerne skal sitte igjen med.</li>
+<li>Til slutt: foreslå en enkel hjemmeoppgave deltakerne kan gjøre etter kurset.</li>
+</ol>
+<p>Vis først din trinnvise tenking som punkter, og deretter et ryddig forslag til kursopplegg.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Be om begrunnelse</h3>
+<p>Be KI-en forklare hvorfor den har gitt det svaret den ga.
+En kort begrunnelse gjør det lettere for deg å vurdere om svaret er relevant og til å stole på.</p>
+<p><strong>Eksempel</strong></p>
+<p>Jeg skal arrangere en workshop om […].
+Foreslå noen aktiviteter som kan hjelpe deltakerne med oppgaven de skal løse.
+Gi en begrunnelsen på 3-5 punkter for hvordan aktivitetene kan hjelpe deltakerne.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Few-shot-instruksjoner - gi eksempler</h3>
+<p>Gi eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å forklare stilen med ord.</p>
+<p><strong>Eksempel</strong></p>
+<p>Jeg skal skrive titler til nyhetssaker. Her er eksempler på stilen jeg ønsker:</p>
+<ul class="simple">
+<li>«Nytt tilbud: Gratis språkkurs for ansatte»</li>
+<li>«Viktig: Endringer i møterom-booking fra 1. april»</li>
+</ul>
+<p>Skriv en tittel for denne saken: «Vi får nytt IT-system for reiseregninger neste måned.””</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Iterative instruksjoner</h3>
+<p>Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det er helt normalt.</p>
+<p><strong>Eksempel</strong></p>
+<p>Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.»</p>
+<p>Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.»</p>
+<p>Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Rydd opp og start en ny chat</h3>
+<p>Som vi lærte i “Språkmodellen har ikke hukommelse” så lønner det seg å starte en ny chat for et nytt tema.
+Dette er fordi “alt” tidligere i chaten, både instruksjoner og svar blir sendt som kontekst den nye instruksjonen.
+Om temaet er et helt annet, eller til og med motstridende, så kan det “forvirre” språkmodellene, og svaret kan bli dårligere.</p>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="prinsipper-for-gode-instruksjoner.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
