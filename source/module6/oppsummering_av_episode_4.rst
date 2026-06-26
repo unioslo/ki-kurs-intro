@@ -1,5 +1,5 @@
-Oppsummering av episode 4
-==========================
+Oppsummering kapittel 6
+========================
 
 **I denne episoden har du lært at:**
 

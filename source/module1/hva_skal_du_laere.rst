@@ -1,8 +1,7 @@
 
-Oppsummering av kurset
+Hva skal du lære?
 =======================
 
-La oss oppsummere det viktigste du har lært:
 
 Grunnbegreper i kunstig intelligens
 -------------------------------------

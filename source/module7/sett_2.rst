@@ -41,8 +41,11 @@ Oppgaver for å utforske muligheter i egen arbeidshverdag.
       d. Dersom oppgaven innebærer risiko: Tenk gjennom og skriv ned nødvendige tiltak for å redusere og kontrollere risikoen.
 
    |
+   
    6. Etter at du har utforsket dine arbeidsoppgaver over, oppfordrer vi deg til å teste ut å bruke KI i oppgavene der du ser størst potensiale. 
 
    Til slutt:
+
+   |
 
    7. Identifiser 2-3 oppgaver der KI ikke bør brukes, og reflekter rundt hvorfor. 

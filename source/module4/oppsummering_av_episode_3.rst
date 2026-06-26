@@ -1,5 +1,5 @@
-Oppsummering av episode 3
-==========================
+Oppsummering kapittel 4
+========================
 
 Du har nå fått et nyttig sett med verktøy for å bruke KI på en tryggere og bedre måte. 
 

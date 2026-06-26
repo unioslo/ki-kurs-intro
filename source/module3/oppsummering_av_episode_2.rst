@@ -1,5 +1,5 @@
-Oppsummering av episode 2
-==========================
+Oppsummering kapittel 3
+========================
 
 **I denne episoden har du lært at:**
 

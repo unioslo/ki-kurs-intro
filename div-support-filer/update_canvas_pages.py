@@ -89,11 +89,11 @@ HTML_BRANCH = "html-pages"
 MAPPING_FILE = Path(__file__).parent / "page_id_mapping.json"
 
 # Simple path resolution: try current dir first, then parent
-HTML_DIR = Path("_build/html/episodes")
+HTML_DIR = Path("_build/html")
 if not HTML_DIR.exists():
-    HTML_DIR = Path("../_build/html/episodes")
+    HTML_DIR = Path("../_build/html")
     if not HTML_DIR.exists():
-        HTML_DIR = Path("_build/episodes")
+        HTML_DIR = Path("_build")
 
 
 def get_api_token():
@@ -170,10 +170,10 @@ def generate_mapping_from_canvas(token, html_dir=None):
             print("Please run 'make html' first to build the documentation")
         sys.exit(1)
 
-    # Get all local HTML files
-    html_files = sorted(html_dir.glob("episode*.html"))
+    # Get all HTML files from module subdirectories
+    html_files = sorted(html_dir.glob("module*/*.html"))
     if not html_files:
-        print(f"Error: No episode HTML files found in {HTML_DIR}")
+        print(f"Error: No HTML files found in {HTML_DIR}/module*/")
         sys.exit(1)
 
     print(f"Found {len(html_files)} local HTML files")
@@ -738,7 +738,16 @@ def remap_pages(token, html_dir=None, specific_page=None):
 
         html_file = html_dir / page_name
         if not html_file.exists():
-            print(f"Error: HTML file not found: {html_file}")
+            # Try looking in module subdirectories
+            import re
+            match = re.match(r'episode(\d+)_', page_name)
+            if match:
+                module_num = match.group(1)
+                html_file = html_dir / f"module{module_num}" / page_name
+
+        if not html_file.exists():
+            print(f"Error: HTML file not found: {page_name}")
+            print(f"Searched in: {html_dir} and {html_dir}/module*")
             return
 
         unmapped_files = [html_file]
@@ -749,8 +758,8 @@ def remap_pages(token, html_dir=None, specific_page=None):
         else:
             print(f"Remapping specific file: {page_name} (currently unmapped)\n")
     else:
-        # Get all local HTML files
-        html_files = sorted(html_dir.glob("episode*.html"))
+        # Get all HTML files from module subdirectories
+        html_files = sorted(html_dir.glob("module*/*.html"))
         if not html_files:
             print(f"No episode HTML files found in {html_dir}")
             return
@@ -1997,16 +2006,28 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
                     # Default to no indent for explicitly added pages
                     sub_num = 0
                 else:
-                    # Parse episode number from filename (e.g., episode1_0 -> module 1)
-                    filename_base = html_file.stem  # e.g., episode1_0
-                    match = re.match(r'episode(\d+)_(\d+)', filename_base)
-                    if not match:
-                        print(f"Warning: Could not parse episode number from {html_file.name}")
-                        episode_num = None
-                        sub_num = None
+                    # Determine episode number from FOLDER PATH (e.g., module1/episode1_0.html -> module 1)
+                    # Check if file is in a module subfolder
+                    parent_folder = html_file.parent.name
+                    match = re.match(r'module(\d+)', parent_folder)
+
+                    if match:
+                        # File is in a module folder - use folder number
+                        episode_num = int(match.group(1))
+                        # For indent, check if filename contains _0 (intro page) vs other numbers
+                        filename_match = re.match(r'episode\d+_(\d+)', html_file.stem)
+                        sub_num = int(filename_match.group(1)) if filename_match else 0
                     else:
-                        episode_num = int(match.group(1))  # 1, 2, 3, etc.
-                        sub_num = int(match.group(2))      # 0, 1, 2, etc.
+                        # Fallback to parsing from filename for backward compatibility (flat structure)
+                        filename_base = html_file.stem  # e.g., episode1_0
+                        filename_match = re.match(r'episode(\d+)_(\d+)', filename_base)
+                        if not filename_match:
+                            print(f"Warning: Could not determine module number from folder or filename: {html_file}")
+                            episode_num = None
+                            sub_num = None
+                        else:
+                            episode_num = int(filename_match.group(1))  # 1, 2, 3, etc.
+                            sub_num = int(filename_match.group(2))      # 0, 1, 2, etc.
 
                 if episode_num is not None:
                     # Get module ID for this episode, creating it if it doesn't exist
@@ -2149,11 +2170,46 @@ def main():
         action="store_true",
         help="Skip placement prompt and add new pages at the bottom of the module"
     )
+    parser.add_argument(
+        "--create-module",
+        type=int,
+        help="Create a new module with specified position number (e.g., --create-module 1)"
+    )
+    parser.add_argument(
+        "--module-name",
+        type=str,
+        help="Name for the new module (use with --create-module, e.g., --module-name 'Grunnbegreper i kunstig intelligens')"
+    )
     args = parser.parse_args()
 
     # Validate argument dependencies
     if args.page_id and not args.page:
         parser.error("--page-id requires --page to specify which HTML file to use")
+
+    if args.module_name and not args.create_module:
+        parser.error("--module-name requires --create-module to specify module position")
+
+    # Handle create-module mode
+    if args.create_module:
+        token = get_api_token()
+
+        if not args.module_name:
+            parser.error("--create-module requires --module-name to specify the module name")
+
+        print(f"\nCreating module {args.create_module}: {args.module_name}")
+        module_id = create_module(token, args.module_name, args.create_module, args.dry_run)
+
+        if module_id:
+            print(f"\nSuccess! Module created with ID: {module_id}")
+            print(f"Position: {args.create_module}")
+            print(f"Name: {args.module_name}")
+        elif args.dry_run:
+            print(f"\n[DRY RUN] Would create module at position {args.create_module}")
+        else:
+            print(f"\nFailed to create module")
+            sys.exit(1)
+
+        return
 
     # Handle generate-mapping mode
     if args.generate_mapping:
@@ -2181,13 +2237,13 @@ def main():
                 print()
 
                 # Generate mapping from GitHub HTML files
-                episodes_dir = Path(temp_dir) / "html" / "episodes"
+                html_dir = Path(temp_dir) / "html"
 
-                if not episodes_dir.exists():
-                    print(f"Error: Episodes directory not found: {episodes_dir}")
+                if not html_dir.exists():
+                    print(f"Error: HTML directory not found: {html_dir}")
                     sys.exit(1)
 
-                generate_mapping_from_canvas(token, html_dir=episodes_dir)
+                generate_mapping_from_canvas(token, html_dir=html_dir)
         else:
             # Generate from local HTML files
             generate_mapping_from_canvas(token)
@@ -2237,10 +2293,10 @@ def main():
             build_info = get_last_build_info(temp_dir)
 
             # Step 3: Determine which files to process (before asking for confirmation)
-            episodes_dir = Path(temp_dir) / "html" / "episodes"
+            html_dir_github = Path(temp_dir) / "html"
 
-            if not episodes_dir.exists():
-                print(f"Error: Episodes directory not found: {episodes_dir}")
+            if not html_dir_github.exists():
+                print(f"Error: HTML directory not found: {html_dir_github}")
                 sys.exit(1)
 
             # Determine which files to process
@@ -2248,33 +2304,43 @@ def main():
                 # Single page mode - convert page name to filename if needed
                 page_name = args.page
                 if not page_name.endswith('.html'):
-                    # Convert episode-1-0 or episode1_0 to episode1_0.html
-                    page_name = page_name.replace('-', '_') + '.html'
+                    page_name = page_name + '.html'
 
-                html_file = episodes_dir / page_name
+                html_file = html_dir_github / page_name
                 if not html_file.exists():
-                    print(f"Error: HTML file not found in GitHub: {html_file}")
-                    print(f"Available files in {episodes_dir}:")
-                    for f in sorted(episodes_dir.glob("episode*.html")):
+                    # Try looking in module subdirectories
+                    # Search all module folders for this file
+                    import re
+                    found_files = list(html_dir_github.glob(f"module*/{page_name}"))
+                    if found_files:
+                        html_file = found_files[0]
+
+                if not html_file.exists():
+                    print(f"Error: HTML file not found in GitHub: {page_name}")
+                    print(f"Searched in: {html_dir_github} and {html_dir_github}/module*")
+                    print(f"Available files:")
+                    for f in sorted(html_dir_github.glob("*.html")):
                         print(f"- {f.name}")
+                    for f in sorted(html_dir_github.glob("module*/*.html")):
+                        print(f"- {f.relative_to(html_dir_github)}")
                     sys.exit(1)
 
                 html_files = [html_file]
             elif args.module:
-                # Module mode - filter by episode number
-                html_files = sorted(episodes_dir.glob(f"episode{args.module}_*.html"))
+                # Module mode - filter by module number
+                html_files = sorted(html_dir_github.glob(f"module{args.module}/*.html"))
 
                 if not html_files:
-                    print(f"No episode HTML files found for module {args.module} in {episodes_dir}")
+                    print(f"No HTML files found for module {args.module} in {html_dir_github}/module{args.module}/")
                     sys.exit(1)
 
                 print(f"Module {args.module} mode: Found {len(html_files)} HTML files to process\n")
             else:
-                # Get all episode HTML files
-                html_files = sorted(episodes_dir.glob("episode*.html"))
+                # Get all HTML files from module subdirectories
+                html_files = sorted(html_dir_github.glob("module*/*.html"))
 
                 if not html_files:
-                    print(f"No episode HTML files found in {episodes_dir}")
+                    print(f"No HTML files found in {html_dir_github}/module*/")
                     sys.exit(1)
 
             # Step 4: Ask for confirmation (showing which files will be deployed)
@@ -2299,7 +2365,7 @@ def main():
 
             # Use common processing function
             success_count, fail_count, new_pages_created, mapping_updated = process_html_files(
-                token, html_files, episodes_dir, page_mapping, args
+                token, html_files, html_dir_github, page_mapping, args
             )
 
             # Update mapping file with newly created pages
@@ -2401,46 +2467,57 @@ def main():
         # Page ID with specific HTML file
         page_name = args.page
         if not page_name.endswith('.html'):
-            # Convert episode-1-0 to episode1_0.html
-            page_name = page_name.replace('-', '_') + '.html'
+            page_name = page_name + '.html'
 
         html_file = html_dir / page_name
         if not html_file.exists():
-            print(f"Error: HTML file not found: {html_file}")
+            # Try looking in module subdirectories - search all modules
+            found_files = list(html_dir.glob(f"module*/{page_name}"))
+            if found_files:
+                html_file = found_files[0]
+
+        if not html_file.exists():
+            print(f"Error: HTML file not found: {page_name}")
+            print(f"Searched in: {html_dir} and {html_dir}/module*")
             sys.exit(1)
 
         html_files = [html_file]
         print(f"Single page mode (using page ID {args.page_id}): {html_file.name}\n")
     elif args.page:
         # Single page mode by filename
-        # Convert page URL to filename if needed
         page_name = args.page
         if not page_name.endswith('.html'):
-            # Convert episode-1-0 to episode1_0.html
-            page_name = page_name.replace('-', '_') + '.html'
+            page_name = page_name + '.html'
 
         html_file = html_dir / page_name
         if not html_file.exists():
-            print(f"Error: HTML file not found: {html_file}")
+            # Try looking in module subdirectories - search all modules
+            found_files = list(html_dir.glob(f"module*/{page_name}"))
+            if found_files:
+                html_file = found_files[0]
+
+        if not html_file.exists():
+            print(f"Error: HTML file not found: {page_name}")
+            print(f"Searched in: {html_dir} and {html_dir}/module*")
             sys.exit(1)
 
         html_files = [html_file]
         print(f"Single page mode: {html_file.name}\n")
     elif args.module:
-        # Module mode - filter by episode number
-        html_files = sorted(html_dir.glob(f"episode{args.module}_*.html"))
+        # Module mode - filter by module number
+        html_files = sorted(html_dir.glob(f"module{args.module}/*.html"))
 
         if not html_files:
-            print(f"No episode HTML files found for module {args.module} in {HTML_DIR}")
+            print(f"No HTML files found for module {args.module} in {HTML_DIR}/module{args.module}/")
             sys.exit(1)
 
         print(f"Module {args.module} mode: Found {len(html_files)} HTML files to process\n")
     else:
-        # All pages mode
-        html_files = sorted(html_dir.glob("episode*.html"))
+        # All pages mode - get all HTML files from module subdirectories
+        html_files = sorted(html_dir.glob("module*/*.html"))
 
         if not html_files:
-            print(f"No episode HTML files found in {HTML_DIR}")
+            print(f"No HTML files found in {HTML_DIR}/module*/")
             sys.exit(1)
 
         print(f"Found {len(html_files)} HTML files to process\n")

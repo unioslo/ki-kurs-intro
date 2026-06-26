@@ -1,4 +1,4 @@
-Oppsummering 
+Oppsummering kapittel 2
 ==========================
 
 **I kapittel 1 har du lært at:**

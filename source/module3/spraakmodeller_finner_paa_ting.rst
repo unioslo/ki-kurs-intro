@@ -45,7 +45,7 @@ Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt
 
 .. uio-info:: Eksempel
 
-   Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen. [Svarstad]_
+   Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen.  [:ref:`Svarstad <Svarstad>`]
    Der ble feilinformasjon generert av Microsoft Copilot brukt som saksgrunnlag.
    Politihøgskolen skulle bestemme hvor mye tid undervisere skulle få til forberedelse.
    De forsøkte å bruke Copilot for å hente informasjon om forberedelsestid på andre universiteter og høyskoler.

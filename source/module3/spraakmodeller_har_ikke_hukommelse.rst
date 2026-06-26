@@ -18,7 +18,7 @@ Hvis du så stiller spørsmål om hvordan man formaterer figurer i Word, vil mod
 Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.
 
 Men selv om du ikke skifter tema, kan modellen gi dårligere svar når samtalen blir lengre.
-Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon. [Laban]_
+Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [:ref:`Laban <Laban>`]
 En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.
 
 Språkmodellene er dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
