@@ -30,7 +30,7 @@ Velkommen til grunnkurs i generativ KI!
    module3/spraakmodeller_har_ikke_faktakunnskap
    module3/spraakmodeller_finner_paa_ting
    module3/spraakmodeller_har_ikke_hukommelse
-   module3/oppsummering_av_episode_2
+   module3/oppsummering
 
 .. toctree::
    :maxdepth: 1
@@ -44,7 +44,7 @@ Velkommen til grunnkurs i generativ KI!
    module4/nyttige_instruksjons_teknikker
    module4/praktisk_oevelse_forbedre_instruksjoner
    module4/tips_om_pre_instruksjon_og_ki_assistenter
-   module4/oppsummering_av_episode_3
+   module4/oppsummering
 
 .. toctree::
    :maxdepth: 1
@@ -68,7 +68,7 @@ Velkommen til grunnkurs i generativ KI!
    module6/autotekst_og_nettskjema_diktafon
    module6/gemini_og_notebooklm
    module6/microsoft_copilot_chat
-   module6/oppsummering_av_episode_4
+   module6/oppsummering
 
 .. toctree::
    :maxdepth: 1

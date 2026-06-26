@@ -1,7 +1,7 @@
 Oppsummering kapittel 6
 ========================
 
-**I denne kapitteln har du lært at:**
+**I dette kapittelet har du lært at:**
 
 * **UiOs godkjente KI-tjenester** må brukes når du jobber med UiO-data
 * **Databehandleravtaler** sikrer at data behandles i henhold til GDPR-krav
