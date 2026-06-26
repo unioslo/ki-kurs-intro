@@ -1,8 +1,8 @@
 {
   "episode1_0.html": {
     "page_id": 395816,
-    "url": "introduksjon",
-    "title": "Introduksjon",
+    "url": "introduksjon-til-ki-spraket",
+    "title": "Introduksjon til “KI-språket”",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
@@ -29,8 +29,8 @@
   },
   "episode1_6.html": {
     "page_id": 402125,
-    "url": "ki-assistenter",
-    "title": "KI-assistenter",
+    "url": "ki-assistent",
+    "title": "KI-assistent",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
@@ -43,22 +43,22 @@
   },
   "episode1_8.html": {
     "page_id": 402786,
-    "url": "oppsummering-av-episode-1",
-    "title": "Oppsummering av episode 1",
+    "url": "oppsummering-4",
+    "title": "Oppsummering",
     "module_id": 233819,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
   "episode2_0.html": {
     "page_id": 395875,
-    "url": "hvordan-fungerer-sprakmodeller",
-    "title": "Hvordan fungerer språkmodeller?",
+    "url": "store-sprakmodeller",
+    "title": "Store språkmodeller",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
   "episode2_1.html": {
     "page_id": 395877,
-    "url": "trening-og-kontekst",
-    "title": "Trening og kontekst",
+    "url": "hvordan-fungerer-store-sprakmodeller",
+    "title": "Hvordan fungerer store språkmodeller?",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
@@ -71,8 +71,8 @@
   },
   "episode2_3.html": {
     "page_id": 398969,
-    "url": "sprakmodeller-har-ikke-kunnskap-2",
-    "title": "Språkmodeller har ikke kunnskap",
+    "url": "sprakmodeller-har-ikke-faktakunnskap",
+    "title": "Språkmodeller har ikke faktakunnskap",
     "module_id": 233820,
     "module_name": "Hvordan fungerer språkmodeller"
   },
@@ -197,15 +197,15 @@
   },
   "episode4_3.html": {
     "page_id": 398612,
-    "url": "gpt-uio-ki-assistenter",
-    "title": "GPT UiO KI-assistenter",
+    "url": "gpt-uio-hvilken-modell-skal-du-velge",
+    "title": "GPT UiO: hvilken modell skal du velge?",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
   "episode4_4.html": {
     "page_id": 398615,
-    "url": "gpt-uio-personlige-api-nokler",
-    "title": "GPT UiO personlige API-nøkler",
+    "url": "gpt-uio-ki-assistenter-2",
+    "title": "GPT UiO: KI-assistenter",
     "module_id": 233821,
     "module_name": "KI-tjenester ved UiO"
   },
@@ -297,6 +297,34 @@
     "page_id": 416727,
     "url": "kilder",
     "title": "Kilder",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode7_0.html": {
+    "page_id": 416761,
+    "url": "ki-personvern-etikk-og-baerekraft",
+    "title": "KI, personvern, etikk og bærekraft",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode7_1.html": {
+    "page_id": 416762,
+    "url": "baerekraft-4",
+    "title": "Bærekraft",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode7_2.html": {
+    "page_id": 416763,
+    "url": "personvern-og-vern-av-annen-beskyttelsesverdig-informasjon",
+    "title": "Personvern og vern av annen beskyttelsesverdig informasjon",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "episode7_3.html": {
+    "page_id": 416764,
+    "url": "opphavsrett",
+    "title": "Opphavsrett",
     "module_id": "N/A",
     "module_name": "N/A"
   }
