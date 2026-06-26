@@ -2,7 +2,6 @@
 Hva skal du lære?
 =======================
 
-
 Grunnbegreper i kunstig intelligens
 -------------------------------------
 

@@ -1,6 +1,5 @@
-
 GPT UiO: KI-assistenter
-------------------------
+========================
 
 GPT UiO har en egen *assistent*-funksjon.
 Hvis du bruker en instruksjon ofte, kan du lagre den som en assistent.

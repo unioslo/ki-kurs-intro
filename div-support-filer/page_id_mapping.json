@@ -1,331 +1,296 @@
 {
-  "hva_skal_du_laere.html": {
+  "module1/hva-skal-du-laere.html": {
     "page_id": 416943,
     "url": "hva-skal-du-laere-3",
     "title": "Hva skal du lære?",
     "module_id": 243068,
     "module_name": "Dette skal du lære"
   },
-  "generativ_ki.html": {
+  "module2/generativ-ki.html": {
     "page_id": 416944,
     "url": "generativ-ki-3",
     "title": "Generativ KI",
     "module_id": 243060,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
-  "introduksjon_til_ki_spraaket.html": {
+  "module2/introduksjon-til-ki-spraket.html": {
     "page_id": 416945,
     "url": "introduksjon-til-ki-spraket-3",
     "title": "Introduksjon til “KI-språket”",
     "module_id": 243060,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
-  "ki_agenter.html": {
+  "module2/ki-agenter.html": {
     "page_id": 416946,
     "url": "ki-agenter-4",
     "title": "KI-agenter",
     "module_id": 243060,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
-  "ki_assistent.html": {
+  "module2/ki-assistent.html": {
     "page_id": 416947,
     "url": "ki-assistent-3",
     "title": "KI-assistent",
     "module_id": 243060,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
-  "kunstig_intelligens.html": {
+  "module2/kunstig-intelligens.html": {
     "page_id": 416948,
     "url": "kunstig-intelligens-3",
     "title": "Kunstig intelligens",
     "module_id": 243060,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
-  "oppsummering.html": {
-    "page_id": 416949,
-    "url": "oppsummering-6",
-    "title": "Oppsummering",
+  "module2/oppsummering-kapittel-2.html": {
+    "page_id": 416996,
+    "url": "oppsummering-kapittel-2",
+    "title": "Oppsummering kapittel 2",
     "module_id": 243060,
     "module_name": "Grunnbegreper i kunstig intelligens"
   },
-  "spraakmodellen_motoren_i_ki_tjenesten.html": {
-    "page_id": 416950,
-    "url": "sprakmodellen-motoren-i-ki-tjenesten-3",
-    "title": "Språkmodellen - motoren i KI-tjenesten",
-    "module_id": 243060,
-    "module_name": "Grunnbegreper i kunstig intelligens"
-  },
-  "hvordan_fungerer_store_spraakmodeller.html": {
+  "module3/hvordan-fungerer-store-sprakmodeller.html": {
     "page_id": 416951,
     "url": "hvordan-fungerer-store-sprakmodeller-4",
     "title": "Hvordan fungerer store språkmodeller?",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
   },
-  "oppsummering_av_episode_2.html": {
-    "page_id": 416952,
-    "url": "oppsummering-av-episode-2-4",
-    "title": "Oppsummering av episode 2",
+  "module3/oppsummering-kapittel-3.html": {
+    "page_id": 416997,
+    "url": "oppsummering-kapittel-3",
+    "title": "Oppsummering kapittel 3",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
   },
-  "spraakmodeller_finner_paa_ting.html": {
+  "module3/sprakmodeller-finner-pa-ting.html": {
     "page_id": 416953,
     "url": "sprakmodeller-finner-pa-ting-8",
     "title": "Språkmodeller finner på ting",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
   },
-  "spraakmodeller_har_ikke_faktakunnskap.html": {
+  "module3/sprakmodeller-har-ikke-faktakunnskap.html": {
     "page_id": 416954,
     "url": "sprakmodeller-har-ikke-faktakunnskap-3",
     "title": "Språkmodeller har ikke faktakunnskap",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
   },
-  "spraakmodeller_har_ikke_hukommelse.html": {
+  "module3/sprakmodeller-har-ikke-hukommelse.html": {
     "page_id": 416955,
     "url": "sprakmodeller-har-ikke-hukommelse-6",
     "title": "Språkmodeller har ikke hukommelse",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
   },
-  "store_spraakmodeller.html": {
+  "module3/store-sprakmodeller.html": {
     "page_id": 416956,
     "url": "store-sprakmodeller-3",
     "title": "Store språkmodeller",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
   },
-  "hvordan_bruke_ki_paa_en_god_maate.html": {
+  "module4/hvordan-bruke-ki-pa-en-god-mate.html": {
     "page_id": 416957,
     "url": "hvordan-bruke-ki-pa-en-god-mate-3",
     "title": "Hvordan bruke KI på en god måte?",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "instruksjoner_hvordan_faa_ki_tjenesten_til_aa_gjoere_som_du_vil.html": {
+  "module4/instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil.html": {
     "page_id": 416958,
     "url": "instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil-4",
     "title": "Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "naar_kan_du_stole_paa_generativ_ki.html": {
+  "module4/nar-kan-du-stole-pa-generativ-ki.html": {
     "page_id": 416959,
     "url": "nar-kan-du-stole-pa-generativ-ki-6",
     "title": "Når kan du stole på generativ KI?",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "nyttige_instruksjons_teknikker.html": {
+  "module4/nyttige-instruksjons-teknikker.html": {
     "page_id": 416960,
     "url": "nyttige-instruksjons-teknikker-3",
     "title": "Nyttige instruksjons-teknikker",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "oppsummering_av_episode_3.html": {
-    "page_id": 416961,
-    "url": "oppsummering-av-episode-3-3",
-    "title": "Oppsummering av episode 3",
+  "module4/oppsummering-kapittel-4.html": {
+    "page_id": 416998,
+    "url": "oppsummering-kapittel-4",
+    "title": "Oppsummering kapittel 4",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "praktisk_oevelse_forbedre_instruksjoner.html": {
+  "module4/praktisk-ovelse-forbedre-instruksjoner.html": {
     "page_id": 416962,
     "url": "praktisk-ovelse-forbedre-instruksjoner-3",
     "title": "Praktisk øvelse: Forbedre instruksjoner",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "prinsipper_for_gode_instruksjoner.html": {
+  "module4/prinsipper-for-gode-instruksjoner.html": {
     "page_id": 416963,
     "url": "prinsipper-for-gode-instruksjoner-3",
     "title": "Prinsipper for gode instruksjoner",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "strategier_for_aa_kvalitetssikre_ki_generert_innhold.html": {
+  "module4/strategier-for-a-kvalitetssikre-ki-generert-innhold.html": {
     "page_id": 416964,
     "url": "strategier-for-a-kvalitetssikre-ki-generert-innhold-3",
     "title": "Strategier for å kvalitetssikre KI-generert innhold",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "tips_om_pre_instruksjon_og_ki_assistenter.html": {
+  "module4/tips-om-pre-instruksjon-og-ki-assistenter.html": {
     "page_id": 416965,
     "url": "tips-om-pre-instruksjon-og-ki-assistenter-3",
     "title": "Tips om pre-instruksjon og KI-assistenter",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "baerekraft.html": {
+  "module5/baerekraft.html": {
     "page_id": 416966,
     "url": "baerekraft-6",
     "title": "Bærekraft",
     "module_id": 243064,
     "module_name": "Etikk, bærekraft, opphavsrett og personvern"
   },
-  "etikk_baerekraft_opphavsrett_og_personvern.html": {
+  "module5/etikk-baerekraft-opphavsrett-og-personvern.html": {
     "page_id": 416967,
     "url": "etikk-baerekraft-opphavsrett-og-personvern-3",
     "title": "Etikk, bærekraft, opphavsrett og personvern",
     "module_id": 243064,
     "module_name": "Etikk, bærekraft, opphavsrett og personvern"
   },
-  "opphavsrett.html": {
+  "module5/opphavsrett.html": {
     "page_id": 416968,
     "url": "opphavsrett-3",
     "title": "Opphavsrett",
     "module_id": 243064,
     "module_name": "Etikk, bærekraft, opphavsrett og personvern"
   },
-  "personvern_og_vern_av_annen_beskyttelsesverdig_informasjon.html": {
+  "module5/personvern-og-vern-av-annen-beskyttelsesverdig-informasjon.html": {
     "page_id": 416969,
     "url": "personvern-og-vern-av-annen-beskyttelsesverdig-informasjon-3",
     "title": "Personvern og vern av annen beskyttelsesverdig informasjon",
     "module_id": 243064,
     "module_name": "Etikk, bærekraft, opphavsrett og personvern"
   },
-  "autotekst_og_nettskjema_diktafon.html": {
+  "module6/autotekst-og-nettskjema-diktafon.html": {
     "page_id": 416970,
     "url": "autotekst-og-nettskjema-diktafon-6",
     "title": "Autotekst og Nettskjema-diktafon",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "gemini_og_notebooklm.html": {
+  "module6/gemini-og-notebooklm.html": {
     "page_id": 416971,
     "url": "gemini-og-notebooklm-5",
     "title": "Gemini og NotebookLM",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "gpt_uio.html": {
-    "page_id": 416972,
-    "url": "gpt-uio-5",
-    "title": "GPT UiO",
-    "module_id": 243063,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "gpt_uio_hvilken_modell_skal_du_velge.html": {
+  "module6/gpt-uio-hvilken-modell-skal-du-velge.html": {
     "page_id": 416973,
     "url": "gpt-uio-hvilken-modell-skal-du-velge-3",
     "title": "GPT UiO: hvilken modell skal du velge?",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "gpt_uio_ki_assistenter.html": {
+  "module6/gpt-uio-ki-assistenter.html": {
     "page_id": 416974,
     "url": "gpt-uio-ki-assistenter-5",
     "title": "GPT UiO: KI-assistenter",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "ki_tjenester_ved_uio.html": {
+  "module6/gpt-uio.html": {
+    "page_id": 416972,
+    "url": "gpt-uio-5",
+    "title": "GPT UiO",
+    "module_id": 243063,
+    "module_name": "KI-tjenester ved UiO"
+  },
+  "module6/ki-tjenester-ved-uio.html": {
     "page_id": 416975,
     "url": "ki-tjenester-ved-uio-5",
     "title": "KI-tjenester ved UiO",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "microsoft_copilot_chat.html": {
+  "module6/microsoft-copilot-chat.html": {
     "page_id": 416976,
     "url": "microsoft-copilot-chat-3",
     "title": "Microsoft Copilot Chat",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "oppsummering_av_episode_4.html": {
-    "page_id": 416977,
-    "url": "oppsummering-av-episode-4-3",
-    "title": "Oppsummering av episode 4",
+  "module6/oppsummering-kapittel-6.html": {
+    "page_id": 416999,
+    "url": "oppsummering-kapittel-6",
+    "title": "Oppsummering kapittel 6",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "oppsummert_om_gpt_uio.html": {
+  "module6/oppsummert-om-gpt-uio.html": {
     "page_id": 416978,
     "url": "oppsummert-om-gpt-uio-3",
     "title": "Oppsummert om GPT UiO",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "uios_godkjente_ki_tjenester.html": {
+  "module6/uios-godkjente-ki-tjenester.html": {
     "page_id": 416979,
     "url": "uios-godkjente-ki-tjenester-4",
     "title": "UiOs godkjente KI-tjenester",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
-  "sett_1.html": {
+  "module7/sett-1.html": {
     "page_id": 416980,
     "url": "sett-1-3",
     "title": "Sett 1",
     "module_id": 243065,
     "module_name": "Praktiser!"
   },
-  "sett_2.html": {
+  "module7/sett-2.html": {
     "page_id": 416981,
     "url": "sett-2-3",
     "title": "Sett 2",
     "module_id": 243065,
     "module_name": "Praktiser!"
   },
-  "treningsoppgaver.html": {
+  "module7/treningsoppgaver.html": {
     "page_id": 416982,
     "url": "treningsoppgaver-3",
     "title": "Treningsoppgaver",
     "module_id": 243065,
     "module_name": "Praktiser!"
   },
-  "avslutning.html": {
+  "module8/avslutning.html": {
     "page_id": 416983,
     "url": "avslutning-6",
     "title": "Avslutning",
     "module_id": 243066,
     "module_name": "Oppsummering og veien videre"
   },
-  "kilder.html": {
+  "module8/kilder.html": {
     "page_id": 416984,
     "url": "kilder-3",
     "title": "Kilder",
     "module_id": 243066,
     "module_name": "Oppsummering og veien videre"
   },
-  "retningslinjer_og_policies.html": {
+  "module8/retningslinjer-og-policies.html": {
     "page_id": 416985,
     "url": "retningslinjer-og-policies-12",
     "title": "Retningslinjer og policies",
     "module_id": 243066,
     "module_name": "Oppsummering og veien videre"
-  },
-  "module2/oppsummering.html": {
-    "page_id": 416996,
-    "url": "oppsummering-kapittel-2",
-    "title": "Oppsummering kapittel 2",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "module3/oppsummering.html": {
-    "page_id": 416997,
-    "url": "oppsummering-kapittel-3",
-    "title": "Oppsummering kapittel 3",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "module4/oppsummering.html": {
-    "page_id": 416998,
-    "url": "oppsummering-kapittel-4",
-    "title": "Oppsummering kapittel 4",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "module6/oppsummering.html": {
-    "page_id": 416999,
-    "url": "oppsummering-kapittel-6",
-    "title": "Oppsummering kapittel 6",
-    "module_id": "N/A",
-    "module_name": "N/A"
   }
 }
