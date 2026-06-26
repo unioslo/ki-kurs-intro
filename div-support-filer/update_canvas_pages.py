@@ -2,68 +2,132 @@
 """
 Update Canvas course pages from built HTML files.
 
-Usage:
+RECENT CHANGES (June 2026):
+    - Now supports module-based folder structure (module1/, module2/, etc.)
+    - Mapping file uses relative paths (e.g., "module2/oppsummering.html") to handle
+      duplicate filenames across different modules
+    - Added --create-module command for creating modules with custom names
+    - --page argument now accepts paths: "module2/oppsummering.html"
+    - Detects and warns about duplicate filenames when using just filename
+    - Module assignment based on folder name (moduleN/ → Module N)
+
+SETUP:
     export CANVAS_API_TOKEN="your_token_here"
 
-    # FIRST TIME SETUP: Generate mapping file from local HTML files
+    Get your Canvas API token:
+    1. Go to https://uio.instructure.com/profile/settings
+    2. Scroll to "Approved Integrations"
+    3. Click "+ New Access Token"
+    4. Generate and copy the token
+
+MODULE MANAGEMENT:
+    # Create a new module with custom name
+    python update_canvas_pages.py --create-module 1 --module-name "Grunnbegreper i kunstig intelligens"
+    python update_canvas_pages.py --create-module 2 --module-name "Hvordan fungerer språkmodeller"
+
+    # List all existing modules
+    python update_canvas_pages.py --list-pages
+
+BASIC USAGE:
+    # FIRST TIME: Generate mapping file from local HTML files
+    # This scans _build/html/module*/ for HTML files and maps them to Canvas pages
     python update_canvas_pages.py --generate-mapping
 
-    # OR: Generate mapping from GitHub html-pages branch (no local build needed)
-    python update_canvas_pages.py --generate-mapping --from-github
+    # Update all pages (content only, no module changes)
+    python update_canvas_pages.py
 
-    # Deploy from GitHub (pull html-pages branch and upload to Canvas)
-    python update_canvas_pages.py --from-github
+    # Update all pages AND add them to their modules
+    # Files in moduleN/ are added to Module N
+    python update_canvas_pages.py --add-to-modules
 
-    # List all pages with IDs, titles, and modules
+SINGLE PAGE UPDATES:
+    # Update by filename (if unique across all modules)
+    python update_canvas_pages.py --page oppsummering.html
+
+    # Update by relative path (required if filename exists in multiple modules)
+    python update_canvas_pages.py --page module2/oppsummering.html
+
+    # Update by Canvas page ID (most stable, survives title changes)
+    python update_canvas_pages.py --page-id 12345 --page module2/oppsummering.html
+
+MODULE OPERATIONS:
+    # Update all pages in a specific module
+    python update_canvas_pages.py --module 2 --add-to-modules
+
+    # Add a page to a specific module (prompts for placement)
+    python update_canvas_pages.py --page module5/new_page.html --add-to-module 5
+
+    # Create new page and add to bottom of module (no prompts)
+    python update_canvas_pages.py --page module5/new_page.html --create-new --add-to-module 5 --no-placement-prompt
+
+UTILITIES:
+    # List all pages with IDs, titles, URLs, and module assignments
     python update_canvas_pages.py --list-pages
 
     # Interactively remap unmapped files to existing Canvas pages
     python update_canvas_pages.py --remap
 
-    # Remap a specific file (even if already mapped)
-    python update_canvas_pages.py --remap --page episode1_0
+    # Remap a specific file
+    python update_canvas_pages.py --remap --page module2/oppsummering.html
 
-    # Update all pages (content only)
-    python update_canvas_pages.py
-
-    # Update all pages and add them to modules
-    python update_canvas_pages.py --add-to-modules
-
-    # Update a single page by filename
-    python update_canvas_pages.py --page episode1_0
-
-    # Update a single page by Canvas page ID (stable when title changes)
-    python update_canvas_pages.py --page-id 12345 --page episode1_0
-
-    # Update all pages in a specific module and add to modules
-    python update_canvas_pages.py --module 1 --add-to-modules
-
-    # Upload a new page (script will prompt for creation and placement)
-    python update_canvas_pages.py --page episode5_2 --add-to-module 5
-
-    # Create and add to bottom without prompting
-    python update_canvas_pages.py --page episode5_2 --create-new --add-to-module 5 --no-placement-prompt
-
-    # Dry run (no actual updates)
+    # Dry run (preview changes without making them)
     python update_canvas_pages.py --dry-run
     python update_canvas_pages.py --module 2 --add-to-modules --dry-run
 
-Automatic Module Creation:
-    When using --add-to-modules or --add-to-module, the script will automatically
-    create new modules if they don't exist. Episode files are mapped to modules by
-    episode number: episode1_X goes to Module 1, episode2_X to Module 2, etc.
-    New modules are created with the name "Episode N" where N is the module number.
+GITHUB DEPLOYMENT:
+    # Generate mapping from GitHub html-pages branch (no local build needed)
+    python update_canvas_pages.py --generate-mapping --from-github
 
-Mapping File:
-    The script uses page_id_mapping.json to map filenames to Canvas page IDs.
-    This allows you to use descriptive titles (which change the URL) while still
-    reliably updating the correct pages. Run --generate-mapping to create/update it.
+    # Deploy from GitHub html-pages branch
+    python update_canvas_pages.py --from-github
 
-To get your Canvas API token:
-1. Go to https://uio.instructure.com/profile/settings
-2. Scroll to "Approved Integrations"
-3. Click "+ New Access Token"
-4. Generate and copy the token
+MAPPING FILE:
+    The script uses page_id_mapping.json to map relative file paths to Canvas page IDs.
+    Example structure:
+    {
+      "module1/generativ_ki.html": {
+        "page_id": 395872,
+        "url": "generativ-ki",
+        "title": "Generativ KI",
+        "module_id": 233819,
+        "module_name": "Grunnbegreper i kunstig intelligens"
+      },
+      "module2/oppsummering.html": {
+        "page_id": 409300,
+        "url": "oppsummering-kapittel-2",
+        ...
+      }
+    }
+
+    This allows:
+    - Using descriptive titles that change the Canvas URL
+    - Handling duplicate filenames across modules
+    - Reliably updating the correct pages
+
+FOLDER STRUCTURE:
+    The script expects HTML files in module subdirectories:
+    _build/html/
+        module1/
+            generativ_ki.html
+            kunstig_intelligens.html
+        module2/
+            store_spraakmodeller.html
+            oppsummering.html
+        module3/
+            oppsummering.html  (different from module2/oppsummering.html)
+
+    Module assignment: Files in moduleN/ are automatically assigned to Module N
+    when using --add-to-modules.
+
+TROUBLESHOOTING:
+    - If mapping is stale after restructuring, delete it and regenerate:
+      rm page_id_mapping.json && python update_canvas_pages.py --generate-mapping
+
+    - If duplicate filename error occurs:
+      Use full path: --page moduleN/filename.html
+
+    - If modules don't exist:
+      Create them first with --create-module before using --add-to-modules
 """
 
 import os
