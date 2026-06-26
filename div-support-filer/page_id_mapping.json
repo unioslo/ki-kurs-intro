@@ -299,5 +299,33 @@
     "title": "Retningslinjer og policies",
     "module_id": 243066,
     "module_name": "Oppsummering og veien videre"
+  },
+  "module2/oppsummering.html": {
+    "page_id": 416996,
+    "url": "oppsummering-kapittel-2",
+    "title": "Oppsummering kapittel 2",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "module3/oppsummering.html": {
+    "page_id": 416997,
+    "url": "oppsummering-kapittel-3",
+    "title": "Oppsummering kapittel 3",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "module4/oppsummering.html": {
+    "page_id": 416998,
+    "url": "oppsummering-kapittel-4",
+    "title": "Oppsummering kapittel 4",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "module6/oppsummering.html": {
+    "page_id": 416999,
+    "url": "oppsummering-kapittel-6",
+    "title": "Oppsummering kapittel 6",
+    "module_id": "N/A",
+    "module_name": "N/A"
   }
 }

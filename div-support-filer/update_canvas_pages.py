@@ -138,20 +138,41 @@ def save_page_mapping(mapping):
         print(f"Error: Could not save mapping file: {e}")
 
 
+def get_relative_path_key(html_file, base_dir):
+    """Generate a relative path key for mapping.
+
+    For files in subdirectories (e.g., module1/oppsummering.html), returns the relative path.
+    This allows duplicate filenames in different folders.
+
+    Args:
+        html_file: Path object for the HTML file
+        base_dir: Base directory (e.g., _build/html)
+
+    Returns:
+        Relative path string (e.g., 'module1/oppsummering.html' or 'oppsummering.html')
+    """
+    try:
+        relative = html_file.relative_to(base_dir)
+        return str(relative)
+    except ValueError:
+        # Fallback to just filename if can't compute relative path
+        return html_file.name
+
+
 def generate_mapping_from_canvas(token, html_dir=None):
     """Generate filename -> page_id mapping by matching HTML files to Canvas pages.
 
     This function:
-    1. Reads HTML files (episode1_0.html, episode1_1.html, etc.) from html_dir
+    1. Reads HTML files from html_dir (supports subdirectories like module1/, module2/)
     2. Extracts h1 title from each file
     3. Generates expected Canvas URL from title
     4. Matches against Canvas pages in modules by URL
-    5. Creates mapping: episode1_1.html -> {page_id, url, title, module_id, module_name}
+    5. Creates mapping: module1/oppsummering.html -> {page_id, url, title, module_id, module_name}
     6. Saves to JSON file
 
     Args:
         token: Canvas API token
-        html_dir: Directory containing HTML files (default: local _build/html/episodes)
+        html_dir: Directory containing HTML files (default: local _build/html)
     """
     # Use provided html_dir or default to HTML_DIR
     if html_dir is None:
@@ -177,7 +198,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
         sys.exit(1)
 
     print(f"Found {len(html_files)} local HTML files")
-    print(f"First few: {[f.name for f in html_files[:3]]}\n")
+    print(f"First few: {[get_relative_path_key(f, html_dir) for f in html_files[:3]]}\n")
 
     # Get all pages
     all_pages = list_all_pages(token)
@@ -219,11 +240,14 @@ def generate_mapping_from_canvas(token, html_dir=None):
 
     print("Matching local HTML files to Canvas pages...")
     for html_file in html_files:
+        # Use relative path as key (e.g., "module1/oppsummering.html")
+        file_key = get_relative_path_key(html_file, html_dir)
+
         # Extract h1 title from HTML file
         h1_title = extract_title(html_file)
 
         if not h1_title:
-            print(f"{html_file.name}: No h1 title found")
+            print(f"{file_key}: No h1 title found")
             unmatched_count += 1
             continue
 
@@ -246,7 +270,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
                     matching_urls.append((canvas_url, suffix_num))
 
         if not matching_urls:
-            print(f"{html_file.name}: No Canvas match in modules for '{h1_title}' (expected URL: {expected_url})")
+            print(f"{file_key}: No Canvas match in modules for '{h1_title}' (expected URL: {expected_url})")
             # Debug: show if similar URLs exist
             similar = [url for url in pages_in_modules.keys() if expected_url in url]
             if similar:
@@ -261,7 +285,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
         # Get the Canvas page and module info
         canvas_page = pages_by_url.get(canvas_url)
         if not canvas_page:
-            print(f"{html_file.name}: Canvas page data not found for URL '{canvas_url}'")
+            print(f"{file_key}: Canvas page data not found for URL '{canvas_url}'")
             unmatched_count += 1
             continue
 
@@ -271,7 +295,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
         page_id = canvas_page.get('page_id')
         canvas_title = canvas_page.get('title', '')
 
-        mapping[html_file.name] = {
+        mapping[file_key] = {
             'page_id': page_id,
             'url': canvas_url,
             'title': canvas_title,
@@ -279,7 +303,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
             'module_name': module_info['module_name']
         }
 
-        print(f"{html_file.name} -> page_id: {page_id} | Module: {module_info['module_name']} | Title: {canvas_title}")
+        print(f"{file_key} -> page_id: {page_id} | Module: {module_info['module_name']} | Title: {canvas_title}")
         matched_count += 1
 
     print(f"\n{'='*70}")
@@ -1900,7 +1924,9 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
     module_positions = {}
 
     for html_file in html_files:
-        print(f"Processing: {html_file.name}")
+        # Use relative path as key (e.g., "module1/oppsummering.html")
+        file_key = get_relative_path_key(html_file, html_dir)
+        print(f"Processing: {file_key}")
 
         # Extract content (includes image processing and upload)
         content = extract_content(html_file, token=token, page_mapping=page_mapping, dry_run=args.dry_run)
@@ -1910,8 +1936,8 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
         if title:
             print(f"Title: {title}")
 
-        # Try to find page info from mapping file
-        page_info = page_mapping.get(html_file.name)
+        # Try to find page info from mapping file using relative path
+        page_info = page_mapping.get(file_key)
 
         # Determine if we should create a new page
         should_create_new = False
@@ -1925,7 +1951,7 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
             print(f"Module: {page_info.get('module_name', 'N/A')} (ID: {page_info.get('module_id', 'N/A')})")
         else:
             # No mapping found - this is a new page
-            print(f"No mapping found for {html_file.name}")
+            print(f"No mapping found for {file_key}")
 
             # Ask user if they want to create a new page (unless --create-new flag skips prompt)
             if args.dry_run:
@@ -1975,7 +2001,7 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
             if page_created and new_page_id:
                 # Track new page for mapping update
                 new_pages_created.append({
-                    'filename': html_file.name,
+                    'filename': file_key,
                     'page_id': new_page_id,
                     'url': actual_page_url,
                     'title': title
@@ -1988,9 +2014,9 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
             if page_updated and actual_page_url and not args.dry_run:
                 if page_info:
                     # Update existing mapping with actual URL from Canvas
-                    page_mapping[html_file.name]['url'] = actual_page_url
+                    page_mapping[file_key]['url'] = actual_page_url
                     if title:
-                        page_mapping[html_file.name]['title'] = title
+                        page_mapping[file_key]['title'] = title
                     print(f"Updated mapping: URL={actual_page_url}")
                     mapping_updated = True
 
@@ -2108,7 +2134,7 @@ def main():
     parser.add_argument(
         "--page",
         type=str,
-        help="Update only a single page by filename (e.g., episode-1-0 or episode1_0.html)"
+        help="Update only a single page by filename or path (e.g., 'oppsummering.html' or 'module2/oppsummering.html')"
     )
     parser.add_argument(
         "--page-id",
@@ -2484,25 +2510,37 @@ def main():
         html_files = [html_file]
         print(f"Single page mode (using page ID {args.page_id}): {html_file.name}\n")
     elif args.page:
-        # Single page mode by filename
+        # Single page mode by filename or path (e.g., "oppsummering.html" or "module2/oppsummering.html")
         page_name = args.page
         if not page_name.endswith('.html'):
             page_name = page_name + '.html'
 
+        # Try as direct path first (e.g., "module2/oppsummering.html")
         html_file = html_dir / page_name
+
         if not html_file.exists():
             # Try looking in module subdirectories - search all modules
             found_files = list(html_dir.glob(f"module*/{page_name}"))
-            if found_files:
+
+            if len(found_files) > 1:
+                # Multiple files with same name found - ask user to specify
+                print(f"Error: Multiple files found with name '{page_name}':")
+                for f in found_files:
+                    file_key = get_relative_path_key(f, html_dir)
+                    print(f"  - {file_key}")
+                print(f"\nPlease specify the full path, e.g.: --page module2/{page_name}")
+                sys.exit(1)
+            elif len(found_files) == 1:
                 html_file = found_files[0]
 
         if not html_file.exists():
             print(f"Error: HTML file not found: {page_name}")
-            print(f"Searched in: {html_dir} and {html_dir}/module*")
+            print(f"Searched in: {html_dir} and {html_dir}/module*/")
             sys.exit(1)
 
         html_files = [html_file]
-        print(f"Single page mode: {html_file.name}\n")
+        file_key = get_relative_path_key(html_file, html_dir)
+        print(f"Single page mode: {file_key}\n")
     elif args.module:
         # Module mode - filter by module number
         html_files = sorted(html_dir.glob(f"module{args.module}/*.html"))
