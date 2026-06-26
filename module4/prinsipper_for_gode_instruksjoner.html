@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prinsipper for gode instruksjoner &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=8f2f3088" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=d6a0b8db" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=643b6c9b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dc637b1a" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nyttige instruksjons-teknikker" href="nyttige_instruksjons_teknikker.html" />
+    <link rel="prev" title="Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?" href="instruksjoner_hvordan_faa_ki_tjenesten_til_aa_gjoere_som_du_vil.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prinsipper-for-gode-instruksjoner">
+<h1>Prinsipper for gode instruksjoner</h1>
+<p>Her ser du noen enkle eksempler på instruksjoner som kan bli bedre.
+Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
+Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.
+Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.</p>
+<section id="vaer-spesifikk">
+<h2>1. Vær spesifikk</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>“Skriv en e-post.”</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>«Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold i uke 15. Tonen skal være vennlig, men profesjonell.»</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Den gode instruksjonen spesifiserer både hva e-posten skal handle om, hvem målgruppen er, og hvilken tone den skal ha.</p>
+</div>
+</div>
+</section>
+<section id="gi-kontekst">
+<h2>2. Gi kontekst</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>“Lag en tekst om fravær.”</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>“Jeg jobber administrativt ved et universitet og skal oppdatere infosiden for førsteårs bachelorstudenter.
+Lag en kort, informativ tekst som forklarer rutiner for fravær fra obligatorisk undervisning i emner ved Det humanistiske fakultet.
+Fraværsreglene er nye og gjelder fra neste semester.”</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber språkmodellen produsere.</p>
+</div>
+</div>
+</section>
+<section id="spesifiser-format">
+<h2>3. Spesifiser format</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>“Lag et møtereferat av disse notatene: [dine notater]”</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>“Basert på mine notater fra møtet, lag et møtereferat. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver. Mine notater: [dine notater]. “</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om.</p>
+</div>
+</div>
+</section>
+<section id="definer-en-rolle">
+<h2>4. Definer en rolle</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>«Hvordan kan jeg forbedre min skriving?»</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Du er en erfaren kommunikasjonsarbeider. Jeg jobber administrativt ved et universitet og skriver ofte formelle brev og e-poster. Gi meg 5 konkrete tips til å forbedre min administrative skriving.»</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Språkmodeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.</p>
+</div>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave</h3>
+<p>Åpne <a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> og prøv selv å forbedre instruksjonene i eksemplene over.</p>
+<p><strong>1. Forbedre dårlige instruksjoner</strong></p>
+<p>Kopier hver av de mangelfulle instruksjonene under inn i GPT UiO, og se på svaret du får:</p>
+<ol class="loweralpha simple">
+<li>«Skriv en e-post.»</li>
+<li>«Lag en tekst om fravær.»</li>
+<li>«Lag et møtereferat av disse notatene: [dine notater]»</li>
+<li>«Hvordan kan jeg forbedre min skriving?»</li>
+</ol>
+<p><strong>2. Skriv forbedrede versjoner</strong></p>
+<p>Skriv deretter om hver instruksjon slik at du bruker alle prinsippene på denne siden:</p>
+<ul class="simple">
+<li>Vær spesifikk</li>
+<li>Gi kontekst</li>
+<li>Spesifiser format</li>
+<li>Definer en rolle for språkmodellen</li>
+</ul>
+<p>Test de nye instruksjonene i GPT UiO og sammenlign svarene med de du fikk i punkt 1.</p>
+<p><strong>3. Refleksjon</strong></p>
+<p>Tenk over følgende:</p>
+<ol class="loweralpha simple">
+<li>Hva ble bedre i svarene etter at dere forbedret instruksjonene?</li>
+<li>Hvilke av prinsippene (spesifikk, kontekst, format, rolle) hadde størst utslag på kvaliteten?</li>
+<li>Hvordan kan du bruke disse prinsippene i dine egne, faktiske arbeidsoppgaver (for eksempel e-poster, saksfremlegg, nettsidetekster)?</li>
+</ol>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="instruksjoner_hvordan_faa_ki_tjenesten_til_aa_gjoere_som_du_vil.html">← Forrige</a></div><div class="next-link"><a href="nyttige_instruksjons_teknikker.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
