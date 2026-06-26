@@ -9,7 +9,8 @@ I det andre settet kan du utforske hvordan bruke KI i egne arbeidsoppgaver.
 
 Dette er oppgaver som du kan jobbe med i dagene og ukene fremover.
 
+.. only:: not simplepdf
 
-.. uio-do:: Tips!
+   .. uio-do:: Tips!
 
-   Du kan laste ned en pdf med opppgavene slik at du ikke trenger å være logget inn i Canvas kurset for å jobbe med dem: :download:`Last ned PDF <../downloads/KI-grunnkurs-treningsoppgaver.pdf>`
+      Du kan laste ned en pdf med opppgavene slik at du ikke trenger å være logget inn i Canvas kurset for å jobbe med dem: :download:`Last ned PDF <../downloads/KI-grunnkurs-treningsoppgaver.pdf>`

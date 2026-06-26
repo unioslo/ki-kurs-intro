@@ -95,11 +95,11 @@ simplepdf_style_files = [
     '_static/simplepdf.css',
 ]
 
-# Check if we should load Episode 5 overrides
+# Check if we should load Exercises overrides
 import os
-if os.environ.get('EPISODE5_PDF'):
-    # Override settings for Episode 5 PDF
-    master_doc = 'episode5_only'
+if os.environ.get('EXERCISES_PDF'):
+    # Override settings for Exercises PDF
+    master_doc = 'exercises_only'
     simplepdf_file_name = 'KI-grunnkurs-treningsoppgaver.pdf'
 
     # Split title into main title and subtitle
