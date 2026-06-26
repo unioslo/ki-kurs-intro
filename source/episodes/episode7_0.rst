@@ -1,2 +1,2 @@
-KI, personvern, etikk og bærekraft
-===================================
+Etikk, bærekraft, opphavsrett og personvern
+============================================
