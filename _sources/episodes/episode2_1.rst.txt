@@ -1,5 +1,5 @@
 Hvordan fungerer store språkmodeller?
-=====================
+=======================================
 
 En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
@@ -14,15 +14,16 @@ En språkmodell er en matematisk modell som:
 - stopper når den "mener" svaret er fullstendig.
 
 Trening 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
 
 Store språkmodeller trenes på tekster fra internett, men det er mange tekster de ikke har tilgang til.
 For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
 De har også begrenset tilgang til trykte kilder.
-Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskjellige bruksområder.
+Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskjellige bruksområder. 
+Ett eksempel på dette er at modellene kan være svake på helt spesifikk fagkunnskap i et gitt forskningsdomene.
 
 Hva er konteksten?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 Når vi snakker om store språkmodeller, bruker vi ofte *kontekst* om alt det vi gir modellen som input.
 Input kan være et spørsmål eller instruksjon, men også dokumenter, bilder eller andre ting vi laster opptil modellen.
