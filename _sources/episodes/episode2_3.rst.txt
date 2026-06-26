@@ -8,7 +8,8 @@ Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på 
 Hvis en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
 Alle disse stedene har vært hovedstaden i Norge.
 Hvis du spør modellen hva som er hovedstaden i Norge, svarer den sannsynligvis «Oslo».
-Men det er en viss fare for at modellen svarer feil, særlig på spørsmål om tall, som for eksempel datoer og årstall.
+Men det er en viss fare for at modellen svarer feil.
+Det er særlig risiko for feil svar på spørsmål om tall, som for eksempel datoer og årstall.
 
 
 .. uio-info:: Manipulering (LLM poisoning)
