@@ -1494,12 +1494,78 @@ def fix_canvas_file_links(html_content, course_id=COURSE_ID):
     return html_content
 
 
-def extract_content(html_path, token=None, dry_run=False):
+def process_internal_links(html_content, page_mapping, course_id=COURSE_ID):
+    """Convert internal Sphinx cross-references to Canvas page URLs.
+
+    Sphinx generates internal cross-references as links to other HTML files.
+    For example: <a href="episode6_3.html#hicks">
+    We need to convert these to Canvas page URLs using the mapping.
+
+    Args:
+        html_content: HTML content string
+        page_mapping: Dictionary mapping filenames to Canvas page info
+        course_id: Canvas course ID
+
+    Returns:
+        HTML content with Canvas page URLs for internal links
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+
+    # Find all internal reference links
+    # Sphinx generates these as <a class="reference internal" href="...">
+    internal_links = soup.find_all('a', class_=lambda x: x and 'reference' in x and 'internal' in x)
+
+    if not internal_links:
+        return html_content
+
+    print(f"Found {len(internal_links)} internal link(s) to process")
+
+    for link in internal_links:
+        href = link.get('href')
+        if not href:
+            continue
+
+        # Skip if already a Canvas URL
+        if 'instructure.com' in href or href.startswith(f'/courses/{course_id}/'):
+            continue
+
+        # Check if this is a link to another episode file (e.g., episode6_3.html#hicks)
+        # Extract the filename and optional anchor
+        if '.html' in href:
+            parts = href.split('#')
+            filename_part = parts[0]
+            anchor = parts[1] if len(parts) > 1 else None
+
+            # Handle relative paths (e.g., ../episode6_3.html or episode6_3.html)
+            filename = filename_part.split('/')[-1]  # Get just the filename
+
+            # Look up Canvas page URL from mapping
+            page_info = page_mapping.get(filename)
+            if page_info:
+                canvas_url = page_info.get('url')
+                if canvas_url:
+                    # Build Canvas page URL
+                    new_href = f"/courses/{course_id}/pages/{canvas_url}"
+                    if anchor:
+                        new_href += f"#{anchor}"
+
+                    print(f"- Converting: {href} -> {new_href}")
+                    link['href'] = new_href
+                else:
+                    print(f"- Warning: No Canvas URL found for {filename}")
+            else:
+                print(f"- Warning: No mapping found for {filename}")
+
+    return str(soup)
+
+
+def extract_content(html_path, token=None, page_mapping=None, dry_run=False):
     """Extract the main content from an HTML file, removing h1 tags and navigation.
 
     Args:
         html_path: Path to the HTML file
         token: Canvas API token (optional, needed for image uploads)
+        page_mapping: Dictionary mapping filenames to Canvas page info (for internal links)
         dry_run: If True, don't actually upload images
 
     Returns:
@@ -1536,6 +1602,10 @@ def extract_content(html_path, token=None, dry_run=False):
 
     # Fix Canvas file links
     content_html = fix_canvas_file_links(content_html)
+
+    # Process internal cross-reference links if page_mapping is provided
+    if page_mapping:
+        content_html = process_internal_links(content_html, page_mapping)
 
     return content_html
 
@@ -1824,7 +1894,7 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
         print(f"Processing: {html_file.name}")
 
         # Extract content (includes image processing and upload)
-        content = extract_content(html_file, token=token, dry_run=args.dry_run)
+        content = extract_content(html_file, token=token, page_mapping=page_mapping, dry_run=args.dry_run)
 
         # Extract title from h1 tag (descriptive title)
         title = extract_title(html_file)
