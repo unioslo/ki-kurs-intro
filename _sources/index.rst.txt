@@ -70,7 +70,18 @@ Velkommen til grunnkurs i generativ KI!
    :maxdepth: 1
    :caption: Episode 6: Oppsummering
 
+   episodes/episode7_0
+   episodes/episode7_1
+   episodes/episode7_2
+   episodes/episode7_3
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Episode 7: Oppsummering
+
    episodes/episode6_0
    episodes/episode6_1
    episodes/episode6_2
    episodes/episode6_3
+
+
