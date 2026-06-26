@@ -1,7 +1,7 @@
 Språkmodeller har ikke faktakunnskap
 ==============================================
 
-Språkmodeller har ikke noe forhold til sannhet [Hicks]_.
+Språkmodeller har ikke noe forhold til sannhet [:ref:`Hicks <Hicks>`].
 Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
 Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på hvilke ord som er mest sannsynlige.
 
@@ -18,12 +18,12 @@ Det er særlig risiko for feil svar på spørsmål om tall, som for eksempel dat
    Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
    Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
-   Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [Germain]_
+   Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [:ref:`Germain <Germain>`]
 
    Et annet eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
    Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
    Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
-   Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [Stokel-Walker]_
+   Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [:ref:`Stokel-Walker <Stokel-Walker>`]
 
 .. uio-reflect:: Refleksjon
 
