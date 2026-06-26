@@ -60,6 +60,3 @@ Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt
       Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
       Hvis det ikke er mulig å finne kilden, er opplysningen ofte feil.
 
-.. uio-source::
-
-   .. [Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462.

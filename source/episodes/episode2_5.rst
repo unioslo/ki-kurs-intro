@@ -34,6 +34,3 @@ Revider instruksjonen til du får et svar uten feil.
    For å spare ressurser, bør du holde samtalene korte.
    Start en ny samtale når samtalen begynner å bli lang.
 
-.. uio-source::
-
-   .. [Laban] Philippe Laban, Hiroaki Hayashi, Yingbo Zhou, og Jennifer Neville, «LLMs Get Lost In Multi-Turn Conversation», arXiv:2505.06120, arXiv, 9. mai 2025, `https://doi.org/10.48550/arXiv.2505.06120 <https://doi.org/10.48550/arXiv.2505.06120>`__ på s. 1.
