@@ -28,7 +28,7 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
       * **Oppsummere tekst du selv har skrevet** - Eksempel: Du har produsert materialet selv, og kan lett vurdere om oppsummeringen er god. 
       * **Lage utkast** - Eksempel: Du bruker KI til å komme i gang med et arbeid, men kvalitetssikrer utkastet før du jobber videre.
 
-      **Hvorfor?**
+      **Hvorfor er det lav risiko?**
 
       Sjansene for feil er mindre, og konsekvenser ved feil er små. 
 
@@ -45,7 +45,7 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
       * **Tekniske forklaringer** - Eksempel: Du ber KI forklare hvordan noe fungerer, og forklaringen kan være feil selv om den høres overbevisende ut. 
       * **Oppsummering av tekst du ikke kjenner godt** - Eksempel: Du ber KI oppsummere en tekst du ikke har lest, og kan ikke se om noe er misforstått eller utelatt fra originalteksten
 
-      **Hvorfor?**
+      **Hvorfor er det medium risiko?**
 
       Feil her kan føre til feil beslutninger, feil i tekniske systemer, ineffektivitet, eller svekket tillit utad.
 
@@ -64,7 +64,7 @@ Nedenfor er eksempler på bruk med lav, medium og høy risiko.
       * **Referanser** - Eksempel: Du bruker kildene KI oppgir uten å sjekke at de faktisk eksisterer.
       * **Vurdering av enkeltpersoner** - Eksempel: Du lar KI-en gjøre en vurdering som påvirker enkeltpersoner direkte, for eksempel i en ansettelsesprosess.
       
-      **Hvorfor?**
+      **Hvorfor er det høy risiko?**
 
       Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser. 
 

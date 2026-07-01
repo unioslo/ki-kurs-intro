@@ -41,8 +41,9 @@ Velkommen til grunnkurs i generativ KI!
    module4/strategier-for-a-kvalitetssikre-ki-generert-innhold
    module4/instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil
    module4/prinsipper-for-gode-instruksjoner
+   module4/praktisk-ovelse-forbedre-instruksjoner1
    module4/nyttige-instruksjons-teknikker
-   module4/praktisk-ovelse-forbedre-instruksjoner
+   module4/praktisk-ovelse-forbedre-egne-instruksjoner
    module4/tips-om-pre-instruksjon-og-ki-assistenter
    module4/oppsummering-kapittel-4
 
