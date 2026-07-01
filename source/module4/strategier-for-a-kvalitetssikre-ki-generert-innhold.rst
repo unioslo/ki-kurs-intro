@@ -2,7 +2,6 @@
 Strategier for å kvalitetssikre KI-generert innhold
 ====================================================
 
-Hvordan skal du så gå frem for å kvalitetssikre det KI-genererte innholdet du får?
 Her er tre strategier du kan bruke hver gang du tar i bruk kunstig intelligens.
 
 .. uio-colorbox-3:: Behandle KI-svar som om de kommer fra en ukjent kilde 

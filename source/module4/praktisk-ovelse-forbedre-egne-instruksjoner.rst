@@ -1,5 +1,5 @@
-Praktisk øvelse: Forbedre instruksjoner
-========================================
+Praktisk øvelse: Forbedre egne instruksjoner
+==============================================
 
 
 .. uio-task::
