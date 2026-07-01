@@ -1,4 +1,4 @@
-Treningsoppgaver
+Prøv selv
 ================
 
 .. toctree::
