@@ -94,3 +94,31 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
         **Hva gjør denne bedre?** 
         
         Språkmodeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.
+
+5. Gi eksempler
+--------------------
+
+.. uio-do-dont::
+
+    .. uio-dont:: Mangelfull
+
+        Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.
+
+
+    .. uio-do:: Bedre
+
+        Jeg skal skrive titler til interne nyhetssaker for ansatte ved Universitetet i Oslo.
+
+        Her er eksempler på stilen jeg ønsker:
+
+        - «Nytt tilbud: Gratis språkkurs for ansatte»
+        - «Viktig: Endringer i møterom-booking fra 1. april»
+        - «Husk: Frist for registrering av arbeidstid nærmer seg»
+
+        Skriv en kort tittel i samme stil for denne saken: Vi får nytt IT-system for reiseregninger neste måned.
+
+        Krav til tittelen:
+
+        - Maks 90 tegn
+        - Skal være informativ og nøktern
+        - Målgruppe: alle ansatte
