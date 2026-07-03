@@ -24,12 +24,12 @@ eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informas
 Jobber du på en UiO-eid pc, skal du bare bruke UiO-godkjente tjenester.
 
 
-.. uio-source:: Offisiell informasjon om KI-tjenester ved UiO:
+.. uio-source:: Lenke til KI tjenester ved UiO:
 
    Du finner oppdatert informasjon om godkjente KI tjenester på `UiO sine web-sider <https://www.uio.no/tjenester/it/ki/>`_.
 
 
-.. uio-dont::
+.. uio-dont:: Viktig
 
    Aldri del UiO-data med KI-tjenester som ikke er godkjent ved UiO.
 

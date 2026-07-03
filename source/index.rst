@@ -16,7 +16,6 @@ Velkommen til grunnkurs i generativ KI!
    module2/introduksjon-til-ki-spraket
    module2/kunstig-intelligens
    module2/generativ-ki
-   module2/sprakmodellen-motoren-i-ki-tjenesten
    module2/ki-assistent
    module2/ki-agenter
    module2/oppsummering-kapittel-2
@@ -30,6 +29,7 @@ Velkommen til grunnkurs i generativ KI!
    module3/sprakmodeller-har-ikke-faktakunnskap
    module3/sprakmodeller-finner-pa-ting
    module3/sprakmodeller-har-ikke-hukommelse
+   module3/skjevheter
    module3/oppsummering-kapittel-3
 
 .. toctree::
@@ -53,6 +53,8 @@ Velkommen til grunnkurs i generativ KI!
 
    module5/etikk-baerekraft-opphavsrett-og-personvern
    module5/baerekraft
+   module5/miljo
+   module5/sosiale-kostnader
    module5/personvern-og-vern-av-annen-beskyttelsesverdig-informasjon
    module5/opphavsrett
 
