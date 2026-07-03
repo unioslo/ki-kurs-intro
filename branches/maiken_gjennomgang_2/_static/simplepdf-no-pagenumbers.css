@@ -1,0 +1,189 @@
+/* SimplePDF CSS for Episode 5 - No page numbers, no TOC, white cover */
+
+/* Import the main simplepdf styles */
+@import url('simplepdf.css');
+
+/* Override front and back cover to white background with black text */
+h1.title-cover {
+    color: #000000 !important;  /* Black text */
+}
+
+#cover,
+article#cover,
+#back-cover,
+article#back-cover {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    background-image: none !important;
+}
+
+/* Remove any blue overlays or backgrounds on covers */
+#cover::before,
+#cover::after,
+#back-cover::before,
+#back-cover::after,
+article#cover::before,
+article#cover::after,
+article#back-cover::before,
+article#back-cover::after {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+/* Ensure back cover container and footer are white */
+#back-cover .container,
+article#back-cover .container,
+#back-cover .back-cover-footer,
+article#back-cover .back-cover-footer {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+}
+
+/* All text on back cover should be black */
+#back-cover,
+#back-cover *,
+article#back-cover,
+article#back-cover * {
+    color: #000000 !important;
+}
+
+/* Remove back cover completely */
+#back-cover,
+article#back-cover {
+    display: none !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+#cover .title-cover,
+#cover h1,
+#cover h2,
+#cover .title,
+#cover .subtitle-cover,
+#cover .cover-middle,
+#cover .meta,
+#cover p,
+#back-cover h1,
+#back-cover h2,
+#back-cover p {
+    color: #000000 !important;  /* Black text on white background */
+}
+
+/* Hide page numbers - comprehensive approach */
+@page {
+    @bottom-center {
+        content: none !important;
+        display: none !important;
+    }
+    @bottom-right {
+        content: none !important;
+        display: none !important;
+    }
+    @bottom-left {
+        content: none !important;
+        display: none !important;
+    }
+    @top-right {
+        content: none !important;
+        display: none !important;
+    }
+    @top-left {
+        content: none !important;
+        display: none !important;
+    }
+    @top-center {
+        content: none !important;
+        display: none !important;
+    }
+}
+
+.pagenumber,
+.page-number,
+span.pagenumber {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* The :hidden: directive in the RST file already hides TOC navigation */
+/* Don't hide .toctree-wrapper as it contains the actual content! */
+
+/* Hide sidebar TOC */
+.sphinxsidebar,
+div.sphinxsidebar {
+    display: none !important;
+}
+
+/* Replace subtitle content to remove "Version " prefix */
+.subtitle-cover,
+p.subtitle-cover {
+    display: block !important;
+    color: #000000 !important;
+    font-size: 20px !important;
+    margin-top: 10px !important;
+    /* Hide the original text */
+    font-size: 0 !important;
+    line-height: 0 !important;
+}
+
+/* Add the subtitle text without "Version " prefix */
+.subtitle-cover::after,
+p.subtitle-cover::after {
+    content: 'KI grunnkurs' !important;
+    font-size: 20px !important;
+    line-height: normal !important;
+    color: #000000 !important;
+    display: block !important;
+}
+
+/* Hide the main "Episode 5 - Oppgaver" section title (page 2) */
+#episode-5-oppgaver > h1 {
+    display: none !important;
+}
+
+/* Prevent page break before and after main section */
+#episode-5-oppgaver {
+    page-break-before: avoid !important;
+    page-break-after: avoid !important;
+    page-break-inside: auto !important;
+}
+
+/* Ensure content flows immediately after cover - no empty page */
+section#episode-5-oppgaver {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Force first content section to start immediately */
+#treningsoppgaver {
+    page-break-before: avoid !important;
+    margin-top: 0 !important;
+}
+
+/* Remove page break after cover - keep full height to maintain white background */
+article#cover,
+#cover {
+    page-break-after: avoid !important;
+}
+
+/* Prevent any element from forcing a page break */
+.dont-break {
+    page-break-after: avoid !important;
+}
+
+/* Force document wrapper to not break */
+.document,
+.documentwrapper {
+    page-break-before: avoid !important;
+}
+
+/* Reduce base font size from 11pt to 10pt */
+html {
+    font-size: 10pt !important;
+}
+
+body {
+    font-size: 10pt !important;
+}
