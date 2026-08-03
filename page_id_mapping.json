@@ -306,5 +306,26 @@
     "title": "Praktisk øvelse: Forbedre egne instruksjoner",
     "module_id": "N/A",
     "module_name": "N/A"
+  },
+  "module5/miljo.html": {
+    "page_id": 421681,
+    "url": "klima-og-miljokostnader",
+    "title": "Klima- og miljøkostnader",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "module5/sosiale-kostnader.html": {
+    "page_id": 421682,
+    "url": "sosiale-kostnader",
+    "title": "Sosiale kostnader",
+    "module_id": 243064,
+    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+  },
+  "module3/skjevheter.html": {
+    "page_id": 421712,
+    "url": "modellenes-skjevheter",
+    "title": "Modellenes skjevheter",
+    "module_id": 243061,
+    "module_name": "Hvordan fungerer språkmodeller"
   }
 }
