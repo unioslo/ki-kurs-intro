@@ -37,29 +37,30 @@ Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igje
 
       .. uio-detail:: Maskinlæring
 
-		Mennesker lærer ved erfaring. Maskinlæring er det samme prinsippet, bare for dataprogrammer. I stedet for å lære av erfaring,
-		lærer programmet av data.
-		Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
-		maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv. 
+            Mennesker lærer ved erfaring. Maskinlæring er det samme prinsippet, bare for dataprogrammer. I stedet for å lære av erfaring,
+            lærer programmet av data.
+            Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
+            maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv. 
 
-		Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer. 
+            Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer. 
 
- 		Tradisjonell programmering foregår slik: 
+            .. uio-colorbox-1:: Tradisjonell programmering foregår slik 		
 
-		- Et menneske lager klare regler: «Hvis X skjer, gjør Y».
-		- Programmet får input, og bruker reglene på den.
-		- Programmet gir deg resultatet.
-		
-		Eksempel på tradisjonell programering: 
-		Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
+                  - Et menneske lager klare regler: «Hvis X skjer, gjør Y».
+                  - Programmet får input, og bruker reglene på den.
+                  - Programmet gir deg resultatet.
+                  
+                  Eksempel på tradisjonell programmering: 
+                  Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
 
-		I maskinlæring er algoritmen ukjent, og det vi ønsker å lære.
-		Maskinlæring løser et problem slik:
+            .. uio-colorbox-1:: Maskinlæring løser et problem slik:
 
-		- Vi har mange eksempler på input
- 		- Hvert eksempel har også et ønsket resultat (output) 
-		- I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
+                  I maskinlæring er algoritmen ukjent, og det vi ønsker å lære.
+                  
+                  - Vi har mange eksempler på input
+                  - Hvert eksempel har også et ønsket resultat (output) 
+                  - I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
 
-		Eksempel:
-		Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som «hund» eller «katt».
-		Systemet lærer da en regel (en algoritme) som kan gjette riktig merkelapp for bilder det aldri har sett før.
+                  Eksempel:
+                  Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som «hund» eller «katt».
+                  Systemet lærer da en regel (en algoritme) som kan gjette riktig merkelapp for bilder det aldri har sett før.
