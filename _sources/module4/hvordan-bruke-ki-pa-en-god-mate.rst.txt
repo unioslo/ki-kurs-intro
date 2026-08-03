@@ -3,10 +3,16 @@ Hvordan bruke KI på en god måte?
 
 I denne episoden lærer du hva som er god bruk av KI, hvordan du vurderer og kvalitetssikrer svar du får fra generativ KI, og hvordan du kan bruke godt utformede instruksjoner for å få bedre resultater.
 
-Etter denne episoden kan du:
+.. figure:: ../images/3.1-walking-with-map.png
+    :align: center
+    :width: 100%
+    :alt: Illustrasjon av at personen viser vei til roboten
 
-* Forklare hvorfor KI-modeller ikke er pålitelige
-* Vurdere når generativ KI er pålitelig - og når den ikke er det
-* Bruke strategier for å kvalitetssikre KI-generert innhold
-* Skrive gode og effektive instruksjoner (promts)
-* Bruke ferdigskrevne instruksjoner for gjentakende oppgaver
+    Illustrasjon: Tina Morønning Ruud
+
+
+.. uio-colorbox-1:: Etter dette kapitellet kan du:
+
+    * Bruke strategier for å kvalitetssikre KI-generert innhold
+    * Skrive gode og effektive instruksjoner (promts)
+    * Bruke ferdigskrevne instruksjoner for gjentakende oppgaver

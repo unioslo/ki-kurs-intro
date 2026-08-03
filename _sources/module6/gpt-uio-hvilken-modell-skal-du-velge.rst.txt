@@ -4,8 +4,11 @@ GPT UiO: hvilken modell skal du velge?
 De lokale språkmodellen er gode, men de er mye *mindre* enn de som kjører i skyen.
 Det betyr at om oppgaven du skal løse er veldig kompleks, så kan det være at du får bedre kvalitet om du velger en sky-modell.
 
-Vi foreslår at du prøver ut forskjellige modeller, og om du kan nøye deg med en mindre og lokal modell, så velg denne.
-Den bruker totalt sett mindre ressurser, slik som strøm, enn de store modellene i skyen.
+GPT UiO har flere lokale språkmodeller. Alle de lokale modellene er mindre enn språkmodellene vi bruker i skyen. 
+Samtidig varierer størrelsen også mellom de lokale modellene.
+Vi foreslår at du prøver ut forskjellige modeller, og om du kan nøye deg med en av de mindre og lokale modellene, så velg en av de.
+De bruker totalt sett mindre ressurser, slik som strøm, enn de store modellene i skyen. 
+I tillegg bidrar du da til at de større modellene er ledige for de mer komplekse og krevende oppgavene.
 
 Noen relevante spørsmål som kan hjelpe deg med å velge modell:
 
@@ -13,6 +16,7 @@ Noen relevante spørsmål som kan hjelpe deg med å velge modell:
 * Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell.
 * Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opptil røde data.
 * Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder.
+
 
 
 .. uio-colorbox-3:: Fordypning for de nysgjerrige
