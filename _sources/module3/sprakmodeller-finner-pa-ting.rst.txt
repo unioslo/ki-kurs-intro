@@ -11,7 +11,7 @@ Her er noen eksempler:
 * *Oppdiktede referanser*: Modellen lager titler på artikler eller bøker som ikke finnes.
 * *Forveksling*: Modellen blander sammen ulike personer.
 
-Det er et stort problem at LLM-er ofte finner på ting med stor *selvsikkerhet*.
+Det er et stort problem at språkmodeller ofte finner på ting med stor *selvsikkerhet*.
 De sier ikke: "Jeg er usikker, men …".
 I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
 Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
@@ -39,7 +39,7 @@ Hva med internett-søk?
 
 Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
 Men det garanterer ikke at svaret er riktig.
-Det er fordi LLM-en fortsatt må *tolke* og *oppsummere* informasjonen den finner.
+Det er fordi språkmodellen fortsatt må *tolke* og *oppsummere* informasjonen den finner.
 Det gjør den på samme måte som alltid, ved å generere tekst basert på mønstre.
 Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt informasjon fra nettet.
 
