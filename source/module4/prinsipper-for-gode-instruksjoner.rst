@@ -13,7 +13,7 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 
     .. uio-dont:: Mangelfull
 
-        Skriv en e-post.
+        Skriv en e-post om at møterommet Gaia er stengt for vedlikehold i uke 15. 
 
     .. uio-do:: Bedre
 
