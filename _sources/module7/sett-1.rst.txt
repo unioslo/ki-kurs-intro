@@ -12,9 +12,9 @@ Sett 1
    Spør et KI-verktøy om å generere 10 ideer til hvordan KI kan brukes i din arbeidshverdag. 
    Spesifiser tydelig hva slags oppgaver du gjør og hvilke verktøy du har tilgjengelig. 
 
-.. uio-task:: Oppgave 3 - NotebookLM 
+.. uio-task:: Oppgave 3 - Gemini Notebook 
 
-   Last opp et dokument i NotebookLM. Velg et dokument som er relevant for jobben din, eller et dokument du er interessert i. 
+   Last opp et dokument i Gemini Notebook. Velg et dokument som er relevant for jobben din, eller et dokument du er interessert i. 
    Lag et tankekart og en studieveiledning, og still spørsmål om dokumentets innhold.
 
 .. uio-task:: Oppgave 4 - Opprettelse av maler

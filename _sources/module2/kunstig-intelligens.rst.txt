@@ -44,7 +44,7 @@ Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igje
 
             Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer. 
 
-            .. uio-colorbox-1:: Tradisjonell programmering foregår slik 		
+            .. uio-colorbox-1:: Tradisjonell programmering foregår slik:	
 
                   - Et menneske lager klare regler: «Hvis X skjer, gjør Y».
                   - Programmet får input, og bruker reglene på den.
