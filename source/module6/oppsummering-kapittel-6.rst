@@ -5,8 +5,7 @@ Oppsummering kapittel 6
 
 * **UiOs godkjente KI-tjenester** må brukes når du jobber med UiO-data
 * **Databehandleravtaler** sikrer at data behandles i henhold til GDPR-krav
-* **Ulike tjenester** passer til ulike formål - GPT-UiO, Autotekst, Gemini, NotebookLM, Microsoft Copilot
-* **API-tilgang** gir mulighet for å integrere KI i egne systemer og arbeidsflyter
+* **Ulike tjenester** passer til ulike formål - GPT-UiO, Autotekst, Gemini, Gemini Notebook, Microsoft Copilot
 
 Neste kapittel
 --------------
