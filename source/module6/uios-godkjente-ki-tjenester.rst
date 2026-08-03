@@ -29,7 +29,7 @@ Jobber du på en UiO-eid pc, skal du bare bruke UiO-godkjente tjenester.
    Du finner oppdatert informasjon om godkjente KI tjenester på `UiO sine web-sider <https://www.uio.no/tjenester/it/ki/>`_.
 
 
-.. uio-dont:: Viktig
+.. uio-do:: Viktig
 
    Aldri del UiO-data med KI-tjenester som ikke er godkjent ved UiO.
 
