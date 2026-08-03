@@ -34,7 +34,7 @@ Assistenten får på den måten et eget oppslagsverk som den benytter til å gen
     **Eksempler på KI-assistenter**
 
     - I GPT UiO kan du lage dine egne KI-assistenter.
-    - NotebookLM er en avansert form for KI-assistent. 
+    - Gemini Notebook er en avansert form for KI-assistent. 
 
 
 .. uio-reflect:: Refleksjonsoppgave
