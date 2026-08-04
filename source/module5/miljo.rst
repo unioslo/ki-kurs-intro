@@ -16,8 +16,7 @@ Selv om KI er ressurskrevende er det noen grep du kan gjøre for å redusere bel
 
 .. uio-do:: Tips 1 - bevissthet
 
-   Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til KI for alt. 
-   Med andre ord: vær en ansvarlig bruker av teknologien.
+   Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til KI for alt.
 
 .. uio-do:: Tips 2 - valg av språkmodell
 
