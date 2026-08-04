@@ -16,12 +16,12 @@ Selv om KI er ressurskrevende er det noen grep du kan gjøre for å redusere bel
 
 .. uio-do:: Tips 1 - bevissthet
 
-   Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til KI for alt-og-enhver. 
+   Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til KI for alt. 
    Med andre ord: vær en ansvarlig bruker av teknologien.
 
 .. uio-do:: Tips 2 - valg av språkmodell
 
-   I flere tjenester, blant annet GPT UiO kan velge blant flere forskjellige språkmodeller, der noen er store og noen er små. 
+   I flere tjenester, blant annet GPT UiO, kan du velge blant flere forskjellige språkmodeller, der noen er store og noen er små. 
    De små er mindre ressurskrevende både å lage og å bruke. 
    De kan fungere godt til enkle oppgaver som å språkvaske en e-post eller få forslag til omskrivinger av setninger. 
 
