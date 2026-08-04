@@ -3,8 +3,8 @@ Hvordan fungerer store språkmodeller?
 
 En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
 De foreslår neste ord basert på teksten du har skrevet så langt.
-Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene. F
-orslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *konteksten*.
+Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
+Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *konteksten*.
 
 Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte.
 En språkmodell er en matematisk modell som:
