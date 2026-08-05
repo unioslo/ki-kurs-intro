@@ -1,8 +1,7 @@
 GPT UiO: KI-assistenter
 ========================
 
-GPT UiO har en egen *assistent*-funksjon.
-Hvis du bruker en instruksjon ofte, kan du lagre den som en assistent.
+GPT UiO har en egen *assistent*-funksjon: hvis du bruker en instruksjon ofte, kan det være lurt å lagre den som en assistent.
 Da kan du raskt starte en samtale basert på instruksjonen, uten å måtte skrive den på nytt.
 Det kan være nyttig til oppgaver du gjør ofte, for eksempel oversetting eller å få kritiske tilbakemeldinger på tekst.
 

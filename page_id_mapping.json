@@ -327,5 +327,12 @@
     "title": "Modellenes skjevheter",
     "module_id": 243061,
     "module_name": "Hvordan fungerer språkmodeller"
+  },
+  "module6/uio-ki-tjenester-video.html": {
+    "page_id": 422459,
+    "url": "en-oversikt-over-uio-sine-viktigste-ki-tjenester",
+    "title": "En oversikt over UiO sine viktigste KI tjenester",
+    "module_id": 243063,
+    "module_name": "KI-tjenester ved UiO"
   }
 }

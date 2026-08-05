@@ -5,7 +5,7 @@ Autotekst og Nettskjema-diktafon
 Autotekst
 ----------
 
-Autotekst er en UiO-utviklet tjeneste som transkriberer tale til tekst ved hjelp av OpenAI sin automatiske språkgjenkjenningsmodell Whisper.
+Autotekst er en UiO-utviklet tjeneste som transkriberer tale til tekst ved hjelp av OpenAI sin automatiske språkgjenkjenningsmodell `Whisper <https://openai.com/nb-NO/index/whisper/>`_.
 Tjenesten kjører på UiOs servere: Whisper modellen er lastet ned og kjører lokalt her på UiO. 
 Derfor er tjenesten godkjent for opptil røde data. 
 
