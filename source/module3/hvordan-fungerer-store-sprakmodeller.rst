@@ -7,13 +7,9 @@ Modellene er trent opp på tekster hentet fra internett, og forslagene er de mes
 Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *konteksten*.
 
 Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte.
-En språkmodell er en matematisk modell som:
-
-- basert på spørsmålet du stiller og mønstre den har lært, beregner sannsynlighetene for neste ord i setningen.
-- trekker et ord, med litt tilfeldighet, og legger det til i svaret.
-- gjentar prosessen for neste ord, og neste ord, osv.
-- stopper når den "mener" svaret er fullstendig.
-
+En språkmodell er en matematisk modell som bygger opp svaret et ord av gangen, betinget av konteksten.
+Hvert ord trekkes med litt tilfeldighet.
+Modellen stopper når den "mener" svaret er fullstendig.
 
 Hva er konteksten?
 ~~~~~~~~~~~~~~~~~~~
