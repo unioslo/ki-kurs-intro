@@ -2,24 +2,22 @@
 GPT UiO
 ========
 
-GPT UiO er UiOs personverntrygge KI-chat.
 
-I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken «hjerne» tjenesten bruker.
-Modellene har forskjellig størrelse, funksjoner (som støtte av bilder) og bruksområder.
-En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller *lokalt*.
-Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
 
-Alle modellene, både de i skyen og de lokale, sikrer at GDPR følges.
-Men du er ekstra godt beskyttet om du velger de lokale modellene.
-Det er da går *ingen* data til skyen, alt forblir på UiO eller NTNU sine systemer.
-Noen av de lokale modellene kan i tillegg håndtere opptil `røde data`_.
+GPT UiO er UiOs sin egenutviklede personverntrygge KI-chat. 
+Den fungerer stort sett som andre KI-chat tjenester: du kommuniserer med språkmodellen via et chat-vindu.
 
-.. _røde data: https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html
+.. figure:: ../images/gpt-uio-skjermdump.png
+   :align: center
+   :width: 80%
+   :alt: Skjermdump av GPT UiO sitt chatte-vindu
+   :class: bordered
 
-.. uio-viktig::
 
-   * Velger du en lokal språkmodell, har du ekstra kontroll over dataene dine og kan være trygg på at ingenting lastes opp i skyen.
-   * Velger du en skybasert modell, behandles inn- og utdata midlertidig av Microsoft Azure OpenAI innenfor GDPR-kompatible regioner (Europa).
+Den store fordelen med å bruke GPT UiO er at data som lagres, blir lagret på UiOs egne servere.
+Navnet ditt og brukernavnet ditt deles ikke med andre selskaper, bare UiO har tilgang til denne informasjonen.
+I tillegg brukes ikke samtalene dine til videre trening av språkmodellene.
+Og sist men ikke minst: du kan bruke GPT UiO med opptil røde data, men bare hvis du velger egnet modell.
 
-   Uavhengig av om du bruker en lokal eller skybasert modell, lagres all logg samt inn- og utdata kun på UiOs servere. Ditt brukernavn deles ikke med Microsoft.
-   Derfor er GPT UiO GDPR-kompatibel.
+På de neste sidene skal vi dykke dypere inn i to viktige funksjonaliteter ved GPT UiO, nettopp muligheten for å velge blant flere språkmodeller, i tillegg til GPT UiO sine KI assistenter.
+
