@@ -1,4 +1,5 @@
-/* SimplePDF CSS for Episode 5 - No page numbers, no TOC, white cover */
+/* SimplePDF CSS for the Treningsoppgaver PDF - no page numbers, no TOC,
+   no subtitle, white cover. Activated via conf.py's EXERCISES_PDF branch. */
 
 /* Import the main simplepdf styles */
 @import url('simplepdf.css');
@@ -114,46 +115,22 @@ div.sphinxsidebar {
     display: none !important;
 }
 
-/* Replace subtitle content to remove "Version " prefix */
+/* No subtitle: the theme cover always renders "Version {version}", so hide it
+   entirely (version/release are also blanked in conf.py's EXERCISES_PDF branch). */
 .subtitle-cover,
 p.subtitle-cover {
-    display: block !important;
-    color: #000000 !important;
-    font-size: 20px !important;
-    margin-top: 10px !important;
-    /* Hide the original text */
-    font-size: 0 !important;
-    line-height: 0 !important;
-}
-
-/* Add the subtitle text without "Version " prefix */
-.subtitle-cover::after,
-p.subtitle-cover::after {
-    content: 'KI grunnkurs' !important;
-    font-size: 20px !important;
-    line-height: normal !important;
-    color: #000000 !important;
-    display: block !important;
-}
-
-/* Hide the main "Episode 5 - Oppgaver" section title (page 2) */
-#episode-5-oppgaver > h1 {
     display: none !important;
 }
 
-/* Prevent page break before and after main section */
-#episode-5-oppgaver {
-    page-break-before: avoid !important;
-    page-break-after: avoid !important;
-    page-break-inside: auto !important;
-}
-
-/* Ensure content flows immediately after cover - no empty page */
-section#episode-5-oppgaver {
+/* The master doc (exercises_only.rst) has no title, so there is no standalone
+   "Prøv selv" title page. Make the first real content flow immediately after the
+   cover so no empty page is left behind. Covers both old (div.section) and new
+   (section) docutils markup. */
+div.body > section:first-child,
+div.body > div.section:first-child {
     margin-top: 0 !important;
     padding-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    page-break-before: avoid !important;
 }
 
 /* Force first content section to start immediately */

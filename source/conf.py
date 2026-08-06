@@ -102,11 +102,12 @@ if os.environ.get('EXERCISES_PDF'):
     master_doc = 'exercises_only'
     simplepdf_file_name = 'KI-grunnkurs-treningsoppgaver.pdf'
 
-    # Split title into main title and subtitle
+    # Cover title. No subtitle: the theme cover always renders
+    # "Version {version}", so we blank version/release and additionally hide
+    # .subtitle-cover via simplepdf-no-pagenumbers.css.
     project = 'Treningsoppgaver'
-    # SimplePDF uses "Version {release}" so we set release to just the subtitle text
-    release = 'KI grunnkurs'
-    version = 'KI grunnkurs'
+    release = ''
+    version = ''
 
     # Show cover but hide TOC for Episode 5 PDF
     simplepdf_theme_options = {
