@@ -1,6 +1,6 @@
 
 Gemini og Gemini Notebook
-====================== 
+==========================
 
 Gemini og Gemini Notebook er to KI-tjenester fra Google som UiO tilbyr til studenter og ansatte.
 
