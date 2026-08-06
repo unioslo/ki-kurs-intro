@@ -1468,6 +1468,13 @@ def process_images_in_html(token, html_content, html_path, dry_run=False):
         if not src:
             continue
 
+        # Skip chapter-card icons - resolved separately by process_chapter_cards()
+        # so their Canvas Icon-Maker metadata isn't stripped or re-uploaded.
+        # Identified by the build-time data-icon-file marker (no custom class).
+        if img.get('data-icon-file') is not None:
+            skipped_count += 1
+            continue
+
         # Skip if already a Canvas URL
         if 'instructure.com' in src:
             print(f"- Skipping (already Canvas URL): {src}")
@@ -1724,6 +1731,144 @@ def process_internal_links(html_content, page_mapping, course_id=COURSE_ID):
     return str(soup)
 
 
+def find_canvas_file_by_name(token, filename, cache=None):
+    """Look up a Canvas course file by name and return its file ID.
+
+    Uses the Canvas files search endpoint and returns the id of the first file
+    whose display_name or filename matches `filename` exactly, else None.
+
+    Args:
+        token: Canvas API token
+        filename: File name to look up (e.g. 'kap2-ikon.svg')
+        cache: Optional dict to memoize lookups across calls within one run
+
+    Returns:
+        File id (int) or None if not found
+    """
+    if cache is not None and filename in cache:
+        return cache[filename]
+
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/files"
+    headers = {"Authorization": f"Bearer {token}"}
+    params = {"search_term": filename, "per_page": 100}
+
+    file_id = None
+    while api_endpoint:
+        response = requests.get(api_endpoint, headers=headers, params=params)
+        if response.status_code != 200:
+            print(f"Warning: file search failed for '{filename}' (Status: {response.status_code})")
+            break
+
+        for f in response.json():
+            if f.get('display_name') == filename or f.get('filename') == filename:
+                file_id = f.get('id')
+                break
+
+        if file_id is not None:
+            break
+
+        if 'next' in response.links:
+            api_endpoint = response.links['next']['url']
+            params = {}
+        else:
+            break
+
+    if file_id is None:
+        print(f"Warning: no Canvas file found matching '{filename}'")
+
+    if cache is not None:
+        cache[filename] = file_id
+    return file_id
+
+
+def resolve_card_page_slug(title, page_mapping):
+    """Resolve a chapter-card title to a Canvas page slug via page_mapping.
+
+    Tries an exact title match first, then a base-slug prefix match (to catch
+    Canvas -N dedup suffixes like '-2'/'-3'). Falls back to the bare computed slug.
+    """
+    base_slug = title_to_canvas_url(title)
+    if page_mapping:
+        # Exact title match
+        for info in page_mapping.values():
+            if (info.get('title') or '').strip() == title.strip():
+                return info.get('url') or base_slug
+        # Base-slug (prefix) match - handles Canvas -2/-3 suffixes
+        suffixed = None
+        for info in page_mapping.values():
+            url = info.get('url') or ''
+            if url == base_slug:
+                return url
+            if url.startswith(base_slug + '-') and suffixed is None:
+                suffixed = url
+        if suffixed:
+            return suffixed
+    print(f"Warning: could not resolve chapter card link for title '{title}'; using slug '{base_slug}'")
+    return base_slug
+
+
+def process_chapter_cards(token, html_content, page_mapping=None, dry_run=False):
+    """Resolve chapter-card placeholders into final Canvas HTML.
+
+    Cards are located by their build-time data-* markers (no custom classes), so
+    the resulting markup contains only Canvas's own classes:
+      - <img data-icon-file="..."> : a chapter card whose directive had no
+        :icon_file_id:. Look the filename up in Canvas, build the Icon-Maker <img>
+        and remove data-icon-file. Cards WITH :icon_file_id: already emit the final
+        Canvas <img> at build time (no marker), so they are not touched here.
+      - <a data-card-title="..."> : title-based fallback anchor emitted when the
+        directive had no :url:; resolve it via page_mapping and remove
+        data-card-title. Anchors built from :url: are already final (no marker).
+    All build-time markers are removed, leaving only Canvas's own attributes.
+
+    The surrounding <div class="float-left"> card/icon containers are left as-is.
+
+    Returns updated HTML content as a string.
+    """
+    soup = BeautifulSoup(html_content, 'html.parser')
+    icon_imgs = soup.find_all('img', attrs={'data-icon-file': True})
+    fallback_links = soup.find_all('a', attrs={'data-card-title': True})
+    if not icon_imgs and not fallback_links:
+        return html_content
+
+    print(f"Found {len(icon_imgs)} chapter card icon(s) to resolve by filename")
+    file_cache = {}
+
+    # --- Icons resolved by filename (no :icon_file_id: given) ---
+    for icon_img in icon_imgs:
+        icon_name = icon_img.get('data-icon-file') or icon_img.get('alt', '')
+        if dry_run:
+            print(f"- [DRY RUN] Would look up icon by name: {icon_name}")
+        else:
+            file_id = find_canvas_file_by_name(token, icon_name, cache=file_cache)
+            if file_id is not None:
+                # Match the hand-authored Canvas Icon-Maker markup: src without
+                # a query, relative data-download-url, empty alt / presentation role.
+                icon_img['src'] = f"{CANVAS_URL}/courses/{COURSE_ID}/files/{file_id}/download"
+                icon_img['data-inst-icon-maker-icon'] = "true"
+                icon_img['data-download-url'] = f"/files/{file_id}/download?download_frd=1&icon_maker_icon=1"
+                icon_img['data-api-endpoint'] = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/files/{file_id}"
+                icon_img['data-api-returntype'] = "File"
+                icon_img['role'] = "presentation"
+                icon_img['alt'] = ""
+        # Drop the build-time marker regardless
+        del icon_img['data-icon-file']
+
+    # --- Title-based fallback links (only present when :url: was omitted) ---
+    for link in fallback_links:
+        title = link.get('data-card-title') or link.get_text()
+        slug = resolve_card_page_slug(title, page_mapping)
+        link['href'] = f"{CANVAS_URL}/courses/{COURSE_ID}/pages/{slug}"
+        link['title'] = title
+        link['data-course-type'] = "wikiPages"
+        link['data-published'] = "true"
+        link['data-api-endpoint'] = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/pages/{slug}"
+        link['data-api-returntype'] = "Page"
+        del link['data-card-title']
+
+    return str(soup)
+
+
 def extract_content(html_path, token=None, page_mapping=None, dry_run=False):
     """Extract the main content from an HTML file, removing h1 tags and navigation.
 
@@ -1771,6 +1916,10 @@ def extract_content(html_path, token=None, page_mapping=None, dry_run=False):
     # Process internal cross-reference links if page_mapping is provided
     if page_mapping:
         content_html = process_internal_links(content_html, page_mapping)
+
+    # Resolve chapter cards (needs token for icon file lookup)
+    if token:
+        content_html = process_chapter_cards(token, content_html, page_mapping, dry_run)
 
     return content_html
 
@@ -2262,6 +2411,80 @@ def process_html_files(token, html_files, html_dir, page_mapping, args, page_id_
     return success_count, fail_count, new_pages_created, mapping_updated
 
 
+def download_icons(token, folder_name="Ikonskaper-ikoner"):
+    """Download all files from a Canvas course folder into source/_static/icons/.
+
+    Keeps local copies of the Icon-Maker icons so the `make html` preview renders
+    chapter cards. Re-run when icons are added or changed in Canvas.
+    """
+    headers = {"Authorization": f"Bearer {token}"}
+    dest_dir = Path(__file__).parent / "source" / "_static" / "icons"
+
+    # Find the folder by name
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/folders"
+    params = {"per_page": 100}
+    folder_id = None
+    while api_endpoint:
+        response = requests.get(api_endpoint, headers=headers, params=params)
+        if response.status_code != 200:
+            print(f"Error: failed to list folders (Status: {response.status_code})")
+            return
+        for folder in response.json():
+            if folder.get('name') == folder_name:
+                folder_id = folder.get('id')
+                break
+        if folder_id is not None:
+            break
+        if 'next' in response.links:
+            api_endpoint = response.links['next']['url']
+            params = {}
+        else:
+            break
+
+    if folder_id is None:
+        print(f"Error: folder '{folder_name}' not found in course {COURSE_ID}")
+        return
+
+    # List files in the folder
+    api_endpoint = f"{CANVAS_URL}/api/v1/folders/{folder_id}/files"
+    params = {"per_page": 100}
+    files = []
+    while api_endpoint:
+        response = requests.get(api_endpoint, headers=headers, params=params)
+        if response.status_code != 200:
+            print(f"Error: failed to list files in folder (Status: {response.status_code})")
+            return
+        files.extend(response.json())
+        if 'next' in response.links:
+            api_endpoint = response.links['next']['url']
+            params = {}
+        else:
+            break
+
+    if not files:
+        print(f"No files found in folder '{folder_name}'")
+        return
+
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    print(f"Downloading {len(files)} file(s) from '{folder_name}' to {dest_dir}")
+
+    downloaded = 0
+    for f in files:
+        name = f.get('display_name') or f.get('filename')
+        url = f.get('url')
+        if not name or not url:
+            continue
+        file_response = requests.get(url, headers=headers)
+        if file_response.status_code == 200:
+            (dest_dir / name).write_bytes(file_response.content)
+            print(f"- {name}")
+            downloaded += 1
+        else:
+            print(f"- Failed: {name} (Status: {file_response.status_code})")
+
+    print(f"Done: {downloaded}/{len(files)} downloaded to {dest_dir}")
+
+
 def main():
     """Main function to update all Canvas pages."""
     # Parse command-line arguments
@@ -2312,6 +2535,11 @@ def main():
         "--generate-mapping",
         action="store_true",
         help="Generate page_id_mapping.json from Canvas pages (run this once or when pages change)"
+    )
+    parser.add_argument(
+        "--download-icons",
+        action="store_true",
+        help="Download Icon-Maker icons from the 'Ikonskaper-ikoner' Canvas folder into source/_static/icons/ (for local preview of chapter cards)"
     )
     parser.add_argument(
         "--dry-run",
@@ -2411,6 +2639,12 @@ def main():
             # Generate from local HTML files
             generate_mapping_from_canvas(token)
 
+        return
+
+    # Handle download-icons mode
+    if args.download_icons:
+        token = get_api_token()
+        download_icons(token)
         return
 
     # Handle list-pages mode

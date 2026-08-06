@@ -327,6 +327,94 @@ Sphinx genererer da en HTML-lenke til en annen side, f.eks. `../module8/kilder.h
 
 hvor `kilder` er Canvas URL-en for siden som inneholder referansen. Skriptet prøver først full relativ sti (`module8/kilder.html`) og faller tilbake til bare filnavnet for bakoverkompatibilitet.
 
+## Kapittelkort (`uio-chapter-card`)
+
+Direktivet `uio-chapter-card` lager et Canvas «kapittelkort»: et Icon-Maker-ikon (venstrestilt), en lenket overskrift og en kort beskrivelse.
+
+**Bruk i RST:**
+```rst
+.. uio-chapter-card::
+   :title: Introduksjon til "KI-språket"
+   :icon_filename: kap2-ikon.svg
+   :icon_file_id: 3954816
+   :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
+   :description: Kort beskrivelse
+```
+
+### Gruppering med `uio-module-listing`
+
+Bruk `uio-module-listing` for å samle flere kapittelkort i en farget boks med en overskrift. Overskriften angis som argument (f.eks. `Kapitler` eller `Emnemoduler`); uten argument brukes `Emnemoduler:`.
+
+```rst
+.. uio-module-listing:: Emnemoduler
+
+   .. uio-chapter-card::
+      :title: Introduksjon til "KI-språket"
+      :icon_filename: kap2-ikon.svg
+      :icon_file_id: 3954816
+      :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
+      :description: Kort beskrivelse
+
+   .. uio-chapter-card::
+      :title: KI-tjenester ved UiO
+      :icon_filename: kap6-ikon.svg
+      :icon_file_id: 3954823
+      :url: https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio
+      :description: Godkjente verktøy og datasikkerhet
+```
+
+Dette gir (hvert kort er selv en `<div class="float-left">`):
+```html
+<div class="uio-color-box-3 uio-module-listing">
+    <h2>Emnemoduler</h2>
+    <div class="float-left">
+        <div class="float-left"><img ... /></div>
+        <h3><a title="..." href="..." ...>Introduksjon til "KI-språket"</a></h3>
+        <span>Kort beskrivelse</span>
+    </div>
+    <!-- flere kort ... -->
+</div>
+```
+
+Ved opplasting behandles kortene inni som vanlig (ikonet slås opp via `data-icon-file`-markøren, som deretter fjernes), mens selve `uio-module-listing`-boksen sendes uendret til Canvas. Den produserte HTML-en bruker bare Canvas' egne klasser (`uio-color-box-3`, `uio-module-listing`, `float-left`) – ingen egendefinerte klassenavn.
+
+**Opsjoner:**
+
+| Opsjon | Beskrivelse |
+|--------|-------------|
+| `title` | Overskriftsteksten (og lenketeksten) |
+| `icon_filename` | Filnavnet til ikonet i Canvas (f.eks. `kap2-ikon.svg`). Brukes til den lokale forhåndsvisningen, og som reserve-oppslag hvis `icon_file_id` mangler |
+| `icon_file_id` | Canvas fil-ID for ikonet (f.eks. `3954816`), tastet inn for hånd. Angis den, bygges Canvas-URL-en direkte fra den ved opplasting – uten API-oppslag |
+| `url` | Full Canvas-URL til siden kortet lenker til. Utelates den, utledes lenken fra `title` via `page_id_mapping.json` ved opplasting |
+| `description` | Kort beskrivelsestekst under overskriften |
+
+**Slik lager og bruker du et ikon (rekkefølge):**
+
+1. **Lag ikonet i Canvas.** Bruk Canvas sin Icon Maker til å lage ikonet, og lagre det i kursets ikonmappe (`Ikonskaper-ikoner`). Ikonene lages og lastes opp manuelt i Canvas.
+2. **Sett filnavn og hent fil-ID-en.** Gi ikonet et gjenkjennelig filnavn (f.eks. `kap2-ikon.svg`). Klikk deretter på ikonfilen i Canvas – URL-en viser ID-en, f.eks. `.../files/folder/Ikonskaper-ikoner?preview=3954816` → fil-ID `3954816`.
+3. **Bruk det i direktivet.** Lim filnavnet inn i `:icon_filename:` og fil-ID-en inn i `:icon_file_id:` i `.. uio-chapter-card::`:
+   ```rst
+   .. uio-chapter-card::
+      :title: Introduksjon til "KI-språket"
+      :icon_filename: kap2-ikon.svg
+      :icon_file_id: 3954816
+      :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
+      :description: Kort beskrivelse
+   ```
+
+**Slik fungerer det (to faser):**
+
+1. **`make html`**: Direktivet lager ferdig `<h3><a>`-lenken fra `:url:` (Canvas `data-api-endpoint` utledes ved å bytte `/courses/` → `/api/v1/courses/`). For ikonet:
+   - **Er `:icon_file_id:` satt** (anbefalt), bygges Icon-Maker-`<img>`-en ferdig allerede her, med full Canvas-URL (`src=.../courses/{COURSE_ID}/files/{id}/download`, relativ `data-download-url`, `data-inst-icon-maker-icon` osv.). Ingen opplastingssteg trengs for dette ikonet.
+   - **Mangler `:icon_file_id:`**, legges ikonet ut som en plassholder-`<img>` (uten egendefinert klasse) med markøren `data-icon-file` (filnavn) og `src` mot den lokale kopien i `source/_static/icons/`, slik at forhåndsvisningen viser ikonet.
+2. **`update_canvas_pages.py`**: `process_chapter_cards()` behandler kun plassholder-ikonene (de med `data-icon-file`): filnavnet slås opp i Canvas via `find_canvas_file_by_name()`, Icon-Maker-`<img>`-en bygges, og markøren fjernes. Kort som allerede har full Canvas-URL fra fase 1 røres ikke. Resultatet (ytre `<div class="float-left">` med et venstrestilt ikon, `<h3><a>` og `<span>`-beskrivelse) matcher den håndskrevne Canvas-HTML-en og bruker bare Canvas' egne klasser.
+
+**Forutsetning – lokale ikoner:** Ikonene ligger i Canvas-mappen `Ikonskaper-ikoner`. For at den lokale `make html`-forhåndsvisningen skal vise dem, last dem ned én gang (og på nytt når nye ikoner legges til):
+```bash
+python update_canvas_pages.py --download-icons
+```
+Dette legger SVG-filene i `source/_static/icons/`. Selve Canvas-siden bruker uansett Canvas-referansen som settes ved opplasting.
+
 ## Workflows
 
 ### Arbeidsflyt 1: Første gangs oppsett etter omstrukturering
@@ -434,6 +522,7 @@ python update_canvas_pages.py --create-module 1 --module-name "Modulnavn"
 | `--remap` | Interaktivt koble umappede filer til eksisterende Canvas-sider |
 | `--from-github` | ⚠️ Fungerer ikke for øyeblikket (se «Deploy fra GitHub»). Hent HTML fra GitHub `html-pages` branch i stedet for lokal `_build/html` |
 | `--generate-mapping` | Generer `page_id_mapping.json` (kan kombineres med `--from-github`) |
+| `--download-icons` | Last ned ikonene fra Canvas-mappen `Ikonskaper-ikoner` til `source/_static/icons/` (for lokal forhåndsvisning av kapittelkort) |
 | `--dry-run` | Vis hva som ville skjedd uten å gjøre endringer |
 | `--yes` | Hopp over bekreftelsesspørsmål (GitHub-deploy) |
 | `--create-new` | Opprett nye sider automatisk uten å spørre |

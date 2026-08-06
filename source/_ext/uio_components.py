@@ -9,6 +9,12 @@ from docutils.parsers.rst import directives
 from sphinx.util.docutils import SphinxDirective
 
 
+# Canvas instance and course used to build chapter-card icon URLs at build time.
+# Keep in sync with update_canvas_pages.py (CANVAS_URL / COURSE_ID).
+CANVAS_URL = "https://uio.instructure.com"
+CANVAS_COURSE_ID = "63248"
+
+
 class uio_heading_stripe(nodes.General, nodes.Element):
     """Blue heading stripe at top of page."""
     pass
@@ -50,6 +56,16 @@ class uio_viktig(nodes.General, nodes.Element):
 
 class uio_source(nodes.General, nodes.Element):
     """Source/resources container - uses uio-icon-box source class."""
+    pass
+
+
+class uio_chapter_card(nodes.General, nodes.Element):
+    """Canvas chapter card - icon + linked heading + description."""
+    pass
+
+
+class uio_module_listing(nodes.General, nodes.Element):
+    """Colored container that groups uio-chapter-card entries."""
     pass
 
 
@@ -738,6 +754,177 @@ def cleanup_html_post_build(app, exception):
             print(f"Warning: Could not process {html_file}: {e}")
 
 
+class UioChapterCardDirective(SphinxDirective):
+    """
+    UiO chapter card directive.
+
+    Usage::
+
+        .. uio-chapter-card::
+           :title: Introduksjon til "KI-språket"
+           :icon_filename: kap2-ikon.svg
+           :icon_file_id: 3954816
+           :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
+           :description: Kort beskrivelse
+
+    The icon ``<img>`` is emitted as a placeholder carrying a ``data-icon-file``
+    attribute (no invented class names). If ``:icon_file_id:`` (the Canvas file id,
+    entered by hand) is given, ``update_canvas_pages.py`` builds the Canvas
+    Icon-Maker reference directly from it; otherwise it looks the file up by filename.
+    The heading link is built from ``:url:`` at build time; if ``:url:`` is omitted, a
+    fallback anchor carrying ``data-card-title`` is emitted for title-based resolution
+    against ``page_id_mapping.json`` at upload time.
+    """
+    has_content = False
+    required_arguments = 0
+    optional_arguments = 0
+    option_spec = {
+        'title': directives.unchanged,
+        'icon_filename': directives.unchanged,
+        'icon_file_id': directives.unchanged,
+        'url': directives.unchanged,
+        'description': directives.unchanged,
+    }
+
+    def run(self):
+        node = uio_chapter_card()
+        node['title'] = self.options.get('title', '')
+        node['icon'] = self.options.get('icon_filename', '')
+        node['icon_file_id'] = self.options.get('icon_file_id', '')
+        node['url'] = self.options.get('url', '')
+        node['description'] = self.options.get('description', '')
+        # Number of "../" needed for the local-preview icon src to resolve from
+        # this document's build location (e.g. module2/foo.html -> depth 1).
+        node['static_prefix'] = '../' * self.env.docname.count('/')
+        return [node]
+
+
+class UioModuleListingDirective(SphinxDirective):
+    """
+    UiO module listing directive.
+
+    A colored container that groups one or more uio-chapter-card entries under a
+    heading.
+
+    Usage::
+
+        .. uio-module-listing:: Emnemoduler:
+
+           .. uio-chapter-card::
+              :title: Introduksjon til "KI-språket"
+              :icon_filename: kap2-ikon.svg
+              :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
+              :description: Kort beskrivelse
+
+           .. uio-chapter-card::
+              :title: KI-tjenester ved UiO
+              :icon_filename: kap6-ikon.svg
+              :url: https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio
+              :description: Godkjente verktøy og datasikkerhet
+
+    The heading defaults to "Emnemoduler:" when no argument is given.
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+
+    def run(self):
+        node = uio_module_listing()
+        if self.arguments:
+            node['title'] = ' '.join(self.arguments)
+        else:
+            node['title'] = 'Emnemoduler:'
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
+def html_visit_uio_module_listing(self, node):
+    """Open the UiO module listing container.
+
+    The child cards each render as their own ``<div class="float-left">`` (see
+    the chapter-card visitor), so this container only emits the colored box and
+    heading -- no extra float wrapper.
+    """
+    title = node.get('title', 'Emnemoduler:')
+    self.body.append('<div class="uio-color-box-3 uio-module-listing">\n')
+    if title:
+        self.body.append(f'<h2>{self.encode(title)}</h2>\n')
+
+
+def html_depart_uio_module_listing(self, node):
+    """Close the UiO module listing container."""
+    self.body.append('</div>\n')  # Close uio-color-box-3 uio-module-listing
+
+
+def html_visit_uio_chapter_card(self, node):
+    """Generate UiO chapter card HTML (icon + linked heading + description).
+
+    Emits exactly the hand-authored Canvas structure: an outer ``float-left``
+    card containing a ``float-left`` icon, an <h3> link and a <span> description.
+    Only Canvas's own classes appear in the output. Build-time hooks for
+    update_canvas_pages.py are carried on ``data-*`` attributes (``data-icon-file``
+    on the img, ``data-card-title`` on the fallback anchor), which are consumed and
+    removed at upload time -- no invented class names.
+    """
+    title = node.get('title', '')
+    icon = node.get('icon', '')
+    icon_file_id = node.get('icon_file_id', '')
+    url = node.get('url', '')
+    description = node.get('description', '')
+    prefix = node.get('static_prefix', '')
+
+    self.body.append('<div class="float-left">\n')
+
+    # Icon. When :icon_file_id: is given (the Canvas file id, entered by hand), emit
+    # the final Canvas Icon-Maker <img> directly with full URLs -- no placeholder and
+    # no upload-time processing needed. Otherwise fall back to a local-preview <img>
+    # (src into _static/icons/) carrying a data-icon-file marker that
+    # update_canvas_pages.py resolves by filename at upload time.
+    if icon_file_id:
+        canvas_src = f'{CANVAS_URL}/courses/{CANVAS_COURSE_ID}/files/{icon_file_id}/download'
+        download_url = f'/files/{icon_file_id}/download?download_frd=1&icon_maker_icon=1'
+        api_endpoint = f'{CANVAS_URL}/api/v1/courses/{CANVAS_COURSE_ID}/files/{icon_file_id}'
+        self.body.append(
+            '<div class="float-left">'
+            '<img style="padding-right: 10px;" role="presentation" '
+            f'src="{self.encode(canvas_src)}" alt="" data-inst-icon-maker-icon="true" '
+            f'data-download-url="{self.encode(download_url)}" '
+            f'data-api-endpoint="{self.encode(api_endpoint)}" data-api-returntype="File" /></div>\n'
+        )
+    else:
+        icon_src = f'{prefix}_static/icons/{icon}'
+        self.body.append(
+            '<div class="float-left">'
+            '<img style="padding-right: 10px;" role="presentation" '
+            f'src="{self.encode(icon_src)}" alt="" '
+            f'data-icon-file="{self.encode(icon)}" /></div>\n'
+        )
+
+    # Heading link.
+    if url:
+        api_endpoint = url.replace('/courses/', '/api/v1/courses/', 1)
+        self.body.append(
+            '<h3><a href="%s" title="%s" data-course-type="wikiPages" data-published="true" '
+            'data-api-endpoint="%s" data-api-returntype="Page">%s</a></h3>\n'
+            % (self.encode(url), self.encode(title), self.encode(api_endpoint), self.encode(title))
+        )
+    else:
+        # Fallback: resolved from the title at upload time (data-card-title marker).
+        self.body.append(
+            '<h3><a href="#" data-card-title="%s">%s</a></h3>\n'
+            % (self.encode(title), self.encode(title))
+        )
+
+    if description:
+        self.body.append(f'<span>{self.encode(description)}</span>\n')
+
+
+def html_depart_uio_chapter_card(self, node):
+    """Close the chapter card wrapper opened in the visit function."""
+    self.body.append('</div>\n')  # Close float-left card
+
+
 def setup(app):
     """Register the UiO components."""
 
@@ -799,6 +986,14 @@ def setup(app):
         uio_do_dont_container,
         html=(html_visit_uio_do_dont_container, html_depart_uio_do_dont_container)
     )
+    app.add_node(
+        uio_chapter_card,
+        html=(html_visit_uio_chapter_card, html_depart_uio_chapter_card)
+    )
+    app.add_node(
+        uio_module_listing,
+        html=(html_visit_uio_module_listing, html_depart_uio_module_listing)
+    )
 
     # Add directives
     app.add_directive('uio-task', UioTaskDirective)
@@ -815,6 +1010,8 @@ def setup(app):
     app.add_directive('uio-icon-box', UioIconBoxDirective)
     app.add_directive('uio-detail', UioDetailDirective)
     app.add_directive('uio-do-dont', UioDoDontDirective)
+    app.add_directive('uio-chapter-card', UioChapterCardDirective)
+    app.add_directive('uio-module-listing', UioModuleListingDirective)
 
     # Connect to html-page-context to add heading stripe
     app.connect('html-page-context', add_heading_stripe)

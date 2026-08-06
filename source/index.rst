@@ -3,15 +3,10 @@ Grunnkurs i generativ KI
 
 Velkommen til grunnkurs i generativ KI!
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Episode 1: Oppsummering av kurset
-
-   module1/hva-skal-du-laere
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 2: Grunnbegreper i kunstig intelligens
+   :caption: Episode 1: Grunnbegreper i kunstig intelligens
 
    module2/introduksjon-til-ki-spraket
    module2/kunstig-intelligens
@@ -22,7 +17,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 3: Hvordan fungerer språkmodeller?
+   :caption: Episode 2: Hvordan fungerer språkmodeller?
 
    module3/store-sprakmodeller
    module3/hvordan-fungerer-store-sprakmodeller
@@ -34,7 +29,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 4: Hvordan trygt bruke KI?
+   :caption: Episode 3: Hvordan trygt bruke KI?
 
    module4/hvordan-bruke-ki-pa-en-god-mate
    module4/nar-kan-du-stole-pa-generativ-ki
@@ -54,7 +49,8 @@ Velkommen til grunnkurs i generativ KI!
    module5/baerekraft
    module5/miljo
    module5/sosiale-kostnader
-   module5/personvern-og-vern-av-annen-beskyttelsesverdig-informasjon
+   module5/datasikkerhet
+   module5/retningslinjer-og-policies
    module5/opphavsrett
 
 .. toctree::
@@ -75,18 +71,20 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 7: Treningsoppgaver
+   :caption: Episode 7: Avslutning
 
-   module7/treningsoppgaver
-   module7/sett-1
-   module7/sett-2
+   module7/avslutning
+   module7/kilder
+  
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 8: Oppsummering
+   :caption: Episode 8: Prøv selv!
 
-   module8/retningslinjer-og-policies
-   module8/avslutning
-   module8/kilder
+   module8/treningsoppgaver
+   module8/sett-1
+   module8/sett-2
+
+   
 
 
