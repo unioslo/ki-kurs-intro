@@ -334,5 +334,12 @@
     "title": "En oversikt over UiO sine viktigste KI tjenester",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
+  },
+  "module5/datasikkerhet.html": {
+    "page_id": 422500,
+    "url": "datasikkerhet",
+    "title": "Datasikkerhet",
+    "module_id": 243064,
+    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
   }
 }
