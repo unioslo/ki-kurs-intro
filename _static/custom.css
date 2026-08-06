@@ -289,3 +289,29 @@ span.citation-label a:hover {
     text-decoration: underline;
     color: #004499 !important;
 }
+
+/* Module listing + chapter cards (uio-module-listing directive) - local preview.
+   The produced HTML uses only Canvas's own classes (uio-color-box-3,
+   uio-module-listing, float-left), so these rules target the structure rather
+   than any custom class. Each direct-child .float-left is a card: its inner
+   .float-left icon floats left, and the <h3> + <span> flow to its right.
+   Canvas styles these itself, so the rules below only affect `make html`. */
+.uio-module-listing {
+    overflow: auto;          /* contain the floated cards inside the colored box */
+}
+.uio-module-listing > .float-left {          /* each card */
+    float: left;
+    width: 100%;
+    overflow: hidden;        /* contain the inner floated icon */
+    margin-bottom: 1em;
+}
+.uio-module-listing > .float-left > .float-left {   /* icon wrapper */
+    float: left;
+}
+.uio-module-listing > .float-left img {
+    width: 100px;
+    height: 100px;
+}
+.uio-module-listing > .float-left h3 {
+    margin-top: 0;
+}
