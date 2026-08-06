@@ -16,7 +16,7 @@ KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som 
 Prøv selv!
 ------------
 For å hjelpe deg på veien videre har vi laget to sett med øvingsoppgaver. 
-De finner du i kursets siste kapittel og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI.
+De finner du i `kursets siste kapittel <https://uio.instructure.com/courses/63248/pages/prov-selv>`_ og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI.
 
 
 **Lykke til videre på din KI-reise!**

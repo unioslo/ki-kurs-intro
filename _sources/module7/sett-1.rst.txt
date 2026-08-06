@@ -43,15 +43,8 @@ Sett 1
 
    Be Copilot lage en utkast til en powerpoint-presentasjon om et valgfritt tema.
 
-.. uio-task:: Oppgave 8 - Dataanalyse
 
-   [TODO]
-   Finn frem en excel fil med endel data fordelt i kolonner og rader. Bruk et KI-verktøy til å...
-
-   (Lenken går til en liten excel-fil med 15 kolonner og 12 rader. 
-   Bruk et KI-verktøy til å pivotere og aggregere dataen slik at tabellen viser bokført beløp per koststed.)
-
-.. uio-task:: Oppgave 9 - Enkel programmering
+.. uio-task:: Oppgave 8 - Enkel programmering
 
    Vi ønsker at excel skal summere tallene i to kolonner automatisk. 
 
@@ -81,8 +74,8 @@ Sett 1
    - Oppgave 1: Få GPT til å forklare hva som er feil med kodesnutten, og hvorfor den ikke gir summen av kolonne A og B.
    - Oppgave 2: Få GPT til å skrive en riktig versjon av koden som faktisk gir summen av kolonne A og B.
 
-   Oppgaven kan løses utelukkende med kodesnutten over og UiOGPT, men for de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den beskrevne funksjonaliteten om man vil teste det selv her: Enkel koding med KI - .xlsm
-
+   Oppgaven kan løses utelukkende med kodesnutten over og GPT UiO, 
+   men for de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den beskrevne funksjonaliteten om man vil teste det selv her: :download:`Enkel-koding-med-KI.xlsx <../downloads/Enkel-koding-med-KI.xlsx>`
 
 .. uio-source::
 
