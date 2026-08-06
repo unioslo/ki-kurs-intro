@@ -1,8 +1,11 @@
 Prøv selv!
 ===========
-Gratulerer! Du har nå kommet deg gjennom teori-delen av introduksjonskurset i KI for administrativt ansatte ved UiO.
 
-Nå er du klar for å omsette teori til praksis og på den måten styrke din KI-kompetanse. 
+.. only:: not simplepdf
+
+   Gratulerer! Du har nå kommet deg gjennom teori-delen av introduksjonskurset i KI for administrativt ansatte ved UiO.
+
+   Nå er du klar for å omsette teori til praksis og på den måten styrke din KI-kompetanse. 
 
 Vi har laget to sett med oppgaver. Det første settet skal du øve deg på ulike måter å bruke KI. 
 I det andre settet kan du utforske hvordan bruke KI i egne arbeidsoppgaver. 
