@@ -214,10 +214,15 @@ def get_relative_path_key(html_file, base_dir):
 
     Returns:
         Relative path string (e.g., 'module1/oppsummering.html' or 'oppsummering.html')
+
+    Note:
+        Uses as_posix() so keys always use forward slashes ('/'), regardless of OS.
+        This keeps the mapping stable across Windows/macOS/Linux and matches the
+        forward-slash hrefs Sphinx generates for internal cross-reference links.
     """
     try:
         relative = html_file.relative_to(base_dir)
-        return str(relative)
+        return relative.as_posix()
     except ValueError:
         # Fallback to just filename if can't compute relative path
         return html_file.name

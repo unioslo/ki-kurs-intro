@@ -118,6 +118,8 @@ Skriptet bruker en mapping-fil (`page_id_mapping.json`) for å koble HTML-filer 
 
 **Merk**: Nøklene bruker nå relative stier (`moduleN/filnavn.html`) i stedet for bare filnavn. Dette gjør det mulig å ha samme filnavn i flere moduler. Skriptet har også "fuzzy" matching som håndterer Canvas-suffikser (f.eks. `-2`, `-3`) på URLer.
 
+**Merk (skråstrek/plattform)**: Nøklene bruker alltid vanlig skråstrek (`/`), uansett operativsystem. Skriptet normaliserer stiene med `Path.as_posix()`, slik at mapping-filen fungerer likt på Windows, macOS og Linux. Dette er også nødvendig for at interne kryssreferanser (som Sphinx alltid skriver med `/`) skal matche riktig. Ikke rediger nøklene manuelt til omvendt skråstrek (`\`).
+
 ### Generere mapping første gang
 
 ```bash
