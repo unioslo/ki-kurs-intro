@@ -1,4 +1,4 @@
-Oppsummering kapittel 6
+Oppsummering kapittel 5
 ========================
 
 **I dette kapittelet har du lært at:**

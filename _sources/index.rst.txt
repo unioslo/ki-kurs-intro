@@ -13,7 +13,7 @@ Velkommen til grunnkurs i generativ KI!
    module1/generativ-ki
    module1/ki-assistent
    module1/ki-agenter
-   module1/oppsummering-kapittel-2
+   module1/oppsummering-ki
 
 .. toctree::
    :maxdepth: 1
@@ -25,7 +25,7 @@ Velkommen til grunnkurs i generativ KI!
    module2/sprakmodeller-finner-pa-ting
    module2/sprakmodeller-har-ikke-hukommelse
    module2/skjevheter
-   module2/oppsummering-kapittel-3
+   module2/oppsummering-sprakmodeller
 
 .. toctree::
    :maxdepth: 1
@@ -39,7 +39,7 @@ Velkommen til grunnkurs i generativ KI!
    module3/nyttige-instruksjons-teknikker
    module3/praktisk-ovelse-forbedre-egne-instruksjoner
    module3/tips-om-pre-instruksjon-og-ki-assistenter
-   module3/oppsummering-kapittel-4
+   module3/oppsummering-god-bruk-ki
 
 .. toctree::
    :maxdepth: 1
@@ -67,7 +67,7 @@ Velkommen til grunnkurs i generativ KI!
    module5/autotekst-og-nettskjema-diktafon
    module5/gemini-og-notebooklm
    module5/microsoft-copilot-chat
-   module5/oppsummering-kapittel-6
+   module5/oppsummering-uio-tjenester
 
 .. toctree::
    :maxdepth: 1

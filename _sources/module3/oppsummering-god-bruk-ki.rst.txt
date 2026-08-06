@@ -1,4 +1,4 @@
-Oppsummering kapittel 4
+Oppsummering kapittel 3
 ========================
 
 Du har nå fått et nyttig sett med verktøy for å bruke KI på en tryggere og bedre måte. 
