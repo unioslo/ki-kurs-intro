@@ -29,7 +29,7 @@ Det er særlig risiko for feil svar på spørsmål om tall, som for eksempel dat
 
    Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
 
-   .. uio-answer::
+   .. uio-answer:: Klikk på meg for mulig svar
 
       Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
       Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
