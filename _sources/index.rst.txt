@@ -43,7 +43,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 5: Etikk, bærekraft, opphavsrett og personvern
+   :caption: Episode 4: Etikk, bærekraft, opphavsrett og personvern
 
    module4/etikk-baerekraft-opphavsrett-og-personvern
    module4/baerekraft
@@ -55,7 +55,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 6: KI-tjenester ved UiO
+   :caption: Episode 5: KI-tjenester ved UiO
 
    module5/ki-tjenester-ved-uio
    module5/uios-godkjente-ki-tjenester
@@ -71,7 +71,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 7: Avslutning
+   :caption: Episode 6: Avslutning
 
    module6/avslutning
    module6/kilder
@@ -79,7 +79,7 @@ Velkommen til grunnkurs i generativ KI!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Episode 8: Prøv selv!
+   :caption: Episode 7: Prøv selv!
 
    module7/treningsoppgaver
    module7/sett-1
