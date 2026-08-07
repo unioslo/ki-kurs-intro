@@ -12,9 +12,9 @@ Men det er en viss fare for at modellen svarer feil.
 Det er særlig risiko for feil svar på spørsmål om tall, som for eksempel datoer og årstall.
 
 
-.. uio-dont:: Manipulering (Språkmodell forgiftning)
+.. uio-dont:: Manipulering (Språkmodell-forgiftning)
 
-   Store språkmodeller kan være sårbare for bevisst manipulering, såkalt "Språkmodell forgiftning".
+   Store språkmodeller kan være sårbare for bevisst manipulering, såkalt "Språkmodell-forgiftning" (LLM poisoning).
    Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
    Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
