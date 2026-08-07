@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prinsipper for gode instruksjoner &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc1071ef" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Praktisk øvelse: Forbedre instruksjoner" href="praktisk-ovelse-forbedre-instruksjoner.html" />
+    <link rel="prev" title="Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?" href="instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="prinsipper-for-gode-instruksjoner">
+<h1>Prinsipper for gode instruksjoner</h1>
+<p>Her ser du noen enkle eksempler på instruksjoner som kan bli bedre.
+Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
+Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.
+Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.</p>
+<section id="vaer-spesifikk">
+<h2>1. Vær spesifikk</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Skriv en e-post om at møterommet Gaia er stengt for vedlikehold i uke 15.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold i uke 15. Tonen skal være vennlig, men profesjonell.</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Den gode instruksjonen spesifiserer både hva e-posten skal handle om, hvem målgruppen er, og hvilken tone den skal ha.</p>
+</div>
+</div>
+</section>
+<section id="gi-kontekst">
+<h2>2. Gi kontekst</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Forklar forskjellen på KI og maskinlæring.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Forklar kort forskjellen på KI og maskinlæring, tilpasset administrativt ansatte ved et universitet som ikke har teknisk bakgrunn.
+Tenk at forklaringen skal brukes i et 5-minutters innlegg på et personalmøte, der målet er at kollegene skal forstå begrepene på et overordnet nivå - ikke tekniske detaljer.</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber den produsere.</p>
+</div>
+</div>
+</section>
+<section id="spesifiser-format">
+<h2>3. Spesifiser format</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Lag et møtereferat av disse notatene: [dine notater]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Basert på mine notater fra møtet, lag et møtereferat. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver. Mine notater: [dine notater].</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om.</p>
+</div>
+</div>
+</section>
+<section id="definer-en-rolle">
+<h2>4. Definer en rolle</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Sjekk denne teksten: [din tekst]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Du er en norskspråklig språkvasker i universitetssektoren.</p>
+<p>Gå gjennom teksten nedenfor og:</p>
+<ul class="simple">
+<li>Rett skrivefeil og grammatikk</li>
+<li>Behold innholdet faglig uendret</li>
+<li>Foreslå mer formelle formuleringer der teksten virker for uformell for en beskjed til studenter</li>
+</ul>
+<p>Svar med:</p>
+<ul class="simple">
+<li>Revidert tekst</li>
+<li>Kort liste over de viktigste endringene du har gjort</li>
+</ul>
+<p>Teksten:
+[din tekst]</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Språkmodeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.</p>
+</div>
+</div>
+</section>
+<section id="gi-eksempler">
+<h2>5. Gi eksempler</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Jeg skal skrive titler til interne nyhetssaker for ansatte ved Universitetet i Oslo.</p>
+<p>Her er eksempler på stilen jeg ønsker:</p>
+<ul class="simple">
+<li>«Nytt tilbud: Gratis språkkurs for ansatte»</li>
+<li>«Viktig: Endringer i møterom-booking fra 1. april»</li>
+<li>«Husk: Frist for registrering av arbeidstid nærmer seg»</li>
+</ul>
+<p>Skriv en kort tittel i samme stil for denne saken: Vi får nytt IT-system for reiseregninger neste måned.</p>
+<p>Krav til tittelen:</p>
+<ul class="simple">
+<li>Maks 90 tegn</li>
+<li>Skal være informativ og nøktern</li>
+<li>Målgruppe: alle ansatte</li>
+</ul>
+</div>
+</div>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
