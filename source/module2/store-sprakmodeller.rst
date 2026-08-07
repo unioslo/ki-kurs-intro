@@ -10,8 +10,8 @@ I kapittel 2 er tema hvordan store språkmodeller lager tekst og hvilke svakhete
 
     Illustrasjon: Hvordan store språkmodeller fungerer. Illustratør:   Tina Morønning Ruud
 
-.. uio-colorbox-1:: Etter kapitellet kan du:
+.. uio-colorbox-1:: Læringsmål
 
-    * Forklare hvordan store språkmodeller generer tekst, og hvilke innebygde svakheter den har
-    * Gjenkjenne når språkmodellene gir feil informasjon
+    * Jeg forstår hvordan store språkmodeller generer tekst
+    * Jeg kjenner til svakhetene i store språkmodeller og kan kjenne igjen når språkmodellene gir feil informasjon
 
