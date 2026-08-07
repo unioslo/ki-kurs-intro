@@ -3,14 +3,14 @@ Språkmodeller har ikke faktakunnskap
 
 Språkmodeller har ikke noe forhold til sannhet [:ref:`Hicks <Hicks>`].
 Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
-Språkmodellene har ikke sikker kunnskap om hva som er sant, de regner bare på hvilke ord som er mest sannsynlige.
+Men språkmodellene har ikke sikker kunnskap om hva som er sant: som vi har lært beregner de bare hvilke ord som er mest sannsynlige.
 
-Hvis en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
-Alle disse stedene har vært hovedstaden i Norge.
-Hvis du spør modellen hva som er hovedstaden i Norge, svarer den sannsynligvis «Oslo».
-Men det er en viss fare for at modellen svarer feil.
-Det er særlig risiko for feil svar på spørsmål om tall, som for eksempel datoer og årstall.
+Når en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
+Alle disse stedene har vært Norges hovedstade.
+Hvis du spør modellen «Hva som er hovedstaden i Norge?», svarer den sannsynligvis «Oslo».
+Men det er en viss fare for at den svarer feil, fordi svaret baseres på sannsynlig neste ord, og ikke kunnskap.
 
+Fordi språkmodellene beregner ord basert på tekst de er trent på er de sårbare for bevisst manipulering, såkalt LLM poisning. 
 
 .. uio-dont:: Manipulering (Språkmodell-forgiftning)
 
