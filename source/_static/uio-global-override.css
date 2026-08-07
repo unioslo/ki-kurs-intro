@@ -1,9 +1,12 @@
 :root {
 	--uio-page-max-width: 780px;
 
-	--uio-darkblue: #3E31D6;
-	--uio-lightblue: #86A4F7;
-	--uio-bluetone: #E6ECFF;
+	--uio-darkblue: #0D5EA0;
+	--uio-lightblue: #468BBF;
+	--uio-bluetone: #C4DBEF;
+    	--uio-red: #B60000;
+    	--uio-lightred: #E73333;
+    	--uio-redtone: #F0BFBF;
 }
 
 /* Remove Microsoft collaboration tool */
@@ -40,6 +43,109 @@ li:has(> a.collaborations) {display: none !important;}
 	width: var(--uio-page-max-width);
 	border-top: 10px solid var(--uio-bluetone);
 	margin-top: -10px;
+}
+.uio-heading-stripe2 {
+	width: var(--uio-page-max-width);
+	border-top: 5px solid var(--uio-red);
+	margin-top: -10px;
+}
+
+/* Mer spesifikk selektor ved å inkludere #content */
+#content .user_content a:not(.btn):not(.Button):not(.ui-button):not([role="button"]) {
+    text-decoration: underline !important;
+}
+
+/* Gjør H3- og H4-overskrifter i brødteksten fete */
+.user_content h3,
+.user_content h4 {
+  font-weight: bold !important;
+}
+
+/* Gir de pluss-knappene i oppgaver og moduler UiO-blå bakgrunn og hvitt ikon */
+.add_module_item_link.Button--icon-action,
+.add_assignment.Button--icon-action {
+  background-color: #0D5EA0 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 6px 8px !important;
+  border-radius: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+}
+
+/* Styling for selve plusstegnet (font-ikon og SVG) */
+.add_module_item_link.Button--icon-action i,
+.add_assignment.Button--icon-action i,
+.add_module_item_link.Button--icon-action svg {
+  color: #ffffff !important;
+  fill: currentColor !important;
+  font-size: 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+}
+
+/* Pluss sign dark when hovering */
+.add_module_item_link.Button--icon-action:hover i,
+.add_assignment.Button--icon-action:hover i,
+.add_module_item_link.Button--icon-action:hover svg {
+   color: #0D5EA0 !important;
+}
+
+/* Hover- og active-tilstand for interaksjon med svart kantlinje */
+.add_module_item_link.Button--icon-action:hover,
+.add_assignment.Button--icon-action:hover,
+.add_module_item_link.Button--icon-action:active,
+.add_assignment.Button--icon-action:active {
+  background-color: #FFFFFF !important;
+  color: #0D5EA0 !important;
+  text-decoration: none !important;
+  border: 1px solid #000000 !important;  /* svart kantlinje på hover/active */
+  box-sizing: border-box;                /* sikrer at knappens totale størrelse ikke "hopper" */
+}
+
+/* Tilgjengelighet: Fokus-ramme for tastaturnavigasjon (WCAG) */
+/* Replikert fra Canvas' primærknapper for konsistent utseende */
+.add_module_item_link.Button--icon-action:focus-visible,
+.add_assignment.Button--icon-action:focus-visible {
+  outline: 2px solid transparent;  /* Beholder outline i tvungen fargemodus */
+  outline-offset: 2px;             /* (valgfritt) for å matche visuell avstand */
+  box-shadow: 0 0 0 2px #ffffff,
+              0 0 0 4px #0D5EA0 !important;
+  z-index: 1;
+}
+
+
+
+/* Hover / focus — use the requested HEX background */
+header#header .ic-app-header__menu-list-link:hover,
+header#header .ic-app-header__menu-list-link:focus {
+  background-color: #545B63; /* requested hover/focus color */
+  color: #FFFFFF;            /* keep text/icons white on hover */
+  text-decoration: none;     /* keep existing behavior; adjust if needed */
+}
+
+/* Fjerner grå bakgrunn på aktivt menyvalg ved hover og fokus */
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link:hover,
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link:focus {
+    background-color: #ffffff !important;
+}
+
+
+/* Endrer farge på tekst og venstre kantlinje for aktive navigasjonslenker */
+.list-view a.active {
+    color: #000000 !important;
+    border-left: 2px solid #000000 !important;
+}
+
+/* Endrer farge og tykkelse på sidetitler (H1) i undersider */
+.pages.show .page-title {
+    color: #0E1721 !important;
+    font-weight: 400 !important;
 }
 
 /* */
@@ -209,6 +315,9 @@ img.float-right { padding-left: 10px; }
 .uio-color-box-1,
 .uio-color-box-2,
 .uio-color-box-3,
+.uio-color-box-4,
+.uio-color-box-5,
+.uio-color-box-6,
 .uio-litteraturlisteboks,
 .uio-infoboks,
 .uio-oppgaveboks {
@@ -216,10 +325,12 @@ img.float-right { padding-left: 10px; }
 	padding: 10px 10px 0px 10px;
 	background-color: #fafafa;
 	display: flow-root;
-	border-radius: 5px;
+	border-radius: 6px;
 	margin-bottom: 30px;
 	border: 1px solid #ddd;
 	border-top: 10px solid var(--uio-bluetone);
+	box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
 }
 
 .uio-oppgaveboks {
@@ -302,7 +413,19 @@ details {
 	border-top: 10px solid var(--uio-bluetone);
 	border-bottom: 5px solid var(--uio-bluetone);
 }
+.uio-color-box-4 {
+	border-top: 10px solid var(--uio-red);
+    background-color: var(--uio-redtone);
+}
 
+.uio-color-box-5 {
+	border-top: 10px solid var(--uio-red);
+}
+
+.uio-color-box-6 {
+	border-top: 10px solid var(--uio-redtone);
+	border-bottom: 5px solid var(--uio-redtone);
+}
 .do {
 	border-top: 10px solid #d0e6bc;
 	border-bottom: 5px solid #d0e6bc;
@@ -319,13 +442,6 @@ details {
 	border-top: 10px solid #bedee5;
 	border-bottom: 5px solid #bedee5;
 	background: url("./images/ikon-info.svg") calc(100% - 10px) 10px no-repeat;
-	background-size: 30px;
-}
-
-.viktig {
-	border-top: 10px solid #f5c6cb; /* light red */
-	border-bottom: 5px solid #f5c6cb;
-	background: url("./images/ikon-viktig.svg") calc(100% - 10px) 10px no-repeat;
 	background-size: 30px;
 }
 

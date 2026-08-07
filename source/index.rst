@@ -36,6 +36,7 @@ Velkommen til grunnkurs i generativ KI!
    module3/strategier-for-a-kvalitetssikre-ki-generert-innhold
    module3/instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil
    module3/prinsipper-for-gode-instruksjoner
+   module3/praktisk-ovelse-forbedre-instruksjoner
    module3/nyttige-instruksjons-teknikker
    module3/praktisk-ovelse-forbedre-egne-instruksjoner
    module3/tips-om-pre-instruksjon-og-ki-assistenter

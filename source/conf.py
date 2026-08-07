@@ -64,13 +64,21 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# Custom CSS files
+# Custom CSS files.
+# The first block are Canvas's own stylesheets, downloaded from a live Canvas
+# page's dev tools, so the local build renders with the same styling as Canvas.
+# Filenames have the Canvas cache-busting hash stripped. Order mirrors Canvas's
+# cascade (variables -> fonts -> framework -> app -> page), and our own
+# custom.css is kept LAST so local-preview tweaks win.
 html_css_files = [
-    'variables.css',
-    'common.css',
-    'uio-global-override.css',
-    'custom.css',
-    'simplepdf.css',  # PDF-specific styling
+    'variables.css',            # CSS custom properties (must load first)
+    'fonts.css',                # @font-face declarations
+    'common.css',               # Canvas base/framework bundle
+    'canvas.css',               # Canvas app-wide styles
+    'wiki_page.css',            # Canvas wiki/course page styles
+    'uio-global-override.css',  # UiO institutional overrides
+    'custom.css',               # our own local-preview tweaks (keep last)
+    'simplepdf.css',            # PDF-specific styling
 ]
 
 # Custom JavaScript files
