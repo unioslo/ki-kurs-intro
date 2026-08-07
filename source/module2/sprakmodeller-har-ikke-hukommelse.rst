@@ -9,7 +9,7 @@ Det betyr at språkmodellene prosesserer hele samtalen på nytt for hver instruk
 
 
 Korte samtaler gir bedre svar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar.
 Særlig når du bytter tema, er det viktig å starte en ny samtale.
@@ -21,9 +21,12 @@ Men selv om du ikke skifter tema, kan modellen gi dårligere svar når samtalen 
 Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [:ref:`Laban <Laban>`]
 En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.
 
-Språkmodellene er dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
+I tillegg er språkmodellene er dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
 Derfor bør du sørge for at gale svar ikke blir liggende i samtalen.
-Det kan du gjøre ved å redigere spørsmål som du får feil svar på.
-Trykk på rediger-knappen, ✏️, og legg til informasjon som modellen trenger for å svare riktig.
-Revider instruksjonen til du får et svar uten feil.
+
+.. uio-do:: Tips
+
+    Rediger spørsmål som du får feil svar på.
+    Trykk på rediger-knappen, ✏️, og legg til informasjon som modellen trenger for å svare riktig.
+    Revider instruksjonen til du får et svar uten feil.
 
