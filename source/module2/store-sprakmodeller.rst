@@ -8,7 +8,8 @@ Kapittel 2 handler om hvordan store språkmodeller lager tekst og hvilke svakhet
     :width: 100%
     :alt: Illustrasjon av en språkmodell-maskin - trening inn, svar ut
 
-    Illustrasjon: Tina Morønning Ruud
+    Illustrasjon: Hvordan store språkmodeller fungerer. 
+     Illustratør:   Tina Morønning Ruud
 
 .. uio-colorbox-1:: Etter kapitellet kan du:
 
