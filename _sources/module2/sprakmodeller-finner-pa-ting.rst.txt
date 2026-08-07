@@ -55,7 +55,7 @@ Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt
 
    Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?
 
-   .. uio-answer::
+   .. uio-answer:: Klikk for mulig svar
 
       Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
       Hvis det ikke er mulig å finne kilden, er opplysningen ofte feil.
