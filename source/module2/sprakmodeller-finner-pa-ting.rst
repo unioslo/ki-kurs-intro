@@ -18,7 +18,7 @@ Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår sel
 Du må alltid sjekke fakta med en pålitelig kilde.
 
 Hvorfor skjer det?
-~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
 Det er mange årsaker til at modellene finner på ting.
 Dette er noen av dem:
@@ -35,7 +35,7 @@ Dette er noen av dem:
    Det er en iboende egenskap ved hvordan språkmodeller fungerer.
 
 Hva med internett-søk?
-~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
 Men det garanterer ikke at svaret er riktig.
@@ -58,5 +58,5 @@ Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt
    .. uio-answer:: Klikk for mulig svar
 
       Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
-      Hvis det ikke er mulig å finne kilden, er opplysningen ofte feil.
+      Hvis det ikke er mulig å finne kilden, er opplysningen sannsynligvis feil.
 
