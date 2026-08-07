@@ -11,8 +11,8 @@ Kapittel 3 handler om å hvordan du bruker KI på en god måte. Du vil lære hvo
     Illustrasjon: Tina Morønning Ruud
 
 
-.. uio-colorbox-1:: Etter dette kapitellet kan du:
+.. uio-colorbox-1:: Læringsmål:
 
-    * Strategier for å kvalitetssikre KI-generert innhold
-    * Skrive gode og effektive instruksjoner (promts)
+    * Jeg kan strategier for å kvalitetssikre KI-generert innhold
+    * Jeg kan skrive gode og effektive instruksjoner (promts)
 
