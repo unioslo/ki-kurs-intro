@@ -1,7 +1,7 @@
 Store språkmodeller 
 ================================
 
-I dette kapittelet vil du øke forståelsen din for hvordan store språkmodeller (også kalt LLM-er for Large Language Model) genererer tekst, og hvilke svakheter modellen har når den svarer deg. Denne kunnskapen er nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
+Kapittel 2 handler om hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Denne kunnskapen er nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
 
 .. figure:: ../images/2.2-llm-machinery.png
     :align: center
@@ -10,9 +10,8 @@ I dette kapittelet vil du øke forståelsen din for hvordan store språkmodeller
 
     Illustrasjon: Tina Morønning Ruud
 
-.. uio-colorbox-1:: Etter dette kapitellet kan du:
+.. uio-colorbox-1:: Etter kapitellet kan du:
 
-    * Forklare hvordan store språkmodeller generer tekst
-    * Forklare hvorfor store språkmodeller ikke er pålitelige kunnskapsbaser
-    * Gjenkjenne når språkmodellene kan gi feil informasjon
+    * Forklare hvordan store språkmodeller generer tekst, og hvilke innebygde svakheter den har
+    * Gjenkjenne når språkmodellene gir feil informasjon
 
