@@ -1,7 +1,7 @@
 Store språkmodeller 
 ================================
 
-Kapittel 2 handler om hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Denne kunnskapen er nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
+I kapittel 2 er tema hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Denne kunnskapen er nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
 
 .. figure:: ../images/2.2-llm-machinery.png
     :align: center
