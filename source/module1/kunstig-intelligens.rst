@@ -7,9 +7,9 @@ Det kan for eksempel være å forstå tekst, kjenne igjen bilder, tolke tale ell
 
 For at kunstig intelligens skal kunne utføre denne type oppgaver trener den på enorme mengder eksempler fra tekst, bilder eller lyd. Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:
 
-      - foreslå neste ord i en tekst
-      - gjenkjenne hva som er på et bilde
-      - forstå innholdet i et lydopptak
+- foreslå neste ord i en tekst
+- gjenkjenne hva som er på et bilde
+- forstå innholdet i et lydopptak
 
 
 Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker forteller nøyaktig hva det skal lære. 

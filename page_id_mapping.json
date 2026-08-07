@@ -313,5 +313,19 @@
     "title": "Prøv selv!",
     "module_id": 243065,
     "module_name": "Prøv selv!"
+  },
+  "module1/intro-til-kurset.html": {
+    "page_id": 423432,
+    "url": "grunnkurs-ki-documentation",
+    "title": "<no title> — Grunnkurs KI  documentation",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "module3/praktisk-ovelse-forbedre-instruksjoner.html": {
+    "page_id": 423433,
+    "url": "praktisk-ovelse-forbedre-instruksjoner-5",
+    "title": "Praktisk øvelse: Forbedre instruksjoner",
+    "module_id": "N/A",
+    "module_name": "N/A"
   }
 }
