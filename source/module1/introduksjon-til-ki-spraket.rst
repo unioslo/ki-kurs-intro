@@ -12,7 +12,7 @@ Første kapittel er en introduksjon til fire viktiger begreper i "KI-språket".
     Illustrasjon: Tina Morønning Ruud
 
 
-.. uio-colorbox-1:: Mål for kapittelet:
+.. uio-colorbox-1:: Læringsmål:
 
        * Jeg forstår sentrale begreper innenfor kunstig intelligens 
    
