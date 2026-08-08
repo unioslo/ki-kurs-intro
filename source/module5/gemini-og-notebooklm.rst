@@ -43,5 +43,6 @@ Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
 
    * `Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm>`_
    * `Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_ 
+   * `Google Workspace <https://www.uio.no/tjenester/it/lagring-samarbeid/googleworkspace/>`_
 
    Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med Gemini Notebook og Gemini.

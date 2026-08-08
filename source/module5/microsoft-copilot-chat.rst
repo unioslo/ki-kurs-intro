@@ -36,10 +36,12 @@ Vi anbefaler at du heller bruker en av de andre KI-tjenestene, for å unngå å 
 
 .. uio-colorbox-1:: Nøkkelpunkter
 
-    * Microsoft sin egen KI tjeneste
-    * Generering av tekst, bilder og videoer
-    * Kun godkjent for grønne data
-    * Databehandleravtale på plass
+   * Microsoft sin egen KI tjeneste
+   * Generering av tekst, bilder og videoer
+   * Kun godkjent for grønne data
+   * Databehandleravtale på plass
+   * Tilgjengelig med UiO konto
+   * Ansatte må være aktiv bruker av MS 365 
 
 .. uio-dont:: Viktig
 
