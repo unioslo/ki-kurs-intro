@@ -1,7 +1,8 @@
 KI-tjenester ved UiO
 ====================
 
-UiO tilbyr en rekke godkjente KI-verktøy. I dette kapittelet lærer du om disse verktøyene, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
+UiO tilbyr en rekke godkjente KI-verktøy. 
+I dette kapittelet lærer du om disse verktøyene, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
 
 .. figure:: ../images/4.1-AI-tools.png
     :align: center
@@ -12,8 +13,8 @@ UiO tilbyr en rekke godkjente KI-verktøy. I dette kapittelet lærer du om disse
     Illustrasjon: Tina Morønning Ruud
 
 
-.. uio-colorbox-1:: Etter dette kapitellet kan du:
+.. uio-colorbox-1:: Læringsmål
 
     * Jeg vet hvilke UiO-data som kan deles med godkjente KI-tjenester
     * Jeg kan velge riktig KI-tjeneste basert på behov og datasikkerhetsnivå
-    * Jeg vet hvotdan jeg får tilgang til og bruker ulike godkjente KI-verktøy 
+    * Jeg vet hvordan jeg får tilgang til og bruker ulike godkjente KI-verktøy 
