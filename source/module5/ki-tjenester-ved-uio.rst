@@ -1,20 +1,20 @@
 KI-tjenester ved UiO
 ====================
 
-Kapittel 6 handler om KI-verktøy som er godkjente på UiO. Universitetet i Oslo tilbyr en rekke godkjente KI-verktøy. 
+Kapittel 6 handler om KI-verktøy som er godkjente på UiO.
 I dette kapittelet lærer du om disse verktøyene, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
 
 .. figure:: ../images/4.1-AI-tools.png
     :align: center
-    :width: 100%
+    :width: 80%
     :alt: Illustrasjon av en verktøyboks
     :class: bordered
     
     Illustrasjon: Tina Morønning Ruud
 
 
-.. uio-colorbox-1:: Etter dette kapitellet kan du:
+.. uio-colorbox-1:: Læringsmål
 
     * Jeg vet hvilke UiO-data som kan deles med godkjente KI-tjenester
     * Jeg kan velge riktig KI-tjeneste basert på behov og datasikkerhetsnivå
-    * Jeg vet hvotdan jeg får tilgang til og bruker ulike godkjente KI-verktøy 
+    * Jeg vet hvordan jeg får tilgang til og bruker ulike godkjente KI-verktøy 

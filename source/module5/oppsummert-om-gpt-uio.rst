@@ -8,7 +8,7 @@ Oppsummert om GPT UiO
     * Tilgang til OpenAI's GPT modeller
     * Tilgang til åpne modeller som kjører i Norge og hvor ingen data forlater UiO eller vår samarbeidspartner NTNU
     * Støtter opptil røde data
-    * Gratis for ansatte og studenter ved UiO
+    * Tilgjengelig med din UiO konto
 
 .. uio-source::  Lenke til UiOs tjenesteside
 
