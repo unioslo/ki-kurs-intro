@@ -3,7 +3,8 @@ Microsoft Copilot Chat
 =======================
 
 Microsoft Copilot Chat ved UiO fungerer som en vanlig chattetjeneste med tilgang til nettsøk. 
-Den kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video. 
+Tjenesten bruker GPT-språkmodellene fra  `OpenAI <https://openai.com/nb-NO/>`_.
+Chatten kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video. 
 Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hjelper deg i gang, og er derfor godt egnet hvis du ønsker KI-assistanse som er intuitiv og enkel å bruke.
 
 UiO har bare godkjent Copilot for grønne data.
