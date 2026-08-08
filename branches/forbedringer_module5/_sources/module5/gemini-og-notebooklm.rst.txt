@@ -8,7 +8,7 @@ Gemini
 --------------
 
 Gemini er Google sin generelle KI-chat.
-Språkmodellen som benyttes i bakkant kalles også Gemini, og er en serie med språkmodeller som Google (`DeepMind <https://deepmind.google/>`_) selv har utviklet. 
+Språkmodellen som benyttes i bakkant kalles også Gemini, og er en serie med språkmodeller som Google (`DeepMind <https://deepmind.google/>`_) har utviklet. 
 
 I motsetning til GPT UiO kan Gemini hente informasjon fra nettsider.
 Det betyr at den er bedre til å svare på spørsmål om fakta enn GPT UiO.
