@@ -5,7 +5,7 @@ UiO tilbyr en rekke godkjente KI-verktøy. I dette kapittelet lærer du om disse
 
 .. figure:: ../images/4.1-AI-tools.png
     :align: center
-    :width: 100%
+    :width: 80%
     :alt: Illustrasjon av en verktøyboks
     :class: bordered
     
