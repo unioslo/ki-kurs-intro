@@ -1,7 +1,7 @@
 KI-tjenester ved UiO
 ====================
 
-UiO tilbyr en rekke godkjente KI-verktøy. 
+Kapittel 6 handler om KI-verktøy som er godkjente på UiO.
 I dette kapittelet lærer du om disse verktøyene, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
 
 .. figure:: ../images/4.1-AI-tools.png
