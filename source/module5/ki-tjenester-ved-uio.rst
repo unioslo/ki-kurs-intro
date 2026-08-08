@@ -13,8 +13,8 @@ I dette kapittelet lærer du om disse verktøyene, hvorfor det er viktig å bruk
     Illustrasjon: Tina Morønning Ruud
 
 
-.. uio-colorbox-1:: Etter dette kapitellet kan du:
+.. uio-colorbox-1:: Læringsmål
 
     * Jeg vet hvilke UiO-data som kan deles med godkjente KI-tjenester
     * Jeg kan velge riktig KI-tjeneste basert på behov og datasikkerhetsnivå
-    * Jeg vet hvotdan jeg får tilgang til og bruker ulike godkjente KI-verktøy 
+    * Jeg vet hvordan jeg får tilgang til og bruker ulike godkjente KI-verktøy 
