@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunstig intelligens &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc1071ef" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Generativ KI" href="generativ-ki.html" />
+    <link rel="prev" title="Introduksjon til “KI-språket”" href="introduksjon-til-ki-spraket.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="kunstig-intelligens">
+<h1>Kunstig intelligens</h1>
+<p>Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens.
+Det kan for eksempel være å forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall.</p>
+<p>For at kunstig intelligens skal kunne utføre denne type oppgaver trener den på enorme mengder eksempler fra tekst, bilder eller lyd. Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:</p>
+<ul class="simple">
+<li>foreslå neste ord i en tekst</li>
+<li>gjenkjenne hva som er på et bilde</li>
+<li>forstå innholdet i et lydopptak</li>
+</ul>
+<p>Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker forteller nøyaktig hva det skal lære.</p>
+<div class="uio-color-box-3">
+<h3>Fordypning for de nysgjerrige</h3>
+<details>
+<summary><strong>Litt historie om kunstig intelligens</strong></summary>
+<p>Kunstig intelligens (KI) er ikke noe nytt. Forskere begynte å jobbe med KI allerede på 1950-tallet, og i 1956 ble KI etablert
+som et eget forskningsfelt.
+Det som er nytt, er hvor kraftig og tilgjengelig KI har blitt de siste årene.
+Da ChatGPT kom i 2022,
+var det et tydelig vendepunkt. I stedet for «dumme chatbotter» som bare kunne svare på helt enkle spørsmål, fikk vi plutselig
+et verktøy som kunne:</p>
+<ul class="simple">
+<li>skrive lange tekster</li>
+<li>svare på komplekse spørsmål</li>
+<li>formulere seg på en måte som ligner et menneske</li>
+</ul>
+<p>Denne utviklingen har vært mulig på grunn av tre viktige ting:
+1. Store datamengder:  KI kan trenes på enorme mengder tekst, bilder og lyd fra internett, bøker, artikler osv.
+2. Kraftig maskinvare: Spesielle prosessorer (GPU-er) kan behandle veldig mye data samtidig.
+3. Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at KI kan lære mer effektivt.</p>
+</details>
+<details>
+<summary><strong>Maskinlæring</strong></summary>
+<p>Mennesker lærer ved erfaring. Maskinlæring er det samme prinsippet, bare for dataprogrammer.
+I stedet for å lære av erfaring, lærer programmet av data.
+Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
+maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv.</p>
+<p>Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer.</p>
+<div class="uio-color-box-2">
+<h3>Tradisjonell programmering foregår slik:</h3>
+<ul class="simple">
+<li>Et menneske lager klare regler eller algoritmer: «Hvis X skjer, gjør Y».</li>
+<li>Programmet får input, og bruker reglene på den.</li>
+<li>Programmet gir deg resultatet.</li>
+</ul>
+<p>Eksempel på tradisjonell programmering:
+Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.</p>
+</div>
+<div class="uio-color-box-2">
+<h3>Maskinlæring løser et problem slik:</h3>
+<p>I maskinlæring er regelen eller algoritmen ukjent, og det vi ønsker å lære.</p>
+<ul class="simple">
+<li>Vi har mange eksempler på input</li>
+<li>Hvert eksempel har også et ønsket resultat (output)</li>
+<li>I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.</li>
+</ul>
+<p>Eksempel:
+Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som «hund» eller «katt».
+Systemet lærer da en regel/algoritme som kan gjette riktig merkelapp for bilder det aldri har sett før.</p>
+</div>
+</details>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="introduksjon-til-ki-spraket.html">← Forrige</a></div><div class="next-link"><a href="generativ-ki.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
