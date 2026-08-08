@@ -7,7 +7,7 @@ Første kapittel er en introduksjon til fire viktiger begreper i "KI-språket".
 .. figure:: ../images/1.1-studying-the-basics.png
     :align: center
     :width: 65%
-    :alt: Illustrasjon av en person som leser en bok om KI 101 - som er plugget inn i strømuttak
+    :alt: Illustrasjon av en person som leser en bok om KI ABC - som er plugget inn i strømuttak
 
     Illustrasjon: Tina Morønning Ruud
 
