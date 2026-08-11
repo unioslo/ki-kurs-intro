@@ -28,7 +28,7 @@ I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se 
             :width: 75%
             :alt: Meny i GPT som viser de forskjellige språkmodellene man kan velge blant
 
-      Klikk på nedover-pilen for å se hvilke språkmodeller du kan velge mellom.
+      Klikk på nedover-pilen (markert i rødt) for å se hvilke språkmodeller du kan velge mellom.
 
 
    .. uio-detail:: Eksempel på språkmodeller i modellvelgeren
