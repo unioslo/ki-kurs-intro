@@ -12,6 +12,13 @@ Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:
 
 KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som gjør forskjellen.
 
+.. figure:: ../images/5.1-faces.png
+    :align: center
+    :width: 80%
+    :alt: Ansiktene til personen og roboten
+
+    Illustrasjon: Tina Morønning Ruud
+
 
 Prøv selv!
 ------------
