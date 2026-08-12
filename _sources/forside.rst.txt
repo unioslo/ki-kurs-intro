@@ -18,7 +18,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 
 Se for deg et rom fullt av ekstra ansatte som er klare til å hjelpe deg! Ansatte som raskt kan lese, analysere, behandle, oppsummere, sortere, skrive utkast, oversette, forenkle, lage forslag eller hente fram relevant informasjon for deg.
 Kunstig intelligens kan være dette rommet med ekstra ansatte.
-Dette rommet med digitale hjelpere kan for eksempel:
+Disse digitale hjelpere kan for eksempel:
 
 - lage utkast som du kan kvalitetssikre og forbedre
 - gi deg oversikter før du går i dybden
