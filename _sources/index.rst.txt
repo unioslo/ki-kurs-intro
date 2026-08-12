@@ -4,6 +4,14 @@ Grunnkurs i generativ KI
 Velkommen til grunnkurs i generativ KI!
 
 
+.. Canvas course front page. Built to forside.html (outside module*/) and pushed
+   to Canvas via: python update_canvas_pages.py --front-page
+.. toctree::
+   :hidden:
+
+   forside
+
+
 .. toctree::
    :maxdepth: 1
    :caption: Episode 1: Grunnbegreper i kunstig intelligens
@@ -34,7 +42,6 @@ Velkommen til grunnkurs i generativ KI!
    module3/hvordan-bruke-ki-pa-en-god-mate
    module3/nar-kan-du-stole-pa-generativ-ki
    module3/strategier-for-a-kvalitetssikre-ki-generert-innhold
-   module3/instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil
    module3/prinsipper-for-gode-instruksjoner
    module3/praktisk-ovelse-forbedre-instruksjoner
    module3/nyttige-instruksjons-teknikker
