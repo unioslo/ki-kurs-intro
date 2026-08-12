@@ -74,6 +74,32 @@ UTILITIES:
     python update_canvas_pages.py --dry-run
     python update_canvas_pages.py --module 2 --add-to-modules --dry-run
 
+FRONT PAGE:
+    The course front page is a special Canvas wiki page that lives outside all
+    modules. Its source is source/forside.rst, which Sphinx builds to
+    forside.html at the root of the HTML build (not under module*/), so it is
+    never swept up with the module pages. It is pushed via Canvas's dedicated
+    /front_page endpoint (no page_id or mapping entry needed).
+
+    # Bootstrap: download the current Canvas front page HTML to seed forside.rst
+    python update_canvas_pages.py --fetch-front-page
+    python update_canvas_pages.py --fetch-front-page my_dump.html
+
+    # Build source/forside.rst (make html) then push it to the Canvas front page
+    python update_canvas_pages.py --front-page
+    python update_canvas_pages.py --front-page --dry-run
+    python update_canvas_pages.py --front-page --from-github
+
+    The "Kapitler" chapter icons are generated locally from the uio-chapter-card
+    entries in source/forside.rst (forside.rst is the single source of truth: the
+    card's :title:, :icon_filename: and :icon_color:, and its position for the
+    chapter number). --front-page regenerates the icons so they always match the
+    cards; push the refreshed icons to Canvas with --upload-icons:
+
+    # Regenerate icons from forside.rst and upload them to 'Ikonskaper-ikoner'
+    python update_canvas_pages.py --upload-icons
+    python update_canvas_pages.py --upload-icons --dry-run
+
 GITHUB DEPLOYMENT:
     # Generate mapping from GitHub html-pages branch (no local build needed)
     python update_canvas_pages.py --generate-mapping --from-github
@@ -151,6 +177,13 @@ HTML_BRANCH = "html-pages"
 
 # Mapping file to store filename -> page_id relationships
 MAPPING_FILE = Path(__file__).parent / "page_id_mapping.json"
+
+# The course front page is a special Canvas wiki page that lives outside all
+# modules. Its RST source is source/forside.rst, which Sphinx builds to
+# forside.html at the root of the HTML build (not under module*/), so it is
+# never picked up by the module*/*.html sweep. It is pushed to Canvas through
+# the dedicated /front_page endpoint (see update_front_page).
+FRONT_PAGE_HTML = "forside.html"
 
 # Simple path resolution: try current dir first, then parent
 HTML_DIR = Path("_build/html")
@@ -2469,20 +2502,298 @@ def download_icons(token, folder_name="Ikonskaper-ikoner"):
     print(f"Downloading {len(files)} file(s) from '{folder_name}' to {dest_dir}")
 
     downloaded = 0
+    # Collect (name, file_id) so the exact Canvas display names and IDs can be
+    # used in uio-chapter-card directives (:icon_filename: / :icon_file_id:).
+    downloaded_files = []
     for f in files:
         name = f.get('display_name') or f.get('filename')
+        file_id = f.get('id')
         url = f.get('url')
         if not name or not url:
             continue
         file_response = requests.get(url, headers=headers)
         if file_response.status_code == 200:
             (dest_dir / name).write_bytes(file_response.content)
-            print(f"- {name}")
+            print(f"- {name} (file_id: {file_id})")
+            downloaded_files.append((name, file_id))
             downloaded += 1
         else:
             print(f"- Failed: {name} (Status: {file_response.status_code})")
 
     print(f"Done: {downloaded}/{len(files)} downloaded to {dest_dir}")
+
+    if downloaded_files:
+        # Print a ready-to-copy reference so the exact names/IDs can be wired
+        # into chapter cards (these names must match :icon_filename: exactly,
+        # or pin :icon_file_id: to avoid name matching entirely).
+        print("\nIcon reference for uio-chapter-card directives:")
+        for name, file_id in downloaded_files:
+            print(f"    :icon_filename: {name}")
+            print(f"    :icon_file_id: {file_id}")
+
+
+def get_front_page(token):
+    """Fetch the course's designated front page from Canvas.
+
+    Uses GET /api/v1/courses/:course_id/front_page, which returns whichever
+    wiki page is currently set as the course front page.
+
+    Returns:
+        The page dict (with 'title', 'url', 'body', 'page_id', ...) or None.
+    """
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/front_page"
+    headers = {"Authorization": f"Bearer {token}"}
+
+    response = requests.get(api_endpoint, headers=headers)
+
+    if response.status_code == 200:
+        return response.json()
+    elif response.status_code == 404:
+        print("No front page is currently set for this course.")
+        print("Set one in Canvas (Pages -> ... -> Use as Front Page) first.")
+        return None
+    else:
+        print(f"Error: Failed to fetch front page (Status: {response.status_code})")
+        print(f"Response: {response.text}")
+        return None
+
+
+def fetch_front_page(token, dest=None):
+    """Download the current Canvas front-page HTML body to a local file.
+
+    This is a bootstrap helper for pages that were authored directly in Canvas:
+    it saves the live HTML so it can be reviewed and converted into
+    source/forside.rst. It does NOT modify Canvas.
+
+    Args:
+        token: Canvas API token
+        dest: Optional output path (default: forside_canvas.html next to this script)
+    """
+    page = get_front_page(token)
+    if not page:
+        return
+
+    body = page.get('body') or ''
+    title = page.get('title', '')
+    url = page.get('url', '')
+
+    if dest is None:
+        dest = Path(__file__).parent / "forside_canvas.html"
+    else:
+        dest = Path(dest)
+
+    dest.write_text(body, encoding='utf-8')
+
+    print(f"Front page title: {title}")
+    print(f"Front page URL:   {url}")
+    print(f"Saved current Canvas front-page HTML to: {dest}")
+    print("\nReview this file and port the content into source/forside.rst")
+    print("(illustration, intro text, 'Slik jobber du med kurset', 'Kapitler' box).")
+
+
+def update_front_page(token, content, title=None, dry_run=False):
+    """Update the course front page via the dedicated front_page endpoint.
+
+    Uses PUT /api/v1/courses/:course_id/front_page, which always targets
+    whichever page is currently set as the course front page - no page_id or
+    mapping entry needed. Canvas requires the front page to be published, so
+    we always send published=True.
+
+    Args:
+        token: Canvas API token
+        content: Page body HTML
+        title: Optional new title
+        dry_run: If True, don't make actual changes
+
+    Returns: (success, actual_page_url, updated_at)
+    """
+    api_endpoint = f"{CANVAS_URL}/api/v1/courses/{COURSE_ID}/front_page"
+
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+
+    wiki_page = {
+        "body": content,
+        "published": True  # A front page must stay published
+    }
+    if title:
+        wiki_page["title"] = title
+
+    data = {"wiki_page": wiki_page}
+
+    if dry_run:
+        title_msg = f" (title: {title})" if title else ""
+        print(f"[DRY RUN] Would update course front page{title_msg}")
+        return True, None, None
+
+    response = requests.put(api_endpoint, headers=headers, json=data)
+
+    if response.status_code == 200:
+        try:
+            response_data = response.json()
+            if "message" in response_data or "errors" in response_data:
+                print(f"Failed to update front page (Status: {response.status_code})")
+                print(f"Response: {response.text}")
+                return False, None, None
+
+            actual_url = response_data.get('url')
+            updated_at = response_data.get('updated_at', 'N/A')
+
+            title_msg = f" (title: {title})" if title else ""
+            print(f"Updated course front page{title_msg}")
+            print(f"Canvas URL: {actual_url}")
+            return True, actual_url, updated_at
+        except Exception as e:
+            print(f"Warning: Could not parse response: {e}")
+            return True, None, None
+    else:
+        print(f"Failed to update front page (Status: {response.status_code})")
+        print(f"Response: {response.text}")
+        return False, None, None
+
+
+def sync_icons(dry_run=False):
+    """Regenerate the chapter icons so they match the cards in source/forside.rst.
+
+    forside.rst is the single source of truth: each uio-chapter-card supplies the
+    title, icon filename and icon colour, and the card's position gives the chapter
+    number. build_icons.generate_icons() re-renders every SVG from those cards, so
+    whenever a title, number, colour or icon file changes the icon changes with it.
+
+    Returns the list of chapter dicts (as parsed from forside.rst), or None if the
+    generator could not run.
+    """
+    try:
+        import build_icons
+    except Exception as e:
+        print(f"Warning: could not import build_icons to regenerate icons: {e}")
+        print("Chapter icons may be out of sync with source/forside.rst.")
+        return None
+
+    try:
+        chapters = build_icons.parse_chapters()
+    except Exception as e:
+        print(f"Warning: could not read chapters from forside.rst: {e}")
+        return None
+
+    if dry_run:
+        print(f"[DRY RUN] Would regenerate {len(chapters)} icon(s) from "
+              "source/forside.rst to match chapter title/number/colour:")
+        for ch in chapters:
+            print(f"    {ch['icon_filename']}  (nr {ch['number']}, "
+                  f"{ch['icon_color']}, \"{ch['title']}\")")
+        return chapters
+
+    print("Regenerating chapter icons from source/forside.rst "
+          "(keeps number/title/colour in sync)...")
+    build_icons.generate_icons(verbose=True)
+    return chapters
+
+
+def upload_icons(token, dry_run=False):
+    """Regenerate the chapter icons and upload them to the Canvas icon folder.
+
+    Ensures the icons on Canvas reflect the current chapter cards, then pushes
+    every referenced icon SVG to the 'Ikonskaper-ikoner' folder (overwriting
+    same-named files). Chapter cards resolve the icon by display name at upload
+    time, so the filename in Canvas must match :icon_filename: in forside.rst.
+    """
+    chapters = sync_icons(dry_run=dry_run)
+    if not chapters:
+        print("No icons to upload.")
+        return
+
+    icon_dir = Path(__file__).parent / "source" / "_static" / "icons"
+    folder_name = "Ikonskaper-ikoner"
+
+    filenames = [ch['icon_filename'] for ch in chapters if ch['icon_filename']]
+    print(f"\nUploading {len(filenames)} icon(s) to Canvas folder "
+          f"'{folder_name}'...")
+
+    uploaded = 0
+    for filename in filenames:
+        icon_path = icon_dir / filename
+        if not icon_path.exists():
+            print(f"- Skipping {filename}: not found in {icon_dir}")
+            continue
+        if dry_run:
+            print(f"- [DRY RUN] Would upload {filename}")
+            uploaded += 1
+            continue
+        file_id, _ = upload_file_to_canvas(token, icon_path, folder_path=folder_name)
+        if file_id:
+            print(f"- {filename} (file_id: {file_id})")
+            uploaded += 1
+        else:
+            print(f"- Failed: {filename}")
+
+    if dry_run:
+        print(f"\n[DRY RUN] Would upload {uploaded}/{len(filenames)} icon(s).")
+    else:
+        print(f"\nDone: {uploaded}/{len(filenames)} icon(s) uploaded to "
+              f"'{folder_name}'.")
+        print("Rebuild the front page to reference them: "
+              "python update_canvas_pages.py --front-page")
+
+
+def handle_front_page(token, args, html_dir):
+    """Build the front page from forside.html and push it to the Canvas front page.
+
+    Runs the same content pipeline as ordinary pages (image upload, download
+    links, internal cross-reference resolution, chapter-card resolution), then
+    uploads via the dedicated front_page endpoint.
+
+    Args:
+        token: Canvas API token
+        args: Parsed command-line arguments
+        html_dir: Base directory containing the built HTML (forside.html lives here)
+    """
+    html_file = Path(html_dir) / FRONT_PAGE_HTML
+
+    if not html_file.exists():
+        print(f"Error: Front-page HTML not found: {html_file}")
+        print("Make sure source/forside.rst exists and run 'make html' first.")
+        sys.exit(1)
+
+    print(f"Processing front page: {html_file}")
+
+    # Keep the chapter icons in sync with the cards in source/forside.rst before
+    # building the page, so a changed title / number / colour / icon file is
+    # reflected in the icons. Upload the refreshed icons with --upload-icons.
+    sync_icons(dry_run=args.dry_run)
+
+    # Load mapping so internal cross-reference links and chapter cards resolve
+    # to Canvas page URLs.
+    page_mapping = load_page_mapping()
+    if page_mapping:
+        print(f"Loaded {len(page_mapping)} page mappings")
+    else:
+        print(f"Warning: No mapping file found at {MAPPING_FILE}")
+        print("Internal links and chapter cards may not resolve. Run "
+              "--generate-mapping first for best results.\n")
+
+    # Extract content (uploads images, resolves links and chapter cards)
+    content = extract_content(html_file, token=token, page_mapping=page_mapping,
+                              dry_run=args.dry_run)
+
+    # Extract title from the h1 tag
+    title = extract_title(html_file)
+    if title:
+        print(f"Title: {title}")
+
+    success, _, _ = update_front_page(token, content, title, args.dry_run)
+
+    print()
+    if success:
+        if args.dry_run:
+            print("[DRY RUN] Front page would be updated. Run without --dry-run to apply.")
+        else:
+            print("Front page updated successfully!")
+    else:
+        print("Failed to update front page.")
+        sys.exit(1)
 
 
 def main():
@@ -2540,6 +2851,24 @@ def main():
         "--download-icons",
         action="store_true",
         help="Download Icon-Maker icons from the 'Ikonskaper-ikoner' Canvas folder into source/_static/icons/ (for local preview of chapter cards)"
+    )
+    parser.add_argument(
+        "--upload-icons",
+        action="store_true",
+        help="Regenerate the chapter icons from source/forside.rst (title/number/colour/filename) and upload them to the 'Ikonskaper-ikoner' Canvas folder. Respects --dry-run."
+    )
+    parser.add_argument(
+        "--front-page",
+        action="store_true",
+        help="Build source/forside.rst -> forside.html and update the Canvas course front page (via the dedicated front_page endpoint). Respects --dry-run and --from-github."
+    )
+    parser.add_argument(
+        "--fetch-front-page",
+        nargs="?",
+        const="forside_canvas.html",
+        default=None,
+        metavar="PATH",
+        help="Download the current Canvas front-page HTML to PATH (default: forside_canvas.html) to help seed source/forside.rst. Does not modify Canvas."
     )
     parser.add_argument(
         "--dry-run",
@@ -2645,6 +2974,48 @@ def main():
     if args.download_icons:
         token = get_api_token()
         download_icons(token)
+        return
+
+    # Handle upload-icons mode (regenerate icons from forside.rst, then upload)
+    if args.upload_icons:
+        token = get_api_token()
+        upload_icons(token, dry_run=args.dry_run)
+        return
+
+    # Handle fetch-front-page mode (bootstrap: download live front page HTML)
+    if args.fetch_front_page is not None:
+        token = get_api_token()
+        fetch_front_page(token, args.fetch_front_page)
+        return
+
+    # Handle front-page mode (build forside.html and push to Canvas front page)
+    if args.front_page:
+        print("\n" + "="*70)
+        print("UPDATE CANVAS FRONT PAGE")
+        if args.dry_run:
+            print("*** DRY RUN MODE - NO CHANGES WILL BE MADE ***")
+        print("="*70 + "\n")
+
+        token = get_api_token()
+
+        if args.from_github:
+            # Fetch forside.html from the GitHub html-pages branch
+            with tempfile.TemporaryDirectory(dir='/tmp') as temp_dir:
+                print(f"Using temporary directory: {temp_dir}\n")
+                fetch_html_pages_branch(temp_dir)
+                html_dir = Path(temp_dir) / "html"
+                if not html_dir.exists():
+                    print(f"Error: HTML directory not found: {html_dir}")
+                    sys.exit(1)
+                handle_front_page(token, args, html_dir)
+        else:
+            html_dir = Path(HTML_DIR)
+            if not html_dir.exists():
+                print(f"Error: HTML directory not found: {HTML_DIR}")
+                print("Please run 'make html' first to build the documentation")
+                sys.exit(1)
+            handle_front_page(token, args, html_dir)
+
         return
 
     # Handle list-pages mode

@@ -14,6 +14,8 @@ Skriptet `update_canvas_pages.py` kan automatisk oppdatere Canvas-sider basert p
 - ✅ **Automatisk opplasting av nedlastingsfiler**: `:download:`-filer (f.eks. PDF-er) lastes opp til Canvas
 - ✅ **Interaktiv ommapping**: `--remap` for å koble umappede filer til eksisterende Canvas-sider
 - ✅ **Ikke-interaktiv oppretting**: `--create-new` og `--no-placement-prompt` for kjøring uten spørsmål
+- ✅ **Forside (front page)**: `--front-page` bygger `source/forside.rst` og oppdaterer Canvas-forsiden via det dedikerte `/front_page`-endepunktet; `--fetch-front-page` laster ned den nåværende Canvas-forsiden for å hjelpe med å lage RST-en
+- ✅ **Lokalt genererte kapittelikoner**: `build_icons.py` lager «Kapitler»-ikonene lokalt fra `source/forside.rst` (kortenes tittel/rekkefølge/farge). `--upload-icons` regenererer og laster dem opp til Canvas-mappen `Ikonskaper-ikoner`
 
 ## Funksjonalitet
 
@@ -30,6 +32,8 @@ Skriptet gjør følgende:
 - **Automatisk håndtering av nedlastingsfiler**: Laster opp `:download:`-filer (PDF-er m.m.) og oppdaterer lenkene
 - **Automatisk håndtering av interne lenker**: Konverterer Sphinx cross-references til Canvas page URLs
 - **Modulhåndtering**: Filer i `moduleN/` blir automatisk tilordnet Module N
+- **Forside**: Bygger `source/forside.rst` og oppdaterer Canvas-forsiden via `/front_page`-endepunktet (`--front-page`)
+- **Kapittelikoner**: Genererer «Kapitler»-ikonene lokalt fra `source/forside.rst` og laster dem opp (`--upload-icons`)
 
 ## Sette opp API-nøkkel
 
@@ -327,93 +331,123 @@ Sphinx genererer da en HTML-lenke til en annen side, f.eks. `../module8/kilder.h
 
 hvor `kilder` er Canvas URL-en for siden som inneholder referansen. Skriptet prøver først full relativ sti (`module8/kilder.html`) og faller tilbake til bare filnavnet for bakoverkompatibilitet.
 
+## Forside (front page)
+
+Kursets forside er en egen Canvas-wiki-side som ligger utenfor alle moduler. Kilden er `source/forside.rst`, som Sphinx bygger til `forside.html` i roten av HTML-bygget (ikke under `module*/`, så den blir ikke feid med i modulsidene). Den pushes via Canvas' dedikerte `/front_page`-endepunkt – ingen `page_id` eller mapping-oppføring trengs.
+
+```bash
+# Bootstrap: last ned den nåværende Canvas-forsiden for å lage forside.rst
+python update_canvas_pages.py --fetch-front-page              # -> forside_canvas.html
+python update_canvas_pages.py --fetch-front-page my_dump.html # valgfritt filnavn
+
+# Bygg source/forside.rst (make html) og push til Canvas-forsiden
+python update_canvas_pages.py --front-page
+python update_canvas_pages.py --front-page --dry-run
+```
+
+`--front-page` kjører samme innholdspipeline som vanlige sider (bildeopplasting, nedlastingslenker, interne kryssreferanser, kapittelkort) og oppdaterer forsiden. Den **regenererer også kapittelikonene** fra `forside.rst` først (se under), slik at ikonene alltid stemmer med kortene. For å få de oppdaterte ikonene til Canvas må du i tillegg kjøre `--upload-icons`.
+
 ## Kapittelkort (`uio-chapter-card`)
 
-Direktivet `uio-chapter-card` lager et Canvas «kapittelkort»: et Icon-Maker-ikon (venstrestilt), en lenket overskrift og en kort beskrivelse.
+Direktivet `uio-chapter-card` lager et klikkbart kapittel-**felt i full bredde**: én bred ikon-SVG med kapittelnummeret til venstre og tittelen ved siden av, der hele feltet lenker til kapittelets første Canvas-side. Nummeret og tittelen er «bakt inn» i selve ikonet – det er **ingen egen overskriftstekst eller beskrivelse** under ikonet lenger. På forsiden stables feltene i full bredde inne i «Kapitler»-boksen.
 
 **Bruk i RST:**
 ```rst
 .. uio-chapter-card::
-   :title: Introduksjon til "KI-språket"
-   :icon_filename: kap2-ikon.svg
-   :icon_file_id: 3954816
+   :title: Grunnbegreper i kunstig intelligens
+   :icon_filename: ikon1.svg
+   :icon_color: #7ED321
    :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
-   :description: Kort beskrivelse
 ```
+
+### `source/forside.rst` er kilden (single source of truth)
+
+Ikonene genereres lokalt av `build_icons.py` direkte fra `uio-chapter-card`-oppføringene i `source/forside.rst`. Hvert kort beskriver ikonet sitt fullstendig:
+
+- `:title:` → tittelen som skrives inn i ikonet
+- `:icon_filename:` → filnavnet ikonet lagres/lastes opp som (må matche navnet i Canvas)
+- `:icon_color:` → bakgrunnsfargen på feltet (hex, f.eks. `#7ED321`)
+- **kortets posisjon** i «Kapitler»-listen → kapittelnummeret som bakes inn
+
+Endrer du tittel, farge, filnavn eller rekkefølge på et kort, endres ikonet tilsvarende når du regenererer. Det finnes ingen egen kapittel-tabell å holde i synk – `forside.rst` er fasit. Ikonene lages altså **ikke** lenger manuelt i Canvas sin Icon Maker.
 
 ### Gruppering med `uio-module-listing`
 
-Bruk `uio-module-listing` for å samle flere kapittelkort i en farget boks med en overskrift. Overskriften angis som argument (f.eks. `Kapitler` eller `Emnemoduler`); uten argument brukes `Emnemoduler:`.
+Bruk `uio-module-listing` for å samle flere kapittelkort i en farget boks med en overskrift. Overskriften angis som argument (f.eks. `Kapitler:`); uten argument brukes `Emnemoduler:`.
 
 ```rst
-.. uio-module-listing:: Emnemoduler
+.. uio-module-listing:: Kapitler:
 
    .. uio-chapter-card::
-      :title: Introduksjon til "KI-språket"
-      :icon_filename: kap2-ikon.svg
-      :icon_file_id: 3954816
+      :title: Grunnbegreper i kunstig intelligens
+      :icon_filename: ikon1.svg
+      :icon_color: #7ED321
       :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
-      :description: Kort beskrivelse
 
    .. uio-chapter-card::
-      :title: KI-tjenester ved UiO
-      :icon_filename: kap6-ikon.svg
-      :icon_file_id: 3954823
-      :url: https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio
-      :description: Godkjente verktøy og datasikkerhet
+      :title: Hvordan fungerer språkmodeller?
+      :icon_filename: ikon3.svg
+      :icon_color: #40BEA6
+      :url: https://uio.instructure.com/courses/63248/pages/store-sprakmodeller-3
 ```
 
-Dette gir (hvert kort er selv en `<div class="float-left">`):
+Dette gir ett klikkbart felt per kort (hele feltet er en lenke rundt et ikon i full bredde):
 ```html
 <div class="uio-color-box-3 uio-module-listing">
-    <h2>Emnemoduler</h2>
-    <div class="float-left">
-        <div class="float-left"><img ... /></div>
-        <h3><a title="..." href="..." ...>Introduksjon til "KI-språket"</a></h3>
-        <span>Kort beskrivelse</span>
-    </div>
-    <!-- flere kort ... -->
+    <h2>Kapitler:</h2>
+    <a href="..." title="..." data-course-type="wikiPages" ... style="display:block; margin-bottom:12px; text-decoration:none;">
+        <img style="width:100%; height:auto; display:block;" ... data-icon-file="ikon1.svg" />
+    </a>
+    <!-- flere felter ... -->
 </div>
 ```
 
-Ved opplasting behandles kortene inni som vanlig (ikonet slås opp via `data-icon-file`-markøren, som deretter fjernes), mens selve `uio-module-listing`-boksen sendes uendret til Canvas. Den produserte HTML-en bruker bare Canvas' egne klasser (`uio-color-box-3`, `uio-module-listing`, `float-left`) – ingen egendefinerte klassenavn.
+Ved opplasting slås ikonet opp via `data-icon-file`-markøren (som deretter fjernes), mens selve `uio-module-listing`-boksen sendes uendret til Canvas.
 
 **Opsjoner:**
 
 | Opsjon | Beskrivelse |
 |--------|-------------|
-| `title` | Overskriftsteksten (og lenketeksten) |
-| `icon_filename` | Filnavnet til ikonet i Canvas (f.eks. `kap2-ikon.svg`). Brukes til den lokale forhåndsvisningen, og som reserve-oppslag hvis `icon_file_id` mangler |
-| `icon_file_id` | Canvas fil-ID for ikonet (f.eks. `3954816`), tastet inn for hånd. Angis den, bygges Canvas-URL-en direkte fra den ved opplasting – uten API-oppslag |
-| `url` | Full Canvas-URL til siden kortet lenker til. Utelates den, utledes lenken fra `title` via `page_id_mapping.json` ved opplasting |
-| `description` | Kort beskrivelsestekst under overskriften |
+| `title` | Kapitteltittelen som bakes inn i ikonet (og brukes som `title=` på lenken) |
+| `icon_filename` | Filnavnet ikonet lagres/lastes opp som i Canvas (f.eks. `ikon1.svg`). Brukes både lokalt og for oppslag ved opplasting |
+| `icon_color` | Bakgrunnsfargen på feltet (hex, f.eks. `#7ED321`). Driver kun ikon-genereringen |
+| `url` | Full Canvas-URL feltet lenker til. Utelates den, utledes lenken fra `title` via `page_id_mapping.json` ved opplasting |
+| `icon_file_id` | (Valgfritt/avansert) Canvas fil-ID for et ferdig Icon-Maker-ikon. Angis den, bygges Canvas-`<img>`-en direkte fra ID-en uten oppslag – da brukes ikke det lokalt genererte ikonet |
 
-**Slik lager og bruker du et ikon (rekkefølge):**
+> Merk: `:description:` finnes fortsatt i direktivet av bakoverkompatibilitet, men vises ikke i det nye feltdesignet.
 
-1. **Lag ikonet i Canvas.** Bruk Canvas sin Icon Maker til å lage ikonet, og lagre det i kursets ikonmappe (`Ikonskaper-ikoner`). Ikonene lages og lastes opp manuelt i Canvas.
-2. **Sett filnavn og hent fil-ID-en.** Gi ikonet et gjenkjennelig filnavn (f.eks. `kap2-ikon.svg`). Klikk deretter på ikonfilen i Canvas – URL-en viser ID-en, f.eks. `.../files/folder/Ikonskaper-ikoner?preview=3954816` → fil-ID `3954816`.
-3. **Bruk det i direktivet.** Lim filnavnet inn i `:icon_filename:` og fil-ID-en inn i `:icon_file_id:` i `.. uio-chapter-card::`:
-   ```rst
-   .. uio-chapter-card::
-      :title: Introduksjon til "KI-språket"
-      :icon_filename: kap2-ikon.svg
-      :icon_file_id: 3954816
-      :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
-      :description: Kort beskrivelse
-   ```
+### Generere ikonene (`build_icons.py`)
+
+Ikonene er brede felt (referansestørrelse `700×96`, ca. 7:1) i kapittelfargen, med Lato-fonten innebygd (hentet fra Canvas' opprinnelige Icon-Maker-ikoner), slik at teksten rendres riktig selv når Canvas viser SVG-en som `<img>`. Juster størrelse/font via konstantene øverst i `build_icons.py`.
+
+```bash
+# Regenerer source/_static/icons/*.svg fra forside.rst
+python build_icons.py
+```
+
+`update_canvas_pages.py` kaller de samme funksjonene, så `--front-page` og `--upload-icons` regenererer ikonene automatisk før de bygger/laster opp.
 
 **Slik fungerer det (to faser):**
 
-1. **`make html`**: Direktivet lager ferdig `<h3><a>`-lenken fra `:url:` (Canvas `data-api-endpoint` utledes ved å bytte `/courses/` → `/api/v1/courses/`). For ikonet:
-   - **Er `:icon_file_id:` satt** (anbefalt), bygges Icon-Maker-`<img>`-en ferdig allerede her, med full Canvas-URL (`src=.../courses/{COURSE_ID}/files/{id}/download`, relativ `data-download-url`, `data-inst-icon-maker-icon` osv.). Ingen opplastingssteg trengs for dette ikonet.
-   - **Mangler `:icon_file_id:`**, legges ikonet ut som en plassholder-`<img>` (uten egendefinert klasse) med markøren `data-icon-file` (filnavn) og `src` mot den lokale kopien i `source/_static/icons/`, slik at forhåndsvisningen viser ikonet.
-2. **`update_canvas_pages.py`**: `process_chapter_cards()` behandler kun plassholder-ikonene (de med `data-icon-file`): filnavnet slås opp i Canvas via `find_canvas_file_by_name()`, Icon-Maker-`<img>`-en bygges, og markøren fjernes. Kort som allerede har full Canvas-URL fra fase 1 røres ikke. Resultatet (ytre `<div class="float-left">` med et venstrestilt ikon, `<h3><a>` og `<span>`-beskrivelse) matcher den håndskrevne Canvas-HTML-en og bruker bare Canvas' egne klasser.
+1. **`make html`**: Direktivet lager den ferdige lenken fra `:url:` (Canvas `data-api-endpoint` utledes ved å bytte `/courses/` → `/api/v1/courses/`) og legger ikonet ut som en `<img style="width:100%">` med markøren `data-icon-file` (filnavn) og `src` mot den lokale kopien i `source/_static/icons/`, slik at forhåndsvisningen viser ikonet.
+2. **`update_canvas_pages.py`**: `process_chapter_cards()` slår opp filnavnet i Canvas via `find_canvas_file_by_name()`, bygger den endelige Canvas-`<img>`-en og fjerner markøren. Lenken (hele feltet) røres ikke hvis `:url:` allerede er satt.
 
-**Forutsetning – lokale ikoner:** Ikonene ligger i Canvas-mappen `Ikonskaper-ikoner`. For at den lokale `make html`-forhåndsvisningen skal vise dem, last dem ned én gang (og på nytt når nye ikoner legges til):
+> ⚠️ **`make clean html` etter endring av utvidelsen:** Selve feltmarkupen produseres av Sphinx-utvidelsen (`source/_ext/uio_components.py`). Endrer du den koden, tar et vanlig inkrementelt `make html` det ikke med – kjør `make clean html`. Endringer i `forside.rst` eller i selve ikon-SVG-ene bygges normalt.
+
+### Laste ikoner opp til / ned fra Canvas
+
 ```bash
+# Regenerer ikonene fra forside.rst OG last dem opp til 'Ikonskaper-ikoner'
+python update_canvas_pages.py --upload-icons
+python update_canvas_pages.py --upload-icons --dry-run
+
+# Last ned eksisterende ikoner fra Canvas (f.eks. for å hente Lato-fonten / eldre ikoner)
 python update_canvas_pages.py --download-icons
 ```
-Dette legger SVG-filene i `source/_static/icons/`. Selve Canvas-siden bruker uansett Canvas-referansen som settes ved opplasting.
+
+`--upload-icons` bruker `on_duplicate=overwrite`, så hvert ikon beholder sin eksisterende Canvas fil-ID – forsiden (som refererer ikoner via fil-ID) peker dermed på oppdatert innhold uten ny opplasting av selve siden.
+
+> Canvas (og nettleseren) cacher SVG-nedlastinger aggressivt. Ser ikonene fortsatt gamle ut etter opplasting, gjør en hard refresh (Cmd+Shift+R) – selve filen er oppdatert.
 
 ## Workflows
 
@@ -467,6 +501,28 @@ python update_canvas_pages.py --page moduleN/ny_side.html --add-to-module N
 ```
 
 Skriptet spør før det oppretter en ny side. Vil du hoppe over spørsmålene, bruk `--create-new` (auto-oppretting) og eventuelt `--no-placement-prompt` (legg siden nederst i modulen). Når en ny side opprettes, legges den automatisk inn i `page_id_mapping.json` — du trenger normalt ikke regenerere hele mappingen.
+
+### Arbeidsflyt 4: Oppdatere forsiden og kapittelikoner
+
+```bash
+# 1. Rediger source/forside.rst (tekst, illustrasjon og/eller uio-chapter-card-oppføringer:
+#    :title:, :icon_filename:, :icon_color:, :url: og rekkefølgen = kapittelnummer)
+
+# 2. Bygg HTML (bruk clean hvis du nettopp endret Sphinx-utvidelsen)
+make html          # eller: make clean html
+
+# 3. Forhåndsvis _build/html/forside.html og et ikon i source/_static/icons/
+
+# 4. Regenerer ikonene og last dem opp til Canvas ('Ikonskaper-ikoner')
+python update_canvas_pages.py --upload-icons
+
+# 5. Oppdater selve forsiden på Canvas (regenererer også ikonene lokalt)
+python update_canvas_pages.py --front-page
+
+# 6. Commit og push til GitHub
+```
+
+Endrer du bare kapittel-tittel/-nummer/-farge/-ikonfil, sørger steg 4–5 for at ikonene stemmer med kortene (`forside.rst` er fasit). Ser ikonene gamle ut etterpå, gjør en hard refresh i nettleseren.
 
 ## Feilsøking
 
@@ -522,6 +578,9 @@ python update_canvas_pages.py --create-module 1 --module-name "Modulnavn"
 | `--remap` | Interaktivt koble umappede filer til eksisterende Canvas-sider |
 | `--from-github` | ⚠️ Fungerer ikke for øyeblikket (se «Deploy fra GitHub»). Hent HTML fra GitHub `html-pages` branch i stedet for lokal `_build/html` |
 | `--generate-mapping` | Generer `page_id_mapping.json` (kan kombineres med `--from-github`) |
+| `--front-page` | Bygg `source/forside.rst` → `forside.html` og oppdater Canvas-forsiden (via `/front_page`-endepunktet). Regenererer også kapittelikonene fra `forside.rst`. Respekterer `--dry-run` og `--from-github` |
+| `--fetch-front-page [PATH]` | Last ned den nåværende Canvas-forsiden til PATH (standard `forside_canvas.html`) for å hjelpe med å lage `source/forside.rst`. Endrer ikke Canvas |
+| `--upload-icons` | Regenerer kapittelikonene fra `source/forside.rst` (tittel/nummer/farge/filnavn) og last dem opp til Canvas-mappen `Ikonskaper-ikoner`. Respekterer `--dry-run` |
 | `--download-icons` | Last ned ikonene fra Canvas-mappen `Ikonskaper-ikoner` til `source/_static/icons/` (for lokal forhåndsvisning av kapittelkort) |
 | `--dry-run` | Vis hva som ville skjedd uten å gjøre endringer |
 | `--yes` | Hopp over bekreftelsesspørsmål (GitHub-deploy) |

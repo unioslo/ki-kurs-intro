@@ -782,6 +782,7 @@ class UioChapterCardDirective(SphinxDirective):
         'title': directives.unchanged,
         'icon_filename': directives.unchanged,
         'icon_file_id': directives.unchanged,
+        'icon_color': directives.unchanged,
         'url': directives.unchanged,
         'description': directives.unchanged,
     }
@@ -791,6 +792,9 @@ class UioChapterCardDirective(SphinxDirective):
         node['title'] = self.options.get('title', '')
         node['icon'] = self.options.get('icon_filename', '')
         node['icon_file_id'] = self.options.get('icon_file_id', '')
+        # icon_color drives local icon generation (build_icons.py); it is not
+        # used in the emitted HTML, but is declared here so `make html` accepts it.
+        node['icon_color'] = self.options.get('icon_color', '')
         node['url'] = self.options.get('url', '')
         node['description'] = self.options.get('description', '')
         # Number of "../" needed for the local-preview icon src to resolve from
@@ -858,71 +862,66 @@ def html_depart_uio_module_listing(self, node):
 
 
 def html_visit_uio_chapter_card(self, node):
-    """Generate UiO chapter card HTML (icon + linked heading + description).
+    """Generate a full-width, clickable chapter bar (icon only).
 
-    Emits exactly the hand-authored Canvas structure: an outer ``float-left``
-    card containing a ``float-left`` icon, an <h3> link and a <span> description.
-    Only Canvas's own classes appear in the output. Build-time hooks for
+    Each chapter renders as a single wide icon whose number and title are baked
+    into the SVG; the icon fills the width of the "Kapitler" box and the whole
+    bar is a link to the chapter's first Canvas page. There is no separate text
+    heading or description (the title lives inside the icon). Build-time hooks for
     update_canvas_pages.py are carried on ``data-*`` attributes (``data-icon-file``
-    on the img, ``data-card-title`` on the fallback anchor), which are consumed and
-    removed at upload time -- no invented class names.
+    on the img; ``data-card-title`` on the link when ``:url:`` is omitted), which
+    are consumed and removed at upload time.
     """
     title = node.get('title', '')
     icon = node.get('icon', '')
     icon_file_id = node.get('icon_file_id', '')
     url = node.get('url', '')
-    description = node.get('description', '')
     prefix = node.get('static_prefix', '')
 
-    self.body.append('<div class="float-left">\n')
+    # Whole-bar link. With :url: emit the final Canvas anchor; otherwise emit a
+    # data-card-title marker that update_canvas_pages.py resolves at upload time.
+    link_style = 'display:block; margin-bottom:12px; text-decoration:none;'
+    if url:
+        api_endpoint = url.replace('/courses/', '/api/v1/courses/', 1)
+        self.body.append(
+            '<a href="%s" title="%s" data-course-type="wikiPages" data-published="true" '
+            'data-api-endpoint="%s" data-api-returntype="Page" style="%s">'
+            % (self.encode(url), self.encode(title), self.encode(api_endpoint), link_style)
+        )
+    else:
+        self.body.append(
+            '<a href="#" title="%s" data-card-title="%s" style="%s">'
+            % (self.encode(title), self.encode(title), link_style)
+        )
 
-    # Icon. When :icon_file_id: is given (the Canvas file id, entered by hand), emit
-    # the final Canvas Icon-Maker <img> directly with full URLs -- no placeholder and
-    # no upload-time processing needed. Otherwise fall back to a local-preview <img>
-    # (src into _static/icons/) carrying a data-icon-file marker that
-    # update_canvas_pages.py resolves by filename at upload time.
+    # Icon fills the bar width. When :icon_file_id: is given (the Canvas file id),
+    # emit the final Canvas Icon-Maker <img>; otherwise a local-preview <img>
+    # (src into _static/icons/) carrying a data-icon-file marker resolved by
+    # filename at upload time.
+    # Icon fills the full width of the (1/3-page) "Kapitler" column.
+    img_style = 'width:100%; height:auto; display:block;'
     if icon_file_id:
         canvas_src = f'{CANVAS_URL}/courses/{CANVAS_COURSE_ID}/files/{icon_file_id}/download'
         download_url = f'/files/{icon_file_id}/download?download_frd=1&icon_maker_icon=1'
         api_endpoint = f'{CANVAS_URL}/api/v1/courses/{CANVAS_COURSE_ID}/files/{icon_file_id}'
         self.body.append(
-            '<div class="float-left">'
-            '<img style="padding-right: 10px;" role="presentation" '
-            f'src="{self.encode(canvas_src)}" alt="" data-inst-icon-maker-icon="true" '
-            f'data-download-url="{self.encode(download_url)}" '
-            f'data-api-endpoint="{self.encode(api_endpoint)}" data-api-returntype="File" /></div>\n'
+            '<img style="%s" role="presentation" '
+            'src="%s" alt="" data-inst-icon-maker-icon="true" '
+            'data-download-url="%s" data-api-endpoint="%s" data-api-returntype="File" />'
+            % (img_style, self.encode(canvas_src), self.encode(download_url),
+               self.encode(api_endpoint))
         )
     else:
         icon_src = f'{prefix}_static/icons/{icon}'
         self.body.append(
-            '<div class="float-left">'
-            '<img style="padding-right: 10px;" role="presentation" '
-            f'src="{self.encode(icon_src)}" alt="" '
-            f'data-icon-file="{self.encode(icon)}" /></div>\n'
+            '<img style="%s" role="presentation" src="%s" alt="" data-icon-file="%s" />'
+            % (img_style, self.encode(icon_src), self.encode(icon))
         )
-
-    # Heading link.
-    if url:
-        api_endpoint = url.replace('/courses/', '/api/v1/courses/', 1)
-        self.body.append(
-            '<h3><a href="%s" title="%s" data-course-type="wikiPages" data-published="true" '
-            'data-api-endpoint="%s" data-api-returntype="Page">%s</a></h3>\n'
-            % (self.encode(url), self.encode(title), self.encode(api_endpoint), self.encode(title))
-        )
-    else:
-        # Fallback: resolved from the title at upload time (data-card-title marker).
-        self.body.append(
-            '<h3><a href="#" data-card-title="%s">%s</a></h3>\n'
-            % (self.encode(title), self.encode(title))
-        )
-
-    if description:
-        self.body.append(f'<span>{self.encode(description)}</span>\n')
 
 
 def html_depart_uio_chapter_card(self, node):
-    """Close the chapter card wrapper opened in the visit function."""
-    self.body.append('</div>\n')  # Close float-left card
+    """Close the chapter bar link opened in the visit function."""
+    self.body.append('</a>\n')  # Close whole-bar link
 
 
 def setup(app):
