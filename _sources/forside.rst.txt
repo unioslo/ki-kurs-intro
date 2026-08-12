@@ -16,13 +16,16 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
    :width: 60%
    :alt: Illustrasjon til forsiden av grunnkurs i generativ KI
 
-Se for deg et rom fullt av ekstra ansatte som er klare til å hjelpe deg! Ansatte som raskt kan lese, analysere og behandle, oppsummere, sortere, skrive utkast, oversette, forenkle, lage forslag og hente fram relevant informasjon for deg. Kunstig intelligens kan være dette rommet med ekstra ansatte. Dette rommet med digitale hjelpere kan for eksempel:
+Se for deg et rom fullt av ekstra ansatte som er klare til å hjelpe deg! Ansatte som raskt kan lese, analysere, behandle, oppsummere, sortere, skrive utkast, oversette, forenkle, lage forslag eller hente fram relevant informasjon for deg.
+Kunstig intelligens kan være dette rommet med ekstra ansatte.
+Dette rommet med digitale hjelpere kan for eksempel:
 
 - lage utkast som du kan kvalitetssikre og forbedre
 - gi deg oversikter før du går i dybden
-- foreslår ideer før du tar beslutninger
+- foreslå ideer før du tar beslutninger
 
-De digitale hjelperne jobber raskt og kan behandle store mengder data, men de har ikke din ekspertise eller erfaring fra å jobbe på UiO, heller ikke etisk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor må du med egen menneskelig innsikt:
+De digitale hjelperne jobber raskt og kan behandle store mengder data, men de har ikke din ekspertise eller erfaring fra å jobbe på UiO.
+De har heller ikke etisk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor må du med egen menneskelig innsikt:
 
 - vurdere KI-ens svar
 - vurdere hvilke oppgaver som er trygge å bruke KI til
