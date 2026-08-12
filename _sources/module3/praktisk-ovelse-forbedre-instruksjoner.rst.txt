@@ -13,17 +13,16 @@ Dette vil gi deg en god indikasjon på hvordan språkmodellen responderer på di
 
    Kopier hver av de mangelfulle instruksjonene under inn i GPT UiO, og se på svaret du får:
 
-   a) «Skriv en e-post.»
-   b) «Lag en tekst om fravær.»
-   c) «Lag et møtereferat av disse notatene: [dine notater]»
-   d) «Hvordan kan jeg forbedre min skriving?»
+   a) «Forklar forskjellen på KI og maskinlæring.»
+   b) «Lag et møtereferat av disse notatene: [dine notater]»
+   c) «Sjekk denne teksten: [din tekst]»
+   d) «Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.»
 
 
    **2. Skriv forbedrede versjoner**
 
    Skriv deretter om hver instruksjon slik at du bruker alle prinsippene på denne siden:
 
-   - Vær spesifikk
    - Gi kontekst
    - Spesifiser format
    - Definer en rolle for språkmodellen
