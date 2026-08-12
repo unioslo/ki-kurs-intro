@@ -28,13 +28,13 @@ Dete kan dreie seg om skjevheter knyttet til etnisitet, kjønn, religion eller a
   Modellen har ikke meninger om kjønn, den gjennskaper bare mønstrene som allerede fantes i tekstene den ble trent på.
 
 
-Bekreftelsesbias
-------------------
+Bekreftelsesskjevhet (bekreftelsesbias)
+----------------------------------------
 
 Dagens språkmodeller har en tendens til å være enige med deg.
 Dette kan føre til at språkmodellen gir deg *rett i* noe som ikke er rett.
 
-For å unngå bekreftelsesbias kan du snu på spørsmålet, altså også spørre om det motsatte.
+For å unngå bekreftelsesskjevhet kan du snu på spørsmålet, altså også spørre om det motsatte.
 
 .. uio-do:: Tips for å unngå bekreftelsesbias
 

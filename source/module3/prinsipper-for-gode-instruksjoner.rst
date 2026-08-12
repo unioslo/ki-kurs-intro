@@ -1,29 +1,20 @@
 Prinsipper for gode instruksjoner
 ===================================
 
-Her ser du noen enkle eksempler på instruksjoner som kan bli bedre.
+
+.. uio-info:: Hva er egentlig en instruksjon?
+
+   En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. 
+   Det er din måte å kommunisere med KI-en på. 
+   Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.
+
 Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
 Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.
 Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 
-1. Vær spesifikk 
------------------------
+Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag til hvordan du kan forbedre dem.
 
-.. uio-do-dont::
-
-    .. uio-dont:: Mangelfull
-
-        Skriv en e-post om at møterommet Gaia er stengt for vedlikehold i uke 15. 
-
-    .. uio-do:: Bedre
-
-        Skriv en e-post til mine kolleger om at møterommet Gaia er stengt for vedlikehold i uke 15. Tonen skal være vennlig, men profesjonell.
-
-        **Hva gjør denne bedre?**
-
-        Den gode instruksjonen spesifiserer både hva e-posten skal handle om, hvem målgruppen er, og hvilken tone den skal ha.
-
-2. Gi kontekst
+1. Gi kontekst
 ----------------------
 
 .. uio-do-dont:: 
@@ -43,7 +34,7 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 
         Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber den produsere.
 
-3. Spesifiser format
+2. Spesifiser format
 ----------------------
 
 .. uio-do-dont::
@@ -62,7 +53,7 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
         Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om. 
 
     
-4. Definer en rolle
+3. Definer en rolle
 --------------------
 
 .. uio-do-dont::
@@ -76,26 +67,21 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 
 
         Du er en norskspråklig språkvasker i universitetssektoren.
-
-        Gå gjennom teksten nedenfor og:
-
-        - Rett skrivefeil og grammatikk
+        Gå gjennom teksten nedenfor og gi forslag til forbedringer. 
+       
+        - Påpek skrivefeil og grammatikk
         - Behold innholdet faglig uendret
-        - Foreslå mer formelle formuleringer der teksten virker for uformell for en beskjed til studenter
-
-        Svar med:
-
-        - Revidert tekst
-        - Kort liste over de viktigste endringene du har gjort
-
+      
         Teksten: 
         [din tekst]
 
         **Hva gjør denne bedre?** 
         
-        Språkmodeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.
+        Språkmodeller har sett tekst fra veldig mange roller og sjangre. 
+        Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.
 
-5. Gi eksempler
+
+4. Gi eksempler
 --------------------
 
 .. uio-do-dont::
@@ -122,3 +108,13 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
         - Maks 90 tegn
         - Skal være informativ og nøktern
         - Målgruppe: alle ansatte
+
+
+        ### Hva gjør denne bedre? 
+        
+        **Hva gjør denne bedre?** 
+
+        Her gir du eksempler på stilen eller formatet du ønsker. 
+        Dette er ofte lettere enn å forklare stilen med ord.
+        Denne teknikken kalles gjerne "Few-shot instruksjon"
+

@@ -4,9 +4,9 @@ Nyttige instruksjons-teknikker
 Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike instruksjonsteknikker i tillegg.
 Du kan bruke teknikkene hver for seg, eller kombinere de.
 
-.. uio-colorbox-3::  Chain of thought - tankekrekke
+.. uio-colorbox-3::  Lag en plan
 
-   Be KI-en «tenke høyt» eller «forklare steg for steg». 
+   Lag en arbeidsplan for hvordan KI-en skal løse problemet. 
    Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.
 
    **Eksempel**
@@ -38,23 +38,11 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
    Gi en begrunnelsen på 3-5 punkter for hvordan aktivitetene kan hjelpe deltakerne.
 
 
-.. uio-colorbox-3:: Few-shot-instruksjoner - gi eksempler
 
-   Gi eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å forklare stilen med ord.
+.. uio-colorbox-3:: Forbedre instruksjonen trinnvis
 
-   **Eksempel**
-
-   Jeg skal skrive titler til nyhetssaker. Her er eksempler på stilen jeg ønsker: 
-
-   - «Nytt tilbud: Gratis språkkurs for ansatte» 
-   - «Viktig: Endringer i møterom-booking fra 1. april»  
-   
-   Skriv en tittel for denne saken: «Vi får nytt IT-system for reiseregninger neste måned.""
-
-
-.. uio-colorbox-3:: Iterative instruksjoner
-
-   Bygg videre på svarene i en samtale. Første svar er sjelden perfekt – og det er helt normalt.
+   Første svar er sjelden perfekt, og det er helt normalt.
+   Bygg videre på svarene i en samtale. 
 
    **Eksempel**
 
@@ -64,8 +52,11 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
    
    Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»
 
-.. uio-colorbox-3:: Rydd opp og start en ny chat
+.. uio-colorbox-3:: Start en ny chat
 
-   Som vi lærte i "Språkmodellen har ikke hukommelse" så lønner det seg å starte en ny chat for et nytt tema.
-   Dette er fordi "alt" tidligere i chaten, både instruksjoner og svar blir sendt som kontekst den nye instruksjonen.
-   Om temaet er et helt annet, eller til og med motstridende, så kan det "forvirre" språkmodellene, og svaret kan bli dårligere. 
+   Som vi lærte i "Språkmodellen har ikke hukommelse" kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar.
+   
+   ... Start en ny samtale
+   
+   Husk at du kan starte en ny samtale  
+   

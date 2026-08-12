@@ -97,13 +97,6 @@
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
-  "module3/instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil.html": {
-    "page_id": 416958,
-    "url": "instruksjoner-hvordan-fa-ki-tjenesten-til-a-gjore-som-du-vil-4",
-    "title": "Instruksjoner: Hvordan få KI-tjenesten til å gjøre som du vil?",
-    "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
-  },
   "module3/nar-kan-du-stole-pa-generativ-ki.html": {
     "page_id": 416959,
     "url": "nar-kan-du-stole-pa-generativ-ki-6",
@@ -129,6 +122,13 @@
     "page_id": 418210,
     "url": "praktisk-ovelse-forbedre-egne-instruksjoner",
     "title": "Praktisk øvelse: Forbedre egne instruksjoner",
+    "module_id": 243062,
+    "module_name": "Hvordan bruke KI på en god måte?"
+  },
+  "module3/praktisk-ovelse-forbedre-instruksjoner.html": {
+    "page_id": 418209,
+    "url": "praktisk-ovelse-forbedre-instruksjoner-4",
+    "title": "Praktisk øvelse: Forbedre instruksjoner",
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
@@ -313,19 +313,5 @@
     "title": "Prøv selv!",
     "module_id": 243065,
     "module_name": "Prøv selv!"
-  },
-  "module1/intro-til-kurset.html": {
-    "page_id": 423432,
-    "url": "grunnkurs-ki-documentation",
-    "title": "<no title> — Grunnkurs KI  documentation",
-    "module_id": "N/A",
-    "module_name": "N/A"
-  },
-  "module3/praktisk-ovelse-forbedre-instruksjoner.html": {
-    "page_id": 423433,
-    "url": "praktisk-ovelse-forbedre-instruksjoner-5",
-    "title": "Praktisk øvelse: Forbedre instruksjoner",
-    "module_id": "N/A",
-    "module_name": "N/A"
   }
 }
