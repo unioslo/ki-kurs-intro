@@ -1,6 +1,6 @@
 Generativ KI
 ==============
-Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Microsft Copilot og Gemini Notebook er eksempler på dette.
+Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Microsoft Copilot og Gemini Notebook er eksempler på dette.
 Generativ kunstig intelligens kalles «generativ» fordi den lager (genererer) nytt innhold basert på det den har lært fra før. 
 Du skriver inn en instruksjon og systemet genererer et forslag til svar eller innhold.
 
@@ -9,7 +9,7 @@ Store språkmodeller er selve motoren i mange KI-tjenester du bruker, og dette s
 
 .. uio-colorbox-3:: Typer KI
 
-	I tillegg til generativ KI, finnes det to andre typer som er veldig vanlige, nemlig diskriminativ og prediktiv KI. 
+	Visste du at i tillegg til generativ KI, finnes det to andre typer som er veldig vanlige? Nemlig diskriminativ og prediktiv KI?
 
 	Her er noen eksempler på hver av disse.
 
