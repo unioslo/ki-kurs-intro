@@ -2,7 +2,7 @@ Hvordan fungerer store språkmodeller?
 =======================================
 
 Store språkmodeller er en type *generativ KI* som vi lærte om i forrige kapittel.
-En type enkle språkmodeller som mange har brukt er smarte tastaturer på mobiltelefoner.
+En type enkle språkmodeller som mange allerede er kjent med, er smarte tastaturer på mobiltelefoner.
 Disse foreslår neste ord basert på teksten du har skrevet så langt.
 Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
 Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *konteksten*.
@@ -36,4 +36,4 @@ Alle store språkmodeller har et *kontekstvindu*, som har en begrenset størrels
 Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.
 Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet som styrer språkmodellen bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen.
 Språkmodellen har ikke tilgang til informasjon som ikke er i konteksten.
-Den kan heller ikke "huske" informasjon fra tidligere samtaler.
+Den kan heller ikke "huske" informasjon fra tidligere samtaler, det skal vi lære mer om i `Språkmodeller har ikke hukommelse <module1/sprakmodeller-har-ikke-hukommelse>`_. 
