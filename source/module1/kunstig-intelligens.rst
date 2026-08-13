@@ -12,7 +12,7 @@ For at kunstig intelligens skal kunne utføre denne type oppgaver trener den på
 - forstå innholdet i et lydopptak
 
 
-Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker forteller nøyaktig hva det skal lære. 
+Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker forteller nøyaktig hva det skal lære.
 
 
 .. uio-colorbox-3:: Fordypning for de nysgjerrige
@@ -44,7 +44,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker for
             Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
             maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv. 
 
-            Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer. 
+            Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer:
 
             .. uio-colorbox-2:: Tradisjonell programmering foregår slik:	
 
