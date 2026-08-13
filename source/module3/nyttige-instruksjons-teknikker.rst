@@ -52,11 +52,9 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
    
    Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»
 
-.. uio-colorbox-3:: Start en ny chat
+.. uio-colorbox-3:: Start en ny samtale
 
    Som vi lærte i "Språkmodellen har ikke hukommelse" kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar.
-   
-   ... Start en ny samtale
-   
-   Husk at du kan starte en ny samtale  
+
+   Start derfor en ny samtale om du merker at svarene begynner å få dårligere kvalitet.
    
