@@ -21,7 +21,7 @@ I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstr
 Forventer man et kunnskapssvar eller faktasvar, er det derfor fare for feil. 
 Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
-At språkmodellene ikke har faktakunnskap gjør de sårbare for bevisst manipulering av treningsdata. 
+At språkmodeller ikke har bevissthet eller sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
 Hvis noen klarer å påvirke tekstene modellen lærer fra, kan de også påvirke hva som fremstår som «sannsynlige» svar.
 Denne typen manipulering kalles ofte «LLM poisoning».
 
