@@ -2,6 +2,8 @@
 Når kan du stole på generativ KI?
 ==================================
 
+Nå som du har lært om og kan ta i bruk noen teknikker for gode instruksjoner, kan du da stole på svaret KI gir deg? 
+
 Generativ KI er ikke enten "pålitelig" eller "upålitelig", det avhenger av hva du bruker den til. 
 Som vi allerede har lært har ikke språkmodellen sikker kunnskap om hva som er sant, ei heller hukommelse. 
 Et bedre spørsmål er kanskje derfor:  I hvilke situasjoner kan du bruke KI uten at det medfører stor risiko? 
