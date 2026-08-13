@@ -1,7 +1,7 @@
 KI-assistent
 ===============
 
-Du har kanskje sett eller brukt en KI-assistent i tjenester som UiO GPT eller Microsoft Copilot. 
+Du har kanskje sett eller brukt en KI-assistent i tjenester som UiO GPT eller Gemini Notebook. 
 En KI-assistent er typisk en KI-chat tjeneste, men gjerne med en bestemt rolle og "personlighet". 
 En KI-assistent kan for eksempel "oppføre" seg som en erfaren møtereferent, kodesjekker, eksamenshjelper eller studieveileder, og den skal «holde seg i rollen» når du gir den oppgaver den skal løse.
 
@@ -38,8 +38,8 @@ KI-assistenten har bare dette ekstra laget med forhåndsdefinerte instruksjoner 
 
 .. uio-colorbox-3::  Eksempler på KI-assistenter
 
-    - I GPT UiO kan du lage dine egne KI-assistenter.
-    - Gemini Notebook er en avansert form for KI-assistent. 
+    - I `GPT UiO  <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ kan du lage dine egne KI-assistenter.
+    - `Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm/>`_ er en avansert form for KI-assistent. 
 
     Disse kan du lære mer om i kapitlet om `KI-tjenester ved UiO <https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio-5>`_ 
 
