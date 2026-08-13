@@ -28,8 +28,8 @@ Skal du jobbe med dokumenter anbefaler vi at du prøver dette produktet!
 
 .. uio-colorbox-1:: Nøkkelpunkter
 
-    * Benytter Google sin språkmodell Gemini
-    * Spesialisert på arbeid mot dokumenter
+    * Gemini (chat) og Gemini Notebook baserer seg på Google sin språkmodell Gemini
+    * Gemini Notebook er spesialisert på arbeid mot dokumenter
     * Du må ha Google Workspace konto gjennom UiO for å få tilgang
     * Databehandleravtale på plass
     * *Tjenesten skal kun brukes med UiO konto* - sjekk at du er logget inn med UiO konto og ikke din egen private Google konto!
