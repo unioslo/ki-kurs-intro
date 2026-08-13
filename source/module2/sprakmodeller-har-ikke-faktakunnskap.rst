@@ -9,7 +9,7 @@ Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger.
 Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.
 
 Tenk deg at modellen skal fullføre setningen: «Fargen på huset er …»
-Mulige fortsettelser kan være «rødt», «blått» eller «grått».
+Mulige fortsettelser kan være «rød», «blå» eller «grå».
 I en slik setning er det ikke åpenbart hvilket ord som er «best», fordi flere alternativer passer. 
 Det er heller ikke veldig viktig hvilket som velges.
 
