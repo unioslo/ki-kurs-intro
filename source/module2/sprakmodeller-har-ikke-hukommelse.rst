@@ -9,9 +9,7 @@ Dette kalles, som vi har lært, «kontekst».
 Språkmodellen lager så et nytt svar basert på hele samtalen og den siste instruksjonen du har gitt.
 Det betyr at modellen behandler hele samtalen på nytt for hver eneste instruksjon. 
 
-Det er viktig å skille mellom chat-systemet og selve språkmodellen.
 Chat-systemet «husker» det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
-
 Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk «ser»
 
 
