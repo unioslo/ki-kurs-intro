@@ -14,9 +14,7 @@ I stedet for å skrive inn en oppgave i et chat-vindu, kopiere ut svaret, og lim
   
     - hente informasjon fra andre systemer, f.eks internett eller en database
     - opprette og skrive innhold i en epost
-    - bestille togbilletter for deg
-    - slå av en datamaskin som har symptomer på å være under angrep utenfra
-
+    - slå sammen to excel ark for deg
 
 
 KI-agenter - kraftig verktøy som krever mer omtanke
