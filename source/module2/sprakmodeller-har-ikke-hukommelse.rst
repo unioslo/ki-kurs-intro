@@ -1,11 +1,21 @@
 Språkmodeller har ikke hukommelse
 ================================================
 
-Språkmodellen i seg selv har ikke hukommelse.
-Det er systemet rundt modellen som husker samtalen du har hatt.
-Når du sender en ny instruksjon, sender chat-systemet hele samtalen og den nye instruksjonen til språkmodellen.
-Modellen genererer så et nytt svar basert på hele samtalen og den nye instruksjonen.
-Det betyr at språkmodellene prosesserer hele samtalen på nytt for hver instruksjon du gir.
+Språkmodellen har ikke hukommelse i seg selv. Det er chat-systemet rundt modellen som lagrer samtalen du har hatt.
+
+Hver gang du skriver en ny instruksjon, sender chat-systemet hele den tidligere samtalen sammen med den nye instruksjonen til språkmodellen. 
+Dette kalles, som vi har lært, «kontekst».
+
+Språkmodellen lager så et nytt svar basert på hele samtalen og den siste instruksjonen du har gitt.
+Det betyr at modellen behandler hele samtalen på nytt for hver eneste instruksjon.
+
+Begrenset kontekstvindu
+------------------------
+
+Alle store språkmodeller har et *kontekstvindu*, som har en begrenset størrelse.
+Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.
+Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen, uten at du som bruker nødvendigvis blir informert.
+Det er viktig å være klar over at språkmodellen ikke har tilgang til informasjon som ikke er i konteksten.
 
 
 Korte samtaler gir bedre svar
