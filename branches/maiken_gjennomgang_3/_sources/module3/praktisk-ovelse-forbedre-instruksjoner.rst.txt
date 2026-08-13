@@ -35,5 +35,5 @@ Dette vil gi deg en god indikasjon på hvordan språkmodellen responderer på di
    Tenk over følgende:
 
    a) Hva ble bedre i svarene etter at dere forbedret instruksjonene?
-   b) Hvilke av prinsippene (spesifikk, kontekst, format, rolle) hadde størst utslag på kvaliteten?
+   b) Hvilke av prinsippene (kontekst, format, rolle, eksempler) hadde størst utslag på kvaliteten?
    c) Hvordan kan du bruke disse prinsippene i dine egne, faktiske arbeidsoppgaver (for eksempel e-poster, saksfremlegg, nettsidetekster)?
