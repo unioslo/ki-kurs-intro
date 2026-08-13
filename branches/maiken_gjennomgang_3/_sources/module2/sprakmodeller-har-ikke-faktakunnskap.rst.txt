@@ -10,16 +10,18 @@ Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.
 
 Tenk deg at modellen skal fullføre setningen: «Fargen på huset er …»
 Mulige fortsettelser kan være «rød», «blå» eller «grå».
-I en slik setning er det ikke åpenbart hvilket ord som er «best», fordi flere alternativer passer. 
+I en slik setning er det ikke åpenbart hvilket ord som er «riktig» eller «best», fordi flere alternativer passer. 
 Det er heller ikke veldig viktig hvilket som velges.
 
 Men hvis du spør modellen: «Hva er hovedstaden i Norge?»
 Da forventer du ett korrekt svar: «Oslo».
 Her blir det viktig hvilket ord modellen foreslår. 
-Men fordi modellen velger det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke kunnskap, er det en viss fare for at den svarer feil. 
-Særlig hvis treningsgrunnlaget er mangelfullt eller skjevt, kan den likevel velge feil og svare noe annet enn det vi forventer.
 
-Den samme svakheten gjør språkmodeller sårbare for bevisst manipulering av treningsdata. 
+I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke kunnskap.
+Forventer man et kunnskapssvar eller faktasvar, er det derfor fare for feil. 
+Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
+
+At språkmodellene ikke har faktakunnskap gjør de sårbare for bevisst manipulering av treningsdata. 
 Hvis noen klarer å påvirke tekstene modellen lærer fra, kan de også påvirke hva som fremstår som «sannsynlige» svar.
 Denne typen manipulering kalles ofte «LLM poisoning».
 
