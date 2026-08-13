@@ -10,7 +10,6 @@ Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hje
 UiO har bare godkjent Copilot for grønne data.
 Du må derfor være spesielt forsiktig når du benytter tjenesten. 
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat.
-Vi anbefaler at du heller bruker en av de andre KI-tjenestene, for å unngå å dele gule eller røde data med Copilot ved en feil.
 
 .. uio-info:: Microsoft KI produktene
 
