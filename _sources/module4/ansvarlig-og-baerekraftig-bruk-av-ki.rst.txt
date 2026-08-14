@@ -1,5 +1,5 @@
-Etikk, bærekraft, opphavsrett og personvern
-============================================
+Ansvarlig og bærekraftig bruk av KI
+=====================================
 
 I kapittel 4 lærer du om viktige etiske, miljømessige og juridiske hensyn ved bruk av kunstig intelligens. 
 Denne kunnskapen bidrar til at vi kan bruke KI på en ansvarlig måte. 
