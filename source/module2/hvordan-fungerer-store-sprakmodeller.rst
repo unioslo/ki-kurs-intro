@@ -31,4 +31,4 @@ Hva er konteksten?
 ------------------
 
 Når vi snakker om store språkmodeller, bruker vi ofte *kontekst* om alt det vi gir modellen som input.
-Input kan være et spørsmål eller instruksjon, men også dokumenter, bilder eller andre ting vi laster opptil modellen.
+Input kan være et spørsmål eller instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
