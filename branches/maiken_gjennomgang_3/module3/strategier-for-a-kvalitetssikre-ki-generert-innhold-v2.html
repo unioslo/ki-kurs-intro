@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generativ KI &mdash; Grunnkurs KI  documentation</title>
+  <title>Strategier for å kvalitetssikre KI-generert innhold v2 &mdash; Grunnkurs KI  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
@@ -27,9 +27,7 @@
       <script src="../_static/tabs.js?v=5e8c741a"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="KI-assistent" href="ki-assistent.html" />
-    <link rel="prev" title="Kunstig intelligens" href="kunstig-intelligens.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body> 
@@ -41,37 +39,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="generativ-ki">
-<h1>Generativ KI</h1>
-<p>Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Microsoft Copilot og Gemini Notebook er eksempler på dette.
-Generativ kunstig intelligens kalles «generativ» fordi den lager (genererer) nytt innhold basert på det den har lært fra før.
-Du skriver inn en instruksjon og systemet genererer et forslag til svar eller innhold.</p>
-<p>Det finnes flere typer KI. I dette kurset skal du lære mest om store språkmodeller, som en en type generativ KI.
-Store språkmodeller er selve motoren i mange KI-tjenester du bruker, og dette skal du lære mer om litt senere i kurset.</p>
+  <section id="strategier-for-a-kvalitetssikre-ki-generert-innhold-v2">
+<h1>Strategier for å kvalitetssikre KI-generert innhold v2</h1>
+<p>Vi har nå lært at en språkmodell lager sannsynlig tekst, ikke sannhet.
+Den har ingen kunnskap, ingen hukommelse og har innebygde skjevheter.</p>
+<p>I dette kurset har du likevel fått noen konkrete tips og «sikkerhetsregler» for hvordan du kan kvalitetssikre innhold som er generert av KI.
+Disse oppsummerer vi her.</p>
+<div class="uio-icon-box do">
+<h3>Tips</h3>
+<p>Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling.
+Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til i neste iterasjon.</p>
+</div>
 <div class="uio-color-box-3">
-<h3>Typer KI</h3>
-<p>Visste du at i tillegg til generativ KI, finnes det to andre typer som er veldig vanlige? Nemlig diskriminativ og prediktiv KI?</p>
-<p>Her er noen eksempler på hver av disse.</p>
-<div class="enhanceable_content tabs" style="margin-bottom: 2em;">
-<ul>
-<li><a href="#fragment-4843d374-1">Generativ KI</a></li>
-<li><a href="#fragment-4843d374-2">Diskriminativ KI</a></li>
-<li><a href="#fragment-4843d374-3">Prediktiv KI</a></li>
+<h3>1. Vurder risikoen først</h3>
+<ul class="simple">
+<li>Lav risiko (du har kontroll, og feil er ufarlige): Vanlig kritisk lesing er som regel nok.</li>
+<li>Høy risiko (innholdet skal ut i verden, må være korrekt og påvirker personer): Verifiser innholdet først, eller la være å bruke KI.</li>
 </ul>
-<div id="fragment-4843d374-1">
-<p>En KI-chat som genererer et møtereferat basert på dine møtenotater</p>
 </div>
-<div id="fragment-4843d374-2">
-<p>Diskrimitativ KI sorterer og gjenkjenner ting som allerede finnes.
-Eksempel: KI system som kan identifisere om et fotografi er av en hund eller en katt</p>
+<div class="uio-color-box-3">
+<h3>2. Gi gode instruksjoner</h3>
+<ul class="simple">
+<li>Gi kontekst, be om format, definer rolle, gi eksempler.</li>
+<li>Be modellen tenke stegvis og begrunne svaret.</li>
+</ul>
 </div>
-<div id="fragment-4843d374-3">
-<p>Prediktiv kunstig intelligens leter etter mønstre i data som kan si noe om sannsynligheten for hendelser.</p>
-<p>Eksempel: værmeldingen</p>
+<div class="uio-color-box-3">
+<h3>3. Sjekk svaret — stol aldri på KI-ens selvsikkerhet</h3>
+<ul class="simple">
+<li>Kontroller fakta og referanser mot pålitelige kilder. Finner du ingen kilder, er innholdet trolig oppdiktet.</li>
+<li>Motvirk bekreftelsesbias ved også å spørre etter motargumenter eller alternative perspektiver.</li>
+<li>Vær oppmerksom på skjevheter og hull i smale fagfelt, og bruk din egen fagkunnskap aktivt.</li>
+</ul>
 </div>
+<div class="uio-color-box-3">
+<h3>4. Rydd i samtalen</h3>
+<ul class="simple">
+<li>Start en ny samtale når du bytter tema, eller når samtalen har blitt veldig lang.</li>
+<li>Fjern gale svar, slik at de ikke blir med videre i konteksten.</li>
+</ul>
 </div>
-</div>
-<div class="page-navigation"><div class="prev-link"><a href="kunstig-intelligens.html">← Forrige</a></div><div class="next-link"><a href="ki-assistent.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"></div><div class="next-link"></div></div>
 </section>
            </div>
           </div>
