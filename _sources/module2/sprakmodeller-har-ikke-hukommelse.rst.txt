@@ -9,7 +9,7 @@ Språkmodellen bruker denne konteksten til å lage et nytt svar.
 Den behandler altså hele samtalen på nytt hver gang du gir en ny instruksjon.
 
 Chat-systemet «husker» det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
-Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk «ser»
+Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk «ser».
 
 
 Begrenset kontekstvindu
