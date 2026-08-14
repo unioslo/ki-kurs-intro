@@ -2,13 +2,10 @@
 Tips om pre-instruksjon og KI-assistenter
 ==========================================
 
-Til slutt i denne delen om kvalitetssikring og teknikker for å oppnå bedre KI svar, vil vi gi deg et siste tips. 
-Når du bruker KI til å løse den samme typen oppgave gjentatte ganger, lønner det seg å investere tid i å skrive en god pre-instruksjon - 
-en grunnleggende instruksjon som definerer rollen, oppgaven og rammene for all videre kommunikasjon. 
-I GPT-UiO kan du lagre dette som en KI-assistent. Du vil da ha en spesialtilpasset samtalepartner som kan gjenbrukes. 
-Mer info om KI-assistenter i GPT UiO finnes her: https://www.uio.no/tjenester/it/ki/gpt-uio/hjelp/opprette-og-bruke-ki-assistenter.html
-
-
+Har du brukt tid på å bygge opp en god instruksjon med teknikkene og prinsippene vi nettopp har lært om, er den verdt å ta vare på.
+Særlig hvis du bruker KI til å løse den samme typen oppgave gjentatte ganger.
+Dette kan du få til ved å lagre instruksjonen som en pre-instruksjon i en KI-assistent, for eksempel i GPT UiO.  
+Du vil da ha en spesialtilpasset samtalepartner som kan brukes om og om igjen. 
 
 .. uio-do:: Tips
 
