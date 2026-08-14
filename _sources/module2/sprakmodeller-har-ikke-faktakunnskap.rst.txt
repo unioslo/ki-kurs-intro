@@ -23,7 +23,7 @@ Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
 At språkmodeller ikke har bevissthet eller sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
 Hvis noen klarer å påvirke tekstene modellen lærer fra, kan de også påvirke hva som fremstår som «sannsynlige» svar.
-Denne typen manipulering kalles ofte «LLM poisoning».
+Denne typen manipulering kalles ofte «LLM poisoning» eller «språkmodell-forgiftning».
 
 .. uio-dont:: Manipulering (Språkmodell-forgiftning)
 
