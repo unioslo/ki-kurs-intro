@@ -11,16 +11,14 @@ Her er tre strategier du kan bruke hver gang du tar i bruk kunstig intelligens.
 
     Tips til kontroll-spørsmål og gode vaner når behandler KI-svar:
     
-    - Har du fagkunnskap til å vurdere om det virker riktig? Er dette noe du kan verifisere? 
     - Sjekk fakta mot pålitelige kilder (som faglitteratur eller troverdige nettsider).
-    - Søk opp referanser for å bekrefte at de faktisk eksisterer. KI-tjenester er som vi har påpekt i `Språkmodeller finner på ting <https://uio.instructure.com/courses/63248/pages/sprakmodeller-finner-pa-ting-2>`_ , kjent for å dikte opp kilder. 
+    - Søk opp referanser for å bekrefte at de faktisk eksisterer. KI-tjenester er som vi har påpekt i `Språkmodeller finner på ting <module2/prakmodeller-finner-pa-ting>`_ , kjent for å dikte opp kilder. 
 
 .. uio-colorbox-3:: Bruk din egen ekspertise
 
-    - Hvis noe føles feil, er det godt mulig at det er feil. Språkmodeller er flinke til å virke troverdig og overbevisende, også når de tar feil. 
+    - Har du fagkunnskap til å vurdere om det virker riktig? Er dette noe du kan verifisere? 
     - Bruk din ekspertise til å stille mer presise oppfølgingsspørsmål.
     - Bruk din ekspertise til å korrigere svaret, men la gjerne KI forbedre utkastet for deg basert på dine rettelser.
-    - Vær særlig skeptisk til svært spesifikke eller detaljerte påstander - detaljer er ofte det første stedet hallusinering viser seg.
 
 .. uio-colorbox-3:: Bruk strategiske spørsmål
 

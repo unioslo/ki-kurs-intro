@@ -18,7 +18,7 @@ Skjevhet som speiler skjevheter i samfunnet
 ---------------------------------------------
 
 En annen type skjevhet stammer fra ulikheter i samfunnet vårt, og gjenspeiles derfor også i den digitale informasjonen vi produserer.
-Dete kan dreie seg om skjevheter knyttet til etnisitet, kjønn, religion eller annet. Dette er det veldig viktig å være klar over når man behandler forslag og tekst fra en språkmodell. 
+Dette kan dreie seg om skjevheter knyttet til etnisitet, kjønn, religion eller annet og er veldig viktig å være klar over når man behandler forslag og tekst fra en språkmodell. 
 
 .. uio-colorbox-3:: Eksempel på skjevheter i treningsdata
 

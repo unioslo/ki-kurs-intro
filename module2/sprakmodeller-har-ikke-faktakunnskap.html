@@ -46,24 +46,34 @@
 <p>Språkmodeller har ikke noe forhold til sannhet [<a class="reference internal" href="../module6/kilder.html#hicks"><span class="std std-ref">Hicks</span></a>].
 Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
 Men språkmodellene har ikke sikker kunnskap om hva som er sant: som vi har lært beregner de bare hvilke ord som er mest sannsynlige.</p>
-<p>Når en språkmodell skal fullføre setningen «Hovedstaden i Norge var…», så er noen mulige fortsettelser «Bergen», «Kristiania» og «Oslo».
-Alle disse stedene har vært Norges hovedstade.
-Hvis du spør modellen «Hva som er hovedstaden i Norge?», svarer den sannsynligvis «Oslo».
-Men det er en viss fare for at den svarer feil, fordi svaret baseres på sannsynlig neste ord, og ikke kunnskap.</p>
-<p>Fordi språkmodellene beregner ord basert på tekst de er trent på er de sårbare for bevisst manipulering, såkalt LLM poisning.</p>
+<p>Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger.
+Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.</p>
+<p>Tenk deg at modellen skal fullføre setningen: «Fargen på huset er …»
+Mulige fortsettelser kan være «rød», «blå» eller «grå».
+I en slik setning er det ikke åpenbart hvilket ord som er «riktig» eller «best», fordi flere alternativer passer.
+Det er heller ikke veldig viktig hvilket som velges.</p>
+<p>Men hvis du spør modellen: «Hva er hovedstaden i Norge?»
+Da forventer du ett korrekt svar: «Oslo».
+Her blir det viktig hvilket ord modellen foreslår.</p>
+<p>I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke kunnskap.
+Forventer man et kunnskapssvar eller faktasvar, er det derfor fare for feil.
+Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.</p>
+<p>At språkmodeller ikke har bevissthet eller sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
+Hvis noen klarer å påvirke tekstene modellen lærer fra, kan de også påvirke hva som fremstår som «sannsynlige» svar.
+Denne typen manipulering kalles ofte «LLM poisoning».</p>
 <div class="uio-icon-box dont">
 <h3>Manipulering (Språkmodell-forgiftning)</h3>
-<p>Store språkmodeller kan være sårbare for bevisst manipulering, såkalt “Språkmodell-forgiftning” (LLM poisoning).
-Aktører kan for eksempel legge ut misvisende informasjon for at modellene skal bli trent på den.
+<p>Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
 Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.</p>
-<p>Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [<a class="reference internal" href="../module6/kilder.html#germain"><span class="std std-ref">Germain</span></a>]</p>
-<p>Et annet eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
+<p>Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [<a class="reference internal" href="../module6/kilder.html#germain"><span class="std std-ref">Germain</span></a>]
+En ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet.</p>
+<p>Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
 Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
 Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
 Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [<a class="reference internal" href="../module6/kilder.html#stokel-walker"><span class="std std-ref">Stokel-Walker</span></a>]</p>
 </div>
 <div class="uio-icon-box reflect">
-<h3>Refleksjon</h3>
+<h3>Test deg selv</h3>
 <p>Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?</p>
 <details>
 <summary class="uio-answer-summary"><strong>Klikk på meg for mulig svar</strong></summary>
