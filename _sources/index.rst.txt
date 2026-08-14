@@ -42,6 +42,7 @@ Velkommen til grunnkurs i generativ KI!
    module3/hvordan-bruke-ki-pa-en-god-mate
    module3/nar-kan-du-stole-pa-generativ-ki
    module3/strategier-for-a-kvalitetssikre-ki-generert-innhold
+   module3/strategier-for-a-kvalitetssikre-ki-generert-innhold-v2
    module3/prinsipper-for-gode-instruksjoner
    module3/praktisk-ovelse-forbedre-instruksjoner
    module3/nyttige-instruksjons-teknikker
