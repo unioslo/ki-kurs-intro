@@ -54,7 +54,7 @@ Velkommen til grunnkurs i generativ KI!
    :maxdepth: 1
    :caption: Episode 4: Etikk, bærekraft, opphavsrett og personvern
 
-   module4/etikk-baerekraft-opphavsrett-og-personvern
+   module4/ansvarlig-og-baerekraftig-bruk-av-ki
    module4/baerekraft
    module4/miljo
    module4/sosiale-kostnader
