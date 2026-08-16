@@ -12,7 +12,7 @@ Her er tre strategier du kan bruke hver gang du tar i bruk kunstig intelligens.
     Tips til kontroll-spørsmål og gode vaner når behandler KI-svar:
     
     - Sjekk fakta mot pålitelige kilder (som faglitteratur eller troverdige nettsider).
-    - Søk opp referanser for å bekrefte at de faktisk eksisterer. KI-tjenester er som vi har påpekt i `Språkmodeller finner på ting <module2/prakmodeller-finner-pa-ting>`_ , kjent for å dikte opp kilder. 
+    - Søk opp referanser for å bekrefte at de faktisk eksisterer. KI-tjenester er som vi har påpekt i `Språkmodeller finner på ting <module2/sprakmodeller-finner-pa-ting>`_ , kjent for å dikte opp kilder. 
 
 .. uio-colorbox-3:: Bruk din egen ekspertise
 
