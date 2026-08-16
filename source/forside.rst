@@ -73,7 +73,7 @@ Vi håper dette kurset gir deg kompetanse til å begynne å utforske mulighetene
    :url: https://uio.instructure.com/courses/63248/pages/hvordan-bruke-ki-pa-en-god-mate-3
 
 .. uio-chapter-card::
-   :title: Ansvarlig og bærekraftig bruk
+   :title: Ansvarlig og bærekraftig bruk av KI
    :icon_filename: ikon5.svg
    :icon_color: #568DE0
    :url: https://uio.instructure.com/courses/63248/pages/etikk-baerekraft-opphavsrett-og-personvern-3
