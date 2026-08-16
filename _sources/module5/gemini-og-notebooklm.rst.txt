@@ -11,25 +11,41 @@ Det betyr blant annet at informasjonen du legger inn i tjenestene (for eksempel 
 
 Du kan jobbe med opptil gule data i både Gemini og Gemini Notebook, i tråd med UiOs interne klassifisering av informasjon.
 
+
+.. uio-do:: Viktig
+   
+   For å bruke Gemini-tjenestene må du:
+
+   1. ha en konto i Google Workspace tilknyttet UiO
+   2. være spesielt oppmerksom på at du er logget inn med UiO-kontoen din når du bruker tjenestene
+
+
+   Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. 
+
+   * Gemini og Gemini Notebook er kun godkjent for opptil gule data
+   * Last ikke opp materiale som kan identifisere eller eksponere andre personer (for eksempel studentbesvarelser, pasientopplysninger, intervjuer, personlige bilder eller lydopptak)
+   * Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)
+    
+   Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet
+   
+   * Last ikke opp dokumenter du ikke har rettigheter til å dele.
+
+
 Gemini
 ----------
 
 Gemini er Googles generelle KI-chat.
 
 Sammenlignet med GPT UiO er Gemini bedre egnet til faktasøk, fordi den kan hente oppdatert informasjon fra åpne nettsider.
-Gemini kan også lage mange typer filer, for eksempel:
-
-- pdf-filer
-- PowerPoint-presentasjoner
-- Excel-regneark
+Gemini kan også lage mange typer filer, for eksempel: pdf, Powerpoint-presentasjoner eller Excel-regneark for å nevne noen.
 
 I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se avsnittet nedenfor).
 
-Bruk Gemini når du:
+.. uio-do:: Bruk Gemini når du
 
-- trenger en kraftig modell som kan generere bilder
-- vil laste opp og bearbeide filer
-- arbeider sammen med en Gemini Notebook og vil bruke kildene du har lagret der
+   - trenger en kraftig modell som kan generere bilder
+   - vil laste opp og bearbeide filer
+   - arbeider sammen med en Gemini Notebook og vil bruke kildene du har lagret der
 
 Gemini Notebook
 ----------------
@@ -52,27 +68,10 @@ Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:
 - lage quizer
 - lage presentasjoner
 
-Hvis du skal jobbe mye med dokumenter og egne kilder, anbefaler vi at du prøver Gemini Notebook.
+.. uio-do:: Bruk Gemini Notebook hvis
 
+   du skal jobbe mye med dokumenter og egne kilder
 
-.. uio-dont:: Viktig
-
-   
-   For å bruke Gemini-tjenestene må du:
-
-   1. ha en konto i Google Workspace tilknyttet UiO
-   2. være spesielt oppmerksom på at du er logget inn med UiO-kontoen din når du bruker tjenestene
-
-
-   Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. 
-
-   * Gemini og Gemini Notebook er kun godkjent for opptil gule data
-   * Last ikke opp materiale som kan identifisere eller eksponere andre personer (for eksempel studentbesvarelser, pasientopplysninger, intervjuer, personlige bilder eller lydopptak)
-   * Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)
-    
-   Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet
-   
-   * Last ikke opp dokumenter du ikke har rettigheter til å dele.
 
 .. uio-colorbox-1:: Nøkkelpunkter
 
