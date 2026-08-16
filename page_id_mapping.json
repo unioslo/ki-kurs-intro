@@ -160,54 +160,54 @@
     "module_id": 243062,
     "module_name": "Hvordan bruke KI på en god måte?"
   },
+  "module4/ansvarlig-og-baerekraftig-bruk-av-ki.html": {
+    "page_id": 430627,
+    "url": "ansvarlig-og-baerekraftig-bruk-av-ki",
+    "title": "Ansvarlig og bærekraftig bruk av KI",
+    "module_id": 243064,
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
+  },
   "module4/baerekraft.html": {
     "page_id": 416966,
     "url": "baerekraft-6",
     "title": "Bærekraft",
     "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
   "module4/datasikkerhet.html": {
     "page_id": 422500,
     "url": "datasikkerhet",
     "title": "Datasikkerhet",
     "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
-  },
-  "module4/etikk-baerekraft-opphavsrett-og-personvern.html": {
-    "page_id": 416967,
-    "url": "etikk-baerekraft-opphavsrett-og-personvern-3",
-    "title": "Etikk, bærekraft, opphavsrett og personvern",
-    "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
   "module4/miljo.html": {
     "page_id": 421681,
     "url": "klima-og-miljokostnader",
     "title": "Klima- og miljøkostnader",
     "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
   "module4/opphavsrett.html": {
     "page_id": 416968,
     "url": "opphavsrett-3",
     "title": "Opphavsrett",
     "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
   "module4/retningslinjer-og-policies.html": {
     "page_id": 416985,
     "url": "retningslinjer-og-policies-12",
     "title": "Retningslinjer og policies",
     "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
   "module4/sosiale-kostnader.html": {
     "page_id": 421682,
     "url": "sosiale-kostnader",
     "title": "Sosiale kostnader",
     "module_id": 243064,
-    "module_name": "Etikk, bærekraft, opphavsrett og personvern"
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
   "module5/autotekst-og-nettskjema-diktafon.html": {
     "page_id": 416970,
@@ -320,12 +320,5 @@
     "title": "Prøv selv!",
     "module_id": 243065,
     "module_name": "Prøv selv!"
-  },
-  "module4/ansvarlig-og-baerekraftig-bruk-av-ki.html": {
-    "page_id": 430627,
-    "url": "ansvarlig-og-baerekraftig-bruk-av-ki",
-    "title": "Ansvarlig og bærekraftig bruk av KI",
-    "module_id": 243064,
-    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   }
 }
