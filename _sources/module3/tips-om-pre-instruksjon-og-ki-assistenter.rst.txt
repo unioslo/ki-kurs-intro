@@ -4,7 +4,7 @@ Tips om pre-instruksjon og KI-assistenter
 
 Har du brukt tid på å bygge opp en god instruksjon med teknikkene og prinsippene vi nettopp har lært om, er den verdt å ta vare på.
 Særlig hvis du bruker KI til å løse den samme typen oppgave gjentatte ganger.
-Dette kan du få til ved å lagre instruksjonen som en pre-instruksjon i en KI-assistent, for eksempel i `GPT UiO <module5/gpt-uio-ki-assistenter.html>`_.  
+Dette kan du få til ved å lagre instruksjonen som en pre-instruksjon i en KI-assistent, for eksempel i `GPT UiO sine KI assistenter <module5/gpt-uio-ki-assistenter.html>`_  som vi skal komme tilbake til senere i kurset. 
 Du vil da ha en spesialtilpasset samtalepartner som kan brukes om og om igjen. 
 
 .. uio-do:: Tips
