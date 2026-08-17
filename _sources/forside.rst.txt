@@ -45,6 +45,8 @@ Vi håper dette kurset gir deg kompetanse til å begynne å utforske mulighetene
 - Du vil finne fordypningsstoff i flere av kapitlene. Klikk på disse om du vil gå litt i dybden!
 - Til slutt har vi laget noen øvingsoppgaver som du kan jobbe med i tiden fremover. Disse kan du laste ned slik at du i ro og mak kan jobbe med de.
 
+Hele kurset utenom øvingsoppgavene i kapittel 7 er beregnet til å ta mellom 45 og 60 minutter.
+
 .. raw:: html
 
    <p style="font-size: 2.0rem;">Godt kurs!</p>
