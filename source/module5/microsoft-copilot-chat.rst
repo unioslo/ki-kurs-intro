@@ -11,6 +11,13 @@ UiO har bare godkjent Copilot for grønne data.
 Du må derfor være spesielt forsiktig når du benytter tjenesten. 
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat.
 
+
+.. uio-do:: Bruk Microsoft Copilot Chat hvis
+
+   - du skal jobbe med grønne data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie
+   - du vil ha en chat tjeneste som hjelper deg igang
+   - du vil ha en chat tjeneste som kan lage og jobbe med flere typer filer
+
 .. uio-info:: Microsoft KI produktene
 
    Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chatte-funksjonen.
