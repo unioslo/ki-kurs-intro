@@ -69,13 +69,13 @@ Vi håper dette kurset gir deg kompetanse til å begynne å utforske mulighetene
 .. uio-chapter-card::
    :title: Hvordan trygt bruke KI?
    :icon_filename: ikon4.svg
-   :icon_color: #3498DB
+   :icon_color: #3FB3E8
    :url: https://uio.instructure.com/courses/63248/pages/hvordan-bruke-ki-pa-en-god-mate-3
 
 .. uio-chapter-card::
    :title: Ansvarlig og bærekraftig bruk av KI
    :icon_filename: ikon5.svg
-   :icon_color: #568DE0
+   :icon_color: #4F7BE8
    :url: https://uio.instructure.com/courses/63248/pages/etikk-baerekraft-opphavsrett-og-personvern-3
 
 .. uio-chapter-card::
