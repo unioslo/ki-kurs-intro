@@ -331,6 +331,42 @@ Generisk ikonbokscontainer. Bruk denne når du trenger en tilpasset container.
 -------------------------
 
 
+### uio-custom-box
+
+Samme boks som `uio-do` / `uio-info` / `uio-dont` (tykk kantlinje øverst, tynnere
+nederst), men der du selv bestemmer kantfargen. Boksen får ikke ikon.
+
+**Opsjoner:**
+
+- `:color:` - kantfarge. Enten et navn (`gronn`, `gul`, `rod`, `svart`, eller
+  `green`, `yellow`, `red`, `black`) eller en hex-verdi (`#rgb` eller `#rrggbb`).
+- `:background:` - valgfri bakgrunnsfarge, samme format som `:color:`.
+
+Fargen skrives som inline-stil i HTML-en, slik at den overlever opplasting til
+Canvas (der bare UiOs egne klasser finnes).
+
+**Bruk:**
+
+```rst
+.. uio-custom-box:: 🟢 Grønn: Åpen informasjon
+   :color: gronn
+
+   Innhold i boksen.
+
+.. uio-custom-box:: Egendefinert farge
+   :color: #7ED321
+   :background: #f7fcf2
+
+   Innhold i boksen.
+```
+
+Se `source/module5/dataklassifisering-ved-uio.rst` for et eksempel med
+grønn/gul/rød/svart.
+
+
+-------------------------
+
+
 
 
 -------------------------
@@ -421,6 +457,7 @@ For detaljerte arbeidsflysinstruksjoner, se hoved-[README.md](README.md).
 Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. Den genererte HTML-en:
 - Bruker UiO-spesifikke CSS-klasser:
   - Ikonbokser: `uio-icon-box` med varianter `task`, `reflect`, `source`, `do`, `dont`, `info`
+  - `uio-custom-box` bruker `uio-icon-box` med kantfargen som inline-stil (ingen ny CSS-klasse)
   - Fargebokser: `uio-color-box-1`, `uio-color-box-2`, `uio-color-box-3`
   - Rutenett: `uio-grid-row` med kolonner `col-lg`
 - Unngår JavaScript der det er mulig (faner bruker URL-fragmenter)
@@ -439,6 +476,7 @@ Alle tilpassede direktiver er designet for å være kompatible med UiO Canvas. D
 - `uio-info` - informasjonsboks med blått info-ikon
 - `uio-source` - kilde/ressurser-boks med kildeikon
 - `uio-colorbox-1`, `uio-colorbox-2`, `uio-colorbox-3` - fargede bokser uten ikon
+- `uio-custom-box` - ikonboks der du selv velger kantfarge med `:color:` (og eventuelt `:background:`)
 - `uio-do-dont` - rutenettcontainer for å vise gjør/ikke-gjør-innhold side-ved-side
 
 
