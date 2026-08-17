@@ -13,5 +13,4 @@ Neste kapittel
 --------------
 
 Du har nå lært hvordan KI fungerer og hvordan du bruker det trygt. 
-Nå skal vi se på et annet, like viktig tema ved bruk av KI: bærekraft, etiske spørsmål, opphavsrett og trygg bruk av KI når vi behandler personopplysninger og annen sensitiv informasjon.
-
+Nå skal vi se på et annet, like viktig tema: Ansvarlig og bærekraftig bruk av KI.
