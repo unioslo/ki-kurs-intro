@@ -4,6 +4,8 @@ Generates HTML following UiO design guidelines from:
 https://www.uio.no/for-ansatte/arbeidsstotte/sta/canvas/veiledninger/utnytt-mulighetene/designelementer.html
 """
 
+import re
+
 from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.util.docutils import SphinxDirective
@@ -86,6 +88,11 @@ class uio_colorbox_3(nodes.General, nodes.Element):
 
 class uio_icon_box(nodes.General, nodes.Element):
     """Generic icon box container - plain div with class uio-icon-box."""
+    pass
+
+
+class uio_custom_box(nodes.General, nodes.Element):
+    """Icon box with a caller-defined border colour - uses uio-icon-box + inline style."""
     pass
 
 
@@ -414,6 +421,90 @@ class UioIconBoxDirective(SphinxDirective):
         return [node]
 
 
+# Named colours for uio-custom-box. The four first are UiOs dataklassifisering
+# (grønn / gul / rød / svart) so pages can name the class instead of a hex value.
+CUSTOM_BOX_COLORS = {
+    'gronn': '#7FBF8C',
+    'grønn': '#7FBF8C',
+    'green': '#7FBF8C',
+    'gul': '#E8C46A',
+    'yellow': '#E8C46A',
+    'rod': '#DE8A8A',
+    'rød': '#DE8A8A',
+    'red': '#DE8A8A',
+    'svart': '#57575C',
+    'black': '#57575C',
+}
+
+# Only hex colours are allowed through to the style attribute - the generated
+# HTML is pushed to Canvas, so nothing unvalidated should end up in an attribute.
+CSS_HEX_COLOR = re.compile(r'^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})$')
+
+DEFAULT_CUSTOM_BOX_COLOR = '#8595BC'
+
+# Litt tynnere enn do/dont/info (10/5) for et mykere uttrykk.
+CUSTOM_BOX_BORDER_TOP = 7
+CUSTOM_BOX_BORDER_BOTTOM = 3
+
+
+def custom_box_color(argument):
+    """Option validator: a name from CUSTOM_BOX_COLORS or a #rgb / #rrggbb value."""
+    value = (argument or '').strip()
+    if not value:
+        raise ValueError('a colour name or hex value is required')
+
+    named = CUSTOM_BOX_COLORS.get(value.lower())
+    if named:
+        return named
+
+    if CSS_HEX_COLOR.match(value):
+        return value
+
+    raise ValueError(
+        f"'{value}' is not a hex colour (#rgb or #rrggbb) or one of: "
+        + ', '.join(sorted(set(CUSTOM_BOX_COLORS)))
+    )
+
+
+class UioCustomBoxDirective(SphinxDirective):
+    """
+    UiO icon box with a caller-defined border colour.
+
+    Same look as uio-do / uio-info / uio-dont (the shared uio-icon-box styling
+    with a thick top border and a thinner bottom border), but the colour is set
+    per box instead of coming from a do/dont/info class.
+
+    Usage::
+
+        .. uio-custom-box:: 🟢 Grønn: Åpen informasjon
+           :color: gronn
+
+           Content here
+
+        .. uio-custom-box:: Egen farge
+           :color: #7ED321
+           :background: #f7fcf2
+
+           Content here
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 100
+    final_argument_whitespace = True
+    option_spec = {
+        'color': custom_box_color,
+        'background': custom_box_color,
+    }
+
+    def run(self):
+        node = uio_custom_box()
+        node['title'] = ' '.join(self.arguments) if self.arguments else None
+        node['color'] = self.options.get('color', DEFAULT_CUSTOM_BOX_COLOR)
+        node['background'] = self.options.get('background')
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
 class UioDetailDirective(SphinxDirective):
     """
     UiO detail/accordion directive.
@@ -630,6 +721,30 @@ def html_visit_uio_icon_box(self, node):
 def html_depart_uio_icon_box(self, node):
     """Close icon box HTML."""
     self.body.append('</div>\n')
+
+
+def html_visit_uio_custom_box(self, node):
+    """Generate icon box HTML with a caller-defined border colour.
+
+    The colour goes in an inline style rather than in a new CSS class: the
+    generated HTML is uploaded to Canvas, where only UiOs own classes exist.
+    """
+    color = node.get('color') or DEFAULT_CUSTOM_BOX_COLOR
+    background = node.get('background')
+    title = node.get('title')
+
+    style = f'border-top: {CUSTOM_BOX_BORDER_TOP}px solid {color}; border-bottom: {CUSTOM_BOX_BORDER_BOTTOM}px solid {color};'
+    if background:
+        style += f' background-color: {background};'
+
+    self.body.append(f'<div class="uio-icon-box" style="{style}">\n')
+    if title:
+        self.body.append(f'<h3>{self.encode(title)}</h3>\n')
+
+
+def html_depart_uio_custom_box(self, node):
+    """Close custom box HTML."""
+    self.body.append('</div>\n')  # Close uio-icon-box (custom colour)
 
 
 def html_visit_uio_detail(self, node):
@@ -978,6 +1093,10 @@ def setup(app):
         html=(html_visit_uio_icon_box, html_depart_uio_icon_box)
     )
     app.add_node(
+        uio_custom_box,
+        html=(html_visit_uio_custom_box, html_depart_uio_custom_box)
+    )
+    app.add_node(
         uio_detail,
         html=(html_visit_uio_detail, html_depart_uio_detail)
     )
@@ -1007,6 +1126,7 @@ def setup(app):
     app.add_directive('uio-colorbox-2', UioColorbox2Directive)
     app.add_directive('uio-colorbox-3', UioColorbox3Directive)
     app.add_directive('uio-icon-box', UioIconBoxDirective)
+    app.add_directive('uio-custom-box', UioCustomBoxDirective)
     app.add_directive('uio-detail', UioDetailDirective)
     app.add_directive('uio-do-dont', UioDoDontDirective)
     app.add_directive('uio-chapter-card', UioChapterCardDirective)

@@ -1692,12 +1692,122 @@ def fix_canvas_file_links(html_content, course_id=COURSE_ID):
     return html_content
 
 
+# Relative hrefs that point at build artefacts rather than at a course page.
+NON_PAGE_HREF_PREFIXES = ('_static/', '_images/', '_downloads/', '_sources/', 'images/')
+NON_PAGE_HREF_FILES = ('genindex.html', 'search.html', 'index.html', 'forside.html')
+
+
+def is_relative_page_href(href):
+    """Is this href a relative link to another course page (not an asset)?
+
+    True for both spellings of a page cross-reference:
+      - '../module5/gpt-uio-ki-assistenter.html#anchor' (:doc:/toctree links)
+      - 'gpt-uio-ki-assistenter'  (`GPT UiO <gpt-uio-ki-assistenter>`_)
+    False for anchors, absolute or already-converted Canvas links, real
+    external links, and build artefacts (images, CSS, downloads, genindex).
+    """
+    if not href:
+        return False
+
+    # Same-page anchors, absolute paths, already-converted links, non-http schemes
+    if href.startswith(('#', '/', 'mailto:', 'tel:')):
+        return False
+    if '://' in href or 'instructure.com' in href:
+        return False
+
+    path_part = href.split('#')[0]
+    if not path_part:
+        return False
+
+    # Strip relative prefixes before classifying the target
+    while path_part.startswith('./'):
+        path_part = path_part[2:]
+    while path_part.startswith('../'):
+        path_part = path_part[3:]
+
+    if path_part.startswith(NON_PAGE_HREF_PREFIXES) or path_part in NON_PAGE_HREF_FILES:
+        return False
+
+    # Anything carrying a non-.html extension (images, PDFs, CSS) is an asset
+    filename = path_part.split('/')[-1]
+    if '.' in filename and not filename.endswith('.html'):
+        return False
+
+    return True
+
+
+def find_page_info_for_href(path_part, page_mapping):
+    """Look up a relative link target in the page_id_mapping.json entries.
+
+    Handles every way a page can be referred to from RST:
+      'module5/gpt-uio-ki-assistenter.html'  - :doc:/toctree cross-reference
+      '../module5/gpt-uio-ki-assistenter'    - external-link syntax with a path
+      'gpt-uio-ki-assistenter'               - external-link syntax, bare slug
+    and matches on, in order: the mapping key, the file name alone (when that
+    name is unique across modules), and finally the mapped Canvas URL itself
+    with or without Canvas' -N dedup suffix.
+
+    Args:
+        path_part: The href with any '#anchor' already removed
+        page_mapping: Dictionary mapping relative paths to Canvas page info
+
+    Returns:
+        The matching mapping entry, or None.
+    """
+    target = path_part
+    while target.startswith('./'):
+        target = target[2:]
+    while target.startswith('../'):
+        target = target[3:]
+    if target.endswith('.html'):
+        target = target[:-5]
+    target = target.strip('/')
+
+    if not target:
+        return None
+
+    # Full mapping key, e.g. 'module5/gpt-uio-ki-assistenter.html'
+    if f"{target}.html" in page_mapping:
+        return page_mapping[f"{target}.html"]
+
+    # File name alone - only trust it when a single module has that file
+    filename = target.split('/')[-1]
+    matches = [key for key in page_mapping
+               if key == f"{filename}.html" or key.endswith(f"/{filename}.html")]
+    if len(matches) == 1:
+        return page_mapping[matches[0]]
+    if len(matches) > 1:
+        print(f"- Warning: '{filename}.html' exists in several modules "
+              f"({', '.join(sorted(matches))}); write the link as 'moduleN/{filename}'")
+        return None
+
+    # Written as the Canvas slug instead of the file name: match the mapped URL,
+    # with or without the -N suffix ('gpt-uio' matches 'gpt-uio-5', but never
+    # 'gpt-uio-ki-assistenter-5').
+    for info in page_mapping.values():
+        url = info.get('url') or ''
+        if url == filename or re.match(f"^{re.escape(filename)}-\\d+$", url):
+            return info
+
+    return None
+
+
 def process_internal_links(html_content, page_mapping, course_id=COURSE_ID):
     """Convert internal Sphinx cross-references to Canvas page URLs.
 
     Sphinx generates internal cross-references as links to other HTML files.
     For example: <a href="../module8/kilder.html#hicks">
     We need to convert these to Canvas page URLs using the mapping.
+
+    A cross-reference written with external-link syntax in the RST source
+    (`GPT UiO <gpt-uio-ki-assistenter>`_) is rendered as
+    <a class="reference external" href="gpt-uio-ki-assistenter"> - no
+    'internal' class and no '.html'. Left alone, the browser would resolve it
+    against the current Canvas page's own folder, giving
+    /courses/COURSE_ID/pages/gpt-uio-ki-assistenter - the slug as typed, without
+    Canvas' -N suffix, so it points at a page that does not exist. Those links
+    are therefore resolved here as well, and every rewritten link gets the URL
+    recorded in page_id_mapping.json (e.g. 'gpt-uio-ki-assistenter-5').
 
     Args:
         html_content: HTML content string
@@ -1709,9 +1819,10 @@ def process_internal_links(html_content, page_mapping, course_id=COURSE_ID):
     """
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    # Find all internal reference links
-    # Sphinx generates these as <a class="reference internal" href="...">
-    internal_links = soup.find_all('a', class_=lambda x: x and 'reference' in x and 'internal' in x)
+    # Every relative link is course-internal, whatever class Sphinx gave it;
+    # assets and real external links are filtered out by is_relative_page_href.
+    internal_links = [link for link in soup.find_all('a', href=True)
+                      if is_relative_page_href(link['href'])]
 
     if not internal_links:
         return html_content
@@ -1719,47 +1830,29 @@ def process_internal_links(html_content, page_mapping, course_id=COURSE_ID):
     print(f"Found {len(internal_links)} internal link(s) to process")
 
     for link in internal_links:
-        href = link.get('href')
-        if not href:
-            continue
+        href = link['href']
 
-        # Skip if already a Canvas URL
-        if 'instructure.com' in href or href.startswith(f'/courses/{course_id}/'):
-            continue
+        # Split off the optional anchor (e.g. '../module8/kilder.html#hicks')
+        parts = href.split('#')
+        path_part = parts[0]
+        anchor = parts[1] if len(parts) > 1 else None
 
-        # Check if this is a link to another HTML file (e.g., ../module8/kilder.html#hicks)
-        # Extract the path and optional anchor
-        if '.html' in href:
-            parts = href.split('#')
-            path_part = parts[0]
-            anchor = parts[1] if len(parts) > 1 else None
+        page_info = find_page_info_for_href(path_part, page_mapping)
 
-            # Normalize the path to match mapping keys
-            # Remove leading '../' and convert to relative path (e.g., '../module8/kilder.html' -> 'module8/kilder.html')
-            normalized_path = path_part
-            while normalized_path.startswith('../'):
-                normalized_path = normalized_path[3:]
+        if page_info:
+            canvas_url = page_info.get('url')
+            if canvas_url:
+                # Build Canvas page URL from the mapped URL, -N suffix included
+                new_href = f"/courses/{course_id}/pages/{canvas_url}"
+                if anchor:
+                    new_href += f"#{anchor}"
 
-            # Also try just the filename for backward compatibility
-            filename_only = path_part.split('/')[-1]
-
-            # Try to find in mapping - first with normalized path, then with just filename
-            page_info = page_mapping.get(normalized_path) or page_mapping.get(filename_only)
-
-            if page_info:
-                canvas_url = page_info.get('url')
-                if canvas_url:
-                    # Build Canvas page URL
-                    new_href = f"/courses/{course_id}/pages/{canvas_url}"
-                    if anchor:
-                        new_href += f"#{anchor}"
-
-                    print(f"- Converting: {href} -> {new_href}")
-                    link['href'] = new_href
-                else:
-                    print(f"- Warning: No Canvas URL found for {normalized_path}")
+                print(f"- Converting: {href} -> {new_href}")
+                link['href'] = new_href
             else:
-                print(f"- Warning: No mapping found for {normalized_path} (tried also: {filename_only})")
+                print(f"- Warning: No Canvas URL in the mapping entry for {path_part}")
+        else:
+            print(f"- Warning: No mapping found for {path_part}")
 
     return str(soup)
 
