@@ -18,7 +18,7 @@ En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT
 Kraftig verktøy som krever kompetanse
 ------------------------------------------------------
 
-Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse og forsiktighet ved bruk enn vanlige KI-chat-tjenester.
+Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse og forsiktighet ved bruk enn vanlige KI-chat.
 
 Ved UiO tilbyr vi foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp fordi de er mer krevende å bruke, og feil bruk kan få alvorlige konsekvenser.
 
