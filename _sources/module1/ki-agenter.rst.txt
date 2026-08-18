@@ -6,9 +6,9 @@ En KI-agent forteller deg ikke bare hvordan du kan løse en oppgave, den utføre
 En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT-systemer, og på den måten være et veldig effektivt verktøy. 
 
 
-.. uio-colorbox-3:: Eksempler på hva en KI agent kan gjøre
+.. uio-colorbox-3:: Eksempler 
 
-    Agenter er gjerne laget for en eller flere spesifikke formål og kan for eksempel:
+    KI-agenter er gjerne laget for en eller flere spesifikke formål og kan for eksempel:
   
     - hente informasjon fra andre systemer, f.eks internett eller en database
     - opprette og skrive innhold i en epost
