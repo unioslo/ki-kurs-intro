@@ -2,11 +2,9 @@ KI-agenter
 ===========
 
 KI-agent kan lett forveksles med KI-assistent, men en KI-agent er et mye kraftigere verktøy enn en KI-assistent.
-En KI-agent forteller deg ikke bare hvordan du kan løse en oppgave, den utfører også oppgaven for deg. 
-En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT-systemer. 
+En KI-agent forteller deg ikke bare hvordan du kan løse en oppgave, den utfører også oppgaven for deg. For eksempel: I stedet for å skrive inn en oppgave i et chat-vindu, kopiere ut svaret, og lime det inn i ønsket dokument, kan agenten endre teksten direkte i dokumentet for deg. 
+En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT-systemer, og på den måten være et veldig effektivt verktøy. 
 
-KI-agenter kan dermed være et veldig effektivt verktøy: 
-I stedet for å skrive inn en oppgave i et chat-vindu, kopiere ut svaret, og lime det inn i ønsket dokument, kan agenten endre teksten direkte i dokumentet for deg. 
 
 .. uio-colorbox-3:: Eksempler på hva en KI agent kan gjøre
 
