@@ -48,7 +48,8 @@ Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt
    Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen.  [:ref:`Svarstad <Svarstad>`]
    Politihøgskolen skulle avgjøre hvor mye tid undervisere skal få til forberedelse.
    De forsøkte å bruke Copilot til å hente informasjon om forberedelsestid på andre universiteter og høyskoler.
-   Copilot fant ikke informasjonen som brukeren spurte etter på nettet, og fant derfor på et svar. Feilinformasjonen generert av Copilot ble brukt som saksgrunnlag.
+   Copilot fant ikke informasjonen som brukeren spurte etter på nettet, og fant derfor på et svar. 
+   Feilinformasjonen generert av Copilot ble brukt som saksgrunnlag.
 
 .. uio-reflect:: Refleksjon
 
