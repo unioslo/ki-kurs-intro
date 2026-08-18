@@ -2,7 +2,7 @@ KI-agenter
 ===========
 
 KI-agent kan lett forveksles med KI-assistent, men en KI-agent er et mye kraftigere verktøy enn en KI-assistent.
-KI-agenten fortelle deg ikke bare hvordan du kan løse en oppgave, den utfører oppgaven for deg. 
+En KI-agent forteller deg ikke bare hvordan du kan løse en oppgave, den utfører også oppgaven for deg. 
 En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT-systemer, ikke bare *foreslå* handlinger.
 
 KI-agenten kan dermed være et veldig effektivt verktøy: 
