@@ -1,8 +1,8 @@
 Språkmodeller finner på ting
 ================================================
 
-Siden store språkmodeller ikke har kunnskap, kan de finne på ting som ikke stemmer.
-Noen kaller det *hallusinering* når språkmodeller finner på ting, men vi kan gjerne bare si at de *finner på ting*.
+Fordi store språkmodeller ikke har faktakunnskap, kan de finne på ting som ikke stemmer.
+Noen kaller det *hallusinering* når språkmodeller finner på ting.
 
 Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
 Her er noen eksempler: 
