@@ -6,7 +6,7 @@ I dette kapittelet har du lært hvordan store språkmodeller lager tekst og hvil
 
   1. Hvordan genererer språkmodeller svar?
   2. Hva er kontekst? 
-  3. Nevn noen svakheter ved store språkmodeller og forklar hvorfor det skjer? 
+  3. Nevn 3 svakheter ved store språkmodeller og hvordan du kan imøtekomme dem. 
 
 **I dette kapittelet har du lært at:**
 
