@@ -15,7 +15,7 @@ En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT
     - slå sammen to excel ark for deg
 
 
-KI-agenter - kraftig verktøy som krever mer omtanke
+Kraftig verktøy som krever kompetanse
 ------------------------------------------------------
 
 Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse og forsiktighet ved bruk enn vanlige KI-chat-tjenester.
