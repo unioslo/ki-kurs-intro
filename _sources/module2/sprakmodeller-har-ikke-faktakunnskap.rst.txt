@@ -1,9 +1,10 @@
 Språkmodeller har ikke faktakunnskap
 ==============================================
 
-Språkmodeller har ikke noe forhold til sannhet [:ref:`Hicks <Hicks>`].
 Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
-Men språkmodellene har ikke sikker kunnskap om hva som er sant: som vi har lært beregner de bare hvilke ord som er mest sannsynlige.
+De har likevel ikke noe forhold til sannhet [:ref:`Hicks <Hicks>`] og har derfor ikke sikker kunnskap om hva som er sant. 
+
+Språkmodeller har ikke 
 
 Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger. 
 Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.
@@ -14,16 +15,16 @@ I en slik setning er det ikke åpenbart hvilket ord som er «riktig» eller «be
 Det er heller ikke veldig viktig hvilket som velges.
 
 Men hvis du spør modellen: «Hva er hovedstaden i Norge?»
-Da forventer du ett korrekt svar: «Oslo».
+Da forventer du et korrekt svar. 
 Her blir det viktig hvilket ord modellen foreslår. 
 
 I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke kunnskap.
-Forventer man et kunnskapssvar eller faktasvar, er det derfor fare for feil. 
+Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil. 
 Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
-At språkmodeller ikke har bevissthet eller sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
+At språkmodeller ikke har sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
 Hvis noen klarer å påvirke tekstene modellen lærer fra, kan de også påvirke hva som fremstår som «sannsynlige» svar.
-Denne typen manipulering kalles ofte «LLM poisoning» eller «språkmodell-forgiftning».
+Denne typen manipulering kalles ofte «språkmodell-forgiftning».
 
 .. uio-dont:: Manipulering (Språkmodell-forgiftning)
 
