@@ -78,7 +78,7 @@ Hele kurset utenom øvingsoppgavene i kapittel 7 er beregnet til å ta mellom 45
    :title: Ansvarlig og bærekraftig bruk av KI
    :icon_filename: ikon5.svg
    :icon_color: #4F7BE8
-   :url: https://uio.instructure.com/courses/63248/pages/etikk-baerekraft-opphavsrett-og-personvern-3
+   :url: https://uio.instructure.com/courses/63248/pages/ansvarlig-og-baerekraftig-bruk-av-ki
 
 .. uio-chapter-card::
    :title: KI-tjenester ved UiO
