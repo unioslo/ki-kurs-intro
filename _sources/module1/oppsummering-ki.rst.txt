@@ -22,5 +22,4 @@ I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
 Neste kapittel
 ---------------
 
-I neste kapittel lærer du hvordan språkmodeller fungerer og hvorfor de ikke er pålitelige kunnskapsbaser. 
-Dette er viktig kunnskap for å kunne bruke KI trygt.
+I neste kapittel skal vi om språkmodeler. 
