@@ -20,10 +20,10 @@ Kraftig verktøy som krever kompetanse
 
 Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse og forsiktighet ved bruk enn en vanlig KI-chat.
 
-Ved UiO tilbyr vi foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp fordi de er mer krevende å bruke, og feil bruk kan få alvorlige konsekvenser.
+Ved UiO tilbys foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp fordi de er mer krevende å bruke, og feil bruk kan få alvorlige konsekvenser.
 
-Allikevel tilbyr vi allerede noen typer KI-agenter, for eksempel i form av såkalte kode-agenter. 
+Allikevel tilbyr vi allerede noen typer KI-agenter, for eksempel såkalte kode-agenter. 
 Disse kan brukes til mye mer enn koding, de kan for eksempel lese filer i en utpekt folder og utføre handlinger direkte på disse. 
-Framover vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy dere bruker. Følg med på våre nettsider for oppdatert informasjon.
+Framover vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy dere bruker. 
 
 
