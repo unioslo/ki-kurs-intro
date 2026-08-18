@@ -8,6 +8,7 @@ Modellene er trent opp på tekster hentet fra internett, og forslagene er de mes
 Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *konteksten*.
 
 
+
 .. list-table::
 
     * - .. figure:: ../images/IMG_2787.jpg
@@ -21,6 +22,8 @@ Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *kont
             :alt: Skjermbilde med et tastatur der det er skrevet "Jeg vil ha et glass". Forslag til fortsettelse er "vin", "med" og en emoji.
 
             Forslag til fortsettelser av teksten "Jeg vil ha et glass".
+
+
 
 Store språkmodeller er mye mer avanserte enn smarte tastaturer, men de fungerer grunnleggende sett på samme måte.
 En språkmodell er en matematisk modell som bygger opp svaret ett ord av gangen, betinget av *konteksten*.
