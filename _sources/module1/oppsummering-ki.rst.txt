@@ -22,4 +22,4 @@ I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
 Neste kapittel
 ---------------
 
-I neste kapittel skal vi om språkmodeler. 
+I neste kapittel skal vi lære om språkmodeller. 
