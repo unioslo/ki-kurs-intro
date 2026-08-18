@@ -39,7 +39,7 @@ Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan
 
 .. uio-reflect:: Test deg selv
 
-   Hvorfor kan en språkmodell gi feilinformasjon selv om svaret høres veldig troverdig ut?
+   Hvorfor kan en språkmodell sine svare inneholde feil, selv om svaret høres troverdig ut?
 
    .. uio-answer:: Klikk på meg for mulig svar
 
