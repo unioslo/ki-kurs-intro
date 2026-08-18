@@ -1,7 +1,8 @@
 Store språkmodeller 
 ================================
 
-I kapittel 2 skal vi lære hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Denne kunnskapen er helt nødvendig for å kunne bruke KI-verktøy på en trygg og ansvarlig måte.
+Store språkmodeller er en type generativ KI og fungerer som selve motoren i mange av KI-tjeneste vi bruker. 
+I dette kapittelet skal vi lære hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Denne kunnskapen er helt nødvendig for å kunne bruke KI på en trygg og ansvarlig måte.
 
 .. figure:: ../images/2.2-llm-machinery.png
     :align: center
