@@ -9,7 +9,6 @@ Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene.
   2. Hva er generativ KI? 
   3. Hva er forskjellen på en KI-assistent og KI-agent?
 
-
 **Repetisjon av begrepene:**
 
 * **Kunstig intelligens** er teknologi som beregner sannsynlige svar basert på mønstrene den har lært fra enorme mengder data
