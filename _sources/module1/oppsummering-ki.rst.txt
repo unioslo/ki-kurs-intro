@@ -3,14 +3,12 @@ Oppsummering kapittel 1
 I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
 Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene. 
 
-Hva er kunstig intelligens? 
+.. uio-reflect:: Test deg
 
-Hva er generativ KI? 
+  1. Hva er kunstig intelligens? 
+  2. Hva er generativ KI? 
+  3. Hva er forskjellen på en KI-assistent og KI-agent?
 
-
-
-ALT 2: 
-I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
 
 **Repetisjon av begrepene:**
 
@@ -22,4 +20,4 @@ I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
 Neste kapittel
 ---------------
 
-I neste kapittel skal vi lære om språkmodeller. 
+I neste kapittel skal vi lære om store språkmodeller. 
