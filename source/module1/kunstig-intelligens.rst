@@ -39,7 +39,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
 
       .. uio-detail:: Maskinlæring
 
-            Mennesker lærer ved erfaring. Maskinlæring er det samme prinsippet, bare for dataprogrammer. 
+            Mennesker lærer ved erfaring. Maskinlæring bygger på det samme prinsippet, bare for dataprogrammer. 
             I stedet for å lære av erfaring, lærer programmet av data.
             Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
             maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv. 
