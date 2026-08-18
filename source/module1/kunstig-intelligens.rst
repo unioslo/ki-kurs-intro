@@ -19,7 +19,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
 
       .. uio-detail:: Litt historie om kunstig intelligens
 
-            Kunstig intelligens (KI) er ikke noe nytt. Forskere begynte å jobbe med KI allerede på 1950-tallet, og i 1956 ble KI etablert
+            KI er ikke noe nytt. Forskere begynte å jobbe med KI allerede på 1950-tallet, og i 1956 ble KI etablert
             som et eget forskningsfelt.
             Det som er nytt, er hvor kraftig og tilgjengelig KI har blitt de siste årene.
             Da ChatGPT kom i 2022,
