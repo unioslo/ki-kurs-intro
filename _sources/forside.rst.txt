@@ -17,7 +17,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
    :alt: Illustrasjon til forsiden av grunnkurs i generativ KI
 
  
-      <h2>Se for deg..</h2>
+   <h2>Se for deg..</h2>
 
 Se for deg et rom fullt av ekstra "kollegaer" som er klare til å hjelpe deg! "Kollegaer" som raskt kan lese, analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon for deg.Kunstig intelligens kan fungere som disse ekstra "kollegaene".
 Disse "kollegaene" kan tenkes på som digitale hjelperne som  for eksempel kan lage utkast som du kan kvalitetssikre og forbedre, gi deg oversikter før du går i dybden og foreslå ideer før du tar beslutninger. 
