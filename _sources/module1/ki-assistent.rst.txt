@@ -1,9 +1,9 @@
 KI-assistent
 ===============
 
-Du har kanskje sett eller brukt en KI-assistent i tjenester som UiO GPT eller Gemini Notebook. 
-En KI-assistent er typisk en KI-chat tjeneste, men gjerne med en bestemt rolle og "personlighet". 
-En KI-assistent kan for eksempel "oppføre" seg som en erfaren møtereferent, kodesjekker, eksamenshjelper eller studieveileder, og den skal «holde seg i rollen» når du gir den oppgaver den skal løse.
+Du har kanskje brukt en KI-assistent i UiO GPT eller Gemini Notebook. 
+En KI-assistent er typisk en KI-chat, med en bestemt rolle og "personlighet". 
+En KI-assistent kan for eksempel "oppføre" seg som en erfaren møtereferent, kodesjekker, eksamenshjelper eller studieveileder, og den skal "være i rolle" når du gir den oppgaver den skal løse.
 
 Dette får man til ved å gi assistenten forhåndsdefinerte instrukser om hvordan den skal oppføre seg, hva den skal fokusere på, og hvordan den skal presentere svaret.
 I tillegg kan du vanligvis laste opp materiale i form av f.eks. pdf-dokumenter, ren tekst eller nettsider som inneholder (fag)stoffet assistenten skal bruke som grunnlag for svarene sine. 
