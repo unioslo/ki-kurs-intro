@@ -1,12 +1,23 @@
 Oppsummering kapittel 1
 ==========================
+I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
+Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene. 
 
-**I dette kapittelet har du lært:**
+Hva er kunstig intelligens? 
 
-* **Kunstig intelligens (KI)** er en teknologi som beregner sannsynlige svar basert på mønstrene den har lært fra treningsdataene sine
-* **Generativ KI** lager nytt innhold basert på det den har lært fra før
-* **Språkmodellen** er "motoren" i generativ KI og er trent på store mengder tekst
-* **KI-assistenter og agenter** er spesialiserte varianter av KI med ulike funksjoner og muligheter
+Hva er generativ KI? 
+
+
+
+ALT 2: 
+I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
+
+**Repetisjon av begrepene:**
+
+* **Kunstig intelligens (KI)** er teknologi som beregner sannsynlige svar basert på mønstrene den har lært fra enrome mengder data
+* **Generativ KI** er en type KI som lager nytt innhold, basert på det den har lært fra før
+* **KI-assistent** er en KI-chat som har fått en forhåndsdefinert rolle eller instruksjoner, slik at den kan gi mer målrettede og fagspesifikke svar enn en vanlig KI-chat.
+* **KI-agent** er en avansert KI-assistent som i tillegg til å gi svar, kan utføre handlinger i IT-systemer. 
 
 Neste kapittel
 ---------------
