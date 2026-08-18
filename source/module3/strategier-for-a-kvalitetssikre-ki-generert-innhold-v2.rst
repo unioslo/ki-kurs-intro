@@ -1,4 +1,4 @@
-Strategier for å kvalitetssikre KI-generert innhold v2
+Strategier for å kvalitetssikre KI-generert innhold
 =======================================================
 
 Vi har nå lært at en språkmodell lager sannsynlig tekst, ikke sannhet. 
