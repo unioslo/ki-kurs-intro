@@ -16,7 +16,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
    :width: 60%
    :alt: Illustrasjon til forsiden av grunnkurs i generativ KI
 
-Se for deg et rom fullt av ekstra ansatte som er klare til å hjelpe deg! Ansatte som raskt kan lese, analysere, behandle, oppsummere, sortere, skrive utkast, oversette, forenkle, lage forslag eller hente fram relevant informasjon for deg.
+Se for deg et rom fullt av ekstra "kollegaer" som er klare til å hjelpe deg! "Kollegaer" som raskt kan lese, analysere, behandle, oppsummere, sortere, skrive utkast, oversette, forenkle, lage forslag eller hente fram relevant informasjon for deg.
 Kunstig intelligens kan være dette rommet med ekstra ansatte.
 Disse digitale hjelperne kan for eksempel:
 
