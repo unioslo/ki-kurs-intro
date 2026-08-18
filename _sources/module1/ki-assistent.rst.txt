@@ -19,7 +19,7 @@ Når du samhandler med en KI-assistent vil det se ganske likt ut som med en hvil
 KI-assistenten har bare dette ekstra laget med forhåndsdefinerte instruksjoner for hvordan den skal oppføre seg.
 
 
-.. uio-colorbox-3:: Eksempel på en tenkt KI-chat versus KI-assistent
+.. uio-colorbox-3:: Eksempel på forskjell 
  
     .. canvas-tabs:: 
 
