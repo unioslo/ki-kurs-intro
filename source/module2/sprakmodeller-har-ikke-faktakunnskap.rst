@@ -25,8 +25,8 @@ Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
 .. uio-dont:: Manipulering (Språkmodell-forgiftning)
 
-At språkmodeller ikke har sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
-Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
+   At språkmodeller ikke har sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
+   Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
    Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
    Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [:ref:`Germain <Germain>`]
