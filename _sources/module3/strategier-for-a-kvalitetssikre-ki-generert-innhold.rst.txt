@@ -1,30 +1,38 @@
-
 Strategier for å kvalitetssikre KI-generert innhold
-====================================================
+=======================================================
 
-Her er tre strategier du kan bruke hver gang du tar i bruk kunstig intelligens.
+Vi har nå lært at en språkmodell lager sannsynlig tekst, ikke sannhet. 
+Den har ingen kunnskap, ingen hukommelse og har innebygde skjevheter. 
 
-.. uio-colorbox-3:: Behandle KI-svar som om de kommer fra en ukjent kilde 
+I dette kurset har du likevel fått noen konkrete tips og «sikkerhetsregler» for hvordan du kan kvalitetssikre innhold som er generert av KI.
+Disse oppsummerer vi her.
 
-    Tenk på KI som tilfeldig person på gaten: Ville du stolt på informasjonen du får fra vedkommende? 
-    Du ville antakeligvis sjekket informasjonen før du tok den i bruk!
 
-    Tips til kontroll-spørsmål og gode vaner når behandler KI-svar:
-    
-    - Sjekk fakta mot pålitelige kilder (som faglitteratur eller troverdige nettsider).
-    - Søk opp referanser for å bekrefte at de faktisk eksisterer. KI-tjenester er som vi har påpekt i `Språkmodeller finner på ting <module2/sprakmodeller-finner-pa-ting>`_ , kjent for å dikte opp kilder. 
+.. uio-do:: Tips
 
-.. uio-colorbox-3:: Bruk din egen ekspertise
+   Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. 
+   Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til i neste iterasjon.
+   
 
-    - Har du fagkunnskap til å vurdere om det virker riktig? Er dette noe du kan verifisere? 
-    - Bruk din ekspertise til å stille mer presise oppfølgingsspørsmål.
-    - Bruk din ekspertise til å korrigere svaret, men la gjerne KI forbedre utkastet for deg basert på dine rettelser.
+.. uio-colorbox-3:: 1. Vurder risikoen først
 
-.. uio-colorbox-3:: Bruk strategiske spørsmål
+    - Lav risiko (du har kontroll, og feil er ufarlige): Vanlig kritisk lesing er som regel nok.
+    - Høy risiko (innholdet skal ut i verden, må være korrekt og påvirker personer): Verifiser innholdet først, eller la være å bruke KI.
 
-    Bruk strategiske spørsmål for å avgjøre hvilken grad av tillit du har til KI svaret.
 
-    - Du kan be modellen gi deg kilder til påstander, eller spørre hvor informasjonen kommer fra. Men husk alltid å verifisere kildene!
-    - Be modellen påpeke usikkerhet og begrensninger i sitt svar. For eksempel: "Hvor er du mest usikker i svaret ditt over?"
-    - Du kan be om alternative forklaringer eller løsninger.
-    - Du kan be om presisering av underliggende antakelser, for eksempel: "Hvilke antakelser legger du til grunn for svaret ditt?"
+.. uio-colorbox-3:: 2. Gi gode instruksjoner
+
+    - Gi kontekst, be om format, definer rolle, gi eksempler. 
+    - Be modellen tenke stegvis og begrunne svaret.
+
+.. uio-colorbox-3::  3. Sjekk svaret — stol aldri på KI-ens selvsikkerhet
+
+    - Kontroller fakta og referanser mot pålitelige kilder. Finner du ingen kilder, er innholdet trolig oppdiktet.
+    - Motvirk bekreftelsesbias ved også å spørre etter motargumenter eller alternative perspektiver.
+    - Vær oppmerksom på skjevheter og hull i smale fagfelt, og bruk din egen fagkunnskap aktivt.
+
+.. uio-colorbox-3:: 4. Rydd i samtalen
+
+    - Start en ny samtale når du bytter tema, eller når samtalen har blitt veldig lang.
+    - Fjern gale svar, slik at de ikke blir med videre i konteksten.
+
