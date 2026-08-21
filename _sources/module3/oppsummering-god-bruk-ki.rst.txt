@@ -11,7 +11,7 @@ for å få bedre svar.
     2.
     3.
 
-I dette kapittelet har du lært
+Repetisjon 
 ------------------------------------
 * Instruksjoner er din måte å kommunisere med KI på. En instruksjon er beskjeden eller spørsmålet du gir til KI. Kvaliteten på
   instruksjonen din påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar bør du: gi kontekst, spesifisere format,
