@@ -20,7 +20,7 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
    2. være spesielt oppmerksom på at du er logget inn med din UiO Microsoft konto når du bruker tjenesten.
 
 
-   Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. 
+   Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. Tjenesten kjører ikke på UiO sine systemer.
 
    * Microsoft Copilot Chat er kun godkjent for opptil grønne data 🟢 
    * Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot Chat.
