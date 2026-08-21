@@ -1,7 +1,8 @@
 Oppsummering kapittel 5
 ========================
 
-**I dette kapittelet har du lært at:**
+I dette kapittelet har du lært
+------------------------------------
 
 * **UiOs godkjente KI-tjenester** må brukes når du jobber med UiO-data
 * **Databehandleravtaler** sikrer at data behandles i henhold til GDPR-krav
@@ -10,5 +11,5 @@ Oppsummering kapittel 5
 Neste kapittel
 --------------
 
-Du har nå gjennomført grunnkurset i KI! I neste og siste kapittel får du en oppsummering av det viktigste, 
+Du har nå gjennomført grunnkurset i KI! I neste og siste kapittel får du en oppsummering av det viktigste,
 og konkrete tips til hvordan du kan ta kunnskapen videre i praksis.
