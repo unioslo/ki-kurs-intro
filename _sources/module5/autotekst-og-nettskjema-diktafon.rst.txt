@@ -32,12 +32,14 @@ Avhengig av om opptaket er knyttet et Nettskjema i TSD eller ikke, støtter tjen
 Når passer Autotekst eller TSD-Autotekst?
 -------------------------------------------
 
-.. uio-colorbox-3:: Bruk Autotekst hvis du
+Når du har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere. 
 
-    har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere og som klassifiseres som åpen 🟢, begrenset 🟡 eller fortrolig 🔴 nivå.
+.. uio-colorbox-3:: Bruk Autotekst hvis dataene klassifiseres som
+
+    åpen 🟢, begrenset 🟡 eller fortrolig 🔴 nivå.
     
 
-.. uio-colorbox-3:: Bruk TSD-Autotekst hvis du
+.. uio-colorbox-3:: Bruk TSD-Autotekst hvis dataene klassifiseres som
 
-    har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere og som klassifiserer som strengt fortrolig ⚫.
+    strengt fortrolig ⚫.
   
