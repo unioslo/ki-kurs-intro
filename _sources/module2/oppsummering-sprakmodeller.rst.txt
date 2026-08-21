@@ -3,10 +3,11 @@ Oppsummering kapittel 2
 I dette kapittelet har du lært hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Før du går videre til kapittel 3 kan du teste hva du har lært. 
 
   .. uio-reflect:: Test deg
+Diskuter selv eller med en kollega
 
-  1. Hvordan genererer språkmodeller svar?
+  1. Hvordan genererer store språkmodeller tekster og svar?
   2. Hva er kontekst? 
-  3. Nevn 3 svakheter ved store språkmodeller og hvordan du kan imøtekomme dem. 
+  3. Nevn de tre viktigste svakhetene ved store språkmodeller og hvordan du kan imøtekomme dem. 
 
 **I dette kapittelet har du lært at:**
 
