@@ -19,7 +19,7 @@ Repetisjon
   definere en rolle og gi eksempler. 
 
 * Det finnes mange ulike instruksjonsteknikker: 
-  1. Lag en arbeidsplan for hvordan KI-en skal løse problemet
+  ** 1. Lag en arbeidsplan for hvordan KI-en skal løse problemet
   2. Be KI-en forklare hvorfor den har gitt det svaret den ga
   3. Forbedre instruksjonen trinnvis
   4. Start en ny samtale om du merker at svarene begynner å få dårligere kvalitet
