@@ -12,17 +12,18 @@ Diskuter selv eller med en kollega
 **I dette kapittelet har du lært at:**
 
 * **Store Språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
-konteksten du gir den. Hvert ord trekkes med litt tilfeldighet og modellen stopper når den “mener” svaret er 
-fullstendig. STore språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor kunnskap.
+  konteksten du gir den. Hvert ord trekkes med litt tilfeldighet og modellen stopper når den “mener” svaret er 
+  fullstendig. STore språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor  
+  kunnskap.
 
 * **Kontekst** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
-instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
+  instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
-* ** Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er sant.
-De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det gjør 
-modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon for at
-modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med
-virkeligheten.
+* ** Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er
+    sant.De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det 
+  gjør modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon 
+  for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
+  medvirkeligheten.
 * Fordi store språkmodeller ikke har faktakunnskap, kan de **finne på ting som ikke stemmer**. Det kan være
 feil fakt, oppdiktede referanser eller forvekslinger. 
 * **Språkmodellen har ikke hukommelse i seg selv**
