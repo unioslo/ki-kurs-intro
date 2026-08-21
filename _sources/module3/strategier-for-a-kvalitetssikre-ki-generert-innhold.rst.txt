@@ -8,17 +8,12 @@ I dette kurset har du likevel fått noen konkrete tips og «sikkerhetsregler» f
 Disse oppsummerer vi her.
 
 
-.. uio-do:: Tips
-
-   Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. 
-   Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til i neste iterasjon.
-   
 
 .. uio-colorbox-3:: 1. Vurder risikoen først
 
     - Lav risiko (du har kontroll, og feil er ufarlige): Vanlig kritisk lesing er som regel nok.
     - Høy risiko (innholdet skal ut i verden, må være korrekt og påvirker personer): Verifiser innholdet først, eller la være å bruke KI.
-
+   
 
 .. uio-colorbox-3:: 2. Gi gode instruksjoner
 
@@ -36,3 +31,7 @@ Disse oppsummerer vi her.
     - Start en ny samtale når du bytter tema, eller når samtalen har blitt veldig lang.
     - Fjern gale svar, slik at de ikke blir med videre i konteksten.
 
+.. uio-colorbox-3:: 5. Prøv deg frem
+
+   Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling. 
+   Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til i neste iterasjon.

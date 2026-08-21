@@ -10,7 +10,7 @@ Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbei
 De lokale språkmodellen er gode, men de er *mindre* enn de som kjører i skyen.
 Det betyr at dersom oppgaven du skal løse er veldig kompleks, så kan en sky-modell muligens gi deg et resultat av bedre kvalitet.
 
-.. uio-do:: Kontrollspørsmål for å hjelpe deg å velge modell
+.. uio-colorbox-3:: Kontrollspørsmål for å velge modell
 
       * Er svaret godt nok med en mindre modell? Bra, gå for den mindre modellen og spar ressurser!
       * Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell.

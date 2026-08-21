@@ -46,7 +46,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
 
             Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer:
 
-            .. uio-colorbox-2:: Tradisjonell programmering foregår slik:	
+            .. uio-colorbox-3:: Tradisjonell programmering foregår slik:	
 
                   - Et menneske lager klare regler eller algoritmer: «Hvis X skjer, gjør Y».
                   - Programmet får input, og bruker reglene på den.
@@ -55,7 +55,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
                   Eksempel på tradisjonell programmering: 
                   Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
 
-            .. uio-colorbox-2:: Maskinlæring løser et problem slik:
+            .. uio-colorbox-3:: Maskinlæring løser et problem slik:
 
                   I maskinlæring er regelen eller algoritmen ukjent, og det vi ønsker å lære.
                   

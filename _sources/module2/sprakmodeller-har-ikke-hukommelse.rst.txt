@@ -38,13 +38,6 @@ Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.
 I tillegg er språkmodellene dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
 Derfor bør du sørge for at gale svar ikke blir liggende i samtalen.
 
-.. uio-do:: Tips
-
-    - Start en ny samtale om du skifter temaet eller samtalen har blitt veldig lang. 
-
-    - Rediger spørsmål som du får feil svar på. Trykk på rediger-knappen, ✏️, og legg til informasjon som modellen trenger for å svare riktig. Revider instruksjonen til du får et svar uten feil.
-
-
 
 
 

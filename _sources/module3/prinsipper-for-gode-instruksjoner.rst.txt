@@ -2,11 +2,15 @@ Prinsipper for gode instruksjoner
 ===================================
 
 
-.. uio-info:: Hva er egentlig en instruksjon?
+Hva er egentlig en instruksjon?
+--------------------------------
 
-   En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. 
-   Det er din måte å kommunisere med KI-en på. 
-   Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.
+En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. 
+Det er din måte å kommunisere med KI-en på. 
+Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.
+
+Hvordan bygge gode instruksjoner
+----------------------------------
 
 Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
 Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.
@@ -15,7 +19,7 @@ Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.
 Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag til hvordan du kan forbedre dem.
 
 1. Gi kontekst
-----------------------
+******************
 
 .. uio-do-dont:: 
 
@@ -35,7 +39,7 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
         Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber den produsere.
 
 2. Spesifiser format
-----------------------
+***********************
 
 .. uio-do-dont::
 
@@ -54,7 +58,7 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
 
     
 3. Definer en rolle
---------------------
+***********************
 
 .. uio-do-dont::
 
@@ -82,7 +86,7 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
 
 
 4. Gi eksempler
---------------------
+***********************
 
 .. uio-do-dont::
 

@@ -36,15 +36,6 @@ KI-assistenten har bare dette ekstra laget med forhåndsdefinerte instruksjoner 
             * **KI-svar**: Jeg gir deg ikke svaret, men kan gi deg et hint: Kan det ha noe med hypotenus å gjøre? 
 
 
-.. uio-colorbox-3::  Eksempler på KI-assistenter
-
-    - I `GPT UiO  <https://www.uio.no/tjenester/it/ki/gpt-uio/>`_ kan du lage dine egne KI-assistenter.
-    - `Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm/>`_ er en avansert form for KI-assistent. 
-
-    Disse kan du lære mer om i kapitlet om `KI-tjenester ved UiO <https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio-5>`_ 
-
-
-
 .. uio-reflect:: Refleksjonsoppgave
 
    Hva slags oppgaver kan en KI-assistent hjelpe deg og teamet ditt med?

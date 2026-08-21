@@ -40,13 +40,13 @@ Velkommen til grunnkurs i generativ KI!
    :caption: Episode 3: Hvordan trygt bruke KI?
 
    module3/hvordan-bruke-ki-pa-en-god-mate
-   module3/nar-kan-du-stole-pa-generativ-ki
-   module3/strategier-for-a-kvalitetssikre-ki-generert-innhold
    module3/prinsipper-for-gode-instruksjoner
    module3/praktisk-ovelse-forbedre-instruksjoner
    module3/nyttige-instruksjons-teknikker
    module3/praktisk-ovelse-forbedre-egne-instruksjoner
    module3/tips-om-pre-instruksjon-og-ki-assistenter
+   module3/nar-kan-du-stole-pa-generativ-ki
+   module3/strategier-for-a-kvalitetssikre-ki-generert-innhold
    module3/oppsummering-god-bruk-ki
 
 .. toctree::
@@ -58,16 +58,16 @@ Velkommen til grunnkurs i generativ KI!
    module4/miljo
    module4/sosiale-kostnader
    module4/datasikkerhet
-   module4/retningslinjer-og-policies
    module4/opphavsrett
+   module4/retningslinjer-og-policies
 
 .. toctree::
    :maxdepth: 1
    :caption: Episode 5: KI-tjenester ved UiO
 
    module5/ki-tjenester-ved-uio
-   module5/uios-godkjente-ki-tjenester
    module5/uio-ki-tjenester-video
+   module5/uios-godkjente-ki-tjenester
    module5/gpt-uio
    module5/gpt-uio-hvilken-modell-skal-du-velge
    module5/gpt-uio-ki-assistenter

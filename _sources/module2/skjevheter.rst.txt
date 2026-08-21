@@ -35,9 +35,3 @@ Dagens språkmodeller har en tendens til å være enige med deg.
 Dette kan føre til at språkmodellen gir deg *rett i* noe som ikke er rett.
 
 For å unngå bekreftelsesskjevhet kan du snu på spørsmålet, altså også spørre om det motsatte.
-
-.. uio-do:: Tips for å unngå bekreftelsesskjevhet
-
-  Hvis du for eksempel har spurt «stemmer det at det er farlig å drikke store mengder vann», kan du også spørre om «stemmer det at det *ikke* er farlig å drikke store mengder vann».
-  Hvis språkmodellen svarer ja på begge spørsmålene, vet du at du ikke kan stole på svarene.
-  Det kan være bedre å stille åpne spørsmål enn ja/nei-spørsmål.

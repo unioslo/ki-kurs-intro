@@ -16,7 +16,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css" />
       <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=bc1071ef" />
-      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=371bc00e" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=8c11df9e" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
@@ -49,22 +49,18 @@ Begge tjenestene kjører i Google Cloud, altså utenfor UiOs egne IT-systemer.</
 <p>Begge tjenestene er omfattet av UiOs databehandleravtale med Google.
 Det betyr blant annet at informasjonen du legger inn i tjenestene (for eksempel instruksjoner og filer) ikke brukes til å trene KI-modellene videre.</p>
 <p>Du kan jobbe med opptil gule data i både Gemini og Gemini Notebook, i tråd med UiOs interne klassifisering av informasjon.</p>
-<div class="uio-icon-box do">
-<h3>Viktig</h3>
+<div class="uio-color-box-3">
+<h3>Viktig når du bruker Gemini og Gemini Notebook</h3>
 <p>For å bruke Gemini-tjenestene må du:</p>
 <ol class="arabic simple">
 <li>ha en konto i Google Workspace tilknyttet UiO</li>
-<li>være spesielt oppmerksom på at du er logget inn med UiO-kontoen din når du bruker tjenestene</li>
+<li>være spesielt oppmerksom på at du er logget inn med din UiO Google konto når du bruker tjenestene</li>
 </ol>
-<p>Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp.</p>
+<p>Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. Tjenesten kjører ikke på UiO sine systemer.</p>
 <ul class="simple">
-<li>Gemini og Gemini Notebook er kun godkjent for opptil gule data</li>
+<li>Gemini og Gemini Notebook er kun godkjent for opptil gule data 🟡</li>
 <li>Last ikke opp materiale som kan identifisere eller eksponere andre personer (for eksempel studentbesvarelser, pasientopplysninger, intervjuer, personlige bilder eller lydopptak)</li>
 <li>Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)</li>
-</ul>
-<p>Når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet</p>
-<ul class="simple">
-<li>Last ikke opp dokumenter du ikke har rettigheter til å dele.</li>
 </ul>
 </div>
 <section id="gemini">
@@ -73,12 +69,14 @@ Det betyr blant annet at informasjonen du legger inn i tjenestene (for eksempel 
 <p>Sammenlignet med GPT UiO er Gemini bedre egnet til faktasøk, fordi den kan hente oppdatert informasjon fra åpne nettsider.
 Gemini kan også lage mange typer filer, for eksempel: pdf, Powerpoint-presentasjoner eller Excel-regneark for å nevne noen.</p>
 <p>I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se avsnittet nedenfor).</p>
-<div class="uio-icon-box do">
+<div class="uio-color-box-3">
 <h3>Bruk Gemini når du</h3>
 <ul class="simple">
 <li>trenger en kraftig modell som kan generere bilder</li>
 <li>vil laste opp og bearbeide filer</li>
-<li>arbeider sammen med en Gemini Notebook og vil bruke kildene du har lagret der</li>
+<li>vil generere forskjellig typer filer</li>
+<li>vil bruke kildene du allerede har lagt til i en Gemini Notebook</li>
+<li>informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡</li>
 </ul>
 </div>
 </section>
@@ -88,7 +86,7 @@ Gemini kan også lage mange typer filer, for eksempel: pdf, Powerpoint-presentas
 <p>Notebooken svarer ikke på spørsmål før du har lastet opp informasjon den kan bruke som kilde.
 Du må derfor først bygge opp din egen «kunnskapsbank» for hver Notebook, som kan inneholde:</p>
 <ul class="simple">
-<li>dokumenter</li>
+<li>dokumenter eller innlimt tekst</li>
 <li>nettsider</li>
 <li>opptak fra forelesninger</li>
 </ul>
@@ -97,33 +95,19 @@ Du kan derfor ofte få mer presise og kildetro svar enn ved bruk av GPT UiO.</p>
 <p>Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:</p>
 <ul class="simple">
 <li>lage oppsummeringer i tekst eller lyd</li>
-<li>lage quizer</li>
+<li>lage quizzer</li>
 <li>lage presentasjoner</li>
 </ul>
-<div class="uio-icon-box do">
+<blockquote>
+<div><p>Husk at når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: last ikke opp dokumenter du ikke har rettigheter til å dele.</p>
+</div></blockquote>
+<div class="uio-color-box-3">
 <h3>Bruk Gemini Notebook hvis</h3>
-<p>du skal jobbe mye med dokumenter og egne kilder</p>
-</div>
-<div class="uio-color-box-1">
-<h3>Nøkkelpunkter</h3>
 <ul class="simple">
-<li>Gemini (chat) og Gemini Notebook baserer seg på Google sin språkmodell Gemini</li>
-<li>Gemini kan produsere flere filtyper, blant annet powerpoint og excel</li>
-<li>Gemini Notebook er spesialisert på arbeid mot dokumenter</li>
-<li>Du må ha Google Workspace konto gjennom UiO for å få tilgang</li>
-<li>Databehandleravtale er på plass</li>
-<li><em>Tjenesten skal kun brukes med UiO konto</em> - sjekk at du er logget inn med UiO konto og ikke din egen private Google konto!</li>
+<li>du skal jobbe mye med dokumenter og egne kilder</li>
+<li>vil generer forskjellige typer ressurser som quizzer eller podcaster basert på dine dokumenter og kilder</li>
+<li>informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡</li>
 </ul>
-</div>
-<p>.</p>
-<div class="uio-icon-box source">
-<h3>Lenker til UiOs tjenestesider</h3>
-<ul class="simple">
-<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/gemini/index.html" rel="noreferrer" target="_blank">Gemini <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
-<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/notebooklm" rel="noreferrer" target="_blank">Gemini Notebook <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
-<li><a class="reference external" href="https://www.uio.no/tjenester/it/lagring-samarbeid/googleworkspace/" rel="noreferrer" target="_blank">Google Workspace <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
-</ul>
-<p>Her finner du nyttig og viktig informasjon om vilkår for bruk og veiledning for å komme igang med Gemini og Gemini Notebook.</p>
 </div>
 </section>
 <div class="page-navigation"><div class="prev-link"><a href="autotekst-og-nettskjema-diktafon.html">← Forrige</a></div><div class="next-link"><a href="microsoft-copilot-chat.html">Neste →</a></div></div>

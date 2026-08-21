@@ -23,3 +23,25 @@ Kilder
     .. _Svarstad:
 
     [Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462.
+
+
+Lenker 
+=========
+
+.. uio-source::  Lenker til UiO tjenester vi møter i dette kurset
+
+    - `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
+    - `Autotekst <https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html>`_
+    - `TSD-Autotekst <https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-tsd.html>`_
+    - `Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_ 
+    - `Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm>`_
+    - `Google Workspace <https://www.uio.no/tjenester/it/lagring-samarbeid/googleworkspace/>`_
+    - `Om Microsoft Copilot Chat <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
+
+
+    - `Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html>`_
+    - `Panopto <https://www.uio.no/tjenester/it/lyd-video/panopto/>`_
+    - `TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_ 
+
+
+    

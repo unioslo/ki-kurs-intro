@@ -12,11 +12,20 @@ Du må derfor være spesielt forsiktig når du benytter tjenesten.
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat.
 
 
-.. uio-do:: Bruk Microsoft Copilot Chat hvis
+.. uio-colorbox-3:: Viktig når du bruker Microsoft Copilot Chat
+   
+   For å bruke Microsoft Copilot Chat må du:
 
-   - du skal jobbe med grønne data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie
-   - du vil ha en chat tjeneste som hjelper deg igang
-   - du vil ha en chat tjeneste som kan lage og jobbe med flere typer filer
+   1. være aktiv bruker av MS 365
+   2. være spesielt oppmerksom på at du er logget inn med din UiO Microsoft konto når du bruker tjenesten.
+
+
+   Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. 
+
+   * Microsoft Copilot Chat er kun godkjent for opptil grønne data 🟢 
+   * Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot Chat.
+   * Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)
+    
 
 .. uio-info:: Microsoft KI produktene
 
@@ -37,23 +46,16 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
    - få oppsummeringer eller andre typer analyser av innholdet
 
    Det du ikke kan, er å be Copilot gjøre endringer direkte i en fil fra selve 
-   PowerPoint-, Word- eller andre Microsoft-applikasjoner. 
+   PowerPoint-, Word- eller andre Microsoft-applikasjoner (agent funksjonaliteten til Microsoft Copilot er ikke skrudd på hos UiO). 
    Slike endringer må du fortsatt gjøre selv i programmet, basert på forslagene du får fra Copilot (Chat).
 
 
-.. uio-colorbox-1:: Nøkkelpunkter
 
-   * Microsoft sin egen KI tjeneste
-   * Generering av tekst, bilder og videoer
-   * Kun godkjent for grønne data
-   * Databehandleravtale på plass
-   * Tilgjengelig med UiO konto
-   * Ansatte må være aktiv bruker av MS 365 
+.. uio-do:: Bruk Microsoft Copilot Chat hvis
 
-.. uio-dont:: Viktig
+   - du skal jobbe med grønne 🟢 data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie
+   - du vil ha en chat tjeneste som er enkel å bruke og hjelper deg igang
+   - du vil ha en chat tjeneste som kan lage og jobbe med flere typer filer
 
-   Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot Chat.
 
-.. uio-source::  Lenker til UiOs tjenestesider
-
-   * `Om Microsoft Copilot Chat <https://www.uio.no/tjenester/it/ki/copilot/index.html>`_
+  
