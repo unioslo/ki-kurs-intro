@@ -5,7 +5,8 @@ Du har nå et nyttig sett med verktøy for å bruke KI på en tryggere og bedre 
 lært hvordan man vurderer og kvalitetssikrer svar fra KI, og hvordan du kan bruke godt utformede instruksjoner
 for å få bedre svar.
 
-  .. uio-reflect:: Test deg selv
+.. uio-reflect:: Test deg selv
+
     Diskuter selv eller med en kollega
     1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar? 
     2. Hva erfarte du når du forsøkte å forbedre instruksjonene dine?
@@ -16,6 +17,7 @@ for å få bedre svar.
 
 Repetisjon 
 ------------------------------------
+
 * Instruksjoner er din måte å kommunisere med KI på. En instruksjon er beskjeden eller spørsmålet du gir til KI. Kvaliteten på
   instruksjonen din påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar bør du: gi kontekst, spesifisere format,
   definere en rolle og gi eksempler. 
@@ -38,4 +40,5 @@ Repetisjon
 
 Neste kapittel
 --------------
+
 Vi har nå grunnlaget for å trygg KI-bruk. I neste kapittel er temaet: ansvarlig og bærekraftig bruk av KI.
