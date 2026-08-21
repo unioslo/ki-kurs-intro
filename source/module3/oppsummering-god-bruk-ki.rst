@@ -1,12 +1,12 @@
 Oppsummering kapittel 3
 ========================
 
-Du har nå fått et nyttig sett med verktøy for å bruke KI på en tryggere og bedre måte.
-I dette kapittelet har du lært hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette. Før du går videre til kapittel 3 kan du teste hva du har lært.
+Du har nå et nyttig sett med verktøy for å bruke KI på en tryggere og bedre måte. I dette kapittelet har vi
+lært hvordan man vurderer og kvalitetssikrer svar fra KI, og hvordan du kan bruke godt utformede instruksjoner
+for å få bedre svar.
 
   .. uio-reflect:: Test deg selv
-
-    Diskuter selv eller med en kollega
+ Diskuter selv eller med en kollega
 
     1.
     2.
