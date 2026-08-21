@@ -7,24 +7,26 @@ Diskuter selv eller med en kollega
 
   1. Hva er store språkmodeller og hvordan fungerer de? 
   2. Hva er kontekst og hva gjør du for å gi språkmodellen god nok kontekst? 
-  3. Nevn de tre viktigste svakhetene ved store språkmodeller og hva kan du gjøre for å imøtekomme dem?
+  3. Nevn noen av de viktigste svakhetene ved store språkmodeller og hva kan du gjøre for å imøtekomme dem?
 
 **I dette kapittelet har du lært at:**
 
-** Store Språkmodeller ** en matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
+* **Store Språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
 konteksten du gir den. Hvert ord trekkes med litt tilfeldighet og modellen stopper når den “mener” svaret er 
 fullstendig. STore språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor kunnskap.
 
-** Kontekst  ** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
+* **Kontekst** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
 instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
-** Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er sant.
+* ** Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er sant.
 De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det gjør 
 modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon for at
 modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med
 virkeligheten.
+* Fordi store språkmodeller ikke har faktakunnskap, kan de **finne på ting som ikke stemmer**. Det kan være
+feil fakt, oppdiktede referanser eller forvekslinger. 
+* **Språkmodellen har ikke hukommelse i seg selv**
 
-** Store språkmodeller finner på ting **
 * **Hallusinering** er når KI genererer informasjon som virker riktig, men er feil
 * **Tilfeldighet** er innebygd - samme spørsmål kan gi ulike svar
 
