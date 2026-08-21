@@ -8,6 +8,7 @@ for å få bedre svar.
 .. uio-reflect:: Test deg selv
 
     Diskuter selv eller med en kollega
+
     1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar? 
     2. Hva erfarte du når du forsøkte å forbedre instruksjonene dine?
     3. Hvilke instruksjonsteknikker kan du benytte når du kommuniserer med KI? 
