@@ -19,7 +19,7 @@ Diskuter selv eller med en kollega
 * **Kontekst** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
   instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
-* **Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er
+* **Store språkmodeller har ikke noe forhold til sannhet** og har derfor ikke sikker kunnskap om hva som er
   sant.De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det 
   gjør modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon 
   for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
