@@ -35,4 +35,4 @@ Hva er konteksten?
 ------------------
 
 Når vi snakker om store språkmodeller, bruker vi ofte *kontekst* om alt det vi gir modellen å jobbe med.
-Konteksten kan være et spørsmål eller instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
+Konteksten kan være et spørsmål eller en instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
