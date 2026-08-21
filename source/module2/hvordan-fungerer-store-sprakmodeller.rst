@@ -2,9 +2,9 @@ Hvordan fungerer store språkmodeller?
 =======================================
 
 Som vi lærte i forrige kapittel er store språkmodeller er en type *generativ KI*. 
-En type enkle språkmodeller som mange allerede er kjent med, er smarte tastaturer på mobiltelefoner.
-Disse foreslår neste ord basert på teksten du har skrevet så langt.
-Modellene er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
+En type enkel språkmodell du kanskje kjenner til, er ordforslagene som kommer på mobiltelefonen din.
+Smarttelefoner pleier å foreslå neste ord basert på teksten du har skrevet så langt.
+Modellen i telefonen er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
 Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *konteksten*.
 
 
