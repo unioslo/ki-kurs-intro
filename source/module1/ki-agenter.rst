@@ -8,11 +8,11 @@ En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT
 
 .. uio-colorbox-3:: Eksempler 
 
-    KI-agenter er gjerne laget for en eller flere spesifikke formål og kan for eksempel:
+    KI-agenter er gjerne laget for et eller flere spesifikke formål og kan for eksempel:
   
     - hente informasjon fra andre systemer, f.eks internett eller en database
     - opprette og skrive innhold i en epost
-    - slå sammen to excel ark for deg
+    - slå sammen to regneark for deg
 
 
 Kraftig verktøy som krever kompetanse
@@ -22,8 +22,9 @@ Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse
 
 Ved UiO tilbys foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp fordi de er mer krevende å bruke, og feil bruk kan få alvorlige konsekvenser.
 
-Allikevel tilbyr vi allerede noen typer KI-agenter, for eksempel såkalte kode-agenter. 
-Disse kan brukes til mye mer enn koding, de kan for eksempel lese filer i en utpekt folder og utføre handlinger direkte på disse. 
-Framover vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy dere bruker. 
+På UiO er allikevel KI-agenter til en viss grad allerede i bruk. En type som brukes er såkalte kode-agenter. 
+De brukes av IT-ansatte og andre som driver med koding. Men de kan brukes til mye mer enn dette.
+De kan for eksempel lese filer i en utpekt mappe og utføre handlinger direkte på disse. 
+Framover vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy vi bruker. 
 
 
