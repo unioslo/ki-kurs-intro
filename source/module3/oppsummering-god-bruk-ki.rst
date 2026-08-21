@@ -38,6 +38,4 @@ Repetisjon
 
 Neste kapittel
 --------------
-
-Du har nå lært hvordan KI fungerer og hvordan du bruker det trygt.
-Nå skal vi se på et annet, like viktig tema: Ansvarlig og bærekraftig bruk av KI.
+Vi har nå grunnlaget for å trygg KI-bruk. I neste kapittel er temaet: ansvarlig og bærekraftig bruk av KI.
