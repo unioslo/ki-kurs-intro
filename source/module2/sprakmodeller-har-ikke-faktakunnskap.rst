@@ -21,7 +21,7 @@ Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil.
 Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
 
-.. uio-dont:: Manipulering (Språkmodell-forgiftning)
+.. uio-colorbox-3:: Manipulering (Språkmodell-forgiftning)
 
    At språkmodeller ikke har sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
    Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.

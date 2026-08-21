@@ -14,17 +14,17 @@ Den store økningen i bruk av kunstig intelligens gjør at KI-leverandørene byg
 
 Selv om KI er ressurskrevende er det noen grep du kan gjøre for å redusere belastningen på miljøet. 
 
-.. uio-do:: Tips 1 - bevissthet
+.. uio-colorbox-3:: Tips 1 - bevissthet
 
    Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til KI for alt.
 
-.. uio-do:: Tips 2 - valg av språkmodell
+.. uio-colorbox-3:: Tips 2 - valg av språkmodell
 
    I flere tjenester, blant annet GPT UiO, kan du velge blant flere forskjellige språkmodeller, der noen er store og noen er små. 
    De små er mindre ressurskrevende både å lage og å bruke. 
    De kan fungere godt til enkle oppgaver som å språkvaske en e-post eller få forslag til omskrivinger av setninger. 
 
-.. uio-do:: Tips 3 - start ny samtale
+.. uio-colorbox-3:: Tips 3 - start ny samtale
 
    Lange samtaler krever mer ressurser. 
    Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.

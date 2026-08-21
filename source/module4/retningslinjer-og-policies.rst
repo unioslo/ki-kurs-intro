@@ -12,7 +12,7 @@ Dette kurset dekker mange av punktene i de forskjellige KI retningslinjene du fi
 
 Nedenfor finner du lenker til UiO sine KI-retningslinjer.
 
-.. uio-do:: KI retningslinjer ved UiO
+.. uio-source:: KI retningslinjer ved UiO
 
    * `UiO sin KI hovedside <https://www.uio.no/tjenester/ki/>`_ Her finner du lenker videre til forskjellige aspekter ved KI
    * `UiOs retningslinjer for bruk av KI <https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html>`_
@@ -21,7 +21,7 @@ Nedenfor finner du lenker til UiO sine KI-retningslinjer.
 Fordi KI er i rask endring, kreves det mer av den enkelte for å holde seg oppdatert. 
 Besøk derfor jevnlig UiO sine KI sider for å få med deg det nyeste innen KI retningslinjer og anbefalt bruk. 
   
-.. uio-do:: Husk
+.. uio-colorbox-3:: Husk
     
    Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.
 

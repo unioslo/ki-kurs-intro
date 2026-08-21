@@ -18,62 +18,64 @@ Hvis feil kan få alvorlige følger, må du enten
 
 Nedenfor er eksempler på bruk med lav, medium og høy risiko. 
 
-.. canvas-tabs::
+.. uio-colorbox-3:: 
 
-   .. canvas-tab:: Lav risiko  
+   .. canvas-tabs::
 
-      Hvis du har kontroll, eller konsekvensene av feil er lave:
+      .. canvas-tab:: Lav risiko  
 
-      * **Brainstorming og idémyldring** - Eksempel: Du bruker KI for å få andre perspektiver og innfallsvinkler på dine ideer. 
-      * **Formulere tekst du selv har kontekst på** - Eksempel: Du utformer materiale hvor du lett kan se om det er riktig eller ikke.
-      * **Språklig forbedring** - Eksempel: Du ber KI gjøre språklige og retoriske endringer på en tekst du selv har skrevet. 
-      * **Oppsummere tekst du selv har skrevet** - Eksempel: Du har produsert materialet selv, og kan lett vurdere om oppsummeringen er god. 
-      * **Lage utkast** - Eksempel: Du bruker KI til å komme i gang med et arbeid, men kvalitetssikrer utkastet før du jobber videre.
+         Hvis du har kontroll, eller konsekvensene av feil er lave:
 
-      **Hvorfor er det lav risiko?**
+         * **Brainstorming og idémyldring** - Eksempel: Du bruker KI for å få andre perspektiver og innfallsvinkler på dine ideer. 
+         * **Formulere tekst du selv har kontekst på** - Eksempel: Du utformer materiale hvor du lett kan se om det er riktig eller ikke.
+         * **Språklig forbedring** - Eksempel: Du ber KI gjøre språklige og retoriske endringer på en tekst du selv har skrevet. 
+         * **Oppsummere tekst du selv har skrevet** - Eksempel: Du har produsert materialet selv, og kan lett vurdere om oppsummeringen er god. 
+         * **Lage utkast** - Eksempel: Du bruker KI til å komme i gang med et arbeid, men kvalitetssikrer utkastet før du jobber videre.
 
-      Sjansene for feil er mindre, og konsekvenser ved feil er små. 
+         **Hvorfor er det lav risiko?**
 
-      **Tiltak for å begrense risiko**
+         Sjansene for feil er mindre, og konsekvenser ved feil er små. 
 
-      - Utøv normal kritisk vurdering av resultatet KI gir deg
+         **Tiltak for å begrense risiko**
 
-   .. canvas-tab:: Medium risiko
+         - Utøv normal kritisk vurdering av resultatet KI gir deg
 
-      Hvis resultatet skal "ut i verden" eller du bruker KI på områder du ikke har ekspertise:
+      .. canvas-tab:: Medium risiko
 
-      * **Utkast til faglig tekst, e-post eller rapport** - Eksempel: Teksten, e-posten eller rapporten skal deles med andre og det har betydning om noe er feil.
-      * **Forslag til prosedyrer** - Eksempel: Du lager materiale som må stemme overens med andre kilder, som retningslinjer, dokumentasjon eller lovverk.  
-      * **Tekniske forklaringer** - Eksempel: Du ber KI forklare hvordan noe fungerer, og forklaringen kan være feil selv om den høres overbevisende ut. 
-      * **Oppsummering av tekst du ikke kjenner godt** - Eksempel: Du ber KI oppsummere en tekst du ikke har lest, og kan ikke se om noe er misforstått eller utelatt fra originalteksten
+         Hvis resultatet skal "ut i verden" eller du bruker KI på områder du ikke har ekspertise:
 
-      **Hvorfor er det medium risiko?**
+         * **Utkast til faglig tekst, e-post eller rapport** - Eksempel: Teksten, e-posten eller rapporten skal deles med andre og det har betydning om noe er feil.
+         * **Forslag til prosedyrer** - Eksempel: Du lager materiale som må stemme overens med andre kilder, som retningslinjer, dokumentasjon eller lovverk.  
+         * **Tekniske forklaringer** - Eksempel: Du ber KI forklare hvordan noe fungerer, og forklaringen kan være feil selv om den høres overbevisende ut. 
+         * **Oppsummering av tekst du ikke kjenner godt** - Eksempel: Du ber KI oppsummere en tekst du ikke har lest, og kan ikke se om noe er misforstått eller utelatt fra originalteksten
 
-      Feil her kan føre til feil beslutninger, feil i tekniske systemer, ineffektivitet, eller svekket tillit utad.
+         **Hvorfor er det medium risiko?**
 
-      **Tiltak for å begrense risiko**
+         Feil her kan føre til feil beslutninger, feil i tekniske systemer, ineffektivitet, eller svekket tillit utad.
 
-      - Kontrollere fakta mot andre kilder
-      - Justere språk og vinkling
-      - Ta det endelige ansvaret selv
-      
-   .. canvas-tab:: Høy risiko
+         **Tiltak for å begrense risiko**
 
-      Hvis materialet som produseres må være faktuelt korrekt 
+         - Kontrollere fakta mot andre kilder
+         - Justere språk og vinkling
+         - Ta det endelige ansvaret selv
+         
+      .. canvas-tab:: Høy risiko
 
-      * **Tall og statistikk** - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere mot andre kilder.
-      * **Lover og regler** - Eksempel: Du stoler på KI-ens evne til å gjengi eller oppsummere juridiske dokumenter korrekt, selv om den kan misforstå. 
-      * **Referanser** - Eksempel: Du bruker kildene KI oppgir uten å sjekke at de faktisk eksisterer.
-      * **Vurdering av enkeltpersoner** - Eksempel: Du lar KI-en gjøre en vurdering som påvirker enkeltpersoner direkte, for eksempel i en ansettelsesprosess.
-      
-      **Hvorfor er det høy risiko?**
+         Hvis materialet som produseres må være faktuelt korrekt 
 
-      Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser. 
+         * **Tall og statistikk** - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere mot andre kilder.
+         * **Lover og regler** - Eksempel: Du stoler på KI-ens evne til å gjengi eller oppsummere juridiske dokumenter korrekt, selv om den kan misforstå. 
+         * **Referanser** - Eksempel: Du bruker kildene KI oppgir uten å sjekke at de faktisk eksisterer.
+         * **Vurdering av enkeltpersoner** - Eksempel: Du lar KI-en gjøre en vurdering som påvirker enkeltpersoner direkte, for eksempel i en ansettelsesprosess.
+         
+         **Hvorfor er det høy risiko?**
 
-      **Tiltak for å begrense risiko**
-      
-      - Vurder om KI bør unngås
-      - Om KI benyttes, sjekk KI resultatet grundig og involver kompetente fagpersoner
+         Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser. 
+
+         **Tiltak for å begrense risiko**
+         
+         - Vurder om KI bør unngås
+         - Om KI benyttes, sjekk KI resultatet grundig og involver kompetente fagpersoner
 
 
 

@@ -82,8 +82,45 @@ class CanvasTabDirectiveFixed(SphinxDirective):
         return [node]
 
 
+def pdf_visit_canvas_tabs(self, node):
+    """Render tabs stacked and fully expanded for PDF output.
+
+    Tabs rely on Canvas's JavaScript (or tabs.js locally) to reveal panels, so
+    in a PDF only the first panel would ever be visible. Here we drop the tab
+    navigation and emit each tab as a titled block instead, so all content is
+    printed. Also avoids the dangling '#fragment-...' link targets that the
+    nav would otherwise leave in a single-document build.
+    """
+    tabs = [child for child in node.children if isinstance(child, canvas_tab)]
+
+    self.body.append('<div class="canvas-tabs-pdf">\n')
+
+    for i, tab in enumerate(tabs, 1):
+        title = tab.get('tabtitle', f'Tab {i}')
+        self.body.append('<div class="canvas-tab-pdf">\n')
+        self.body.append(
+            f'<p class="canvas-tab-pdf-title">{self.encode(title)}</p>\n'
+        )
+        self.body.append('<div class="canvas-tab-pdf-body">\n')
+
+        for child in tab.children:
+            child.walkabout(self)
+
+        self.body.append('</div>\n')
+        self.body.append('</div>\n')
+
+    self.body.append('</div>\n')
+
+    raise nodes.SkipNode
+
+
 def html_visit_canvas_tabs(self, node):
     """Generate Canvas-compatible tabs HTML."""
+    # PDF builds can't run the tab JavaScript, so expand everything instead.
+    if self.builder.name == 'simplepdf':
+        pdf_visit_canvas_tabs(self, node)
+        return
+
     # Generate unique ID for this tab set
     tab_id = hashlib.md5(str(id(node)).encode()).hexdigest()[:8]
 

@@ -29,20 +29,15 @@ Med Nettskjema-diktafon kan du gjøre opptak som sendes trygt og automatisk fra 
 Avhengig av om opptaket er knyttet et Nettskjema i TSD eller ikke, støtter tjenesten opptil sorte data. 
 
 
-.. uio-colorbox-1:: Nøkkelpunkter
+Når passer Autotekst eller TSD-Autotekst?
+-------------------------------------------
 
-    * Tale til tekst, sikkert behandlet på UiO
-    * Opptak kan sendes direkte til Autotekst eller TSD-Autotekst via Nettskjema-diktafon appen 
-    * Autotekst støtter opptil røde data, TSD-Autotekst støtter opptil sorte data
-    * Kan lage en oppsummering i tillegg til transkripsjonen, nyttig for eksempel som et utgangspunkt til et møtereferat
-    * Autotekst er tilgjengelig med din UiO-konto
-    * Til TSD-Autotekst må du ha et TSD prosjekt for å få tilgang
+.. uio-colorbox-3:: Bruk Autotekst hvis du
+
+    har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere og som klassifiseres som åpen 🟢, begrenset 🟡 eller fortrolig 🔴 nivå.
     
 
-.. uio-source::  Lenker til UiOs tjenestesider
+.. uio-colorbox-3:: Bruk TSD-Autotekst hvis du
 
-   * `Autotekst <https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html>`_
-   * `TSD-Autotekst <https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-tsd.html>`_
-   * `Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html>`_
-   * `Panopto <https://www.uio.no/tjenester/it/lyd-video/panopto/>`_
-   * `TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_ 
+    har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere og som klassifiserer som strengt fortrolig ⚫.
+  

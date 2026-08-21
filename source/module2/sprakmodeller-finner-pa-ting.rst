@@ -43,13 +43,14 @@ Det er fordi språkmodellen fortsatt må *tolke* og *oppsummere* informasjonen d
 Det gjør den på samme måte som alltid, ved å generere tekst basert på mønstre.
 Modellen kan derfor fortsatt finner på ting selv om den har tilgang til korrekt informasjon fra nettet.
 
-.. uio-info:: Eksempel
 
-   Et eksempel på at modeller finner på ting er en sak fra Politihøgskolen.  [:ref:`Svarstad <Svarstad>`]
-   Politihøgskolen skulle avgjøre hvor mye tid undervisere skal få til forberedelse.
-   De forsøkte å bruke Copilot til å hente informasjon om forberedelsestid på andre universiteter og høyskoler.
-   Copilot fant ikke informasjonen som brukeren spurte etter på nettet, og fant derfor på et svar. 
-   Feilinformasjonen generert av Copilot ble brukt som saksgrunnlag.
+Eksempel fra virkeligheten
+----------------------------
+
+Da Politihøyskolen skulle bestemme hvor mye tid undervisere skulle få til å forberede seg til undervisning, 
+ble feilinformasjon brukt som saksgrunnlag [:ref:`Svarstad <Svarstad>`]. 
+Under forberedelsene til behandling ble nemlig Copilot brukt for å hente informasjon om forberedelsestid på andre universiteter og høyskoler. 
+Problemet var at Copilot ikke fant slike opplysninger på nettet, og fant bare derfor på et svar.
 
 .. uio-reflect:: Refleksjon
 
