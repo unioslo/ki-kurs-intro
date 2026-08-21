@@ -1,12 +1,17 @@
 Oppsummering kapittel 5
 ========================
+I dette kapittelet har vi lært om de godkjente KI-tjenestene på UiO, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
+
+.. uio-reflect:: Test deg selv
+  Diskuter selv eller med en kollega
+  1. Hvilke KI-tjenester er godkjent på UiO?
+  2. Hvorfor er det viktig å bruke dem? 
+  3. Hva er de ulike KI-tjeneste gode på?
+
 
 I dette kapittelet har du lært
 ------------------------------------
 
-* **UiOs godkjente KI-tjenester** må brukes når du jobber med UiO-data
-* **Databehandleravtaler** sikrer at data behandles i henhold til GDPR-krav
-* **Ulike tjenester** passer til ulike formål - GPT-UiO, Autotekst, Gemini, Gemini Notebook, Microsoft Copilot
 
 Neste kapittel
 --------------
