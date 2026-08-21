@@ -8,7 +8,7 @@ for å få bedre svar.
   .. uio-reflect:: Test deg selv
  Diskuter selv eller med en kollega
 
-    1.
+    1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar? 
     2.
     3.
 
