@@ -5,8 +5,8 @@ I dette kapittelet har du lært hvordan store språkmodeller lager tekst og hvil
   .. uio-reflect:: Test deg
 Diskuter selv eller med en kollega
 
-  1. Hvordan genererer store språkmodeller tekster og svar?
-  2. Hva er kontekst? 
+  1. Hvordan fungerer store språkmodeller?
+  2. Hva er kontekst og hva gjør du for å gi språkmodellen god nok kontekst? 
   3. Nevn de tre viktigste svakhetene ved store språkmodeller og hvordan du kan imøtekomme dem. 
 
 **I dette kapittelet har du lært at:**
