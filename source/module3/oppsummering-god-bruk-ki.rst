@@ -8,8 +8,9 @@ for å få bedre svar.
   .. uio-reflect:: Test deg selv
     Diskuter selv eller med en kollega
     1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar? 
-    2.
-    3.
+    2. Hva erfarte du når du forsøkte å forbedre instruksjonene dine?
+    3. Hvilke instruksjonsteknikker kan du benytte når du kommuniserer med KI? 
+    4. Hvilke teknikker tror du vil være mest nyttig for deg?
 
 Repetisjon 
 ------------------------------------
@@ -17,7 +18,11 @@ Repetisjon
   instruksjonen din påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar bør du: gi kontekst, spesifisere format,
   definere en rolle og gi eksempler. 
 
-* 
+* Det finnes mange ulike instruksjonsteknikker: 
+  1. Lag en arbeidsplan for hvordan KI-en skal løse problemet
+  2. Be KI-en forklare hvorfor den har gitt det svaret den ga
+  3. Forbedre instruksjonen trinnvis
+  4. Start en ny samtale om du merker at svarene begynner å få dårligere kvalitet
 
 * **Når KI er pålitelig** - og når den ikke er det
 * **Kvalitetssikring** - alltid sjekk fakta mot pålitelige kilder
