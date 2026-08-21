@@ -71,8 +71,12 @@ gjør modellene sårbare for bevisst manipulering av treningsdata. Aktører kan 
 for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
 medvirkeligheten.</li>
 <li>Fordi store språkmodeller ikke har faktakunnskap, kan de <strong>finne på ting som ikke stemmer</strong>. Det kan være
-feil fakt, oppdiktede referanser eller forvekslinger.</li>
-<li><strong>Språkmodellen har ikke hukommelse i seg selv</strong></li>
+feil fakta, oppdiktede referanser eller forvekslinger.</li>
+<li><strong>Språkmodellen har ikke hukommelse i seg selv</strong>. Det er chat-systemet rundt modellen som lagrer samtalen du
+har hatt. Når du skriver en ny instruksjon, sender chat-systemet hele den tidligere samtalen sammen med den
+nye instruksjonen til språkmodellen. Den behandler altså hele samtalen på nytt hver gang du gir en ny
+instruksjon, og lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar. Derfor er det viktig
+å starte en ny samtale om du skifter tema. Korte samtaler gir også bedre svar.</li>
 <li><strong>Hallusinering</strong> er når KI genererer informasjon som virker riktig, men er feil</li>
 <li><strong>Tilfeldighet</strong> er innebygd - samme spørsmål kan gi ulike svar</li>
 </ul>
