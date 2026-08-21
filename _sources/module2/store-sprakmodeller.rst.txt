@@ -12,5 +12,5 @@ I dette kapittelet skal vi lære hvordan store språkmodeller lager tekst og hvi
 .. uio-colorbox-1:: Læringsmål
 
     * Jeg forstår hvordan store språkmodeller generer tekst
-    * Jeg vet om svakhetene i store språkmodeller og kan kjenne igjen når språkmodellene gir feil informasjon
+    * Jeg forstår svakhetene i store språkmodeller og kan kjenne igjen når språkmodellene gir feil informasjon
 
