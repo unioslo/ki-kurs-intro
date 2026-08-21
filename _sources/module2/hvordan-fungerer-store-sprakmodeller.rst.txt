@@ -34,5 +34,5 @@ Modellen stopper når den "mener" svaret er fullstendig.
 Hva er konteksten?
 ------------------
 
-Når vi snakker om store språkmodeller, bruker vi ofte *kontekst* om alt det vi gir modellen som input.
-Input kan være et spørsmål eller instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
+Når vi snakker om store språkmodeller, bruker vi ofte *kontekst* om alt det vi gir modellen å jobbe med.
+Konteksten kan være et spørsmål eller instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
