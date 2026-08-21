@@ -19,13 +19,13 @@ Diskuter selv eller med en kollega
 * **Kontekst** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
   instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
-* ** Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er
-    sant.De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det 
+* **Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er
+  sant.De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det 
   gjør modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon 
   for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
   medvirkeligheten.
 * Fordi store språkmodeller ikke har faktakunnskap, kan de **finne på ting som ikke stemmer**. Det kan være
-feil fakt, oppdiktede referanser eller forvekslinger. 
+  feil fakt, oppdiktede referanser eller forvekslinger. 
 * **Språkmodellen har ikke hukommelse i seg selv**
 
 * **Hallusinering** er når KI genererer informasjon som virker riktig, men er feil
