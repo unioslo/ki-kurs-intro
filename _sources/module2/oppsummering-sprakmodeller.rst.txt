@@ -32,9 +32,8 @@ Diskuter selv eller med en kollega
   har hatt. Når du skriver en ny instruksjon, sender chat-systemet hele den tidligere samtalen sammen med den
   nye instruksjonen til språkmodellen. Den behandler altså hele samtalen på nytt hver gang du gir en ny
   instruksjon, og lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar. Derfor er det viktig
-  å starte en ny samtale om du skifter tema. Korte samtaler gir også bedre svar. 
+  å starte en ny samtale om du skifter tema. 
 
-* **Hallusinering** er når KI genererer informasjon som virker riktig, men er feil
 * **Tilfeldighet** er innebygd - samme spørsmål kan gi ulike svar
 
 Neste kapittel
