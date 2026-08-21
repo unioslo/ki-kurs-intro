@@ -16,6 +16,7 @@ Diskuter selv eller med en kollega
   fullstendig. STore språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor  
   kunnskap.
 
+
 * **Kontekst** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
   instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
