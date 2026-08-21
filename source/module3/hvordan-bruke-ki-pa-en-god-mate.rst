@@ -13,6 +13,6 @@ Kapittel 3 handler om å hvordan du bruker KI på en god måte. Du vil lære hvo
 
 .. uio-colorbox-1:: Læringsmål
 
-    * Jeg kan strategier for å kvalitetssikre KI-generert innhold
+    * Jeg kan kvalitetssikre KI-generert innhold
     * Jeg kan skrive gode og effektive instruksjoner (promts)
 
