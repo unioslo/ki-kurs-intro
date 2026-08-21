@@ -7,7 +7,7 @@ Diskuter selv eller med en kollega
 
   1. Hva er store språkmodeller og hvordan fungerer de? 
   2. Hva er kontekst og hva gjør du for å gi språkmodellen god nok kontekst? 
-  3. Nevn de tre viktigste svakhetene ved store språkmodeller og hvordan du kan imøtekomme dem. 
+  3. Nevn de tre viktigste svakhetene ved store språkmodeller og hva kan du gjøre for å imøtekomme dem?
 
 **I dette kapittelet har du lært at:**
 
@@ -18,7 +18,13 @@ fullstendig. STore språkmodeller generere med andre ord tekster basert på stat
 ** Kontekst  ** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
 instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
-* **Språkmodeller er ikke kunnskapsbaser** - de kan finne på troverdig men feil informasjon
+** Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er sant.
+De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det gjør 
+modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon for at
+modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med
+virkeligheten.
+
+** Store språkmodeller finner på ting **
 * **Hallusinering** er når KI genererer informasjon som virker riktig, men er feil
 * **Tilfeldighet** er innebygd - samme spørsmål kan gi ulike svar
 
