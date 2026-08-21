@@ -4,7 +4,7 @@ Oppsummering kapittel 2
 I dette kapittelet har du lært hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette.
 Før du går videre til kapittel 3 kan du teste hva du har lært.
 
-  .. uio-reflect:: Test deg selv
+.. uio-reflect:: Test deg selv
 
     Diskuter selv eller med en kollega
 
@@ -15,7 +15,7 @@ Før du går videre til kapittel 3 kan du teste hva du har lært.
 I dette kapittelet har du lært
 --------------------------------------------------------------------
 
-* **Store Språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
+* **Store språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
   konteksten du gir den. Hvert ord trekkes med litt tilfeldighet og modellen stopper når den “mener” svaret er
   fullstendig. STore språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor
   kunnskap.
