@@ -23,7 +23,8 @@ Repetisjon
   instruksjonen din påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar bør du: gi kontekst, spesifisere format,
   definere en rolle og gi eksempler. 
 
-* Det finnes mange ulike instruksjonsteknikker: 
+* Det finnes mange ulike instruksjonsteknikker:
+
   1. Lag en arbeidsplan for hvordan KI-en skal løse problemet
   2. Be KI-en forklare hvorfor den har gitt det svaret den ga
   3. Forbedre instruksjonen trinnvis
@@ -33,7 +34,8 @@ Repetisjon
   til oppgaver der feil ikke innebærer stor risiko. Hvis feil kan få alvorlige følger, må du enten kunne kontrollere og bekrefte
   informasjonen før du bruker den videre, eller la være å bruke KI til den oppgaven.
 
-* Kunstig intelligens har flere svakheter og innholdet skal alltid kvalitetssikres. For å kvlitetssikre innholdet bør du: 
+* Kunstig intelligens har flere svakheter og innholdet skal alltid kvalitetssikres. For å kvlitetssikre innholdet bør du:
+
   1. Vurdere risikoen
   2. Skrive gode instruksjoner
   3. Kontrollere svaret
