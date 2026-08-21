@@ -16,7 +16,6 @@ Diskuter selv eller med en kollega
   fullstendig. STore språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor  
   kunnskap.
 
-
 * **Kontekst** er alt vi gir modellen som informasjon når vi snakker med den. Input kan være et spørsmål eller
   instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.
 
@@ -25,9 +24,15 @@ Diskuter selv eller med en kollega
   gjør modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon 
   for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
   medvirkeligheten.
+
 * Fordi store språkmodeller ikke har faktakunnskap, kan de **finne på ting som ikke stemmer**. Det kan være
-  feil fakt, oppdiktede referanser eller forvekslinger. 
-* **Språkmodellen har ikke hukommelse i seg selv**
+  feil fakta, oppdiktede referanser eller forvekslinger. 
+
+* **Språkmodellen har ikke hukommelse i seg selv**. Det er chat-systemet rundt modellen som lagrer samtalen du
+  har hatt. Når du skriver en ny instruksjon, sender chat-systemet hele den tidligere samtalen sammen med den
+  nye instruksjonen til språkmodellen. Den behandler altså hele samtalen på nytt hver gang du gir en ny
+  instruksjon, og lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar. Derfor er det viktig
+  å starte en ny samtale om du skifter tema. Korte samtaler gir også bedre svar. 
 
 * **Hallusinering** er når KI genererer informasjon som virker riktig, men er feil
 * **Tilfeldighet** er innebygd - samme spørsmål kan gi ulike svar
