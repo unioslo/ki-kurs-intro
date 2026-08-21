@@ -34,7 +34,8 @@ Diskuter selv eller med en kollega
   instruksjon, og lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar. Derfor er det viktig
   å starte en ny samtale om du skifter tema. 
 
-* **Tilfeldighet** er innebygd - samme spørsmål kan gi ulike svar
+* **Språkmodellen har innebygde skjevheter**. Det kan være skjevhet som følge av manglende treningsdata,
+  skjevhet som speiler skjevheter i samfunnet eller bekreftelsesskjevhet.
 
 Neste kapittel
 --------------
