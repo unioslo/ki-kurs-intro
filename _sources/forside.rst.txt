@@ -19,15 +19,20 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
  
    <h2>Se for deg..</h2>
 
-Se for deg et rom fullt av ekstra "kollegaer" som er klare til å hjelpe deg! "Kollegaer" som raskt kan lese, analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon for deg.Kunstig intelligens kan fungere som disse ekstra "kollegaene".
-Disse "kollegaene" kan tenkes på som digitale hjelperne som  for eksempel kan lage utkast som du kan kvalitetssikre og forbedre, gi deg oversikter før du går i dybden og foreslå ideer før du tar beslutninger. 
+Se for deg at du kan få en ekstra "kollega". En "kollega" som raskt kan lese, analysere, oppsummere,
+oversette, forenkle eller hente fram relevant informasjon for deg. Kunstig intelligens kan fungere som denne ekstra "kollegaen".
+Du kan du på den som en digital hjelper, som for eksempel kan lage utkast som du kan kvalitetssikre og 
+forbedre, gi deg oversikter før du går i dybden og foreslå ideer før du tar beslutninger. 
 
-De digitale hjelperne jobber raskt og kan behandle store mengder data, men de har ikke din ekspertise eller erfaring fra å jobbe på UiO.
-De har heller ikke etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor må du bruke din kompetanse til å vurdere KI-ens svar, vurdere hvilke oppgaver som er trygge å bruke KI til og ta det endelige ansvaret for beslutninger. 
+Den digitale hjelpereren jobber raskt og kan behandle store mengder data, men den har hverken din fagekpertise eller erfaring fra UiO.
+Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor må du bruke
+din kompetanse til å vurdere KI-ens svar, vurdere hvilke oppgaver som er trygge å bruke KI til og ta det endelige ansvaret for
+beslutninger. 
 
-Når de digitale hjelperne tas i bruk er det også viktig å være bevisst på at vi ansatt i staten og forvalter  fellesskapets ressurser på vegne av samfunnet. Derfor må vi ta i bruk ny teknologi på en måte som ivaretar tilliten mellom forvaltningen og samfunnet.
+Du må også alltid huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny
+teknologi og ta den i bruk på en måte som invaretar tilliten mellom forvaltnignen og samfunnet.
 
-Vi håper dette kurset gir deg kompetanse til å begynne å utforske mulighetene med kunstig intelligens på en ansvarlig og trygg måte.
+Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og trygg måte i jobben din.
 
 .. raw:: html
 
