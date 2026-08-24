@@ -11,10 +11,11 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
    :width: 60%
    :alt: Illustrasjon til forsiden av grunnkurs i generativ KI
 
- 
+.. raw:: html
+
    <h2>Se for deg..</h2>
 
-Se for deg at du kan få en ekstra "kollega" med superkrefter. En "kollega" som raskt kan lese, analysere, oppsummere,
+at du får en ekstra "kollega" med superkrefter. En "kollega" som raskt kan lese, analysere, oppsummere,
 oversette, forenkle eller hente fram relevant informasjon for deg. Kunstig intelligens kan fungere som denne ekstra "kollegaen".
 Du kan se på den som en digital hjelper, som for eksempel kan lage utkast som du kan kvalitetssikre og 
 forbedre, gi deg oversikter før du går i dybden og foreslå ideer før du tar beslutninger. 
@@ -49,19 +50,19 @@ Hele kurset utenom de avsluttende øvingsoppgavene er beregnet til å ta mellom 
 
    <div>
 .. uio-chapter-card::
-   :title: Grunnbegreper i kunstig intelligens
+   :title: Introduksjon til "KI-språket"
    :icon_filename: ikon1.svg
    :icon_color: #7ED321
    :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
 
 .. uio-chapter-card::
-   :title: Hvordan fungerer språkmodeller?
+   :title: Hva kan gå galt?
    :icon_filename: ikon3.svg
    :icon_color: #40BEA6
    :url: https://uio.instructure.com/courses/63248/pages/store-sprakmodeller-3
 
 .. uio-chapter-card::
-   :title: Hvordan trygt bruke KI?
+   :title: Bli god på KI!
    :icon_filename: ikon4.svg
    :icon_color: #3FB3E8
    :url: https://uio.instructure.com/courses/63248/pages/hvordan-bruke-ki-pa-en-god-mate-3
