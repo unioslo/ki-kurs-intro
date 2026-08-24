@@ -2,35 +2,35 @@ Språkmodeller har ikke faktakunnskap
 ==============================================
 
 Store språkmodeller genererer tekst som er troverdig, og som ligner på tekstene de er trent opp på.
-De har likevel ikke noe forhold til sannhet [:ref:`Hicks <Hicks>`] og har derfor ikke sikker kunnskap om hva som er sant. 
-Med andre ord betyr det at det ikke er sikkert at det språkmodellene leverer til deg er sant. 
+De har likevel ikke noe forhold til sannhet [:ref:`Hicks <Hicks>`] og har derfor ikke sikker kunnskap om hva som er sant.
+Med andre ord betyr det at det ikke er sikkert at det språkmodellene leverer til deg er sant.
 Det må du alltid selv kontrollere!
 
-Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger. 
+Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger.
 Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.
 
-Tenk deg at modellen skal fullføre setningen: «Fargen på huset er …»
-Mulige fortsettelser kan være «rød», «blå» eller «grå».
-I en slik setning er det ikke åpenbart hvilket ord som er «riktig» eller «best», fordi flere alternativer passer. 
+Tenk deg at modellen skal fullføre setningen: "Fargen på huset er …"
+Mulige fortsettelser kan være "rød", "blå" eller "grå".
+I en slik setning er det ikke åpenbart hvilket ord som er "riktig" eller "best", fordi flere alternativer passer.
 Det er heller ikke veldig viktig hvilket som velges.
 
-Men hvis du spør modellen: «Hva er hovedstaden i Norge?»
-Da forventer du et korrekt svar. 
-Her blir det viktig hvilket ord modellen foreslår. 
+Men hvis du spør modellen: "Hva er hovedstaden i Norge?"
+Da forventer du et korrekt svar.
+Her blir det viktig hvilket ord modellen foreslår.
 
 I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke kunnskap.
-Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil. 
+Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil.
 Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
 
 .. uio-colorbox-3:: Manipulering (Språkmodell-forgiftning)
 
    At språkmodeller ikke har sikker kunnskap om hva som er sant, gjør dem sårbare for bevisst manipulering av treningsdata.
-   Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
+   Denne typen manipulering kalles ofte "språkmodell-forgiftning".  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
    Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
    Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [:ref:`Germain <Germain>`]
-   Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet. 
+   Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet.
 
    Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
    Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
@@ -46,7 +46,7 @@ Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
       Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
       Den har lært hvordan troverdige svar "ser ut", men vet ikke forskjellen på sant og usant.
-      Den kan derfor produsere tekster med faktafeil like selvfølgelig som den gir svar med riktig innhold. 
+      Den kan derfor produsere tekster med faktafeil like selvfølgelig som den gir svar med riktig innhold.
       Derfor skal du ikke bruke KI til å lage et resultat du ikke har kunnskap til å kontrollere.
 
-   
+

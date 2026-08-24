@@ -1,7 +1,7 @@
 GPT UiO: hvilken modell skal du velge?
 ========================================================
 
-I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken «hjerne» tjenesten bruker.
+I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken "hjerne" tjenesten bruker.
 Modellene har forskjellig størrelse, funksjoner (som støtte av bilder) og bruksområder.
 
 En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller *lokalt*.
@@ -17,7 +17,7 @@ Det betyr at dersom oppgaven du skal løse er veldig kompleks, så kan en sky-mo
       * Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opptil røde data.
       * Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder.
 
-I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se hvilken dataklassifisering hver enkelt er godkjent for. 
+I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se hvilken dataklassifisering hver enkelt er godkjent for.
 
 .. uio-colorbox-3:: Bonusinnhold
 
@@ -40,12 +40,12 @@ I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se 
 
       Når man klikker på modellvelgeren ser man en liste over de språkmodellene GPT UiO tilbyr.
       Listen oppdateres når nye modeller eller versjoner blir tilgjengelig.
-      
+
       For hver modell er det indikert hvilken data-kategori den støtter, om den er en eksperimentell modell for testing (kolbe), i tillegg til om modellen støtter bilder.
-      
-      Det står også en liten beskrivelse på hva modellen egner seg til. 
-      
+
+      Det står også en liten beskrivelse på hva modellen egner seg til.
+
       Og sist men ikke minst, om modellen er lokal (kjører hos UiO i Educloud eller hos NTNU), er den ikke det så kjører den i skyen.
-      
+
 
 

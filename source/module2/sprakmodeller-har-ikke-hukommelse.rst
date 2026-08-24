@@ -6,8 +6,8 @@ Chat-systemet viser deg samtalen dere har, og sender den videre til språkmodell
 Det du bør merke deg her, er at hver gang du skriver en ny instruksjon eller et nytt spørsmål i chatten, så sender chat-systemet *hele* samtalen på nytt til språkmodellen.
 Det er fordi språkmodellen selv ikke kan huske det du har spurt om.
 
-Chat-systemet «husker» det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
-Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk «ser».
+Chat-systemet "husker" det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
+Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk "ser".
 
 
 Begrenset kontekstvindu
@@ -22,13 +22,13 @@ Det kan føre til dårligere svar, fordi essensiell informasjon som kom tidlig i
 Ha korte samtaler
 -----------------------------------
 
-Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar. 
+Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar.
 
 Dette kan både være fordi hele konteksten ikke får plass i kontekstvinduet, men også fordi det ved lange samtaler er større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
 Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [:ref:`Laban <Laban>`]
 En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.
 
-Det er spesielt viktig å starte en ny samtale om du skifter tema. 
+Det er spesielt viktig å starte en ny samtale om du skifter tema.
 Se for deg at du har stilt KI spørsmål om økonomireglementet til UiO.
 Hvis du så stiller spørsmål om hvordan man formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO.
 Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.

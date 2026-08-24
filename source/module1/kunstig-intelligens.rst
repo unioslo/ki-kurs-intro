@@ -23,7 +23,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
             som et eget forskningsfelt.
             Det som er nytt i dag, er hvor kraftig og tilgjengelig KI har blitt de siste årene.
             Da ChatGPT kom i 2022,
-            var det et tydelig vendepunkt. I stedet for «dumme chatbotter» som bare kunne svare på helt enkle spørsmål, fikk vi plutselig
+            var det et tydelig vendepunkt. I stedet for "dumme chatbotter" som bare kunne svare på helt enkle spørsmål, fikk vi plutselig
             et verktøy som kunne:
 
             - skrive lange tekster
@@ -40,30 +40,30 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
 
       .. uio-detail:: Maskinlæring
 
-            Mennesker lærer ved erfaring. Maskinlæring bygger på det samme prinsippet, bare for dataprogrammer. 
+            Mennesker lærer ved erfaring. Maskinlæring bygger på det samme prinsippet, bare for dataprogrammer.
             I stedet for å lære av erfaring, lærer programmet av data.
             Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
-            maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv. 
+            maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv.
 
             Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer:
 
-            .. uio-colorbox-3:: Tradisjonell programmering foregår slik:	
+            .. uio-colorbox-3:: Tradisjonell programmering foregår slik:
 
-                  - Du lager klare regler eller algoritmer: «Hvis X skjer, gjør Y».
+                  - Du lager klare regler eller algoritmer: "Hvis X skjer, gjør Y".
                   - Programmet bruker reglene på data den blir gitt.
                   - Programmet gir deg resultatet.
-                  
-                  Eksempel på tradisjonell programmering: 
+
+                  Eksempel på tradisjonell programmering:
                   Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
 
             .. uio-colorbox-3:: Maskinlæring løser et problem slik:
 
                   I maskinlæring er regelen eller algoritmen ukjent, og det vi ønsker å lære.
-                  
+
                   - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder)
-                  - Hvert eksempel har også et ønsket resultat (output) 
+                  - Hvert eksempel har også et ønsket resultat (output)
                   - I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
 
                   Eksempel:
-                  Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som «hund» eller «katt».
+                  Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som "hund" eller "katt".
                   Systemet lærer da en regel/algoritme som kan gjette riktig merkelapp for bilder det aldri har sett før.

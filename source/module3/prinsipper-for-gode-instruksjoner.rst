@@ -10,12 +10,12 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
 1. Gi kontekst
 ******************
 
-.. uio-do-dont:: 
+.. uio-do-dont::
 
     .. uio-dont:: Mangelfull
 
         Forklar forskjellen på KI og maskinlæring.
-    
+
     .. uio-do:: Bedre
 
 
@@ -35,17 +35,17 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
     .. uio-dont:: Mangelfull
 
         Lag et møtereferat av disse notatene: [dine notater]
-    
-    
+
+
     .. uio-do::  Bedre
-        
+
         Basert på mine notater fra møtet, lag et møtereferat. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver. Mine notater: [dine notater].
 
         **Hva gjør denne bedre?**
 
-        Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om. 
+        Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om.
 
-    
+
 3. Definer en rolle
 ***********************
 
@@ -60,17 +60,17 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
 
 
         Du er en norskspråklig språkvasker i universitetssektoren.
-        Gå gjennom teksten nedenfor og gi forslag til forbedringer. 
-       
+        Gå gjennom teksten nedenfor og gi forslag til forbedringer.
+
         - Påpek skrivefeil og grammatikk
         - Behold innholdet faglig uendret
-      
-        Teksten: 
+
+        Teksten:
         [din tekst]
 
-        **Hva gjør denne bedre?** 
-        
-        Språkmodeller har sett tekst fra veldig mange roller og sjangre. 
+        **Hva gjør denne bedre?**
+
+        Språkmodeller har sett tekst fra veldig mange roller og sjangre.
         Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.
 
 
@@ -90,9 +90,9 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
 
         Her er eksempler på stilen jeg ønsker:
 
-        - «Nytt tilbud: Gratis språkkurs for ansatte»
-        - «Viktig: Endringer i møterom-booking fra 1. april»
-        - «Husk: Frist for registrering av arbeidstid nærmer seg»
+        - "Nytt tilbud: Gratis språkkurs for ansatte"
+        - "Viktig: Endringer i møterom-booking fra 1. april"
+        - "Husk: Frist for registrering av arbeidstid nærmer seg"
 
         Skriv en kort tittel i samme stil for denne saken: Vi får nytt IT-system for reiseregninger neste måned.
 
@@ -103,11 +103,11 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
         - Målgruppe: alle ansatte
 
 
-        ### Hva gjør denne bedre? 
-        
-        **Hva gjør denne bedre?** 
+        ### Hva gjør denne bedre?
 
-        Her gir du eksempler på stilen eller formatet du ønsker. 
+        **Hva gjør denne bedre?**
+
+        Her gir du eksempler på stilen eller formatet du ønsker.
         Dette er ofte lettere enn å forklare stilen med ord.
         Denne teknikken kalles gjerne "Few-shot instruksjon"
 
