@@ -25,8 +25,7 @@ Repetisjon
   for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
   medvirkeligheten.
 
-* Fordi store språkmodeller ikke har faktakunnskap, kan de *finne på ting som ikke stemmer*. Det kan være
-  feil fakta, oppdiktede referanser eller forvekslinger.
+* Fordi store språkmodeller ikke har faktakunnskap, kan de *finne på ting som ikke stemmer*.
 
 * Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar. Derfor er det viktig
   å starte en ny samtale om du skifter tema.
