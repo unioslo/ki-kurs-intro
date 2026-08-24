@@ -41,5 +41,5 @@ Når du har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som d
 
 .. uio-colorbox-3:: Bruk TSD-Autotekst hvis dataene klassifiseres som
 
-    strengt fortrolig ⚫.N
+    strengt fortrolig ⚫.
   
