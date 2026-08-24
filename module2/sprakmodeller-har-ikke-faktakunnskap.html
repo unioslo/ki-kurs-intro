@@ -43,8 +43,10 @@
              
   <section id="sprakmodeller-har-ikke-faktakunnskap">
 <h1>Språkmodeller har ikke faktakunnskap</h1>
-<p>Store språkmodeller er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på.
-De har likevel ikke noe forhold til sannhet [<a class="reference internal" href="../module6/kilder.html#hicks"><span class="std std-ref">Hicks</span></a>] og har derfor ikke sikker kunnskap om hva som er sant.</p>
+<p>Store språkmodeller genererer tekst som er troverdig, og som ligner på tekstene de er trent opp på.
+De har likevel ikke noe forhold til sannhet [<a class="reference internal" href="../module6/kilder.html#hicks"><span class="std std-ref">Hicks</span></a>] og har derfor ikke sikker kunnskap om hva som er sant.
+Med andre ord betyr det at det ikke er sikkert at det språkmodellene leverer til deg er sant.
+Det må du alltid selv kontrollere!</p>
 <p>Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger.
 Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.</p>
 <p>Tenk deg at modellen skal fullføre setningen: «Fargen på huset er …»
@@ -59,11 +61,11 @@ Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil.
 Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.</p>
 <div class="uio-color-box-3">
 <h3>Manipulering (Språkmodell-forgiftning)</h3>
-<p>At språkmodeller ikke har sikker kunnskap om hva som er fakta, gjør dem sårbare for bevisst manipulering av treningsdata.
+<p>At språkmodeller ikke har sikker kunnskap om hva som er sant, gjør dem sårbare for bevisst manipulering av treningsdata.
 Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
 Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.</p>
 <p>Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [<a class="reference internal" href="../module6/kilder.html#germain"><span class="std std-ref">Germain</span></a>]
-En ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet.</p>
+Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet.</p>
 <p>Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
 Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
 Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
@@ -71,12 +73,13 @@ Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [<a class
 </div>
 <div class="uio-icon-box reflect">
 <h3>Test deg selv</h3>
-<p>Hvorfor kan en språkmodell sine svare inneholde feil, selv om svaret høres troverdig ut?</p>
+<p>Hvorfor kan svarene fra en språkmodell inneholde feil selv om svaret høres troverdig ut?</p>
 <details>
 <summary class="uio-answer-summary"><strong>Klikk på meg for mulig svar</strong></summary>
 <p>Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
 Den har lært hvordan troverdige svar “ser ut”, men vet ikke forskjellen på sant og usant.
-Derfor kan den produsere feil informasjon med samme selvtillit som riktig informasjon.</p>
+Den kan derfor produsere tekster med faktafeil like selvfølgelig som den gir svar med riktig innhold.
+Derfor skal du ikke bruke KI til å lage et resultat du ikke har kunnskap til å kontrollere.</p>
 </details>
 </div>
 <div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
