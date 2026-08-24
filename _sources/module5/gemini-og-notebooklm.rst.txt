@@ -60,6 +60,7 @@ Du må derfor først bygge opp din egen "kunnskapsbank" for hver Notebook, som k
 
 Når Gemini Notebook svarer på forespørslene dine, forsøker den å være tro mot kildene du har lagt inn.
 Du kan derfor ofte få mer presise og kildetro svar enn ved bruk av GPT UiO.
+Du må likevel alltid kontrollere resultatet Gemini Norebook gir deg, slik som du gjør med alt du får fra en KI.
 
 Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:
 
