@@ -24,7 +24,7 @@ Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *kont
 
 
 
-Store språkmodeller er mye mer avanserte ordboka på telefonen din, men de fungerer grunnleggende sett på samme måte.
+Store språkmodeller er mye mer avanserte enn ordboka på telefonen din, men de fungerer grunnleggende sett på samme måte.
 En språkmodell er en matematisk modell som bygger opp svaret ett ord av gangen, betinget av *konteksten*.
 Hvert ord trekkes med litt tilfeldighet.
 Modellen stopper når den "mener" svaret er fullstendig.
