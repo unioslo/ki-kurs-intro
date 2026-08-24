@@ -18,8 +18,6 @@ Repetisjon
 * *Store språkmodeller* er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
   konteksten du gir den.
   Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor kunnskap.
-
-* *Kontekst* er alt vi gir modellen som informasjon når vi snakker med den.
  
 * *Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er
   sant. De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det
@@ -30,10 +28,7 @@ Repetisjon
 * Fordi store språkmodeller ikke har faktakunnskap, kan de *finne på ting som ikke stemmer*. Det kan være
   feil fakta, oppdiktede referanser eller forvekslinger.
 
-* *Språkmodellen har ikke hukommelse i seg selv*.
-  Når du skriver en ny instruksjon, sender chat-systemet hele den tidligere samtalen sammen med den
-  nye instruksjonen til språkmodellen. 
-  Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar. Derfor er det viktig
+* Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar. Derfor er det viktig
   å starte en ny samtale om du skifter tema.
 
 * *Språkmodellen har innebygde skjevheter*. Det kan være skjevhet som følge av manglende treningsdata,
