@@ -10,7 +10,7 @@ Tjenesten kjører på UiOs servere: Whisper modellen er lastet ned og kjører lo
 Tjenesten kjører i sikre omgivelser lokalt på UiOs servere, og er derfor godkjent for opptil røde data.
 
 Du kan bruke Autotekst til å transkribere opptak av møter, av forelesninger eller av intervjuer for å nevne noen bruksområder. 
-Lyden som Autotekst transktiberer, kan komme fra lydfiler du laster opp, for eksempel fra Panopto eller Zoom. 
+Lyden som Autotekst transkriberer, kan komme fra lydfiler du laster opp, for eksempel fra Panopto eller Zoom. 
 Autotekst kan også automatisk transkibere fra UiOs egenutviklede diktafon-app, Nettskjema-diktafon (mer om denne nedenfor).
 
 Verdt å merke seg: Whisper er god på norsk, takket være Nasjonalbibliotekets norsk-trente Whisper-modell. 
