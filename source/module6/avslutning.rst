@@ -10,7 +10,7 @@ Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:
 * Vær kritisk og ansvarlig, husk at KI har begrensninger!
 * Teknologien utvikler seg raskt. Fortsett å lære og hold deg oppdatert ved å følge med på UiOs nettsider om KI, kurs og workshops ved UiO, og bruk dine fagnettverk og kollegaer til å dele KI erfaringer med!
 
-KI er et kraftig verktøy, men det er din kompetanse, dømmekraft og ansvar som gjør forskjellen.
+KI er et kraftig verktøy som kan være til hjelp i arbeidshverdagen, men det er din kompetanse og dømmekraft som gjør KI anvendbart, nyttig og trygt!
 
 .. figure:: ../images/5.1-faces.png
     :align: center
