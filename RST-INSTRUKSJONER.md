@@ -265,6 +265,119 @@ Container for å vise gjør/ikke-gjør-innhold side-ved-side i et rutenett. Dett
 -------------------------
 
 
+### uio-grid / uio-grid-item
+
+Bilder, designelementer eller annet innhold side ved side i kolonner. Direktivet lager Canvas
+sin egen rutenett-markup (`grid-row` / `col-xs`), så det som lastes opp til
+Canvas inneholder bare Canvas-klasser og inline-stiler:
+
+```html
+<div style="display: flex; flex-wrap: wrap;">
+    <div class="grid-row" style="grid-gap: 5%; margin: 1rem 0; width: 100%;">
+        <div class="col-xs" style="padding: 0;">
+            <figure style="margin: 0;"><img style="width: 100%;" src="..." alt="..." />
+                <figcaption>Bildetekst</figcaption>
+            </figure>
+        </div>
+        ...
+    </div>
+</div>
+```
+
+**Opsjoner for `uio-grid`:**
+
+- `:columns:` - antall kolonner per rad. Utelat den for å legge alle bildene på
+  én rad (`col-xs` deler bredden likt, så 2, 3, 4 eller 5 bilder blir like
+  brede av seg selv). Med `:columns: 3` og seks bilder får du to rader.
+- `:gap:` - avstand mellom kolonnene, oppgitt som CSS-lengde (`5%`, `20px`,
+  `1rem`, `2em`). Standard er `5%`.
+
+**Opsjoner for `uio-grid-item`:**
+
+- Argumentet er bildestien, relativt til rst-fila - akkurat som i `.. figure::`.
+- `:alt:` - alternativ tekst. Settes ikke den, brukes `:caption:`.
+- `:caption:` - bildeteksten, blir `<figcaption>`.
+- `:width:` - bildebredde i kolonnen (CSS-lengde). Standard er `100%`.
+
+**Bruk:**
+
+```rst
+.. uio-grid::
+
+   .. uio-grid-item:: ../images/gpt-modellvelger.png
+      :alt: Skjermbilde av modellvelgeren
+      :caption: Modellvelgeren i GPT UiO
+
+   .. uio-grid-item:: ../images/gpt-uio-modeller.png
+      :alt: Skjermbilde av modell-lista
+      :caption: Tilgjengelige modeller
+
+   .. uio-grid-item:: ../images/ms-copilot.png
+      :alt: Skjermbilde av Copilot
+      :caption: Microsoft Copilot Chat
+```
+
+Fire bilder fordelt på to rader, med litt større avstand:
+
+```rst
+.. uio-grid::
+   :columns: 2
+   :gap: 20px
+
+   .. uio-grid-item:: ../images/en.png
+      :caption: En
+   ...
+```
+
+**Designelementer i kolonnene:**
+
+Alt du legger på øverste nivå inne i `uio-grid` blir én kolonne, så
+designelementene (`uio-colorbox-1/2/3`, `uio-custom-box`, `uio-info`,
+`uio-do`, `uio-source`, ...) kan legges rett inn i rutenettet:
+
+```rst
+.. uio-grid::
+
+   .. uio-colorbox-3:: Overskrift
+
+      Innhold i fargeboks.
+
+   .. uio-custom-box:: 🟢 Grønn
+      :color: gronn
+
+      Innhold i egendefinert boks.
+```
+
+Skal en kolonne inneholde flere ting - for eksempel et bilde og en boks, eller
+en boks og litt tekst - pakk dem inn i et `uio-grid-item`:
+
+```rst
+.. uio-grid::
+
+   .. uio-grid-item::
+
+      .. uio-info:: Til info
+
+         Innhold i infoboksen.
+
+      Litt tekst under boksen.
+
+   .. uio-grid-item:: ../images/en.png
+      :alt: Beskrivende tekst
+      :caption: Bildetekst
+```
+
+**Merk:**
+- `uio-grid-item` uten bildesti blir en vanlig tekstkolonne - alt du skriver i
+  innholdet under direktivet havner i kolonnen. Skriv bildeteksten der i
+  stedet for i `:caption:` hvis den trenger lenker eller annen formatering.
+- Bildene kopieres inn i bygget og lastes opp til Canvas av
+  `update_canvas_pages.py` på samme måte som `.. figure::`-bilder - husk å
+  legge bildefilene i `source/images`.
+
+-------------------------
+
+
 ### uio-info
 
 Informasjonsboks med informasjonsikon (blå "i"-ikon).

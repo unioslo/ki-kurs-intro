@@ -11,6 +11,63 @@ Ulike tjenester er godkjente for ulike typer data.
 Se websiden `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_ for informasjon om hvordan data deles inn i grønne, gule, røde og svarte data.
 I listen med `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_  på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvilke dataklasser de kan brukes med.
 
+.. uio-grid:: 
+
+   .. uio-grid-item::
+
+      .. uio-custom-box:: 🟢 Grønn: Åpen informasjon
+         :color: gronn
+
+         Informasjon som kan deles med alle. 
+
+         **For eksempel**:
+
+         - offentlige nettsider
+         - publiserte forskningsdata
+         - offentlige dokumenter
+         - open access-artikler
+
+
+   .. uio-grid-item::
+
+      .. uio-custom-box:: 🟡 Gul: Begrenset informasjon
+         :color: gul
+
+         **For eksempel**:
+
+         - studentoppgaver
+         - dokumenter på Canvas eller lignende plattformer
+         - forelesningsnotater
+         - forskningsartikler bak betalingsmur
+
+.. uio-grid:: 
+
+   .. uio-grid-item::
+
+      .. uio-custom-box:: 🔴 Rød: Fortrolig informasjon
+         :color: rod
+
+         Informasjon som kan være tilgjengelig, men bare for de med godkjent tilgang. 
+
+         **For eksempel**:
+
+         - sensitive personopplysninger
+         - helseinformasjon
+         - kommende eksamensspørsmål
+
+   .. uio-grid-item::
+
+      .. uio-custom-box:: ⚫ Svart: Strengt fortrolig informasjon
+         :color: svart
+
+         Informasjon med svært begrenset tilgang.
+
+         **For eksempel**:
+
+         - svært konfidensielle forskningsdata
+         - informasjon som kan skade enkeltpersoner eller rikets sikkerhet
+   
+
 .. uio-source::  Lenker til mer informasjon
 
    * `Juridiske føringer for bruk av kunstig intelligens (KI) ved UiO <https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_

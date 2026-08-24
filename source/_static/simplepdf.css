@@ -181,6 +181,33 @@ figure a.reference::after {
     box-sizing: border-box !important;
 }
 
+/* ===== BILDEGRID (uio-grid) ===== */
+
+/* Same story as .uio-grid-row above: .grid-row / .col-xs is Canvas' flexbox
+   grid, which WeasyPrint lays out unreliably. Render each row as a fixed table
+   whose cells share the width evenly, so 2-5 columns come out equal in the PDF
+   too. table-layout: fixed with no width on the cells splits them evenly. */
+
+.grid-row {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 10px 0 !important;
+    break-inside: avoid;
+}
+
+.grid-row > .col-xs {
+    display: table-cell !important;
+    vertical-align: top !important;
+    box-sizing: border-box !important;
+}
+
+.grid-row figure img {
+    max-width: 100% !important;
+}
+
 /* ===== BASE FONT SIZE ===== */
 
 /* Screen sizing (16px) is oversized on an A4 page. Scale the root down so all

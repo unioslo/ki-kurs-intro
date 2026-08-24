@@ -16,7 +16,7 @@ Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene.
 Repetisjon
 ------------------------------
 
-* **Kunstig intelligens** er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens.For eksempel forstå tekst,tolke tale eller analysere tall.
+* **Kunstig intelligens** er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens. For eksempel forstå tekst, tolke tale eller analysere tall.
 * **Generativ KI** er en type KI som lager nytt innhold, basert på det den har lært fra før.
 * **KI-assistent** er en KI-chat som har fått en forhåndsdefinert rolle eller instruksjoner, slik at den kan gi mer målrettede og fagspesifikke svar enn en vanlig KI-chat.
 * **KI-agent** er en avansert KI-assistent som i tillegg til å gi svar, kan utføre handlinger i IT-systemer.
@@ -24,4 +24,4 @@ Repetisjon
 Neste kapittel
 ---------------
 
-I neste kapittel skal vi lære om store språkmodeller.
+I neste kapittel skal du lære om store språkmodeller og hva som kan gå galt når du tar de i bruk.

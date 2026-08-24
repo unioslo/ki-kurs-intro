@@ -111,6 +111,26 @@ class uio_do_dont_item(nodes.General, nodes.Element):
     pass
 
 
+class uio_grid(nodes.General, nodes.Element):
+    """Image/content grid - flex wrapper around one or more grid rows."""
+    pass
+
+
+class uio_grid_row(nodes.General, nodes.Element):
+    """One row of a grid - uses Canvas' own grid-row class."""
+    pass
+
+
+class uio_grid_item(nodes.General, nodes.Element):
+    """One column in a grid row - uses Canvas' own col-xs class."""
+    pass
+
+
+class uio_grid_figure(nodes.General, nodes.Element):
+    """figure/figcaption wrapper around a grid item's image."""
+    pass
+
+
 class UioTaskDirective(SphinxDirective):
     """
     UiO task directive.
@@ -555,6 +575,171 @@ class UioDoDontDirective(SphinxDirective):
         return [container]
 
 
+# Gaps and image widths end up in style attributes on HTML that is pushed to
+# Canvas, so - as with the box colours above - only plain CSS lengths get through.
+CSS_LENGTH = re.compile(r'^\d+(?:\.\d+)?(?:%|px|rem|em)$')
+
+DEFAULT_GRID_GAP = '5%'
+DEFAULT_GRID_IMAGE_WIDTH = '100%'
+
+
+def css_length(argument):
+    """Option validator: a CSS length such as 5%, 20px, 1.5rem or 2em."""
+    value = (argument or '').strip()
+    if CSS_LENGTH.match(value):
+        return value
+
+    raise ValueError(f"'{value}' is not a CSS length (e.g. 5%, 20px, 1rem, 2em)")
+
+
+class UioGridDirective(SphinxDirective):
+    """
+    UiO grid directive - images, design elements or free content side by side.
+
+    Emits Canvas' own grid markup (``grid-row`` / ``col-xs``), so nothing but
+    Canvas classes and inline styles reach the uploaded page::
+
+        .. uio-grid::
+
+           .. uio-grid-item:: ../images/en.png
+              :alt: Beskrivende tekst
+              :caption: Bildetekst
+
+           .. uio-grid-item:: ../images/to.png
+              :alt: Beskrivende tekst
+              :caption: Bildetekst
+
+    Every top-level block in the body becomes one column, so the UiO design
+    elements can be dropped straight into the grid::
+
+        .. uio-grid::
+
+           .. uio-colorbox-3:: Overskrift
+
+              Innhold i fargeboks.
+
+           .. uio-custom-box:: 🟢 Grønn
+              :color: gronn
+
+              Innhold i egendefinert boks.
+
+    Blocks that are not ``uio-grid-item`` are wrapped in a column of their own;
+    use ``uio-grid-item`` to put several blocks (or an image plus text) in the
+    same column.
+
+    Usage::
+
+        .. uio-grid::
+           :columns: 3
+           :gap: 5%
+
+    ``col-xs`` is ``flex-grow: 1; flex-basis: 0``, so the columns in a row always
+    divide the width evenly - two to five columns need no extra markup. Omit
+    ``:columns:`` to put every column on one row; set it to wrap them into
+    rows of that many columns (six images with ``:columns: 3`` gives two rows).
+    ``:gap:`` is the space between the columns (default 5%).
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 0
+    option_spec = {
+        'columns': directives.positive_int,
+        'gap': css_length,
+    }
+
+    def run(self):
+        parsed = nodes.Element()
+        self.state.nested_parse(self.content, self.content_offset, parsed)
+
+        # Everything in the body is a column: uio-grid-item as written, anything
+        # else (a colour box, a figure, a paragraph) wrapped in a column of its
+        # own so it gets the col-xs sizing. Invisible/error nodes are kept out of
+        # the count so they cannot shift the column layout.
+        items = []
+        leftovers = []
+        for child in parsed.children:
+            if isinstance(child, uio_grid_item):
+                items.append(child)
+            elif isinstance(child, (nodes.system_message, nodes.comment, nodes.target)):
+                leftovers.append(child)
+            else:
+                item = uio_grid_item()
+                item += child
+                items.append(item)
+
+        node = uio_grid()
+        gap = self.options.get('gap', DEFAULT_GRID_GAP)
+        per_row = self.options.get('columns') or max(len(items), 1)
+
+        row = None
+        for index, item in enumerate(items):
+            if index % per_row == 0:
+                row = uio_grid_row()
+                row['gap'] = gap
+                node += row
+            row += item
+
+        node += leftovers
+        return [node]
+
+
+class UioGridItemDirective(SphinxDirective):
+    """
+    One column in a uio-grid.
+
+    Usage::
+
+        .. uio-grid-item:: ../images/skjermbilde.png
+           :alt: Beskrivende tekst
+           :caption: Bildetekst
+           :width: 100%
+
+        .. uio-grid-item::
+
+           Kolonne uten bilde - innholdet parses som vanlig rst.
+
+    The image path is relative to the rst file, exactly as for ``.. figure::``,
+    and the file is copied into the build (and uploaded to Canvas by
+    ``update_canvas_pages.py``) like any other image. ``:caption:`` becomes the
+    ``<figcaption>``; ``:alt:`` defaults to the caption, so set it explicitly
+    (or leave both empty for a purely decorative image). Body content is
+    rendered inside the column below the figure, which is where a caption with
+    links or other markup belongs.
+    """
+    has_content = True
+    required_arguments = 0
+    optional_arguments = 1
+    final_argument_whitespace = False
+    option_spec = {
+        'alt': directives.unchanged,
+        'caption': directives.unchanged,
+        'width': css_length,
+    }
+
+    def run(self):
+        node = uio_grid_item()
+        caption = self.options.get('caption', '')
+
+        if self.arguments:
+            figure = uio_grid_figure()
+            figure['caption'] = caption
+            image = nodes.image(uri=directives.uri(self.arguments[0]))
+            image['alt'] = self.options.get('alt', caption)
+            image['width'] = self.options.get('width', DEFAULT_GRID_IMAGE_WIDTH)
+            # Sphinx links every sized image to its full-size version; inside a
+            # grid that anchor is just noise. The marker class is removed again
+            # by cleanup_html_post_build so only Canvas markup is left.
+            image['classes'].append('no-scaled-link')
+            figure += image
+            node += figure
+        elif caption:
+            # No image to hang a figcaption on - keep the text as a paragraph.
+            node += nodes.paragraph(text=caption)
+
+        self.state.nested_parse(self.content, self.content_offset, node)
+        return [node]
+
+
 def html_visit_uio_task(self, node):
     """Generate UiO task HTML."""
     title = node.get('title', 'Oppgave')
@@ -769,6 +954,52 @@ def html_depart_uio_do_dont_container(self, node):
     self.body.append('</div>\n')
 
 
+def html_visit_uio_grid(self, node):
+    """Open the flex wrapper around the grid rows."""
+    self.body.append('<div style="display: flex; flex-wrap: wrap;">\n')
+
+
+def html_depart_uio_grid(self, node):
+    """Close the grid wrapper."""
+    self.body.append('</div>\n')
+
+
+def html_visit_uio_grid_row(self, node):
+    """Open one grid row using Canvas' own grid-row class."""
+    gap = node.get('gap', DEFAULT_GRID_GAP)
+    self.body.append(
+        '<div class="grid-row" style="grid-gap: %s; margin: 1rem 0; width: 100%%;">\n' % gap
+    )
+
+
+def html_depart_uio_grid_row(self, node):
+    """Close the grid row."""
+    self.body.append('</div>\n')
+
+
+def html_visit_uio_grid_item(self, node):
+    """Open one column - col-xs shares the row width evenly between the items."""
+    self.body.append('<div class="col-xs" style="padding: 0;">\n')
+
+
+def html_depart_uio_grid_item(self, node):
+    """Close the column."""
+    self.body.append('</div>\n')
+
+
+def html_visit_uio_grid_figure(self, node):
+    """Open the figure wrapper; the image node itself renders as the child."""
+    self.body.append('<figure style="margin: 0;">')
+
+
+def html_depart_uio_grid_figure(self, node):
+    """Add the caption, if any, and close the figure."""
+    caption = node.get('caption')
+    if caption:
+        self.body.append(f'<figcaption>{self.encode(caption)}</figcaption>\n')
+    self.body.append('</figure>\n')
+
+
 def add_heading_stripe(app, pagename, templatename, context, doctree):
     """Add blue heading stripe to every page."""
     if doctree and hasattr(context, 'body'):
@@ -814,6 +1045,10 @@ def cleanup_html_post_build(app, exception):
 
             # Remove admonition-title paragraphs
             content = re.sub(r'<p class="admonition-title">[^<]*</p>\s*', '', content)
+
+            # 2b. Drop the no-scaled-link marker uio-grid-item puts on its images
+            # (it only tells Sphinx not to wrap them in a full-size link)
+            content = content.replace(' class="no-scaled-link"', '')
 
             # 3. Remove any existing page-navigation divs (from previous builds)
             content = re.sub(r'<div class="page-navigation".*?</div>\s*</div>\s*</div>\s*\n', '', content, flags=re.DOTALL)
@@ -1105,6 +1340,22 @@ def setup(app):
         html=(html_visit_uio_do_dont_container, html_depart_uio_do_dont_container)
     )
     app.add_node(
+        uio_grid,
+        html=(html_visit_uio_grid, html_depart_uio_grid)
+    )
+    app.add_node(
+        uio_grid_row,
+        html=(html_visit_uio_grid_row, html_depart_uio_grid_row)
+    )
+    app.add_node(
+        uio_grid_item,
+        html=(html_visit_uio_grid_item, html_depart_uio_grid_item)
+    )
+    app.add_node(
+        uio_grid_figure,
+        html=(html_visit_uio_grid_figure, html_depart_uio_grid_figure)
+    )
+    app.add_node(
         uio_chapter_card,
         html=(html_visit_uio_chapter_card, html_depart_uio_chapter_card)
     )
@@ -1129,6 +1380,8 @@ def setup(app):
     app.add_directive('uio-custom-box', UioCustomBoxDirective)
     app.add_directive('uio-detail', UioDetailDirective)
     app.add_directive('uio-do-dont', UioDoDontDirective)
+    app.add_directive('uio-grid', UioGridDirective)
+    app.add_directive('uio-grid-item', UioGridItemDirective)
     app.add_directive('uio-chapter-card', UioChapterCardDirective)
     app.add_directive('uio-module-listing', UioModuleListingDirective)
 
