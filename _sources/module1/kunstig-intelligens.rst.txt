@@ -3,7 +3,7 @@ Kunstig intelligens
 ====================
 
 Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens.
-Det kan for eksempel være å forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall.
+Det kan for eksempel være å produsere og forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall.
 
 For at kunstig intelligens skal kunne utføre denne type oppgaver trener den på enorme mengder eksempler fra tekst, bilder eller lyd. Ved å se det samme tusenvis eller millioner av ganger, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:
 
@@ -12,10 +12,10 @@ For at kunstig intelligens skal kunne utføre denne type oppgaver trener den på
 - forstå innholdet i et lydopptak
 
 
-Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker forteller nøyaktig hva det skal lære.
+Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker forteller nøyaktig hva den skal lære.
 
 
-.. uio-colorbox-3:: Fordypning for de nysgjerrige
+.. uio-colorbox-3:: Bonusinnhold
 
       .. uio-detail:: Litt historie om kunstig intelligens
 
@@ -31,6 +31,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
             - formulere seg på en måte som ligner et menneske
 
             Denne utviklingen har vært mulig på grunn av tre viktige ting:
+
             1. Store datamengder:  KI kan trenes på enorme mengder tekst, bilder og lyd fra internett, bøker, artikler osv.
             2. Kraftig maskinvare: Spesielle prosessorer som kan behandle veldig mye data samtidig.
             3. Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at KI kan lære mer effektivt.
@@ -48,8 +49,8 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
 
             .. uio-colorbox-3:: Tradisjonell programmering foregår slik:	
 
-                  - Et menneske lager klare regler eller algoritmer: «Hvis X skjer, gjør Y».
-                  - Programmet får input, og bruker reglene på den.
+                  - Du lager klare regler eller algoritmer: «Hvis X skjer, gjør Y».
+                  - Programmet bruker reglene på data den blir gitt.
                   - Programmet gir deg resultatet.
                   
                   Eksempel på tradisjonell programmering: 
@@ -59,7 +60,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer uten at mennesker fort
 
                   I maskinlæring er regelen eller algoritmen ukjent, og det vi ønsker å lære.
                   
-                  - Vi har mange eksempler på input
+                  - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder)
                   - Hvert eksempel har også et ønsket resultat (output) 
                   - I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
 
