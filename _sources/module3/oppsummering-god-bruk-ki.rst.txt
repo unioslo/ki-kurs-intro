@@ -9,19 +9,19 @@ for å få bedre svar.
 
     Diskuter selv eller med en kollega
 
-    1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar? 
+    1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar?
     2. Hva erfarte du når du forsøkte å forbedre instruksjonene dine?
-    3. Hvilke instruksjonsteknikker kan du benytte når du kommuniserer med KI? 
+    3. Hvilke instruksjonsteknikker kan du benytte når du kommuniserer med KI?
     4. Hvilke teknikker tror du vil være mest nyttig for deg?
     5. Hvordan vil du vurdere risiko ved bruk av KI i egne arbeidsoppgaver?
-    6. Hvordan vil du kvalitetssikre KI-generert innhold? 
+    6. Hvordan vil du kvalitetssikre KI-generert innhold?
 
-Repetisjon 
+Repetisjon
 ------------------------------------
 
 * Instruksjoner er din måte å kommunisere med KI på. En instruksjon er beskjeden eller spørsmålet du gir til KI. Kvaliteten på
   instruksjonen din påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar bør du: gi kontekst, spesifisere format,
-  definere en rolle og gi eksempler. 
+  definere en rolle og gi eksempler.
 
 * Det finnes mange ulike instruksjonsteknikker:
 
@@ -30,7 +30,7 @@ Repetisjon
   3. Forbedre instruksjonen trinnvis
   4. Start en ny samtale om du merker at svarene begynner å få dårligere kvalitet
 
-* Generativ KI er ikke enten “pålitelig” eller “upålitelig”, det avhenger av hva vi bruker den til. En hovedregel er at KI passer best
+* Generativ KI er ikke enten "pålitelig" eller "upålitelig", det avhenger av hva vi bruker den til. En hovedregel er at KI passer best
   til oppgaver der feil ikke innebærer stor risiko. Hvis feil kan få alvorlige følger, må du enten kunne kontrollere og bekrefte
   informasjonen før du bruker den videre, eller la være å bruke KI til den oppgaven.
 
@@ -39,7 +39,7 @@ Repetisjon
   1. Vurdere risikoen
   2. Skrive gode instruksjoner
   3. Kontrollere svaret
-  4. Rydde i samtalen 
+  4. Rydde i samtalen
 
 Neste kapittel
 --------------
