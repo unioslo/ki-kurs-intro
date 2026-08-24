@@ -13,7 +13,7 @@ Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene.
   3. Hva er forskjellen på en KI-assistent og KI-agent?
 
 
-Repetisjon av begrepene
+Repetisjon
 ------------------------------
 
 * **Kunstig intelligens** er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens.For eksempel forstå tekst,tolke tale eller analysere tall.

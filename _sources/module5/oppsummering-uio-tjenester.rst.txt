@@ -7,11 +7,11 @@ I dette kapittelet har vi lært om de godkjente KI-tjenestene på UiO, hvorfor d
   Diskuter selv eller med en kollega:
 
   1. Hvilke KI-tjenester er godkjent på UiO?
-  2. Hvorfor er det viktig å bruke dem? 
+  2. Hvorfor er det viktig å bruke dem?
   3. Hvilke KI-tjenester vil være nyttig for deg og dine arbeidsoppgaver?
 
 
-I dette kapittelet har du lært
+Repetisjon
 ------------------------------------
 
 
