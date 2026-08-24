@@ -19,7 +19,7 @@ Det betyr at dersom oppgaven du skal løse er veldig kompleks, så kan en sky-mo
 
 I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se hvilken dataklassifisering hver enkelt er godkjent for. 
 
-.. uio-colorbox-3:: Fordypning for de nysgjerrige
+.. uio-colorbox-3:: Bonusinnhold
 
    .. uio-detail:: GPT UiO sin modellvelger
 
