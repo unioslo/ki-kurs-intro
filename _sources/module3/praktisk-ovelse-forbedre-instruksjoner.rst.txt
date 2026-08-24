@@ -13,10 +13,10 @@ Dette vil gi deg en god pekepinn på hvordan språkmodellen reagerer på instruk
 
    Kopier hver av de mangelfulle instruksjonene under inn i GPT UiO, og se på svaret du får:
 
-   a) «Forklar forskjellen på KI og maskinlæring.»
-   b) «Lag et møtereferat av disse notatene: [dine notater]»
-   c) «Sjekk denne teksten: [din tekst]»
-   d) «Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.»
+   a) "Forklar forskjellen på KI og maskinlæring."
+   b) "Lag et møtereferat av disse notatene: [dine notater]"
+   c) "Sjekk denne teksten: [din tekst]"
+   d) "Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger."
 
 
    **2. Skriv forbedrede versjoner**

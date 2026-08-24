@@ -1,4 +1,4 @@
-Nyttige instruksjons-teknikker 
+Nyttige instruksjons-teknikker
 ===============================
 
 Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike instruksjonsteknikker i tillegg.
@@ -6,7 +6,7 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
 
 .. uio-colorbox-3::  Lag en plan
 
-   Lag en arbeidsplan for hvordan KI-en skal løse problemet. 
+   Lag en arbeidsplan for hvordan KI-en skal løse problemet.
    Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.
 
    **Eksempel**
@@ -33,8 +33,8 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
 
    **Eksempel**
 
-   Jeg skal arrangere en workshop om [...]. 
-   Foreslå noen aktiviteter som kan hjelpe deltakerne med oppgaven de skal løse. 
+   Jeg skal arrangere en workshop om [...].
+   Foreslå noen aktiviteter som kan hjelpe deltakerne med oppgaven de skal løse.
    Gi en begrunnelsen på 3-5 punkter for hvordan aktivitetene kan hjelpe deltakerne.
 
 
@@ -42,19 +42,18 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
 .. uio-colorbox-3:: Forbedre instruksjonen trinnvis
 
    Første svar er sjelden perfekt, og det er helt normalt.
-   Bygg videre på svarene i en samtale. 
+   Bygg videre på svarene i en samtale.
 
    **Eksempel**
 
-   Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.» 
-   
-   Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.» 
-   
-   Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»
+   Første instruksjon: "Skriv et utkast til e-post om nytt bookingsystem."
+
+   Oppfølging 1: "Gjør den mer konsis, maks 3 avsnitt."
+
+   Oppfølging 2: "Legg til en setning om hvor de kan få hjelp."
 
 .. uio-colorbox-3:: Start en ny samtale
 
    Som vi lærte i "Språkmodellen har ikke hukommelse" kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar.
 
    Start derfor en ny samtale om du merker at svarene begynner å få dårligere kvalitet.
-   

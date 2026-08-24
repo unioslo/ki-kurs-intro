@@ -13,7 +13,7 @@ Du kan jobbe med opptil gule data i både Gemini og Gemini Notebook, i tråd med
 
 
 .. uio-colorbox-3:: Viktig når du bruker Gemini og Gemini Notebook
-   
+
    For å bruke Gemini-tjenestene må du:
 
    1. ha en konto i Google Workspace tilknyttet UiO
@@ -22,10 +22,10 @@ Du kan jobbe med opptil gule data i både Gemini og Gemini Notebook, i tråd med
 
    Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. Tjenesten kjører ikke på UiO sine systemer.
 
-   * Gemini og Gemini Notebook er kun godkjent for opptil gule data 🟡 
+   * Gemini og Gemini Notebook er kun godkjent for opptil gule data 🟡
    * Last ikke opp materiale som kan identifisere eller eksponere andre personer (for eksempel studentbesvarelser, pasientopplysninger, intervjuer, personlige bilder eller lydopptak)
    * Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)
-    
+
 
 
 Gemini
@@ -44,7 +44,7 @@ I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se avsni
    - vil laste opp og bearbeide filer
    - vil generere forskjellig typer filer
    - vil bruke kildene du allerede har lagt til i en Gemini Notebook
-   - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡 
+   - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡
 
 Gemini Notebook
 ----------------
@@ -52,7 +52,7 @@ Gemini Notebook
 Gemini Notebook er en KI-assistent fra Google som er spesialisert for å arbeide med dokumenter og egne kilder.
 
 Notebooken svarer ikke på spørsmål før du har lastet opp informasjon den kan bruke som kilde.
-Du må derfor først bygge opp din egen «kunnskapsbank» for hver Notebook, som kan inneholde:
+Du må derfor først bygge opp din egen "kunnskapsbank" for hver Notebook, som kan inneholde:
 
 - dokumenter eller innlimt tekst
 - nettsider
@@ -73,5 +73,5 @@ Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:
 
    - du skal jobbe mye med dokumenter og egne kilder
    - vil generer forskjellige typer ressurser som quizzer eller podcaster basert på dine dokumenter og kilder
-   - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡  
+   - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡
 
