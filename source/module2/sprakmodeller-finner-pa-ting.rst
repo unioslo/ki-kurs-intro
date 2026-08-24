@@ -11,10 +11,10 @@ Her er noen eksempler:
 * *Oppdiktede referanser*: Modellen lager titler på artikler eller bøker som ikke finnes.
 * *Forveksling*: Modellen blander sammen ulike personer.
 
-Det er et stort problem at språkmodeller ofte finner på ting med stor *selvsikkerhet*.
+Det er et stort problem at språkmodeller ofte finner på ting med stor *sikkerhet*.
 De sier ikke: "Jeg er usikker, men …".
-I stedet presenterer de feilinformasjon med samme overbevisning som riktig informasjon.
-Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår selvsikkert.
+I stedet presenterer de feilinformasjon med samme "overbevisning" som riktig informasjon.
+Derfor kan du *ikke* stole på at et svar er riktig bare fordi det fremstår "selvsikkert".
 Du må alltid sjekke fakta med en pålitelig kilde.
 
 Hvorfor skjer det?
