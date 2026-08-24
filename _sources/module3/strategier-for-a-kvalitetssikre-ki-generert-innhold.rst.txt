@@ -4,7 +4,7 @@ Strategier for å kvalitetssikre KI-generert innhold
 Vi har nå lært at en språkmodell lager sannsynlig tekst, ikke sannhet. 
 Den har ingen kunnskap, ingen hukommelse og har innebygde skjevheter. 
 
-I dette kurset har du likevel fått noen konkrete tips og «sikkerhetsregler» for hvordan du kan kvalitetssikre innhold som er generert av KI.
+I dette kurset har du likevel fått noen konkrete tips og "sikkerhetsregler" for hvordan du kan kvalitetssikre innhold som er generert av KI.
 Disse oppsummerer vi her.
 
 
@@ -20,7 +20,7 @@ Disse oppsummerer vi her.
     - Gi kontekst, be om format, definer rolle, gi eksempler. 
     - Be modellen tenke stegvis og begrunne svaret.
 
-.. uio-colorbox-3::  3. Sjekk svaret — stol aldri på KI-ens selvsikkerhet
+.. uio-colorbox-3::  3. Sjekk svaret, stol aldri på KI-ens "selvsikkerhet"
 
     - Kontroller fakta og referanser mot pålitelige kilder. Finner du ingen kilder, er innholdet trolig oppdiktet.
     - Motvirk bekreftelsesbias ved også å spørre etter motargumenter eller alternative perspektiver.
