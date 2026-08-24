@@ -20,10 +20,10 @@ Repetisjon
   Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor kunnskap.
  
 * *Store språkmodeller har ikke noe forhold til sannhet* og har derfor ikke sikker kunnskap om hva som er
-  sant. De er trent til å generere tekst som er troverdig, og som ligner på tekstene de er trent opp på. Det
-  gjør modellene sårbare for bevisst manipulering av treningsdata. Aktører kan legge ut misvisende informasjon
-  for at modellene skal bli trent på den. Dermed kan modellene gi svar som er manipulert og ikke stemmer overens
-  medvirkeligheten.
+  sant.
+  Det gjør modellene sårbare for bevisst manipulering av treningsdata.
+  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
+  Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
 * Fordi store språkmodeller ikke har faktakunnskap, kan de *finne på ting som ikke stemmer*.
 
