@@ -12,7 +12,7 @@ Før du går videre til kapittel 3 kan du teste hva du har lært.
     2. Hva er kontekst og hva gjør du for å gi språkmodellen god nok kontekst?
     3. Nevn noen av de viktigste svakhetene ved store språkmodeller og hva kan du gjøre for å imøtekomme dem?
 
-I dette kapittelet har du lært
+Repetisjon
 --------------------------------------------------------------------
 
 * **Store språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
