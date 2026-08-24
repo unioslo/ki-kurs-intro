@@ -1,9 +1,8 @@
 Introduksjon til "KI-språket"
 =======================================
 
-I dette kapittelet skal vi lære fire sentrale begreper i "KI-språket". 
-Ved å forstå begrepene: generativ KI,  språkmodell, KI-assistent og KI-agent vil det være enklere å forstå hvordan 
-du kan bruke KI på en ansvarlig og trygg måte. 
+I dette første kapitlet lærer du om begrepene *generativ KI*, *språkmodeller*, *KI-assistent* og *KI-agent*.
+Når du forstår disse begrepene, har du lagt det første grunnlaget for å lære mer om hvordan du kan bruke KI på en god, ansvarlig og trygg måte. 
 
 .. figure:: ../images/1.1-studying-the-basics.png
     :align: center
