@@ -1,16 +1,5 @@
-Prinsipper for gode instruksjoner
-===================================
-
-
-Hva er egentlig en instruksjon?
---------------------------------
-
-En instruksjon er beskjeden eller spørsmålet du gir til en KI-modell. 
-Det er din måte å kommunisere med KI-en på. 
-Kvaliteten på instruksjonen din påvirker direkte kvaliteten på svaret du får.
-
-Hvordan bygge gode instruksjoner
-----------------------------------
+Lag gode instruksjoner
+=========================
 
 Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
 Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.

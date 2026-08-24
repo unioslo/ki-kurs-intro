@@ -2,7 +2,7 @@ Praktisk øvelse: Forbedre instruksjoner
 =========================================
 
 Prøv nå selv å forbedre instruksjonene fra forrige side i GPT UiO.
-Dette vil gi deg en god indikasjon på hvordan språkmodellen responderer på dine instruksjoner.
+Dette vil gi deg en god pekepinn på hvordan språkmodellen reagerer på instruksjonene du gir.
 
 .. uio-task:: Prøv selv!
 
