@@ -19,8 +19,8 @@ Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.
 Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen, uten at du som bruker nødvendigvis blir informert.
 Det kan føre til dårligere svar, fordi essensiell informasjon som kom tidlig i samtalen kan ha fallt ut.
 
-Korte samtaler gir bedre svar
-------------------------------
+Ha korte samtaler
+-----------------------------------
 
 Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar. 
 
