@@ -6,7 +6,7 @@ Autotekst
 ----------
 
 Autotekst er en UiO-utviklet tjeneste som transkriberer tale til tekst ved hjelp av OpenAI sin automatiske språkgjenkjenningsmodell `Whisper <https://openai.com/nb-NO/index/whisper/>`_.
-Tjenesten kjører i sikre omgivelser lokalt på UiOs servere, og er derfor godkjent for opptil røde data.
+Tjenesten kjører i sikre omgivelser lokalt på UiOs IT-systemer, og er derfor godkjent for opptil røde data.
 
 Du kan bruke Autotekst til å transkribere opptak av møter, av forelesninger eller av intervjuer for å nevne noen bruksområder. 
 Lyden som Autotekst transkriberer, kan komme fra lydfiler du laster opp, for eksempel fra Panopto eller Zoom. 
