@@ -46,119 +46,112 @@
     "url": "hvordan-fungerer-store-sprakmodeller-4",
     "title": "Hvordan fungerer store språkmodeller?",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module2/oppsummering-sprakmodeller.html": {
     "page_id": 422707,
     "url": "oppsummering-kapittel-2-2",
     "title": "Oppsummering kapittel 2",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module2/skjevheter.html": {
     "page_id": 421712,
     "url": "modellenes-skjevheter",
     "title": "Modellenes skjevheter",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module2/sprakmodeller-finner-pa-ting.html": {
     "page_id": 416953,
     "url": "sprakmodeller-finner-pa-ting-8",
     "title": "Språkmodeller finner på ting",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module2/sprakmodeller-har-ikke-faktakunnskap.html": {
     "page_id": 416954,
     "url": "sprakmodeller-har-ikke-faktakunnskap-3",
     "title": "Språkmodeller har ikke faktakunnskap",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module2/sprakmodeller-har-ikke-hukommelse.html": {
     "page_id": 416955,
     "url": "sprakmodeller-har-ikke-hukommelse-6",
     "title": "Språkmodeller har ikke hukommelse",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module2/store-sprakmodeller.html": {
     "page_id": 416956,
     "url": "hva-kan-ga-galt",
     "title": "Hva kan gå galt?",
     "module_id": 243061,
-    "module_name": "Hvordan fungerer språkmodeller"
+    "module_name": "Hva kan gå galt?"
   },
   "module3/hvordan-bruke-ki-pa-en-god-mate.html": {
     "page_id": 416957,
     "url": "bli-god-pa-ki",
     "title": "Bli god på KI!",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/nar-kan-du-stole-pa-generativ-ki.html": {
     "page_id": 416959,
     "url": "nar-kan-du-stole-pa-generativ-ki-6",
     "title": "Når kan du stole på generativ KI?",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/nyttige-instruksjons-teknikker.html": {
     "page_id": 416960,
-    "url": "nyttige-instruksjons-teknikker-3",
-    "title": "Nyttige instruksjons-teknikker",
+    "url": "nyttige-instruksjonsteknikker",
+    "title": "Nyttige instruksjonsteknikker",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/oppsummering-god-bruk-ki.html": {
     "page_id": 422709,
     "url": "oppsummering-kapittel-3-3",
     "title": "Oppsummering kapittel 3",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/praktisk-ovelse-forbedre-egne-instruksjoner.html": {
     "page_id": 418210,
     "url": "praktisk-ovelse-forbedre-egne-instruksjoner",
     "title": "Praktisk øvelse: Forbedre egne instruksjoner",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/praktisk-ovelse-forbedre-instruksjoner.html": {
     "page_id": 418209,
     "url": "praktisk-ovelse-forbedre-instruksjoner-4",
     "title": "Praktisk øvelse: Forbedre instruksjoner",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/prinsipper-for-gode-instruksjoner.html": {
     "page_id": 416963,
     "url": "lag-gode-instruksjoner",
     "title": "Lag gode instruksjoner",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
-  },
-  "module3/strategier-for-a-kvalitetssikre-ki-generert-innhold-v2.html": {
-    "page_id": 430220,
-    "url": "strategier-for-a-kvalitetssikre-ki-generert-innhold-v2",
-    "title": "Strategier for å kvalitetssikre KI-generert innhold v2",
-    "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/strategier-for-a-kvalitetssikre-ki-generert-innhold.html": {
     "page_id": 416964,
     "url": "strategier-for-a-kvalitetssikre-ki-generert-innhold-3",
     "title": "Strategier for å kvalitetssikre KI-generert innhold",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module3/tips-om-pre-instruksjon-og-ki-assistenter.html": {
     "page_id": 416965,
     "url": "tips-om-pre-instruksjon-og-ki-assistenter-3",
     "title": "Tips om pre-instruksjon og KI-assistenter",
     "module_id": 243062,
-    "module_name": "Hvordan bruke KI på en god måte?"
+    "module_name": "Bli god på KI!"
   },
   "module4/ansvarlig-og-baerekraftig-bruk-av-ki.html": {
     "page_id": 430627,
@@ -213,13 +206,6 @@
     "page_id": 416970,
     "url": "autotekst-og-nettskjema-diktafon-6",
     "title": "Autotekst og Nettskjema-diktafon",
-    "module_id": 243063,
-    "module_name": "KI-tjenester ved UiO"
-  },
-  "module5/dataklassifisering-ved-uio.html": {
-    "page_id": 431229,
-    "url": "dataklassifisering-ved-uio",
-    "title": "Dataklassifisering ved UiO",
     "module_id": 243063,
     "module_name": "KI-tjenester ved UiO"
   },
