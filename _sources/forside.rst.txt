@@ -25,10 +25,8 @@ Du kan se på den som en digital hjelper, som for eksempel kan lage utkast som d
 forbedre, gi deg oversikter før du går i dybden og foreslå ideer før du tar beslutninger. 
 
 Den digitale hjelpereren jobber raskt og kan behandle store mengder data, men den har hverken din fagekpertise eller erfaring fra UiO.
-Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor må du bruke
-din kompetanse til å vurdere 
-vurdere hvilke oppgaver som er trygge å bruke KI til og ta det endelige ansvaret for
-beslutninger. 
+Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet.
+Derfor må du bruke din kompetanse til å vurdere hvilke oppgaver som er trygge å bruke KI til og ta det endelige ansvaret for beslutninger. 
 
 Du må også alltid huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny
 teknologi og ta den i bruk på en måte som invaretar tilliten mellom forvaltnignen og samfunnet.
