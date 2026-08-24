@@ -7,7 +7,7 @@ Tjenesten bruker GPT-språkmodellene fra  `OpenAI <https://openai.com/nb-NO/>`_.
 Chatten kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video. 
 Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hjelper deg i gang, og er derfor godt egnet hvis du ønsker KI-assistanse som er intuitiv og enkel å bruke.
 
-UiO har bare godkjent Copilot for grønne data.
+På UiO er Microsoft Copilot Chat godkjent kun for bruk med grønne data.
 Du må derfor være spesielt forsiktig når du benytter tjenesten. 
 Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat.
 
@@ -27,12 +27,12 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
    * Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)
     
 
-.. uio-info:: Microsoft KI produktene
+.. uio-info:: KI-produktene fra Microsoft 
 
    Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chatte-funksjonen.
    Ved UiO er Microsoft Copilot Chat ikke integrert direkte i de andre Microsoft-produktene.
-   Det betyr at den såkalte agent-funksjonen ikke er aktivert.
-   Derfor ser du ikke Copilot-ikonet eller KI-funksjoner inne i for eksempel PowerPoint eller Word.
+   Det betyr at den såkalte agent-funksjonen ikke er aktivert, og du ser derfor ikke Copilot-ikonet eller KI-funksjoner inne i for eksempel PowerPoint eller Word.
+
 
    .. figure:: ../images/ms-copilot.png
       :align: center
@@ -54,8 +54,8 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
 .. uio-colorbox-3:: Bruk Microsoft Copilot Chat hvis
 
    - du skal jobbe med grønne 🟢 data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie
-   - du vil ha en chat tjeneste som er enkel å bruke og hjelper deg igang
-   - du vil ha en chat tjeneste som kan lage og jobbe med flere typer filer
+   - du vil ha en KI-chat som er enkel å bruke og hjelper deg igang
+   - du vil ha en KI-chat som kan lage og jobbe med flere typer filer
 
 
   
