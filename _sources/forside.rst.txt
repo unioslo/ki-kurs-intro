@@ -15,30 +15,28 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 
    <h2>Se for deg..</h2>
 
-at du får en ekstra "kollega" med superkrefter. En "kollega" som raskt kan lese, analysere, oppsummere,
-oversette, forenkle eller hente fram relevant informasjon for deg. Kunstig intelligens kan fungere som denne ekstra "kollegaen".
-Du kan se på den som en digital hjelper, som for eksempel kan lage utkast som du kan kvalitetssikre og 
-forbedre, gi deg oversikter før du går i dybden og foreslå ideer før du tar beslutninger. 
+   at du kan få en digital sparringspartner som alltid har tid og som raskt kan analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon
+   for deg. Kunstig intelligens kan være denne digitale sparringspartneren som finner mønstre, gir deg oversikter, foreslår ideer eller lager utkast.
+   
+   Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller
+   moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor skal du alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge 
+   bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger.
 
-Den digitale hjelperen jobber raskt og kan behandle store mengder data, men den har hverken din fagekpertise eller erfaring fra UiO.
-Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet.
-Derfor må du bruke din kompetanse til å vurdere hvilke oppgaver som er trygge å bruke KI til, og ta det endelige ansvaret for beslutninger. 
+   Du må også alltid huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i   
+   bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet. Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og
+   ansvarlig måte i jobben din.
 
-Du må også alltid huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny
-teknologi og ta den i bruk på en måte som invaretar tilliten mellom forvaltningen og samfunnet.
-
-Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og trygg måte i jobben din.
 
 .. raw:: html
 
-   <h2>Slik jobber du med kurset</h2>
+   <h2>Gjennomføring</h2>
 
-- Rekkefølge: Start med kapittel 1 og jobb deg fremover - innholdet bygger på hverandre
-- Refleksjonsoppgaver og øvinger: Du vil møte refleksjonsspørsmål og øvelser underveis - bruk tid på disse!
-- Du vil finne fordypningsstoff i flere av kapitlene. Les disse om du vil gå litt i dybden!
-- Siste del av kurset består av to sett med øvingsoppgaver som du kan jobbe deg gjennom når du har tid. Den nye kunnskapen sitter jo best når du får prøvd den ut! Du kan laste ned oppgavene som en pdf, slik at du ikke trenger å være logget på Canvas for å jobbe med dem.
+- Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse. !
+- Fordypningsstoff: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer!
+- Praktiske øvingsoppgaver: på slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. 
+    Du kan laste ned oppgavene som en pdf, slik at du ikke trenger å være logget på Canvas for å jobbe med dem.
 
-Hele kurset utenom de avsluttende øvingsoppgavene er beregnet til å ta mellom 45 og 60 minutter.
+Kurset tar mellom 45 og 60 minutter å gjennomføre
 
 .. raw:: html
 
