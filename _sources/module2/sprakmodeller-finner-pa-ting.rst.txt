@@ -1,7 +1,7 @@
 Språkmodeller finner på ting
 ================================================
 
-Fordi store språkmodeller ikke har *sikker* faktakunnskap, kan de finne på ting som ikke stemmer.
+Fordi store språkmodeller ikke kan skille mellom sant og usant, kan de finne på ting som ikke stemmer.
 Hvis du har hørt noen si at KI og språkmodeller *hallusinerer*, er det dette de mener.
 
 Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
