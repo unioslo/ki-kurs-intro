@@ -17,5 +17,5 @@ Navnet ditt og brukernavnet ditt deles ikke med andre selskaper, bare UiO har ti
 I tillegg brukes ikke samtalene dine til videre trening av språkmodellene.
 Og sist men ikke minst: du kan bruke GPT UiO med opptil røde data, men bare hvis du velger egnet modell.
 
-På de neste sidene skal vi dykke dypere inn i to viktige funksjonaliteter ved GPT UiO, nettopp muligheten for å velge blant flere språkmodeller, i tillegg til GPT UiO sine KI assistenter.
+På de neste sidene skal vi lære mer om to viktige funksjonaliteter ved GPT UiO, nettopp muligheten for å velge blant flere språkmodeller og GPT UiO sine KI assistenter.
 
