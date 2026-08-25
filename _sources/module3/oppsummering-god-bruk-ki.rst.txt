@@ -11,10 +11,9 @@ for å få bedre svar.
 
     1. Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar?
     2. Hva erfarte du når du forsøkte å forbedre instruksjonene dine?
-    3. Hvilke instruksjonsteknikker kan du benytte når du kommuniserer med KI?
-    4. Hvilke teknikker tror du vil være mest nyttig for deg?
-    5. Hvordan vil du vurdere risiko ved bruk av KI i egne arbeidsoppgaver?
-    6. Hvordan vil du kvalitetssikre KI-generert innhold?
+    3. Hvilke instruksjonsteknikker vil være mest nyttig for deg?
+    4. Hvordan vil du vurdere risiko ved bruk av KI i egne arbeidsoppgaver?
+    5. Hvordan vil du kvalitetssikre KI-generert innhold?
 
 Repetisjon
 ------------------------------------
