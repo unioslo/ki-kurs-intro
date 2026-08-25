@@ -14,5 +14,5 @@ Når du forstår disse begrepene, har du lagt det første grunnlaget for å lær
 
 .. uio-colorbox-1:: Læringsmål
 
-       * Jeg forstår sentrale begreper i "KI-språket" 
+       * Jeg forstår hovedbegrepene i "KI-språket" 
    
