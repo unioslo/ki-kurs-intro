@@ -4,7 +4,7 @@ GPT UiO: KI-assistenter
 
 I GPT UiO kan du lage dine egne KI-assistenter. 
 En KI-assistent er lagrede instruksjoner som du kan bruke flere ganger. 
-Disse instruksjonene kan være komplekse eller enkle. 
+Disse instruksjonene kan være enkle eller komplekse. 
 
 Du kan for eksempel gi instruks om at en tekst skal "oversettes til norsk med et formelt fagspråk og at forkortelser og titler på tidsskrifter ikke skal oversettes.". 
 Dette er en enkel KI-assistent som kan spare deg tid hvis du ofte skal be KIen om å oversette slik.
