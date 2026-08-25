@@ -25,7 +25,7 @@ på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvil
 
          **For eksempel**:
 
-         - offentlige nettsider
+         - mange offentlige nettsider
          - publiserte forskningsdata
          - offentlige dokumenter
          - open access-artikler
@@ -38,6 +38,7 @@ på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvil
 
          **For eksempel**:
 
+         - personopplysninger
          - studentoppgaver
          - dokumenter på Canvas eller lignende plattformer
          - forelesningsnotater
