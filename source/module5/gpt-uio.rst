@@ -2,7 +2,7 @@
 GPT UiO
 ========
 
-GPT UiO er UiOs sin egenutviklede personverntrygge KI-chat. 
+GPT UiO er UiO sin egenutviklede personverntrygge KI-chat. 
 Den fungerer stort sett som andre KI-chat tjenester: Du kommuniserer med språkmodellen via et chat-vindu.
 
 .. figure:: ../images/gpt-uio-skjermdump.png
