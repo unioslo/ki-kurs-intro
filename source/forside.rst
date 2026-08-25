@@ -34,7 +34,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 - Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse. !
 - Fordypningsstoff: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer!
 - Praktiske øvingsoppgaver: på slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. 
-    Du kan laste ned oppgavene som en pdf, slik at du ikke trenger å være logget på Canvas for å jobbe med dem.
+   Du kan laste ned oppgavene som en pdf, slik at du ikke trenger å være logget på Canvas for å jobbe med dem.
 
 Kurset tar mellom 45 og 60 minutter å gjennomføre
 
