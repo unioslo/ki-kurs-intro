@@ -49,17 +49,11 @@ Det du bør merke deg her, er at hver gang du skriver en ny instruksjon eller et
 Det er fordi språkmodellen selv ikke kan huske det du har spurt om.</p>
 <p>Chat-systemet “husker” det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
 Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk “ser”.</p>
-<section id="begrenset-kontekstvindu">
-<h2>Begrenset kontekstvindu</h2>
-<p>Alle store språkmodeller har et <em>kontekstvindu</em>, som har en begrenset størrelse.
-Informasjonen vi vil at modellen skal behandle må få plass i kontekstvinduet.</p>
-<p>Hvis vi har mer informasjon enn det som får plass i kontekstvinduet, kan systemet bruke ulike teknikker for å lage utdrag eller sammendrag av informasjonen, uten at du som bruker nødvendigvis blir informert.
-Det kan føre til dårligere svar, fordi essensiell informasjon som kom tidlig i samtalen kan ha fallt ut.</p>
-</section>
 <section id="ha-korte-samtaler">
 <h2>Ha korte samtaler</h2>
-<p>Lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar.</p>
-<p>Dette kan både være fordi hele konteksten ikke får plass i kontekstvinduet, men også fordi det ved lange samtaler er større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
+<p>Lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar.
+Dette kan både være fordi hele konteksten ikke får plass.
+Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
 Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [<a class="reference internal" href="../module6/kilder.html#laban"><span class="std std-ref">Laban</span></a>]
 En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.</p>
 <p>Det er spesielt viktig å starte en ny samtale om du skifter tema.
