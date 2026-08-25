@@ -43,4 +43,4 @@ Repetisjon
 Neste kapittel
 --------------
 
-Vi har nå grunnlaget for å trygg KI-bruk. I neste kapittel er temaet: ansvarlig og bærekraftig bruk av KI.
+Vi har nå lagt grunnlaget for å bruke KI trygt. I neste kapittel er temaet: ansvarlig og bærekraftig bruk av KI.
