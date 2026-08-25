@@ -1,8 +1,8 @@
 Klima- og miljøkostnader
 =========================
 
-Alle IT-tjenester har en viss miljøpåvirkning.
-Men KI-tjenester er ekstra ressurskrevende, fordi modellene krever mye tung beregning.
+Alle IT-tjenester har en viss miljøpåvirkning, men KI-tjenester er ekstra ressurskrevende.
+Det er fordi modellene krever mye tung beregning.
 KI-tjenester har høyt strømforbruk både for å drive maskinene og til kjøling. 
 Det går også med mye vann til vannbasert kjøling av maskinene. 
 Både strøm og vann er begrensede ressurser, som bør brukes fornuftig.
