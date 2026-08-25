@@ -1,12 +1,11 @@
 KI-tjenester ved UiO
 ====================
 
-Kapittel 6 handler om KI-verktøy som er godkjente på UiO.
-I dette kapittelet lærer du hva verktøyene kan brukes til, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
+Kapittel 6 handler om godkjente KI-verktøy på UiO. I dette kapittelet lærer du hva verktøyene kan brukes til, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.
 
 Verktøyene som presenteres i kapittelet er: 
     - GPT UiO
-    - Autotekst ig nettskjemadiktafon
+    - Autotekst og nettskjemadiktafon
     - Gemini og Gemini notebook
     - Microsoft Copilot chat
 
