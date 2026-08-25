@@ -68,8 +68,9 @@ på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvil
 
          **For eksempel**:
 
+         - store menger røde data
          - svært konfidensielle forskningsdata
-         - informasjon som kan skade enkeltpersoner eller rikets sikkerhet
+         - informasjon som kan skade enkeltpersoner, grupper eller rikets sikkerhet
    
 
 .. uio-source::  Lenker til mer informasjon
