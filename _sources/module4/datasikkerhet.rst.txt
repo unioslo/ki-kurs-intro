@@ -5,11 +5,14 @@ De fleste KI-tjenestene er skytjenester som kjører på en annen datamaskin enn 
 Det betyr at hvis du bruker en KI-tjeneste som ikke er til å stole på, kan dataene dine komme på avveie.
 UiO tilbyr et knippe `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der datasikkerheten er ivaretatt.
 Vi anbefaler at du bare bruker disse tjenestene.
+Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som er ikke godkjent av UiO
 
-Når du jobber med data som tilhører UiO, har du bare lov til å bruke IT-tjenester som er godkjent av UiO.
-Ulike tjenester er godkjente for ulike typer data.
-Se websiden `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_ for informasjon om hvordan data deles inn i grønne, gule, røde og svarte data.
-I listen med `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_  på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvilke dataklasser de kan brukes med.
+Merk deg også at ulike tjenester av sikkerhetshensyn er godkjent for ulike typer data.
+Data deles inn etter beskyttelsesbehov.
+Se nettsiden for `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_
+for informasjon om hvordan data deles inn i grønne, gule, røde og svarte data.
+I listen med `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_
+på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvilke dataklasser de kan brukes med.
 
 .. uio-grid:: 
 
