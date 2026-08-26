@@ -4,42 +4,49 @@
     "url": "generativ-ki-3",
     "title": "Generativ KI",
     "module_id": 243060,
-    "module_name": "Introduksjon til \"Ki-språket\""
+    "module_name": "Introduksjon til \"KI-språket\""
   },
   "module1/introduksjon-til-ki-spraket.html": {
     "page_id": 416945,
     "url": "introduksjon-til-ki-spraket-3",
     "title": "Introduksjon til “KI-språket”",
     "module_id": 243060,
-    "module_name": "Introduksjon til \"Ki-språket\""
+    "module_name": "Introduksjon til \"KI-språket\""
   },
   "module1/ki-agenter.html": {
     "page_id": 416946,
     "url": "ki-agenter-4",
     "title": "KI-agenter",
     "module_id": 243060,
-    "module_name": "Introduksjon til \"Ki-språket\""
+    "module_name": "Introduksjon til \"KI-språket\""
   },
   "module1/ki-assistent.html": {
     "page_id": 416947,
     "url": "ki-assistent-3",
     "title": "KI-assistent",
     "module_id": 243060,
-    "module_name": "Introduksjon til \"Ki-språket\""
+    "module_name": "Introduksjon til \"KI-språket\""
   },
   "module1/kunstig-intelligens.html": {
     "page_id": 416948,
     "url": "kunstig-intelligens-3",
     "title": "Kunstig intelligens",
     "module_id": 243060,
-    "module_name": "Introduksjon til \"Ki-språket\""
+    "module_name": "Introduksjon til \"KI-språket\""
   },
   "module1/oppsummering-ki.html": {
     "page_id": 422708,
     "url": "oppsummering-kapittel-1",
     "title": "Oppsummering kapittel 1",
     "module_id": 243060,
-    "module_name": "Introduksjon til \"Ki-språket\""
+    "module_name": "Introduksjon til \"KI-språket\""
+  },
+  "module2/avslutning_del1.html": {
+    "page_id": 434283,
+    "url": "avslutning-del-1",
+    "title": "Avslutning del 1",
+    "module_id": 243061,
+    "module_name": "Hva kan gå galt?"
   },
   "module2/hvordan-fungerer-store-sprakmodeller.html": {
     "page_id": 416951,
@@ -83,17 +90,10 @@
     "module_id": 243061,
     "module_name": "Hva kan gå galt?"
   },
-  "module2/store-sprakmodeller.html": {
-    "page_id": 416956,
-    "url": "hva-kan-ga-galt",
-    "title": "Hva kan gå galt?",
-    "module_id": 243061,
-    "module_name": "Hva kan gå galt?"
-  },
   "module3/hvordan-bruke-ki-pa-en-god-mate.html": {
     "page_id": 416957,
-    "url": "bli-god-pa-ki",
-    "title": "Bli god på KI!",
+    "url": "instruksjoner-bli-god-pa-ki",
+    "title": "Instruksjoner: Bli god på KI!",
     "module_id": 243062,
     "module_name": "Bli god på KI!"
   },
@@ -106,8 +106,8 @@
   },
   "module3/nyttige-instruksjons-teknikker.html": {
     "page_id": 416960,
-    "url": "nyttige-instruksjonsteknikker",
-    "title": "Nyttige instruksjonsteknikker",
+    "url": "nyttige-instruksjons-teknikker-3",
+    "title": "Nyttige instruksjons-teknikker",
     "module_id": 243062,
     "module_name": "Bli god på KI!"
   },
@@ -157,6 +157,13 @@
     "page_id": 430627,
     "url": "ansvarlig-og-baerekraftig-bruk-av-ki",
     "title": "Ansvarlig og bærekraftig bruk av KI",
+    "module_id": 243064,
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
+  },
+  "module4/avslutning_del2.html": {
+    "page_id": 434284,
+    "url": "avslutning-del-2",
+    "title": "Avslutning del 2",
     "module_id": 243064,
     "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
@@ -288,30 +295,58 @@
   },
   "module6/kilder.html": {
     "page_id": 416984,
-    "url": "kilder-3",
-    "title": "Kilder",
+    "url": "kilder-og-lenker",
+    "title": "Kilder og lenker",
     "module_id": 243066,
     "module_name": "Oppsummering og veien videre"
   },
-  "module7/sett-1.html": {
+  "module6/sett-2.html": {
     "page_id": 416980,
-    "url": "sett-1-3",
-    "title": "Sett 1",
-    "module_id": 243065,
-    "module_name": "Prøv selv!"
+    "url": "sett-2-4",
+    "title": "Sett 2",
+    "module_id": 243066,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "module6/treningsoppgaver.html": {
+    "page_id": 416982,
+    "url": "prov-selv",
+    "title": "Prøv selv!",
+    "module_id": 243066,
+    "module_name": "Oppsummering og veien videre"
   },
   "module7/sett-2.html": {
-    "page_id": 416981,
-    "url": "sett-2-3",
+    "page_id": 416980,
+    "url": "sett-2-4",
     "title": "Sett 2",
-    "module_id": 243065,
-    "module_name": "Prøv selv!"
+    "module_id": 243066,
+    "module_name": "Oppsummering og veien videre"
   },
   "module7/treningsoppgaver.html": {
     "page_id": 416982,
     "url": "prov-selv",
     "title": "Prøv selv!",
-    "module_id": 243065,
-    "module_name": "Prøv selv!"
+    "module_id": 243066,
+    "module_name": "Oppsummering og veien videre"
+  },
+  "module2/store-sprakmodeller.html": {
+    "page_id": 434736,
+    "url": "store-sprakmodeller-4",
+    "title": "Store språkmodeller",
+    "module_id": "N/A",
+    "module_name": "N/A"
+  },
+  "module4/oppsummering-ansvarligbruk.html": {
+    "page_id": 434737,
+    "url": "oppsummering-kapittel-4-3",
+    "title": "Oppsummering kapittel 4",
+    "module_id": 243064,
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
+  },
+  "module3/avslutning-del1.html": {
+    "page_id": 434738,
+    "url": "avslutning-del-1-2",
+    "title": "Avslutning del 1",
+    "module_id": 243062,
+    "module_name": "Instruksjoner: Bli god på KI!"
   }
 }

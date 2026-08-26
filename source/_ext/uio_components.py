@@ -1248,7 +1248,8 @@ def html_visit_uio_chapter_card(self, node):
     # emit the final Canvas Icon-Maker <img>; otherwise a local-preview <img>
     # (src into _static/icons/) carrying a data-icon-file marker resolved by
     # filename at upload time.
-    # Icon fills the full width of the (1/3-page) "Kapitler" column.
+    # The bar fills the (1/4-page) "Kapitler" column; the SVG keeps its aspect
+    # ratio, so this percentage also scales the baked-in text.
     img_style = 'width:100%; height:auto; display:block;'
     if icon_file_id:
         canvas_src = f'{CANVAS_URL}/courses/{CANVAS_COURSE_ID}/files/{icon_file_id}/download'

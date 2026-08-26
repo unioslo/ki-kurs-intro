@@ -1,5 +1,5 @@
-Bli god på KI!
-=================
+Instruksjoner: Bli god på KI!
+===============================
 
 For å mestre KI må du bli god på instruksjoner. 
 

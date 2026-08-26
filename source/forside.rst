@@ -3,8 +3,8 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 
 .. raw:: html
 
-   <div style="display:grid; grid-template-columns:minmax(0, 2fr) minmax(0, 1fr); gap:32px; align-items:start;">
-   <div>
+   <div style="display:grid; grid-template-columns:minmax(0, 3fr) minmax(0, 1fr); column-gap:32px; row-gap:0; align-items:start;">
+   <div style="grid-column:1; grid-row:1;">
 
 .. figure:: images/0.5-greeting.png
    :align: center
@@ -12,6 +12,9 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
    :alt: Illustrasjon til forsiden av grunnkurs i generativ KI
 
 .. raw:: html
+
+   </div>
+   <div style="grid-column:1; grid-row:2;">
 
    <h2>Se for deg..</h2>
 
@@ -45,7 +48,7 @@ Kurset tar mellom 45 og 60 minutter å gjennomføre
 
    </div>
 
-   <div>
+   <div style="grid-column:2; grid-row:2; padding-top:1.25rem;">
 .. uio-chapter-card::
    :title: Introduksjon til "KI-språket"
    :icon_filename: ikon1.svg
@@ -59,7 +62,7 @@ Kurset tar mellom 45 og 60 minutter å gjennomføre
    :url: https://uio.instructure.com/courses/63248/pages/store-sprakmodeller-3
 
 .. uio-chapter-card::
-   :title: Bli god på KI!
+   :title: Instruksjoner: Bli god på KI!
    :icon_filename: ikon4.svg
    :icon_color: #3FB3E8
    :url: https://uio.instructure.com/courses/63248/pages/hvordan-bruke-ki-pa-en-god-mate-3
@@ -72,14 +75,14 @@ Kurset tar mellom 45 og 60 minutter å gjennomføre
 
 .. uio-chapter-card::
    :title: KI-tjenester ved UiO
-   :icon_filename: ikon6.svg
-   :icon_color: #A978CD
+   :icon_filename: ikon7.svg
+   :icon_color: #FAB140
    :url: https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio-5
 
 .. uio-chapter-card::
    :title: Avslutning og oppgaver
-   :icon_filename: ikon7.svg
-   :icon_color: #FAB140
+   :icon_filename: ikon8.svg
+   :icon_color: #EB7055
    :url: https://uio.instructure.com/courses/63248/pages/avslutning-6
 
 .. raw:: html

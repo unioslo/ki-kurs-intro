@@ -1,4 +1,4 @@
-Hva kan gå galt?
+Store språkmodeller
 ====================
 Som du har lært i forrige kapittel er store språkmodeller selve motoren i mange KI-tjenester. 
 Nå skal vi se nærmere på hvordan store språkmodeller lager tekst og hva vi skal være på vakt mot.

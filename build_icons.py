@@ -41,24 +41,26 @@ FRONT_PAGE_RST = Path(__file__).parent / "source" / "forside.rst"
 DEFAULT_COLOR = "#7ED321"   # fallback if a card omits :icon_color:
 
 # --- Bar size / layout (px) ------------------------------------------------
-# A ~5:1 bar sized to fill the 1/3-width "Kapitler" column (card uses
+# A 5:1 bar sized to fill the 1/4-width "Kapitler" column (card uses
 # width:100%). These are the intrinsic/reference dimensions; the icon scales to
-# the column, so the on-screen text size is NUMBER_SIZE/TITLE_SIZE * (column /
-# WIDTH). At a ~1/3-page column (~360px) that lands the number near 1.6x and the
-# title near 1.4x the ~16px body font.
+# the column, so the on-screen bar height and text size are HEIGHT /
+# NUMBER_SIZE / TITLE_SIZE * (column / WIDTH). Narrowing the column therefore
+# shrinks the bar and its text: these constants are sized for a ~1/4-page column
+# (~270px), which lands the number near 1.3x and the title near 1.05x the ~16px
+# body font.
 WIDTH = 400
 HEIGHT = 80
 CORNER_RADIUS = 10
 PADDING_RIGHT = 16      # right-hand padding used for title word wrapping
 
-NUMBER_SIZE = 28        # chapter-number font size (~1.6x body when column-filled)
-NUMBER_CENTER_X = 30    # horizontal centre of the number column (left of title)
-NUMBER_BASELINE = 50    # y baseline for the number (vertically centred)
+NUMBER_SIZE = 30        # chapter-number font size (~1.3x body when column-filled)
+NUMBER_CENTER_X = 32    # horizontal centre of the number column (left of title)
+NUMBER_BASELINE = 51    # y baseline for the number (vertically centred)
 
-TITLE_SIZE = 24         # chapter-title font size (~1.4x body when column-filled)
-TITLE_X = 58            # left edge of the title (to the right of the number)
-TITLE_LINE_HEIGHT = 29  # vertical distance between wrapped title lines
-TITLE_BLOCK_CENTER = 40 # vertical centre (baseline) of the title block
+TITLE_SIZE = 25         # chapter-title font size (~1.05x body when column-filled)
+TITLE_X = 62            # left edge of the title (to the right of the number)
+TITLE_LINE_HEIGHT = 30  # vertical distance between wrapped title lines
+TITLE_BLOCK_CENTER = 47 # vertical centre (baseline) of the title block
 
 TEXT_COLOR = "#FFFFFF"
 FONT_FAMILY = "Lato Extended"
