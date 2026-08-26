@@ -1,5 +1,5 @@
-Kilder
-==========
+Kilder og lenker
+=================
 
 
 .. uio-source:: Kilder
@@ -28,7 +28,7 @@ Kilder
 Lenker
 =========
 
-.. uio-source::  Lenker til UiO tjenester vi møter i dette kurset
+.. uio-source::  Lenker til UiO tjenester og andre nettsider vi møter i dette kurset
 
     - `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_
     - `Autotekst <https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html>`_
@@ -44,3 +44,10 @@ Lenker
     - `TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_
 
 
+    - `UiO sin KI hovedside <https://www.uio.no/tjenester/ki/>`_ 
+    - `UiOs retningslinjer for bruk av KI <https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html>`_
+    - `Juridiske føringer for bruk av kunstig intelligens (KI) ved UiO <https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_
+ 
+
+
+    - `FIL1010 Redelig bruk av kunstig intelligens for studenter <>`_ 

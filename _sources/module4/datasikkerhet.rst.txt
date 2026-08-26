@@ -71,8 +71,4 @@ på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvil
          - store menger røde data
          - svært konfidensielle forskningsdata
          - informasjon som kan skade enkeltpersoner, grupper eller rikets sikkerhet
-   
 
-.. uio-source::  Lenker til mer informasjon
-
-   * `Juridiske føringer for bruk av kunstig intelligens (KI) ved UiO <https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_

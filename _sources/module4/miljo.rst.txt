@@ -29,8 +29,3 @@ Selv om KI er ressurskrevende er det noen grep du kan gjøre for å redusere bel
    Lange samtaler krever mer ressurser. 
    Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.
    Start en ny samtale når samtalen begynner å bli lang.
-
-
-.. uio-reflect::
-
-   Hva kan du gjøre for å redusere miljøpåvirkningen av KI-tjenester i din arbeidshverdag?

@@ -48,6 +48,7 @@ Velkommen til grunnkurs i generativ KI!
    module3/nar-kan-du-stole-pa-generativ-ki
    module3/strategier-for-a-kvalitetssikre-ki-generert-innhold
    module3/oppsummering-god-bruk-ki
+   module3/avslutning-del1.rst
 
 .. toctree::
    :maxdepth: 1
@@ -60,6 +61,7 @@ Velkommen til grunnkurs i generativ KI!
    module4/datasikkerhet
    module4/opphavsrett
    module4/retningslinjer-og-policies
+   module4/oppsummering-ansvarligbruk
 
 .. toctree::
    :maxdepth: 1

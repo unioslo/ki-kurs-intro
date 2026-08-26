@@ -315,3 +315,23 @@ span.citation-label a:hover {
 .uio-module-listing > .float-left h3 {
     margin-top: 0;
 }
+/* Wide list-tables (`:class: uio-table`) - local preview.
+   sphinx_rtd_theme sets `white-space: nowrap` on table cells, so long cells push
+   the table past the page edge and the `:widths:` percentages in <colgroup> are
+   ignored. Letting cells wrap and fixing the layout makes those widths apply.
+   Canvas styles tables itself, so these rules only affect `make html`. */
+.rst-content table.uio-table {
+    width: 100%;
+    table-layout: fixed;
+    display: table;
+}
+.rst-content table.uio-table td,
+.rst-content table.uio-table th {
+    white-space: normal;
+    overflow-wrap: break-word;
+    vertical-align: top;
+    padding: 8px 12px;
+}
+.rst-content .wy-table-responsive:has(table.uio-table) {
+    overflow: visible;
+}
