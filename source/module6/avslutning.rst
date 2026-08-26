@@ -31,9 +31,9 @@ De finner du i `kursets siste kapittel <https://uio.instructure.com/courses/6324
 
 .. uio-info::
 
-   **Tilbakemelding?**
+   **Gi oss tilbakemelding!**
 
-   Har du tilbakemelding på kurset eller spørsmål om KI ved UiO?
+   `Gi oss en rask tilbakemelding <https://nettskjema.no/a/ki-intro-admin>`_
+
+   Har du spørsmål om kurset eller om KI ved UiO?
    Kontakt IT-avdelingen (`it-hjelp@uio.no <mailto:it-hjelp@uio.no>`_) eller kursets ansvarlige `ai-contact@usit.uio.no <mailto:ai-contact@usit.uio.no>`_).
-
-   `Tilbakemeldingsskjema brukertesting <https://nettskjema.no/a/632397>`_
