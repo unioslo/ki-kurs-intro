@@ -7,6 +7,6 @@
    :maxdepth: 2
    :hidden:
 
-   module7/treningsoppgaver
-   module7/sett-1
-   module7/sett-2
+   module6/treningsoppgaver
+   module6/sett-1
+   module6/sett-2
