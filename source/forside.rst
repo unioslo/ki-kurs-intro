@@ -77,16 +77,10 @@ Kurset tar mellom 45 og 60 minutter å gjennomføre
    :url: https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio-5
 
 .. uio-chapter-card::
-   :title: Avslutning
+   :title: Avslutning og oppgaver
    :icon_filename: ikon7.svg
    :icon_color: #FAB140
    :url: https://uio.instructure.com/courses/63248/pages/avslutning-6
-
-.. uio-chapter-card::
-   :title: Prøv selv!
-   :icon_filename: ikon8.svg
-   :icon_color: #EB7055
-   :url: https://uio.instructure.com/courses/63248/pages/prov-selv
 
 .. raw:: html
 

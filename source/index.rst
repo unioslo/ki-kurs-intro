@@ -83,16 +83,10 @@ Velkommen til grunnkurs i generativ KI!
 
    module6/avslutning
    module6/kilder
-  
+   module6/treningsoppgaver
+   module6/sett-1
+   module6/sett-2
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Episode 7: Prøv selv!
 
-   module7/treningsoppgaver
-   module7/sett-1
-   module7/sett-2
-
-   
 
 
