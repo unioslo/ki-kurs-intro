@@ -33,7 +33,6 @@ De finner du i `kursets siste del <https://uio.instructure.com/courses/63248/pag
 
     Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad og Erik Winge.
     Tegningene er laget av Tina Morønning Ruud. 
-    Språkvask og helhetlig gjennomgang: Gyda Kjekshus.
 
     © Copyright 2026
 
