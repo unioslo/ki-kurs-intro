@@ -31,13 +31,15 @@ De finner du i `kursets siste del <https://uio.instructure.com/courses/63248/pag
 
 .. uio-info:: Om kurset
 
-   Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad og Erik Winge.
-   Tegningene er laget av Tina Morønning Ruud.
-   © Copyright 2026
+    Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad og Erik Winge.
+    Tegningene er laget av Tina Morønning Ruud. 
+    Språkvask og helhetlig gjennomgang: Gyda Kjekshus.
 
-   **Gi oss tilbakemelding!**
+    © Copyright 2026
 
-   `Gi oss en rask tilbakemelding <https://nettskjema.no/a/ki-intro-admin>`_
+    **Kontakt og tilbakemelding**
 
-   Har du spørsmål om kurset eller om KI ved UiO?
-   Kontakt IT-avdelingen (`it-hjelp@uio.no <mailto:it-hjelp@uio.no>`_) eller kursets ansvarlige `ai-contact@usit.uio.no <mailto:ai-contact@usit.uio.no>`_).
+    Vi tar gjerne imot `tilbakemelding på kurset <https://nettskjema.no/a/ki-intro-admin>`_.
+
+    Har du spørsmål om kurset eller om KI ved UiO?
+    Kontakt IT-avdelingen: `it-hjelp@uio.no <mailto:it-hjelp@uio.no>`_ eller kursets ansvarlige: `ai-contact@usit.uio.no <mailto:ai-contact@usit.uio.no>`_.
