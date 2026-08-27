@@ -23,7 +23,7 @@ KI er et kraftig verktøy som kan være til hjelp i arbeidshverdagen, men det er
 Prøv selv!
 ------------
 For å hjelpe deg på veien videre har vi laget to sett med øvingsoppgaver. 
-De finner du i `kursets siste kapittel <https://uio.instructure.com/courses/63248/pages/prov-selv>`_ og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI.
+De finner du i `kursets siste del <https://uio.instructure.com/courses/63248/pages/prov-selv>`_ og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI.
 
 
 **Lykke til videre på din KI-reise!**
