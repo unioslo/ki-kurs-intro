@@ -6,6 +6,11 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
    <div style="display:grid; grid-template-columns:minmax(0, 3fr) minmax(0, 1fr); column-gap:32px; row-gap:0; align-items:start;">
    <div style="grid-column:1; grid-row:1;">
 
+   Kunstig intelligens er en avansert teknologi som er lett å bruke, men vanskelig å bruke riktig. Dette er en introduksjon
+   til å forstå hva kunstig intelligens er og hvordan du kan bruke det på en god og ansvarlig måte. Kurset skal bidra til
+   at alle administrativt ansatte får grunnleggende opplæring i kunstig intelligens, og dermed trygt kan utforske hvordan KI
+   kan brukes i egne arbeidsoppgaver. 
+
 .. figure:: images/0.5-greeting.png
    :align: center
    :width: 80%
@@ -18,16 +23,19 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 
    <h2>Se for deg..</h2>
 
-   at du kan få en digital sparringspartner som alltid har tid og som raskt kan analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon
-   for deg. Kunstig intelligens kan være denne digitale sparringspartneren som finner mønstre, gir deg oversikter, foreslår ideer eller lager utkast.
+   at du kan få en digital sparringspartner som alltid har tid og som raskt kan analysere, oppsummere, oversette, forenkle
+   eller hente fram relevant informasjon for deg. Kunstig intelligens kan være denne digitale sparringspartneren som finner
+   mønstre, gir deg oversikter, foreslår ideer eller lager utkast.
 
-   Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller
-   moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor skal du alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge 
-   bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger.
+   Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har
+   heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. Derfor skal du
+   alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge bruke KI til, vurdere KI-svar og ta det endelige
+   ansvaret for beslutninger.
 
-   Du må også alltid huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i   
-   bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet. Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og
-   ansvarlig måte i jobben din.
+   Du må også alltid huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine
+   valg rundt ny teknologi og ta den i   
+   bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet. Vi håper dette kurset gir deg kompetanse til å
+   bruke kunstig intelligens på en god og ansvarlig måte i jobben din.
 
 
 .. raw:: html
