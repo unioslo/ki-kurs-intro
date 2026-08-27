@@ -5,9 +5,20 @@ Generate the chapter icons for the course front page ("Kapitler" box).
 Each icon is a wide rounded bar in the chapter's colour: the chapter NUMBER on
 the left and the chapter TITLE beside it (word-wrapped), both vertically centred.
 On the front page the bars are stacked full-width and the whole bar is clickable.
-The SVGs reuse the Lato font that Canvas' Icon-Maker embedded in the original
-icons (extracted once to icon_assets/lato-extended.svgstyle), so the text renders
-correctly even when Canvas shows the SVG as an <img>.
+The SVGs embed the same Lato that Canvas itself serves, so the text renders
+correctly even when Canvas shows the SVG as an <img>, and matches the body text
+on the page. Two pre-extracted faces live in icon_assets/:
+
+    lato-extended-regular.svgstyle  Lato Regular  (used; matches Canvas body text)
+    lato-extended.svgstyle          Lato Bold     (the original Icon-Maker face)
+
+The regular face was fetched from Canvas' own font directory:
+    curl -o Lato-Regular.woff2 \
+      https://uio.instructure.com/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2
+then base64-embedded in an @font-face block (see FONT_STYLE_FILE). Only one face
+is embedded per SVG (each costs ~240 KB), so FONT_WEIGHT must match whichever
+.svgstyle FONT_STYLE_FILE points at -- asking for "bold" while embedding the
+regular face makes browsers synthesise a smeared fake bold.
 
 SINGLE SOURCE OF TRUTH: the chapters are read straight from the
 ``uio-chapter-card`` entries in source/forside.rst. Each card supplies the
@@ -35,7 +46,7 @@ from xml.sax.saxutils import escape
 
 # --- Locations -------------------------------------------------------------
 ICON_DIR = Path(__file__).parent / "source" / "_static" / "icons"
-FONT_STYLE_FILE = Path(__file__).parent / "icon_assets" / "lato-extended.svgstyle"
+FONT_STYLE_FILE = Path(__file__).parent / "icon_assets" / "lato-extended-regular.svgstyle"
 FRONT_PAGE_RST = Path(__file__).parent / "source" / "forside.rst"
 
 DEFAULT_COLOR = "#7ED321"   # fallback if a card omits :icon_color:
@@ -62,11 +73,14 @@ TITLE_X = 62            # left edge of the title (to the right of the number)
 TITLE_LINE_HEIGHT = 30  # vertical distance between wrapped title lines
 TITLE_BLOCK_CENTER = 47 # vertical centre (baseline) of the title block
 
-TEXT_COLOR = "#FFFFFF"
+#TEXT_COLOR = "#FFFFFF"
+TEXT_COLOR = "#000000"
 FONT_FAMILY = "Lato Extended"
-# Rough average glyph advance as a fraction of font size for Lato bold; used to
-# estimate how many characters fit per line (no font-metrics dependency).
-CHAR_WIDTH_FACTOR = 0.52
+# Must match the face embedded by FONT_STYLE_FILE -- see the module docstring.
+FONT_WEIGHT = "normal"
+# Rough average glyph advance as a fraction of font size for Lato regular; used
+# to estimate how many characters fit per line (no font-metrics dependency).
+CHAR_WIDTH_FACTOR = 0.50
 
 _CARD_RE = re.compile(r'^\s*\.\.\s+uio-chapter-card::')
 _OPTION_RE = re.compile(r'^\s*:(\w+):\s*(.*)$')
@@ -152,10 +166,10 @@ def build_svg(number, color, title, font_style):
         f'width="{WIDTH}px" height="{HEIGHT}px" viewBox="0 0 {WIDTH} {HEIGHT}">'
         f'<rect x="0" y="0" width="{WIDTH}" height="{HEIGHT}" rx="{CORNER_RADIUS}" fill="{color}"></rect>'
         f'<text x="{NUMBER_CENTER_X:g}" y="{NUMBER_BASELINE:g}" fill="{TEXT_COLOR}" '
-        f'font-family="{FONT_FAMILY}" font-weight="bold" font-size="{NUMBER_SIZE}" '
+        f'font-family="{FONT_FAMILY}" font-weight="{FONT_WEIGHT}" font-size="{NUMBER_SIZE}" '
         f'text-anchor="middle">{number}</text>'
         f'<text x="{TITLE_X:g}" y="{first_baseline:g}" fill="{TEXT_COLOR}" '
-        f'font-family="{FONT_FAMILY}" font-weight="bold" font-size="{TITLE_SIZE}" '
+        f'font-family="{FONT_FAMILY}" font-weight="{FONT_WEIGHT}" font-size="{TITLE_SIZE}" '
         f'text-anchor="start">{tspans_markup}</text>'
         f'{font_style}'
         f'</svg>'

@@ -8,7 +8,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 
 .. figure:: images/0.5-greeting.png
    :align: center
-   :width: 60%
+   :width: 80%
    :alt: Illustrasjon til forsiden av grunnkurs i generativ KI
 
 .. raw:: html
@@ -34,7 +34,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 
    <h2>Gjennomføring</h2>
 
-- Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse. !
+- Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse!
 - Fordypningsstoff: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer!
 - Praktiske øvingsoppgaver: På slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. Disse kan lastes ned som en pdf. 
 
@@ -48,41 +48,53 @@ Kurset tar mellom 45 og 60 minutter å gjennomføre
 
    </div>
 
-   <div style="grid-column:2; grid-row:2; padding-top:1.25rem;">
+.. Chapter cards: vertically centred in the row instead of top-aligned.
+   align-self:center overrides the grid's align-items:start for this item only,
+   and the negative bottom margin cancels the trailing 12px margin on the last
+   card, which would otherwise sit the stack 6px above true centre.
+   The "Kapitler" heading sits inside this div so it is centred together with
+   the cards; margin-top:0 keeps it from adding slack above the stack.
+
+.. orig colors were  #7ED321 #40BEA6 #3FB3E8  #4F7BE8 #FAB140  #EB7055
+
+.. raw:: html
+
+   <div style="grid-column:2; grid-row:2; align-self:center; margin-bottom:-12px;">
+   <h2 style="margin-top:0;">Kapitler</h2>
 .. uio-chapter-card::
    :title: Introduksjon til "KI-språket"
    :icon_filename: ikon1.svg
-   :icon_color: #7ED321
+   :icon_color: #E5E4E2
    :url: https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3
 
 .. uio-chapter-card::
    :title: Hva kan gå galt?
    :icon_filename: ikon3.svg
-   :icon_color: #40BEA6
+   :icon_color: #E5E4E2
    :url: https://uio.instructure.com/courses/63248/pages/store-sprakmodeller-3
 
 .. uio-chapter-card::
    :title: Instruksjoner: Bli god på KI!
    :icon_filename: ikon4.svg
-   :icon_color: #3FB3E8
+   :icon_color: #E5E4E2
    :url: https://uio.instructure.com/courses/63248/pages/hvordan-bruke-ki-pa-en-god-mate-3
 
 .. uio-chapter-card::
    :title: Ansvarlig og bærekraftig bruk av KI
    :icon_filename: ikon5.svg
-   :icon_color: #4F7BE8
+   :icon_color: #E5E4E2
    :url: https://uio.instructure.com/courses/63248/pages/ansvarlig-og-baerekraftig-bruk-av-ki
 
 .. uio-chapter-card::
    :title: KI-tjenester ved UiO
    :icon_filename: ikon7.svg
-   :icon_color: #FAB140
+   :icon_color: #E5E4E2
    :url: https://uio.instructure.com/courses/63248/pages/ki-tjenester-ved-uio-5
 
 .. uio-chapter-card::
-   :title: Avslutning og oppgaver
+   :title: Oppsummering og veien videre
    :icon_filename: ikon8.svg
-   :icon_color: #EB7055
+   :icon_color: #E5E4E2
    :url: https://uio.instructure.com/courses/63248/pages/avslutning-6
 
 .. raw:: html
