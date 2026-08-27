@@ -103,8 +103,6 @@ Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag 
         - Målgruppe: alle ansatte
 
 
-        ### Hva gjør denne bedre?
-
         **Hva gjør denne bedre?**
 
         Her gir du eksempler på stilen eller formatet du ønsker.
