@@ -1,15 +1,17 @@
 Oppsummering kapittel 4
 ========================
 
-I dette kapitlet har du lært om viktige og mer problematiske aspekter rundt KI når det gjelder teknologiens miljøpåvirkning og sosiale kostnader. 
-Du har også blitt minnet på at regler og retningslinjer som gjelder for IT-tjenester generelt, som datasikkerhet og behandling av opphavsrettslig materiale også gjelder for KI.
-Med dette friskt i minnet er du bedre rustet til å bruke KI på en ansvarlig måte.
+I dette kapitlet har du lært om viktige og utfordrende miljømessige og etiske sider ved bruk av kunstig intelligens. 
+Du har også fått frisket opp hvilke regler og retningslinjer du skal følge når du bruker teknologien. 
+Med økt kunnskap om dette kan du bruke KI på en mer ansvarlige måte.
 
-.. uio-reflect:: Reflekter over ansvarlig og bevisst bruk av KI:
+.. uio-reflect:: Test deg selv
+
+    Diskuter med deg selv eller en kollega.
 
     - Hva kan du gjøre for å redusere miljøpåvirkningen fra KI-tjenester i arbeidshverdagen din?
-    - Tenk på informasjonen og dataene du håndterer på jobb. Håndterer du røde eller svarte data?
-    - Tenk over hvordan du har brukt KI-tjenester til nå. Har du noen gang vært usikker på om det du lastet opp i KI var i tråd med regler og lover? Snakk gjerne med en kollega om dette.
+    - Hvilke typer data håndterer du i arbeidshverdagen din? Forsøk å klassifisere dem etter dataklassene. 
+    - Tenk over hvordan du bruker KI. Har du vært usikker på om det du laster opp i KI er i tråd med regler og policy på UiO?
 
 
 Repetisjon
@@ -21,15 +23,15 @@ Repetisjon
 
 * **Det er sosiale kostnader knyttet til KI.** Som all storindustri har KI sosiale kostnader, både under produksjon og ved bruk.
 
-* **Bruk bare KI-tjenester som er godkjent av UiO.** De fleste KI-tjenester er skytjenester, og data du deler kan komme på avveie.
+* **Bruk KI-tjenester som er godkjent av UiO.** De fleste KI-tjenester er skytjenester, og data du deler kan komme på avveie.
   Ved å bruke de godkjente KI-tjenestene til UiO er du trygg på at dette ikke skjer.
-  
+
 * **Opphavsretten gjelder også når du bruker KI.** Mange KI-tjenester lagrer teksten de mottar og kan bruke den til å trene nye
   modeller. Dette er du beskyttet mot dersom du bruker de UiO godkjente KI-tjenestene. 
   Du må allikevel alltid sjekke om materialet du laster opp tillater opplasting til KI.
 
-* **Du har plikt til å sette deg inn i regelverket.** UiOs IT-reglement gjelder også for KI, og i tillegg har UiO egne
-  KI-retningslinjer. Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.
+* **Du er ansvarlig for hvordan du bruker KI-verktøy**, og må sette deg inn i regelverket. UiOs IT-reglement gjelder også for KI, og i tillegg har UiO egne
+  KI-retningslinjer som må følges.
 
 Neste kapittel
 --------------
