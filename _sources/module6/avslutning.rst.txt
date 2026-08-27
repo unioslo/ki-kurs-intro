@@ -29,7 +29,11 @@ De finner du i `kursets siste kapittel <https://uio.instructure.com/courses/6324
 **Lykke til videre på din KI-reise!**
 
 
-.. uio-info::
+.. uio-info:: Om kurset
+
+   Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad og Erik Winge.
+   Tegningene er laget av Tina Morønning Ruud.
+   © Copyright 2026
 
    **Gi oss tilbakemelding!**
 
