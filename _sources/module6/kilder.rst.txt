@@ -50,4 +50,4 @@ Lenker
  
 
 
-    - `FIL1010 Redelig bruk av kunstig intelligens for studenter <>`_ 
+    - `FIL1010 Redelig bruk av kunstig intelligens for studenter <https://www.uio.no/studier/emner/hf/ifikk/FIL1010/>`_ 
