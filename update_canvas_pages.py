@@ -2798,6 +2798,13 @@ def sync_icons(dry_run=False):
         print(f"Warning: could not read chapters from forside.rst: {e}")
         return None
 
+    # A front page without chapter cards simply has no icons to regenerate;
+    # that must not stop the page itself from being uploaded.
+    if not chapters:
+        print("No uio-chapter-card entries in source/forside.rst - "
+              "skipping icon regeneration.")
+        return None
+
     if dry_run:
         print(f"[DRY RUN] Would regenerate {len(chapters)} icon(s) from "
               "source/forside.rst to match chapter title/number/colour:")
@@ -2808,7 +2815,14 @@ def sync_icons(dry_run=False):
 
     print("Regenerating chapter icons from source/forside.rst "
           "(keeps number/title/colour in sync)...")
-    build_icons.generate_icons(verbose=True)
+    # build_icons signals its own failures with SystemExit, which would
+    # otherwise take the whole upload down with it.
+    try:
+        build_icons.generate_icons(verbose=True)
+    except SystemExit as e:
+        print(f"Warning: could not regenerate icons: {e}")
+        print("Chapter icons may be out of sync with source/forside.rst.")
+        return None
     return chapters
 
 
