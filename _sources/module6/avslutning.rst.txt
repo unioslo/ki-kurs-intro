@@ -6,7 +6,7 @@ Gratulerer! Du har nå fullført introduksjonskurset i KI for administrativt ans
 
 Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:
 
-* Bruk kunnskapen du har fått, det er først med litt erfaring at KI kan bli et nyttig verktøy
+* Bruk kunnskapen du har fått, det er først med litt erfaring at KI kan bli et nyttig verktøy.
 * Vær kritisk og ansvarlig, husk at KI har begrensninger!
 * Teknologien utvikler seg raskt. Fortsett å lære og hold deg oppdatert ved å følge med på UiOs nettsider om KI, kurs og workshops ved UiO, og bruk dine fagnettverk og kollegaer til å dele KI erfaringer med!
 
