@@ -394,7 +394,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
     # Now match local HTML files to Canvas pages
     mapping = {}
     matched_count = 0
-    unmatched_count = 0
+    unmatched = []  # (file_key, reason, detail) for the summary at the end
 
     print("Matching local HTML files to Canvas pages...")
     for html_file in html_files:
@@ -406,7 +406,7 @@ def generate_mapping_from_canvas(token, html_dir=None):
 
         if not h1_title:
             print(f"{file_key}: No h1 title found")
-            unmatched_count += 1
+            unmatched.append((file_key, "No h1 title found", ""))
             continue
 
         # Generate expected Canvas URL from title
@@ -433,7 +433,10 @@ def generate_mapping_from_canvas(token, html_dir=None):
             similar = [url for url in pages_in_modules.keys() if expected_url in url]
             if similar:
                 print(f"Similar URLs in modules: {similar[:3]}")
-            unmatched_count += 1
+            detail = f"title: '{h1_title}' | expected URL: {expected_url}"
+            if similar:
+                detail += f" | similar in modules: {', '.join(similar[:3])}"
+            unmatched.append((file_key, "No Canvas page in modules", detail))
             continue
 
         # Pick the URL with the highest suffix number
@@ -444,7 +447,8 @@ def generate_mapping_from_canvas(token, html_dir=None):
         canvas_page = pages_by_url.get(canvas_url)
         if not canvas_page:
             print(f"{file_key}: Canvas page data not found for URL '{canvas_url}'")
-            unmatched_count += 1
+            unmatched.append((file_key, "Canvas page data not found",
+                              f"matched URL: {canvas_url}"))
             continue
 
         module_info = pages_in_modules.get(canvas_url)
@@ -465,8 +469,31 @@ def generate_mapping_from_canvas(token, html_dir=None):
         matched_count += 1
 
     print(f"\n{'='*70}")
-    print(f"Matched: {matched_count} | Unmatched: {unmatched_count} | Total: {len(html_files)}")
+    print(f"Matched: {matched_count} | Unmatched: {len(unmatched)} | Total: {len(html_files)}")
     print(f"{'='*70}\n")
+
+    if unmatched:
+        print(f"{'='*70}")
+        print(f"UNMATCHED FILES ({len(unmatched)}) - not written to the mapping")
+        print(f"{'='*70}")
+
+        # Group by reason so related problems are fixed together
+        by_reason = {}
+        for file_key, reason, detail in unmatched:
+            by_reason.setdefault(reason, []).append((file_key, detail))
+
+        for reason, entries in by_reason.items():
+            print(f"\n{reason} ({len(entries)}):")
+            for file_key, detail in entries:
+                print(f"  - {file_key}")
+                if detail:
+                    print(f"      {detail}")
+
+        print(f"\n{'='*70}")
+        print("These pages will be skipped when publishing. Either create the page")
+        print("in Canvas and add it to a module, or check that the h1 title in the")
+        print("HTML matches the Canvas page title, then re-run --generate-mapping.")
+        print(f"{'='*70}\n")
 
     save_page_mapping(mapping)
     return mapping
