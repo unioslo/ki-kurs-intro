@@ -60,8 +60,8 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
 
                   I maskinlæring er *regelen* ukjent, og det vi ønsker å lære.
 
-                  - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder)
-                  - Hvert eksempel har også et ønsket resultat (output)
+                  - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder).
+                  - Avhengig av hvilken type maskinlæring som brukes, kan dataene også inkludere kjente svar eller merkelapper som "hund" eller "katt".
                   - I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
 
                   Eksempel:
