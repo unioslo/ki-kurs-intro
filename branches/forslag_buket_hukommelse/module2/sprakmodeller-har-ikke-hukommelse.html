@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Språkmodeller har ikke hukommelse &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-new-tab-link.css?v=d87cb1ac" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=18248e77" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Modellenes skjevheter" href="skjevheter.html" />
+    <link rel="prev" title="Språkmodeller finner på ting" href="sprakmodeller-finner-pa-ting.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sprakmodeller-har-ikke-hukommelse">
+<h1>Språkmodeller har ikke hukommelse</h1>
+<p>Når du bruker en språkmodell, har du kontakt med den gjennom et chat-system.
+Språkmodellen selv husker ikke tidligere samtaler eller meldinger du har hatt med den, det er det chat-systemet som gjør.
+Chat-systemet viser deg samtalen dere har, og sender den videre til språkmodellen.
+Det du bør merke deg her, er at hver gang du skriver en ny instruksjon eller et nytt spørsmål i chatten, så sender chat-systemet <em>hele</em> samtalen på nytt til språkmodellen.
+Det er fordi språkmodellen selv ikke kan huske det du har spurt om.</p>
+<p>Det er altså chat-systemet som “husker” det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
+Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk “ser”.</p>
+<div class="uio-color-box-3">
+<h3>Bonusinnhold</h3>
+<details>
+<summary><strong>Er det *hele* samtalen som sendes til språkmodellen?</strong></summary>
+<p>Når vi sier at chat-systemet sender <em>hele samtalen</em> til språkmodellen er det en forenkling: I praksis har chat-systemene forskjellige måter å redusere informasjonen den sender til språkmodellen.</p>
+<p>Allikevel: det er aldri bare siste melding av en samtaletråd som sendes til språkmodellen.
+Avhengig av språkmodellens kapasitet, og chat-systemets automatiske filtreringer blir hele eller deler av de foregående meldingene i samtaletråden sendt sammen med din siste melding.</p>
+</details>
+</div>
+<section id="ha-korte-samtaler">
+<h2>Ha korte samtaler</h2>
+<p>Lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar.
+Dette kan både være fordi hele konteksten ikke får plass.
+Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
+Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [<a class="reference internal" href="../module6/kilder.html#laban"><span class="std std-ref">Laban</span></a>]
+En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.</p>
+<p>Det er spesielt viktig å starte en ny samtale om du skifter tema.
+Se for deg at du har stilt KI spørsmål om økonomireglementet til UiO.
+Hvis du så stiller spørsmål om hvordan man formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO.
+Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.</p>
+<p>I tillegg er språkmodellene dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
+Derfor bør du sørge for at gale svar ikke blir liggende i samtalen.</p>
+</section>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+</section>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
