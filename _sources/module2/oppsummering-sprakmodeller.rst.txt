@@ -16,7 +16,7 @@ Repetisjon
 
 * **Store språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
   konteksten du gir den.
-  Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor kunnskap.
+  Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor *sikker* faktakunnskap.
  
 * **Store språkmodeller har ikke noe forhold til sannhet** og har derfor ikke sikker kunnskap om hva som er
   sant.
@@ -24,7 +24,7 @@ Repetisjon
   Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
   Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
-* **Språkmodeller finner på ting som ikke stemmer** fordi de ikke har faktakunnskap.
+* **Språkmodeller finner på ting som ikke stemmer** fordi de ikke har *sikker* faktakunnskap.
 
 * **Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar**. Derfor er det viktig
   å starte en ny samtale om du skifter tema.
