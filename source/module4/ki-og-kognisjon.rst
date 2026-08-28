@@ -4,7 +4,7 @@ Hvordan unngå å bli lat av KI?
 At KI kan ta over store deler av det kognitive arbeidet vårt, er både praktisk og besnærende. 
 I dette kurset foreslår vi at KI kan hjelpe deg med idémyldring, planlegging og tekstproduksjon. Men hvor langt bør denne hjelpen egentlig gå?
 
-Hvis vi stadig overlater vurderinger, strukturering og formulering til KI, risikerer vi at vi etter hvert stoler mer på KIens analyser enn på egne faglige og menneskelige vurderinger. 
+Hvis vi stadig overlater vurderinger, strukturering og formulering til KI, risikerer vi at vi etter hvert stoler mer på KI-ens analyser enn på egne faglige og menneskelige vurderinger. 
 Det kan igjen svekke vår egen tålmodighet og utholdenhet i møte med arbeid som krever konsentrasjon, kritisk refleksjon og dyp tenkning.
 
 Hvordan unngår vi å bli mentalt late? Det finnes ingen enkel løsning, men noen grunnleggende prinsipper er viktige å minne seg selv på:
