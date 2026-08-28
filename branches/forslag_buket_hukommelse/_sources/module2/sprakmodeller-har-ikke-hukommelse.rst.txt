@@ -2,7 +2,8 @@ Språkmodeller har ikke hukommelse
 ================================================
 
 Når du bruker en språkmodell, har du kontakt med den gjennom et chat-system.
-Språkmodellen selv husker ikke tidligere samtaler eller meldinger du har hatt med den, det er det chat-systemet som gjør.
+Språkmodellen selv husker ikke tidligere meldinger i samtalen eller tidligere samtaler du har hatt med den.
+Det er det chat-systemet som gjør.
 Chat-systemet viser deg samtalen dere har, og sender den videre til språkmodellen.
 Det du bør merke deg her, er at hver gang du skriver en ny instruksjon eller et nytt spørsmål i chatten, så sender chat-systemet *hele* samtalen på nytt til språkmodellen.
 Det er fordi språkmodellen selv ikke kan huske det du har spurt om.
