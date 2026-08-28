@@ -58,7 +58,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
 
             .. uio-colorbox-3:: Maskinlæring løser et problem slik:
 
-                  I maskinlæring er regelen eller algoritmen ukjent, og det vi ønsker å lære.
+                  I maskinlæring er *regelen* eller *oppskriften* ukjent, og det vi ønsker å lære.
 
                   - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder)
                   - Hvert eksempel har også et ønsket resultat (output)
