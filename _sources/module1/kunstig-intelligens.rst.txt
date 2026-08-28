@@ -49,8 +49,8 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
 
             .. uio-colorbox-3:: Tradisjonell programmering foregår slik:
 
-                  - Du lager klare regler eller algoritmer: "Hvis X skjer, gjør Y".
-                  - Programmet bruker reglene på data den blir gitt.
+                  - Du lager klare regler: "Hvis X skjer, gjør Y".
+                  - Programmet bruker reglene på data du gir det.
                   - Programmet gir deg resultatet.
 
                   Eksempel på tradisjonell programmering:
@@ -58,7 +58,7 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
 
             .. uio-colorbox-3:: Maskinlæring løser et problem slik:
 
-                  I maskinlæring er *regelen* eller *oppskriften* ukjent, og det vi ønsker å lære.
+                  I maskinlæring er *regelen* ukjent, og det vi ønsker å lære.
 
                   - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder)
                   - Hvert eksempel har også et ønsket resultat (output)
@@ -66,4 +66,4 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
 
                   Eksempel:
                   Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som "hund" eller "katt".
-                  Systemet lærer da en regel/algoritme som kan gjette riktig merkelapp for bilder det aldri har sett før.
+                  Systemet lærer da en regel eller oppskrift som kan gjette riktig merkelapp for bilder det aldri har sett før.
