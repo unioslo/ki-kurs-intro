@@ -14,6 +14,22 @@ for informasjon om hvordan data deles inn i grønne, gule, røde og svarte data.
 I listen med `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_
 på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvilke dataklasser de kan brukes med.
 
+
+Personvern
+-----------
+
+Selv om du bruker et KI-verktøy som er godkjent for den typen data du jobber med, betyr ikke det at du kan bruke dataene fritt.
+
+Regler for personopplysninger gjelder fortsatt.
+Du må for eksempel ha et gyldig behandlingsgrunnlag for enhver bruk av personopplysninger, også når du bruker KI. 
+
+Et eksempel på når du må være ekstra varsom er hvis du henter ut personopplysninger fra et system for å behandle de i KI. 
+Da må du være sikker på at du opptrer i tråd med behandlingsgrunnlaget til dataene. 
+
+
+UiO sin dataklassifisering med eksempler
+------------------------------------------
+
 .. uio-grid:: 
 
    .. uio-grid-item::
