@@ -18,7 +18,7 @@ Men hvis du spør modellen: "Hva er hovedstaden i Norge?"
 Da forventer du et korrekt svar.
 Her blir det viktig hvilket ord modellen foreslår.
 
-I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke kunnskap.
+I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke *sikker* faktakunnskap.
 Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil.
 Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
 
