@@ -24,7 +24,7 @@ Det er mange årsaker til at modellene finner på ting.
 Dette er noen av dem:
 
 - Modellene "vil" gjerne gi et svar, de er dårlige til å si "jeg vet ikke".
-- Modellene har ikke kunnskap.
+- Modellene har ikke *sikker* faktakunnskap, bare sannsynligheter.
 - Overgeneralisering, modellene kombinerer mønstre fra ulike kilder.
 - Utdaterte treningsdata, modellene vet ikke hva som har skjedd etter de ble trent.
 
