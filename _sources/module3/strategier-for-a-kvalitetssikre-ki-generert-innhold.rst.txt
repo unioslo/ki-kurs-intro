@@ -2,7 +2,7 @@ Strategier for å kvalitetssikre KI-generert innhold
 =======================================================
 
 Vi har nå lært at en språkmodell lager sannsynlig tekst, ikke sannhet. 
-Den har ingen kunnskap, ingen hukommelse og har innebygde skjevheter. 
+Den har ingen *sikker* faktakunnskap, ingen hukommelse og har innebygde skjevheter. 
 
 I dette kurset har du likevel fått noen konkrete tips og "sikkerhetsregler" for hvordan du kan kvalitetssikre innhold som er generert av KI.
 Disse oppsummerer vi her.
