@@ -27,16 +27,17 @@ Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på e
 Gjennomføring
 ----------------
 
-Kurset består av: 
+Kurset inneholder både teori, refleksjonsoppgaver, bonusinnhold og øvingsoppgaver. 
 
+- Teori: Kursets teori er ment å gi et godt grunnlag for å forstå de viktigste elementene ved KI-teknologien, dens styrker, svakheter og hvordan bruke KI på en god måte.
 - Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse!
-- Fordypningsstoff: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer.
+- Bonusinnhold: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer.
 - Praktiske øvingsoppgaver: På slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. Disse kan lastes ned som en pdf. 
 
 Kurset kan gjennomføres i to deler om ønskelig.
 Da anbefaler vi kapitlene 1-3 som en del 1, og kapittel 4 og 5 som del 2.
 
-Hele kurset tar mellom 45 og 60 minutter å gjennomføre, utenom øvingsoppgavene i siste del. 
+Hele kurset tar ca 60 minutter å gjennomføre, utenom øvingsoppgavene i siste del. 
 
 
 Kursets kapitler: 
