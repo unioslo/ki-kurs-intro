@@ -7,8 +7,14 @@ De ansatte hos underleverandørene kan også ha midlertidige stillinger med dår
 Noen er kritiske til at KI-leverandørene bruker enorme beløp på å bygge datasentre,
 men ikke betaler menneskene som er med på å lage modellene skikkelig.
 
-En annen problemstilling er at ulik tilgang til KI-tjenester kan forsterke eksisterende forskjeller mellom grupper og enkeltmennesker. 
-Studenter med god råd kan abonnere på dyre KI-tjenester for å få en fordel i studiene.
-I mange tilfeller vil nemlig tjenestene man betaler for gi mer kapasitet, som betyr at du kan generere bedre resultater.
-Det kan også være egne funksjoner og tilleggstjenester som bare er tilgjengelig for betalende brukere. 
-Studenter med mindre penger må kanskje ta til takke med gratisversjonen med dårligere funksjonalitet, eller som har en mindre kvote for bruk. 
+
+En annen utfordring er at ulik tilgang til KI-tjenester kan forsterke eksisterende forskjeller mellom studenter. 
+De som har god økonomi kan abonnere på kostbare tjenester med høyere kapasitet, bedre kvalitet og ekstra funksjoner. 
+Disse gir ofte et tydelig forsprang i studiene.
+
+Studenter med dårligere økonomi må derimot kanskje nøye seg med gratisversjoner med begrenset funksjonalitet, dårligere kvalitet eller lavere brukskvoter, 
+og får dermed ikke de samme mulighetene til å utnytte KI-verktøyene fullt ut.
+
+Liknende problemstillinger ser vi ellers i samfunnet også. 
+Som enkeltperson kan du kanskje ikke gjøre mye for å redusere de sosiale kostnadene, 
+men du kan i alle fall bidra ved å være en opplyst, bevisst og ansvarlig bruker av teknologien. 
