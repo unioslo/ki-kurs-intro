@@ -17,7 +17,7 @@ Repetisjon
 Tabellen under gir deg en oversikt over de godkjente KI-tjenestene ved UiO: hva de egner seg til,
 hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systemer eller i skyen.
 
-.. list-table:: UiOs godkjente KI-tjenester
+.. list-table::
    :header-rows: 1
    :widths: 16 34 18 32
    :class: uio-table
@@ -40,9 +40,9 @@ hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systeme
      - UiO-tjeneste. Kjører i lokalt på UiOs IT-systemer i Tjenester for Sensitive Data (TSD).
    * - **Nettskjema-diktafon**
      - Mobilapp for opptak som sendes trygt og automatisk til transkribering i (TSD-)Autotekst.
-     - Opptil ⚫ svart, hvis opptaket er knyttet til et nettskjema i TSD
+     - Opptil 🔴 rød hvis opptaket er knyttet til nettskjema i Educloud. Opptil ⚫ svart, hvis opptaket er knyttet til et nettskjema i TSD
      - UiO-tjeneste. Bruker UiOs Nettskjema og (TSD-)Autotekst i bakkant.
-   * - **Gemini**
+   * - **Gemini (Chat)**
      - Generell KI-chat med søk i åpne nettsider. Egnet til faktasøk, bildegenerering og til å lage pdf, presentasjoner og regneark.
      - Opptil 🟡 gul
      - Skytjeneste fra Google. Kjører i Google Cloud, utenfor UiOs systemer. UiO har databehandleravtale.
@@ -53,7 +53,7 @@ hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systeme
    * - **Microsoft Copilot Chat**
      - Enkel KI-chat med nettsøk. Arbeider med tekst, bilder og video, og har ferdige instruksjonsforslag som hjelper deg i gang.
      - Kun 🟢 grønn
-     - Skytjeneste fra Microsoft. Kjører utenfor UiOs systemer. Bruker GPT-modeller fra OpenAI.
+     - Skytjeneste fra Microsoft. Kjører utenfor UiOs systemer. UiO har databehandleravtale.
 
 .. uio-colorbox-3:: Husk
 
