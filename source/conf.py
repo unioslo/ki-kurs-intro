@@ -30,6 +30,7 @@ extensions = [
     'citation_override',
     'sphinx_simplepdf',
     'canvas_file_link',  # Canvas file links
+    'uio_table_style',  # inline styling of `:class: uio-table` tables (for Canvas)
 ]
 
 # Icon for external links

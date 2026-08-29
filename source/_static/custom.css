@@ -315,22 +315,14 @@ span.citation-label a:hover {
 .uio-module-listing > .float-left h3 {
     margin-top: 0;
 }
-/* Wide list-tables (`:class: uio-table`) - local preview.
-   sphinx_rtd_theme sets `white-space: nowrap` on table cells, so long cells push
-   the table past the page edge and the `:widths:` percentages in <colgroup> are
-   ignored. Letting cells wrap and fixing the layout makes those widths apply.
-   Canvas styles tables itself, so these rules only affect `make html`. */
+/* Wide list-tables (`:class: uio-table`) - local preview only.
+   Grid, header colour, row striping and cell padding come from the inline
+   styles that source/_ext/uio_table_style.py writes into the built HTML (Canvas
+   ignores this stylesheet, so the styling has to travel with the markup).
+   These two rules undo sphinx_rtd_theme quirks that cannot be set inline:
+   the theme turns wide tables into a horizontally scrolling block. */
 .rst-content table.uio-table {
-    width: 100%;
-    table-layout: fixed;
     display: table;
-}
-.rst-content table.uio-table td,
-.rst-content table.uio-table th {
-    white-space: normal;
-    overflow-wrap: break-word;
-    vertical-align: top;
-    padding: 8px 12px;
 }
 .rst-content .wy-table-responsive:has(table.uio-table) {
     overflow: visible;
