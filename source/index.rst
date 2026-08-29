@@ -58,6 +58,7 @@ Velkommen til grunnkurs i generativ KI!
    module4/baerekraft
    module4/miljo
    module4/sosiale-kostnader
+   module4/ki-og-kognisjon
    module4/datasikkerhet
    module4/opphavsrett
    module4/retningslinjer-og-policies
