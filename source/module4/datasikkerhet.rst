@@ -18,11 +18,9 @@ på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvil
 Personvern
 -----------
 
-Selv om du bruker et KI-verktøy som er godkjent for den typen data du jobber med, betyr ikke det at du kan bruke dataene fritt.
-
-Regler for personopplysninger gjelder fortsatt.
+Hvis dataene du vil jobbe med inneholder personopplysninger, er det ikke tilstrekkelig at KI-tjenesten du vil bruke er godkjent for bruk med den typen data.
+Reglene for personopplysninger gjelder for all behandling av personopplysninger, så du må ha et behandlingsgrunnlag for behandlingen du vil gjøre.
 Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for, såkalt formålsutglidning.
-Du må ha et rettslig behandlingsgrunnlag for å kunne behandle personopplysninger, også når du bruker KI. 
 
 Et eksempel på når du må være ekstra varsom er hvis du henter ut personopplysninger fra et system for å behandle de i KI. 
 Da må du være sikker på at du opptrer i tråd med behandlingsgrunnlaget til dataene. 
