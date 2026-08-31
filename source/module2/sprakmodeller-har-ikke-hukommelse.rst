@@ -1,4 +1,4 @@
-Språkmodeller har ikke hukommelse
+Språkmodellers hukommelse
 ================================================
 
 Når du bruker en språkmodell, har du kontakt med den gjennom et chat-system.
