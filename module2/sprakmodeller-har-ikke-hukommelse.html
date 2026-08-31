@@ -16,7 +16,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/canvas.css" />
       <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css" />
       <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=18248e77" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7eb9d88d" />
       <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
 
   
@@ -55,8 +55,9 @@ Dette er viktig å være klar over fordi lengden på konteksten har betydning fo
 <div class="uio-color-box-3">
 <h3>Bonusinnhold</h3>
 <details>
-<summary><strong>Er det *hele* samtalen som sendes til språkmodellen?</strong></summary>
-<p>Når vi sier at chat-systemet sender <em>hele samtalen</em> til språkmodellen er det en forenkling: I praksis har chat-systemene forskjellige måter å redusere informasjonen den sender til språkmodellen.</p>
+<summary><strong>Er det hele samtalen som sendes til språkmodellen?</strong></summary>
+<p>Når vi sier at chat-systemet sender <em>hele samtalen</em> til språkmodellen er det en forenkling:
+I praksis har chat-systemene forskjellige måter å redusere informasjonen den sender til språkmodellen.</p>
 <p>Allikevel: det er aldri bare siste melding av en samtaletråd som sendes til språkmodellen.
 Avhengig av språkmodellens kapasitet, og chat-systemets automatiske filtreringer blir hele eller deler av de foregående meldingene i samtaletråden sendt sammen med din siste melding.</p>
 </details>
@@ -64,7 +65,7 @@ Avhengig av språkmodellens kapasitet, og chat-systemets automatiske filtreringe
 <section id="ha-korte-samtaler">
 <h2>Ha korte samtaler</h2>
 <p>Lange samtaler kan “forvirre” modellen, slik at den gir dårligere svar.
-Dette kan både være fordi hele konteksten ikke får plass.
+En grunn til det kan være at hele konteksten ikke får plass.
 Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
 Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [<a class="reference internal" href="../module6/kilder.html#laban"><span class="std std-ref">Laban</span></a>]
 En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.</p>

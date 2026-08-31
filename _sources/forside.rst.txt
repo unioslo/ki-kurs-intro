@@ -2,7 +2,7 @@ Velkommen til kurset: Introduksjon til kunstig intelligens
 ===========================================================
 
 Kunstig intelligens er en avansert teknologi som er lett å bruke, men vanskelig å bruke riktig. 
-Dette er en introduksjon til å forstå hva kunstig intelligens er og hvordan du kan bruke det på en god og ansvarlig måte. 
+Dette er en introduksjon til hva kunstig intelligens er, og hvordan du kan bruke den på en god og ansvarlig måte.
 Kurset skal bidra til at alle administrativt ansatte får grunnleggende opplæring i kunstig intelligens, og dermed trygt kan utforske hvordan KI kan brukes i egne arbeidsoppgaver.
 
 .. figure:: images/0.5-greeting.png
