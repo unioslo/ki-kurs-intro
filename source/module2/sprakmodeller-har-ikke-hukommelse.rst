@@ -13,9 +13,10 @@ Dette er viktig å være klar over fordi lengden på konteksten har betydning fo
 
 .. uio-colorbox-3:: Bonusinnhold
 
-    .. uio-detail:: Er det *hele* samtalen som sendes til språkmodellen?
+    .. uio-detail:: Er det hele samtalen som sendes til språkmodellen?
 
-        Når vi sier at chat-systemet sender *hele samtalen* til språkmodellen er det en forenkling: I praksis har chat-systemene forskjellige måter å redusere informasjonen den sender til språkmodellen.
+        Når vi sier at chat-systemet sender *hele samtalen* til språkmodellen er det en forenkling:
+        I praksis har chat-systemene forskjellige måter å redusere informasjonen den sender til språkmodellen.
         
         Allikevel: det er aldri bare siste melding av en samtaletråd som sendes til språkmodellen.  
         Avhengig av språkmodellens kapasitet, og chat-systemets automatiske filtreringer blir hele eller deler av de foregående meldingene i samtaletråden sendt sammen med din siste melding.
