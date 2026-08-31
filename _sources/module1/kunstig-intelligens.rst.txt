@@ -53,8 +53,8 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
                   - Programmet bruker reglene på data du gir det.
                   - Programmet gir deg resultatet.
 
-                  Eksempel på tradisjonell programmering:
-                  Et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
+                  Et eksempel på tradisjonell programmering, er
+                  et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.
 
             .. uio-colorbox-3:: Maskinlæring løser et problem slik:
 
@@ -63,7 +63,3 @@ Dette kalles maskinlæring og betyr at teknologien lærer fra data.
                   - Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder).
                   - Avhengig av hvilken type maskinlæring som brukes, kan dataene også inkludere kjente svar eller merkelapper som "hund" eller "katt".
                   - I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.
-
-                  Eksempel:
-                  Hvis vi vil at et system skal kjenne igjen om et bilde viser en hund eller en katt, kan vi gi det tusenvis av bilder som allerede er merket som "hund" eller "katt".
-                  Systemet lærer da en regel eller oppskrift som kan gjette riktig merkelapp for bilder det aldri har sett før.
