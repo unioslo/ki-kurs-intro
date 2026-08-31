@@ -19,8 +19,8 @@ Kunstig intelligens kan være denne digitale sparringspartneren.
 
 Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. 
 Derfor skal du alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger. 
-
 Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet. 
+
 Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og ansvarlig måte i jobben din.
 
 
@@ -34,8 +34,8 @@ Kurset inneholder både teori, refleksjonsoppgaver, bonusinnhold og øvingsoppga
 - Bonusinnhold: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer.
 - Praktiske øvingsoppgaver: På slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. Disse kan lastes ned som en pdf. 
 
-Kurset kan gjennomføres i to deler om ønskelig.
-Da anbefaler vi kapitlene 1-3 som en del 1, og kapittel 4 og 5 som del 2.
+Kurset kan tas samlet i én omgang eller deles opp i to deler.
+Hvis du vil ta kurset i to deler, anbefaler vi at du tar kapitlene 1-3 som del 1 og kapitlene 4-6 som del 2.
 
 Hele kurset tar ca 60 minutter å gjennomføre, utenom øvingsoppgavene i siste del. 
 
