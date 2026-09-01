@@ -33,7 +33,7 @@ Repetisjon
   til oppgaver der feil ikke innebærer stor risiko. Hvis feil kan få alvorlige følger, må du enten kunne kontrollere og bekrefte
   informasjonen før du bruker den videre, eller la være å bruke KI til den oppgaven.
 
-* Kunstig intelligens har flere svakheter og innholdet skal alltid kvalitetssikres. For å kvlitetssikre innholdet bør du:
+* Kunstig intelligens har flere svakheter og innholdet skal alltid kvalitetssikres. For å kvalitetssikre innholdet bør du:
 
   1. Vurdere risikoen
   2. Skrive gode instruksjoner
