@@ -29,7 +29,7 @@ Repetisjon
 * **Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar**. Derfor er det viktig
   å starte en ny samtale om du skifter tema.
 
-* **Språkmodeller har innebygde skjevheter**. Det kan være skjevhet som følge av manglende treningsdata,
+* **Språkmodeller har innebygde skjevheter**. Det kan blant annet være skjevhet som følge av manglende treningsdata,
   skjevhet som speiler skjevheter i samfunnet eller bekreftelsesskjevhet.
 
 Neste kapittel
