@@ -1,6 +1,7 @@
 En oversikt over UiO sine viktigste KI tjenester
 ==================================================
 
+Før vi presenterer alle UiO sine KI-tjenester en etter en får du her en 5 minutters gjennomgang av et utvalg vi anser som de nyttigste KI-tjenestene vi har. 
 
 .. raw:: html
 
