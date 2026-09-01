@@ -21,11 +21,12 @@ Dette vil gi deg en god pekepinn på hvordan språkmodellen reagerer på instruk
 
    **2. Skriv forbedrede versjoner**
 
-   Skriv deretter om hver instruksjon slik at du bruker alle prinsippene på denne siden:
+   Skriv deretter om hver instruksjon slik at du bruker alle prinsippene fra forrige side
 
    - Gi kontekst
    - Spesifiser format
-   - Definer en rolle for språkmodellen
+   - Definer en rolle
+   - Gi eksempler
 
    Test de nye instruksjonene i GPT UiO og sammenlign svarene med de du fikk i punkt 1.
 
