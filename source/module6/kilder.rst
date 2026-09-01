@@ -55,6 +55,9 @@ Lenker
     - `UiO sitt IT reglement <https://www.uio.no/om/regelverk/it/it-reglement.html>`_.
  
 
-    **E-lærings kurs i KI**
+    **KI-kurs på UiO**
+    
     
     Vil du sette deg mer inn i teamene rundt kunstig intelligens? `FIL1010 Redelig bruk av kunstig intelligens for studenter <https://www.uio.no/studier/emner/hf/ifikk/FIL1010/>`_  er et Canvas kurs som består av forelesningsvideoer, oppgaver og anbefalt litteratur rettet mot studenter. Dette er en flott ressurs om du vil lære mer! Videoen i kapittel 5 er lånt herfra. 
+
+    Følg også med på UiO sine `KI-kurs-sider <https://www.uio.no/tjenester/ki/kurs/>`_.

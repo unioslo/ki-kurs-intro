@@ -78,8 +78,8 @@
   },
   "module2/sprakmodeller-har-ikke-hukommelse.html": {
     "page_id": 416955,
-    "url": "sprakmodeller-har-ikke-hukommelse-6",
-    "title": "Språkmodeller har ikke hukommelse",
+    "url": "sprakmodellers-hukommelse",
+    "title": "Språkmodellers hukommelse",
     "module_id": 243061,
     "module_name": "Store språkmodeller"
   },
@@ -327,5 +327,12 @@
     "title": "Prøv selv!",
     "module_id": 243066,
     "module_name": "Oppsummering og veien videre"
+  },
+  "module4/ki-og-kognisjon.html": {
+    "page_id": 435525,
+    "url": "ikke-gjor-deg-avhengig-av-ki",
+    "title": "Ikke gjør deg avhengig av KI",
+    "module_id": 243064,
+    "module_name": "Ansvarlig og bærekraftig bruk av KI"
   }
 }

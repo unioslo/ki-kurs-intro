@@ -12,6 +12,7 @@ Med økt kunnskap om dette kan du bruke KI på en mer ansvarlige måte.
     - Hva kan du gjøre for å redusere miljøpåvirkningen fra KI-tjenester i arbeidshverdagen din?
     - Hvilke typer data håndterer du i arbeidshverdagen din? Forsøk å klassifisere dem etter dataklassene. 
     - Tenk over hvordan du bruker KI. Har du vært usikker på om det du laster opp i KI er i tråd med regler og policy på UiO?
+    - Reflekter over hvordan du bruker KI. Styrker eller svekker KI deg faglig?
 
 
 Repetisjon
