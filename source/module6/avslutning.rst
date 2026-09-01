@@ -31,7 +31,7 @@ De finner du i `kursets siste del <https://uio.instructure.com/courses/63248/pag
 
 .. uio-info:: Om kurset
 
-    Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad, Erik Winge og Gyda Kjekshus.
+    Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad og Erik Winge.
     Tegningene er laget av Tina Morønning Ruud. 
 
     © Copyright 2026
