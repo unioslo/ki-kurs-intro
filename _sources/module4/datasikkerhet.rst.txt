@@ -18,9 +18,9 @@ på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvil
 Personvern
 -----------
 
-Hvis dataene du vil jobbe med inneholder personopplysninger, er det ikke tilstrekkelig at KI-tjenesten du vil bruke er godkjent for bruk med den typen data.
-Reglene for personopplysninger gjelder for all behandling av personopplysninger, så du må ha et behandlingsgrunnlag for behandlingen du vil gjøre.
-Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for, såkalt formålsutglidning.
+Hvis dataene du vil jobbe med inneholder personopplysninger, er det ikke tilstrekkelig at KI-tjenesten er godkjent for bruk med den typen data.
+Reglene for personopplysninger gjelder for all behandling av personopplysninger, det vil si at du må ha et `behandlingsgrunnlag <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre.
+Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for: Du må unngå *formålsutglidning*.
 
 Et eksempel på når du må være ekstra varsom er hvis du henter ut personopplysninger fra et system for å behandle de i KI. 
 Da må du være sikker på at du opptrer i tråd med behandlingsgrunnlaget til dataene. 
