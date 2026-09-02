@@ -92,7 +92,7 @@
   },
   "module3/avslutning-del1.html": {
     "page_id": 434738,
-    "url": "avslutning-del-1-2",
+    "url": "avslutning-del-1-3",
     "title": "Avslutning del 1",
     "module_id": 243062,
     "module_name": "Instruksjoner: Bli god på KI!"
@@ -176,8 +176,8 @@
   },
   "module4/datasikkerhet.html": {
     "page_id": 422500,
-    "url": "datasikkerhet",
-    "title": "Datasikkerhet",
+    "url": "it-sikkerhet",
+    "title": "IT-sikkerhet",
     "module_id": 243064,
     "module_name": "Ansvarlig og bærekraftig bruk av KI"
   },
