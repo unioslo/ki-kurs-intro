@@ -1,9 +1,9 @@
-Datasikkerhet
+IT-sikkerhet
 ===========================================================
 
 De fleste KI-tjenestene er skytjenester som kjører på en annen datamaskin enn din egen.
 Det betyr at hvis du bruker en KI-tjeneste som ikke er til å stole på, kan dataene dine komme på avveie.
-UiO tilbyr et knippe `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der datasikkerheten er ivaretatt.
+UiO tilbyr et knippe `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der IT-sikkerheten er ivaretatt.
 Vi anbefaler at du bare bruker disse tjenestene.
 Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som er ikke godkjent av UiO
 
