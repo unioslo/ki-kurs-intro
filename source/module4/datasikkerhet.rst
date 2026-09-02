@@ -36,6 +36,8 @@ UiO sin dataklassifisering med eksempler
       .. uio-custom-box:: 🟢 Grønn: Åpen informasjon
          :color: gronn
 
+         «Åpen» benyttes dersom det *ikke forårsaker noen skade* for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres utilsiktet.
+
          Informasjon som kan deles med alle. 
 
          **For eksempel**:
@@ -50,6 +52,8 @@ UiO sin dataklassifisering med eksempler
 
       .. uio-custom-box:: 🟡 Gul: Begrenset informasjon
          :color: gul
+
+         «Begrenset» benyttes dersom det *vil kunne forårsake en viss skade* for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres utilsiktet.
 
          **For eksempel**:
 
@@ -66,6 +70,8 @@ UiO sin dataklassifisering med eksempler
       .. uio-custom-box:: 🔴 Rød: Fortrolig informasjon
          :color: rod
 
+         «Fortrolig» benyttes hvis det *vil kunne forårsake skade* for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner hvis informasjonen blir kjent for uvedkommende eller endres utilsiktet.
+
          Informasjon som kan være tilgjengelig, men bare for de med godkjent tilgang. 
 
          **For eksempel**:
@@ -78,6 +84,8 @@ UiO sin dataklassifisering med eksempler
 
       .. uio-custom-box:: ⚫ Svart: Strengt fortrolig informasjon
          :color: svart
+
+         «Strengt fortrolig» benyttes dersom det *vil kunne forårsake betydelig skade* for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres utilsiktet.
 
          Informasjon med svært begrenset tilgang.
 
