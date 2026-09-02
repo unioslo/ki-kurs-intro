@@ -21,5 +21,5 @@ Verktøyene som presenteres i kapittelet er:
 .. uio-colorbox-1:: Læringsmål
 
     * Jeg vet hvilke UiO-data som kan deles med ulike godkjente KI-tjenester
-    * Jeg kan velge riktig KI-tjeneste basert på behov og datasikkerhetsnivå
+    * Jeg kan velge riktig KI-tjeneste basert på behov og klassifisering av data
     * Jeg vet hvordan jeg får tilgang til og bruker ulike godkjente KI-verktøy 
