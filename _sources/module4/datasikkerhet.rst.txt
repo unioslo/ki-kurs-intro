@@ -22,8 +22,8 @@ Hvis dataene du vil jobbe med inneholder personopplysninger, er det ikke tilstre
 Reglene for personopplysninger gjelder for all behandling av personopplysninger, det vil si at du må ha et `behandlingsgrunnlag <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre.
 Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for: Du må unngå *formålsutglidning*.
 
-Et eksempel på når du må være ekstra varsom er hvis du henter ut personopplysninger fra et system for å behandle de i KI. 
-Da må du være sikker på at du opptrer i tråd med behandlingsgrunnlaget til dataene. 
+Et eksempel på når du må være varsom er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI. 
+Da må du først være sikker på at har et behandlingsgrunnlag for å behandle dataene. 
 
 
 UiO sin dataklassifisering med eksempler
