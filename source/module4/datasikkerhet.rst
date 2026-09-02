@@ -93,5 +93,4 @@ UiO sin dataklassifisering med eksempler
 
          - store menger røde data
          - svært konfidensielle forskningsdata
-         - informasjon som kan skade enkeltpersoner, grupper eller rikets sikkerhet
 
