@@ -17,7 +17,7 @@ Hvorfor er dette kurset viktig for deg?
 Se for deg at du kan få en digital sparringspartner som alltid har tid og som raskt kan analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon for deg. 
 Kunstig intelligens kan være denne digitale sparringspartneren.
 
-Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt datasikkerhet. 
+Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt IT-sikkerhet. 
 Derfor skal du alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger. 
 Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet. 
 
