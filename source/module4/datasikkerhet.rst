@@ -5,7 +5,7 @@ De fleste KI-tjenestene er skytjenester som kjører på en annen datamaskin enn 
 Det betyr at hvis du bruker en KI-tjeneste som ikke er til å stole på, kan dataene dine komme på avveie.
 UiO tilbyr et knippe `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der IT-sikkerheten er ivaretatt.
 Vi anbefaler at du bare bruker disse tjenestene.
-Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som er ikke godkjent av UiO
+Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som er ikke godkjent av UiO.
 
 Merk deg også at ulike tjenester av sikkerhetshensyn er godkjent for ulike typer data.
 Data deles inn etter beskyttelsesbehov.
@@ -23,7 +23,7 @@ Reglene for personopplysninger gjelder for all behandling av personopplysninger,
 Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for: Du må unngå *formålsutglidning*.
 
 Et eksempel på når du må være varsom er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI. 
-Da må du først være sikker på at har et behandlingsgrunnlag for å behandle dataene. 
+Da må du først være sikker på at du har et behandlingsgrunnlag for å behandle dataene. 
 
 
 UiO sin dataklassifisering med eksempler
