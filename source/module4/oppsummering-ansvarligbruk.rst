@@ -27,9 +27,15 @@ Repetisjon
 * **Bruk KI-tjenester som er godkjent av UiO.** De fleste KI-tjenester er skytjenester, og data du deler kan komme på avveie.
   Ved å bruke de godkjente KI-tjenestene til UiO er du trygg på at dette ikke skjer.
 
+* **Personopplysninger krever mer enn en godkjent tjeneste.** Personvernreglene gjelder uansett hvilket verktøy du bruker.
+  Du må ha et behandlingsgrunnlag, og du kan ikke bruke opplysningene til andre formål enn det de er samlet inn for.
+
 * **Opphavsretten gjelder også når du bruker KI.** Mange KI-tjenester lagrer teksten de mottar og kan bruke den til å trene nye
   modeller. Dette er du beskyttet mot dersom du bruker de UiO godkjente KI-tjenestene. 
   Du må allikevel alltid sjekke om materialet du laster opp tillater opplasting til KI.
+
+* **Eksternt innhold kan inneholde skjulte instruksjoner.** Nettsider og dokumenter du lar en språkmodell lese, kan forsøke å styre den.
+  Dette kalles prompt-injection. Bruk kilder du stoler på, og kontroller alltid svaret før du bruker det.
 
 * **Du er ansvarlig for hvordan du bruker KI-verktøy**, og må sette deg inn i regelverket. UiOs IT-reglement gjelder også for KI, og i tillegg har UiO egne
   KI-retningslinjer som må følges.

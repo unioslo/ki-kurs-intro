@@ -60,7 +60,9 @@ Velkommen til grunnkurs i generativ KI!
    module4/sosiale-kostnader
    module4/ki-og-kognisjon
    module4/datasikkerhet
+   module4/personvern
    module4/opphavsrett
+   module4/prompt-injection
    module4/retningslinjer-og-policies
    module4/oppsummering-ansvarligbruk
 

@@ -1,35 +1,27 @@
-IT-sikkerhet
-===========================================================
+Datasikkerhet
+==========================
 
-De fleste KI-tjenestene er skytjenester som kjører på en annen datamaskin enn din egen.
-Det betyr at hvis du bruker en KI-tjeneste som ikke er til å stole på, kan dataene dine komme på avveie.
-UiO tilbyr et knippe `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der IT-sikkerheten er ivaretatt.
-Vi anbefaler at du bare bruker disse tjenestene.
-Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som er ikke godkjent av UiO.
+KI-tjenester håndterer data ulikt.
+Noen er satt opp innenfor UiO sine rammer, andre sender dataene dine videre til en ekstern leverandør.
+Før du limer inn tekst eller laster opp et dokument, må du derfor vite to ting:
+hvilken tjeneste du har lov til å bruke, og hvor beskyttelsesverdige dataene er.
 
-Merk deg også at ulike tjenester av sikkerhetshensyn er godkjent for ulike typer data.
-Data deles inn etter beskyttelsesbehov.
-Se nettsiden for `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_
-for informasjon om hvordan data deles inn i grønne, gule, røde og svarte data.
-I listen med `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_
-på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvilke dataklasser de kan brukes med.
+Godkjente KI-tjenester - unngå data på avveie
+-------------------------------------------------
 
+De fleste KI-tjenester kjører på en annen datamaskin enn din egen, og bruker du en tjeneste som ikke er til å stole på, kan dataene komme på avveie.
+UiO tilbyr flere `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der IT-sikkerheten er ivaretatt.
+Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som ikke er godkjent av UiO.
 
-Personvern
------------
+UiO sin dataklassifisering
+-----------------------------
 
-Hvis dataene du vil jobbe med inneholder personopplysninger, er det ikke tilstrekkelig at KI-tjenesten er godkjent for bruk med den typen data.
-Reglene for personopplysninger gjelder for all behandling av personopplysninger, det vil si at du må ha et `behandlingsgrunnlag <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre.
-Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for: Du må unngå *formålsutglidning*.
+Av sikkerhetshensyn er tjenestene godkjent for ulike typer data, for data deles inn etter beskyttelsesbehov.
+Oversikten over `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ viser hvilke dataklasser hver tjeneste kan brukes med,
+og nettsiden om `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_
+forklarer inndelingen i grønne, gule, røde og svarte data.
 
-Et eksempel på når du må være varsom er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI. 
-Da må du først være sikker på at du har et behandlingsgrunnlag for å behandle dataene. 
-
-
-UiO sin dataklassifisering med eksempler
-------------------------------------------
-
-.. uio-grid:: 
+.. uio-grid::
 
    .. uio-grid-item::
 
@@ -63,7 +55,7 @@ UiO sin dataklassifisering med eksempler
          - forelesningsnotater
          - forskningsartikler bak betalingsmur
 
-.. uio-grid:: 
+.. uio-grid::
 
    .. uio-grid-item::
 
@@ -91,6 +83,8 @@ UiO sin dataklassifisering med eksempler
 
          **For eksempel**:
 
-         - store menger røde data
+         - store mengder røde data
          - svært konfidensielle forskningsdata
 
+Dataklassen forteller deg hvilke KI-tjenester du kan bruke.
+Inneholder dataene personopplysninger, gjelder personvernreglene i tillegg.
