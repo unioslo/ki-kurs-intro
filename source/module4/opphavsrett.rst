@@ -17,8 +17,3 @@ Noen databaser eller forlag har lisenser som forbyr å bruke materialet deres me
 For noen ressurser kan du finne lisensen i 
 `Oria <https://uio.oria.no/>`_
 ved å klikke på knappen "Vis lisens".
-
-.. uio-source::  Lenker til mer informasjon
-
-  * `Juridiske føringer for bruk av kunstig intelligens ved UiO <https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_
-  * `Retningslinjer for bruk av elektroniske ressurser fra UB <https://www.ub.uio.no/bruk/elektroniske-ressurser/>`_
