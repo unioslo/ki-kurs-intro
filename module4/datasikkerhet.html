@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IT-sikkerhet &mdash; Grunnkurs KI  documentation</title>
+  <title>Datasikkerhet &mdash; Grunnkurs KI  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-new-tab-link.css?v=d87cb1ac" />
@@ -29,7 +29,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Opphavsrett" href="opphavsrett.html" />
+    <link rel="next" title="Personvern" href="personvern.html" />
     <link rel="prev" title="Ikke gjør deg avhengig av KI" href="ki-og-kognisjon.html" /> 
 </head>
 
@@ -42,29 +42,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="it-sikkerhet">
-<h1>IT-sikkerhet</h1>
-<p>De fleste KI-tjenestene er skytjenester som kjører på en annen datamaskin enn din egen.
-Det betyr at hvis du bruker en KI-tjeneste som ikke er til å stole på, kan dataene dine komme på avveie.
-UiO tilbyr et knippe <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">godkjente KI-tjenester<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a> der IT-sikkerheten er ivaretatt.
-Vi anbefaler at du bare bruker disse tjenestene.
-Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som er ikke godkjent av UiO.</p>
-<p>Merk deg også at ulike tjenester av sikkerhetshensyn er godkjent for ulike typer data.
-Data deles inn etter beskyttelsesbehov.
-Se nettsiden for <a class="reference external" href="https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html" rel="noreferrer" target="_blank">klassifisering av data og informasjon<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
-for informasjon om hvordan data deles inn i grønne, gule, røde og svarte data.
-I listen med <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">godkjente KI-tjenester<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
-på UiO finner du alle tjenestene som er godkjent for bruk med UiO-data, og hvilke dataklasser de kan brukes med.</p>
-<section id="personvern">
-<h2>Personvern</h2>
-<p>Hvis dataene du vil jobbe med inneholder personopplysninger, er det ikke tilstrekkelig at KI-tjenesten er godkjent for bruk med den typen data.
-Reglene for personopplysninger gjelder for all behandling av personopplysninger, det vil si at du må ha et <a class="reference external" href="https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html" rel="noreferrer" target="_blank">behandlingsgrunnlag<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a> for behandlingen du vil gjøre.
-Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for: Du må unngå <em>formålsutglidning</em>.</p>
-<p>Et eksempel på når du må være varsom er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI.
-Da må du først være sikker på at du har et behandlingsgrunnlag for å behandle dataene.</p>
+  <section id="datasikkerhet">
+<h1>Datasikkerhet</h1>
+<p>KI-tjenester håndterer data ulikt.
+Noen er satt opp innenfor UiO sine rammer, andre sender dataene dine videre til en ekstern leverandør.
+Før du limer inn tekst eller laster opp et dokument, må du derfor vite to ting:
+hvilken tjeneste du har lov til å bruke, og hvor beskyttelsesverdige dataene er.</p>
+<section id="godkjente-ki-tjenester-unnga-data-pa-avveie">
+<h2>Godkjente KI-tjenester - unngå data på avveie</h2>
+<p>De fleste KI-tjenester kjører på en annen datamaskin enn din egen, og bruker du en tjeneste som ikke er til å stole på, kan dataene komme på avveie.
+UiO tilbyr flere <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">godkjente KI-tjenester<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a> der IT-sikkerheten er ivaretatt.
+Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som ikke er godkjent av UiO.</p>
 </section>
-<section id="uio-sin-dataklassifisering-med-eksempler">
-<h2>UiO sin dataklassifisering med eksempler</h2>
+<section id="uio-sin-dataklassifisering">
+<h2>UiO sin dataklassifisering</h2>
+<p>Av sikkerhetshensyn er tjenestene godkjent for ulike typer data, for data deles inn etter beskyttelsesbehov.
+Oversikten over <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">godkjente KI-tjenester<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a> viser hvilke dataklasser hver tjeneste kan brukes med,
+og nettsiden om <a class="reference external" href="https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html" rel="noreferrer" target="_blank">klassifisering av data og informasjon<svg version="1.1" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; margin-left: 0.125em; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+forklarer inndelingen i grønne, gule, røde og svarte data.</p>
 <div style="display: flex; flex-wrap: wrap;">
 <div class="grid-row" style="grid-gap: 5%; margin: 1rem 0; width: 100%;">
 <div class="col-xs" style="padding: 0;">
@@ -119,15 +114,17 @@ Da må du først være sikker på at du har et behandlingsgrunnlag for å behand
 <p>Informasjon med svært begrenset tilgang.</p>
 <p><strong>For eksempel</strong>:</p>
 <ul class="simple">
-<li>store menger røde data</li>
+<li>store mengder røde data</li>
 <li>svært konfidensielle forskningsdata</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+<p>Dataklassen forteller deg hvilke KI-tjenester du kan bruke.
+Inneholder dataene personopplysninger, gjelder personvernreglene i tillegg.</p>
 </section>
-<div class="page-navigation"><div class="prev-link"><a href="ki-og-kognisjon.html">← Forrige</a></div><div class="next-link"><a href="opphavsrett.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="ki-og-kognisjon.html">← Forrige</a></div><div class="next-link"><a href="personvern.html">Neste →</a></div></div>
 </section>
            </div>
           </div>
