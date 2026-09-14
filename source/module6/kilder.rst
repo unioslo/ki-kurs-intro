@@ -53,7 +53,8 @@ Lenker
     - `Juridiske føringer for bruk av kunstig intelligens (KI) ved UiO <https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_
     - `Veiledning i behandlingsgrunnlag for ansatte <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_
     - `UiO sitt IT reglement <https://www.uio.no/om/regelverk/it/it-reglement.html>`_.
- 
+    - `Retningslinjer for bruk av elektroniske ressurser fra UB <https://www.ub.uio.no/bruk/elektroniske-ressurser/>`_
+
 
     **KI-kurs på UiO**
     
