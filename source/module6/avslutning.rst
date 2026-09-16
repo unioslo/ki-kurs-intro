@@ -15,7 +15,7 @@ KI er et kraftig verktøy som kan være til hjelp i arbeidshverdagen, men det er
 
 .. figure:: ../images/5.1-faces.png
     :align: center
-    :width: 80%
+    :width: 60%
     :alt: Ansiktene til personen og roboten
 
     Illustrasjon: Tina Morønning Ruud

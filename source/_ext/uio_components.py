@@ -955,8 +955,24 @@ def html_depart_uio_do_dont_container(self, node):
 
 
 def html_visit_uio_grid(self, node):
-    """Open the flex wrapper around the grid rows."""
-    self.body.append('<div style="display: flex; flex-wrap: wrap;">\n')
+    """Open the flex wrapper around the grid rows.
+
+    The explicit ``width`` keeps every grid the same width in Canvas. The
+    right-hand module menu (``#right-page-column``) is ``float: right``, and a
+    flex container may not overlap a float, so a grid left to size itself is
+    narrowed by the menu's width when it happens to sit beside the menu, while
+    a grid further down the page gets the full content width.
+
+    ``var(--uio-page-max-width)`` is the width of the body text, which
+    ``#wiki_page_show p`` caps with the same variable, and ``min()`` keeps the
+    grid inside the content column when the column is narrower than that. A
+    grid too wide to fit beside the menu drops below it instead of being
+    squeezed, so the width holds either way.
+    """
+    self.body.append(
+        '<div style="display: flex; flex-wrap: wrap;'
+        ' width: min(100%, var(--uio-page-max-width));">\n'
+    )
 
 
 def html_depart_uio_grid(self, node):
@@ -1049,6 +1065,29 @@ def cleanup_html_post_build(app, exception):
             # 2b. Drop the no-scaled-link marker uio-grid-item puts on its images
             # (it only tells Sphinx not to wrap them in a full-size link)
             content = content.replace(' class="no-scaled-link"', '')
+
+            # 2c. Line figures up with the body text in Canvas. A figure carries
+            # the browser's default 40px side margins, so the image starts to the
+            # right of the text and its right edge runs in under the floated
+            # right-hand module menu. Zero the side margins, hold the figure to
+            # the body text width, and make it a formatting context so it drops
+            # below the menu instead of sliding underneath when it cannot fit.
+            #
+            # ``:align: center`` has to be written out as ``text-align`` too.
+            # Sphinx only tags the figure ``align-center`` and leaves the
+            # centring to the theme stylesheet, which never reaches Canvas -
+            # there the class matches nothing and the image sits flush left.
+            def style_figure(match):
+                tag = match.group(0)
+                style = ('display: flow-root; margin: 1em 0;'
+                         ' width: min(100%, var(--uio-page-max-width));')
+                if 'align-center' in tag:
+                    style += ' text-align: center;'
+                return '<figure style="%s"%s' % (style, tag[len('<figure'):])
+
+            content = re.sub(
+                r'<figure(?![^>]*\bstyle=)[^>]*>', style_figure, content
+            )
 
             # 3. Remove any existing page-navigation divs (from previous builds)
             content = re.sub(r'<div class="page-navigation".*?</div>\s*</div>\s*</div>\s*\n', '', content, flags=re.DOTALL)

@@ -11,7 +11,7 @@ Verktøyene som presenteres i kapittelet er:
 
 .. figure:: ../images/4.1-AI-tools.png
     :align: center
-    :width: 80%
+    :width: 70%
     :alt: Illustrasjon av en verktøyboks
     :class: bordered
     
