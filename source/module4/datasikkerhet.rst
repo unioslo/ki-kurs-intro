@@ -16,7 +16,7 @@ Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjene
 UiO sin dataklassifisering
 -----------------------------
 
-Av sikkerhetshensyn er tjenestene godkjent for ulike typer data, for data deles inn etter beskyttelsesbehov.
+Av sikkerhetshensyn er tjenestene godkjent for ulike typer data, med ulike beskyttelsesbehov.
 Oversikten over `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ viser hvilke dataklasser hver tjeneste kan brukes med,
 og nettsiden om `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_
 forklarer inndelingen i grønne, gule, røde og svarte data.
