@@ -11,7 +11,7 @@ At en tjeneste er godkjent for dataklassen, betyr bare at tjenesten er trygg nok
 Du må i tillegg ha et `behandlingsgrunnlag <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre.
 Uten det har du ikke lov, heller ikke i en godkjent tjeneste.
 
-Du må holde deg til behandlingsformålet
+Du må holde deg til formålet
 -----------------------------------------
 
 Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for.
