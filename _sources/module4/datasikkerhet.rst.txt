@@ -6,12 +6,14 @@ Noen er satt opp innenfor UiO sine rammer, andre sender dataene dine videre til 
 Før du limer inn tekst eller laster opp et dokument, må du derfor vite to ting:
 hvilken tjeneste du har lov til å bruke, og hvor beskyttelsesverdige dataene er.
 
+
 Godkjente KI-tjenester - unngå data på avveie
 -------------------------------------------------
 
-De fleste KI-tjenester kjører på en annen datamaskin enn din egen, og bruker du en tjeneste som ikke er til å stole på, kan dataene komme på avveie.
+De fleste KI-tjenester kjører på en annen datamaskin enn din egen, og som UiO ikke har noen avtale med. 
+Bruker du en slik tjeneste, kan dataene komme på avveie.
 UiO tilbyr flere `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der IT-sikkerheten er ivaretatt.
-Når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som ikke er godkjent av UiO.
+Merk at når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som ikke er godkjent av UiO.
 
 UiO sin dataklassifisering
 -----------------------------
