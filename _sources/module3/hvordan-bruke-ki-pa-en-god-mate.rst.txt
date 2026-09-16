@@ -11,7 +11,7 @@ I dette kapitlet skal du lære hvordan du lager gode instruksjoner, og hvordan d
 
 .. figure:: ../images/3.2-walking-together.png
     :align: center
-    :width: 100%
+    :width: 60%
     :alt: Illustrasjon av at personen viser vei til roboten
 
     Illustrasjon: Tina Morønning Ruud
