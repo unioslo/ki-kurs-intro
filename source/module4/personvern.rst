@@ -4,20 +4,18 @@ Personvern
 Personopplysninger er opplysninger som kan knyttes til en enkeltperson, for eksempel navn, e-postadresse, studentbesvarelser eller helseinformasjon.
 Personvernreglene gjelder all behandling av slike opplysninger, uansett hvilket verktøy du bruker, og kommer i tillegg til reglene om dataklassifisering og godkjente tjenester.
 
-Behandlingsgrunnlag
---------------------
+Behandling av persondata 
+--------------------------------
 
 At en tjeneste er godkjent for dataklassen, betyr bare at tjenesten er trygg nok.
-Du må i tillegg ha et `behandlingsgrunnlag <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre.
-Uten det har du ikke lov, heller ikke i en godkjent tjeneste.
+Du må i tillegg ha lov å behandle personopplysningene til det formålet du planlegger. 
+Og: Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for.
 
-Du må holde deg til formålet
------------------------------------------
+Med andre ord: At opplysningene allerede ligger i et system du har tilgang til, betyr ikke at du kan bruke dem til hva som helst.
 
-Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for.
-At opplysningene allerede ligger i et system du har tilgang til, betyr ikke at du kan bruke dem til hva som helst.
-Et eksempel på når du må være varsom, er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI.
-Da må du først være sikker på at du har et behandlingsgrunnlag for å behandle dataene på den nye måten.
+Et eksempel på når du må være ekstra varsom, er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI i et annet system (for eksempel din laptop). Har du lov å lagre personopplysningene der du skal behandle de i KI? Er du sikker på at formålet med å behandle dataene er i tråd med det du har lov til?
+
+lov til å behandle dataene med det forbehandlingsgrunnlag for å behandle dataene på den nye måten.
 
 .. uio-do:: Hva kan du gjøre?
 
