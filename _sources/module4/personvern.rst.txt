@@ -7,15 +7,25 @@ Personvernreglene gjelder all behandling av slike opplysninger, uansett hvilket 
 Behandling av persondata 
 --------------------------------
 
-At en tjeneste er godkjent for dataklassen, betyr bare at tjenesten er trygg nok.
-Du må i tillegg ha lov å behandle personopplysningene til det formålet du planlegger. 
+At en tjeneste er godkjent for dataklassen, betyr bare at selve *tjenesten* er trygg nok.
+Du må i tillegg ha et `behandlingsgrunnlag <https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre.
+Uten det har du ikke lov, heller ikke i en godkjent tjeneste.
+
+Før du skal samle inn eller håndtere personopplysninger må du stoppe opp og tenke deg om.
+
+* Hva er formålet med denne bruken av personopplysninger?
+* Hvilken risiko er forbundet med håndteringen av opplysningene?
+* Er det nødvendig å behandle alle personopplysningene for å oppnå formålet?
+* Er det lov å behandle personopplysningene til det relevante formålet?
+
+Selv om du har tilgang til andres personopplysninger, betyr det ikke at du har lov til å se på dem når du vil.
+
+Kanskje er det helt mulig å gjennomføre oppgaven du står overfor med færre eller ingen personopplysninger.
+Dersom du behandler sensitive opplysninger, skjerpes kravene.
+
 Du kan heller ikke bruke personopplysninger til andre formål enn det de er samlet inn for.
 
-Med andre ord: At opplysningene allerede ligger i et system du har tilgang til, betyr ikke at du kan bruke dem til hva som helst.
-
 Et eksempel på når du må være ekstra varsom, er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI i et annet system (for eksempel din laptop). Har du lov å lagre personopplysningene der du skal behandle de i KI? Er du sikker på at formålet med å behandle dataene er i tråd med det du har lov til?
-
-lov til å behandle dataene med det forbehandlingsgrunnlag for å behandle dataene på den nye måten.
 
 .. uio-do:: Hva kan du gjøre?
 
