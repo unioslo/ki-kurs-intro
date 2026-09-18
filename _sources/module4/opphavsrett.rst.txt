@@ -13,8 +13,7 @@ Selv om du har lov til å laste opp opphavsrettsbeskyttet materiale i en KI-tjen
 
 Hvor finner jeg informasjon om lisens?
 -----------------------------------------
-Opphavsrett og KI kan være et vanskelig tema å navigere i. 
-
-Bruker du materiale fra biblioteket kan du for noen ressurser kan du finne lisensen i `Oria <https://uio.oria.no/>`_ ved å klikke på knappen "Vis lisens". 
+Opphavsrett og KI kan være et vanskelig tema å navigere i.
+Bruker du materiale fra biblioteket kan du for noen ressurser finne lisensen i `Oria <https://uio.oria.no/>`_ ved å klikke på knappen "Vis lisens". 
 
 For andre kilder må du finne lisensinformasjon der materialet er publisert eller tilgjengelig. Er du usikker, spør en bibliotekar!
