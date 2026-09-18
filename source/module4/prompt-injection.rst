@@ -2,8 +2,7 @@ Prompt-injection
 ========================
 
 Når en språkmodell får tilgang til eksternt innhold, for eksempel nettsider eller opplastede dokumenter, kan den bli utsatt for prompt-injection.
-
-Prompt-injection betyr at det legger skjulte instruksjoner i innholdet. Instruksjonene kan påvirke svaret eller få modellen til å ignorere det du selv har bedt om. De kan ligge i tekst, bilder eller annet innhold, og kan være vanskelige å oppdage.
+Prompt-injection betyr at det er skjulte instruksjoner i innholdet. Instruksjonene kan påvirke svaret eller få modellen til å ignorere det du selv har bedt om. De kan ligge i tekst, bilder eller annet innhold, og kan være vanskelige å oppdage.
 
 Derfor bør du alltid vurdere risikoen før du lar en språkmodell bruke eksternt innhold, og tilpasse tiltakene til hvor alvorlige konsekvensene blir hvis modellen blir manipulert.
 
