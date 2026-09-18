@@ -9,7 +9,7 @@ Behandling av persondata
 
 At en tjeneste er godkjent for dataklassen, betyr bare at tjenesten er trygg nok.
 Du må i tillegg ha lov å behandle personopplysningene til det formålet du planlegger. 
-Og: Du kan ikke bruke personopplysninger til andre formål enn det de er samlet inn for.
+Du kan heller ikke bruke personopplysninger til andre formål enn det de er samlet inn for.
 
 Med andre ord: At opplysningene allerede ligger i et system du har tilgang til, betyr ikke at du kan bruke dem til hva som helst.
 
