@@ -1,27 +1,31 @@
 Datasikkerhet
 ==========================
 
-KI-tjenester håndterer data ulikt.
-Noen er satt opp innenfor UiO sine rammer, andre sender dataene dine videre til en ekstern leverandør.
-Før du limer inn tekst eller laster opp et dokument, må du derfor vite to ting:
-hvilken tjeneste du har lov til å bruke, og hvor beskyttelsesverdige dataene er.
+Før du bruker en KI-tjeneste til å behandle tekst, dokumenter eller andre opplysninger er det to ting du må tenke på: 
 
+1. Er KI-tjenesten godkjent av UiO?
+2. Hvilken dataklasse har informasjonen du vil bruke?
 
-Godkjente KI-tjenester - unngå data på avveie
--------------------------------------------------
+Hvis KI-tjenesten *ikke* er godkjent av UiO, kan du bare behandle *grønne data*. Dette gjelder uansett hvordan du bruker tjenesten, for eksempel når du
 
-De fleste KI-tjenester kjører på en annen datamaskin enn din egen, og som UiO ikke har noen avtale med. 
-Bruker du en slik tjeneste, kan dataene komme på avveie.
-UiO tilbyr flere `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ der IT-sikkerheten er ivaretatt.
-Merk at når du jobber med data som tilhører UiO, har du ikke lov til å bruke IT-tjenester som ikke er godkjent av UiO.
+- limer inn tekst i en chat
+- laster opp et dokument
+- bruker en KI-assistent
+- ber KI oppsummere, oversette eller bearbeide innhold. 
+
+De fleste KI-tjenester der ute sender dataene dine videre til eksterne leverandører. Da kan opplysningene dine bli lagret eller behandlet utenfor UiO sin kontroll. Det unngår du derimot hvis du velger en av `UiO sine godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_. 
+
+Det viktigste du gjør for å ivareta datasikkerheten er derfor å velge en godkjent KI-tjeneste, og kontrollere hvilken dataklasse tjenesten kan behandle. Du skal lære er om UiO sine KI-tjenester i kapittel 5. 
+
 
 UiO sin dataklassifisering
 -----------------------------
 
-Av sikkerhetshensyn er tjenestene godkjent for ulike typer data, med ulike beskyttelsesbehov.
-Oversikten over `godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_ viser hvilke dataklasser hver tjeneste kan brukes med,
-og nettsiden om `klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_
-forklarer inndelingen i grønne, gule, røde og svarte data.
+UiO sine KI-tjenester godkjent for ulike typer data. Dette er tydelig markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av hvor stort beskyttelsesbehov dataene dine har. 
+
+Nedenfor finner du en oversikt over dataklassene med eksempler på hva de type informasjon som hører til i de ulike klassene. Du finner utfyllende informasjon på siden `Klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_ . 
+
+Bruk oversikten sammen med UiOs nettside om dataklassifisering for å finne ut hvilken dataklasse dataene dine tilhører, og velg deretter en KI-tjeneste som er godkjent for denne dataklassen. 
 
 .. uio-grid::
 
