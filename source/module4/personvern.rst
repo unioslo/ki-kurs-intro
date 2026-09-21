@@ -1,8 +1,7 @@
 Personvern
 ===========
 
-Personopplysninger er opplysninger som kan knyttes til en enkeltperson, for eksempel navn, e-postadresse, studentbesvarelser eller helseinformasjon.
-Personvernreglene gjelder all behandling av slike opplysninger, uansett hvilket verktøy du bruker, og kommer i tillegg til reglene om dataklassifisering og godkjente tjenester.
+Personopplysninger er opplysninger som kan knyttes til en enkeltperson, for eksempel navn, e-postadresse, studentbesvarelser eller helseinformasjon. Skal du behandle personopplysninger i KI, eller hvilket som helst annet IT-verktøy, må du forholde deg til personvernreglene. Disse kommer i tillegg til reglene om dataklassifisering og godkjente tjenester. 
 
 Behandling av persondata 
 --------------------------------
