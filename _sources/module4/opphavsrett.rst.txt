@@ -1,7 +1,7 @@
 Opphavsrett
 ============
 
-I tillegg til IT-sikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker kunstig intelligens. 
+I tillegg til datasikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker kunstig intelligens. 
 
 Mange KI-tjenester lagrer all tekst de mottar enten det er som instruksjoner eller opplasting. Hvis materialet du vil laste opp i KI er opphavsrettslig beskyttet betyr det at det ikke er tillatt å dele med andre, der "andre" kan være KI-en. En av grunnene til disse restriksjonene er at teksten som lagres gjerne brukes til å trene nye modeller, og det kan være i strid med opphavsretten.
 
