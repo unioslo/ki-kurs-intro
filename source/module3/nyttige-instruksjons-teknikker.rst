@@ -54,6 +54,6 @@ Du kan bruke teknikkene hver for seg, eller kombinere de.
 
 .. uio-colorbox-3:: Start en ny samtale
 
-   Som vi lærte i "Språkmodellen har ikke hukommelse" kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar.
+   Som vi lærte i `Språkmodellers hukommelse <module2/sprakmodeller-har-ikke-hukommelse.html>`_ kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar.
 
    Start derfor en ny samtale om du merker at svarene begynner å få dårligere kvalitet.
