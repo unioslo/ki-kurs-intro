@@ -1,9 +1,11 @@
-Velkommen til kurset: Kunstig intelligens og administrative oppgaver på UiO
+Velkommen til kurset:  Introduksjon til kunstig intelligens
 ============================================================================
 
 Kunstig intelligens er en avansert teknologi som er lett å bruke, men vanskelig å bruke riktig. 
 Dette er en introduksjon til hva kunstig intelligens er, og hvordan du kan bruke den på en god og ansvarlig måte.
-Kurset skal bidra til at alle ansatte får grunnleggende opplæring i kunstig intelligens, og dermed trygt kan utforske hvordan KI kan brukes i egne administrative arbeidsoppgaver.
+Kurset skal bidra til at alle ansatte får grunnleggende opplæring i kunstig intelligens, og dermed trygt kan utforske hvordan KI kan brukes i egne arbeidsoppgaver.
+
+Kurset er utviklet for administrativt ansatte, men temaene er grunnleggende og relevante for alle ansatte som ønsker å lære om hvordan bruke kunstig intelligens.
 
 .. figure:: images/0.5-greeting.png
    :width: 60%
