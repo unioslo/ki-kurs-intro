@@ -38,7 +38,7 @@ Gemini kan også lage mange typer filer, for eksempel: pdf, Powerpoint-presentas
 
 I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se avsnittet nedenfor).
 
-.. uio-colorbox-3:: Bruk Gemini når du
+.. uio-colorbox-3:: Bruk Gemini hvis du
 
    - trenger en kraftig KI-modell som kan generere bilder
    - vil laste opp, bearbeide eller generere filer
@@ -71,10 +71,10 @@ Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:
 
 Husk at når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: last ikke opp dokumenter du ikke har rettigheter til å dele.
 
-.. uio-colorbox-3:: Bruk Gemini Notebook hvis
+.. uio-colorbox-3:: Bruk Gemini Notebook hvis du
 
-   - du skal jobbe mye med dokumenter og egne kilder
-   - vil generer forskjellige typer ressurser som quizzer eller podcaster basert på dine dokumenter og kilder
+   - skal jobbe mye med dokumenter og egne kilder
+   - vil genere forskjellige typer ressurser som quizzer eller podcaster basert på dine dokumenter og kilder
    - trenger websøk
-   - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡
+   - skal legge inn informasjon som er klassifisert som grønn 🟢 eller gul 🟡
 
