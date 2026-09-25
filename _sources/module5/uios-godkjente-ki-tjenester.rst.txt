@@ -20,8 +20,6 @@ Du må derfor være ekstra påpasselig med hva du bruker tjenester til og hvilke
 
 Dette betyr altså at generelle spørsmål kan være greit, men ikke om du sender med informasjon om for eksempel UiOs systemer eller ansatte, eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informasjon som UiO eier. 
 
-Jobber du på en UiO-eid pc, skal du kun bruke UiO-godkjente tjenester.
-
 
 .. uio-colorbox-3:: Viktig
 
