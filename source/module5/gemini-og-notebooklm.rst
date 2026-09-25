@@ -40,11 +40,12 @@ I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se avsni
 
 .. uio-colorbox-3:: Bruk Gemini når du
 
-   - trenger en kraftig modell som kan generere bilder
-   - vil laste opp og bearbeide filer
-   - vil generere forskjellig typer filer
-   - vil bruke kildene du allerede har lagt til i en Gemini Notebook
-   - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡
+   - trenger en kraftig KI-modell som kan generere bilder
+   - vil laste opp, bearbeide eller generere filer
+   - vil bruke kildene du allerede har lagt inn i en Gemini Notebook
+   - trenger internettsøk
+   - skal legge inn informasjon som er klassifisert som grønn 🟢 eller gul 🟡
+
 
 Gemini Notebook
 ----------------
@@ -74,5 +75,6 @@ Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:
 
    - du skal jobbe mye med dokumenter og egne kilder
    - vil generer forskjellige typer ressurser som quizzer eller podcaster basert på dine dokumenter og kilder
+   - trenger websøk
    - informasjonen du legger inn i tjenesten er grønn 🟢 eller gul 🟡
 
