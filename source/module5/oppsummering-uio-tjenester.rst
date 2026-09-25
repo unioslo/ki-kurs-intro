@@ -19,7 +19,7 @@ hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systeme
 
 .. list-table::
    :header-rows: 1
-   :widths: 14 35 18 12 32
+   :widths: 14 35 18 13 32
    :class: uio-table
 
    * - Tjeneste

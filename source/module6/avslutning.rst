@@ -2,8 +2,7 @@
 Avslutning
 ==========
 
-Gratulerer! Du har nå fullført kurset "Kunstig intelligens og administrative oppgaver på UiO".
-introduksjonskurset i KI for administrativt ansatte ved UiO.
+Gratulerer! Du har nå fullført kurset "Introduksjon til kunstig intelligens".
 
 Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:
 
