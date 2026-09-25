@@ -54,6 +54,7 @@ Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med M
 .. uio-colorbox-3:: Bruk Microsoft Copilot Chat hvis
 
    - du skal jobbe med grønne 🟢 data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie
+   - trenger websøk
    - du vil ha en KI-chat som er enkel å bruke og hjelper deg igang
    - du vil ha en KI-chat som kan lage og jobbe med flere typer filer
 
