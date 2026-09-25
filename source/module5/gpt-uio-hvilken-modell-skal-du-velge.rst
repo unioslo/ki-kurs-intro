@@ -5,7 +5,8 @@ I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken "hjern
 Modellene har forskjellig størrelse, funksjoner og bruksområder.
 
 En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller *lokalt*.
-Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
+Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU. 
+Velger du en lokal modell går ingen data ut av UiO/NTNU.
 
 De lokale språkmodellen er gode, men de er *mindre* enn de som kjører i skyen.
 Det betyr at dersom oppgaven du skal løse er veldig kompleks, så kan en sky-modell muligens gi deg et resultat av bedre kvalitet.
@@ -45,7 +46,7 @@ I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se 
 
       Det står også en liten beskrivelse på hva modellen egner seg til.
 
-      Og sist men ikke minst, om modellen er lokal (kjører hos UiO i Educloud eller hos NTNU), er den ikke det så kjører den i skyen.
+      Og sist men ikke minst, om modellen kjører lokalt (hos UiO i Educloud eller hos NTNU), gjør den ikke det så kjører den i skyen.
 
 
 
