@@ -69,7 +69,7 @@ Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:
 - lage quizzer
 - lage presentasjoner
 
- Husk at når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: last ikke opp dokumenter du ikke har rettigheter til å dele.
+Husk at når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: last ikke opp dokumenter du ikke har rettigheter til å dele.
 
 .. uio-colorbox-3:: Bruk Gemini Notebook hvis
 
