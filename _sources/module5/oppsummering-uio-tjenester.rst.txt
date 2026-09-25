@@ -19,40 +19,48 @@ hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systeme
 
 .. list-table::
    :header-rows: 1
-   :widths: 16 34 18 32
+   :widths: 14 35 18 12 32
    :class: uio-table
 
    * - Tjeneste
      - Bruksområde
-     - Beskyttelsesgrad
+     - Dataklasse
+     - Nettsøk
      - Skytjeneste eller UiO-tjeneste
    * - **GPT UiO**
-     - KI-chat til tekstarbeid. Du kan velge mellom flere språkmodeller og lage og dele egne KI-assistenter. Har ikke internett-tilgang, støtter endel, men ikke alle filtyper for opplasting.
+     - KI-chat til tekstarbeid. Du kan velge mellom flere språkmodeller og lage og dele egne KI-assistenter. Støtter et utvalg filtyper for opplasting. 
      - Opptil 🔴 rød, men bare med en modell som er godkjent for det
+     - ❌
      - UiO-tjeneste. Data lagres hos UiO. De største modellene kjører i skyen (OpenAI i Azure), de mindre lokalt hos UiO eller NTNU.
    * - **Autotekst**
      - Transkribering av lyd- og videoopptak, for eksempel møter, forelesninger og intervjuer.
      - Opptil 🔴 rød
+     - ❌
      - UiO-tjeneste. Kjører lokalt på UiOs IT-systemer.
    * - **TSD-Autotekst**
      - Transkribering av opptak som er strengt fortrolige, for eksempel helseintervjuer.
      - Opptil ⚫ svart
+     - ❌
      - UiO-tjeneste. Kjører i lokalt på UiOs IT-systemer i Tjenester for Sensitive Data (TSD).
    * - **Nettskjema-diktafon**
      - Mobilapp for opptak som sendes trygt og automatisk til transkribering i (TSD-)Autotekst.
      - Opptil 🔴 rød hvis opptaket er knyttet til nettskjema i Educloud. Opptil ⚫ svart, hvis opptaket er knyttet til et nettskjema i TSD
+     - ❌
      - UiO-tjeneste. Bruker UiOs Nettskjema og (TSD-)Autotekst i bakkant.
    * - **Gemini (Chat)**
      - Generell KI-chat med søk i åpne nettsider. Egnet til faktasøk (har internett-tilgang), bildegenerering og til å lage pdf, presentasjoner og regneark. Støtter opplasting og generering av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang.
      - Opptil 🟡 gul
+     - ✅
      - Skytjeneste fra Google. Kjører i Google Cloud, utenfor UiOs systemer. UiO har databehandleravtale.
    * - **Gemini Notebook**
      - KI-assistent for egne dokumenter og kilder. Gir kildetro svar og lager oppsummeringer, quizzer og podkaster. Støtter opplasting og generering av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang.
      - Opptil 🟡 gul
+     - ✅
      - Skytjeneste fra Google. Kjører i Google Cloud, utenfor UiOs systemer. UiO har databehandleravtale.
    * - **Microsoft Copilot Chat**
      - Enkel KI-chat med nettsøk. Egnet til faktasøk (har internett-tilgang). Arbeider med tekst, bilder og video, og har ferdige instruksjonsforslag som hjelper deg i gang. Støtter opplasting av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang.
      - Kun 🟢 grønn
+     - ✅
      - Skytjeneste fra Microsoft. Kjører utenfor UiOs systemer. UiO har databehandleravtale.
 
 .. uio-colorbox-3:: Husk
