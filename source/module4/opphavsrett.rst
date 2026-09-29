@@ -56,9 +56,6 @@ Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for
 Det må du respektere.
 Er du usikker, spør en bibliotekar ved Universitetsbiblioteket.
 
-Bruk av opphavsrettslig beskyttet materiale i KI-tjenester oppsummert
-----------------------------------------------------------------------------------
-Oppsummert har du rett til å laste opp andres materiale i en KI-tjeneste hvis du gjør det til privat bruk uten et kommersielt formål, du sørger for at KI-tjenesten ikke trener på materialet og rettighetshaveren ikke har forbudt å bruke materialet i en KI-tjeneste.
 
 .. uio-colorbox-3:: Oppsummering
 
