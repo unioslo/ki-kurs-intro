@@ -10,7 +10,7 @@ Det kreves ikke en høy grad av innsats for at originalitetskravet skal være op
 For eksempel vil ofte kortere tekster som er skrevet av andre være opphavsrettslig beskyttet.
 Vi kan også omtale materialet som rettighetsbeskyttet.
 
-Privat bruk av rettighetsbeskyttet materiale i KI-tjenester er tillatt
+Privat bruk av rettighetsbeskyttet materiale er tillatt
 ----------------------------------------------------------------------------------
 Når vi bruker opphavsrettslig beskyttet materiale i en KI-tjeneste, enten i en instruksjon eller laster det opp i tjenesten, fremstiller vi et eksemplar av det, dvs.
 vi lager en kopi.
