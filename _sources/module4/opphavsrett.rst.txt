@@ -38,22 +38,22 @@ For eksempel kan en Gemini Notebook eller en GPT UiO-assistent deles med andre b
 Slike delingsfunksjoner bør du ikke bruke med opphavsrettsbeskyttet materiale, men det kan være tillatt i det enkelte tilfelle.
 Hvis du ønsker å benytte en delingsfunksjon, vær gjerne varsom og henvend deg til Universitetsbiblioteket for veiledning i om og hvordan du kan gjøre det.
 
-Om lisenser og det å respektere lisensen
-----------------------------------------------------------------------------------
-Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt begrensninger.
-Enkelte utgivere av bøker og tidsskrifter, databaseleverandører osv.
-setter begrensninger for innlasting og annen type bruk i KI-tjenester av materialet de har publisert.
-Denne typen regler publiseres ofte i en lisens.
-En lisens er regler om bruk av materialet, fastsatt av rettighetshaveren.
+.. uio-info:: Om lisenser
 
-En lisens kan for eksempel komme frem av at materialet er merket med "CC", som stammer fra Creative Commons-systemet.
-Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
-`Oria <https://uio.oria.no/>`_
-ved å klikke på knappen for "Vis lisens".
-For andre kilder må du finne lisensinformasjon der materialet er publisert eller tilgjengelig.
-Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjeneste i form av å skrive at det er forbudt å laste den inn i en KI-tjeneste.
-Det må du respektere.
-Er du usikker, spør en bibliotekar ved Universitetsbiblioteket.
+    Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt begrensninger.
+    Enkelte utgivere av bøker og tidsskrifter, databaseleverandører osv.
+    setter begrensninger for innlasting og annen type bruk i KI-tjenester av materialet de har publisert.
+    Denne typen regler publiseres ofte i en lisens.
+    En lisens er regler om bruk av materialet, fastsatt av rettighetshaveren.
+    
+    En lisens kan for eksempel komme frem av at materialet er merket med "CC", som stammer fra Creative Commons-systemet.
+    Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
+    `Oria <https://uio.oria.no/>`_
+    ved å klikke på knappen for "Vis lisens".
+    For andre kilder må du finne lisensinformasjon der materialet er publisert eller tilgjengelig.
+    Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjeneste i form av å skrive at det er forbudt å laste den inn i en KI-tjeneste.
+    Det må du respektere.
+    Er du usikker, spør en bibliotekar ved Universitetsbiblioteket.
 
 
 .. uio-colorbox-3:: Oppsummering
