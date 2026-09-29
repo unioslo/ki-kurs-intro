@@ -34,8 +34,8 @@ Når du til bruk privat benytter opphavsrettslig beskyttet materiale i en KI-tje
 `en KI-tjeneste som er godkjent av UiO <https://www.uio.no/tjenester/it/ki/>`_. 
 Selv om du har lov til å laste opp rettighetsbeskyttet materiale i en KI-tjeneste, må du likevel være forsiktig dersom tjenesten deler samtaler eller andre typer av data med andre.
 For eksempel kan en Gemini Notebook eller en GPT UiO-assistent deles med andre brukere.
-Slike delingsfunksjoner bør du ikke bruke med opphavsrettsbeskyttet materiale, men det kan være tillatt i det enkelte tilfelle.
-Hvis du ønsker å benytte en delingsfunksjon, vær gjerne varsom og henvend deg til Universitetsbiblioteket for veiledning i om og hvordan du kan gjøre det.
+Slike delingsfunksjoner bør du ikke bruke med opphavsrettsbeskyttet materiale, men det kan være tillatt i enkelte tilfeller.
+Hvis du ønsker å benytte en delingsfunksjon, vær varsom og henvend deg til Universitetsbiblioteket for veiledning.
 
 .. uio-info:: Om lisenser
 
@@ -52,7 +52,7 @@ Hvis du ønsker å benytte en delingsfunksjon, vær gjerne varsom og henvend deg
     For andre kilder må du finne lisensinformasjon der materialet er publisert eller tilgjengelig.
     Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjeneste i form av å skrive at det er forbudt å laste den inn i en KI-tjeneste.
     Det må du respektere.
-    Er du usikker, spør en bibliotekar ved Universitetsbiblioteket.
+    Er du usikker, henvend deg til Universitetsbiblioteket.
 
 
 .. uio-colorbox-3:: Oppsummering
