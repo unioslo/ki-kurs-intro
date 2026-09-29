@@ -1,23 +1,70 @@
 Opphavsrett
 ============
+I tillegg til datasikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker en KI-tjeneste.
+Når vi jobber med materiale som noen andre har skapt, være seg på papir eller i en KI-tjeneste, må vi sørge for å respektere opphavsretten.
 
-I tillegg til datasikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker kunstig intelligens. 
+Mye av det vi leser og ellers ser er opphavsrettslig beskyttet.
+Det følger av åndsverkloven § 2 første ledd at den som skaper et åndsverk, har opphavsrett til verket.
+For at noe skal være et "åndsverk" må det være originalt, jf.
+åndsverkloven § 2 annet ledd.
+Det følger av rettspraksis at det ikke kreves en høy grad av innsats for at originalitetskravet skal være oppfylt.
+For eksempel vil ofte kortere tekster som er skrevet av andre være opphavsrettslig beskyttet.
+Vi kan også omtale materialet som rettighetsbeskyttet.
 
-Mange KI-tjenester lagrer all tekst de mottar enten det er som instruksjoner eller opplasting.
-Hvis materialet du vil laste opp i KI er opphavsrettslig beskyttet betyr det at det i utgangspunktet ikke er tillatt å kopiere inn dette materialet i KI-en.
-Det kan være unntak fra denne regelen hvis kopieringen skjer i privat bruk.
-Det vil si at hvis KI-en deler med andre, ved trening eller annen tilgjengeliggjøring, vil ikke kopieringen lenger karakteriseres som privat bruk, og ikke lenger være tillatt.
+Privat bruk av rettighetsbeskyttet materiale i KI-tjenester er tillatt
+----------------------------------------------------------------------------------
+Når vi bruker opphavsrettslig beskyttet materiale i en KI-tjeneste, enten i en instruksjon eller laster det opp i tjenesten, fremstiller vi et eksemplar av det, dvs.
+vi lager en kopi.
+I utgangspunktet er det bare rettighetshaveren som har rett til det.
+Med rettighetshaveren sikter vi til opphaveren selv eller den som har fått overdratt rettigheter til seg, for eksempel et forlag.
+Likevel, du kan også ha rett til å bruke opphavsrettslig beskyttet materiale i en KI-tjeneste.
+Forutsetningen er at du bruker materialet privat når du benytter det i en instruksjon eller laster det opp i KI-tjenesten.
+Formålet må verken direkte eller indirekte være kommersielt.
+Dette kaller vi for privatbruksregelen, og den står i åndsverkloven § 26 og opphavsrettsdirektivet artikkel 5 (2) b).
+Regelen omfatter også personlig yrkesmessig bruk.
+Du kan for eksempel laste opp en hel eller deler av en artikkel for å idémyldre knyttet til en problemstilling i sammenheng med skrivingen av en artikkel.
 
-Hvis materialet *tillater* KI-behandling, men *ikke tillater* at KI trenes på materialet, er du trygg hvis du bruker
-`KI-tjenester som er godkjent av UiO <https://www.uio.no/tjenester/it/ki/>`_. 
-Da vet du at tjenesten ikke misbruker dataene dine, mer om dette i Kapittel 5.
+KI-tjenesten må ikke trene på materialet
+----------------------------------------------------------------------------------
+Mange KI-tjenester lagrer all tekst og annet materiale tjenesten mottar, enten det er som instruksjoner eller opplasting.
+En viktig begrensning i din rett til å laste opp andres materiale i en KI-tjeneste til privat bruk, er at du må sørge for at KI-tjenesten ikke trener på materialet du laster inn.
+Du må med andre ord bruke en KI-tjeneste som automatisk, eller gjennom å endre innstillingene, ikke bruker materialet du laster inn til å trene modellene sine.
 
-Selv om du har lov til å laste opp opphavsrettsbeskyttet materiale i en KI-tjeneste, må du allikevel være forsiktig dersom tjenesten kan dele samtaler eller data med andre. For eksempel kan en Gemini Notebook eller en GPT UiO assistent deles med andre brukere. Slike delingsfunksjoner bør du ikke bruke med opphavsrettsbeskyttet materiale.
+Alle KI-tjenestene som er godkjent av UiO trener ikke på materialet du eller andre brukere laster inn.
+En KI-tjeneste som ikke trener på materialet du laster inn, er eksempelvis GPT UiO.
+Når du til bruk privat benytter opphavsrettslig beskyttet materiale i en KI-tjeneste, i en instruks eller i en opplasting, er du med andre ord på tryggest grunn hvis du velger å bruke
+`en KI-tjeneste som er godkjent av UiO <https://www.uio.no/tjenester/it/ki/>`_. 
+Selv om du har lov til å laste opp rettighetsbeskyttet materiale i en KI-tjeneste, må du likevel være forsiktig dersom tjenesten deler samtaler eller andre typer av data med andre.
+For eksempel kan en Gemini Notebook eller en GPT UiO-assistent deles med andre brukere.
+Slike delingsfunksjoner bør du ikke bruke med opphavsrettsbeskyttet materiale, men det kan være tillatt i det enkelte tilfelle.
+Hvis du ønsker å benytte en delingsfunksjon, vær gjerne varsom og henvend deg til Universitetsbiblioteket for veiledning i om og hvordan du kan gjøre det.
 
+Om lisenser og det å respektere lisensen
+----------------------------------------------------------------------------------
+Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt begrensninger.
+Enkelte utgivere av bøker og tidsskrifter, databaseleverandører osv.
+setter begrensninger for innlasting og annen type bruk i KI-tjenester av materialet de har publisert.
+Denne typen regler publiseres ofte i en lisens.
+En lisens er regler om bruk av materialet, fastsatt av rettighetshaveren.
 
-Hvor finner jeg informasjon om lisens?
------------------------------------------
-Opphavsrett og KI kan være et vanskelig tema å navigere i.
-Bruker du materiale fra biblioteket kan du for noen ressurser finne lisensen i `Oria <https://uio.oria.no/>`_ ved å klikke på knappen "Vis lisens". 
+En lisens kan for eksempel komme frem av at materialet er merket med "CC", som stammer fra Creative Commons-systemet.
+Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
+`Oria <https://uio.oria.no/>`_
+ved å klikke på knappen for "Vis lisens".
+For andre kilder må du finne lisensinformasjon der materialet er publisert eller tilgjengelig.
+Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjeneste i form av å skrive at det er forbudt å laste den inn i en KI-tjeneste.
+Det må du respektere.
+Er du usikker, spør en bibliotekar ved Universitetsbiblioteket.
 
-For andre kilder må du finne lisensinformasjon der materialet er publisert eller tilgjengelig. Er du usikker, spør en bibliotekar!
+Bruk av opphavsrettslig beskyttet materiale i KI-tjenester oppsummert
+----------------------------------------------------------------------------------
+Oppsummert har du rett til å laste opp andres materiale i en KI-tjeneste hvis du gjør det til privat bruk uten et kommersielt formål, du sørger for at KI-tjenesten ikke trener på materialet og rettighetshaveren ikke har forbudt å bruke materialet i en KI-tjeneste.
+
+.. uio-colorbox-3:: Oppsummering
+
+    Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant
+
+    1.	du gjør det til privat bruk,
+    2.	ser til at KI-tjenesten ikke trener på materialet
+    3.	og respekterer eventuelle begrensninger som rettighetshaver, slik som et forlag, har satt.
+
