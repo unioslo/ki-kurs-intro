@@ -3,6 +3,14 @@ Opphavsrett
 I tillegg til datasikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker en KI-tjeneste.
 Når vi jobber med materiale som noen andre har skapt, være seg på papir eller i en KI-tjeneste, må vi respektere opphavsretten.
 
+.. uio-colorbox-3:: Oppsummering
+
+    Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant 
+
+    1.	du gjør det til privat bruk, 
+    2.	ser til at KI-tjenesten ikke trener på materialet og
+    3.	respekterer eventuelle begrensninger som rettighetshaveren, slik som et forlag, har satt.
+
 Mye av det vi leser og ellers ser er opphavsrettslig beskyttet.
 Etter åndsverkloven har den som skaper et åndsverk, opphavsrett til verket.
 For at noe skal være et "åndsverk" må det være originalt.
@@ -51,10 +59,3 @@ Hvis du ønsker å benytte en delingsfunksjon, vær varsom og henvend deg til Un
     Er du usikker, henvend deg til Universitetsbiblioteket.
 
  
-.. uio-colorbox-3:: Oppsummering
-
-    Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant 
-
-    1.	du gjør det til privat bruk, 
-    2.	ser til at KI-tjenesten ikke trener på materialet og
-    3.	respekterer eventuelle begrensninger som rettighetshaveren, slik som et forlag, har satt.
