@@ -45,17 +45,19 @@ Hvis du ønsker å benytte en delingsfunksjon, vær varsom og henvend deg til Un
 
 .. uio-info:: Om lisenser
 
-    Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt relevante begrensninger.
-    Enkelte utgivere av bøker og tidsskrifter, databaseleverandører, osv., setter begrensninger for innlasting og annen type bruk i KI-tjenester av materialet de har publisert.
-    Denne typen regler publiseres ofte i en lisens.
-    
-    En lisens kan for eksempel fremgå av at materialet er merket med "CC", som stammer fra Creative Commons-systemet.
-    Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
-    `Oria <https://uio.oria.no/>`_
-    ved å klikke på knappen for "Vis lisens".
-    For andre kilder må du finne lisensinformasjonen der materialet er publisert eller tilgjengelig.
-    Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjenester i form av å skrive at det er forbudt å laste den opp i en KI-tjeneste.
-    Det må du respektere.
-    Er du usikker, henvend deg til Universitetsbiblioteket.
+    .. uio-detail:: Klikk for å utvide
+
+        Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt relevante begrensninger.
+        Enkelte utgivere av bøker og tidsskrifter, databaseleverandører, osv., setter begrensninger for innlasting og annen type bruk i KI-tjenester av materialet de har publisert.
+        Denne typen regler publiseres ofte i en lisens.
+        
+        En lisens kan for eksempel fremgå av at materialet er merket med "CC", som stammer fra Creative Commons-systemet.
+        Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
+        `Oria <https://uio.oria.no/>`_
+        ved å klikke på knappen for "Vis lisens".
+        For andre kilder må du finne lisensinformasjonen der materialet er publisert eller tilgjengelig.
+        Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjenester i form av å skrive at det er forbudt å laste den opp i en KI-tjeneste.
+        Det må du respektere.
+        Er du usikker, henvend deg til Universitetsbiblioteket.
 
  
