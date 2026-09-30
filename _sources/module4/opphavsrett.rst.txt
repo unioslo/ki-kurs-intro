@@ -5,9 +5,9 @@ Når vi jobber med materiale som noen andre har skapt, være seg på papir eller
 
 .. uio-colorbox-3:: Oppsummering
 
-    Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant 
+    Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant du
 
-    1.	du gjør det til privat bruk, 
+    1.	gjør det til privat bruk, 
     2.	ser til at KI-tjenesten ikke trener på materialet og
     3.	respekterer eventuelle begrensninger som rettighetshaveren, slik som et forlag, har satt.
 
