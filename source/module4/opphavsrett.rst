@@ -3,7 +3,7 @@ Opphavsrett
 I tillegg til datasikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker en KI-tjeneste.
 Når vi jobber med materiale som noen andre har skapt, være seg på papir eller i en KI-tjeneste, må vi respektere opphavsretten.
 
-.. uio-colorbox-3:: Oppsummering
+.. uio-colorbox-3:: Huskeregler
 
     Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant du
 
