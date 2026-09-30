@@ -14,8 +14,7 @@ Privat bruk av opphavsrettslig beskyttet materiale er tillatt
 ----------------------------------------------------------------------------------
 Når vi bruker opphavsrettslig beskyttet materiale i en KI-tjeneste, enten i en instruksjon eller laster det opp i tjenesten, lager vi en kopi av det.
 I utgangspunktet er det bare rettighetshaveren som har rett til å lage en kopi.
-Med rettighetshaveren sikter vi til opphaveren selv eller den som har fått overdratt rettigheter til seg, for eksempel et forlag.
-Likevel, du kan også ha rett til å bruke opphavsrettslig beskyttet materiale i en KI-tjeneste.
+Du kan likevel ha rett til å bruke opphavsrettslig beskyttet materiale i en KI-tjeneste.
 Forutsetningen er at du bruker materialet *privat* når du benytter det i en instruksjon eller laster det opp i KI-tjenesten.
 Formålet må verken direkte eller indirekte være kommersielt.
 Dette kaller vi for privatbruksregelen.
