@@ -33,6 +33,7 @@ Du må sørge for at KI-tjenesten ikke trener på materialet du gir tjenesten.
 Ingen av KI-tjenestene som er godkjent av UiO trener på materialet du eller andre brukere gir tjenesten.
 Når du til bruk privat benytter opphavsrettslig beskyttet materiale i en KI-tjeneste, i en instruks eller i en opplasting, er du på tryggest grunn hvis du bruker en
 `KI-tjeneste som er godkjent av UiO <https://www.uio.no/tjenester/it/ki/>`_.
+
 Selv om du har lov til å bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, må du være forsiktig med å dele samtaler eller andre typer av data med andre.
 For eksempel kan en Gemini Notebook eller en GPT UiO-assistent deles med andre brukere.
 Slike delingsfunksjoner bør du ikke bruke med opphavsrettslig beskyttet materiale, men det kan være tillatt i enkelte tilfeller.
