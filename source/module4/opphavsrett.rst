@@ -41,7 +41,6 @@ Hvis du ønsker å benytte en delingsfunksjon, vær varsom og henvend deg til Un
     Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt relevante begrensninger.
     Enkelte utgivere av bøker og tidsskrifter, databaseleverandører, osv., setter begrensninger for innlasting og annen type bruk i KI-tjenester av materialet de har publisert.
     Denne typen regler publiseres ofte i en lisens.
-    En lisens er regler om bruk av materialet, fastsatt av rettighetshaveren.
     
     En lisens kan for eksempel fremgå av at materialet er merket med "CC", som stammer fra Creative Commons-systemet.
     Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
