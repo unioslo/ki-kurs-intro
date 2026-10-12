@@ -7,7 +7,7 @@ En KI-assistent er lagrede instruksjoner som du kan bruke flere ganger.
 Disse instruksjonene kan være enkle eller komplekse. 
 
 Du kan for eksempel gi instruks om at en tekst skal "oversettes til norsk med et formelt fagspråk og at forkortelser og titler på tidsskrifter ikke skal oversettes.". 
-Dette er en enkel KI-assistent som kan spare deg tid hvis du ofte skal be KIen om å oversette slik.
+Dette er en enkel KI-assistent som kan spare deg tid hvis du ofte skal be KI-en om å oversette slik.
  
 En kompleks assistent inneholder mange instruksjoner, for eksempel detaljerte instruksjoner for hvilken rolle assistenten skal ha, utførlig hvordan den skal svare, og kanskje også i hvilket format du vil ha svaret. 
 Et eksempel er å lage en KI-assistent som opptrer som en erfaren studieadministrativ rådgiver ved UiO: 
