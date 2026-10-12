@@ -12,7 +12,22 @@ BUILDDIR      = _build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile deploy-from-local deploy-from-local-dry-run deploy-from-github deploy-from-github-dry-run exercises-pdf
+.PHONY: help Makefile deploy-from-local deploy-from-local-dry-run deploy-from-github deploy-from-github-dry-run exercises-pdf html-en gettext-update
+
+# -- Translation (English) ---------------------------------------------------
+# Norwegian is the source language; English lives in source/locale/en/*.po.
+
+# Build the English site into _build/html/en (uses the gettext catalogs).
+html-en:
+	@$(SPHINXBUILD) -b html -D language=en "$(SOURCEDIR)" "$(BUILDDIR)/html/en" $(SPHINXOPTS) $(O)
+	@echo "English HTML is in $(BUILDDIR)/html/en"
+
+# Re-extract strings from the Norwegian source and refresh the English catalogs.
+# Changed Norwegian paragraphs show up as fuzzy/untranslated in source/locale/en.
+gettext-update:
+	@$(SPHINXBUILD) -b gettext "$(SOURCEDIR)" "$(BUILDDIR)/gettext" $(SPHINXOPTS) $(O)
+	@sphinx-intl update -p "$(BUILDDIR)/gettext" -l en
+	@echo "Catalogs refreshed. Review fuzzy/untranslated entries in source/locale/en, then: make html-en"
 
 # Deploy to Canvas from local HTML files
 deploy-from-local:

@@ -11,6 +11,46 @@ from docutils.parsers.rst import directives
 from sphinx.util.docutils import SphinxDirective
 
 
+# -- Translatable directive titles -------------------------------------------
+# The uio-* directives take their heading/summary text as a directive argument
+# and render it straight to HTML in the visitor. A plain node attribute is NOT
+# seen by Sphinx's gettext i18n, so such titles could never be translated.
+#
+# To make them translatable we also add the title to the doctree as a real
+# paragraph node (which gettext extracts and the i18n transform translates).
+# The visitor then reads the (translated) text back out via ``_resolve_title``
+# and removes the helper node so it is not rendered twice. The original
+# attribute is kept as a fallback, so Norwegian output is unchanged.
+_TITLE_FLAG = 'uio_title'
+
+
+def _attach_title(directive, node, title, attr='title'):
+    """Store ``title`` on ``node[attr]`` and, when non-empty, also add it to the
+    doctree as a translatable paragraph so gettext can extract/translate it.
+
+    Sphinx's i18n machinery (``is_translatable``) ignores any node without
+    source info, so the title node is stamped with the directive's source/line.
+    """
+    node[attr] = title
+    if title:
+        tnode = nodes.paragraph('', '', nodes.Text(title))
+        tnode[_TITLE_FLAG] = True
+        tnode.source, tnode.line = directive.get_source_info()
+        node.insert(0, tnode)
+
+
+def _resolve_title(node, default=None, attr='title'):
+    """Return the (possibly translated) title text and remove the helper title
+    node so it is not rendered as body content. Falls back to ``node[attr]``."""
+    if node.children:
+        first = node.children[0]
+        if isinstance(first, nodes.Element) and first.get(_TITLE_FLAG):
+            text = first.astext()
+            node.remove(first)
+            return text
+    return node.get(attr, default)
+
+
 # Canvas instance and course used to build chapter-card icon URLs at build time.
 # Keep in sync with update_canvas_pages.py (CANVAS_URL / COURSE_ID).
 CANVAS_URL = "https://uio.instructure.com"
@@ -156,11 +196,8 @@ class UioTaskDirective(SphinxDirective):
 
     def run(self):
         node = uio_task()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Oppgave'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Oppgave')
         return [node]
 
 
@@ -185,11 +222,8 @@ class UioReflectDirective(SphinxDirective):
 
     def run(self):
         node = uio_reflect()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Refleksjon'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Refleksjon')
         return [node]
 
 
@@ -202,11 +236,8 @@ class UioAnswerDirective(SphinxDirective):
 
     def run(self):
         node = uio_answer()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Svar'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Svar')
         return [node]
 
 
@@ -227,11 +258,8 @@ class UioDontDirective(SphinxDirective):
 
     def run(self):
         node = uio_dont()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'OBS!'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'OBS!')
         return [node]
 
 
@@ -252,11 +280,8 @@ class UioDoDirective(SphinxDirective):
 
     def run(self):
         node = uio_do()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Tips'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Tips')
         return [node]
 
 
@@ -277,11 +302,8 @@ class UioInfoDirective(SphinxDirective):
 
     def run(self):
         node = uio_info()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Info'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Info')
         return [node]
 
 class UioViktigDirective(SphinxDirective):
@@ -301,11 +323,8 @@ class UioViktigDirective(SphinxDirective):
 
     def run(self):
         node = uio_viktig()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Viktig'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Viktig')
         return [node]
 
 
@@ -326,11 +345,8 @@ class UioSourceDirective(SphinxDirective):
 
     def run(self):
         node = uio_source()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Kilder / Ressurser'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Kilder / Ressurser')
         return [node]
 
 
@@ -355,11 +371,8 @@ class UioColorbox1Directive(SphinxDirective):
 
     def run(self):
         node = uio_colorbox_1()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = None
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else None)
         return [node]
 
 
@@ -384,11 +397,8 @@ class UioColorbox2Directive(SphinxDirective):
 
     def run(self):
         node = uio_colorbox_2()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = None
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else None)
         return [node]
 
 
@@ -413,11 +423,8 @@ class UioColorbox3Directive(SphinxDirective):
 
     def run(self):
         node = uio_colorbox_3()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = None
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else None)
         return [node]
 
 
@@ -518,10 +525,10 @@ class UioCustomBoxDirective(SphinxDirective):
 
     def run(self):
         node = uio_custom_box()
-        node['title'] = ' '.join(self.arguments) if self.arguments else None
         node['color'] = self.options.get('color', DEFAULT_CUSTOM_BOX_COLOR)
         node['background'] = self.options.get('background')
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else None)
         return [node]
 
 
@@ -543,11 +550,9 @@ class UioDetailDirective(SphinxDirective):
     def run(self):
         node = uio_detail()
         # Get summary text from directive arguments
-        if self.arguments:
-            node['summary'] = ' '.join(self.arguments)
-        else:
-            node['summary'] = 'Detaljer'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Detaljer',
+                      attr='summary')
         return [node]
 
 
@@ -742,7 +747,7 @@ class UioGridItemDirective(SphinxDirective):
 
 def html_visit_uio_task(self, node):
     """Generate UiO task HTML."""
-    title = node.get('title', 'Oppgave')
+    title = _resolve_title(node, 'Oppgave')
 
     self.body.append('<div class="uio-icon-box task">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
@@ -756,7 +761,7 @@ def html_depart_uio_task(self, node):
 def html_visit_uio_reflect(self, node):
     """Generate UiO reflection HTML."""
     has_answer = any(isinstance(child, uio_answer) for child in node.children)
-    title = node.get('title', 'Refleksjon')
+    title = _resolve_title(node, 'Refleksjon')
 
     self.body.append('<div class="uio-icon-box reflect">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
@@ -772,7 +777,7 @@ def html_depart_uio_reflect(self, node):
 
 def html_visit_uio_answer(self, node):
     """Generate collapsible answer HTML (accordion inside question)."""
-    title = node.get('title', 'Svar')
+    title = _resolve_title(node, 'Svar')
     self.body.append('<details>\n')
     self.body.append(f'<summary class="uio-answer-summary"><strong>{self.encode(title)}</strong></summary>\n')
 
@@ -784,7 +789,7 @@ def html_depart_uio_answer(self, node):
 
 def html_visit_uio_dont(self, node):
     """Generate UiO don't/warning HTML."""
-    title = node.get('title', 'OBS!')
+    title = _resolve_title(node, 'OBS!')
 
     # Check if this is inside a do-dont grid container
     in_grid = isinstance(node.parent, uio_do_dont_container)
@@ -801,7 +806,7 @@ def html_depart_uio_dont(self, node):
 
 def html_visit_uio_do(self, node):
     """Generate UiO do/tip HTML."""
-    title = node.get('title', 'Tips')
+    title = _resolve_title(node, 'Tips')
 
     # Check if this is inside a do-dont grid container
     in_grid = isinstance(node.parent, uio_do_dont_container)
@@ -818,7 +823,7 @@ def html_depart_uio_do(self, node):
 
 def html_visit_uio_info(self, node):
     """Generate UiO info HTML."""
-    title = node.get('title', 'Info')
+    title = _resolve_title(node, 'Info')
 
     self.body.append('<div class="uio-icon-box info">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
@@ -833,7 +838,7 @@ def html_depart_uio_info(self, node):
 
 def html_visit_uio_viktig(self, node):
     """Generate UiO viktig (important) HTML."""
-    title = node.get('title', 'Viktig')
+    title = _resolve_title(node, 'Viktig')
     self.body.append('<div class="uio-icon-box viktig">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
 
@@ -845,7 +850,7 @@ def html_depart_uio_viktig(self, node):
 
 def html_visit_uio_source(self, node):
     """Generate UiO source/resources HTML."""
-    title = node.get('title', 'Kilder / Ressurser')
+    title = _resolve_title(node, 'Kilder / Ressurser')
 
     self.body.append('<div class="uio-icon-box source">\n')
     self.body.append(f'<h3>{self.encode(title)}</h3>\n')
@@ -858,7 +863,7 @@ def html_depart_uio_source(self, node):
 
 def html_visit_uio_colorbox_1(self, node):
     """Generate UiO color box 1 HTML."""
-    title = node.get('title')
+    title = _resolve_title(node)
 
     self.body.append('<div class="uio-color-box-1">\n')
     if title:
@@ -872,7 +877,7 @@ def html_depart_uio_colorbox_1(self, node):
 
 def html_visit_uio_colorbox_2(self, node):
     """Generate UiO color box 2 HTML."""
-    title = node.get('title')
+    title = _resolve_title(node)
 
     self.body.append('<div class="uio-color-box-2">\n')
     if title:
@@ -886,7 +891,7 @@ def html_depart_uio_colorbox_2(self, node):
 
 def html_visit_uio_colorbox_3(self, node):
     """Generate UiO color box 3 HTML."""
-    title = node.get('title')
+    title = _resolve_title(node)
 
     self.body.append('<div class="uio-color-box-3">\n')
     if title:
@@ -916,7 +921,7 @@ def html_visit_uio_custom_box(self, node):
     """
     color = node.get('color') or DEFAULT_CUSTOM_BOX_COLOR
     background = node.get('background')
-    title = node.get('title')
+    title = _resolve_title(node)
 
     style = f'border-top: {CUSTOM_BOX_BORDER_TOP}px solid {color}; border-bottom: {CUSTOM_BOX_BORDER_BOTTOM}px solid {color};'
     if background:
@@ -934,7 +939,7 @@ def html_depart_uio_custom_box(self, node):
 
 def html_visit_uio_detail(self, node):
     """Generate details/accordion HTML."""
-    summary = node.get('summary', 'Details')
+    summary = _resolve_title(node, 'Details', attr='summary')
     self.body.append('<details>\n')
     self.body.append(f'<summary><strong>{self.encode(summary)}</strong></summary>\n')
 
@@ -1224,11 +1229,8 @@ class UioModuleListingDirective(SphinxDirective):
 
     def run(self):
         node = uio_module_listing()
-        if self.arguments:
-            node['title'] = ' '.join(self.arguments)
-        else:
-            node['title'] = 'Emnemoduler:'
         self.state.nested_parse(self.content, self.content_offset, node)
+        _attach_title(self, node, ' '.join(self.arguments) if self.arguments else 'Emnemoduler:')
         return [node]
 
 
@@ -1239,7 +1241,7 @@ def html_visit_uio_module_listing(self, node):
     the chapter-card visitor), so this container only emits the colored box and
     heading -- no extra float wrapper.
     """
-    title = node.get('title', 'Emnemoduler:')
+    title = _resolve_title(node, 'Emnemoduler:')
     self.body.append('<div class="uio-color-box-3 uio-module-listing">\n')
     if title:
         self.body.append(f'<h2>{self.encode(title)}</h2>\n')

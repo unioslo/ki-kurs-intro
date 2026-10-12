@@ -46,6 +46,21 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The master toctree document.
 master_doc = 'index'
 
+# -- Internationalization (i18n) ---------------------------------------------
+# Norwegian (Bokmål) is the source language. Translations live as gettext
+# catalogs under source/locale/<lang>/LC_MESSAGES/*.po.
+#   Build Norwegian (default):  make html
+#   Extract strings:            make gettext
+#   Update English catalogs:    sphinx-intl update -p _build/gettext -l en
+#   Build English:              sphinx-build -b html -D language=en source _build/html/en
+language = 'nb'
+locale_dirs = ['locale/']
+# One .po file per source document (mirrors the source tree) instead of one
+# big messages.po — easier to review and keeps per-file translations aligned.
+gettext_compact = False
+# Also extract text from `raw:: html` blocks so they can be translated.
+gettext_additional_targets = ['raw']
+
 # Add UiO heading stripe to all pages
 #rst_prolog = """
 #.. raw:: html
