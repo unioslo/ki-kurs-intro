@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language models make things up &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css?v=6adc4b43" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css?v=b7ab7f4c" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css?v=ff805dfb" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7eb9d88d" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Language models’ memory" href="sprakmodeller-har-ikke-hukommelse.html" />
+    <link rel="prev" title="Language models do not have factual knowledge" href="sprakmodeller-har-ikke-faktakunnskap.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sprakmodeller-finner-pa-ting">
+<h1>Language models make things up</h1>
+<p>Because large language models cannot distinguish between true and false, they can make up things that are not correct. If you have heard someone say that AI and language models <em>hallucinate</em>, this is what they mean.</p>
+<p>Language models can make things up or mix things together in different ways. Here are some examples:</p>
+<ul class="simple">
+<li><em>Incorrect facts</em>: The model gives wrong dates, numbers or names.</li>
+<li><em>Fabricated references</em>: The model invents titles of articles or books that do not exist.</li>
+<li><em>Confusion</em>: The model mixes up different people.</li>
+</ul>
+<p>It is a major problem that language models often make things up with great <em>confidence</em>. They do not say: “I am not sure, but …”. Instead they present misinformation with the same “conviction” as correct information. Therefore you <em>cannot</em> trust that an answer is correct just because it comes across as “self-assured”. You must always check facts against a reliable source.</p>
+<section id="hvorfor-skjer-det">
+<h2>Why does it happen?</h2>
+<p>There are many reasons why the models make things up. Here are some of them:</p>
+<ul class="simple">
+<li>The models “want” to give an answer; they are bad at saying “I don’t know”.</li>
+<li>The models do not have <em>certain</em> factual knowledge, only probabilities.</li>
+<li>Overgeneralisation: the models combine patterns from different sources.</li>
+<li>Outdated training data: the models do not know what has happened after they were trained.</li>
+</ul>
+<div class="uio-icon-box viktig">
+<h3>Important to understand</h3>
+<p>The fact that language models make things up is not an error that can be fixed completely. It is an inherent property of how language models work.</p>
+</div>
+</section>
+<section id="hva-med-internett-sok">
+<h2>What about internet search?</h2>
+<p>Many large language models can now search the internet to obtain up-to-date information. But that does not guarantee that the answer is correct. This is because the language model still has to <em>interpret</em> and <em>summarise</em> the information it finds. It does this in the same way as always, by generating text based on patterns. The model can therefore still make things up, even when it has access to correct information from the web.</p>
+</section>
+<section id="eksempel-fra-virkeligheten">
+<h2>A real-world example</h2>
+<p>When the Norwegian Police University College was to decide how much time lecturers should be given to prepare for teaching, misinformation was used as the basis for the decision [<a class="reference internal" href="../module6/kilder.html#svarstad"><span class="std std-ref">Svarstad</span></a>]. During the preparations for the review, Copilot was used to gather information about preparation time at other universities and colleges. The problem was that Copilot did not find such information online, and therefore simply made up an answer.</p>
+<div class="uio-icon-box reflect">
+<h3>Reflection</h3>
+<p>What could the Norwegian Police University College have done to avoid the error that occurred in the case above?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Click for a possible answer</strong></summary>
+<p>The most important thing to remember is to always check factual information against a reliable source. If it is not possible to find the source, the information is probably wrong.</p>
+</details>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-har-ikke-faktakunnskap.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-har-ikke-hukommelse.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-har-ikke-faktakunnskap.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-har-ikke-hukommelse.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-har-ikke-faktakunnskap.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-har-ikke-hukommelse.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-har-ikke-faktakunnskap.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-har-ikke-hukommelse.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-har-ikke-faktakunnskap.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-har-ikke-hukommelse.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-har-ikke-faktakunnskap.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-har-ikke-hukommelse.html">Neste →</a></div></div>
+</section>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language models’ memory &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css?v=6adc4b43" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css?v=b7ab7f4c" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css?v=ff805dfb" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7eb9d88d" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The models’ biases" href="skjevheter.html" />
+    <link rel="prev" title="Language models make things up" href="sprakmodeller-finner-pa-ting.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sprakmodellers-hukommelse">
+<h1>Language models’ memory</h1>
+<p>When you use a language model, you interact with it through a chat system. The language model itself does not remember earlier messages in the conversation or earlier conversations you have had with it. That is what the chat system does. The chat system shows you the conversation you are having and passes it on to the language model. What you should note here is that every time you write a new prompt or a new question in the chat, the chat system sends the <em>entire</em> conversation to the language model again. This is because the language model itself cannot remember what you have asked about.</p>
+<p>So it is the chat system that “remembers” what you have written and builds up the context, while the language model only looks at the text it is given at that moment and calculates probable next words. This is important to be aware of because the length of the context affects how much of the conversation the model actually “sees”.</p>
+<div class="uio-color-box-3">
+<h3>Bonus content</h3>
+<details>
+<summary><strong>Is it the whole conversation that is sent to the language model?</strong></summary>
+<p>When we say that the chat system sends the <em>entire conversation</em> to the language model, this is a simplification: In practice, chat systems have different ways of reducing the information they send to the language model.</p>
+<p>Even so: it is never only the last message of a conversation thread that is sent to the language model. Depending on the language model’s capacity and the chat system’s automatic filtering, all or part of the preceding messages in the conversation thread are sent together with your last message.</p>
+</details>
+</div>
+<section id="ha-korte-samtaler">
+<h2>Keep conversations short</h2>
+<p>Long conversations can “confuse” the model, so that it gives poorer answers. One reason for this can be that the entire context does not fit. In long conversations there is also a greater chance that the text contains contradictions or other things that make the message unclear. Philippe Laban et al. found that language models answer best when they are given all the information in a single prompt. [<a class="reference internal" href="../module6/kilder.html#laban"><span class="std std-ref">Laban</span></a>] An important reason for this was that wrong answers from the model remained in the conversation.</p>
+<p>It is especially important to start a new conversation when you change topic. Imagine that you have asked an AI questions about UiO’s financial regulations. If you then ask a question about how to format figures in Word, the model will answer the question in light of UiO’s financial regulations. That does not make sense, and you will get better answers if you start a new conversation.</p>
+<p>In addition, language models are bad at distinguishing between text the user has written and text they have generated themselves. Therefore you should make sure that wrong answers do not remain in the conversation.</p>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="sprakmodeller-finner-pa-ting.html">← Forrige</a></div><div class="next-link"><a href="skjevheter.html">Neste →</a></div></div>
+</section>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

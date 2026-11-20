@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language models do not have factual knowledge &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css?v=6adc4b43" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css?v=b7ab7f4c" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css?v=ff805dfb" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7eb9d88d" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Language models make things up" href="sprakmodeller-finner-pa-ting.html" />
+    <link rel="prev" title="How do large language models work?" href="hvordan-fungerer-store-sprakmodeller.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sprakmodeller-har-ikke-faktakunnskap">
+<h1>Language models do not have factual knowledge</h1>
+<p>Large language models generate text that is credible and that resembles the texts they are trained on. Nevertheless, they have no relationship to truth [<a class="reference internal" href="../module6/kilder.html#hicks"><span class="std std-ref">Hicks</span></a>] and therefore have no reliable knowledge of what is true. In other words, this means that what language models deliver to you is not necessarily true. You must always check this yourself!</p>
+<p>Sometimes it matters little which next word the language model chooses. Other times the choice is absolutely decisive for whether the answer is right or wrong.</p>
+<p>Imagine that the model is to complete the sentence: “The colour of the house is …” Possible continuations could be “red”, “blue” or “grey”. In a sentence like this, it is not obvious which word is “right” or “best”, because several options fit. Nor does it matter very much which one is chosen.</p>
+<p>But if you ask the model: “What is the capital of Norway?” Then you expect a correct answer. Here it matters which word the model suggests.</p>
+<p>In both cases the model chooses the most likely word based on patterns in text it has learned from, and not <em>certain</em> factual knowledge. If you expect a knowledge-based or factual answer, there is therefore a risk of error. This applies especially if the training basis is incomplete or biased.</p>
+<div class="uio-color-box-3">
+<h3>Manipulation (language model poisoning)</h3>
+<p>The fact that language models have no reliable knowledge of what is true makes them vulnerable to deliberate manipulation of training data. This type of manipulation is often called “language model poisoning”. Actors can publish misleading information so that the models will be trained on it. As a result, the models can give answers that are manipulated and do not match reality.</p>
+<p>One example is when the BBC journalist Thomas Germain manipulated, among others, ChatGPT and Gemini into answering that he had been crowned a sausage-eating champion. [<a class="reference internal" href="../module6/kilder.html#germain"><span class="std std-ref">Germain</span></a>] This is a fairly harmless type of manipulation, but it nonetheless highlights the models’ weakness.</p>
+<p>A more serious example is an experiment by the Swedish researcher Almira Osmanovic Thunström. She investigated whether AI services would spread medical claims from obviously fabricated articles. She therefore published two fabricated articles about a fictitious diagnosis in the preprints.org archive. After a short time, AI services began to refer to the fictitious diagnosis. [<a class="reference internal" href="../module6/kilder.html#stokel-walker"><span class="std std-ref">Stokel-Walker</span></a>]</p>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Why can the answers from a language model contain errors even though the answer sounds credible?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Click me for a possible answer</strong></summary>
+<p>Because the language model generates text based on statistical patterns it has learned, not based on fact-checking. It has learned what credible answers “look like”, but does not know the difference between true and false. It can therefore produce texts with factual errors just as readily as it gives answers with correct content. That is why you should not use AI to produce a result you do not have the knowledge to verify.</p>
+</details>
+</div>
+      </div>
+    <div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-fungerer-store-sprakmodeller.html">← Forrige</a></div><div class="next-link"><a href="sprakmodeller-finner-pa-ting.html">Neste →</a></div></div>
+</section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
