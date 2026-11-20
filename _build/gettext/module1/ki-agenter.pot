@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module1/ki-agenter.rst:2
+msgid "KI-agenter"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:4
+msgid "KI-agent kan lett forveksles med KI-assistent, men en KI-agent er et mye kraftigere verktøy enn en KI-assistent. En KI-agent forteller deg ikke bare hvordan du kan løse en oppgave, den utfører også oppgaven for deg. For eksempel: I stedet for å skrive inn en oppgave i et chat-vindu, kopiere ut svaret, og lime det inn i ønsket dokument, kan agenten endre teksten direkte i dokumentet for deg. En KI-agent er dermed en avansert KI-assistent som kan *utføre handlinger* i IT-systemer, og på den måten være et veldig effektivt verktøy."
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:9
+msgid "Eksempler"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:11
+msgid "KI-agenter er gjerne laget for et eller flere spesifikke formål og kan for eksempel:"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:13
+msgid "hente informasjon fra andre systemer, f.eks internett eller en database"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:14
+msgid "opprette og skrive innhold i en epost"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:15
+msgid "slå sammen to regneark for deg"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:19
+msgid "Kraftig verktøy som krever kompetanse"
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:21
+msgid "Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse og forsiktighet ved bruk enn en vanlig KI-chat."
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:23
+msgid "Ved UiO tilbys foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp fordi de er mer krevende å bruke, og feil bruk kan få alvorlige konsekvenser."
+msgstr ""
+
+#: ../../source/module1/ki-agenter.rst:25
+msgid "På UiO er allikevel KI-agenter til en viss grad allerede i bruk. En type som brukes er såkalte kode-agenter. De brukes av IT-ansatte og andre som driver med koding. Men de kan brukes til mye mer enn dette. De kan for eksempel lese filer i en utpekt mappe og utføre handlinger direkte på disse. Framover vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy vi bruker."
+msgstr ""

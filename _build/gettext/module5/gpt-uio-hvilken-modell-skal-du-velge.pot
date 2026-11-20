@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:2
+msgid "GPT UiO: hvilken modell skal du velge?"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:4
+msgid "I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken \"hjerne\" tjenesten bruker. Modellene har forskjellig størrelse, funksjoner og bruksområder."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:7
+msgid "En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller *lokalt*. Med *lokalt* mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU. Velger du en lokal modell går ingen data ut av UiO/NTNU."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:11
+msgid "De lokale språkmodellen er gode, men de er *mindre* enn de som kjører i skyen. Det betyr at dersom oppgaven du skal løse er veldig kompleks, så kan en sky-modell muligens gi deg et resultat av bedre kvalitet."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:14
+msgid "Kontrollspørsmål for å velge modell"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:16
+msgid "Er svaret godt nok med en mindre modell? Bra, gå for den mindre modellen og spar ressurser!"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:17
+msgid "Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:18
+msgid "Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opptil røde data."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:19
+msgid "Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:21
+msgid "I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se hvilken dataklassifisering hver enkelt er godkjent for."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:23
+msgid "Bonusinnhold"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:25
+msgid "GPT UiO sin modellvelger"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:27
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:37
+msgid "Meny i GPT som viser de forskjellige språkmodellene du kan velge blant"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:32
+msgid "Klikk på nedover-pilen (markert i rødt) for å se hvilke språkmodeller du kan velge mellom."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:35
+msgid "Eksempel på språkmodeller i modellvelgeren"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:42
+msgid "Når du klikker på modellvelgeren ser du en liste over de språkmodellene GPT UiO tilbyr. Listen oppdateres når nye modeller eller versjoner blir tilgjengelig."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:45
+msgid "For hver modell er det indikert hvilken data-kategori den støtter, om den er en eksperimentell modell for testing (kolbe), i tillegg til om modellen støtter bilder."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:47
+msgid "Det står også en liten beskrivelse på hva modellen egner seg til."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-hvilken-modell-skal-du-velge.rst:49
+msgid "Og sist men ikke minst, om modellen kjører lokalt (hos UiO i Educloud eller hos NTNU), gjør den ikke det så kjører den i skyen."
+msgstr ""

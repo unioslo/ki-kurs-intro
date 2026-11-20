@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module1/oppsummering-ki.rst:2
+msgid "Oppsummering kapittel 1"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:4
+msgid "I dette kapittelet har du lært de mest sentrale begrepene i KI-språket. Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene."
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:7
+msgid "Test deg selv"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:9
+msgid "Diskuter spørsmålene med en kollega"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:11
+msgid "Hva er egentlig kunstig intelligens?"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:12
+msgid "Hva er generativ KI og hvordan \"lærer\" den?"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:13
+msgid "Hva er forskjellen på en KI-assistent og KI-agent?"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:17
+msgid "Repetisjon"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:19
+msgid "**Kunstig intelligens** er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens. For eksempel forstå tekst, tolke tale eller analysere tall."
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:20
+msgid "**Generativ KI** er en type KI som lager nytt innhold, basert på det den har lært fra før."
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:21
+msgid "**KI-assistent** er en KI-chat som har fått en forhåndsdefinert rolle eller instruksjoner, slik at den kan gi mer målrettede og fagspesifikke svar enn en vanlig KI-chat."
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:22
+msgid "**KI-agent** er en avansert KI-assistent som i tillegg til å gi svar, kan utføre handlinger i IT-systemer."
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:25
+msgid "Neste kapittel"
+msgstr ""
+
+#: ../../source/module1/oppsummering-ki.rst:27
+msgid "I neste kapittel skal du lære om store språkmodeller og hva som kan gå galt når du tar de i bruk."
+msgstr ""

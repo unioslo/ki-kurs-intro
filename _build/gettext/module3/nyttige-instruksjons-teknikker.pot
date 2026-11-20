@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:2
+msgid "Nyttige instruksjons-teknikker"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:4
+msgid "Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike instruksjonsteknikker i tillegg. Du kan bruke teknikkene hver for seg, eller kombinere de."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:7
+msgid "Lag en plan"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:9
+msgid "Lag en arbeidsplan for hvordan KI-en skal løse problemet. Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:12
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:34
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:47
+msgid "**Eksempel**"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:14
+msgid "Du er en erfaren kursutvikler ved et universitet. Jeg skal holde et 2-timers introduksjonskurs i bruk av GPT UiO for ansatte ved Universitetet i Oslo som er nybegynnere."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:17
+msgid "Tenk steg for steg før du svarer:"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:19
+msgid "Identifiser målgruppen mer konkret (hvem de er, hva de kan fra før, hva de trenger)."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:20
+msgid "Foreslå 3-4 konkrete læringsmål for kurset."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:21
+msgid "Del opp tiden i en enkel tidsplan (f.eks. 4 x 25 minutter med korte pauser)."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:22
+msgid "For hver bolk: beskriv innhold, arbeidsform (forelesning, demo, øvelse) og hva deltakerne skal sitte igjen med."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:23
+msgid "Til slutt: foreslå en enkel hjemmeoppgave deltakerne kan gjøre etter kurset."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:25
+msgid "Vis først din trinnvise tenking som punkter, og deretter et ryddig forslag til kursopplegg."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:29
+msgid "Be om begrunnelse"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:31
+msgid "Be KI-en forklare hvorfor den har gitt det svaret den ga. En kort begrunnelse gjør det lettere for deg å vurdere om svaret er relevant og til å stole på."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:36
+msgid "Jeg skal arrangere en workshop om [...]. Foreslå noen aktiviteter som kan hjelpe deltakerne med oppgaven de skal løse. Gi en begrunnelsen på 3-5 punkter for hvordan aktivitetene kan hjelpe deltakerne."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:42
+msgid "Forbedre instruksjonen trinnvis"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:44
+msgid "Første svar er sjelden perfekt, og det er helt normalt. Bygg videre på svarene i en samtale."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:49
+msgid "Første instruksjon: \"Skriv et utkast til e-post om nytt bookingsystem.\""
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:51
+msgid "Oppfølging 1: \"Gjør den mer konsis, maks 3 avsnitt.\""
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:53
+msgid "Oppfølging 2: \"Legg til en setning om hvor de kan få hjelp.\""
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:55
+msgid "Start en ny samtale"
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:57
+msgid "Som vi lærte i `Språkmodellers hukommelse <module2/sprakmodeller-har-ikke-hukommelse.html>`_ kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar."
+msgstr ""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:59
+msgid "Start derfor en ny samtale om du merker at svarene begynner å få dårligere kvalitet."
+msgstr ""

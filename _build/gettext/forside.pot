@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/forside.rst:2
+msgid "Velkommen til kurset:  Introduksjon til kunstig intelligens"
+msgstr ""
+
+#: ../../source/forside.rst:4
+msgid "Kunstig intelligens er en avansert teknologi som er lett å bruke, men vanskelig å bruke riktig. Dette er en introduksjon til hva kunstig intelligens er, og hvordan du kan bruke den på en god og ansvarlig måte. Kurset skal bidra til at alle ansatte får grunnleggende opplæring i kunstig intelligens, og dermed trygt kan utforske hvordan KI kan brukes i egne arbeidsoppgaver."
+msgstr ""
+
+#: ../../source/forside.rst:8
+msgid "Kurset er utviklet for administrativt ansatte, men temaene er grunnleggende og relevante for alle ansatte som ønsker å lære om hvordan bruke kunstig intelligens."
+msgstr ""
+
+#: ../../source/forside.rst:10
+msgid "Illustrasjon til forsiden av grunnkurs i generativ KI. Mennesket (Pelle) og roboten (Plimbo) hilser på hverandre."
+msgstr ""
+
+#: ../../source/forside.rst:14
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr ""
+
+#: ../../source/forside.rst:17
+msgid "Hvorfor er dette kurset viktig for deg?"
+msgstr ""
+
+#: ../../source/forside.rst:19
+msgid "Se for deg at du kan få en digital sparringspartner som alltid har tid og som raskt kan analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon for deg. Kunstig intelligens kan være denne digitale sparringspartneren."
+msgstr ""
+
+#: ../../source/forside.rst:22
+msgid "Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt IT-sikkerhet. Derfor skal du alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger. Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet."
+msgstr ""
+
+#: ../../source/forside.rst:26
+msgid "Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og ansvarlig måte i jobben din."
+msgstr ""
+
+#: ../../source/forside.rst:30
+msgid "Gjennomføring"
+msgstr ""
+
+#: ../../source/forside.rst:32
+msgid "Kurset inneholder både teori, refleksjonsoppgaver, bonusinnhold og øvingsoppgaver."
+msgstr ""
+
+#: ../../source/forside.rst:34
+msgid "Teori: Kursets teori er ment å gi et godt grunnlag for å forstå de viktigste elementene ved KI-teknologien, dens styrker, svakheter og hvordan bruke KI på en god måte."
+msgstr ""
+
+#: ../../source/forside.rst:35
+msgid "Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse!"
+msgstr ""
+
+#: ../../source/forside.rst:36
+msgid "Bonusinnhold: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer."
+msgstr ""
+
+#: ../../source/forside.rst:37
+msgid "Praktiske øvingsoppgaver: På slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. Disse kan lastes ned som en pdf."
+msgstr ""
+
+#: ../../source/forside.rst:39
+msgid "Kurset kan tas samlet i én omgang eller deles opp i to deler. Hvis du vil ta kurset i to deler, anbefaler vi at du tar kapitlene 1-3 som del 1 og kapitlene 4-6 som del 2."
+msgstr ""
+
+#: ../../source/forside.rst:42
+msgid "Hele kurset tar ca 60 minutter å gjennomføre, utenom øvingsoppgavene i siste del."
+msgstr ""
+
+#: ../../source/forside.rst:46
+msgid "Kursets kapitler:"
+msgstr ""
+
+#: ../../source/forside.rst:48
+msgid ":doc:`Kapittel 1: Introduksjon til «KI-språket» <module1/introduksjon-til-ki-spraket>` (8 min)"
+msgstr ""
+
+#: ../../source/forside.rst:49
+msgid ":doc:`Kapittel 2: Store språkmodeller <module2/store-sprakmodeller>` (10 min)"
+msgstr ""
+
+#: ../../source/forside.rst:50
+msgid ":doc:`Kapittel 3: Instruksjoner: Bli god på KI <module3/hvordan-bruke-ki-pa-en-god-mate>` (13 min)"
+msgstr ""
+
+#: ../../source/forside.rst:51
+msgid ":doc:`Kapittel 4: Ansvarlig og bærekraftig bruk av KI <module4/ansvarlig-og-baerekraftig-bruk-av-ki>` (8 min)"
+msgstr ""
+
+#: ../../source/forside.rst:52
+msgid ":doc:`Kapittel 5: Godkjente KI-tjenester på UiO <module5/ki-tjenester-ved-uio>` (14 min)"
+msgstr ""
+
+#: ../../source/forside.rst:53
+msgid ":doc:`Kapittel 6: Avslutning og oppgavesett <module6/avslutning>` (6 min)"
+msgstr ""
+
+#: ../../source/forside.rst:55
+msgid "Estimert tidsbruk er basert på antall ord, og tar ikke hensyn til lengre tidsbruk på refleksjons- og øvingsoppgaver."
+msgstr ""
+
+#: ../../source/forside.rst:57
+msgid "<p style=\"font-size: 2.0rem;\">Godt kurs!</p>"
+msgstr ""
+
+#: ../../source/forside.rst:61
+msgid "<div style=\"text-align: left; padding-top: 4px;\">\n"
+"<a class=\"btn btn-large btn-primary\"\n"
+"style=\"display: inline-flex;\n"
+"       align-items: center;\n"
+"       justify-content: center;\n"
+"       gap: 10px;\n"
+"       padding: 10px 28px;\n"
+"       background: #92ca61;\n"
+"       font-size: 1.5rem;\n"
+"       cursor: pointer;\n"
+"       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n"
+"       border-radius: 6px;\n"
+"       color: #000000 !important;\n"
+"       text-decoration: none !important;\n"
+"       border: medium none currentcolor;\"\n"
+"href=\"https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3\"\n"
+"data-api-endpoint=\"https://uio.instructure.com/api/v1/courses/63248/pages/introduksjon-til-ki-spraket-3\"\n"
+"data-api-returntype=\"Page\">Start kurset &rarr;&nbsp;</a>"
+msgstr ""

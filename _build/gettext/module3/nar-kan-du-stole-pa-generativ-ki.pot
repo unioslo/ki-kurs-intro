@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:3
+msgid "Når kan du stole på generativ KI?"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:5
+msgid "Nå som du har lært om og kan ta i bruk noen teknikker for gode instruksjoner, kan du da stole på svaret KI gir deg?"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:7
+msgid "Generativ KI er ikke enten \"pålitelig\" eller \"upålitelig\", det avhenger av hva du bruker den til. Som vi allerede har lært har ikke språkmodellen sikker kunnskap om hva som er sant, ei heller hukommelse. Et bedre spørsmål er kanskje derfor:  I hvilke situasjoner kan du bruke KI uten at det medfører stor risiko? Og hva kan vi gjøre for å redusere risikoen?"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:12
+msgid "En hovedregel er at kunstig intelligens passer best til oppgaver der feil ikke innebærer stor risiko."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:14
+msgid "Hvis feil kan få alvorlige følger, må du enten"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:16
+msgid "kunne kontrollere og bekrefte informasjonen før du bruker den videre, eller"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:17
+msgid "la være å bruke KI til den oppgaven."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:19
+msgid "Nedenfor er eksempler på bruk med lav, medium og høy risiko."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:27
+msgid "Hvis du har kontroll, eller konsekvensene av feil er lave:"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:29
+msgid "**Brainstorming og idémyldring** - Eksempel: Du bruker KI for å få andre perspektiver og innfallsvinkler på dine ideer."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:30
+msgid "**Formulere tekst du selv har kontekst på** - Eksempel: Du utformer materiale hvor du lett kan se om det er riktig eller ikke."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:31
+msgid "**Språklig forbedring** - Eksempel: Du ber KI gjøre språklige og retoriske endringer på en tekst du selv har skrevet."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:32
+msgid "**Oppsummere tekst du selv har skrevet** - Eksempel: Du har produsert materialet selv, og kan lett vurdere om oppsummeringen er god."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:33
+msgid "**Lage utkast** - Eksempel: Du bruker KI til å komme i gang med et arbeid, men kvalitetssikrer utkastet før du jobber videre."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:35
+msgid "**Hvorfor er det lav risiko?**"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:37
+msgid "Sjansene for feil er mindre, og konsekvenser ved feil er små."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:39
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:56
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:75
+msgid "**Tiltak for å begrense risiko**"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:41
+msgid "Utøv normal kritisk vurdering av resultatet KI gir deg"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:45
+msgid "Hvis resultatet skal \"ut i verden\" eller du bruker KI på områder du ikke har ekspertise:"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:47
+msgid "**Utkast til faglig tekst, e-post eller rapport** - Eksempel: Teksten, e-posten eller rapporten skal deles med andre og det har betydning om noe er feil."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:48
+msgid "**Forslag til prosedyrer** - Eksempel: Du lager materiale som må stemme overens med andre kilder, som retningslinjer, dokumentasjon eller lovverk."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:49
+msgid "**Tekniske forklaringer** - Eksempel: Du ber KI forklare hvordan noe fungerer, og forklaringen kan være feil selv om den høres overbevisende ut."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:50
+msgid "**Oppsummering av tekst du ikke kjenner godt** - Eksempel: Du ber KI oppsummere en tekst du ikke har lest, og kan ikke se om noe er misforstått eller utelatt fra originalteksten"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:52
+msgid "**Hvorfor er det medium risiko?**"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:54
+msgid "Feil her kan føre til feil beslutninger, feil i tekniske systemer, ineffektivitet, eller svekket tillit utad."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:58
+msgid "Kontrollere fakta mot andre kilder"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:59
+msgid "Justere språk og vinkling"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:60
+msgid "Ta det endelige ansvaret selv"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:64
+msgid "Hvis materialet som produseres må være faktuelt korrekt"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:66
+msgid "**Tall og statistikk** - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere mot andre kilder."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:67
+msgid "**Lover og regler** - Eksempel: Du stoler på KI-ens evne til å gjengi eller oppsummere juridiske dokumenter korrekt, selv om den kan misforstå."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:68
+msgid "**Referanser** - Eksempel: Du bruker kildene KI oppgir uten å sjekke at de faktisk eksisterer."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:69
+msgid "**Vurdering av enkeltpersoner** - Eksempel: Du lar KI-en gjøre en vurdering som påvirker enkeltpersoner direkte, for eksempel i en ansettelsesprosess."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:71
+msgid "**Hvorfor er det høy risiko?**"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:73
+msgid "Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:77
+msgid "Vurder om KI bør unngås"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:78
+msgid "Om KI benyttes, sjekk KI resultatet grundig og involver kompetente fagpersoner"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:82
+msgid "Refleksjon"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:84
+msgid "Tenk på en arbeidsoppgave du utfører som del av din jobb. Vurder hvilken kategori den faller inn i: Lav, medium eller høy risiko"
+msgstr ""

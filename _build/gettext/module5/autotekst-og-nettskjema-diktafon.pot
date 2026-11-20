@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:3
+msgid "Autotekst og Nettskjema-diktafon"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:6
+msgid "Autotekst"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:8
+msgid "Autotekst er en UiO-utviklet tjeneste som transkriberer tale til tekst ved hjelp av OpenAI sin automatiske språkgjenkjenningsmodell `Whisper <https://openai.com/nb-NO/index/whisper/>`_. Tjenesten kjører i sikre omgivelser lokalt på UiOs IT-systemer, og er derfor godkjent for opptil røde data."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:11
+msgid "Du kan bruke Autotekst til å transkribere opptak av møter, av forelesninger eller av intervjuer for å nevne noen bruksområder. Lyden som Autotekst transkriberer, kan komme fra lydfiler du laster opp, for eksempel fra Panopto eller Zoom. Autotekst kan også automatisk transkibere fra UiOs egenutviklede diktafon-app, Nettskjema-diktafon (mer om denne nedenfor)."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:15
+msgid "Verdt å merke seg: Whisper er god på norsk, takket være Nasjonalbibliotekets norsk-trente Whisper-modell."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:18
+msgid "TSD-Autotekst"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:19
+msgid "I tillegg til den \"vanlige\" Autotekst tjenesten har UiO også TSD-Autotekst. TSD står for Tjenester for Sensitive Data og er UiO sin sikre plattform som støtter opptil sorte data. Her er det trygt å sende opptak og få transkribert helseintervjuer eller annet som anses som sorte data."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:24
+msgid "Nettskjema-diktafon"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:26
+msgid "Dette er en mobilapp utviklet av UiO, som benytter Autotekst eller TSD-Autotekst i bakkant. Med Nettskjema-diktafon kan du gjøre opptak som sendes trygt og automatisk fra din telefon til (TSD-)Autotekst gjennom UiO sin Nettskjema-tjeneste."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:29
+msgid "Avhengig av om opptaket er knyttet et Nettskjema i TSD eller ikke, støtter tjenesten opptil sorte data."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:33
+msgid "Når passer det å bruke Autotekst eller TSD-Autotekst?"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:35
+msgid "Når du har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:37
+msgid "Bruk Autotekst hvis dataene klassifiseres som"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:39
+msgid "åpen 🟢, begrenset 🟡 eller fortrolig 🔴 nivå."
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:42
+msgid "Bruk TSD-Autotekst hvis dataene klassifiseres som"
+msgstr ""
+
+#: ../../source/module5/autotekst-og-nettskjema-diktafon.rst:44
+msgid "strengt fortrolig ⚫."
+msgstr ""

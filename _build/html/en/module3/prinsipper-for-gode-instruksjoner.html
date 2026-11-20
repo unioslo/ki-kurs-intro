@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create good prompts &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css?v=6adc4b43" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css?v=b7ab7f4c" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css?v=ff805dfb" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7eb9d88d" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Practical exercise: Improve prompts" href="praktisk-ovelse-forbedre-instruksjoner.html" />
+    <link rel="prev" title="Prompts: Get good at AI!" href="hvordan-bruke-ki-pa-en-god-mate.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="lag-gode-instruksjoner">
+<h1>Create good prompts</h1>
+<p>The language model is good at guessing what the answer should contain, but it cannot read your mind. With a few simple steps you can help the language model give answers you are more satisfied with. Feel free to use all of these principles when you write your prompt.</p>
+<p>Here are some simple examples of prompts that could be better, and suggestions for how you can improve them.</p>
+<section id="gi-kontekst">
+<h2>1. Give context</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Explain the difference between AI and machine learning.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>Briefly explain the difference between AI and machine learning, tailored to administrative staff at a university who do not have a technical background. Imagine that the explanation is to be used in a 5-minute talk at a staff meeting, where the goal is for colleagues to understand the concepts at a general level - not technical details.</p>
+<p><strong>What makes this better?</strong></p>
+<p>You tell the language model a bit about the background and/or context of the text you are asking it to produce.</p>
+</div>
+</div>
+</section>
+<section id="spesifiser-format">
+<h2>2. Specify format</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Create meeting minutes from these notes: [your notes]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>Based on my notes from the meeting, create meeting minutes. Structure the minutes with participants, agenda, decisions and tasks. My notes: [your notes].</p>
+<p><strong>What makes this better?</strong></p>
+<p>Since you have specified the format, you will need less editing afterwards. The language model will be able to sort and separate the text based on the structure you ask for.</p>
+</div>
+</div>
+</section>
+<section id="definer-en-rolle">
+<h2>3. Define a role</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Check this text: [your text]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>You are a Norwegian-language copy editor in the higher education sector. Go through the text below and suggest improvements.</p>
+<ul class="simple">
+<li>Point out spelling and grammar errors</li>
+<li>Keep the subject matter unchanged</li>
+</ul>
+<p>The text: [your text]</p>
+<p><strong>What makes this better?</strong></p>
+<p>Language models have seen text from a great many roles and genres. Tell the model which role it should take on, and you get more relevant and focused answers.</p>
+</div>
+</div>
+</section>
+<section id="gi-eksempler">
+<h2>4. Give examples</h2>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Write a title for a news story about us getting a new system for travel expense claims.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>I am going to write titles for internal news stories for staff at the University of Oslo.</p>
+<p>Here are examples of the style I want:</p>
+<ul class="simple">
+<li>“New offer: Free language courses for staff”</li>
+<li>“Important: Changes to meeting-room booking from 1 April”</li>
+<li>“Remember: The deadline for registering working hours is approaching”</li>
+</ul>
+<p>Write a short title in the same style for this story: We are getting a new IT system for travel expense claims next month.</p>
+<p>Requirements for the title:</p>
+<ul class="simple">
+<li>Max 90 characters</li>
+<li>Must be informative and matter-of-fact</li>
+<li>Target audience: all staff</li>
+</ul>
+<p><strong>What makes this better?</strong></p>
+<p>Here you give examples of the style or format you want. This is often easier than explaining the style in words. This technique is often called “Few-shot prompting”</p>
+</div>
+</div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-bruke-ki-pa-en-god-mate.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-bruke-ki-pa-en-god-mate.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-bruke-ki-pa-en-god-mate.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-bruke-ki-pa-en-god-mate.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="hvordan-bruke-ki-pa-en-god-mate.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">Neste →</a></div></div>
+</section>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

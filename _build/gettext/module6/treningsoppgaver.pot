@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module6/treningsoppgaver.rst:2
+msgid "Prøv selv!"
+msgstr ""
+
+#: ../../source/module6/treningsoppgaver.rst:6
+msgid "Gratulerer! Du har nå kommet deg gjennom teori-delen av introduksjonskurset i KI for administrativt ansatte ved UiO."
+msgstr ""
+
+#: ../../source/module6/treningsoppgaver.rst:8
+msgid "Nå er du klar for å omsette teori til praksis og på den måten styrke din KI-kompetanse."
+msgstr ""
+
+#: ../../source/module6/treningsoppgaver.rst:10
+msgid "Vi har laget to sett med oppgaver. Det første settet skal du øve deg på ulike måter å bruke KI. I det andre settet kan du utforske hvordan bruke KI i egne arbeidsoppgaver."
+msgstr ""
+
+#: ../../source/module6/treningsoppgaver.rst:13
+msgid "Dette er oppgaver som du kan jobbe med i dagene og ukene fremover."
+msgstr ""
+
+#: ../../source/module6/treningsoppgaver.rst:17
+msgid "Tips!"
+msgstr ""
+
+#: ../../source/module6/treningsoppgaver.rst:19
+msgid "Du kan laste ned en pdf med opppgavene slik at du ikke trenger å være logget inn i Canvas kurset for å jobbe med dem: :download:`Last ned PDF <../downloads/KI-grunnkurs-treningsoppgaver.pdf>`"
+msgstr ""

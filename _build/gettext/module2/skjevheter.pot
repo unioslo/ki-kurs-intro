@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module2/skjevheter.rst:2
+msgid "Modellenes skjevheter"
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:4
+msgid "Vi har tidligere lært at det er en iboende egenskap ved språkmodeller at de *finner på ting*. En annen iboende egenskap er at språkmodellen har innebygde *skjevheter*. Det kan være mange typer skjevheter. Vi skal ta for oss noen her."
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:9
+msgid "Skjevhet som følge av manglende treningsdata"
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:10
+msgid "Store språkmodeller trenes som sagt på tekster fra internett, men det er mange tekster de ikke har tilgang til. For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur. De har også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskjellige bruksområder. Ett eksempel på dette er at modellene kan være svake på helt spesifikk fagkunnskap i et gitt forskningsdomene."
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:18
+msgid "Skjevhet som speiler skjevheter i samfunnet"
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:20
+msgid "En annen type skjevhet stammer fra ulikheter i samfunnet vårt, og gjenspeiles derfor også i den digitale informasjonen vi produserer. Dette kan dreie seg om skjevheter knyttet til etnisitet, kjønn, religion eller annet og er veldig viktig å være klar over når man behandler forslag og tekst fra en språkmodell."
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:23
+msgid "Eksempel på skjevheter i treningsdata"
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:25
+msgid "Anta at en språkmodell er trent på mange gamle stillingsannonser der \"leder\" oftere omtales som \"han\" enn \"hun\". Når du ber modellen skrive en tekst om \"en typisk leder\", vil den da ha høyere sannsynlighet for å bruke ord som \"han\", \"mann\" og mannsnavn."
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:28
+msgid "Modellen har ikke meninger om kjønn, den gjennskaper bare mønstrene som allerede fantes i tekstene den ble trent på."
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:32
+msgid "Bekreftelsesskjevhet (bekreftelsesbias)"
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:34
+msgid "Dagens språkmodeller har en tendens til å være enige med deg. Dette kan føre til at språkmodellen gir deg *rett i* noe som ikke er rett."
+msgstr ""
+
+#: ../../source/module2/skjevheter.rst:37
+msgid "For å unngå bekreftelsesskjevhet kan du snu på spørsmålet, altså også spørre om det motsatte."
+msgstr ""

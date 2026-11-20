@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:2
+msgid "Instruksjoner: Bli god på KI!"
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:4
+msgid "For å mestre KI må du bli god på instruksjoner."
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:6
+msgid "En instruksjon er beskjeden eller spørsmålet du gir en språkmodell. Instruksjoner kalles også *prompt*, og skrives inn i chatten du bruker til å kommunisere med språkmodellen. Det som er viktig å merke seg er at kvaliteten på instruksjonen din er direkte relatert til kvaliteten på svaret du får."
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:10
+msgid "I dette kapitlet skal du lære hvordan du lager gode instruksjoner, og hvordan du kan sjekke kvaliteten på svarene KI gir deg."
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:12
+msgid "Illustrasjon av at personen viser vei til roboten"
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:17
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:20
+msgid "Læringsmål"
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:22
+msgid "Jeg kan kvalitetssikre KI-generert innhold"
+msgstr ""
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:23
+msgid "Jeg kan skrive gode og effektive instruksjoner (promts)"
+msgstr ""

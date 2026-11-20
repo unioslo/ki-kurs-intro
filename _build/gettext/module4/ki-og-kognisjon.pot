@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module4/ki-og-kognisjon.rst:2
+msgid "Ikke gjør deg avhengig av KI"
+msgstr ""
+
+#: ../../source/module4/ki-og-kognisjon.rst:4
+msgid "At KI kan ta over store deler av det kognitive arbeidet vårt, er både praktisk og besnærende. I dette kurset foreslår vi at KI kan hjelpe deg med idémyldring, planlegging og tekstproduksjon. Men hvor langt bør denne hjelpen egentlig gå?"
+msgstr ""
+
+#: ../../source/module4/ki-og-kognisjon.rst:7
+msgid "Hvis vi stadig overlater vurderinger, strukturering og formulering til KI, risikerer vi at vi etter hvert stoler mer på KI-ens analyser enn på egne faglige og menneskelige vurderinger. Det kan igjen svekke vår egen tålmodighet og utholdenhet i møte med arbeid som krever konsentrasjon, kritisk refleksjon og dyp tenkning. Det finnes ingen enkel løsning for dette, men noen grunnleggende prinsipper er viktige å minne seg selv på:"
+msgstr ""
+
+#: ../../source/module4/ki-og-kognisjon.rst:10
+msgid "Bruk KI som et verktøy for å styrke din egen tenkning, ikke som en snarvei som på sikt svekker din faglige utholdenhet."
+msgstr ""
+
+#: ../../source/module4/ki-og-kognisjon.rst:11
+msgid "Ikke ty til KI av ren refleks. Tenk selv først, og bruk KI til å utfordre, utvide eller kvalitetssikre egne ideer."
+msgstr ""
+
+#: ../../source/module4/ki-og-kognisjon.rst:12
+msgid "Tenk på hjernen som en muskel: Den må brukes og utfordres for å vedlikeholdes og utvikles."
+msgstr ""
+
+#: ../../source/module4/ki-og-kognisjon.rst:14
+msgid "Som kunnskapsinstitusjon er UiO avhengige av at ansatte har kritisk sans, faglig dømmekraft og innehar selvstendig tenkning. KI kan være et kraftfullt støtteverktøy, men det kan aldri erstatte din egen kunnskap, erfaring og vurderingsevne."
+msgstr ""

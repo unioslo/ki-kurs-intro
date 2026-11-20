@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:2
+msgid "Lag gode instruksjoner"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:4
+msgid "Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine. Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med. Bruk gjerne alle disse prinsippene når du skriver instruksjonen din."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:8
+msgid "Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag til hvordan du kan forbedre dem."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:11
+msgid "1. Gi kontekst"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:15
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:35
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:54
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:82
+msgid "Mangelfull"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:17
+msgid "Forklar forskjellen på KI og maskinlæring."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:19
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:40
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:59
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:87
+msgid "Bedre"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:22
+msgid "Forklar kort forskjellen på KI og maskinlæring, tilpasset administrativt ansatte ved et universitet som ikke har teknisk bakgrunn. Tenk at forklaringen skal brukes i et 5-minutters innlegg på et personalmøte, der målet er at kollegene skal forstå begrepene på et overordnet nivå - ikke tekniske detaljer."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:26
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:44
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:71
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:106
+msgid "**Hva gjør denne bedre?**"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:28
+msgid "Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber den produsere."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:31
+msgid "2. Spesifiser format"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:37
+msgid "Lag et møtereferat av disse notatene: [dine notater]"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:42
+msgid "Basert på mine notater fra møtet, lag et møtereferat. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver. Mine notater: [dine notater]."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:46
+msgid "Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:50
+msgid "3. Definer en rolle"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:56
+msgid "Sjekk denne teksten: [din tekst]"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:62
+msgid "Du er en norskspråklig språkvasker i universitetssektoren. Gå gjennom teksten nedenfor og gi forslag til forbedringer."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:65
+msgid "Påpek skrivefeil og grammatikk"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:66
+msgid "Behold innholdet faglig uendret"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:68
+msgid "Teksten: [din tekst]"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:73
+msgid "Språkmodeller har sett tekst fra veldig mange roller og sjangre. Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:78
+msgid "4. Gi eksempler"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:84
+msgid "Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:89
+msgid "Jeg skal skrive titler til interne nyhetssaker for ansatte ved Universitetet i Oslo."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:91
+msgid "Her er eksempler på stilen jeg ønsker:"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:93
+msgid "\"Nytt tilbud: Gratis språkkurs for ansatte\""
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:94
+msgid "\"Viktig: Endringer i møterom-booking fra 1. april\""
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:95
+msgid "\"Husk: Frist for registrering av arbeidstid nærmer seg\""
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:97
+msgid "Skriv en kort tittel i samme stil for denne saken: Vi får nytt IT-system for reiseregninger neste måned."
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:99
+msgid "Krav til tittelen:"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:101
+msgid "Maks 90 tegn"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:102
+msgid "Skal være informativ og nøktern"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:103
+msgid "Målgruppe: alle ansatte"
+msgstr ""
+
+#: ../../source/module3/prinsipper-for-gode-instruksjoner.rst:108
+msgid "Her gir du eksempler på stilen eller formatet du ønsker. Dette er ofte lettere enn å forklare stilen med ord. Denne teknikken kalles gjerne \"Few-shot instruksjon\""
+msgstr ""

@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:3
+msgid "Oppsummert om GPT UiO"
+msgstr ""
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:6
+msgid "Bruk GPT UiO hvis du"
+msgstr ""
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:8
+msgid "trenger en trygg og god chat tjeneste"
+msgstr ""
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:9
+msgid "vil bruke en UiO GPT KI assistent som en kollega har delt med deg, eller prøve en av UiO sine utvalgte KI assistenter"
+msgstr ""
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:10
+msgid "trenger å håndterer røde data (velg en modell som støtter røde data)"
+msgstr ""
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:11
+msgid "vil være sikker på at ingen av dine data sendes til skyen (velg en lokal modell)"
+msgstr ""
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:12
+msgid "vil enkelt kunne bytte mellom større modeller (OpenAI's GPT modeller) som kjører i skyen eller en av de mindre åpne modellene som kjører på UiO eller NTNU sine IT-systemer"
+msgstr ""

@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:2
+msgid "Oppsummering kapittel 5"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:3
+msgid "I dette kapittelet har vi lært om de godkjente KI-tjenestene på UiO, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:5
+msgid "Test deg selv"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:7
+msgid "Diskuter selv eller med en kollega:"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:9
+msgid "Hvilke KI-tjenester er godkjent på UiO?"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:10
+msgid "Hvorfor er det viktig å bruke dem?"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:11
+msgid "Hvilke KI-tjenester vil være nyttig for deg og dine arbeidsoppgaver?"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:15
+msgid "Repetisjon"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:17
+msgid "Tabellen under gir deg en oversikt over de godkjente KI-tjenestene ved UiO: hva de egner seg til, hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systemer eller i skyen."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:25
+msgid "Tjeneste"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:26
+msgid "Bruksområde"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:27
+msgid "Dataklasse"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:28
+msgid "Nettsøk"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:29
+msgid "Skytjeneste eller UiO-tjeneste"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:30
+msgid "**GPT UiO**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:31
+msgid "KI-chat til tekstarbeid. Du kan velge mellom flere språkmodeller og lage og dele egne KI-assistenter. Støtter et utvalg filtyper for opplasting."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:32
+msgid "Opptil 🔴 rød, men bare med en modell som er godkjent for det"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:33
+#: ../../source/module5/oppsummering-uio-tjenester.rst:38
+#: ../../source/module5/oppsummering-uio-tjenester.rst:43
+#: ../../source/module5/oppsummering-uio-tjenester.rst:48
+msgid "❌"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:34
+msgid "UiO-tjeneste. Data lagres hos UiO. De største modellene kjører i skyen (OpenAI i Azure), de mindre lokalt hos UiO eller NTNU."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:35
+msgid "**Autotekst**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:36
+msgid "Transkribering av lyd- og videoopptak, for eksempel møter, forelesninger og intervjuer."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:37
+msgid "Opptil 🔴 rød"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:39
+msgid "UiO-tjeneste. Kjører lokalt på UiOs IT-systemer."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:40
+msgid "**TSD-Autotekst**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:41
+msgid "Transkribering av opptak som er strengt fortrolige, for eksempel helseintervjuer."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:42
+msgid "Opptil ⚫ svart"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:44
+msgid "UiO-tjeneste. Kjører i lokalt på UiOs IT-systemer i Tjenester for Sensitive Data (TSD)."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:45
+msgid "**Nettskjema-diktafon**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:46
+msgid "Mobilapp for opptak som sendes trygt og automatisk til transkribering i (TSD-)Autotekst."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:47
+msgid "Opptil 🔴 rød hvis opptaket er knyttet til nettskjema i Educloud. Opptil ⚫ svart, hvis opptaket er knyttet til et nettskjema i TSD"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:49
+msgid "UiO-tjeneste. Bruker UiOs Nettskjema og (TSD-)Autotekst i bakkant."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:50
+msgid "**Gemini (Chat)**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:51
+msgid "Generell KI-chat med søk i åpne nettsider. Egnet til faktasøk (har internett-tilgang), bildegenerering og til å lage pdf, presentasjoner og regneark. Støtter opplasting og generering av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:52
+#: ../../source/module5/oppsummering-uio-tjenester.rst:57
+msgid "Opptil 🟡 gul"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:53
+#: ../../source/module5/oppsummering-uio-tjenester.rst:58
+#: ../../source/module5/oppsummering-uio-tjenester.rst:63
+msgid "✅"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:54
+#: ../../source/module5/oppsummering-uio-tjenester.rst:59
+msgid "Skytjeneste fra Google. Kjører i Google Cloud, utenfor UiOs systemer. UiO har databehandleravtale."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:55
+msgid "**Gemini Notebook**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:56
+msgid "KI-assistent for egne dokumenter og kilder. Gir kildetro svar og lager oppsummeringer, quizzer og podkaster. Støtter opplasting og generering av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:60
+msgid "**Microsoft Copilot Chat**"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:61
+msgid "Enkel KI-chat med nettsøk. Egnet til faktasøk (har internett-tilgang). Arbeider med tekst, bilder og video, og har ferdige instruksjonsforslag som hjelper deg i gang. Støtter opplasting av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:62
+msgid "Kun 🟢 grønn"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:64
+msgid "Skytjeneste fra Microsoft. Kjører utenfor UiOs systemer. UiO har databehandleravtale."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:66
+msgid "Husk"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:68
+msgid "Beskyttelsesgraden i tabellen er den *høyeste* dataklassen tjenesten er godkjent for. Du skal alltid bruke den tjenesten som dekker behovet ditt, og aldri dele UiO-data med KI-tjenester som ikke er godkjent ved UiO."
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:74
+msgid "Neste kapittel"
+msgstr ""
+
+#: ../../source/module5/oppsummering-uio-tjenester.rst:76
+msgid "Du har nå gjennomført grunnkurset i KI! I neste og siste kapittel får du en oppsummering av det viktigste, og konkrete tips til hvordan du kan ta kunnskapen videre i praksis."
+msgstr ""

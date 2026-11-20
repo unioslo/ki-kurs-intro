@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:2
+msgid "GPT UiO: KI-assistenter"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:5
+msgid "I GPT UiO kan du lage dine egne KI-assistenter. En KI-assistent er lagrede instruksjoner som du kan bruke flere ganger. Disse instruksjonene kan være enkle eller komplekse."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:9
+msgid "Du kan for eksempel gi instruks om at en tekst skal \"oversettes til norsk med et formelt fagspråk og at forkortelser og titler på tidsskrifter ikke skal oversettes.\". Dette er en enkel KI-assistent som kan spare deg tid hvis du ofte skal be KI-en om å oversette slik."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:12
+msgid "En kompleks assistent inneholder mange instruksjoner, for eksempel detaljerte instruksjoner for hvilken rolle assistenten skal ha, utførlig hvordan den skal svare, og kanskje også i hvilket format du vil ha svaret. Et eksempel er å lage en KI-assistent som opptrer som en erfaren studieadministrativ rådgiver ved UiO: Den skal alltid forklare regelverk på en enkel måte, foreslå standardformuleringer til e-poster, og gi svarene strukturert med overskrifter og punktlister slik at de kan kopieres rett inn i saksdokumenter."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:16
+msgid "GPT UiO har en egen *assistent*-funksjon: hvis du bruker en instruksjon ofte, kan det være lurt å lagre den i en assistent instruksjon (også kalt *pre-prompt*). Da kan du raskt starte en samtale basert på instruksjonen, uten å måtte skrive den på nytt. Det kan være nyttig til oppgaver du gjør ofte, for eksempel oversetting eller å få kritiske tilbakemeldinger på tekst."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:20
+msgid "Skjermdump av GPT UiO sin assistent funksjon"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:26
+msgid "Når du lager assistenten kan du kan blant annet:"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:28
+msgid "laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:29
+msgid "velge en spesifikk språkmodell som assistenten skal benytte"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:30
+msgid "dele assistenten med andre, for eksempel kollegaer eller studenter."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:32
+msgid "UiO tilbyr også noen utvalgte kvalitetssikrede KI-assistenter som mange kan ha nytte av."
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:35
+msgid "Eksempel på en assistent instruksjon"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:37
+msgid "Etter å ha klikket \"Opprett KI-assistent\" legger man inn sin assistent instruksjon. Her ser du et eksempel på en slik. Husk å bruke de gode instruksjonsteknikkene du har lært når du prøver dette selv!"
+msgstr ""
+
+#: ../../source/module5/gpt-uio-ki-assistenter.rst:41
+msgid "Eksempel på en assistent instruksjon for møtereferater"
+msgstr ""

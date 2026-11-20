@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:2
+msgid "Praktisk øvelse: Forbedre instruksjoner"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:4
+msgid "Prøv nå selv å forbedre instruksjonene fra forrige side i GPT UiO. Dette vil gi deg en god pekepinn på hvordan språkmodellen reagerer på instruksjonene du gir."
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:7
+msgid "Prøv selv!"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:9
+msgid "Åpne `GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_ og prøv selv å forbedre instruksjonene i eksemplene på forrige side."
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:12
+msgid "**1. Forbedre dårlige instruksjoner**"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:14
+msgid "Kopier hver av de mangelfulle instruksjonene under inn i GPT UiO, og se på svaret du får:"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:16
+msgid "\"Forklar forskjellen på KI og maskinlæring.\""
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:17
+msgid "\"Lag et møtereferat av disse notatene: [dine notater]\""
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:18
+msgid "\"Sjekk denne teksten: [din tekst]\""
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:19
+msgid "\"Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.\""
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:22
+msgid "**2. Skriv forbedrede versjoner**"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:24
+msgid "Skriv deretter om hver instruksjon slik at du bruker alle prinsippene fra forrige side"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:26
+msgid "Gi kontekst"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:27
+msgid "Spesifiser format"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:28
+msgid "Definer en rolle"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:29
+msgid "Gi eksempler"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:31
+msgid "Test de nye instruksjonene i GPT UiO og sammenlign svarene med de du fikk i punkt 1."
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:34
+msgid "**3. Refleksjon**"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:36
+msgid "Tenk over følgende:"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:38
+msgid "Hva ble bedre i svarene etter at dere forbedret instruksjonene?"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:39
+msgid "Hvilke av prinsippene (kontekst, format, rolle, eksempler) hadde størst utslag på kvaliteten?"
+msgstr ""
+
+#: ../../source/module3/praktisk-ovelse-forbedre-instruksjoner.rst:40
+msgid "Hvordan kan du bruke disse prinsippene i dine egne, faktiske arbeidsoppgaver (for eksempel e-poster, saksfremlegg, nettsidetekster)?"
+msgstr ""

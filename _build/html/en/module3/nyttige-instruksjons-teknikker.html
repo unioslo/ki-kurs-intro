@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Useful prompting techniques &mdash; Grunnkurs KI  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/variables.css?v=e199592e" />
+      <link rel="stylesheet" type="text/css" href="../_static/fonts.css?v=6adc4b43" />
+      <link rel="stylesheet" type="text/css" href="../_static/common.css?v=b287aaa8" />
+      <link rel="stylesheet" type="text/css" href="../_static/canvas.css?v=b7ab7f4c" />
+      <link rel="stylesheet" type="text/css" href="../_static/wiki_page.css?v=ff805dfb" />
+      <link rel="stylesheet" type="text/css" href="../_static/uio-global-override.css?v=e99b8315" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7eb9d88d" />
+      <link rel="stylesheet" type="text/css" href="../_static/simplepdf.css?v=95bc32ab" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/tabs.js?v=5e8c741a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Practical exercise: Improve your own prompts" href="praktisk-ovelse-forbedre-egne-instruksjoner.html" />
+    <link rel="prev" title="Practical exercise: Improve prompts" href="praktisk-ovelse-forbedre-instruksjoner.html" /> 
+</head>
+
+<body> 
+  <section class="wy-nav-content-wrap" style="margin-left: 0;">
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nyttige-instruksjons-teknikker">
+<h1>Useful prompting techniques</h1>
+<p>Once you have learned the principles for good prompts, you can also apply various prompting techniques. You can use the techniques individually, or combine them.</p>
+<div class="uio-color-box-3">
+<h3>Make a plan</h3>
+<p>Create a work plan for how the AI should solve the problem. This gives more well-considered answers and is especially useful for complex tasks.</p>
+<p><strong>Example</strong></p>
+<p>You are an experienced course developer at a university. I am going to hold a 2-hour introductory course in using GPT UiO for staff at the University of Oslo who are beginners.</p>
+<p>Think step by step before you answer:</p>
+<ol class="arabic simple">
+<li>Identify the target audience more concretely (who they are, what they already know, what they need).</li>
+<li>Suggest 3-4 concrete learning objectives for the course.</li>
+<li>Break the time into a simple schedule (e.g. 4 x 25 minutes with short breaks).</li>
+<li>For each block: describe content, working method (lecture, demo, exercise) and what the participants should take away.</li>
+<li>Finally: suggest a simple homework task the participants can do after the course.</li>
+</ol>
+<p>First show your step-by-step thinking as bullet points, and then a clean proposal for a course plan.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Ask for reasoning</h3>
+<p>Ask the AI to explain why it gave the answer it did. A brief justification makes it easier for you to assess whether the answer is relevant and trustworthy.</p>
+<p><strong>Example</strong></p>
+<p>I am going to organize a workshop about […]. Suggest some activities that can help the participants with the task they need to solve. Give a justification in 3-5 points for how the activities can help the participants.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Improve the prompt step by step</h3>
+<p>The first answer is rarely perfect, and that is completely normal. Build on the answers in a conversation.</p>
+<p><strong>Example</strong></p>
+<p>First prompt: “Write a draft email about the new booking system.”</p>
+<p>Follow-up 1: “Make it more concise, max 3 paragraphs.”</p>
+<p>Follow-up 2: “Add a sentence about where they can get help.”</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Start a new conversation</h3>
+<p>As we learned in <a class="reference external" href="module2/sprakmodeller-har-ikke-hukommelse.html" rel="noreferrer" target="_blank">Language models’ memory <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> long conversations or a new topic can confuse the model and give poorer answers.</p>
+<p>So start a new conversation if you notice that the answers are starting to drop in quality.</p>
+</div>
+      </div>
+    <div class="page-navigation"><div class="prev-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-egne-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-egne-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-egne-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-egne-instruksjoner.html">Neste →</a></div></div>
+<div class="page-navigation"><div class="prev-link"><a href="praktisk-ovelse-forbedre-instruksjoner.html">← Forrige</a></div><div class="next-link"><a href="praktisk-ovelse-forbedre-egne-instruksjoner.html">Neste →</a></div></div>
+</section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:2
+msgid "Oppsummering kapittel 4"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:4
+msgid "I dette kapitlet har du lært om viktige og utfordrende miljømessige og etiske sider ved bruk av kunstig intelligens. Du har også fått frisket opp hvilke regler og retningslinjer du skal følge når du bruker teknologien. Med økt kunnskap om dette kan du bruke KI på en mer ansvarlige måte."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:8
+msgid "Test deg selv"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:10
+msgid "Diskuter med deg selv eller en kollega."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:12
+msgid "Hva kan du gjøre for å redusere miljøpåvirkningen fra KI-tjenester i arbeidshverdagen din?"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:13
+msgid "Hvilke typer data håndterer du i arbeidshverdagen din? Forsøk å klassifisere dem etter dataklassene."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:14
+msgid "Tenk over hvordan du bruker KI. Har du vært usikker på om det du laster opp i KI er i tråd med regler og policy på UiO?"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:15
+msgid "Reflekter over hvordan du bruker KI. Styrker eller svekker KI deg faglig?"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:19
+msgid "Repetisjon"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:21
+msgid "**KI er en ressurskrevende teknologi.** Den enorme etterspørselen etter KI fører til stort forbruk av strøm, vann og arealer. Du kan redusere belastningen ved å være bevisst på når du bruker KI, velge en mindre språkmodell til enkle oppgaver og starte en ny samtale når samtalen begynner å bli lang."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:25
+msgid "**Det er sosiale kostnader knyttet til KI.** Som all storindustri har KI sosiale kostnader, både under produksjon og ved bruk."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:27
+msgid "**Bruk KI-tjenester som er godkjent av UiO.** De fleste KI-tjenester er skytjenester, og data du deler kan komme på avveie. Ved å bruke de godkjente KI-tjenestene til UiO er du trygg på at dette ikke skjer."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:30
+msgid "**Personopplysninger krever mer enn en godkjent tjeneste.** Personvernreglene gjelder uansett hvilket verktøy du bruker. Du må ha et behandlingsgrunnlag, og du kan ikke bruke opplysningene til andre formål enn det de er samlet inn for."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:33
+msgid "**Opphavsretten gjelder også når du bruker KI.** Mange KI-tjenester lagrer teksten de mottar og kan bruke den til å trene nye modeller. Dette er du beskyttet mot dersom du bruker de UiO godkjente KI-tjenestene. Du må allikevel alltid sjekke om materialet du laster opp tillater opplasting til KI."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:37
+msgid "**Eksternt innhold kan inneholde skjulte instruksjoner.** Nettsider og dokumenter du lar en språkmodell lese, kan forsøke å styre den. Dette kalles prompt-injection. Bruk kilder du stoler på, og kontroller alltid svaret før du bruker det."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:40
+msgid "**Du er ansvarlig for hvordan du bruker KI-verktøy**, og må sette deg inn i regelverket. UiOs IT-reglement gjelder også for KI, og i tillegg har UiO egne KI-retningslinjer som må følges."
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:44
+msgid "Neste kapittel"
+msgstr ""
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:46
+msgid "Du vet nå hva du bør ta hensyn til for å bruke KI på en ansvarlig måte. I neste kapittel ser vi på hvilke KI-tjenester du kan bruke ved UiO, og hva de ulike tjenestene egner seg til."
+msgstr ""

@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module5/microsoft-copilot-chat.rst:3
+msgid "Microsoft Copilot Chat"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:5
+msgid "Microsoft Copilot Chat ved UiO fungerer som en vanlig chattetjeneste med tilgang til nettsøk. Tjenesten bruker GPT-språkmodellene fra  `OpenAI <https://openai.com/nb-NO/>`_. Chatten kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video. Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hjelper deg i gang, og er derfor godt egnet hvis du ønsker KI-assistanse som er intuitiv og enkel å bruke."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:10
+msgid "På UiO er Microsoft Copilot Chat godkjent kun for bruk med grønne data. Du må derfor være spesielt forsiktig når du benytter tjenesten. Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:15
+msgid "Viktig når du bruker Microsoft Copilot Chat"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:17
+msgid "For å bruke Microsoft Copilot Chat må du:"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:19
+msgid "være aktiv bruker av MS 365"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:20
+msgid "være spesielt oppmerksom på at du er logget inn med din UiO Microsoft konto når du bruker tjenesten."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:23
+msgid "Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. Tjenesten kjører ikke på UiO sine systemer."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:25
+msgid "Microsoft Copilot Chat er kun godkjent for opptil grønne data 🟢"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:26
+msgid "Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot Chat."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:27
+msgid "Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:30
+msgid "KI-produktene fra Microsoft"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:32
+msgid "Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chatte-funksjonen. Ved UiO er Microsoft Copilot Chat ikke integrert direkte i de andre Microsoft-produktene. Det betyr at den såkalte agent-funksjonen ikke er aktivert, og du ser derfor ikke Copilot-ikonet eller KI-funksjoner inne i for eksempel PowerPoint eller Word."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:37
+msgid "MS Copilot ikon"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:42
+msgid "Du kan likevel bruke Microsoft Copilot (Chat) til blant annet å:"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:44
+msgid "få hjelp til å lage en PowerPoint-presentasjon"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:45
+msgid "laste opp en presentasjon og be Copilot lage illustrasjoner"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:46
+msgid "få oppsummeringer eller andre typer analyser av innholdet"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:48
+msgid "Det du ikke kan, er å be Copilot gjøre endringer direkte i en fil fra selve PowerPoint-, Word- eller andre Microsoft-applikasjoner (agent funksjonaliteten til Microsoft Copilot er ikke skrudd på hos UiO). Slike endringer må du fortsatt gjøre selv i programmet, basert på forslagene du får fra Copilot (Chat)."
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:54
+msgid "Bruk Microsoft Copilot Chat hvis du"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:56
+msgid "skal jobbe med grønne 🟢 data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:57
+msgid "trenger websøk"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:58
+msgid "vil ha en KI-chat som kan lage og jobbe med flere typer filer"
+msgstr ""
+
+#: ../../source/module5/microsoft-copilot-chat.rst:59
+msgid "vil ha en KI-chat som er enkel å bruke og hjelper deg igang"
+msgstr ""

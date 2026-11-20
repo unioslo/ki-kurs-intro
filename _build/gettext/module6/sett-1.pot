@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/module6/sett-1.rst:3
+msgid "Sett 1"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:5
+msgid "Oppgave 1: Instruksjoner"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:7
+msgid "Utforsk 2 ulike KI-tjenestene og øv på ulike teknikker for å gi instruksjoner. Diskuter gjerne med en kollega hvordan og hva de ulike tjeneste fungerer til."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:10
+msgid "Oppgave 2 - Idegenerering"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:12
+msgid "Spør et KI-verktøy om å generere 10 ideer til hvordan KI kan brukes i din arbeidshverdag. Spesifiser tydelig hva slags oppgaver du gjør og hvilke verktøy du har tilgjengelig."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:15
+msgid "Oppgave 3 - Gemini Notebook"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:17
+msgid "Last opp et dokument i Gemini Notebook. Velg et dokument som er relevant for jobben din, eller et dokument du er interessert i. Lag et tankekart og en studieveiledning, og still spørsmål om dokumentets innhold."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:20
+msgid "Oppgave 4 - Opprettelse av maler"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:22
+msgid "Tenk på et arbeidsområde hvor du lager lignende dokumenter eller tekster ofte. Bruk et av de tilgjengelige KI-verktøyene til å lage et forslag til en mal du kan bruke i arbeidet ditt."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:25
+msgid "Oppgave 5 - KI-assistent"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:27
+msgid "Sett opp din helt egne KI-assistent i GPT UiO."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:29
+msgid "Velg én oppgave du gjør ofte (f.eks. svare på henvendelser, lage agenda, oppsummere møter)."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:30
+msgid "Lag en \"standard-instruksjon\" som du kan bruke igjen, som beskriver: - Din rolle og arbeidsfelt - Typisk målgruppe - Ønsket stil og format"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:34
+msgid "Test instruksjonen på et eksempel fra jobben."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:35
+msgid "Juster instruksjonen til du har en versjon du kan bruke som mal fremover."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:37
+msgid "Oppgave 6 - Bildegenering"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:39
+msgid "Du skal kalle inn til et møte med valgfritt tema. Be Copilot om å generere et relevant bilde du kan bruke i møteinnkallelsen."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:42
+msgid "Oppgave 7 - Powerpoint"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:44
+msgid "Be Copilot lage en utkast til en powerpoint-presentasjon om et valgfritt tema."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:47
+msgid "Oppgave 8 - Enkel programmering"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:49
+msgid "Vi ønsker at excel skal summere tallene i to kolonner automatisk."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:51
+msgid "Skjermdump utsnitt av et excel ark med 3 kolonner."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:56
+msgid "For å få til dette har vi skrevet en kort makro:"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:72
+msgid "Dessverre inneholder denne kodesnutten en feil, og summene vi får stemmer ikke med forventningene."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:74
+msgid "Oppgave 1: Få GPT til å forklare hva som er feil med kodesnutten, og hvorfor den ikke gir summen av kolonne A og B."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:75
+msgid "Oppgave 2: Få GPT til å skrive en riktig versjon av koden som faktisk gir summen av kolonne A og B."
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:77
+msgid "Oppgaven kan løses utelukkende med kodesnutten over og GPT UiO, men for de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den beskrevne funksjonaliteten om man vil teste det selv her: `Enkel-koding-med-KI.xlsx <https://uio.instructure.com/courses/63248/files/3954949/download>`_"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:80
+msgid "Kilder / Ressurser"
+msgstr ""
+
+#: ../../source/module6/sett-1.rst:82
+msgid "Takk til `ØVA <https://www.uio.no/om/organisasjon/fellesadm/ova/>`_ som har delt sine KI_oppgaver med oss!"
+msgstr ""
