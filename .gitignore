@@ -2,8 +2,8 @@
 .pydevproject
 
 # Sphinx build outputs
-_build/
-_templates/
+#_build/
+#_templates/
 
 # Python
 __pycache__/

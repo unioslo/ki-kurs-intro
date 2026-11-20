@@ -100,6 +100,19 @@ FRONT PAGE:
     python update_canvas_pages.py --upload-icons
     python update_canvas_pages.py --upload-icons --dry-run
 
+ENGLISH DEPLOYMENT:
+    # Build English HTML first
+    make html-en
+
+    # Upload to the English Canvas room (course ID 65902, English mapping)
+    python update_canvas_pages.py --course-id 65902 \
+        --mapping-file page_id_mapping.en.json --html-dir _build/html/en
+
+    # Generate mapping for the English room (first time only)
+    python update_canvas_pages.py --course-id 65902 \
+        --mapping-file page_id_mapping.en.json --html-dir _build/html/en \
+        --generate-mapping
+
 GITHUB DEPLOYMENT:
     # Generate mapping from GitHub html-pages branch (no local build needed)
     python update_canvas_pages.py --generate-mapping --from-github
@@ -169,14 +182,25 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 
-# Configuration
+# Configuration defaults (overridable via --course-id, --mapping-file, --html-dir
+# or CANVAS_COURSE_ID / CANVAS_MAPPING_FILE / CANVAS_HTML_DIR env vars)
 CANVAS_URL = "https://uio.instructure.com"
-COURSE_ID = "63248"
+DEFAULT_COURSE_ID = "63248"
 GITHUB_REPO = "https://github.com/unioslo/ki-kurs-intro.git"
 HTML_BRANCH = "html-pages"
 
-# Mapping file to store filename -> page_id relationships
+# These are updated by resolve_config() after CLI args are parsed
+COURSE_ID = DEFAULT_COURSE_ID
 MAPPING_FILE = Path(__file__).parent / "page_id_mapping.json"
+
+# Simple path resolution: try current dir first, then parent
+_html_dir = Path("_build/html")
+if not _html_dir.exists():
+    _html_dir = Path("../_build/html")
+    if not _html_dir.exists():
+        _html_dir = Path("_build")
+DEFAULT_HTML_DIR = _html_dir
+HTML_DIR = DEFAULT_HTML_DIR
 
 # The course front page is a special Canvas wiki page that lives outside all
 # modules. Its RST source is source/forside.rst, which Sphinx builds to
@@ -184,13 +208,6 @@ MAPPING_FILE = Path(__file__).parent / "page_id_mapping.json"
 # never picked up by the module*/*.html sweep. It is pushed to Canvas through
 # the dedicated /front_page endpoint (see update_front_page).
 FRONT_PAGE_HTML = "forside.html"
-
-# Simple path resolution: try current dir first, then parent
-HTML_DIR = Path("_build/html")
-if not HTML_DIR.exists():
-    HTML_DIR = Path("../_build/html")
-    if not HTML_DIR.exists():
-        HTML_DIR = Path("_build")
 
 
 def get_api_token():
@@ -203,6 +220,57 @@ def get_api_token():
         print("\nGet your token from: https://uio.instructure.com/profile/settings")
         sys.exit(1)
     return token
+
+
+def resolve_config(args):
+    """Resolve COURSE_ID, MAPPING_FILE, and HTML_DIR from CLI args."""
+    global COURSE_ID, MAPPING_FILE, HTML_DIR
+
+    if args.course_id:
+        COURSE_ID = args.course_id
+    else:
+        COURSE_ID = DEFAULT_COURSE_ID
+
+    if args.mapping_file:
+        MAPPING_FILE = Path(args.mapping_file)
+    else:
+        MAPPING_FILE = Path(__file__).parent / "page_id_mapping.json"
+
+    if args.html_dir:
+        HTML_DIR = Path(args.html_dir)
+    else:
+        HTML_DIR = DEFAULT_HTML_DIR
+
+    # Guard: refuse to use an English build directory with the Norwegian mapping
+    if HTML_DIR.name == "en" and MAPPING_FILE.name == "page_id_mapping.json":
+        print("\n" + "!"*70)
+        print("MISMATCH DETECTED")
+        print("  HTML dir:    " + str(HTML_DIR) + "  ← English build")
+        print("  Mapping:     " + MAPPING_FILE.name + "  ← Norwegian mapping")
+        print("  Result:      Would write English content into the Norwegian Canvas room!")
+        print("!"*70 + "\n")
+
+        if sys.stdin.isatty():
+            response = input("Switch to page_id_mapping.en.json now? [Y/n] ")
+            if response.strip().lower() in ("", "y", "yes"):
+                MAPPING_FILE = Path(__file__).parent / "page_id_mapping.en.json"
+                print(f"Switched to: {MAPPING_FILE}\n")
+                return
+
+        print("Add the correct mapping file and try again:")
+        print("    --mapping-file page_id_mapping.en.json")
+        sys.exit(1)
+
+
+def print_target_banner(dry_run=False):
+    """Print a prominent banner showing the target course and mapping file."""
+    mode = "DRY RUN — NO CHANGES WILL BE MADE" if dry_run else "LIVE UPDATE"
+    print(f"\n{'='*70}")
+    print(f"TARGET COURSE: {COURSE_ID}")
+    print(f"MAPPING FILE:  {MAPPING_FILE}")
+    print(f"HTML SOURCE:   {HTML_DIR}")
+    print(f"MODE:          {mode}")
+    print(f"{'='*70}\n")
 
 
 def load_page_mapping():
@@ -2942,6 +3010,21 @@ def main():
         help="Update only a single page by filename or path (e.g., 'oppsummering.html' or 'module2/oppsummering.html')"
     )
     parser.add_argument(
+        "--course-id",
+        type=str,
+        help="Canvas course ID to update (default: 63248)"
+    )
+    parser.add_argument(
+        "--mapping-file",
+        type=str,
+        help="Path to page ID mapping JSON file (default: page_id_mapping.json)"
+    )
+    parser.add_argument(
+        "--html-dir",
+        type=str,
+        help="Directory containing built HTML files (default: _build/html)"
+    )
+    parser.add_argument(
         "--page-id",
         type=str,
         help="Update only a single page by Canvas page ID (e.g., 12345). Takes precedence over --page."
@@ -3035,6 +3118,10 @@ def main():
         help="Name for the new module (use with --create-module, e.g., --module-name 'Grunnbegreper i kunstig intelligens')"
     )
     args = parser.parse_args()
+
+    # Resolve target course, mapping file, and HTML directory from CLI args
+    resolve_config(args)
+    print_target_banner(dry_run=args.dry_run)
 
     # Validate argument dependencies
     if args.page_id and not args.page:
