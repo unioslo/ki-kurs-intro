@@ -95,8 +95,8 @@ msgid ""
 "**Formulere tekst du selv har kontekst på** - Eksempel: Du utformer "
 "materiale hvor du lett kan se om det er riktig eller ikke."
 msgstr ""
-"**Phrasing text you already have context on** - Example: You produce "
-"material where you can easily tell whether it is correct or not."
+"**Writing text on topics you know well** - Example: You produce "
+"material that you can easily verify for accuracy."
 
 #: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:31
 msgid ""
