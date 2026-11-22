@@ -75,8 +75,8 @@ Estimert tidsbruk er basert på antall ord, og tar ikke hensyn til lengre tidsbr
           color: #000000 !important;
           text-decoration: none !important;
           border: medium none currentcolor;"
-   href="https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3"
-   data-api-endpoint="https://uio.instructure.com/api/v1/courses/63248/pages/introduksjon-til-ki-spraket-3"
+   href="https://uio.instructure.com/courses/COURSE_ID/pages/introduksjon-til-ki-spraket-3"
+   data-api-endpoint="https://uio.instructure.com/api/v1/courses/COURSE_ID/pages/introduksjon-til-ki-spraket-3"
    data-api-returntype="Page">Start kurset &rarr;&nbsp;</a>
 
 

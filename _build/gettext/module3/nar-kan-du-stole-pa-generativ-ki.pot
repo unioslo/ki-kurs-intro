@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 12:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,10 @@ msgstr ""
 
 #: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:19
 msgid "Nedenfor er eksempler på bruk med lav, medium og høy risiko."
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:25
+msgid "Lav risiko"
 msgstr ""
 
 #: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:27
@@ -90,6 +94,10 @@ msgstr ""
 msgid "Utøv normal kritisk vurdering av resultatet KI gir deg"
 msgstr ""
 
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:43
+msgid "Medium risiko"
+msgstr ""
+
 #: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:45
 msgid "Hvis resultatet skal \"ut i verden\" eller du bruker KI på områder du ikke har ekspertise:"
 msgstr ""
@@ -128,6 +136,10 @@ msgstr ""
 
 #: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:60
 msgid "Ta det endelige ansvaret selv"
+msgstr ""
+
+#: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:62
+msgid "Høy risiko"
 msgstr ""
 
 #: ../../source/module3/nar-kan-du-stole-pa-generativ-ki.rst:64

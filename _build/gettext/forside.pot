@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 12:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "Se for deg at du kan få en digital sparringspartner som alltid har tid o
 msgstr ""
 
 #: ../../source/forside.rst:22
-msgid "Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt IT-sikkerhet. Derfor skal du alltid bruke din kompetanse til å vurdere hvilke oppgaver som er trygge bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger. Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet."
+msgid "Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt IT-sikkerhet. Derfor skal du alltid bruke din egen kompetanse til å vurdere hvilke oppgaver som er trygge å bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger. Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet."
 msgstr ""
 
 #: ../../source/forside.rst:26
@@ -136,7 +136,7 @@ msgid "<div style=\"text-align: left; padding-top: 4px;\">\n"
 "       color: #000000 !important;\n"
 "       text-decoration: none !important;\n"
 "       border: medium none currentcolor;\"\n"
-"href=\"https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3\"\n"
-"data-api-endpoint=\"https://uio.instructure.com/api/v1/courses/63248/pages/introduksjon-til-ki-spraket-3\"\n"
+"href=\"https://uio.instructure.com/courses/COURSE_ID/pages/introduksjon-til-ki-spraket-3\"\n"
+"data-api-endpoint=\"https://uio.instructure.com/api/v1/courses/COURSE_ID/pages/introduksjon-til-ki-spraket-3\"\n"
 "data-api-returntype=\"Page\">Start kurset &rarr;&nbsp;</a>"
 msgstr ""

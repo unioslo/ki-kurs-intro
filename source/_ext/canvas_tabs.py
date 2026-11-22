@@ -7,6 +7,10 @@ import hashlib
 from docutils import nodes
 from sphinx.util.docutils import SphinxDirective
 
+# -- Translatable tab titles --------------------------------------------------
+# Re-use the same helpers as uio_components.py so gettext extracts tab titles.
+from uio_components import _attach_title, _resolve_title
+
 
 class canvas_tabs(nodes.General, nodes.Element):
     """Container for Canvas tabs."""
@@ -73,12 +77,11 @@ class CanvasTabDirectiveFixed(SphinxDirective):
 
     def run(self):
         node = canvas_tab()
-        # Get tab title from directive arguments
-        if self.arguments:
-            node['tabtitle'] = ' '.join(self.arguments)
-        else:
-            node['tabtitle'] = 'Tab'
         self.state.nested_parse(self.content, self.content_offset, node)
+        # Store the tab title in a translatable paragraph so gettext can
+        # extract it, and read it back with _resolve_title at render time.
+        title = ' '.join(self.arguments) if self.arguments else 'Tab'
+        _attach_title(self, node, title, attr='tabtitle')
         return [node]
 
 
@@ -96,7 +99,7 @@ def pdf_visit_canvas_tabs(self, node):
     self.body.append('<div class="canvas-tabs-pdf">\n')
 
     for i, tab in enumerate(tabs, 1):
-        title = tab.get('tabtitle', f'Tab {i}')
+        title = _resolve_title(tab, f'Tab {i}', attr='tabtitle')
         self.body.append('<div class="canvas-tab-pdf">\n')
         self.body.append(
             f'<p class="canvas-tab-pdf-title">{self.encode(title)}</p>\n'
@@ -133,7 +136,7 @@ def html_visit_canvas_tabs(self, node):
 
     # Generate tab navigation
     for i, tab in enumerate(tabs, 1):
-        title = tab.get('tabtitle', f'Tab {i}')
+        title = _resolve_title(tab, f'Tab {i}', attr='tabtitle')
         fragment_id = f'fragment-{tab_id}-{i}'
         self.body.append(f'<li><a href="#{fragment_id}">{self.encode(title)}</a></li>\n')
 

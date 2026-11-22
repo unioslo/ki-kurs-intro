@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 22:08+0200\n"
+"POT-Creation-Date: 2026-11-22 12:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/module1/generativ-ki.rst:2
+#: ../../source/module1/generativ-ki.rst:18
 msgid "Generativ KI"
 msgstr ""
 
@@ -48,12 +49,20 @@ msgstr ""
 msgid "**Eksempel:** En KI-chat som genererer et møtereferat basert på dine møtenotater."
 msgstr ""
 
+#: ../../source/module1/generativ-ki.rst:24
+msgid "Diskriminativ KI"
+msgstr ""
+
 #: ../../source/module1/generativ-ki.rst:26
 msgid "Diskrimitativ KI sorterer og gjenkjenner ting som allerede finnes."
 msgstr ""
 
 #: ../../source/module1/generativ-ki.rst:28
 msgid "**Eksempel:** KI system som kan finne ut om et fotografi er av en hund eller en katt"
+msgstr ""
+
+#: ../../source/module1/generativ-ki.rst:30
+msgid "Prediktiv KI"
 msgstr ""
 
 #: ../../source/module1/generativ-ki.rst:32

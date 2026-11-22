@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 22:08+0200\n"
+"POT-Creation-Date: 2026-11-22 12:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/module1/generativ-ki.rst:2
+#: ../../source/module1/generativ-ki.rst:18
 msgid "Generativ KI"
 msgstr "Generative AI"
 
@@ -41,7 +42,6 @@ msgstr ""
 "content."
 
 #: ../../source/module1/generativ-ki.rst:7
-#, fuzzy
 msgid ""
 "Det finnes flere typer KI. I dette kurset skal du lære mest om store "
 "språkmodeller, som en en type generativ KI. Store språkmodeller er selve "
@@ -85,6 +85,11 @@ msgstr ""
 "**Example:** An AI chat that generates meeting minutes based on your "
 "meeting notes."
 
+#: ../../source/module1/generativ-ki.rst:24
+msgid "Diskriminativ KI"
+msgstr "Discriminative AI"
+
+
 #: ../../source/module1/generativ-ki.rst:26
 msgid "Diskrimitativ KI sorterer og gjenkjenner ting som allerede finnes."
 msgstr "Discriminative AI sorts and recognises things that already exist."
@@ -96,6 +101,11 @@ msgid ""
 msgstr ""
 "**Example:** An AI system that can work out whether a photograph is of a "
 "dog or a cat."
+
+#: ../../source/module1/generativ-ki.rst:30
+msgid "Prediktiv KI"
+msgstr "Predictive AI"
+
 
 #: ../../source/module1/generativ-ki.rst:32
 msgid ""

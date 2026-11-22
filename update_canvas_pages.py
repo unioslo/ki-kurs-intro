@@ -1783,6 +1783,7 @@ def fix_canvas_file_links(html_content, course_id=COURSE_ID):
     """
     # Replace /courses/COURSE_ID/ with actual course ID
     html_content = html_content.replace('/courses/COURSE_ID/', f'/courses/{course_id}/')
+    html_content = html_content.replace('/api/v1/courses/COURSE_ID/', f'/api/v1/courses/{course_id}/')
 
     return html_content
 
@@ -2132,11 +2133,23 @@ def extract_content(html_path, token=None, page_mapping=None, dry_run=False):
         content_html = process_downloads_in_html(token, content_html, html_path, dry_run)
 
     # Fix Canvas file links
-    content_html = fix_canvas_file_links(content_html)
+    content_html = fix_canvas_file_links(content_html, course_id=COURSE_ID)
 
     # Process internal cross-reference links if page_mapping is provided
     if page_mapping:
-        content_html = process_internal_links(content_html, page_mapping)
+        content_html = process_internal_links(content_html, page_mapping, course_id=COURSE_ID)
+
+    # Replace any hardcoded absolute URLs to the default Norwegian course
+    # with the target course (handles raw HTML blocks that still reference 63248)
+    if COURSE_ID != DEFAULT_COURSE_ID:
+        content_html = content_html.replace(
+            f'{CANVAS_URL}/courses/{DEFAULT_COURSE_ID}/',
+            f'{CANVAS_URL}/courses/{COURSE_ID}/'
+        )
+        content_html = content_html.replace(
+            f'{CANVAS_URL}/api/v1/courses/{DEFAULT_COURSE_ID}/',
+            f'{CANVAS_URL}/api/v1/courses/{COURSE_ID}/'
+        )
 
     # Resolve chapter cards (needs token for icon file lookup)
     if token:

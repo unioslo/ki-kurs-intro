@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 12:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,10 @@ msgstr ""
 msgid "Eksempel på forskjell"
 msgstr ""
 
+#: ../../source/module1/ki-assistent.rst:28
+msgid "KI chat"
+msgstr ""
+
 #: ../../source/module1/ki-assistent.rst:30
 #: ../../source/module1/ki-assistent.rst:36
 msgid "**Bruker-instruksjon**: Hva sier Pytagoras læresetning?"
@@ -51,6 +55,10 @@ msgstr ""
 
 #: ../../source/module1/ki-assistent.rst:31
 msgid "**KI-svar**: Kvadratet på hypotenusen i en rettvinklet trekant er lik summen av kvadratene på de to katetene."
+msgstr ""
+
+#: ../../source/module1/ki-assistent.rst:34
+msgid "KI studieveileder assistent"
 msgstr ""
 
 #: ../../source/module1/ki-assistent.rst:37
