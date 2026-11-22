@@ -26,14 +26,21 @@ _TITLE_FLAG = 'uio_title'
 
 def _attach_title(directive, node, title, attr='title'):
     """Store ``title`` on ``node[attr]`` and, when non-empty, also add it to the
-    doctree as a translatable paragraph so gettext can extract/translate it.
+    doctree as a translatable title so gettext can extract/translate it.
+
+    A ``nodes.title`` (instead of ``nodes.paragraph``) is used as the helper
+    node because Sphinx's ``Locale`` transform re-parses translated text as
+    reStructuredText.  Titles starting with a number (e.g. ``1. Assess...``)
+    would otherwise be mis-interpreted as an enumerated list and skipped.
+    Treating the helper as a ``nodes.title`` makes Sphinx append an underline
+    (``===``) before parsing, so the text is always handled as a heading.
 
     Sphinx's i18n machinery (``is_translatable``) ignores any node without
     source info, so the title node is stamped with the directive's source/line.
     """
     node[attr] = title
     if title:
-        tnode = nodes.paragraph('', '', nodes.Text(title))
+        tnode = nodes.title('', nodes.Text(title))
         tnode[_TITLE_FLAG] = True
         tnode.source, tnode.line = directive.get_source_info()
         node.insert(0, tnode)
