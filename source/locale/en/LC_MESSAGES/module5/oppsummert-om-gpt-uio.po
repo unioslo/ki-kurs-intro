@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:3
+msgid "Oppsummert om GPT UiO"
+msgstr "Summary of GPT UiO"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:6
+msgid "Bruk GPT UiO hvis du"
+msgstr "Use GPT UiO if you"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:8
+msgid "trenger en trygg og god chat tjeneste"
+msgstr "need a safe and good chat service"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:9
+msgid ""
+"vil bruke en UiO GPT KI assistent som en kollega har delt med deg, eller "
+"prøve en av UiO sine utvalgte KI assistenter"
+msgstr ""
+"want to use a GPT UiO AI assistant that a colleague has shared with you, or "
+"try one of UiO's selected AI assistants"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:10
+msgid "trenger å håndterer røde data (velg en modell som støtter røde data)"
+msgstr "need to handle red data (choose a model that supports red data)"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:11
+msgid ""
+"vil være sikker på at ingen av dine data sendes til skyen (velg en lokal "
+"modell)"
+msgstr ""
+"want to be sure that none of your data is sent to the cloud (choose a local "
+"model)"
+
+#: ../../source/module5/oppsummert-om-gpt-uio.rst:12
+msgid ""
+"vil enkelt kunne bytte mellom større modeller (OpenAI's GPT modeller) som "
+"kjører i skyen eller en av de mindre åpne modellene som kjører på UiO eller "
+"NTNU sine IT-systemer"
+msgstr ""
+"want to easily switch between larger models (OpenAI's GPT models) that run "
+"in the cloud or one of the smaller open models that run on UiO's or NTNU's "
+"IT systems"

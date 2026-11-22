@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 22:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module1/generativ-ki.rst:2
+msgid "Generativ KI"
+msgstr "Generative AI"
+
+#: ../../source/module1/generativ-ki.rst:3
+msgid ""
+"Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO "
+"GPT, Microsoft Copilot og Gemini Notebook er eksempler på dette. "
+"Generativ kunstig intelligens kalles \"generativ\" fordi den lager "
+"(genererer) nytt innhold basert på det den har lært fra før. Du skriver "
+"inn en instruksjon (prompt) og KI genererer et forslag til svar eller "
+"innhold."
+msgstr ""
+"When we talk about AI in everyday life, we usually mean generative AI. "
+"UiO GPT, Microsoft Copilot and Gemini Notebook are examples of this. "
+"Generative artificial intelligence is called \"generative\" because it "
+"creates (generates) new content based on what it has learned previously. "
+"You type in a prompt and the AI generates a suggested answer or piece of "
+"content."
+
+#: ../../source/module1/generativ-ki.rst:7
+#, fuzzy
+msgid ""
+"Det finnes flere typer KI. I dette kurset skal du lære mest om store "
+"språkmodeller, som en en type generativ KI. Store språkmodeller er selve "
+"motoren i mange KI-tjenester du bruker, og dette skal du lære mer om litt"
+" senere i kurset."
+msgstr ""
+"There are many types of AI. In this course you will mainly learn about "
+"large language models, which are a type of generative AI. Large language "
+"models are the very engine behind many of the AI services you use, and "
+"you will learn more about this a little later in the course."
+
+#: ../../source/module1/generativ-ki.rst:10
+msgid "Typer KI"
+msgstr "Types of AI"
+
+#: ../../source/module1/generativ-ki.rst:12
+msgid ""
+"Visste du at i tillegg til generativ KI, finnes det to andre typer som er"
+" veldig vanlige? Nemlig diskriminativ og prediktiv KI."
+msgstr ""
+"Did you know that in addition to generative AI, there are two other types"
+" that are very common? Namely discriminative and predictive AI."
+
+#: ../../source/module1/generativ-ki.rst:14
+msgid "Her er noen eksempler på hver av disse."
+msgstr "Here are some examples of each of these."
+
+#: ../../source/module1/generativ-ki.rst:20
+msgid ""
+"Generativ KI produserer eller *genererer* nytt innhold som tekst, bilder "
+"eller lyd."
+msgstr ""
+"Generative AI produces or *generates* new content such as text, images or"
+" sound."
+
+#: ../../source/module1/generativ-ki.rst:22
+msgid ""
+"**Eksempel:** En KI-chat som genererer et møtereferat basert på dine "
+"møtenotater."
+msgstr ""
+"**Example:** An AI chat that generates meeting minutes based on your "
+"meeting notes."
+
+#: ../../source/module1/generativ-ki.rst:26
+msgid "Diskrimitativ KI sorterer og gjenkjenner ting som allerede finnes."
+msgstr "Discriminative AI sorts and recognises things that already exist."
+
+#: ../../source/module1/generativ-ki.rst:28
+msgid ""
+"**Eksempel:** KI system som kan finne ut om et fotografi er av en hund "
+"eller en katt"
+msgstr ""
+"**Example:** An AI system that can work out whether a photograph is of a "
+"dog or a cat."
+
+#: ../../source/module1/generativ-ki.rst:32
+msgid ""
+"Prediktiv KI leter etter mønstre i data som kan si noe om sannsynligheten"
+" for hendelser."
+msgstr ""
+"Predictive AI looks for patterns in data that can say something about the"
+" likelihood of events."
+
+#: ../../source/module1/generativ-ki.rst:34
+msgid "**Eksempel:** værmeldingen"
+msgstr "**Example:** the weather forecast"
+

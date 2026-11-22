@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module3/avslutning-del1.rst:2
+msgid "Avslutning del 1"
+msgstr "Conclusion part 1"
+
+#: ../../source/module3/avslutning-del1.rst:4
+msgid ""
+"Du har nå lært de viktigste grunnleggende konseptene om KI og språkmodeller,"
+" og kanskje enda viktigere: Hvilke begrensninger teknologien har. I tillegg "
+"har du fått et sett med verktøy som kan hjelpe deg med å få gode resultater "
+"fra KI, og hvordan du kan jobbe med å vurdere og sikre kvaliteten på det KI-"
+"en gir deg."
+msgstr ""
+"You have now learned the most important fundamental concepts about AI and "
+"language models, and perhaps even more importantly: the limitations of the "
+"technology. In addition, you have gained a set of tools that can help you "
+"get good results from AI, and learned how to assess and ensure the quality "
+"of what AI gives you."
+
+#: ../../source/module3/avslutning-del1.rst:7
+msgid ""
+"Her passer det bra å ta en pause, dersom tiden eller energien ikke strekker "
+"til. Du har kommet omtrent halvveis i kurset."
+msgstr ""
+"This is a good place to take a break if you are running low on time or "
+"energy. You have reached roughly the halfway point of the course."
+
+#: ../../source/module3/avslutning-del1.rst:11
+msgid ""
+"I del 2 skal du med aspekter knyttet til bærekraft og ansvarlig bruk, om de "
+"viktigste KI-tjenestene på UiO, før det hele rundes av med to sett med "
+"øvelser som du kan laste ned og jobbe på i dagene fremover."
+msgstr ""
+"In part 2 you will explore aspects related to sustainability and responsible"
+" use, and learn about the most important AI services at UiO, before it all "
+"wraps up with two sets of exercises that you can download and work on in the"
+" days ahead."
+
+#: ../../source/module3/avslutning-del1.rst:14
+msgid "Vi sees i neste del!"
+msgstr "See you in the next part!"

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module2/skjevheter.rst:2
+msgid "Modellenes skjevheter"
+msgstr "The models' biases"
+
+#: ../../source/module2/skjevheter.rst:4
+msgid ""
+"Vi har tidligere lært at det er en iboende egenskap ved språkmodeller at de "
+"*finner på ting*. En annen iboende egenskap er at språkmodellen har "
+"innebygde *skjevheter*. Det kan være mange typer skjevheter. Vi skal ta for "
+"oss noen her."
+msgstr ""
+"We have learned earlier that it is an inherent property of language models "
+"that they *make things up*. Another inherent property is that language "
+"models have built-in *biases*. There can be many types of bias. We will look"
+" at some of them here."
+
+#: ../../source/module2/skjevheter.rst:9
+msgid "Skjevhet som følge av manglende treningsdata"
+msgstr "Bias resulting from a lack of training data"
+
+#: ../../source/module2/skjevheter.rst:10
+msgid ""
+"Store språkmodeller trenes som sagt på tekster fra internett, men det er "
+"mange tekster de ikke har tilgang til. For eksempel har de ikke tilgang til "
+"informasjon som krever innlogging, eller som er bak en betalingsmur. De har "
+"også begrenset tilgang til trykte kilder. Dette skaper begrensninger for hva"
+" modellene kan lære og gir ulikt utslag for forskjellige bruksområder. Ett "
+"eksempel på dette er at modellene kan være svake på helt spesifikk "
+"fagkunnskap i et gitt forskningsdomene."
+msgstr ""
+"As mentioned, large language models are trained on texts from the internet, "
+"but there are many texts they do not have access to. For example, they do "
+"not have access to information that requires a login, or that is behind a "
+"paywall. They also have limited access to printed sources. This creates "
+"limitations on what the models can learn and has different effects for "
+"different use cases. One example of this is that the models can be weak on "
+"very specific subject knowledge within a given research domain."
+
+#: ../../source/module2/skjevheter.rst:18
+msgid "Skjevhet som speiler skjevheter i samfunnet"
+msgstr "Bias that mirrors biases in society"
+
+#: ../../source/module2/skjevheter.rst:20
+msgid ""
+"En annen type skjevhet stammer fra ulikheter i samfunnet vårt, og "
+"gjenspeiles derfor også i den digitale informasjonen vi produserer. Dette "
+"kan dreie seg om skjevheter knyttet til etnisitet, kjønn, religion eller "
+"annet og er veldig viktig å være klar over når man behandler forslag og "
+"tekst fra en språkmodell."
+msgstr ""
+"Another type of bias stems from inequalities in our society, and is "
+"therefore also reflected in the digital information we produce. This can "
+"involve biases related to ethnicity, gender, religion or other factors, and "
+"is very important to be aware of when working with suggestions and text from"
+" a language model."
+
+#: ../../source/module2/skjevheter.rst:23
+msgid "Eksempel på skjevheter i treningsdata"
+msgstr "Example of biases in training data"
+
+#: ../../source/module2/skjevheter.rst:25
+msgid ""
+"Anta at en språkmodell er trent på mange gamle stillingsannonser der "
+"\"leder\" oftere omtales som \"han\" enn \"hun\". Når du ber modellen skrive"
+" en tekst om \"en typisk leder\", vil den da ha høyere sannsynlighet for å "
+"bruke ord som \"han\", \"mann\" og mannsnavn."
+msgstr ""
+"Suppose a language model is trained on many old job advertisements where "
+"\"leader\" is referred to as \"he\" more often than \"she\". When you ask "
+"the model to write a text about \"a typical leader\", it will then have a "
+"higher probability of using words like \"he\", \"man\" and men's names."
+
+#: ../../source/module2/skjevheter.rst:28
+msgid ""
+"Modellen har ikke meninger om kjønn, den gjennskaper bare mønstrene som "
+"allerede fantes i tekstene den ble trent på."
+msgstr ""
+"The model has no opinions about gender; it merely reproduces the patterns "
+"that already existed in the texts it was trained on."
+
+#: ../../source/module2/skjevheter.rst:32
+msgid "Bekreftelsesskjevhet (bekreftelsesbias)"
+msgstr "Confirmation bias"
+
+#: ../../source/module2/skjevheter.rst:34
+msgid ""
+"Dagens språkmodeller har en tendens til å være enige med deg. Dette kan føre"
+" til at språkmodellen gir deg *rett i* noe som ikke er rett."
+msgstr ""
+"Today's language models have a tendency to agree with you. This can lead to "
+"the language model telling you that you are *right about* something that is "
+"not correct."
+
+#: ../../source/module2/skjevheter.rst:37
+msgid ""
+"For å unngå bekreftelsesskjevhet kan du snu på spørsmålet, altså også spørre"
+" om det motsatte."
+msgstr ""
+"To avoid confirmation bias, you can turn the question around, that is, also "
+"ask about the opposite."

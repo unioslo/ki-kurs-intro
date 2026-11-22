@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module6/avslutning.rst:3
+msgid "Avslutning"
+msgstr "Conclusion"
+
+#: ../../source/module6/avslutning.rst:5
+msgid ""
+"Gratulerer! Du har nå fullført kurset \"Introduksjon til kunstig "
+"intelligens\"."
+msgstr ""
+"Congratulations! You have now completed the course \"Introduction to "
+"Artificial Intelligence\"."
+
+#: ../../source/module6/avslutning.rst:7
+msgid "Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:"
+msgstr ""
+"Now it is up to you, but we would like to offer you some good advice along "
+"the way:"
+
+#: ../../source/module6/avslutning.rst:9
+msgid ""
+"Bruk kunnskapen du har fått, det er først med litt erfaring at KI kan bli et"
+" nyttig verktøy."
+msgstr ""
+"Use the knowledge you have gained, as it is only with some experience that "
+"AI can become a useful tool."
+
+#: ../../source/module6/avslutning.rst:10
+msgid "Vær kritisk og ansvarlig, husk at KI har begrensninger!"
+msgstr "Be critical and responsible, and remember that AI has limitations!"
+
+#: ../../source/module6/avslutning.rst:11
+msgid ""
+"Teknologien utvikler seg raskt. Fortsett å lære og hold deg oppdatert ved å "
+"følge med på UiOs nettsider om KI, kurs og workshops ved UiO, og bruk dine "
+"fagnettverk og kollegaer til å dele KI erfaringer med!"
+msgstr ""
+"The technology is developing rapidly. Keep learning and stay up to date by "
+"following UiO's web pages about AI, attending courses and workshops at UiO, "
+"and using your professional networks and colleagues to share AI experiences "
+"with!"
+
+#: ../../source/module6/avslutning.rst:13
+msgid ""
+"KI er et kraftig verktøy som kan være til hjelp i arbeidshverdagen, men det "
+"er din kompetanse og dømmekraft som gjør KI anvendbart, nyttig og trygt!"
+msgstr ""
+"AI is a powerful tool that can help in your everyday work, but it is your "
+"expertise and judgement that make AI applicable, useful and safe!"
+
+#: ../../source/module6/avslutning.rst:15
+msgid "Ansiktene til personen og roboten"
+msgstr "The faces of the person and the robot"
+
+#: ../../source/module6/avslutning.rst:20
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr "Illustration: Tina Morønning Ruud"
+
+#: ../../source/module6/avslutning.rst:24
+msgid "Prøv selv!"
+msgstr "Try it yourself!"
+
+#: ../../source/module6/avslutning.rst:25
+msgid ""
+"For å hjelpe deg på veien videre har vi laget to sett med øvingsoppgaver. De"
+" finner du i `kursets siste del "
+"<https://uio.instructure.com/courses/63248/pages/prov-selv>`_ og er oppgaver"
+" du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av "
+"KI."
+msgstr ""
+"To help you on your way, we have created two sets of practice exercises. You"
+" will find them in the `final part of the course "
+"<https://uio.instructure.com/courses/63248/pages/prov-selv>`_, and they are "
+"exercises you can work on in the days and weeks ahead to become a skilled "
+"user of AI."
+
+#: ../../source/module6/avslutning.rst:29
+msgid "**Lykke til videre på din KI-reise!**"
+msgstr "**Good luck on the rest of your AI journey!**"
+
+#: ../../source/module6/avslutning.rst:32
+msgid "Om kurset"
+msgstr "About the course"
+
+#: ../../source/module6/avslutning.rst:34
+msgid ""
+"Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes "
+"Saastad og Erik Winge. Tegningene er laget av Tina Morønning Ruud."
+msgstr ""
+"The course content was created by Poonam Bhondi Jansen, Maiken Pedersen, "
+"Johannes Saastad and Erik Winge. The illustrations were created by Tina "
+"Morønning Ruud."
+
+#: ../../source/module6/avslutning.rst:37
+msgid "© Copyright 2026"
+msgstr "© Copyright 2026"
+
+#: ../../source/module6/avslutning.rst:39
+msgid "**Kontakt og tilbakemelding**"
+msgstr "**Contact and feedback**"
+
+#: ../../source/module6/avslutning.rst:41
+msgid ""
+"Vi tar gjerne imot `tilbakemelding på kurset <https://nettskjema.no/a/ki-"
+"intro-admin>`_."
+msgstr ""
+"We would be glad to receive `feedback on the course "
+"<https://nettskjema.no/a/ki-intro-admin>`_."
+
+#: ../../source/module6/avslutning.rst:43
+msgid ""
+"Har du spørsmål om kurset eller om KI ved UiO? Kontakt IT-avdelingen: `it-"
+"hjelp@uio.no <mailto:it-hjelp@uio.no>`_ eller kursets ansvarlige: `ai-"
+"contact@usit.uio.no <mailto:ai-contact@usit.uio.no>`_."
+msgstr ""
+"Do you have questions about the course or about AI at UiO? Contact the IT "
+"department: `it-hjelp@uio.no <mailto:it-hjelp@uio.no>`_ or the people "
+"responsible for the course: `ai-contact@usit.uio.no <mailto:ai-"
+"contact@usit.uio.no>`_."

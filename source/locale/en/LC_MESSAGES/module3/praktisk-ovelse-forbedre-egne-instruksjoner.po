@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module3/praktisk-ovelse-forbedre-egne-instruksjoner.rst:2
+msgid "Praktisk øvelse: Forbedre egne instruksjoner"
+msgstr "Practical exercise: Improve your own prompts"
+
+#: ../../source/module3/praktisk-ovelse-forbedre-egne-instruksjoner.rst:5
+msgid "Oppgave"
+msgstr "Task"
+
+#: ../../source/module3/praktisk-ovelse-forbedre-egne-instruksjoner.rst:7
+msgid ""
+"Tenk på en oppgave du ønsker at KI skal hjelpe deg med og som er av en litt "
+"mer kompleks art enn bare tekstforbedring. Dette kan for eksempel være "
+"planlegging av et arrangement, eller forklaring av komplekse sammenhenger "
+"eller begreper."
+msgstr ""
+"Think of a task you would like AI to help you with that is a bit more "
+"complex than just improving text. This could for example be planning an "
+"event, or explaining complex relationships or concepts."
+
+#: ../../source/module3/praktisk-ovelse-forbedre-egne-instruksjoner.rst:10
+msgid ""
+"Hvordan ville du gått løs på instruksjonen til KI-en til vanlig? -  Åpne "
+"`GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_ og skriv "
+"inn instruksjonen."
+msgstr ""
+"How would you normally go about the prompt to the AI? -  Open `GPT UiO "
+"<https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_ and enter the "
+"prompt."
+
+#: ../../source/module3/praktisk-ovelse-forbedre-egne-instruksjoner.rst:12
+msgid ""
+"Velg en av teknikkene på forrige side, og bruk prinsipper for gode "
+"instruksjoner. Forbedre instruksjonen din."
+msgstr ""
+"Choose one of the techniques from the previous page, and apply the "
+"principles for good prompts. Improve your prompt."
+
+#: ../../source/module3/praktisk-ovelse-forbedre-egne-instruksjoner.rst:13
+msgid ""
+"Sammenligne svaret. Kan du gjøre ytterligere forbedringer ved å bruke flere "
+"teknikker?"
+msgstr ""
+"Compare the answer. Can you make further improvements by using more "
+"techniques?"

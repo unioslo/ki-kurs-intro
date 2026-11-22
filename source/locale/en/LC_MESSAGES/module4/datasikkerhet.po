@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/datasikkerhet.rst:2
+msgid "Datasikkerhet"
+msgstr "Data security"
+
+#: ../../source/module4/datasikkerhet.rst:4
+msgid ""
+"Før du bruker en KI-tjeneste til å behandle tekst, dokumenter eller andre "
+"opplysninger er det to ting du må tenke på:"
+msgstr ""
+"Before you use an AI service to process text, documents or other "
+"information, there are two things you need to consider:"
+
+#: ../../source/module4/datasikkerhet.rst:6
+msgid "Er KI-tjenesten godkjent av UiO?"
+msgstr "Is the AI service approved by UiO?"
+
+#: ../../source/module4/datasikkerhet.rst:7
+msgid "Hvilken dataklasse har informasjonen du vil bruke?"
+msgstr "What data class does the information you want to use belong to?"
+
+#: ../../source/module4/datasikkerhet.rst:9
+msgid ""
+"Hvis KI-tjenesten *ikke* er godkjent av UiO, kan du bare behandle *grønne "
+"data*. Dette gjelder uansett hvordan du bruker tjenesten, for eksempel når "
+"du"
+msgstr ""
+"If the AI service is *not* approved by UiO, you may only process *green "
+"data*. This applies no matter how you use the service, for example when you"
+
+#: ../../source/module4/datasikkerhet.rst:11
+msgid "limer inn tekst i en chat"
+msgstr "paste text into a chat"
+
+#: ../../source/module4/datasikkerhet.rst:12
+msgid "laster opp et dokument"
+msgstr "upload a document"
+
+#: ../../source/module4/datasikkerhet.rst:13
+msgid "bruker en KI-assistent"
+msgstr "use an AI assistant"
+
+#: ../../source/module4/datasikkerhet.rst:14
+msgid "ber KI oppsummere, oversette eller bearbeide innhold."
+msgstr "ask the AI to summarise, translate or process content."
+
+#: ../../source/module4/datasikkerhet.rst:16
+msgid ""
+"De fleste KI-tjenester der ute sender dataene dine videre til eksterne "
+"leverandører. Da kan opplysningene dine bli lagret eller behandlet utenfor "
+"UiO sin kontroll. Det unngår du derimot hvis du velger en av `UiO sine "
+"godkjente KI-tjenester <https://www.uio.no/tjenester/it/ki/>`_."
+msgstr ""
+"Most AI services out there send your data on to external suppliers. Your "
+"information may then be stored or processed outside UiO's control. You avoid"
+" this, however, if you choose one of `UiO's approved AI services "
+"<https://www.uio.no/tjenester/it/ki/>`_."
+
+#: ../../source/module4/datasikkerhet.rst:18
+msgid ""
+"Det viktigste du gjør for å ivareta datasikkerheten er derfor å velge en "
+"godkjent KI-tjeneste, og kontrollere hvilken dataklasse tjenesten kan "
+"behandle. Du skal lære er om UiO sine KI-tjenester i kapittel 5."
+msgstr ""
+"The most important thing you can do to safeguard data security is therefore "
+"to choose an approved AI service and check which data class the service can "
+"handle. You will learn more about UiO's AI services in chapter 5."
+
+#: ../../source/module4/datasikkerhet.rst:22
+msgid "UiO sin dataklassifisering"
+msgstr "UiO's data classification"
+
+#: ../../source/module4/datasikkerhet.rst:24
+msgid ""
+"UiO sine KI-tjenester godkjent for ulike typer data. Dette er tydelig "
+"markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av "
+"hvor stort beskyttelsesbehov dataene dine har."
+msgstr ""
+"UiO's AI services are approved for different types of data. This is clearly "
+"marked in each service. Which service you can use depends on how great a "
+"protection need your data has."
+
+#: ../../source/module4/datasikkerhet.rst:26
+msgid ""
+"Nedenfor finner du en oversikt over dataklassene med eksempler på hva de "
+"type informasjon som hører til i de ulike klassene. Du finner utfyllende "
+"informasjon på siden `Klassifisering av data og informasjon "
+"<https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_"
+" ."
+msgstr ""
+"Below you will find an overview of the data classes with examples of the "
+"types of information that belong to each class. You will find more detailed "
+"information on the page `Classification of data and information "
+"<https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_"
+" ."
+
+#: ../../source/module4/datasikkerhet.rst:28
+msgid ""
+"Bruk oversikten sammen med UiOs nettside om dataklassifisering for å finne "
+"ut hvilken dataklasse dataene dine tilhører, og velg deretter en KI-tjeneste"
+" som er godkjent for denne dataklassen."
+msgstr ""
+"Use the overview together with UiO's web page on data classification to work"
+" out which data class your data belongs to, and then choose an AI service "
+"that is approved for that data class."
+
+#: ../../source/module4/datasikkerhet.rst:34
+msgid "🟢 Grønn: Åpen informasjon"
+msgstr "🟢 Green: Open information"
+
+#: ../../source/module4/datasikkerhet.rst:37
+msgid ""
+"«Åpen» benyttes dersom det *ikke forårsaker noen skade* for offentlige "
+"interesser, universitetet, enkeltperson eller samarbeidspartner at "
+"informasjonen blir kjent for uvedkommende eller endres utilsiktet."
+msgstr ""
+"\"Open\" is used when it *does not cause any harm* to public interests, the "
+"university, an individual or a partner if the information becomes known to "
+"unauthorised persons or is changed unintentionally."
+
+#: ../../source/module4/datasikkerhet.rst:39
+msgid "Informasjon som kan deles med alle."
+msgstr "Information that can be shared with everyone."
+
+#: ../../source/module4/datasikkerhet.rst:41
+#: ../../source/module4/datasikkerhet.rst:56
+#: ../../source/module4/datasikkerhet.rst:75
+#: ../../source/module4/datasikkerhet.rst:90
+msgid "**For eksempel**:"
+msgstr "**For example**:"
+
+#: ../../source/module4/datasikkerhet.rst:43
+msgid "mange offentlige nettsider"
+msgstr "many public websites"
+
+#: ../../source/module4/datasikkerhet.rst:44
+msgid "publiserte forskningsdata"
+msgstr "published research data"
+
+#: ../../source/module4/datasikkerhet.rst:45
+msgid "offentlige dokumenter"
+msgstr "public documents"
+
+#: ../../source/module4/datasikkerhet.rst:46
+msgid "open access-artikler"
+msgstr "open access articles"
+
+#: ../../source/module4/datasikkerhet.rst:51
+msgid "🟡 Gul: Begrenset informasjon"
+msgstr "🟡 Yellow: Restricted information"
+
+#: ../../source/module4/datasikkerhet.rst:54
+msgid ""
+"«Begrenset» benyttes dersom det *vil kunne forårsake en viss skade* for "
+"offentlige interesser, universitetet, enkeltperson eller samarbeidspartner "
+"at informasjonen blir kjent for uvedkommende eller endres utilsiktet."
+msgstr ""
+"\"Restricted\" is used when it *could cause some harm* to public interests, "
+"the university, an individual or a partner if the information becomes known "
+"to unauthorised persons or is changed unintentionally."
+
+#: ../../source/module4/datasikkerhet.rst:58
+msgid "personopplysninger"
+msgstr "personal data"
+
+#: ../../source/module4/datasikkerhet.rst:59
+msgid "studentoppgaver"
+msgstr "student assignments"
+
+#: ../../source/module4/datasikkerhet.rst:60
+msgid "dokumenter på Canvas eller lignende plattformer"
+msgstr "documents on Canvas or similar platforms"
+
+#: ../../source/module4/datasikkerhet.rst:61
+msgid "forelesningsnotater"
+msgstr "lecture notes"
+
+#: ../../source/module4/datasikkerhet.rst:62
+msgid "forskningsartikler bak betalingsmur"
+msgstr "research articles behind a paywall"
+
+#: ../../source/module4/datasikkerhet.rst:68
+msgid "🔴 Rød: Fortrolig informasjon"
+msgstr "🔴 Red: Confidential information"
+
+#: ../../source/module4/datasikkerhet.rst:71
+msgid ""
+"«Fortrolig» benyttes hvis det *vil kunne forårsake skade* for offentlige "
+"interesser, universitetet, enkeltperson eller samarbeidspartner hvis "
+"informasjonen blir kjent for uvedkommende eller endres utilsiktet."
+msgstr ""
+"\"Confidential\" is used when it *could cause harm* to public interests, the"
+" university, an individual or a partner if the information becomes known to "
+"unauthorised persons or is changed unintentionally."
+
+#: ../../source/module4/datasikkerhet.rst:73
+msgid ""
+"Informasjon som kan være tilgjengelig, men bare for de med godkjent tilgang."
+msgstr ""
+"Information that may be accessible, but only to those with approved access."
+
+#: ../../source/module4/datasikkerhet.rst:77
+msgid "sensitive personopplysninger"
+msgstr "sensitive personal data"
+
+#: ../../source/module4/datasikkerhet.rst:78
+msgid "helseinformasjon"
+msgstr "health information"
+
+#: ../../source/module4/datasikkerhet.rst:79
+msgid "kommende eksamensspørsmål"
+msgstr "upcoming exam questions"
+
+#: ../../source/module4/datasikkerhet.rst:83
+msgid "⚫ Svart: Strengt fortrolig informasjon"
+msgstr "⚫ Black: Strictly confidential information"
+
+#: ../../source/module4/datasikkerhet.rst:86
+msgid ""
+"«Strengt fortrolig» benyttes dersom det *vil kunne forårsake betydelig "
+"skade* for offentlige interesser, universitetet, enkeltperson eller "
+"samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres "
+"utilsiktet."
+msgstr ""
+"\"Strictly confidential\" is used when it *could cause significant harm* to "
+"public interests, the university, an individual or a partner if the "
+"information becomes known to unauthorised persons or is changed "
+"unintentionally."
+
+#: ../../source/module4/datasikkerhet.rst:88
+msgid "Informasjon med svært begrenset tilgang."
+msgstr "Information with very limited access."
+
+#: ../../source/module4/datasikkerhet.rst:92
+msgid "store mengder røde data"
+msgstr "large amounts of red data"
+
+#: ../../source/module4/datasikkerhet.rst:93
+msgid "svært konfidensielle forskningsdata"
+msgstr "highly confidential research data"
+
+#: ../../source/module4/datasikkerhet.rst:95
+msgid ""
+"Dataklassen forteller deg hvilke KI-tjenester du kan bruke. Inneholder "
+"dataene personopplysninger, gjelder personvernreglene i tillegg."
+msgstr ""
+"The data class tells you which AI services you can use. If the data contains"
+" personal data, the privacy rules apply in addition."

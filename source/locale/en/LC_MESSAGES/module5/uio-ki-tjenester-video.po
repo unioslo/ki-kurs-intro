@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module5/uio-ki-tjenester-video.rst:2
+msgid "En oversikt over UiO sine viktigste KI tjenester"
+msgstr "An overview of UiO's most important AI services"
+
+#: ../../source/module5/uio-ki-tjenester-video.rst:4
+msgid ""
+"I denne videoen får du en kort presentasjon av et utvalg KI-tjenester på "
+"UiO. Videoen er rettet mot studenter, men er like relevant for ansatte."
+msgstr ""
+"In this video you get a short presentation of a selection of AI services at "
+"UiO. The video is aimed at students, but is equally relevant for staff."
+
+#: ../../source/module5/uio-ki-tjenester-video.rst:8
+msgid ""
+"<iframe style=\"width: 650px; height: 365px; border: 1px solid #464646;\" src=\"https://uio.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ddd1e4c2-9af5-4f79-a809-b46700a28c7e&amp;autoplay=false&amp;offerviewer=false&amp;showtitle=false&amp;showbrand=false&amp;captions=false&amp;interactivity=all\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"autoplay\" aria-label=\"Panopto Embedded Video Player\" aria-description=\"KI-verkt&oslash;y-ved-UiO-01\"></iframe>\n"
+"<p><a href=\"https://www.hf.uio.no/hf-studio\">Produsert av HF:Studio</a> for kurset <a href=\"https://www.uio.no/studier/emner/hf/ifikk/FIL1010/\">FIL1010</a>: Redelig bruk av kunstig intelligens i høyere utdanning<p>"
+msgstr ""
+"<iframe style=\"width: 650px; height: 365px; border: 1px solid #464646;\" src=\"https://uio.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ddd1e4c2-9af5-4f79-a809-b46700a28c7e&amp;autoplay=false&amp;offerviewer=false&amp;showtitle=false&amp;showbrand=false&amp;captions=false&amp;interactivity=all\" loading=\"lazy\" allowfullscreen=\"allowfullscreen\" allow=\"autoplay\" aria-label=\"Panopto Embedded Video Player\" aria-description=\"KI-verkt&oslash;y-ved-UiO-01\"></iframe>\n"
+"<p><a href=\"https://www.hf.uio.no/hf-studio\">Produced by HF:Studio</a> for the course <a href=\"https://www.uio.no/studier/emner/hf/ifikk/FIL1010/\">FIL1010</a>: Responsible use of artificial intelligence in higher education<p>"

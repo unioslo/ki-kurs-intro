@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module6/kilder.rst:2
+msgid "Kilder og lenker"
+msgstr "Sources and links"
+
+#: ../../source/module6/kilder.rst:5
+msgid "Kilder"
+msgstr "Sources"
+
+#: ../../source/module6/kilder.rst:9
+msgid ""
+"[Germain] Thomas Germain, \"I Hacked ChatGPT and Google's AI - and It Only "
+"Took 20 Minutes\", BBC, 18. februar 2026, "
+"https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-"
+"and-it-only-took-20-minutes"
+msgstr ""
+"[Germain] Thomas Germain, \"I Hacked ChatGPT and Google's AI - and It Only "
+"Took 20 Minutes\", BBC, 18 February 2026, "
+"https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-"
+"and-it-only-took-20-minutes"
+
+#: ../../source/module6/kilder.rst:13
+msgid ""
+"[Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, \"ChatGPT Is "
+"Bullshit\", *Ethics and Information Technology 26*, nr. 2 (2024): 38, "
+"(https://doi.org/10.1007/s10676-024-09775-5), på s. 2."
+msgstr ""
+"[Hicks] Michael Townsen Hicks, James Humphries, and Joe Slater, \"ChatGPT Is"
+" Bullshit\", *Ethics and Information Technology 26*, no. 2 (2024): 38, "
+"(https://doi.org/10.1007/s10676-024-09775-5), at p. 2."
+
+#: ../../source/module6/kilder.rst:17
+msgid ""
+"[Laban] Philippe Laban, Hiroaki Hayashi, Yingbo Zhou, og Jennifer Neville, "
+"\"LLMs Get Lost In Multi-Turn Conversation\", arXiv:2505.06120, arXiv, 9. "
+"mai 2025, `https://doi.org/10.48550/arXiv.2505.06120 "
+"<https://doi.org/10.48550/arXiv.2505.06120>`__ på s. 1."
+msgstr ""
+"[Laban] Philippe Laban, Hiroaki Hayashi, Yingbo Zhou, and Jennifer Neville, "
+"\"LLMs Get Lost In Multi-Turn Conversation\", arXiv:2505.06120, arXiv, 9 May"
+" 2025, `https://doi.org/10.48550/arXiv.2505.06120 "
+"<https://doi.org/10.48550/arXiv.2505.06120>`__ at p. 1."
+
+#: ../../source/module6/kilder.rst:21
+msgid ""
+"[Stokel-Walker] Chris Stokel-Walker, \"Scientists Invented a Fake Disease. "
+"AI Told People It Was Real\", Nature 652, nr. 8110 (2026): 559–61, "
+"https://doi.org/10.1038/d41586-026-01100-y"
+msgstr ""
+"[Stokel-Walker] Chris Stokel-Walker, \"Scientists Invented a Fake Disease. "
+"AI Told People It Was Real\", Nature 652, no. 8110 (2026): 559–61, "
+"https://doi.org/10.1038/d41586-026-01100-y"
+
+#: ../../source/module6/kilder.rst:25
+msgid ""
+"[Svarstad] Jørgen Svarstad, \"Politihøgskolen brukte falske KI-tall: — Jeg "
+"legger meg flat\", 26. februar 2026, https://www.khrono.no/politihogskolen-"
+"brukte-falske-ki-tall-jeg-legger-meg-flat/1040462."
+msgstr ""
+"[Svarstad] Jørgen Svarstad, \"Politihøgskolen brukte falske KI-tall: — Jeg "
+"legger meg flat\", 26 February 2026, https://www.khrono.no/politihogskolen-"
+"brukte-falske-ki-tall-jeg-legger-meg-flat/1040462."
+
+#: ../../source/module6/kilder.rst:29
+msgid "Lenker"
+msgstr "Links"
+
+#: ../../source/module6/kilder.rst:31
+msgid "Lenker til UiO tjenester og andre nettsider vi møter i dette kurset"
+msgstr "Links to UiO services and other websites we encounter in this course"
+
+#: ../../source/module6/kilder.rst:34
+msgid "**UiOs KI-tjenester**"
+msgstr "**UiO's AI services**"
+
+#: ../../source/module6/kilder.rst:36
+msgid "`GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_"
+msgstr "`GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_"
+
+#: ../../source/module6/kilder.rst:37
+msgid ""
+"`Autotekst <https://www.uio.no/tjenester/it/lyd-"
+"video/autotekst/index.html>`_"
+msgstr ""
+"`Autotekst <https://www.uio.no/tjenester/it/lyd-"
+"video/autotekst/index.html>`_"
+
+#: ../../source/module6/kilder.rst:38
+msgid ""
+"`TSD-Autotekst "
+"<https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-"
+"tsd.html>`_"
+msgstr ""
+"`TSD-Autotekst "
+"<https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-"
+"tsd.html>`_"
+
+#: ../../source/module6/kilder.rst:39
+msgid "`Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_"
+msgstr "`Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_"
+
+#: ../../source/module6/kilder.rst:40
+msgid "`Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm>`_"
+msgstr "`Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm>`_"
+
+#: ../../source/module6/kilder.rst:41
+msgid ""
+"`Google Workspace <https://www.uio.no/tjenester/it/lagring-"
+"samarbeid/googleworkspace/>`_"
+msgstr ""
+"`Google Workspace <https://www.uio.no/tjenester/it/lagring-"
+"samarbeid/googleworkspace/>`_"
+
+#: ../../source/module6/kilder.rst:42
+msgid ""
+"`Om Microsoft Copilot Chat "
+"<https://www.uio.no/tjenester/it/ki/copilot/index.html>`_"
+msgstr ""
+"`About Microsoft Copilot Chat "
+"<https://www.uio.no/tjenester/it/ki/copilot/index.html>`_"
+
+#: ../../source/module6/kilder.rst:43
+msgid ""
+"`Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-"
+"app/nettskjema/hjelp/diktafon.html>`_"
+msgstr ""
+"`Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-"
+"app/nettskjema/hjelp/diktafon.html>`_"
+
+#: ../../source/module6/kilder.rst:44
+msgid "`Panopto <https://www.uio.no/tjenester/it/lyd-video/panopto/>`_"
+msgstr "`Panopto <https://www.uio.no/tjenester/it/lyd-video/panopto/>`_"
+
+#: ../../source/module6/kilder.rst:45
+msgid "`TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_"
+msgstr "`TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_"
+
+#: ../../source/module6/kilder.rst:48
+msgid ""
+"**Lenker til UiOs regler og retningslinjer for bruk av KI og IT-tjenester**"
+msgstr ""
+"**Links to UiO's rules and guidelines for the use of AI and IT services**"
+
+#: ../../source/module6/kilder.rst:50
+msgid "`UiO sin KI hovedside <https://www.uio.no/tjenester/ki/>`_"
+msgstr "`UiO's main AI page <https://www.uio.no/tjenester/ki/>`_"
+
+#: ../../source/module6/kilder.rst:51
+msgid ""
+"`UiOs retningslinjer for bruk av KI "
+"<https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html>`_"
+msgstr ""
+"`UiO's guidelines for the use of AI "
+"<https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html>`_"
+
+#: ../../source/module6/kilder.rst:52
+msgid ""
+"`UiOs retningslinjer for agentisk KI "
+"<https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html>`_"
+msgstr ""
+"`UiO's guidelines for agentic AI "
+"<https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html>`_"
+
+#: ../../source/module6/kilder.rst:53
+msgid ""
+"`Juridiske føringer for bruk av kunstig intelligens (KI) ved UiO "
+"<https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_"
+msgstr ""
+"`Legal requirements for the use of artificial intelligence (AI) at UiO "
+"<https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_"
+
+#: ../../source/module6/kilder.rst:54
+msgid ""
+"`Veiledning i behandlingsgrunnlag for ansatte <https://www-int.uio.no/for-"
+"ansatte/arbeidsstotte/personvern/veiledninger-om-"
+"personvern/behandlingsgrunnlag.html>`_"
+msgstr ""
+"`Guidance on legal basis for processing for employees <https://www-"
+"int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-"
+"personvern/behandlingsgrunnlag.html>`_"
+
+#: ../../source/module6/kilder.rst:55
+msgid ""
+"`UiO sitt IT reglement <https://www.uio.no/om/regelverk/it/it-"
+"reglement.html>`_."
+msgstr ""
+"`UiO's IT regulations <https://www.uio.no/om/regelverk/it/it-"
+"reglement.html>`_."
+
+#: ../../source/module6/kilder.rst:56
+msgid ""
+"`Retningslinjer for bruk av elektroniske ressurser fra UB "
+"<https://www.ub.uio.no/bruk/elektroniske-ressurser/>`_"
+msgstr ""
+"`Guidelines for the use of electronic resources from the University Library "
+"<https://www.ub.uio.no/bruk/elektroniske-ressurser/>`_"
+
+#: ../../source/module6/kilder.rst:59
+msgid "**KI-kurs på UiO**"
+msgstr "**AI courses at UiO**"
+
+#: ../../source/module6/kilder.rst:62
+msgid ""
+"Vil du sette deg mer inn i teamene rundt kunstig intelligens? `FIL1010 "
+"Redelig bruk av kunstig intelligens for studenter "
+"<https://www.uio.no/studier/emner/hf/ifikk/FIL1010/>`_  er et Canvas kurs "
+"som består av forelesningsvideoer, oppgaver og anbefalt litteratur rettet "
+"mot studenter. Dette er en flott ressurs om du vil lære mer! Videoen i "
+"kapittel 5 er lånt herfra."
+msgstr ""
+"Would you like to delve deeper into the topics surrounding artificial "
+"intelligence? `FIL1010 Honest use of artificial intelligence for students "
+"<https://www.uio.no/studier/emner/hf/ifikk/FIL1010/>`_ is a Canvas course "
+"consisting of lecture videos, exercises and recommended literature aimed at "
+"students. This is a great resource if you want to learn more! The video in "
+"chapter 5 is borrowed from here."
+
+#: ../../source/module6/kilder.rst:64
+msgid ""
+"Følg også med på UiO sine `KI-kurs-sider "
+"<https://www.uio.no/tjenester/ki/kurs/>`_."
+msgstr ""
+"Also keep an eye on UiO's `AI course pages "
+"<https://www.uio.no/tjenester/ki/kurs/>`_."

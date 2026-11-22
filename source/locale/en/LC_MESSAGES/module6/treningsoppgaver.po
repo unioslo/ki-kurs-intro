@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module6/treningsoppgaver.rst:2
+msgid "Prøv selv!"
+msgstr "Try it yourself!"
+
+#: ../../source/module6/treningsoppgaver.rst:6
+msgid ""
+"Gratulerer! Du har nå kommet deg gjennom teori-delen av introduksjonskurset "
+"i KI for administrativt ansatte ved UiO."
+msgstr ""
+"Congratulations! You have now made it through the theory part of the "
+"introductory AI course for administrative staff at UiO."
+
+#: ../../source/module6/treningsoppgaver.rst:8
+msgid ""
+"Nå er du klar for å omsette teori til praksis og på den måten styrke din KI-"
+"kompetanse."
+msgstr ""
+"Now you are ready to put theory into practice and thereby strengthen your AI"
+" skills."
+
+#: ../../source/module6/treningsoppgaver.rst:10
+msgid ""
+"Vi har laget to sett med oppgaver. Det første settet skal du øve deg på "
+"ulike måter å bruke KI. I det andre settet kan du utforske hvordan bruke KI "
+"i egne arbeidsoppgaver."
+msgstr ""
+"We have created two sets of exercises. In the first set, you will practise "
+"different ways of using AI. In the second set, you can explore how to use AI"
+" in your own work tasks."
+
+#: ../../source/module6/treningsoppgaver.rst:13
+msgid "Dette er oppgaver som du kan jobbe med i dagene og ukene fremover."
+msgstr "These are exercises you can work on in the days and weeks ahead."
+
+#: ../../source/module6/treningsoppgaver.rst:17
+msgid "Tips!"
+msgstr "Tip!"
+
+#: ../../source/module6/treningsoppgaver.rst:19
+msgid ""
+"Du kan laste ned en pdf med opppgavene slik at du ikke trenger å være logget"
+" inn i Canvas kurset for å jobbe med dem: :download:`Last ned PDF "
+"<../downloads/KI-grunnkurs-treningsoppgaver.pdf>`"
+msgstr ""
+"You can download a PDF with the exercises so that you do not need to be "
+"logged in to the Canvas course to work on them: :download:`Download PDF "
+"<../downloads/AI-foundation-course-exercises.pdf>`"

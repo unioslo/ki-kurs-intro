@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/personvern.rst:2
+msgid "Personvern"
+msgstr "Privacy"
+
+#: ../../source/module4/personvern.rst:4
+msgid ""
+"Personopplysninger er opplysninger som kan knyttes til en enkeltperson, for "
+"eksempel navn, e-postadresse, studentbesvarelser eller helseinformasjon. "
+"Skal du behandle personopplysninger i KI, eller hvilket som helst annet IT-"
+"verktøy, må du forholde deg til personvernreglene. Disse kommer i tillegg "
+"til reglene om dataklassifisering og godkjente tjenester."
+msgstr ""
+"Personal data is information that can be linked to an individual, for "
+"example a name, email address, student submissions or health information. If"
+" you are going to process personal data in AI, or any other IT tool, you "
+"must comply with the privacy rules. These apply in addition to the rules on "
+"data classification and approved services."
+
+#: ../../source/module4/personvern.rst:7
+msgid "Behandling av persondata"
+msgstr "Processing personal data"
+
+#: ../../source/module4/personvern.rst:9
+msgid ""
+"At en tjeneste er godkjent for dataklassen, betyr bare at selve *tjenesten* "
+"er trygg nok. Du må i tillegg ha et `behandlingsgrunnlag <https://www-"
+"int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-"
+"personvern/behandlingsgrunnlag.html>`_ for behandlingen du vil gjøre. Uten "
+"det har du ikke lov, heller ikke i en godkjent tjeneste."
+msgstr ""
+"The fact that a service is approved for the data class only means that the "
+"*service* itself is secure enough. You must also have a `legal basis for "
+"processing <https://www-int.uio.no/for-"
+"ansatte/arbeidsstotte/personvern/veiledninger-om-"
+"personvern/behandlingsgrunnlag.html>`_ for the processing you want to carry "
+"out. Without it, you are not allowed, not even in an approved service."
+
+#: ../../source/module4/personvern.rst:13
+msgid ""
+"Før du skal samle inn eller håndtere personopplysninger må du stoppe opp og "
+"tenke deg om."
+msgstr "Before you collect or handle personal data, you must stop and think."
+
+#: ../../source/module4/personvern.rst:15
+msgid "Hva er *formålet* med denne bruken av personopplysninger?"
+msgstr "What is the *purpose* of this use of personal data?"
+
+#: ../../source/module4/personvern.rst:16
+msgid "Hvilken *risiko* er forbundet med håndteringen av opplysningene?"
+msgstr "What *risk* is associated with handling the data?"
+
+#: ../../source/module4/personvern.rst:17
+msgid ""
+"Er det *nødvendig* å behandle alle personopplysningene for å oppnå formålet?"
+msgstr ""
+"Is it *necessary* to process all the personal data to achieve the purpose?"
+
+#: ../../source/module4/personvern.rst:18
+msgid ""
+"Er det *lov* å behandle personopplysningene til det relevante formålet?"
+msgstr "Is it *lawful* to process the personal data for the relevant purpose?"
+
+#: ../../source/module4/personvern.rst:20
+msgid ""
+"Selv om du har tilgang til andres personopplysninger, betyr det ikke at du "
+"har lov til å se på dem når du vil."
+msgstr ""
+"Even if you have access to other people's personal data, that does not mean "
+"you are allowed to look at it whenever you want."
+
+#: ../../source/module4/personvern.rst:22
+msgid ""
+"Kanskje er det helt mulig å gjennomføre oppgaven du står overfor med færre "
+"eller ingen personopplysninger. Dersom du behandler sensitive opplysninger, "
+"skjerpes kravene."
+msgstr ""
+"Perhaps it is entirely possible to carry out the task you are facing with "
+"fewer or no personal data. If you process sensitive data, the requirements "
+"are stricter."
+
+#: ../../source/module4/personvern.rst:25
+msgid ""
+"Du kan heller ikke bruke personopplysninger til *andre formål* enn det de er"
+" samlet inn for."
+msgstr ""
+"Nor can you use personal data for *other purposes* than those for which it "
+"was collected."
+
+#: ../../source/module4/personvern.rst:27
+msgid ""
+"Et eksempel på når du må være ekstra varsom, er hvis du vil hente ut "
+"personopplysninger fra et system for å behandle dem med KI i et annet system"
+" (for eksempel din laptop). Har du lov å lagre personopplysningene der du "
+"skal behandle de i KI? Er du sikker på at formålet med å behandle dataene er"
+" i tråd med det du har lov til?"
+msgstr ""
+"An example of when you must be extra careful is if you want to extract "
+"personal data from one system in order to process it with AI in another "
+"system (for example your laptop). Are you allowed to store the personal data"
+" where you are going to process it in AI? Are you sure the purpose of "
+"processing the data is in line with what you are allowed to do?"
+
+#: ../../source/module4/personvern.rst:29
+msgid "Hva kan du gjøre?"
+msgstr "What can you do?"
+
+#: ../../source/module4/personvern.rst:31
+msgid ""
+"Unngå personopplysninger du ikke trenger. Anonymiserte data eller et "
+"oppdiktet eksempel er ofte nok."
+msgstr ""
+"Avoid personal data you do not need. Anonymised data or a made-up example is"
+" often enough."
+
+#: ../../source/module4/personvern.rst:32
+msgid "Avklar behandlingsgrunnlaget før du begynner, ikke etterpå."
+msgstr ""
+"Clarify the legal basis for processing before you begin, not afterwards."
+
+#: ../../source/module4/personvern.rst:33
+msgid "Hold deg til formålet opplysningene ble samlet inn for."
+msgstr "Stick to the purpose for which the data was collected."
+
+#: ../../source/module4/personvern.rst:34
+msgid "Sjekk at tjenesten er godkjent for dataklassen opplysningene tilhører."
+msgstr ""
+"Check that the service is approved for the data class the information "
+"belongs to."

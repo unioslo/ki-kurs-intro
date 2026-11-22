@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/miljo.rst:2
+msgid "Klima- og miljøkostnader"
+msgstr "Climate and environmental costs"
+
+#: ../../source/module4/miljo.rst:4
+msgid ""
+"Alle IT-tjenester har en viss miljøpåvirkning, men KI-tjenester er ekstra "
+"ressurskrevende. Det er fordi modellene krever mye tung beregning. KI-"
+"tjenester har høyt strømforbruk både for å drive maskinene og til kjøling. "
+"Det går også med mye vann til vannbasert kjøling av maskinene. Både strøm og"
+" vann er begrensede ressurser, som bør brukes fornuftig."
+msgstr ""
+"All IT services have a certain environmental impact, but AI services are "
+"especially resource-intensive. This is because the models require a lot of "
+"heavy computation. AI services have high electricity consumption, both to "
+"run the machines and for cooling. A lot of water is also used for water-"
+"based cooling of the machines. Both electricity and water are limited "
+"resources that should be used sensibly."
+
+#: ../../source/module4/miljo.rst:10
+msgid ""
+"Kostnadene med å bygge datasentre kommer i tillegg til kostnadene med "
+"bruken. For det første kan arealene som brukes til å bygge datasentre gå på "
+"bekostning av natur og andre byggeprosjekter, og når datasentrene står "
+"ferdige bruker de enorme mengder strøm. Det går også med mye mineraler og "
+"andre begrensede naturressurser til å lage serverne i datasentrene. Den "
+"store økningen i bruk av kunstig intelligens gjør at KI-leverandørene bygger"
+" nye datasentre i et høyt tempo."
+msgstr ""
+"The costs of building data centres come in addition to the costs of using "
+"them. First, the land used to build data centres can come at the expense of "
+"nature and other construction projects, and once the data centres are "
+"finished they use enormous amounts of electricity. A lot of minerals and "
+"other limited natural resources also go into making the servers in the data "
+"centres. The large increase in the use of artificial intelligence means that"
+" AI suppliers are building new data centres at a rapid pace."
+
+#: ../../source/module4/miljo.rst:15
+msgid ""
+"Selv om KI er ressurskrevende er det noen grep du kan gjøre for å redusere "
+"belastningen på miljøet."
+msgstr ""
+"Even though AI is resource-intensive, there are some steps you can take to "
+"reduce the burden on the environment."
+
+#: ../../source/module4/miljo.rst:17
+msgid "Tips 1 - bevissthet"
+msgstr "Tip 1 - awareness"
+
+#: ../../source/module4/miljo.rst:19
+msgid ""
+"Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til"
+" KI for alt."
+msgstr ""
+"Be aware of when you use AI and when you can do without it. Try not to reach"
+" for AI for everything."
+
+#: ../../source/module4/miljo.rst:21
+msgid "Tips 2 - valg av språkmodell"
+msgstr "Tip 2 - choice of language model"
+
+#: ../../source/module4/miljo.rst:23
+msgid ""
+"I flere tjenester, blant annet GPT UiO, kan du velge blant flere "
+"forskjellige språkmodeller, der noen er store og noen er små. De små er "
+"mindre ressurskrevende både å lage og å bruke. De kan fungere godt til enkle"
+" oppgaver som å språkvaske en e-post eller få forslag til omskrivinger av "
+"setninger."
+msgstr ""
+"In several services, including GPT UiO, you can choose between several "
+"different language models, where some are large and some are small. The "
+"small ones are less resource-intensive both to create and to use. They can "
+"work well for simple tasks such as proofreading an email or getting "
+"suggestions for rephrasing sentences."
+
+#: ../../source/module4/miljo.rst:27
+msgid "Tips 3 - start ny samtale"
+msgstr "Tip 3 - start a new conversation"
+
+#: ../../source/module4/miljo.rst:29
+msgid ""
+"Lange samtaler krever mer ressurser. Jo lengre en samtale blir, desto mer "
+"ressurser bruker systemet, siden modellen må prosesserer hele samtalen på "
+"nytt for hver instruksjon. Start en ny samtale når samtalen begynner å bli "
+"lang."
+msgstr ""
+"Long conversations require more resources. The longer a conversation "
+"becomes, the more resources the system uses, since the model has to process "
+"the entire conversation again for each prompt. Start a new conversation when"
+" the conversation starts to get long."

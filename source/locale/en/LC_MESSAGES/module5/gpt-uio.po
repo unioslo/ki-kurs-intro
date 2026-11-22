@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module5/gpt-uio.rst:3
+msgid "GPT UiO"
+msgstr "GPT UiO"
+
+#: ../../source/module5/gpt-uio.rst:5
+msgid ""
+"GPT UiO er UiO sin egenutviklede personverntrygge KI-chat. Den fungerer "
+"stort sett som andre KI-chat tjenester: Du kommuniserer med språkmodellen "
+"via et chat-vindu."
+msgstr ""
+"GPT UiO is UiO's in-house, privacy-safe AI chat. It works much like other AI"
+" chat services: you communicate with the language model through a chat "
+"window."
+
+#: ../../source/module5/gpt-uio.rst:8
+msgid "Skjermdump av GPT UiO sitt chatte-vindu"
+msgstr "Screenshot of GPT UiO's chat window"
+
+#: ../../source/module5/gpt-uio.rst:15
+msgid ""
+"Den store fordelen med å bruke GPT UiO er at data som lagres, blir lagret på"
+" UiOs egne servere. Navnet ditt og brukernavnet ditt deles ikke med andre "
+"selskaper, bare UiO har tilgang til denne informasjonen. I tillegg brukes "
+"ikke samtalene dine til videre trening av språkmodellene. Og sist men ikke "
+"minst: du kan bruke GPT UiO med opptil røde data, men bare hvis du velger "
+"egnet modell."
+msgstr ""
+"The big advantage of using GPT UiO is that data that is stored is stored on "
+"UiO's own servers. Your name and username are not shared with other "
+"companies; only UiO has access to this information. In addition, your "
+"conversations are not used to further train the language models. And last "
+"but not least: you can use GPT UiO with data up to the red class, but only "
+"if you choose a suitable model."
+
+#: ../../source/module5/gpt-uio.rst:20
+msgid ""
+"På de neste sidene skal vi lære mer om to viktige funksjoner ved GPT UiO, "
+"nettopp muligheten for å velge blant flere språkmodeller og GPT UiO sine KI "
+"assistenter."
+msgstr ""
+"On the next pages we will learn more about two important features of GPT "
+"UiO, namely the ability to choose among several language models and GPT "
+"UiO's AI assistants."

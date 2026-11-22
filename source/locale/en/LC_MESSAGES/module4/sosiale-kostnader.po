@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/sosiale-kostnader.rst:2
+msgid "Sosiale kostnader"
+msgstr "Social costs"
+
+#: ../../source/module4/sosiale-kostnader.rst:4
+msgid ""
+"Trening og bruk av kunstig intelligens har også sosiale kostnader. Noen av "
+"KI-leverandørene bruker underleverandører i lavkostland som gir sine ansatte"
+" dårlig lønn. De ansatte hos underleverandørene kan også ha midlertidige "
+"stillinger med dårlige arbeidsvilkår. Noen er kritiske til at KI-"
+"leverandørene bruker enorme beløp på å bygge datasentre, men ikke betaler "
+"menneskene som er med på å lage modellene skikkelig."
+msgstr ""
+"Training and using artificial intelligence also has social costs. Some AI "
+"suppliers use subcontractors in low-cost countries that pay their employees "
+"poorly. The employees of these subcontractors may also have temporary "
+"positions with poor working conditions. Some are critical of the fact that "
+"AI suppliers spend enormous amounts on building data centres, but do not pay"
+" the people who help create the models properly."
+
+#: ../../source/module4/sosiale-kostnader.rst:10
+msgid ""
+"En annen utfordring er at ulik tilgang til KI-tjenester kan forsterke "
+"eksisterende forskjeller mellom studenter. De som har god økonomi kan "
+"abonnere på kostbare tjenester med høyere kapasitet, bedre kvalitet og "
+"ekstra funksjoner. Studenter med dårligere økonomi må derimot kanskje nøye "
+"seg med gratisversjoner av verktøyene."
+msgstr ""
+"Another challenge is that unequal access to AI services can reinforce "
+"existing differences between students. Those with good finances can "
+"subscribe to expensive services with higher capacity, better quality and "
+"extra features. Students with poorer finances may, on the other hand, have "
+"to make do with free versions of the tools."
+
+#: ../../source/module4/sosiale-kostnader.rst:15
+msgid ""
+"Liknende problemstillinger ser vi ellers i verden, KI er ikke et unntak. Som"
+" enkeltperson kan du kanskje ikke gjøre mye for å redusere de sosiale "
+"kostnadene forbundet med KI-teknologien, men du kan i alle fall bidra ved å "
+"være en opplyst, bevisst og ansvarlig bruker av teknologien."
+msgstr ""
+"We see similar issues elsewhere in the world; AI is no exception. As an "
+"individual, you may not be able to do much to reduce the social costs "
+"associated with AI technology, but you can at least contribute by being an "
+"informed, aware and responsible user of the technology."
+
+#: ../../source/module4/sosiale-kostnader.rst:19
+msgid ""
+"Samtidig ønsker UiO å bidra til å redusere disse forskjellene ved å tilby "
+"gode og tilgjengelige KI-tjenester for alle ansatte og studenter. UiO følger"
+" nøye med på utviklingen av europeiske og nordiske språkmodeller som er "
+"bygget under mer etisk forsvarlige rammer, og har som mål å ta i bruk og "
+"tilby flere slike løsninger framover."
+msgstr ""
+"At the same time, UiO wants to help reduce these differences by offering "
+"good and accessible AI services for all staff and students. UiO closely "
+"follows the development of European and Nordic language models that are "
+"built within more ethically responsible frameworks, and aims to adopt and "
+"offer more such solutions going forward."

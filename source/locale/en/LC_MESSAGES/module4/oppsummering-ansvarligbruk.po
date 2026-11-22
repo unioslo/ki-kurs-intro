@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:2
+msgid "Oppsummering kapittel 4"
+msgstr "Summary of chapter 4"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:4
+msgid ""
+"I dette kapitlet har du lært om viktige og utfordrende miljømessige og "
+"etiske sider ved bruk av kunstig intelligens. Du har også fått frisket opp "
+"hvilke regler og retningslinjer du skal følge når du bruker teknologien. Med"
+" økt kunnskap om dette kan du bruke KI på en mer ansvarlige måte."
+msgstr ""
+"In this chapter you have learned about important and challenging "
+"environmental and ethical aspects of using artificial intelligence. You have"
+" also refreshed your knowledge of the rules and guidelines you should follow"
+" when using the technology. With increased knowledge of this, you can use AI"
+" in a more responsible way."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:8
+msgid "Test deg selv"
+msgstr "Test yourself"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:10
+msgid "Diskuter med deg selv eller en kollega."
+msgstr "Discuss on your own or with a colleague."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:12
+msgid ""
+"Hva kan du gjøre for å redusere miljøpåvirkningen fra KI-tjenester i "
+"arbeidshverdagen din?"
+msgstr ""
+"What can you do to reduce the environmental impact of AI services in your "
+"working day?"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:13
+msgid ""
+"Hvilke typer data håndterer du i arbeidshverdagen din? Forsøk å klassifisere"
+" dem etter dataklassene."
+msgstr ""
+"What types of data do you handle in your working day? Try to classify them "
+"according to the data classes."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:14
+msgid ""
+"Tenk over hvordan du bruker KI. Har du vært usikker på om det du laster opp "
+"i KI er i tråd med regler og policy på UiO?"
+msgstr ""
+"Think about how you use AI. Have you been unsure whether what you upload to "
+"AI complies with UiO's rules and policies?"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:15
+msgid ""
+"Reflekter over hvordan du bruker KI. Styrker eller svekker KI deg faglig?"
+msgstr ""
+"Reflect on how you use AI. Does AI strengthen or weaken you professionally?"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:19
+msgid "Repetisjon"
+msgstr "Recap"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:21
+msgid ""
+"**KI er en ressurskrevende teknologi.** Den enorme etterspørselen etter KI "
+"fører til stort forbruk av strøm, vann og arealer. Du kan redusere "
+"belastningen ved å være bevisst på når du bruker KI, velge en mindre "
+"språkmodell til enkle oppgaver og starte en ny samtale når samtalen begynner"
+" å bli lang."
+msgstr ""
+"**AI is a resource-intensive technology.** The enormous demand for AI leads "
+"to high consumption of electricity, water and land. You can reduce the "
+"burden by being aware of when you use AI, choosing a smaller language model "
+"for simple tasks and starting a new conversation when the conversation "
+"starts to get long."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:25
+msgid ""
+"**Det er sosiale kostnader knyttet til KI.** Som all storindustri har KI "
+"sosiale kostnader, både under produksjon og ved bruk."
+msgstr ""
+"**There are social costs associated with AI.** Like all large-scale "
+"industry, AI has social costs, both during production and in use."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:27
+msgid ""
+"**Bruk KI-tjenester som er godkjent av UiO.** De fleste KI-tjenester er "
+"skytjenester, og data du deler kan komme på avveie. Ved å bruke de godkjente"
+" KI-tjenestene til UiO er du trygg på at dette ikke skjer."
+msgstr ""
+"**Use AI services approved by UiO.** Most AI services are cloud services, "
+"and data you share can fall into the wrong hands. By using UiO's approved AI"
+" services, you can be confident this will not happen."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:30
+msgid ""
+"**Personopplysninger krever mer enn en godkjent tjeneste.** "
+"Personvernreglene gjelder uansett hvilket verktøy du bruker. Du må ha et "
+"behandlingsgrunnlag, og du kan ikke bruke opplysningene til andre formål enn"
+" det de er samlet inn for."
+msgstr ""
+"**Personal data requires more than an approved service.** The privacy rules "
+"apply no matter which tool you use. You must have a legal basis for "
+"processing, and you cannot use the data for purposes other than those for "
+"which it was collected."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:33
+msgid ""
+"**Opphavsretten gjelder også når du bruker KI.** Mange KI-tjenester lagrer "
+"teksten de mottar og kan bruke den til å trene nye modeller. Dette er du "
+"beskyttet mot dersom du bruker de UiO godkjente KI-tjenestene. Du må "
+"allikevel alltid sjekke om materialet du laster opp tillater opplasting til "
+"KI."
+msgstr ""
+"**Copyright also applies when you use AI.** Many AI services store the text "
+"they receive and may use it to train new models. You are protected against "
+"this if you use UiO's approved AI services. You must nonetheless always "
+"check whether the material you upload permits uploading to AI."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:37
+msgid ""
+"**Eksternt innhold kan inneholde skjulte instruksjoner.** Nettsider og "
+"dokumenter du lar en språkmodell lese, kan forsøke å styre den. Dette kalles"
+" prompt-injection. Bruk kilder du stoler på, og kontroller alltid svaret før"
+" du bruker det."
+msgstr ""
+"**External content can contain hidden instructions.** Websites and documents"
+" you let a language model read may try to steer it. This is called prompt "
+"injection. Use sources you trust, and always check the answer before you use"
+" it."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:40
+msgid ""
+"**Du er ansvarlig for hvordan du bruker KI-verktøy**, og må sette deg inn i "
+"regelverket. UiOs IT-reglement gjelder også for KI, og i tillegg har UiO "
+"egne KI-retningslinjer som må følges."
+msgstr ""
+"**You are responsible for how you use AI tools**, and you must familiarise "
+"yourself with the regulations. UiO's IT regulations also apply to AI, and in"
+" addition UiO has its own AI guidelines that must be followed."
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:44
+msgid "Neste kapittel"
+msgstr "Next chapter"
+
+#: ../../source/module4/oppsummering-ansvarligbruk.rst:46
+msgid ""
+"Du vet nå hva du bør ta hensyn til for å bruke KI på en ansvarlig måte. I "
+"neste kapittel ser vi på hvilke KI-tjenester du kan bruke ved UiO, og hva de"
+" ulike tjenestene egner seg til."
+msgstr ""
+"You now know what to consider in order to use AI responsibly. In the next "
+"chapter we look at which AI services you can use at UiO, and what the "
+"different services are suited for."

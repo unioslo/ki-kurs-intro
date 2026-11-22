@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:2
+msgid "Oppsummering kapittel 2"
+msgstr "Summary of chapter 2"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:4
+msgid ""
+"I dette kapittelet har du lært hvordan store språkmodeller lager tekst og "
+"hvilke svakheter den har når den gjøre dette. Før du går videre til kapittel"
+" 3 kan du teste hva du har lært."
+msgstr ""
+"In this chapter you have learned how large language models produce text and "
+"what weaknesses they have when they do this. Before you move on to chapter "
+"3, you can test what you have learned."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:7
+msgid "Test deg selv"
+msgstr "Test yourself"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:9
+msgid "Diskuter selv eller med en kollega"
+msgstr "Discuss on your own or with a colleague"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:11
+msgid "Hva er store språkmodeller og hvordan fungerer de?"
+msgstr "What are large language models and how do they work?"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:12
+msgid ""
+"Nevn noen av de viktigste svakhetene ved store språkmodeller og hva kan du "
+"gjøre for å imøtekomme dem?"
+msgstr ""
+"Name some of the most important weaknesses of large language models and what"
+" you can do to address them."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:15
+msgid "Repetisjon"
+msgstr "Recap"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:17
+msgid ""
+"**Store språkmodeller** er matematiske modeller som som bygger opp svaret "
+"ett ord av gangen, betinget av konteksten du gir den. Store språkmodeller "
+"generere med andre ord tekster basert på statistiske mønstre, fremfor "
+"*sikker* faktakunnskap."
+msgstr ""
+"**Large language models** are mathematical models that build up their answer"
+" one word at a time, conditioned on the context you give them. In other "
+"words, large language models generate text based on statistical patterns, "
+"rather than *certain* factual knowledge."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:21
+msgid ""
+"**Store språkmodeller har ikke noe forhold til sannhet** og har derfor ikke "
+"sikker kunnskap om hva som er sant. Det gjør modellene sårbare for bevisst "
+"manipulering av treningsdata. Aktører kan legge ut misvisende informasjon "
+"for at modellene skal bli trent på den. Dermed kan modellene gi svar som er "
+"manipulert og ikke stemmer overens med virkeligheten."
+msgstr ""
+"**Large language models have no relationship to truth** and therefore have "
+"no reliable knowledge of what is true. This makes the models vulnerable to "
+"deliberate manipulation of training data. Actors can publish misleading "
+"information so that the models will be trained on it. As a result, the "
+"models can give answers that are manipulated and do not match reality."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:27
+msgid ""
+"**Språkmodeller finner på ting som ikke stemmer** fordi de ikke har *sikker*"
+" faktakunnskap."
+msgstr ""
+"**Language models make up things that are not true** because they do not "
+"have *certain* factual knowledge."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:29
+msgid ""
+"**Lange samtaler kan \"forvirre\" modellen, slik at den gir dårligere "
+"svar**. Derfor er det viktig å starte en ny samtale om du skifter tema."
+msgstr ""
+"**Long conversations can \"confuse\" the model, so that it gives poorer "
+"answers**. That is why it is important to start a new conversation when you "
+"change topic."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:32
+msgid ""
+"**Språkmodeller har innebygde skjevheter**. Det kan blant annet være "
+"skjevhet som følge av manglende treningsdata, skjevhet som speiler "
+"skjevheter i samfunnet eller bekreftelsesskjevhet."
+msgstr ""
+"**Language models have built-in biases**. These can include, among others, "
+"bias resulting from a lack of training data, bias that mirrors biases in "
+"society, or confirmation bias."
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:36
+msgid "Neste kapittel"
+msgstr "Next chapter"
+
+#: ../../source/module2/oppsummering-sprakmodeller.rst:38
+msgid ""
+"Nå som du forstår hvordan språkmodeller fungerer og hva begrensningene deres"
+" er, skal du i neste kapittel lære hvordan du bruker KI trygt og effektivt i"
+" praksis."
+msgstr ""
+"Now that you understand how language models work and what their limitations "
+"are, in the next chapter you will learn how to use AI safely and effectively"
+" in practice."

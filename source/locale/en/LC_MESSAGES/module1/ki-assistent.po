@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module1/ki-assistent.rst:2
+msgid "KI-assistent"
+msgstr "AI assistant"
+
+#: ../../source/module1/ki-assistent.rst:4
+msgid ""
+"Du har kanskje brukt en KI-assistent i UiO GPT eller Gemini Notebook. En KI-"
+"assistent er typisk en KI-chat, med en bestemt rolle og \"personlighet\". En"
+" KI-assistent kan for eksempel \"oppføre\" seg som en erfaren møtereferent, "
+"kodesjekker, eksamenshjelper eller studieveileder."
+msgstr ""
+"You may have used an AI assistant in UiO GPT or Gemini Notebook. An AI "
+"assistant is typically an AI chat with a specific role and \"personality\". "
+"An AI assistant can, for example, \"act\" like an experienced meeting "
+"minute-taker, code checker, exam helper or study adviser."
+
+#: ../../source/module1/ki-assistent.rst:8
+msgid ""
+"Dette får du til ved å gi KI-assistenten forhåndsdefinerte instrukser om "
+"hvordan den skal oppføre seg, hva den skal fokusere på, og hvordan den skal "
+"presentere svaret. I tillegg kan du laste opp materiale som f.eks. pdf-"
+"dokumenter, ren tekst eller nettsider som inneholder (fag)stoffet "
+"assistenten din skal bruke som grunnlag for svarene sine. Assistenten får på"
+" den måten et eget oppslagsverk som den benytter til å generere et svar. "
+"Resultatet blir en mer nøyaktig \"chat-bot\" som har ekspertkunnskap på et "
+"spesifikt felt og gjør svarene mer målrettede."
+msgstr ""
+"You achieve this by giving the AI assistant predefined instructions about "
+"how it should behave, what it should focus on, and how it should present the"
+" answer. In addition, you can upload material such as PDF documents, plain "
+"text or web pages containing the (subject) material your assistant should "
+"use as the basis for its answers. In this way, the assistant gets its own "
+"reference library that it uses to generate an answer. The result is a more "
+"accurate \"chatbot\" that has expert knowledge in a specific field and makes"
+" the answers more targeted."
+
+#: ../../source/module1/ki-assistent.rst:13
+msgid ""
+"En veldig nyttig funksjonalitet er at man kan lagre sine assistenter og "
+"bruke de om og om igjen, i tillegg til å dele de med andre."
+msgstr ""
+"A very useful feature is that you can save your assistants and use them over"
+" and over again, as well as share them with others."
+
+#: ../../source/module1/ki-assistent.rst:17
+msgid "Hva er forskjellen mellom en KI-assistent og en vanlig KI-chat?"
+msgstr ""
+"What is the difference between an AI assistant and an ordinary AI chat?"
+
+#: ../../source/module1/ki-assistent.rst:19
+msgid ""
+"Begge har en språkmodell i bunn, og forskjellen er ikke så stor teknisk "
+"sett. Når du samhandler med en KI-assistent vil det se ganske likt ut som "
+"med en hvilken som helst KI-chat. KI-assistenten har bare dette ekstra laget"
+" med forhåndsdefinerte instruksjoner for hvordan den skal oppføre seg."
+msgstr ""
+"Both have a language model at their core, and the difference is not that "
+"great technically. When you interact with an AI assistant, it will look "
+"quite similar to any other AI chat. The AI assistant just has this extra "
+"layer of predefined instructions for how it should behave."
+
+#: ../../source/module1/ki-assistent.rst:24
+msgid "Eksempel på forskjell"
+msgstr "Example of the difference"
+
+#: ../../source/module1/ki-assistent.rst:30
+#: ../../source/module1/ki-assistent.rst:36
+msgid "**Bruker-instruksjon**: Hva sier Pytagoras læresetning?"
+msgstr "**User prompt**: What does the Pythagorean theorem state?"
+
+#: ../../source/module1/ki-assistent.rst:31
+msgid ""
+"**KI-svar**: Kvadratet på hypotenusen i en rettvinklet trekant er lik summen"
+" av kvadratene på de to katetene."
+msgstr ""
+"**AI answer**: The square of the hypotenuse in a right-angled triangle is "
+"equal to the sum of the squares of the two other sides."
+
+#: ../../source/module1/ki-assistent.rst:37
+msgid ""
+"**KI-assistent instruksjon**: Aldri gi studenten direkte svar på et "
+"spørsmål, men still spørsmål eller gi hint som kan hjelpe studenten til å "
+"komme på rett svar selv."
+msgstr ""
+"**AI assistant instruction**: Never give the student a direct answer to a "
+"question, but ask questions or give hints that can help the student arrive "
+"at the right answer themselves."
+
+#: ../../source/module1/ki-assistent.rst:38
+msgid ""
+"**KI-svar**: Jeg gir deg ikke svaret, men kan gi deg et hint: Kan det ha noe"
+" med hypotenus å gjøre?"
+msgstr ""
+"**AI answer**: I won't give you the answer, but I can give you a hint: could"
+" it have something to do with the hypotenuse?"
+
+#: ../../source/module1/ki-assistent.rst:41
+msgid "Refleksjonsoppgave"
+msgstr "Reflection exercise"
+
+#: ../../source/module1/ki-assistent.rst:43
+msgid "Hva slags oppgaver kan en KI-assistent hjelpe deg og teamet ditt med?"
+msgstr "What kinds of tasks can an AI assistant help you and your team with?"

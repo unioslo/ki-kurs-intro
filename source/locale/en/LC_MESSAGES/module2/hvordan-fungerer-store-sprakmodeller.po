@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:2
+msgid "Hvordan fungerer store språkmodeller?"
+msgstr "How do large language models work?"
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:4
+msgid ""
+"En type enkel språkmodell som du sikkert kjenner til, er ordboka på "
+"mobiltelefonen din. Den foreslår neste ord basert på teksten du har skrevet "
+"så langt. Modellen i telefonen er trent opp på tekster hentet fra internett,"
+" og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen "
+"har lært fra tekstene. Forslaget er *betinget* av teksten du har skrevet, og"
+" denne teksten kalles *konteksten*."
+msgstr ""
+"A type of simple language model you are probably familiar with is the "
+"dictionary on your mobile phone. It suggests the next word based on the text"
+" you have written so far. The model in your phone is trained on texts "
+"gathered from the internet, and the suggestions are the most likely words "
+"based on the patterns the model has learned from the texts. The suggestion "
+"is *conditioned* on the text you have written, and this text is called the "
+"*context*."
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:13
+msgid ""
+"Skjermbilde med et tastatur der det er skrevet \"Jeg vil ha en kopp\". "
+"Forslag til fortsettelse er \"te\", \"kaffe\" og en emoji."
+msgstr ""
+"Screenshot of a keyboard where \"I would like a cup of\" has been typed. "
+"Suggested continuations are \"tea\", \"coffee\" and an emoji."
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:17
+msgid "Forslag til fortsettelser av teksten \"Jeg vil ha en kopp\"."
+msgstr "Suggested continuations of the text \"I would like a cup of\"."
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:18
+msgid ""
+"Skjermbilde med et tastatur der det er skrevet \"Jeg vil ha et glass\". "
+"Forslag til fortsettelse er \"vin\", \"med\" og en emoji."
+msgstr ""
+"Screenshot of a keyboard where \"I would like a glass of\" has been typed. "
+"Suggested continuations are \"wine\", \"water\" and an emoji."
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:23
+msgid "Forslag til fortsettelser av teksten \"Jeg vil ha et glass\"."
+msgstr "Suggested continuations of the text \"I would like a glass of\"."
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:27
+msgid ""
+"Store språkmodeller er mye mer avanserte enn ordboka på telefonen din, men "
+"de fungerer grunnleggende sett på samme måte. En språkmodell er en "
+"matematisk modell som bygger opp svaret ett ord av gangen, betinget av "
+"*konteksten*. Hvert ord trekkes med litt tilfeldighet. Modellen stopper når "
+"den \"mener\" svaret er fullstendig."
+msgstr ""
+"Large language models are far more advanced than the dictionary on your "
+"phone, but they work in fundamentally the same way. A language model is a "
+"mathematical model that builds up its answer one word at a time, conditioned"
+" on the *context*. Each word is drawn with a little randomness. The model "
+"stops when it \"believes\" the answer is complete."
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:34
+msgid "Hva er konteksten?"
+msgstr "What is the context?"
+
+#: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:36
+msgid ""
+"Når vi snakker om store språkmodeller, sier vi ofte at alt vi gir modellene "
+"å jobbe med, er *kontekst*. Konteksten kan være et spørsmål eller en "
+"instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til "
+"modellen."
+msgstr ""
+"When we talk about large language models, we often say that everything we "
+"give the models to work with is *context*. The context can be a question or "
+"a prompt, but also documents, images or other things we upload to the model."

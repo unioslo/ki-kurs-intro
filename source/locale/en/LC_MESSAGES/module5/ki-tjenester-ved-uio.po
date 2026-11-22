@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:2
+msgid "KI-tjenester ved UiO"
+msgstr "AI services at UiO"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:4
+msgid ""
+"Kapittel 5 handler om godkjente KI-verktøy på UiO. I dette kapittelet lærer "
+"du hva verktøyene kan brukes til, hvorfor det er viktig å bruke dem, og "
+"hvilke tjenester som passer best til ulike formål."
+msgstr ""
+"Chapter 5 is about approved AI tools at UiO. In this chapter you will learn "
+"what the tools can be used for, why it is important to use them, and which "
+"services are best suited to different purposes."
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:6
+msgid "Verktøyene som presenteres i kapittelet er:"
+msgstr "The tools presented in this chapter are:"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:7
+msgid "GPT UiO"
+msgstr "GPT UiO"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:8
+msgid "Autotekst og nettskjemadiktafon"
+msgstr "Autotekst and Nettskjema-diktafon"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:9
+msgid "Gemini og Gemini notebook"
+msgstr "Gemini and Gemini Notebook"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:10
+msgid "Microsoft Copilot chat"
+msgstr "Microsoft Copilot Chat"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:12
+msgid "Illustrasjon av en verktøyboks"
+msgstr "Illustration of a toolbox"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:18
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr "Illustration: Tina Morønning Ruud"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:21
+msgid "Læringsmål"
+msgstr "Learning objectives"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:23
+msgid "Jeg vet hvilke UiO-data som kan deles med ulike godkjente KI-tjenester"
+msgstr ""
+"I know which UiO data can be shared with the various approved AI services"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:24
+msgid ""
+"Jeg kan velge riktig KI-tjeneste basert på behov og klassifisering av data"
+msgstr ""
+"I can choose the right AI service based on need and data classification"
+
+#: ../../source/module5/ki-tjenester-ved-uio.rst:25
+msgid ""
+"Jeg vet hvordan jeg får tilgang til og bruker ulike godkjente KI-verktøy"
+msgstr "I know how to get access to and use the various approved AI tools"

@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:2
+msgid "Oppsummering kapittel 3"
+msgstr "Summary chapter 3"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:4
+msgid ""
+"Du har nå et nyttig sett med verktøy for å bruke KI på en tryggere og bedre "
+"måte. I dette kapittelet har vi lært hvordan man vurderer og kvalitetssikrer"
+" svar fra KI, og hvordan du kan bruke godt utformede instruksjoner for å få "
+"bedre svar."
+msgstr ""
+"You now have a useful set of tools for using AI in a safer and better way. "
+"In this chapter we have learned how to assess and quality-assure answers "
+"from AI, and how you can use well-designed prompts to get better answers."
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:8
+msgid "Test deg selv"
+msgstr "Test yourself"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:10
+msgid "Diskuter selv eller med en kollega"
+msgstr "Discuss on your own or with a colleague"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:12
+msgid ""
+"Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best "
+"mulig svar?"
+msgstr ""
+"What is a prompt and what should a prompt contain to ensure the best "
+"possible answer?"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:13
+msgid "Hva erfarte du når du forsøkte å forbedre instruksjonene dine?"
+msgstr "What did you experience when you tried to improve your prompts?"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:14
+msgid "Hvilke instruksjonsteknikker vil være mest nyttig for deg?"
+msgstr "Which prompting techniques will be most useful for you?"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:15
+msgid "Hvordan vil du vurdere risiko ved bruk av KI i egne arbeidsoppgaver?"
+msgstr "How will you assess risk when using AI in your own work tasks?"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:16
+msgid "Hvordan vil du kvalitetssikre KI-generert innhold?"
+msgstr "How will you quality-assure AI-generated content?"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:19
+msgid "Repetisjon"
+msgstr "Recap"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:21
+msgid ""
+"Instruksjoner er din måte å kommunisere med KI på. En instruksjon er "
+"beskjeden eller spørsmålet du gir til KI. Kvaliteten på instruksjonen din "
+"påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar "
+"bør du: gi kontekst, spesifisere format, definere en rolle og gi eksempler."
+msgstr ""
+"Prompts are your way of communicating with AI. A prompt is the instruction "
+"or question you give to AI. The quality of your prompt directly affects the "
+"quality of the answer you get. To ensure the best possible answer you "
+"should: give context, specify format, define a role and give examples."
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:25
+msgid "Det finnes mange ulike instruksjonsteknikker:"
+msgstr "There are many different prompting techniques:"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:27
+msgid "Lag en arbeidsplan for hvordan KI-en skal løse problemet"
+msgstr "Create a work plan for how the AI should solve the problem"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:28
+msgid "Be KI-en forklare hvorfor den har gitt det svaret den ga"
+msgstr "Ask the AI to explain why it gave the answer it did"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:29
+msgid "Forbedre instruksjonen trinnvis"
+msgstr "Improve the prompt step by step"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:30
+msgid ""
+"Start en ny samtale om du merker at svarene begynner å få dårligere kvalitet"
+msgstr ""
+"Start a new conversation if you notice that the answers are starting to drop"
+" in quality"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:32
+msgid ""
+"Generativ KI er ikke enten \"pålitelig\" eller \"upålitelig\", det avhenger "
+"av hva vi bruker den til. En hovedregel er at KI passer best til oppgaver "
+"der feil ikke innebærer stor risiko. Hvis feil kan få alvorlige følger, må "
+"du enten kunne kontrollere og bekrefte informasjonen før du bruker den "
+"videre, eller la være å bruke KI til den oppgaven."
+msgstr ""
+"Generative AI is not simply \"reliable\" or \"unreliable\"; it depends on "
+"what we use it for. A general rule is that AI is best suited to tasks where "
+"errors do not involve significant risk. If errors can have serious "
+"consequences, you must either be able to check and confirm the information "
+"before you use it further, or refrain from using AI for that task."
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:36
+msgid ""
+"Kunstig intelligens har flere svakheter og innholdet skal alltid "
+"kvalitetssikres. For å kvalitetssikre innholdet bør du:"
+msgstr ""
+"Artificial intelligence has several weaknesses and the content should always"
+" be quality-assured. To quality-assure the content you should:"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:38
+msgid "Vurdere risikoen"
+msgstr "Assess the risk"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:39
+msgid "Skrive gode instruksjoner"
+msgstr "Write good prompts"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:40
+msgid "Kontrollere svaret"
+msgstr "Check the answer"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:41
+msgid "Rydde i samtalen"
+msgstr "Tidy up the conversation"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:44
+msgid "Neste kapittel"
+msgstr "Next chapter"
+
+#: ../../source/module3/oppsummering-god-bruk-ki.rst:46
+msgid ""
+"Vi har nå lagt grunnlaget for å bruke KI trygt. I neste kapittel er temaet: "
+"ansvarlig og bærekraftig bruk av KI."
+msgstr ""
+"We have now laid the foundation for using AI safely. In the next chapter the"
+" topic is: responsible and sustainable use of AI."

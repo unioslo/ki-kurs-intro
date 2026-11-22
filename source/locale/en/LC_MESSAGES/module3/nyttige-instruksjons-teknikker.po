@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:2
+msgid "Nyttige instruksjons-teknikker"
+msgstr "Useful prompting techniques"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:4
+msgid ""
+"Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike "
+"instruksjonsteknikker i tillegg. Du kan bruke teknikkene hver for seg, eller"
+" kombinere de."
+msgstr ""
+"Once you have learned the principles for good prompts, you can also apply "
+"various prompting techniques. You can use the techniques individually, or "
+"combine them."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:7
+msgid "Lag en plan"
+msgstr "Make a plan"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:9
+msgid ""
+"Lag en arbeidsplan for hvordan KI-en skal løse problemet. Dette gir mer "
+"gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver."
+msgstr ""
+"Create a work plan for how the AI should solve the problem. This gives more "
+"well-considered answers and is especially useful for complex tasks."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:12
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:34
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:47
+msgid "**Eksempel**"
+msgstr "**Example**"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:14
+msgid ""
+"Du er en erfaren kursutvikler ved et universitet. Jeg skal holde et 2-timers"
+" introduksjonskurs i bruk av GPT UiO for ansatte ved Universitetet i Oslo "
+"som er nybegynnere."
+msgstr ""
+"You are an experienced course developer at a university. I am going to hold "
+"a 2-hour introductory course in using GPT UiO for staff at the University of"
+" Oslo who are beginners."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:17
+msgid "Tenk steg for steg før du svarer:"
+msgstr "Think step by step before you answer:"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:19
+msgid ""
+"Identifiser målgruppen mer konkret (hvem de er, hva de kan fra før, hva de "
+"trenger)."
+msgstr ""
+"Identify the target audience more concretely (who they are, what they "
+"already know, what they need)."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:20
+msgid "Foreslå 3-4 konkrete læringsmål for kurset."
+msgstr "Suggest 3-4 concrete learning objectives for the course."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:21
+msgid ""
+"Del opp tiden i en enkel tidsplan (f.eks. 4 x 25 minutter med korte pauser)."
+msgstr ""
+"Break the time into a simple schedule (e.g. 4 x 25 minutes with short "
+"breaks)."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:22
+msgid ""
+"For hver bolk: beskriv innhold, arbeidsform (forelesning, demo, øvelse) og "
+"hva deltakerne skal sitte igjen med."
+msgstr ""
+"For each block: describe content, working method (lecture, demo, exercise) "
+"and what the participants should take away."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:23
+msgid ""
+"Til slutt: foreslå en enkel hjemmeoppgave deltakerne kan gjøre etter kurset."
+msgstr ""
+"Finally: suggest a simple homework task the participants can do after the "
+"course."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:25
+msgid ""
+"Vis først din trinnvise tenking som punkter, og deretter et ryddig forslag "
+"til kursopplegg."
+msgstr ""
+"First show your step-by-step thinking as bullet points, and then a clean "
+"proposal for a course plan."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:29
+msgid "Be om begrunnelse"
+msgstr "Ask for reasoning"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:31
+msgid ""
+"Be KI-en forklare hvorfor den har gitt det svaret den ga. En kort "
+"begrunnelse gjør det lettere for deg å vurdere om svaret er relevant og til "
+"å stole på."
+msgstr ""
+"Ask the AI to explain why it gave the answer it did. A brief justification "
+"makes it easier for you to assess whether the answer is relevant and "
+"trustworthy."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:36
+msgid ""
+"Jeg skal arrangere en workshop om [...]. Foreslå noen aktiviteter som kan "
+"hjelpe deltakerne med oppgaven de skal løse. Gi en begrunnelsen på 3-5 "
+"punkter for hvordan aktivitetene kan hjelpe deltakerne."
+msgstr ""
+"I am going to organize a workshop about [...]. Suggest some activities that "
+"can help the participants with the task they need to solve. Give a "
+"justification in 3-5 points for how the activities can help the "
+"participants."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:42
+msgid "Forbedre instruksjonen trinnvis"
+msgstr "Improve the prompt step by step"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:44
+msgid ""
+"Første svar er sjelden perfekt, og det er helt normalt. Bygg videre på "
+"svarene i en samtale."
+msgstr ""
+"The first answer is rarely perfect, and that is completely normal. Build on "
+"the answers in a conversation."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:49
+msgid "Første instruksjon: \"Skriv et utkast til e-post om nytt bookingsystem.\""
+msgstr "First prompt: \"Write a draft email about the new booking system.\""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:51
+msgid "Oppfølging 1: \"Gjør den mer konsis, maks 3 avsnitt.\""
+msgstr "Follow-up 1: \"Make it more concise, max 3 paragraphs.\""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:53
+msgid "Oppfølging 2: \"Legg til en setning om hvor de kan få hjelp.\""
+msgstr "Follow-up 2: \"Add a sentence about where they can get help.\""
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:55
+msgid "Start en ny samtale"
+msgstr "Start a new conversation"
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:57
+msgid ""
+"Som vi lærte i `Språkmodellers hukommelse <module2/sprakmodeller-har-ikke-"
+"hukommelse.html>`_ kan lange samtaler eller et nytt tema forvirre modellen "
+"og gi dårligere svar."
+msgstr ""
+"As we learned in `Language models' memory <module2/sprakmodeller-har-ikke-"
+"hukommelse.html>`_ long conversations or a new topic can confuse the model "
+"and give poorer answers."
+
+#: ../../source/module3/nyttige-instruksjons-teknikker.rst:59
+msgid ""
+"Start derfor en ny samtale om du merker at svarene begynner å få dårligere "
+"kvalitet."
+msgstr ""
+"So start a new conversation if you notice that the answers are starting to "
+"drop in quality."

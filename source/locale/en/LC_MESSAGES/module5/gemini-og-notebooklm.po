@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:3
+msgid "Gemini og Gemini Notebook"
+msgstr "Gemini and Gemini Notebook"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:5
+msgid ""
+"Gemini og Gemini Notebook er to KI-tjenester fra Google som UiO tilbyr til "
+"studenter og ansatte. Språkmodellen som brukes i bakgrunnen heter også "
+"Gemini, og er en serie språkmodeller utviklet av Google DeepMind. Begge "
+"tjenestene kjører i Google Cloud, altså utenfor UiOs egne IT-systemer."
+msgstr ""
+"Gemini and Gemini Notebook are two AI services from Google that UiO offers "
+"to students and staff. The language model used in the background is also "
+"called Gemini, and is a series of language models developed by Google "
+"DeepMind. Both services run in Google Cloud, that is, outside UiO's own IT "
+"systems."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:9
+msgid ""
+"Begge tjenestene er omfattet av UiOs databehandleravtale med Google. Det "
+"betyr blant annet at informasjonen du legger inn i tjenestene (for eksempel "
+"instruksjoner og filer) ikke brukes til å trene KI-modellene videre."
+msgstr ""
+"Both services are covered by UiO's data processing agreement with Google. "
+"Among other things, this means that the information you enter into the "
+"services (for example prompts and files) is not used to further train the AI"
+" models."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:12
+msgid ""
+"Du kan jobbe med opptil gule data i både Gemini og Gemini Notebook, i tråd "
+"med UiOs interne klassifisering av informasjon."
+msgstr ""
+"You can work with data up to the yellow class in both Gemini and Gemini "
+"Notebook, in line with UiO's internal classification of information."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:15
+msgid "Viktig når du bruker Gemini og Gemini Notebook"
+msgstr "Important when you use Gemini and Gemini Notebook"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:17
+msgid "For å bruke Gemini-tjenestene må du:"
+msgstr "To use the Gemini services you must:"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:19
+msgid "ha en konto i Google Workspace tilknyttet UiO"
+msgstr "have an account in Google Workspace linked to UiO"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:20
+msgid ""
+"være spesielt oppmerksom på at du er logget inn med din UiO Google konto når"
+" du bruker tjenestene"
+msgstr ""
+"pay special attention to being logged in with your UiO Google account when "
+"you use the services"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:23
+msgid ""
+"Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster "
+"opp. Tjenesten kjører ikke på UiO sine systemer."
+msgstr ""
+"When you use the services, you must be especially careful about what you "
+"upload. The service does not run on UiO's systems."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:25
+msgid "Gemini og Gemini Notebook er kun godkjent for opptil gule data 🟡"
+msgstr ""
+"Gemini and Gemini Notebook are only approved for data up to the yellow class"
+" 🟡"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:26
+msgid ""
+"Last ikke opp materiale som kan identifisere eller eksponere andre personer "
+"(for eksempel studentbesvarelser, pasientopplysninger, intervjuer, "
+"personlige bilder eller lydopptak)"
+msgstr ""
+"Do not upload material that can identify or expose other people (for example"
+" student submissions, patient information, interviews, personal photos or "
+"audio recordings)"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:27
+msgid ""
+"Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles "
+"utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter,"
+" forskningsdata med særskilte krav til behandling)"
+msgstr ""
+"Do not upload other information that for security reasons should not be "
+"shared outside UiO's own services (for example classified or internal "
+"documents, research data with special processing requirements)"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:32
+msgid "Gemini"
+msgstr "Gemini"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:34
+msgid "Gemini er Googles generelle KI-chat."
+msgstr "Gemini is Google's general AI chat."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:36
+msgid ""
+"Sammenlignet med GPT UiO er Gemini bedre egnet til faktasøk, fordi den kan "
+"hente oppdatert informasjon fra åpne nettsider. Gemini kan også lage mange "
+"typer filer, for eksempel: pdf, Powerpoint-presentasjoner eller Excel-"
+"regneark for å nevne noen."
+msgstr ""
+"Compared to GPT UiO, Gemini is better suited for fact-finding, because it "
+"can retrieve up-to-date information from open websites. Gemini can also "
+"create many types of files, for example: PDFs, PowerPoint presentations or "
+"Excel spreadsheets, to name a few."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:39
+msgid ""
+"I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se "
+"avsnittet nedenfor)."
+msgstr ""
+"In addition, Gemini can be connected to sources you have saved in Gemini "
+"Notebook (see the section below)."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:41
+msgid "Bruk Gemini hvis du"
+msgstr "Use Gemini if you"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:43
+msgid "trenger en kraftig KI-modell som kan generere bilder"
+msgstr "need a powerful AI model that can generate images"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:44
+msgid "vil laste opp, bearbeide eller generere filer"
+msgstr "want to upload, process or generate files"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:45
+msgid "vil bruke kildene du allerede har lagt inn i en Gemini Notebook"
+msgstr "want to use the sources you have already added to a Gemini Notebook"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:46
+msgid "trenger internettsøk"
+msgstr "need internet search"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:47
+#: ../../source/module5/gemini-og-notebooklm.rst:79
+msgid "skal legge inn informasjon som er klassifisert som grønn 🟢 eller gul 🟡"
+msgstr "are entering information classified as green 🟢 or yellow 🟡"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:51
+msgid "Gemini Notebook"
+msgstr "Gemini Notebook"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:53
+msgid ""
+"Gemini Notebook er en KI-assistent fra Google som er spesialisert for å "
+"arbeide med dokumenter og egne kilder."
+msgstr ""
+"Gemini Notebook is an AI assistant from Google that is specialized for "
+"working with documents and your own sources."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:55
+msgid ""
+"Notebooken svarer ikke på spørsmål før du har lastet opp informasjon den kan"
+" bruke som kilde. Du må derfor først bygge opp din egen \"kunnskapsbank\" "
+"for hver Notebook, som kan inneholde:"
+msgstr ""
+"The notebook does not answer questions until you have uploaded information "
+"it can use as a source. You must therefore first build up your own "
+"\"knowledge bank\" for each notebook, which can contain:"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:58
+msgid "dokumenter eller innlimt tekst"
+msgstr "documents or pasted text"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:59
+msgid "nettsider"
+msgstr "websites"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:60
+msgid "opptak fra forelesninger"
+msgstr "recordings from lectures"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:62
+msgid ""
+"Når Gemini Notebook svarer på forespørslene dine, forsøker den å være tro "
+"mot kildene du har lagt inn. Du kan derfor ofte få mer presise og kildetro "
+"svar enn ved bruk av GPT UiO. Du må likevel alltid kontrollere resultatet "
+"Gemini Norebook gir deg, slik som du gjør med alt du får fra en KI."
+msgstr ""
+"When Gemini Notebook answers your requests, it tries to stay faithful to the"
+" sources you have added. You can therefore often get more precise and "
+"source-faithful answers than when using GPT UiO. You must nevertheless "
+"always check the result Gemini Notebook gives you, just as you do with "
+"everything you get from an AI."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:66
+msgid "Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:"
+msgstr "Gemini Notebook also has several useful features, for example to:"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:68
+msgid "lage oppsummeringer i tekst eller lyd"
+msgstr "create summaries in text or audio"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:69
+msgid "lage quizzer"
+msgstr "create quizzes"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:70
+msgid "lage presentasjoner"
+msgstr "create presentations"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:72
+msgid ""
+"Husk at når du arbeider med dokumenter er det viktig at du har kontroll på "
+"opphavsretten til materialet: last ikke opp dokumenter du ikke har "
+"rettigheter til å dele."
+msgstr ""
+"Remember that when you work with documents it is important that you are in "
+"control of the copyright to the material: do not upload documents you do not"
+" have the rights to share."
+
+#: ../../source/module5/gemini-og-notebooklm.rst:74
+msgid "Bruk Gemini Notebook hvis du"
+msgstr "Use Gemini Notebook if you"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:76
+msgid "skal jobbe mye med dokumenter og egne kilder"
+msgstr "are going to work a lot with documents and your own sources"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:77
+msgid ""
+"vil genere forskjellige typer ressurser som quizzer eller podcaster basert "
+"på dine dokumenter og kilder"
+msgstr ""
+"want to generate different types of resources such as quizzes or podcasts "
+"based on your documents and sources"
+
+#: ../../source/module5/gemini-og-notebooklm.rst:78
+msgid "trenger websøk"
+msgstr "need web search"

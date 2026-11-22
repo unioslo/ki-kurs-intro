@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module1/kunstig-intelligens.rst:3
+msgid "Kunstig intelligens"
+msgstr "Artificial intelligence"
+
+#: ../../source/module1/kunstig-intelligens.rst:5
+msgid ""
+"Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi "
+"vanligvis forbinder med menneskelig intelligens. Det kan for eksempel være å"
+" produsere og forstå tekst, kjenne igjen bilder, tolke tale eller analysere "
+"tall."
+msgstr ""
+"Artificial intelligence (AI) is technology that can perform tasks we usually"
+" associate with human intelligence. This could be, for example, producing "
+"and understanding text, recognising images, interpreting speech or analysing"
+" numbers."
+
+#: ../../source/module1/kunstig-intelligens.rst:8
+msgid ""
+"For at kunstig intelligens skal kunne utføre denne type oppgaver trener den "
+"på eksempler fra tekst, bilder eller lyd. Ved å se på eksempler, lærer KI å "
+"kjenne igjen mønstre og sammenhenger, og kan etter hvert:"
+msgstr ""
+"For artificial intelligence to be able to perform this type of task, it "
+"trains on examples from text, images or sound. By looking at examples, the "
+"AI learns to recognise patterns and connections, and can eventually:"
+
+#: ../../source/module1/kunstig-intelligens.rst:11
+msgid "foreslå neste ord i en tekst"
+msgstr "suggest the next word in a text"
+
+#: ../../source/module1/kunstig-intelligens.rst:12
+msgid "gjenkjenne hva som er på et bilde"
+msgstr "recognise what is in an image"
+
+#: ../../source/module1/kunstig-intelligens.rst:13
+msgid "forstå innholdet i et lydopptak"
+msgstr "understand the content of an audio recording"
+
+#: ../../source/module1/kunstig-intelligens.rst:15
+msgid "Dette kalles maskinlæring og betyr at teknologien lærer fra data."
+msgstr ""
+"This is called machine learning and means that the technology learns from "
+"data."
+
+#: ../../source/module1/kunstig-intelligens.rst:18
+msgid "Bonusinnhold"
+msgstr "Bonus content"
+
+#: ../../source/module1/kunstig-intelligens.rst:20
+msgid "Litt historie om kunstig intelligens"
+msgstr "A little history of artificial intelligence"
+
+#: ../../source/module1/kunstig-intelligens.rst:22
+msgid ""
+"KI er egentlig ikke noe nytt. Forskere begynte å jobbe med det allerede på "
+"1950-tallet, og i 1956 ble KI etablert som et eget forskningsfelt. Det som "
+"er nytt i dag, er hvor kraftig og tilgjengelig KI har blitt de siste årene. "
+"Da ChatGPT kom i 2022, var det et tydelig vendepunkt. I stedet for \"dumme "
+"chatbotter\" som bare kunne svare på helt enkle spørsmål, fikk vi plutselig "
+"et verktøy som kunne:"
+msgstr ""
+"AI is actually nothing new. Researchers began working on it as early as the "
+"1950s, and in 1956 AI was established as a research field in its own right. "
+"What is new today is how powerful and accessible AI has become in recent "
+"years. When ChatGPT arrived in 2022, it was a clear turning point. Instead "
+"of \"dumb chatbots\" that could only answer very simple questions, we "
+"suddenly got a tool that could:"
+
+#: ../../source/module1/kunstig-intelligens.rst:29
+msgid "skrive lange tekster"
+msgstr "write long texts"
+
+#: ../../source/module1/kunstig-intelligens.rst:30
+msgid "svare på komplekse spørsmål"
+msgstr "answer complex questions"
+
+#: ../../source/module1/kunstig-intelligens.rst:31
+msgid "formulere seg på en måte som ligner et menneske"
+msgstr "express itself in a way that resembles a human"
+
+#: ../../source/module1/kunstig-intelligens.rst:33
+msgid "Denne utviklingen har vært mulig på grunn av tre viktige ting:"
+msgstr "This development has been possible because of three important things:"
+
+#: ../../source/module1/kunstig-intelligens.rst:35
+msgid ""
+"Store datamengder:  KI kan trenes på enorme mengder tekst, bilder og lyd fra"
+" internett, bøker, artikler osv."
+msgstr ""
+"Large amounts of data: AI can be trained on enormous amounts of text, images"
+" and sound from the internet, books, articles and so on."
+
+#: ../../source/module1/kunstig-intelligens.rst:36
+msgid ""
+"Kraftig maskinvare: Spesielle prosessorer som kan behandle veldig mye data "
+"samtidig."
+msgstr ""
+"Powerful hardware: Special processors that can process a great deal of data "
+"at the same time."
+
+#: ../../source/module1/kunstig-intelligens.rst:37
+msgid ""
+"Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at "
+"KI kan lære mer effektivt."
+msgstr ""
+"New methods: Researchers have developed better models and techniques that "
+"enable AI to learn more efficiently."
+
+#: ../../source/module1/kunstig-intelligens.rst:41
+msgid "Maskinlæring"
+msgstr "Machine learning"
+
+#: ../../source/module1/kunstig-intelligens.rst:43
+msgid ""
+"Mennesker lærer ved erfaring. Maskinlæring bygger på det samme prinsippet, "
+"bare for dataprogrammer. I stedet for å lære av erfaring, lærer programmet "
+"av data. Når vi har store mengder data tilgjengelig, for eksempel tekst, "
+"bilder eller tall, kan vi bruke maskinlæring til å finne mønstre og "
+"sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage "
+"selv."
+msgstr ""
+"Humans learn through experience. Machine learning is based on the same "
+"principle, just for computer programs. Instead of learning from experience, "
+"the program learns from data. When we have large amounts of data available, "
+"for example text, images or numbers, we can use machine learning to find "
+"patterns and connections that are difficult or time-consuming for humans to "
+"discover themselves."
+
+#: ../../source/module1/kunstig-intelligens.rst:48
+msgid ""
+"Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser "
+"problemer:"
+msgstr ""
+"Machine learning differs from traditional programming in how it solves "
+"problems:"
+
+#: ../../source/module1/kunstig-intelligens.rst:50
+msgid "Tradisjonell programmering foregår slik:"
+msgstr "Traditional programming works like this:"
+
+#: ../../source/module1/kunstig-intelligens.rst:52
+msgid "Du lager klare regler: \"Hvis X skjer, gjør Y\"."
+msgstr "You create clear rules: \"If X happens, do Y\"."
+
+#: ../../source/module1/kunstig-intelligens.rst:53
+msgid "Programmet bruker reglene på data du gir det."
+msgstr "The program applies the rules to the data you give it."
+
+#: ../../source/module1/kunstig-intelligens.rst:54
+msgid "Programmet gir deg resultatet."
+msgstr "The program gives you the result."
+
+#: ../../source/module1/kunstig-intelligens.rst:56
+msgid ""
+"Et eksempel på tradisjonell programmering, er et program som regner ut "
+"studiepoeng basert på antall beståtte emner og vekting per emne."
+msgstr ""
+"An example of traditional programming is a program that calculates credits "
+"based on the number of passed courses and the weighting of each course."
+
+#: ../../source/module1/kunstig-intelligens.rst:59
+msgid "Maskinlæring løser et problem slik:"
+msgstr "Machine learning solves a problem like this:"
+
+#: ../../source/module1/kunstig-intelligens.rst:61
+msgid "I maskinlæring er *regelen* ukjent, og det vi ønsker å lære."
+msgstr ""
+"In machine learning the *rule* is unknown, and it is what we want to learn."
+
+#: ../../source/module1/kunstig-intelligens.rst:63
+msgid ""
+"Vi har mange eksempler på en gitt type data (for eksempel mange bilder av "
+"katter eller hunder)."
+msgstr ""
+"We have many examples of a given type of data (for example many images of "
+"cats or dogs)."
+
+#: ../../source/module1/kunstig-intelligens.rst:64
+msgid ""
+"Avhengig av hvilken type maskinlæring som brukes, kan dataene også inkludere"
+" kjente svar eller merkelapper som \"hund\" eller \"katt\"."
+msgstr ""
+"Depending on which type of machine learning is used, the data may also "
+"include known answers or labels such as \"dog\" or \"cat\"."
+
+#: ../../source/module1/kunstig-intelligens.rst:65
+msgid ""
+"I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra "
+"eksemplene."
+msgstr ""
+"Instead of writing the rules ourselves, we let the system learn the rules "
+"from the examples."

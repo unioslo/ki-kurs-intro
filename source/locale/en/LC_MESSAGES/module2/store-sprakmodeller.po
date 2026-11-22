@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module2/store-sprakmodeller.rst:2
+msgid "Store språkmodeller"
+msgstr "Large language models"
+
+#: ../../source/module2/store-sprakmodeller.rst:3
+msgid ""
+"Som du nettopp har lært, er store språkmodeller selve motoren i mange KI-"
+"tjenester. Nå skal vi se nærmere på hvordan store språkmodeller lager tekst "
+"og hva vi bør være oppmerksomme på. Denne kunnskapen er nødvendig for å "
+"bruke KI på en trygg og ansvarlig måte."
+msgstr ""
+"As you have just learned, large language models are the very engine of many "
+"AI services. Now we will take a closer look at how large language models "
+"produce text and what we should be aware of. This knowledge is necessary in "
+"order to use AI in a safe and responsible way."
+
+#: ../../source/module2/store-sprakmodeller.rst:7
+msgid "Illustrasjon av en språkmodell-maskin - trening inn, svar ut"
+msgstr "Illustration of a language-model machine - training in, answer out"
+
+#: ../../source/module2/store-sprakmodeller.rst:12
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr "Illustration: Tina Morønning Ruud"
+
+#: ../../source/module2/store-sprakmodeller.rst:14
+msgid "Læringsmål"
+msgstr "Learning objectives"
+
+#: ../../source/module2/store-sprakmodeller.rst:16
+msgid "Jeg forstår hvordan store språkmodeller generer tekst"
+msgstr "I understand how large language models generate text"
+
+#: ../../source/module2/store-sprakmodeller.rst:17
+msgid ""
+"Jeg forstår svakhetene i store språkmodeller og kan kjenne igjen når "
+"språkmodellene gir feil informasjon"
+msgstr ""
+"I understand the weaknesses of large language models and can recognise when "
+"language models give incorrect information"

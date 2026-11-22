@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:2
+msgid "Instruksjoner: Bli god på KI!"
+msgstr "Prompts: Get good at AI!"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:4
+msgid "For å mestre KI må du bli god på instruksjoner."
+msgstr "To master AI, you need to get good at prompts."
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:6
+msgid ""
+"En instruksjon er beskjeden eller spørsmålet du gir en språkmodell. "
+"Instruksjoner kalles også *prompt*, og skrives inn i chatten du bruker til å"
+" kommunisere med språkmodellen. Det som er viktig å merke seg er at "
+"kvaliteten på instruksjonen din er direkte relatert til kvaliteten på svaret"
+" du får."
+msgstr ""
+"A prompt is the instruction or question you give a language model. Prompts "
+"are written into the chat you use to communicate with the language model. "
+"What is important to note is that the quality of your prompt is directly "
+"related to the quality of the answer you get."
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:10
+msgid ""
+"I dette kapitlet skal du lære hvordan du lager gode instruksjoner, og "
+"hvordan du kan sjekke kvaliteten på svarene KI gir deg."
+msgstr ""
+"In this chapter you will learn how to create good prompts, and how to check "
+"the quality of the answers AI gives you."
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:12
+msgid "Illustrasjon av at personen viser vei til roboten"
+msgstr "Illustration of a person showing the way to the robot"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:17
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr "Illustration: Tina Morønning Ruud"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:20
+msgid "Læringsmål"
+msgstr "Learning objectives"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:22
+msgid "Jeg kan kvalitetssikre KI-generert innhold"
+msgstr "I can quality-assure AI-generated content"
+
+#: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:23
+msgid "Jeg kan skrive gode og effektive instruksjoner (promts)"
+msgstr "I can write good and effective prompts"

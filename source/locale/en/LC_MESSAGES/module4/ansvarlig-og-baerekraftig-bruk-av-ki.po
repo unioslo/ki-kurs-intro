@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:2
+msgid "Ansvarlig og bærekraftig bruk av KI"
+msgstr "Responsible and sustainable use of AI"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:4
+msgid ""
+"I kapittel 4 lærer du om viktige etiske, miljømessige og juridiske hensyn "
+"ved bruk av kunstig intelligens. Denne kunnskapen bidrar til at vi kan bruke"
+" KI på en ansvarlig måte."
+msgstr ""
+"In chapter 4 you will learn about important ethical, environmental and legal"
+" considerations when using artificial intelligence. This knowledge helps us "
+"use AI in a responsible way."
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:7
+msgid "Illustrasjon av en person som tenker på bærekraft, etikk, og lover"
+msgstr ""
+"Illustration of a person thinking about sustainability, ethics and laws"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:13
+msgid "Illustrasjon: Tina Morønning Ruud"
+msgstr "Illustration: Tina Morønning Ruud"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:16
+msgid "Læringsmål"
+msgstr "Learning objectives"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:18
+msgid "Jeg forstår  miljøkostnader og sosiale kostnader ved bruk av KI"
+msgstr "I understand the environmental and social costs of using AI"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:19
+msgid "Jeg er kjent med personvern og opphavsrett i forbindelse med KI"
+msgstr "I am familiar with privacy and copyright in connection with AI"
+
+#: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:20
+msgid "Jeg kan ta ansvarlige valg om bruk av KI i egen arbeidshverdag"
+msgstr "I can make responsible choices about using AI in my own working day"

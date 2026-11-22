@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module1/ki-agenter.rst:2
+msgid "KI-agenter"
+msgstr "AI agents"
+
+#: ../../source/module1/ki-agenter.rst:4
+msgid ""
+"KI-agent kan lett forveksles med KI-assistent, men en KI-agent er et mye "
+"kraftigere verktøy enn en KI-assistent. En KI-agent forteller deg ikke bare "
+"hvordan du kan løse en oppgave, den utfører også oppgaven for deg. For "
+"eksempel: I stedet for å skrive inn en oppgave i et chat-vindu, kopiere ut "
+"svaret, og lime det inn i ønsket dokument, kan agenten endre teksten direkte"
+" i dokumentet for deg. En KI-agent er dermed en avansert KI-assistent som "
+"kan *utføre handlinger* i IT-systemer, og på den måten være et veldig "
+"effektivt verktøy."
+msgstr ""
+"An AI agent is easily confused with an AI assistant, but an AI agent is a "
+"far more powerful tool than an AI assistant. An AI agent does not just tell "
+"you how to solve a task, it also carries out the task for you. For example: "
+"instead of typing a task into a chat window, copying out the answer, and "
+"pasting it into the document you want, the agent can edit the text directly "
+"in the document for you. An AI agent is therefore an advanced AI assistant "
+"that can *perform actions* in IT systems, and in that way be a very "
+"effective tool."
+
+#: ../../source/module1/ki-agenter.rst:9
+msgid "Eksempler"
+msgstr "Examples"
+
+#: ../../source/module1/ki-agenter.rst:11
+msgid ""
+"KI-agenter er gjerne laget for et eller flere spesifikke formål og kan for "
+"eksempel:"
+msgstr ""
+"AI agents are usually built for one or more specific purposes and can, for "
+"example:"
+
+#: ../../source/module1/ki-agenter.rst:13
+msgid ""
+"hente informasjon fra andre systemer, f.eks internett eller en database"
+msgstr ""
+"retrieve information from other systems, e.g. the internet or a database"
+
+#: ../../source/module1/ki-agenter.rst:14
+msgid "opprette og skrive innhold i en epost"
+msgstr "create and write content in an email"
+
+#: ../../source/module1/ki-agenter.rst:15
+msgid "slå sammen to regneark for deg"
+msgstr "merge two spreadsheets for you"
+
+#: ../../source/module1/ki-agenter.rst:19
+msgid "Kraftig verktøy som krever kompetanse"
+msgstr "A powerful tool that requires competence"
+
+#: ../../source/module1/ki-agenter.rst:21
+msgid ""
+"Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer "
+"kompetanse og forsiktighet ved bruk enn en vanlig KI-chat."
+msgstr ""
+"Because AI agents can perform actions on their own, they require more "
+"competence and caution when used than an ordinary AI chat."
+
+#: ../../source/module1/ki-agenter.rst:23
+msgid ""
+"Ved UiO tilbys foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp"
+" fordi de er mer krevende å bruke, og feil bruk kan få alvorlige "
+"konsekvenser."
+msgstr ""
+"At UiO, AI agents are not yet offered to the same extent as AI chat, "
+"precisely because they are more demanding to use, and incorrect use can have"
+" serious consequences."
+
+#: ../../source/module1/ki-agenter.rst:25
+msgid ""
+"På UiO er allikevel KI-agenter til en viss grad allerede i bruk. En type som"
+" brukes er såkalte kode-agenter. De brukes av IT-ansatte og andre som driver"
+" med koding. Men de kan brukes til mye mer enn dette. De kan for eksempel "
+"lese filer i en utpekt mappe og utføre handlinger direkte på disse. Framover"
+" vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy vi"
+" bruker."
+msgstr ""
+"Even so, AI agents are already in use at UiO to a certain degree. One type "
+"that is used is so-called code agents. They are used by IT staff and others "
+"who work with coding. But they can be used for much more than this. They "
+"can, for example, read files in a designated folder and perform actions "
+"directly on them. Going forward, such features will probably become more "
+"common, also in other digital tools we use."

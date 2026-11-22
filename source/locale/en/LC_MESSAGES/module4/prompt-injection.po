@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module4/prompt-injection.rst:2
+msgid "Prompt-injection"
+msgstr "Prompt injection"
+
+#: ../../source/module4/prompt-injection.rst:4
+msgid ""
+"Når en språkmodell får tilgang til eksternt innhold, for eksempel nettsider "
+"eller opplastede dokumenter, kan den bli utsatt for prompt-injection. "
+"Prompt-injection betyr at det er skjulte instruksjoner i innholdet. "
+"Instruksjonene kan påvirke svaret eller få modellen til å ignorere det du "
+"selv har bedt om. De kan ligge i tekst, bilder eller annet innhold, og kan "
+"være vanskelige å oppdage."
+msgstr ""
+"When a language model gets access to external content, for example websites "
+"or uploaded documents, it can be exposed to prompt injection. Prompt "
+"injection means that there are hidden instructions in the content. The "
+"instructions can affect the answer or make the model ignore what you "
+"yourself asked for. They can be in text, images or other content, and can be"
+" hard to detect."
+
+#: ../../source/module4/prompt-injection.rst:7
+msgid ""
+"Derfor bør du alltid vurdere risikoen før du lar en språkmodell bruke "
+"eksternt innhold, og tilpasse tiltakene til hvor alvorlige konsekvensene "
+"blir hvis modellen blir manipulert."
+msgstr ""
+"That is why you should always assess the risk before you let a language "
+"model use external content, and adapt your measures to how serious the "
+"consequences would be if the model is manipulated."
+
+#: ../../source/module4/prompt-injection.rst:9
+msgid "Hva kan du gjøre?"
+msgstr "What can you do?"
+
+#: ../../source/module4/prompt-injection.rst:11
+msgid ""
+"Unngå eksternt innhold når risikoen er høy. Tryggest er en KI-tjeneste uten "
+"internettsøk, der du bare gir den dokumenter du selv har kontroll på."
+msgstr ""
+"Avoid external content when the risk is high. The safest option is an AI "
+"service without internet search, where you only give it documents you "
+"control yourself."
+
+#: ../../source/module4/prompt-injection.rst:12
+msgid ""
+"Bruk pålitelige kilder. Kontroller at dokumentene du laster opp, kommer fra "
+"en kjent og troverdig avsender."
+msgstr ""
+"Use reliable sources. Check that the documents you upload come from a known "
+"and trustworthy sender."
+
+#: ../../source/module4/prompt-injection.rst:13
+msgid ""
+"Behandle eksternt innhold som upålitelig. Ikke la nettsider eller dokumenter"
+" styre modellens oppgaver, og kontroller alltid svaret før du bruker det."
+msgstr ""
+"Treat external content as unreliable. Do not let websites or documents steer"
+" the model's tasks, and always check the answer before you use it."

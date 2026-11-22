@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module6/sett-2.rst:2
+msgid "Sett 2"
+msgstr "Set 2"
+
+#: ../../source/module6/sett-2.rst:4
+msgid "Oppgaver for å utforske muligheter i egen arbeidshverdag."
+msgstr "Exercises for exploring the possibilities in your own everyday work."
+
+#: ../../source/module6/sett-2.rst:7
+msgid "Kartlegg egne arbeidsoppgaver"
+msgstr "Map your own work tasks"
+
+#: ../../source/module6/sett-2.rst:10
+msgid "Steg 1"
+msgstr "Step 1"
+
+#: ../../source/module6/sett-2.rst:12
+msgid ""
+"Skriv ned 5-10 arbeidsoppgaver du jobber med i løpet av en arbeidsuke. (Eks."
+" Svare på e-poster, lage presentasjoner, skrive eller oppdatere "
+"nettsidetekst, utarbeide rapporter eller saksframlegg, planlegge "
+"undervisning, seminarer eller møter, veilede studenter, databehandling / "
+"analyse, saksbehandling)"
+msgstr ""
+"Write down 5-10 work tasks that you do over the course of a working week. "
+"(E.g. responding to emails, creating presentations, writing or updating "
+"website text, preparing reports or case documents, planning teaching, "
+"seminars or meetings, supervising students, data processing / analysis, case"
+" handling)"
+
+#: ../../source/module6/sett-2.rst:14
+msgid "Steg 2"
+msgstr "Step 2"
+
+#: ../../source/module6/sett-2.rst:16
+msgid ""
+"Skriv noen stikkord om hva oppgaven handler om, hvor ofte du gjør den, hvor "
+"mye tid du bruker"
+msgstr ""
+"Write a few keywords about what the task involves, how often you do it, and "
+"how much time you spend on it."
+
+#: ../../source/module6/sett-2.rst:18
+msgid "Steg 3"
+msgstr "Step 3"
+
+#: ../../source/module6/sett-2.rst:20
+msgid "Marker hvilke oppgaver som er:"
+msgstr "Mark which tasks are:"
+
+#: ../../source/module6/sett-2.rst:22
+msgid "rutinepreget"
+msgstr "routine"
+
+#: ../../source/module6/sett-2.rst:23
+msgid "teksttunge"
+msgstr "text-heavy"
+
+#: ../../source/module6/sett-2.rst:24
+msgid "vanskelige å få oversikt over"
+msgstr "difficult to get an overview of"
+
+#: ../../source/module6/sett-2.rst:25
+msgid "krever mye idearbeid"
+msgstr "require a lot of ideation"
+
+#: ../../source/module6/sett-2.rst:27
+msgid "Steg 4"
+msgstr "Step 4"
+
+#: ../../source/module6/sett-2.rst:29
+msgid "Vurder risiko rundt bruk av KI på disse arbeidsoppgavene"
+msgstr "Assess the risks of using AI for these work tasks."
+
+#: ../../source/module6/sett-2.rst:31
+msgid "Behandler du persondata?"
+msgstr "Do you process personal data?"
+
+#: ../../source/module6/sett-2.rst:32
+msgid ""
+"Behandler du data som må beskyttes som for eksempel forskningshemmeligheter "
+"eller detaljer om kritisk UiO infrastruktur?"
+msgstr ""
+"Do you process data that must be protected, such as research secrets or "
+"details about critical UiO infrastructure?"
+
+#: ../../source/module6/sett-2.rst:33
+msgid "Behandler du data som er beskyttet av opphavsretten?"
+msgstr "Do you process data that is protected by copyright?"
+
+#: ../../source/module6/sett-2.rst:34
+msgid "Hvis KI gjør feil, vil det få uheldige eller alvorlige konsekvenser?"
+msgstr ""
+"If the AI makes a mistake, would it have unfortunate or serious "
+"consequences?"
+
+#: ../../source/module6/sett-2.rst:37
+msgid "Steg 5"
+msgstr "Step 5"
+
+#: ../../source/module6/sett-2.rst:39
+msgid ""
+"Velg 2-3 oppgaver der KI kan ha potensiale for å effektivisere eller "
+"forbedre og utforsk følgende:"
+msgstr ""
+"Choose 2-3 tasks where AI has the potential to make things more efficient or"
+" improve them, and explore the following:"
+
+#: ../../source/module6/sett-2.rst:41
+msgid "Hvordan kan KI brukes? Test gjerne sammen med en kollega."
+msgstr "How can AI be used? Feel free to test it together with a colleague."
+
+#: ../../source/module6/sett-2.rst:42
+msgid "Hva må du gjøre selv?"
+msgstr "What must you do yourself?"
+
+#: ../../source/module6/sett-2.rst:43
+msgid ""
+"Vurder hva slags risiko som kan oppstå ved å ta i bruk KI i denne oppgaven."
+msgstr "Assess what kind of risks can arise from using AI for this task."
+
+#: ../../source/module6/sett-2.rst:44
+msgid ""
+"Dersom oppgaven innebærer risiko: Tenk gjennom og skriv ned nødvendige "
+"tiltak for å redusere og kontrollere risikoen."
+msgstr ""
+"If the task involves risk: Think through and write down the necessary "
+"measures to reduce and control the risk."
+
+#: ../../source/module6/sett-2.rst:47
+msgid "Steg 6"
+msgstr "Step 6"
+
+#: ../../source/module6/sett-2.rst:49
+msgid ""
+"Etter at du har utforsket dine arbeidsoppgaver over, oppfordrer vi deg til å"
+" teste ut å bruke KI i oppgavene der du ser størst potensiale."
+msgstr ""
+"After exploring your work tasks above, we encourage you to try using AI for "
+"the tasks where you see the greatest potential."
+
+#: ../../source/module6/sett-2.rst:52
+msgid "Steg 7"
+msgstr "Step 7"
+
+#: ../../source/module6/sett-2.rst:54
+msgid ""
+"Identifiser 2-3 oppgaver der KI ikke bør brukes, og reflekter rundt hvorfor."
+msgstr "Identify 2-3 tasks where AI should not be used, and reflect on why."

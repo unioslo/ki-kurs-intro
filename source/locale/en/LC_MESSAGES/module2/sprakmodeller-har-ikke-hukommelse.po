@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IT-avdelingen Universitetet i Oslo
+# This file is distributed under the same license as the Grunnkurs KI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Grunnkurs KI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:2
+msgid "Språkmodellers hukommelse"
+msgstr "Language models' memory"
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:4
+msgid ""
+"Når du bruker en språkmodell, har du kontakt med den gjennom et chat-system."
+" Språkmodellen selv husker ikke tidligere meldinger i samtalen eller "
+"tidligere samtaler du har hatt med den. Det er det chat-systemet som gjør. "
+"Chat-systemet viser deg samtalen dere har, og sender den videre til "
+"språkmodellen. Det du bør merke deg her, er at hver gang du skriver en ny "
+"instruksjon eller et nytt spørsmål i chatten, så sender chat-systemet *hele*"
+" samtalen på nytt til språkmodellen. Det er fordi språkmodellen selv ikke "
+"kan huske det du har spurt om."
+msgstr ""
+"When you use a language model, you interact with it through a chat system. "
+"The language model itself does not remember earlier messages in the "
+"conversation or earlier conversations you have had with it. That is what the"
+" chat system does. The chat system shows you the conversation you are having"
+" and passes it on to the language model. What you should note here is that "
+"every time you write a new prompt or a new question in the chat, the chat "
+"system sends the *entire* conversation to the language model again. This is "
+"because the language model itself cannot remember what you have asked about."
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:11
+msgid ""
+"Det er altså chat-systemet som \"husker\" det du har skrevet og bygger opp "
+"konteksten, mens språkmodellen bare ser på den teksten den får der og da, og"
+" beregner sannsynlige neste ord. Dette er viktig å være klar over fordi "
+"lengden på konteksten har betydning for hvor mye av samtalen modellen "
+"faktisk \"ser\"."
+msgstr ""
+"So it is the chat system that \"remembers\" what you have written and builds"
+" up the context, while the language model only looks at the text it is given"
+" at that moment and calculates probable next words. This is important to be "
+"aware of because the length of the context affects how much of the "
+"conversation the model actually \"sees\"."
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:14
+msgid "Bonusinnhold"
+msgstr "Bonus content"
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:16
+msgid "Er det hele samtalen som sendes til språkmodellen?"
+msgstr "Is it the whole conversation that is sent to the language model?"
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:18
+msgid ""
+"Når vi sier at chat-systemet sender *hele samtalen* til språkmodellen er det"
+" en forenkling: I praksis har chat-systemene forskjellige måter å redusere "
+"informasjonen den sender til språkmodellen."
+msgstr ""
+"When we say that the chat system sends the *entire conversation* to the "
+"language model, this is a simplification: In practice, chat systems have "
+"different ways of reducing the information they send to the language model."
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:21
+msgid ""
+"Allikevel: det er aldri bare siste melding av en samtaletråd som sendes til "
+"språkmodellen. Avhengig av språkmodellens kapasitet, og chat-systemets "
+"automatiske filtreringer blir hele eller deler av de foregående meldingene i"
+" samtaletråden sendt sammen med din siste melding."
+msgstr ""
+"Even so: it is never only the last message of a conversation thread that is "
+"sent to the language model. Depending on the language model's capacity and "
+"the chat system's automatic filtering, all or part of the preceding messages"
+" in the conversation thread are sent together with your last message."
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:26
+msgid "Ha korte samtaler"
+msgstr "Keep conversations short"
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:28
+msgid ""
+"Lange samtaler kan \"forvirre\" modellen, slik at den gir dårligere svar. En"
+" grunn til det kan være at hele konteksten ikke får plass. Ved lange "
+"samtaler er det også større sannsynlighet for at teksten inneholder "
+"motstridelser eller annet som gjør budskapet utydelig. Philippe Laban mfl. "
+"fant at språkmodeller svarer best når de får all informasjon i en enkelt "
+"instruksjon.  [:ref:`Laban <Laban>`] En viktig årsak til det var at gale "
+"svar fra modellen ble liggende i samtalen."
+msgstr ""
+"Long conversations can \"confuse\" the model, so that it gives poorer "
+"answers. One reason for this can be that the entire context does not fit. In"
+" long conversations there is also a greater chance that the text contains "
+"contradictions or other things that make the message unclear. Philippe Laban"
+" et al. found that language models answer best when they are given all the "
+"information in a single prompt. [:ref:`Laban <Laban>`] An important reason "
+"for this was that wrong answers from the model remained in the conversation."
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:34
+msgid ""
+"Det er spesielt viktig å starte en ny samtale om du skifter tema. Se for deg"
+" at du har stilt KI spørsmål om økonomireglementet til UiO. Hvis du så "
+"stiller spørsmål om hvordan man formaterer figurer i Word, vil modellen "
+"svare på spørsmålet i lys av økonomireglementet til UiO. Det gir ikke "
+"mening, og du vil få bedre svar hvis du starter en ny samtale."
+msgstr ""
+"It is especially important to start a new conversation when you change "
+"topic. Imagine that you have asked an AI questions about UiO's financial "
+"regulations. If you then ask a question about how to format figures in Word,"
+" the model will answer the question in light of UiO's financial regulations."
+" That does not make sense, and you will get better answers if you start a "
+"new conversation."
+
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:39
+msgid ""
+"I tillegg er språkmodellene dårlig til å skille mellom tekst brukeren har "
+"skrevet, og tekst de selv har generert. Derfor bør du sørge for at gale svar"
+" ikke blir liggende i samtalen."
+msgstr ""
+"In addition, language models are bad at distinguishing between text the user"
+" has written and text they have generated themselves. Therefore you should "
+"make sure that wrong answers do not remain in the conversation."
