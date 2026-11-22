@@ -51,14 +51,14 @@ msgid ""
 "arbeidshverdagen din?"
 msgstr ""
 "What can you do to reduce the environmental impact of AI services in your "
-"working day?"
+"day-to-day work?"
 
 #: ../../source/module4/oppsummering-ansvarligbruk.rst:13
 msgid ""
 "Hvilke typer data håndterer du i arbeidshverdagen din? Forsøk å klassifisere"
 " dem etter dataklassene."
 msgstr ""
-"What types of data do you handle in your working day? Try to classify them "
+"What types of data do you handle in your work? Try to classify them "
 "according to the data classes."
 
 #: ../../source/module4/oppsummering-ansvarligbruk.rst:14

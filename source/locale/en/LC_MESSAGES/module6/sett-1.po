@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 18:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: en <LL@li.org>\n"
 "Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/module6/sett-1.rst:3
@@ -44,13 +44,13 @@ msgstr "Exercise 2 - Idea generation"
 
 #: ../../source/module6/sett-1.rst:12
 msgid ""
-"Spør et KI-verktøy om å generere 10 ideer til hvordan KI kan brukes i din "
-"arbeidshverdag. Spesifiser tydelig hva slags oppgaver du gjør og hvilke "
+"Spør et KI-verktøy om å generere 10 ideer til hvordan KI kan brukes i din"
+" arbeidshverdag. Spesifiser tydelig hva slags oppgaver du gjør og hvilke "
 "verktøy du har tilgjengelig."
 msgstr ""
-"Ask an AI tool to generate 10 ideas for how AI can be used in your everyday "
-"work. Clearly specify what kinds of tasks you do and which tools you have "
-"available."
+"Ask an AI tool to generate 10 ideas for how AI can be used in your "
+"everyday work. Clearly specify what kinds of tasks you do and which tools"
+" you have available."
 
 #: ../../source/module6/sett-1.rst:15
 msgid "Oppgave 3 - Gemini Notebook"
@@ -58,13 +58,13 @@ msgstr "Exercise 3 - Gemini Notebook"
 
 #: ../../source/module6/sett-1.rst:17
 msgid ""
-"Last opp et dokument i Gemini Notebook. Velg et dokument som er relevant for"
-" jobben din, eller et dokument du er interessert i. Lag et tankekart og en "
-"studieveiledning, og still spørsmål om dokumentets innhold."
+"Last opp et dokument i Gemini Notebook. Velg et dokument som er relevant "
+"for jobben din, eller et dokument du er interessert i. Lag et tankekart "
+"og en studieveiledning, og still spørsmål om dokumentets innhold."
 msgstr ""
-"Upload a document to Gemini Notebook. Choose a document that is relevant to "
-"your job, or a document you are interested in. Create a mind map and a study"
-" guide, and ask questions about the content of the document."
+"Upload a document to Gemini Notebook. Choose a document that is relevant "
+"to your job, or a document you are interested in. Create a mind map and a"
+" study guide, and ask questions about the content of the document."
 
 #: ../../source/module6/sett-1.rst:20
 msgid "Oppgave 4 - Opprettelse av maler"
@@ -73,12 +73,12 @@ msgstr "Exercise 4 - Creating templates"
 #: ../../source/module6/sett-1.rst:22
 msgid ""
 "Tenk på et arbeidsområde hvor du lager lignende dokumenter eller tekster "
-"ofte. Bruk et av de tilgjengelige KI-verktøyene til å lage et forslag til en"
-" mal du kan bruke i arbeidet ditt."
+"ofte. Bruk et av de tilgjengelige KI-verktøyene til å lage et forslag til"
+" en mal du kan bruke i arbeidet ditt."
 msgstr ""
-"Think of an area of your work where you often create similar documents or "
-"texts. Use one of the available AI tools to create a draft template you can "
-"use in your work."
+"Think of an area of your work where you often create similar documents or"
+" texts. Use one of the available AI tools to create a draft template you "
+"can use in your work."
 
 #: ../../source/module6/sett-1.rst:25
 msgid "Oppgave 5 - KI-assistent"
@@ -98,22 +98,22 @@ msgstr ""
 
 #: ../../source/module6/sett-1.rst:30
 msgid ""
-"Lag en \"standard-instruksjon\" som du kan bruke igjen, som beskriver: - Din"
-" rolle og arbeidsfelt - Typisk målgruppe - Ønsket stil og format"
+"Lag en \"standard-instruksjon\" som du kan bruke igjen, som beskriver: - "
+"Din rolle og arbeidsfelt - Typisk målgruppe - Ønsket stil og format"
 msgstr ""
-"Create a \"standard prompt\" that you can reuse, describing: - Your role and"
-" field of work - A typical target audience - The desired style and format"
+"Create a \"standard prompt\" that you can reuse, describing: - Your role "
+"and field of work - A typical target audience - The desired style and "
+"format"
 
 #: ../../source/module6/sett-1.rst:34
 msgid "Test instruksjonen på et eksempel fra jobben."
 msgstr "Test the prompt on an example from your job."
 
 #: ../../source/module6/sett-1.rst:35
-msgid ""
-"Juster instruksjonen til du har en versjon du kan bruke som mal fremover."
+msgid "Juster instruksjonen til du har en versjon du kan bruke som mal fremover."
 msgstr ""
-"Refine the prompt until you have a version you can use as a template going "
-"forward."
+"Refine the prompt until you have a version you can use as a template "
+"going forward."
 
 #: ../../source/module6/sett-1.rst:37
 msgid "Oppgave 6 - Bildegenering"
@@ -121,12 +121,12 @@ msgstr "Exercise 6 - Image generation"
 
 #: ../../source/module6/sett-1.rst:39
 msgid ""
-"Du skal kalle inn til et møte med valgfritt tema. Be Copilot om å generere "
-"et relevant bilde du kan bruke i møteinnkallelsen."
+"Du skal kalle inn til et møte med valgfritt tema. Be Copilot om å "
+"generere et relevant bilde du kan bruke i møteinnkallelsen."
 msgstr ""
 "You are going to send out an invitation to a meeting on a topic of your "
-"choice. Ask Copilot to generate a relevant image you can use in the meeting "
-"invitation."
+"choice. Ask Copilot to generate a relevant image you can use in the "
+"meeting invitation."
 
 #: ../../source/module6/sett-1.rst:42
 msgid "Oppgave 7 - Powerpoint"
@@ -158,40 +158,41 @@ msgstr "To achieve this, we have written a short macro:"
 
 #: ../../source/module6/sett-1.rst:72
 msgid ""
-"Dessverre inneholder denne kodesnutten en feil, og summene vi får stemmer "
-"ikke med forventningene."
+"Dessverre inneholder denne kodesnutten en feil, og summene vi får stemmer"
+" ikke med forventningene."
 msgstr ""
-"Unfortunately, this code snippet contains an error, and the sums we get do "
-"not match our expectations."
+"Unfortunately, this code snippet contains an error, and the sums we get "
+"do not match our expectations."
 
 #: ../../source/module6/sett-1.rst:74
 msgid ""
-"Oppgave 1: Få GPT til å forklare hva som er feil med kodesnutten, og hvorfor"
-" den ikke gir summen av kolonne A og B."
+"Oppgave 1: Få GPT til å forklare hva som er feil med kodesnutten, og "
+"hvorfor den ikke gir summen av kolonne A og B."
 msgstr ""
-"Task 1: Get GPT to explain what is wrong with the code snippet, and why it "
-"does not give the sum of columns A and B."
+"Task 1: Get GPT to explain what is wrong with the code snippet, and why "
+"it does not give the sum of columns A and B."
 
 #: ../../source/module6/sett-1.rst:75
 msgid ""
-"Oppgave 2: Få GPT til å skrive en riktig versjon av koden som faktisk gir "
-"summen av kolonne A og B."
+"Oppgave 2: Få GPT til å skrive en riktig versjon av koden som faktisk gir"
+" summen av kolonne A og B."
 msgstr ""
-"Task 2: Get GPT to write a correct version of the code that actually gives "
-"the sum of columns A and B."
+"Task 2: Get GPT to write a correct version of the code that actually "
+"gives the sum of columns A and B."
 
 #: ../../source/module6/sett-1.rst:77
+#, fuzzy
 msgid ""
-"Oppgaven kan løses utelukkende med kodesnutten over og GPT UiO, men for de "
-"som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den "
-"beskrevne funksjonaliteten om man vil teste det selv her: `Enkel-koding-med-"
-"KI.xlsx <https://uio.instructure.com/courses/63248/files/3954949/download>`_"
+"Oppgaven kan løses utelukkende med kodesnutten over og GPT UiO, men for "
+"de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den "
+"beskrevne funksjonaliteten om man vil teste det selv her: :download"
+":`Enkel-koding-med-KI.xlsx <../downloads/Enkel-koding-med-KI.xlsx>`"
 msgstr ""
-"The exercise can be solved using only the code snippet above and GPT UiO, "
-"but for those who happen to be extra curious, there is an Excel file with "
-"the described functionality available here if you want to test it yourself: "
-"`Enkel-koding-med-KI.xlsx "
-"<https://uio.instructure.com/courses/63248/files/3954949/download>`_"
+"The exercise can be solved using only the code snippet above and GPT UiO,"
+" but for those who happen to be extra curious, there is an Excel file "
+"with the described functionality available here if you want to test it "
+"yourself: `Enkel-koding-med-KI.xlsx :download:`Enkel-koding-med-KI.xlsx "
+"<../downloads/Enkel-koding-med-KI.xlsx>`"
 
 #: ../../source/module6/sett-1.rst:80
 msgid "Kilder / Ressurser"
@@ -199,8 +200,9 @@ msgstr "Sources / Resources"
 
 #: ../../source/module6/sett-1.rst:82
 msgid ""
-"Takk til `ØVA <https://www.uio.no/om/organisasjon/fellesadm/ova/>`_ som har "
-"delt sine KI_oppgaver med oss!"
+"Takk til `ØVA <https://www.uio.no/om/organisasjon/fellesadm/ova/>`_ som "
+"har delt sine KI_oppgaver med oss!"
 msgstr ""
 "Thanks to `ØVA <https://www.uio.no/om/organisasjon/fellesadm/ova/>`_ for "
 "sharing their AI exercises with us!"
+

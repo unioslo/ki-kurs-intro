@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../source/module3/strategier-for-a-kvalitetssikre-ki-generert-innhold.rst:18
 msgid "2. Gi gode instruksjoner"
-msgstr "2. Give good prompts"
+msgstr "2. Write good prompts"
 
 #: ../../source/module3/strategier-for-a-kvalitetssikre-ki-generert-innhold.rst:20
 msgid "Gi kontekst, be om format, definer rolle, gi eksempler."

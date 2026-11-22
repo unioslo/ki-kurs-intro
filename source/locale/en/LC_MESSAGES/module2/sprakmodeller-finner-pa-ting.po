@@ -69,8 +69,8 @@ msgstr ""
 "It is a major problem that language models often make things up with great "
 "*confidence*. They do not say: \"I am not sure, but …\". Instead they "
 "present misinformation with the same \"conviction\" as correct information. "
-"Therefore you *cannot* trust that an answer is correct just because it comes"
-" across as \"self-assured\". You must always check facts against a reliable "
+"Therefore you *cannot* trust that an answer is correct simply because it sounds "
+" \"confident\". You must always check facts against a reliable "
 "source."
 
 #: ../../source/module2/sprakmodeller-finner-pa-ting.rst:21

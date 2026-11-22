@@ -57,4 +57,4 @@ msgstr "I am familiar with privacy and copyright in connection with AI"
 
 #: ../../source/module4/ansvarlig-og-baerekraftig-bruk-av-ki.rst:20
 msgid "Jeg kan ta ansvarlige valg om bruk av KI i egen arbeidshverdag"
-msgstr "I can make responsible choices about using AI in my own working day"
+msgstr "I can make responsible choices about using AI in my day-to-day work"

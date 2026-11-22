@@ -26,7 +26,7 @@ msgstr "Prompts: Get good at AI!"
 
 #: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:4
 msgid "For å mestre KI må du bli god på instruksjoner."
-msgstr "To master AI, you need to get good at prompts."
+msgstr "To master AI, you need to get good at writing prompts."
 
 #: ../../source/module3/hvordan-bruke-ki-pa-en-god-mate.rst:6
 msgid ""
