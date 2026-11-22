@@ -51,3 +51,14 @@ docs/build/claude-exports
 *.doctree
 doctrees/
 build/gettext/
+
+# Inside _build/ — ignore source/intermediate files
+*.scss
+*.doctree
+doctrees/
+*.mo
+
+
+# Sphinx simplepdf intermediate files
+_build/simplepdf*/_static/
+_build/simplepdf*/_images/
