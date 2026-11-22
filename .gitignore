@@ -45,3 +45,9 @@ Thumbs.db
 # Documentation
 docs/_build/
 docs/build/claude-exports
+
+# Sphinx/Gettext build artifacts
+*.mo
+*.doctree
+doctrees/
+build/gettext/
