@@ -19,10 +19,9 @@ Før du skal samle inn eller håndtere personopplysninger må du stoppe opp og t
 
 Selv om du har tilgang til andres personopplysninger, betyr det ikke at du har lov til å se på dem når du vil.
 
-Kanskje er det helt mulig å gjennomføre oppgaven du står overfor med færre eller ingen personopplysninger.
-Dersom du behandler sensitive opplysninger, skjerpes kravene.
+Kanskje er det helt mulig å gjennomføre oppgaven du står overfor med færre eller ingen personopplysninger. Dersom du behandler sensitive opplysninger, skjerpes kravene.
 
-Du kan heller ikke bruke personopplysninger til *andre formål* enn det de er samlet inn for.
+Merk at du kan heller ikke bruke personopplysninger til *andre formål* enn det de er samlet inn for.
 
 Et eksempel på når du må være ekstra varsom, er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI i et annet system (for eksempel din laptop). Har du lov å lagre personopplysningene der du skal behandle de i KI? Er du sikker på at formålet med å behandle dataene er i tråd med det du har lov til?
 
