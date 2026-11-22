@@ -76,7 +76,7 @@ msgstr ""
 "Large language models are far more advanced than the dictionary on your "
 "phone, but they work in fundamentally the same way. A language model is a "
 "mathematical model that builds up its answer one word at a time, conditioned"
-" on the *context*. Each word is drawn with a little randomness. The model "
+" on the *context*. Each word is sampled with a degree of randomness. The model "
 "stops when it \"believes\" the answer is complete."
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:34
