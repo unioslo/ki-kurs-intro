@@ -21,7 +21,7 @@ Det viktigste du gjør for å ivareta datasikkerheten er derfor å velge en godk
 UiO sin dataklassifisering
 -----------------------------
 
-UiO sine KI-tjenester godkjent for ulike typer data. Dette er tydelig markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av hvor stort beskyttelsesbehov dataene dine har. 
+UiO sine KI-tjenester er godkjent for ulike typer data. Dette er tydelig markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av hvor stort beskyttelsesbehov dataene dine har. 
 
 Nedenfor finner du en oversikt over dataklassene med eksempler på hva de type informasjon som hører til i de ulike klassene. Du finner utfyllende informasjon på siden `Klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_ . 
 
