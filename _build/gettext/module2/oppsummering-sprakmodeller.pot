@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 18:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "Repetisjon"
 msgstr ""
 
 #: ../../source/module2/oppsummering-sprakmodeller.rst:17
-msgid "**Store språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av konteksten du gir den. Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor *sikker* faktakunnskap."
+msgid "**Store språkmodeller** er matematiske modeller som bygger opp svaret ett ord av gangen, betinget av konteksten du gir den. Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor *sikker* faktakunnskap."
 msgstr ""
 
 #: ../../source/module2/oppsummering-sprakmodeller.rst:21

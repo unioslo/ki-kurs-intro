@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+
+<html data-content_root="./" lang="nb">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Grunnkurs KI documentation</title>
+<link href="_static/pygments.css?v=d75fae25" rel="stylesheet" type="text/css"/>
+<link href="_static/main.css?v=2db0865d" rel="stylesheet" type="text/css"/>
+<link href="_static/variables.css?v=e199592e" rel="stylesheet" type="text/css"/>
+<link href="_static/fonts.css?v=6adc4b43" rel="stylesheet" type="text/css"/>
+<link href="_static/common.css?v=b287aaa8" rel="stylesheet" type="text/css"/>
+<link href="_static/canvas.css?v=b7ab7f4c" rel="stylesheet" type="text/css"/>
+<link href="_static/wiki_page.css?v=ff805dfb" rel="stylesheet" type="text/css"/>
+<link href="_static/uio-global-override.css?v=e99b8315" rel="stylesheet" type="text/css"/>
+<link href="_static/custom.css?v=7eb9d88d" rel="stylesheet" type="text/css"/>
+<link href="_static/simplepdf.css?v=95bc32ab" rel="stylesheet" type="text/css"/>
+<script src="_static/jquery.js?v=5d32c60e"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="_static/documentation_options.js?v=8cac3017"></script>
+<script src="_static/doctools.js?v=9bcbadda"></script>
+<script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/tabs.js?v=5e8c741a"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Søk"/>
+</head><body><article class="dont-break" id="cover">
+<div class="container">
+<!-- Logo -->
+<div class="logo">
+<p></p>
+</div>
+<!-- Cover middle -->
+<div class="cover-middle">
+<div class="title">
+<h1 class="title-cover">Grunnkurs KI</h1>
+<p class="subtitle-cover">Version </p>
+<span class="meta">
+</span>
+</div>
+<!--
+      <div class="client-logo">
+        <img src="../data/logo_.png" alt="Logotipo">
+      </div>
+      -->
+</div>
+<!-- Footer -->
+<div class="cover-footer">
+<p>
+</p>
+</div>
+</div>
+</article>
+<div aria-label="Main" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<div>
+<h3><a href="#">Innholdsfortegnelse</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-forside">Velkommen til kurset:  Introduksjon til kunstig intelligens</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-forside#hvorfor-er-dette-kurset-viktig-for-deg">Hvorfor er dette kurset viktig for deg?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-forside#gjennomforing">Gjennomføring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#document-forside#kursets-kapitler">Kursets kapitler:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 1: Grunnbegreper i kunstig intelligens</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/introduksjon-til-ki-spraket">Introduksjon til «KI-språket»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/kunstig-intelligens">Kunstig intelligens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/generativ-ki">Generativ KI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/ki-assistent">KI-assistent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/ki-agenter">KI-agenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/oppsummering-ki">Oppsummering kapittel 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 2: Hvordan fungerer språkmodeller?</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/store-sprakmodeller">Store språkmodeller</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/hvordan-fungerer-store-sprakmodeller">Hvordan fungerer store språkmodeller?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/sprakmodeller-har-ikke-faktakunnskap">Språkmodeller har ikke faktakunnskap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/sprakmodeller-finner-pa-ting">Språkmodeller finner på ting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/sprakmodeller-har-ikke-hukommelse">Språkmodellers hukommelse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/skjevheter">Modellenes skjevheter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/oppsummering-sprakmodeller">Oppsummering kapittel 2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 3: Hvordan trygt bruke KI?</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/hvordan-bruke-ki-pa-en-god-mate">Instruksjoner: Bli god på KI!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/prinsipper-for-gode-instruksjoner">Lag gode instruksjoner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/praktisk-ovelse-forbedre-instruksjoner">Praktisk øvelse: Forbedre instruksjoner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/nyttige-instruksjons-teknikker">Nyttige instruksjons-teknikker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/praktisk-ovelse-forbedre-egne-instruksjoner">Praktisk øvelse: Forbedre egne instruksjoner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/tips-om-pre-instruksjon-og-ki-assistenter">Tips om pre-instruksjon og KI-assistenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/nar-kan-du-stole-pa-generativ-ki">Når kan du stole på generativ KI?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/strategier-for-a-kvalitetssikre-ki-generert-innhold">Strategier for å kvalitetssikre KI-generert innhold</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/oppsummering-god-bruk-ki">Oppsummering kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/avslutning-del1">Avslutning del 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 4: Etikk, bærekraft, opphavsrett og personvern</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/ansvarlig-og-baerekraftig-bruk-av-ki">Ansvarlig og bærekraftig bruk av KI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/baerekraft">Bærekraft</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/miljo">Klima- og miljøkostnader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/sosiale-kostnader">Sosiale kostnader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/ki-og-kognisjon">Ikke gjør deg avhengig av KI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/datasikkerhet">Datasikkerhet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/personvern">Personvern</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/opphavsrett">Opphavsrett</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/prompt-injection">Prompt-injection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/retningslinjer-og-policies">Retningslinjer og policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/oppsummering-ansvarligbruk">Oppsummering kapittel 4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 5: KI-tjenester ved UiO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/ki-tjenester-ved-uio">KI-tjenester ved UiO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/uio-ki-tjenester-video">En oversikt over UiO sine viktigste KI tjenester</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/uios-godkjente-ki-tjenester">UiOs godkjente KI-tjenester</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gpt-uio">GPT UiO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gpt-uio-hvilken-modell-skal-du-velge">GPT UiO: hvilken modell skal du velge?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gpt-uio-ki-assistenter">GPT UiO: KI-assistenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/oppsummert-om-gpt-uio">Oppsummert om GPT UiO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/autotekst-og-nettskjema-diktafon">Autotekst og Nettskjema-diktafon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gemini-og-notebooklm">Gemini og Gemini Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/microsoft-copilot-chat">Microsoft Copilot Chat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/oppsummering-uio-tjenester">Oppsummering kapittel 5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 6: Avslutning</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/avslutning">Avslutning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/kilder">Kilder og lenker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/kilder#lenker">Lenker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/treningsoppgaver">Prøv selv!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/sett-1">Sett 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/sett-2">Sett 2</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="grunnkurs-i-generativ-ki">
+<h1>Grunnkurs i generativ KI</h1>
+<p>Velkommen til grunnkurs i generativ KI!</p>
+<div class="toctree-wrapper compound">
+<span id="document-forside"></span><section id="velkommen-til-kurset-introduksjon-til-kunstig-intelligens">
+<h2>Velkommen til kurset:  Introduksjon til kunstig intelligens</h2>
+<p>Kunstig intelligens er en avansert teknologi som er lett å bruke, men vanskelig å bruke riktig.
+Dette er en introduksjon til hva kunstig intelligens er, og hvordan du kan bruke den på en god og ansvarlig måte.
+Kurset skal bidra til at alle ansatte får grunnleggende opplæring i kunstig intelligens, og dermed trygt kan utforske hvordan KI kan brukes i egne arbeidsoppgaver.</p>
+<p>Kurset er utviklet for administrativt ansatte, men temaene er grunnleggende og relevante for alle ansatte som ønsker å lære om hvordan bruke kunstig intelligens.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width));" class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/0.5-greeting.png"><img alt="Illustrasjon til forsiden av grunnkurs i generativ KI. Mennesket (Pelle) og roboten (Plimbo) hilser på hverandre." src="_images/0.5-greeting.png" style="width: 60%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<section id="hvorfor-er-dette-kurset-viktig-for-deg">
+<h3>Hvorfor er dette kurset viktig for deg?</h3>
+<p>Se for deg at du kan få en digital sparringspartner som alltid har tid og som raskt kan analysere, oppsummere, oversette, forenkle eller hente fram relevant informasjon for deg.
+Kunstig intelligens kan være denne digitale sparringspartneren.</p>
+<p>Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt IT-sikkerhet.
+Derfor skal du alltid bruke din egen kompetanse til å vurdere hvilke oppgaver som er trygge å bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger.
+Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet.</p>
+<p>Vi håper dette kurset gir deg kompetanse til å bruke kunstig intelligens på en god og ansvarlig måte i jobben din.</p>
+</section>
+<section id="gjennomforing">
+<h3>Gjennomføring</h3>
+<p>Kurset inneholder både teori, refleksjonsoppgaver, bonusinnhold og øvingsoppgaver.</p>
+<ul class="simple">
+<li>Teori: Kursets teori er ment å gi et godt grunnlag for å forstå de viktigste elementene ved KI-teknologien, dens styrker, svakheter og hvordan bruke KI på en god måte.</li>
+<li>Refleksjonsoppgaver og øvinger: Alle kapitlene inneholder oppfordringer til å øve og reflektere. Sett av tid til disse!</li>
+<li>Bonusinnhold: Gjennom kurset finner du muligheter til å gå litt i dybden på temaer.</li>
+<li>Praktiske øvingsoppgaver: På slutten av kurset finner du øvingsoppgaver for å trene på KI og utforske mer om hvordan du kan bruke det i egen arbeidshverdag. Disse kan lastes ned som en pdf.</li>
+</ul>
+<p>Kurset kan tas samlet i én omgang eller deles opp i to deler.
+Hvis du vil ta kurset i to deler, anbefaler vi at du tar kapitlene 1-3 som del 1 og kapitlene 4-6 som del 2.</p>
+<p>Hele kurset tar ca 60 minutter å gjennomføre, utenom øvingsoppgavene i siste del.</p>
+<section id="kursets-kapitler">
+<h4>Kursets kapitler:</h4>
+<ul class="simple">
+<li><a class="reference internal" href="#document-module1/introduksjon-til-ki-spraket"><span class="doc">Kapittel 1: Introduksjon til «KI-språket»</span></a> (8 min)</li>
+<li><a class="reference internal" href="#document-module2/store-sprakmodeller"><span class="doc">Kapittel 2: Store språkmodeller</span></a> (10 min)</li>
+<li><a class="reference internal" href="#document-module3/hvordan-bruke-ki-pa-en-god-mate"><span class="doc">Kapittel 3: Instruksjoner: Bli god på KI</span></a> (13 min)</li>
+<li><a class="reference internal" href="#document-module4/ansvarlig-og-baerekraftig-bruk-av-ki"><span class="doc">Kapittel 4: Ansvarlig og bærekraftig bruk av KI</span></a> (8 min)</li>
+<li><a class="reference internal" href="#document-module5/ki-tjenester-ved-uio"><span class="doc">Kapittel 5: Godkjente KI-tjenester på UiO</span></a> (14 min)</li>
+<li><a class="reference internal" href="#document-module6/avslutning"><span class="doc">Kapittel 6: Avslutning og oppgavesett</span></a> (6 min)</li>
+</ul>
+<p>Estimert tidsbruk er basert på antall ord, og tar ikke hensyn til lengre tidsbruk på refleksjons- og øvingsoppgaver.</p>
+<p style="font-size: 2.0rem;">Godt kurs!</p><div style="text-align: left; padding-top: 4px;">
+<a class="btn btn-large btn-primary" data-api-endpoint="https://uio.instructure.com/api/v1/courses/63248/pages/introduksjon-til-ki-spraket-3" data-api-returntype="Page" href="https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3" style="display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+       padding: 10px 28px;
+       background: #92ca61;
+       font-size: 1.5rem;
+       cursor: pointer;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       border-radius: 6px;
+       color: #000000 !important;
+       text-decoration: none !important;
+       border: medium none currentcolor;">Start kurset → </a></div></section>
+</section>
+<div class="page-navigation"><div class="prev-link"></div><div class="next-link"></div></div>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module1/introduksjon-til-ki-spraket"></span><section id="introduksjon-til-ki-spraket">
+<h2>Introduksjon til «KI-språket»</h2>
+<p>I dette første kapitlet lærer du om begrepene <em>generativ KI</em>, <em>språkmodeller</em>, <em>KI-assistent</em> og <em>KI-agent</em>.
+Når du forstår disse begrepene, har du lagt det første grunnlaget for å lære mer om hvordan du kan bruke KI på en god, ansvarlig og trygg måte.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/1.1-studying-the-basics.png"><img alt="Illustrasjon av en person som leser en bok om KI ABC - som er plugget inn i strømuttak" src="_images/1.1-studying-the-basics.png" style="width: 65%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Læringsmål</h3>
+<ul class="simple">
+<li>Jeg forstår hovedbegrepene i «KI-språket»</li>
+</ul>
+</div>
+</section>
+<span id="document-module1/kunstig-intelligens"></span><section id="kunstig-intelligens">
+<h2>Kunstig intelligens</h2>
+<p>Kunstig intelligens (KI) er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens.
+Det kan for eksempel være å produsere og forstå tekst, kjenne igjen bilder, tolke tale eller analysere tall.</p>
+<p>For at kunstig intelligens skal kunne utføre denne type oppgaver trener den på eksempler fra tekst, bilder eller lyd.
+Ved å se på eksempler, lærer KI å kjenne igjen mønstre og sammenhenger, og kan etter hvert:</p>
+<ul class="simple">
+<li>foreslå neste ord i en tekst</li>
+<li>gjenkjenne hva som er på et bilde</li>
+<li>forstå innholdet i et lydopptak</li>
+</ul>
+<p>Dette kalles maskinlæring og betyr at teknologien lærer fra data.</p>
+<div class="uio-color-box-3">
+<h3>Bonusinnhold</h3>
+<details>
+<summary><strong>Litt historie om kunstig intelligens</strong></summary>
+<p>KI er egentlig ikke noe nytt. Forskere begynte å jobbe med det allerede på 1950-tallet, og i 1956 ble KI etablert
+som et eget forskningsfelt.
+Det som er nytt i dag, er hvor kraftig og tilgjengelig KI har blitt de siste årene.
+Da ChatGPT kom i 2022,
+var det et tydelig vendepunkt. I stedet for «dumme chatbotter» som bare kunne svare på helt enkle spørsmål, fikk vi plutselig
+et verktøy som kunne:</p>
+<ul class="simple">
+<li>skrive lange tekster</li>
+<li>svare på komplekse spørsmål</li>
+<li>formulere seg på en måte som ligner et menneske</li>
+</ul>
+<p>Denne utviklingen har vært mulig på grunn av tre viktige ting:</p>
+<ol class="arabic simple">
+<li>Store datamengder:  KI kan trenes på enorme mengder tekst, bilder og lyd fra internett, bøker, artikler osv.</li>
+<li>Kraftig maskinvare: Spesielle prosessorer som kan behandle veldig mye data samtidig.</li>
+<li>Nye metoder: Forskere har utviklet bedre modeller og teknikker som gjør at KI kan lære mer effektivt.</li>
+</ol>
+</details>
+<details>
+<summary><strong>Maskinlæring</strong></summary>
+<p>Mennesker lærer ved erfaring. Maskinlæring bygger på det samme prinsippet, bare for dataprogrammer.
+I stedet for å lære av erfaring, lærer programmet av data.
+Når vi har store mengder data tilgjengelig, for eksempel tekst, bilder eller tall, kan vi bruke
+maskinlæring til å finne mønstre og sammenhenger som det er vanskelig eller tidkrevende for mennesker å oppdage selv.</p>
+<p>Maskinlæring skiller seg fra tradisjonell programmering i hvordan den løser problemer:</p>
+<div class="uio-color-box-3">
+<h3>Tradisjonell programmering foregår slik:</h3>
+<ul class="simple">
+<li>Du lager klare regler: «Hvis X skjer, gjør Y».</li>
+<li>Programmet bruker reglene på data du gir det.</li>
+<li>Programmet gir deg resultatet.</li>
+</ul>
+<p>Et eksempel på tradisjonell programmering, er
+et program som regner ut studiepoeng basert på antall beståtte emner og vekting per emne.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Maskinlæring løser et problem slik:</h3>
+<p>I maskinlæring er <em>regelen</em> ukjent, og det vi ønsker å lære.</p>
+<ul class="simple">
+<li>Vi har mange eksempler på en gitt type data (for eksempel mange bilder av katter eller hunder).</li>
+<li>Avhengig av hvilken type maskinlæring som brukes, kan dataene også inkludere kjente svar eller merkelapper som «hund» eller «katt».</li>
+<li>I stedet for å skrive reglene selv, lar vi systemet lære reglene ut fra eksemplene.</li>
+</ul>
+</div>
+</details>
+</div>
+</section>
+<span id="document-module1/generativ-ki"></span><section id="generativ-ki">
+<h2>Generativ KI</h2>
+<p>Når vi snakker om KI i hverdagen, mener vi som regel generativ KI. UiO GPT, Microsoft Copilot og Gemini Notebook er eksempler på dette.
+Generativ kunstig intelligens kalles «generativ» fordi den lager (genererer) nytt innhold basert på det den har lært fra før.
+Du skriver inn en instruksjon (prompt) og KI genererer et forslag til svar eller innhold.</p>
+<p>Det finnes flere typer KI. I dette kurset skal du lære mest om store språkmodeller, som en en type generativ KI.
+Store språkmodeller er selve motoren i mange KI-tjenester du bruker, og dette skal du lære mer om litt senere i kurset.</p>
+<div class="uio-color-box-3">
+<h3>Typer KI</h3>
+<p>Visste du at i tillegg til generativ KI, finnes det to andre typer som er veldig vanlige? Nemlig diskriminativ og prediktiv KI.</p>
+<p>Her er noen eksempler på hver av disse.</p>
+<div class="canvas-tabs-pdf">
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Generativ KI</p>
+<div class="canvas-tab-pdf-body">
+<p>Generativ KI produserer eller <em>genererer</em> nytt innhold som tekst, bilder eller lyd.</p>
+<p><strong>Eksempel:</strong> En KI-chat som genererer et møtereferat basert på dine møtenotater.</p>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Diskriminativ KI</p>
+<div class="canvas-tab-pdf-body">
+<p>Diskrimitativ KI sorterer og gjenkjenner ting som allerede finnes.</p>
+<p><strong>Eksempel:</strong> KI system som kan finne ut om et fotografi er av en hund eller en katt</p>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Prediktiv KI</p>
+<div class="canvas-tab-pdf-body">
+<p>Prediktiv KI leter etter mønstre i data som kan si noe om sannsynligheten for hendelser.</p>
+<p><strong>Eksempel:</strong> værmeldingen</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<span id="document-module1/ki-assistent"></span><section id="ki-assistent">
+<h2>KI-assistent</h2>
+<p>Du har kanskje brukt en KI-assistent i UiO GPT eller Gemini Notebook.
+En KI-assistent er typisk en KI-chat, med en bestemt rolle og «personlighet».
+En KI-assistent kan for eksempel «oppføre» seg som en erfaren møtereferent, kodesjekker, eksamenshjelper eller studieveileder.</p>
+<p>Dette får du til ved å gi KI-assistenten forhåndsdefinerte instrukser om hvordan den skal oppføre seg, hva den skal fokusere på, og hvordan den skal presentere svaret.
+I tillegg kan du laste opp materiale som f.eks. pdf-dokumenter, ren tekst eller nettsider som inneholder (fag)stoffet assistenten din skal bruke som grunnlag for svarene sine.
+Assistenten får på den måten et eget oppslagsverk som den benytter til å generere et svar.
+Resultatet blir en mer nøyaktig «chat-bot» som har ekspertkunnskap på et spesifikt felt og gjør svarene mer målrettede.</p>
+<p>En veldig nyttig funksjonalitet er at man kan lagre sine assistenter og bruke de om og om igjen, i tillegg til å dele de med andre.</p>
+<section id="hva-er-forskjellen-mellom-en-ki-assistent-og-en-vanlig-ki-chat">
+<h3>Hva er forskjellen mellom en KI-assistent og en vanlig KI-chat?</h3>
+<p>Begge har en språkmodell i bunn, og forskjellen er ikke så stor teknisk sett.
+Når du samhandler med en KI-assistent vil det se ganske likt ut som med en hvilken som helst KI-chat.
+KI-assistenten har bare dette ekstra laget med forhåndsdefinerte instruksjoner for hvordan den skal oppføre seg.</p>
+<div class="uio-color-box-3">
+<h3>Eksempel på forskjell</h3>
+<div class="canvas-tabs-pdf">
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">KI chat</p>
+<div class="canvas-tab-pdf-body">
+<ul class="simple">
+<li><strong>Bruker-instruksjon</strong>: Hva sier Pytagoras læresetning?</li>
+<li><strong>KI-svar</strong>: Kvadratet på hypotenusen i en rettvinklet trekant er lik summen av kvadratene på de to katetene.</li>
+</ul>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">KI studieveileder assistent</p>
+<div class="canvas-tab-pdf-body">
+<ul class="simple">
+<li><strong>Bruker-instruksjon</strong>: Hva sier Pytagoras læresetning?</li>
+<li><strong>KI-assistent instruksjon</strong>: Aldri gi studenten direkte svar på et spørsmål, men still spørsmål eller gi hint som kan hjelpe studenten til å komme på rett svar selv.</li>
+<li><strong>KI-svar</strong>: Jeg gir deg ikke svaret, men kan gi deg et hint: Kan det ha noe med hypotenus å gjøre?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjonsoppgave</h3>
+<p>Hva slags oppgaver kan en KI-assistent hjelpe deg og teamet ditt med?</p>
+</div>
+</section>
+</section>
+<span id="document-module1/ki-agenter"></span><section id="ki-agenter">
+<h2>KI-agenter</h2>
+<p>KI-agent kan lett forveksles med KI-assistent, men en KI-agent er et mye kraftigere verktøy enn en KI-assistent.
+En KI-agent forteller deg ikke bare hvordan du kan løse en oppgave, den utfører også oppgaven for deg. For eksempel: I stedet for å skrive inn en oppgave i et chat-vindu, kopiere ut svaret, og lime det inn i ønsket dokument, kan agenten endre teksten direkte i dokumentet for deg.
+En KI-agent er dermed en avansert KI-assistent som kan <em>utføre handlinger</em> i IT-systemer, og på den måten være et veldig effektivt verktøy.</p>
+<div class="uio-color-box-3">
+<h3>Eksempler</h3>
+<p>KI-agenter er gjerne laget for et eller flere spesifikke formål og kan for eksempel:</p>
+<ul class="simple">
+<li>hente informasjon fra andre systemer, f.eks internett eller en database</li>
+<li>opprette og skrive innhold i en epost</li>
+<li>slå sammen to regneark for deg</li>
+</ul>
+</div>
+<section id="kraftig-verktoy-som-krever-kompetanse">
+<h3>Kraftig verktøy som krever kompetanse</h3>
+<p>Fordi KI-agenter kan utføre handlinger på egen hånd, krever de mer kompetanse og forsiktighet ved bruk enn en vanlig KI-chat.</p>
+<p>Ved UiO tilbys foreløpig ikke KI-agenter i samme omfang som KI-chat, nettopp fordi de er mer krevende å bruke, og feil bruk kan få alvorlige konsekvenser.</p>
+<p>På UiO er allikevel KI-agenter til en viss grad allerede i bruk. En type som brukes er såkalte kode-agenter.
+De brukes av IT-ansatte og andre som driver med koding. Men de kan brukes til mye mer enn dette.
+De kan for eksempel lese filer i en utpekt mappe og utføre handlinger direkte på disse.
+Framover vil slike funksjoner trolig bli vanligere, også i andre digitale verktøy vi bruker.</p>
+</section>
+</section>
+<span id="document-module1/oppsummering-ki"></span><section id="oppsummering-kapittel-1">
+<h2>Oppsummering kapittel 1</h2>
+<p>I dette kapittelet har du lært de mest sentrale begrepene i KI-språket.
+Før du går videre til kapittel 2 kan du teste hva du har lært om begrepene.</p>
+<div class="uio-icon-box reflect">
+<h3>Test deg selv</h3>
+<p>Diskuter spørsmålene med en kollega</p>
+<ol class="arabic simple">
+<li>Hva er egentlig kunstig intelligens?</li>
+<li>Hva er generativ KI og hvordan «lærer» den?</li>
+<li>Hva er forskjellen på en KI-assistent og KI-agent?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Repetisjon</h3>
+<ul class="simple">
+<li><strong>Kunstig intelligens</strong> er teknologi som kan utføre oppgaver som vi vanligvis forbinder med menneskelig intelligens. For eksempel forstå tekst, tolke tale eller analysere tall.</li>
+<li><strong>Generativ KI</strong> er en type KI som lager nytt innhold, basert på det den har lært fra før.</li>
+<li><strong>KI-assistent</strong> er en KI-chat som har fått en forhåndsdefinert rolle eller instruksjoner, slik at den kan gi mer målrettede og fagspesifikke svar enn en vanlig KI-chat.</li>
+<li><strong>KI-agent</strong> er en avansert KI-assistent som i tillegg til å gi svar, kan utføre handlinger i IT-systemer.</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Neste kapittel</h3>
+<p>I neste kapittel skal du lære om store språkmodeller og hva som kan gå galt når du tar de i bruk.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module2/store-sprakmodeller"></span><section id="store-sprakmodeller">
+<h2>Store språkmodeller</h2>
+<p>Som du nettopp har lært, er store språkmodeller selve motoren i mange KI-tjenester.
+Nå skal vi se nærmere på hvordan store språkmodeller lager tekst og hva vi bør være oppmerksomme på.
+Denne kunnskapen er nødvendig for å bruke KI på en trygg og ansvarlig måte.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/2.2-llm-machinery.png"><img alt="Illustrasjon av en språkmodell-maskin - trening inn, svar ut" src="_images/2.2-llm-machinery.png" style="width: 100%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Læringsmål</h3>
+<ul class="simple">
+<li>Jeg forstår hvordan store språkmodeller generer tekst</li>
+<li>Jeg forstår svakhetene i store språkmodeller og kan kjenne igjen når språkmodellene gir feil informasjon</li>
+</ul>
+</div>
+</section>
+<span id="document-module2/hvordan-fungerer-store-sprakmodeller"></span><section id="hvordan-fungerer-store-sprakmodeller">
+<h2>Hvordan fungerer store språkmodeller?</h2>
+<p>En type enkel språkmodell som du sikkert kjenner til, er ordboka på mobiltelefonen din.
+Den foreslår neste ord basert på teksten du har skrevet så langt.
+Modellen i telefonen er trent opp på tekster hentet fra internett, og forslagene er de mest sannsynlige ordene utfra mønstrene som modellen har lært fra tekstene.
+Forslaget er <em>betinget</em> av teksten du har skrevet, og denne teksten kalles <em>konteksten</em>.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width));" class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/IMG_2787.jpg"><img alt='Skjermbilde med et tastatur der det er skrevet "Jeg vil ha en kopp". Forslag til fortsettelse er "te", "kaffe" og en emoji.' src="_images/IMG_2787.jpg" style="width: 100%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Forslag til fortsettelser av teksten «Jeg vil ha en kopp».</span></p>
+</figcaption>
+</figure>
+</td>
+<td><figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width));" class="align-right" id="id2">
+<a class="reference internal image-reference" href="_images/IMG_2788.jpg"><img alt='Skjermbilde med et tastatur der det er skrevet "Jeg vil ha et glass". Forslag til fortsettelse er "vin", "med" og en emoji.' src="_images/IMG_2788.jpg" style="width: 100%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Forslag til fortsettelser av teksten «Jeg vil ha et glass».</span></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Store språkmodeller er mye mer avanserte enn ordboka på telefonen din, men de fungerer grunnleggende sett på samme måte.
+En språkmodell er en matematisk modell som bygger opp svaret ett ord av gangen, betinget av <em>konteksten</em>.
+Hvert ord trekkes med litt tilfeldighet.
+Modellen stopper når den «mener» svaret er fullstendig.</p>
+<section id="hva-er-konteksten">
+<h3>Hva er konteksten?</h3>
+<p>Når vi snakker om store språkmodeller, sier vi ofte at alt vi gir modellene å jobbe med, er <em>kontekst</em>.
+Konteksten kan være et spørsmål eller en instruksjon, men også dokumenter, bilder eller andre ting vi laster opp til modellen.</p>
+</section>
+</section>
+<span id="document-module2/sprakmodeller-har-ikke-faktakunnskap"></span><section id="sprakmodeller-har-ikke-faktakunnskap">
+<h2>Språkmodeller har ikke faktakunnskap</h2>
+<p>Store språkmodeller genererer tekst som er troverdig, og som ligner på tekstene de er trent opp på.
+De har likevel ikke noe forhold til sannhet [<a class="reference internal" href="#document-module6/kilder#hicks"><span class="std std-ref">Hicks</span></a>] og har derfor ikke sikker kunnskap om hva som er sant.
+Med andre ord betyr det at det ikke er sikkert at det språkmodellene leverer til deg er sant.
+Det må du alltid selv kontrollere!</p>
+<p>Noen ganger spiller det liten rolle hvilket neste ord språkmodellen velger.
+Andre ganger er valget helt avgjørende for om svaret blir riktig eller feil.</p>
+<p>Tenk deg at modellen skal fullføre setningen: «Fargen på huset er …»
+Mulige fortsettelser kan være «rød», «blå» eller «grå».
+I en slik setning er det ikke åpenbart hvilket ord som er «riktig» eller «best», fordi flere alternativer passer.
+Det er heller ikke veldig viktig hvilket som velges.</p>
+<p>Men hvis du spør modellen: «Hva er hovedstaden i Norge?»
+Da forventer du et korrekt svar.
+Her blir det viktig hvilket ord modellen foreslår.</p>
+<p>I begge tilfellene velger modellen det mest sannsynlige ordet basert på mønstre i tekst den har lært fra, og ikke <em>sikker</em> faktakunnskap.
+Forventer du et kunnskapssvar eller faktasvar, er det derfor fare for feil.
+Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.</p>
+<div class="uio-color-box-3">
+<h3>Manipulering (Språkmodell-forgiftning)</h3>
+<p>At språkmodeller ikke har sikker kunnskap om hva som er sant, gjør dem sårbare for bevisst manipulering av treningsdata.
+Denne typen manipulering kalles ofte «språkmodell-forgiftning».  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
+Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.</p>
+<p>Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [<a class="reference internal" href="#document-module6/kilder#germain"><span class="std std-ref">Germain</span></a>]
+Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet.</p>
+<p>Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
+Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
+Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
+Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [<a class="reference internal" href="#document-module6/kilder#stokel-walker"><span class="std std-ref">Stokel-Walker</span></a>]</p>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Test deg selv</h3>
+<p>Hvorfor kan svarene fra en språkmodell inneholde feil selv om svaret høres troverdig ut?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Klikk på meg for mulig svar</strong></summary>
+<p>Fordi språkmodellen genererer tekst basert på statistiske mønstre den har lært, ikke basert på faktasjekk.
+Den har lært hvordan troverdige svar «ser ut», men vet ikke forskjellen på sant og usant.
+Den kan derfor produsere tekster med faktafeil like selvfølgelig som den gir svar med riktig innhold.
+Derfor skal du ikke bruke KI til å lage et resultat du ikke har kunnskap til å kontrollere.</p>
+</details>
+</div>
+</section>
+<span id="document-module2/sprakmodeller-finner-pa-ting"></span><section id="sprakmodeller-finner-pa-ting">
+<h2>Språkmodeller finner på ting</h2>
+<p>Fordi store språkmodeller ikke kan skille mellom sant og usant, kan de finne på ting som ikke stemmer.
+Hvis du har hørt noen si at KI og språkmodeller <em>hallusinerer</em>, er det dette de mener.</p>
+<p>Språkmodeller kan finne på eller blande sammen ting på forskjellige måter.
+Her er noen eksempler:</p>
+<ul class="simple">
+<li><em>Feil fakta</em>: Modellen oppgir feil datoer, tall eller navn.</li>
+<li><em>Oppdiktede referanser</em>: Modellen lager titler på artikler eller bøker som ikke finnes.</li>
+<li><em>Forveksling</em>: Modellen blander sammen ulike personer.</li>
+</ul>
+<p>Det er et stort problem at språkmodeller ofte finner på ting med stor <em>sikkerhet</em>.
+De sier ikke: «Jeg er usikker, men …».
+I stedet presenterer de feilinformasjon med samme «overbevisning» som riktig informasjon.
+Derfor kan du <em>ikke</em> stole på at et svar er riktig bare fordi det fremstår «selvsikkert».
+Du må alltid sjekke fakta med en pålitelig kilde.</p>
+<section id="hvorfor-skjer-det">
+<h3>Hvorfor skjer det?</h3>
+<p>Det er mange årsaker til at modellene finner på ting.
+Dette er noen av dem:</p>
+<ul class="simple">
+<li>Modellene «vil» gjerne gi et svar, de er dårlige til å si «jeg vet ikke».</li>
+<li>Modellene har ikke <em>sikker</em> faktakunnskap, bare sannsynligheter.</li>
+<li>Overgeneralisering, modellene kombinerer mønstre fra ulike kilder.</li>
+<li>Utdaterte treningsdata, modellene vet ikke hva som har skjedd etter de ble trent.</li>
+</ul>
+<div class="uio-icon-box viktig">
+<h3>Viktig å forstå</h3>
+<p>At språkmodeller finner på ting er ikke en feil som kan fikses fullstendig.
+Det er en iboende egenskap ved hvordan språkmodeller fungerer.</p>
+</div>
+</section>
+<section id="hva-med-internett-sok">
+<h3>Hva med internett-søk?</h3>
+<p>Mange store språkmodeller har nå mulighet til å søke på internett for å få oppdatert informasjon.
+Men det garanterer ikke at svaret er riktig.
+Det er fordi språkmodellen fortsatt må <em>tolke</em> og <em>oppsummere</em> informasjonen den finner.
+Det gjør den på samme måte som alltid, ved å generere tekst basert på mønstre.
+Modellen kan derfor fortsatt finne på ting, selv om den har tilgang til korrekt informasjon fra nettet.</p>
+</section>
+<section id="eksempel-fra-virkeligheten">
+<h3>Eksempel fra virkeligheten</h3>
+<p>Da Politihøyskolen skulle bestemme hvor mye tid undervisere skulle få til å forberede seg til undervisning,
+ble feilinformasjon brukt som saksgrunnlag [<a class="reference internal" href="#document-module6/kilder#svarstad"><span class="std std-ref">Svarstad</span></a>].
+Under forberedelsene til behandling ble nemlig Copilot brukt for å hente informasjon om forberedelsestid på andre universiteter og høyskoler.
+Problemet var at Copilot ikke fant slike opplysninger på nettet, og fant bare derfor på et svar.</p>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p>Hva kunne Politihøyskolen gjort for å unngå feilen som skjedde i saken over?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Klikk for mulig svar</strong></summary>
+<p>Det viktigste å huske, er å alltid sjekke faktaopplysninger med en pålitelig kilde.
+Hvis det ikke er mulig å finne kilden, er opplysningen sannsynligvis feil.</p>
+</details>
+</div>
+</section>
+</section>
+<span id="document-module2/sprakmodeller-har-ikke-hukommelse"></span><section id="sprakmodellers-hukommelse">
+<h2>Språkmodellers hukommelse</h2>
+<p>Når du bruker en språkmodell, har du kontakt med den gjennom et chat-system.
+Språkmodellen selv husker ikke tidligere meldinger i samtalen eller tidligere samtaler du har hatt med den.
+Det er det chat-systemet som gjør.
+Chat-systemet viser deg samtalen dere har, og sender den videre til språkmodellen.
+Det du bør merke deg her, er at hver gang du skriver en ny instruksjon eller et nytt spørsmål i chatten, så sender chat-systemet <em>hele</em> samtalen på nytt til språkmodellen.
+Det er fordi språkmodellen selv ikke kan huske det du har spurt om.</p>
+<p>Det er altså chat-systemet som «husker» det du har skrevet og bygger opp konteksten, mens språkmodellen bare ser på den teksten den får der og da, og beregner sannsynlige neste ord.
+Dette er viktig å være klar over fordi lengden på konteksten har betydning for hvor mye av samtalen modellen faktisk «ser».</p>
+<div class="uio-color-box-3">
+<h3>Bonusinnhold</h3>
+<details>
+<summary><strong>Er det hele samtalen som sendes til språkmodellen?</strong></summary>
+<p>Når vi sier at chat-systemet sender <em>hele samtalen</em> til språkmodellen er det en forenkling:
+I praksis har chat-systemene forskjellige måter å redusere informasjonen den sender til språkmodellen.</p>
+<p>Allikevel: det er aldri bare siste melding av en samtaletråd som sendes til språkmodellen.
+Avhengig av språkmodellens kapasitet, og chat-systemets automatiske filtreringer blir hele eller deler av de foregående meldingene i samtaletråden sendt sammen med din siste melding.</p>
+</details>
+</div>
+<section id="ha-korte-samtaler">
+<h3>Ha korte samtaler</h3>
+<p>Lange samtaler kan «forvirre» modellen, slik at den gir dårligere svar.
+En grunn til det kan være at hele konteksten ikke får plass.
+Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
+Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [<a class="reference internal" href="#document-module6/kilder#laban"><span class="std std-ref">Laban</span></a>]
+En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.</p>
+<p>Det er spesielt viktig å starte en ny samtale om du skifter tema.
+Se for deg at du har stilt KI spørsmål om økonomireglementet til UiO.
+Hvis du så stiller spørsmål om hvordan man formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO.
+Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale.</p>
+<p>I tillegg er språkmodellene dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert.
+Derfor bør du sørge for at gale svar ikke blir liggende i samtalen.</p>
+</section>
+</section>
+<span id="document-module2/skjevheter"></span><section id="modellenes-skjevheter">
+<h2>Modellenes skjevheter</h2>
+<p>Vi har tidligere lært at det er en iboende egenskap ved språkmodeller at de <em>finner på ting</em>.
+En annen iboende egenskap er at språkmodellen har innebygde <em>skjevheter</em>.
+Det kan være mange typer skjevheter. Vi skal ta for oss noen her.</p>
+<section id="skjevhet-som-folge-av-manglende-treningsdata">
+<h3>Skjevhet som følge av manglende treningsdata</h3>
+<p>Store språkmodeller trenes som sagt på tekster fra internett, men det er mange tekster de ikke har tilgang til.
+For eksempel har de ikke tilgang til informasjon som krever innlogging, eller som er bak en betalingsmur.
+De har også begrenset tilgang til trykte kilder.
+Dette skaper begrensninger for hva modellene kan lære og gir ulikt utslag for forskjellige bruksområder.
+Ett eksempel på dette er at modellene kan være svake på helt spesifikk fagkunnskap i et gitt forskningsdomene.</p>
+</section>
+<section id="skjevhet-som-speiler-skjevheter-i-samfunnet">
+<h3>Skjevhet som speiler skjevheter i samfunnet</h3>
+<p>En annen type skjevhet stammer fra ulikheter i samfunnet vårt, og gjenspeiles derfor også i den digitale informasjonen vi produserer.
+Dette kan dreie seg om skjevheter knyttet til etnisitet, kjønn, religion eller annet og er veldig viktig å være klar over når man behandler forslag og tekst fra en språkmodell.</p>
+<div class="uio-color-box-3">
+<h3>Eksempel på skjevheter i treningsdata</h3>
+<p>Anta at en språkmodell er trent på mange gamle stillingsannonser der «leder» oftere omtales som «han» enn «hun».
+Når du ber modellen skrive en tekst om «en typisk leder», vil den da ha høyere sannsynlighet for å bruke ord som «han», «mann» og mannsnavn.</p>
+<p>Modellen har ikke meninger om kjønn, den gjennskaper bare mønstrene som allerede fantes i tekstene den ble trent på.</p>
+</div>
+</section>
+<section id="bekreftelsesskjevhet-bekreftelsesbias">
+<h3>Bekreftelsesskjevhet (bekreftelsesbias)</h3>
+<p>Dagens språkmodeller har en tendens til å være enige med deg.
+Dette kan føre til at språkmodellen gir deg <em>rett i</em> noe som ikke er rett.</p>
+<p>For å unngå bekreftelsesskjevhet kan du snu på spørsmålet, altså også spørre om det motsatte.</p>
+</section>
+</section>
+<span id="document-module2/oppsummering-sprakmodeller"></span><section id="oppsummering-kapittel-2">
+<h2>Oppsummering kapittel 2</h2>
+<p>I dette kapittelet har du lært hvordan store språkmodeller lager tekst og hvilke svakheter den har når den gjøre dette.
+Før du går videre til kapittel 3 kan du teste hva du har lært.</p>
+<div class="uio-icon-box reflect">
+<h3>Test deg selv</h3>
+<p>Diskuter selv eller med en kollega</p>
+<ol class="arabic simple">
+<li>Hva er store språkmodeller og hvordan fungerer de?</li>
+<li>Nevn noen av de viktigste svakhetene ved store språkmodeller og hva kan du gjøre for å imøtekomme dem?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Repetisjon</h3>
+<ul class="simple">
+<li><strong>Store språkmodeller</strong> er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
+konteksten du gir den.
+Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor <em>sikker</em> faktakunnskap.</li>
+<li><strong>Store språkmodeller har ikke noe forhold til sannhet</strong> og har derfor ikke sikker kunnskap om hva som er
+sant.
+Det gjør modellene sårbare for bevisst manipulering av treningsdata.
+Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
+Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.</li>
+<li><strong>Språkmodeller finner på ting som ikke stemmer</strong> fordi de ikke har <em>sikker</em> faktakunnskap.</li>
+<li><strong>Lange samtaler kan «forvirre» modellen, slik at den gir dårligere svar</strong>. Derfor er det viktig
+å starte en ny samtale om du skifter tema.</li>
+<li><strong>Språkmodeller har innebygde skjevheter</strong>. Det kan blant annet være skjevhet som følge av manglende treningsdata,
+skjevhet som speiler skjevheter i samfunnet eller bekreftelsesskjevhet.</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Neste kapittel</h3>
+<p>Nå som du forstår hvordan språkmodeller fungerer og hva begrensningene deres er,
+skal du i neste kapittel lære hvordan du bruker KI trygt og effektivt i praksis.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module3/hvordan-bruke-ki-pa-en-god-mate"></span><section id="instruksjoner-bli-god-pa-ki">
+<h2>Instruksjoner: Bli god på KI!</h2>
+<p>For å mestre KI må du bli god på instruksjoner.</p>
+<p>En instruksjon er beskjeden eller spørsmålet du gir en språkmodell.
+Instruksjoner kalles også <em>prompt</em>, og skrives inn i chatten du bruker til å kommunisere med språkmodellen.
+Det som er viktig å merke seg er at kvaliteten på instruksjonen din er direkte relatert til kvaliteten på svaret du får.</p>
+<p>I dette kapitlet skal du lære hvordan du lager gode instruksjoner, og hvordan du kan sjekke kvaliteten på svarene KI gir deg.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/3.2-walking-together.png"><img alt="Illustrasjon av at personen viser vei til roboten" src="_images/3.2-walking-together.png" style="width: 60%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Læringsmål</h3>
+<ul class="simple">
+<li>Jeg kan kvalitetssikre KI-generert innhold</li>
+<li>Jeg kan skrive gode og effektive instruksjoner (promts)</li>
+</ul>
+</div>
+</section>
+<span id="document-module3/prinsipper-for-gode-instruksjoner"></span><section id="lag-gode-instruksjoner">
+<h2>Lag gode instruksjoner</h2>
+<p>Språkmodellen er god til å gjette hva svaret bør inneholde, men den kan ikke lese tankene dine.
+Med noen få grep kan du hjelpe språkmodellen til å gi svar du blir mer fornøyd med.
+Bruk gjerne alle disse prinsippene når du skriver instruksjonen din.</p>
+<p>Her ser du noen enkle eksempler på instruksjoner som kan bli bedre, og forslag til hvordan du kan forbedre dem.</p>
+<section id="gi-kontekst">
+<h3>1. Gi kontekst</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Forklar forskjellen på KI og maskinlæring.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Forklar kort forskjellen på KI og maskinlæring, tilpasset administrativt ansatte ved et universitet som ikke har teknisk bakgrunn.
+Tenk at forklaringen skal brukes i et 5-minutters innlegg på et personalmøte, der målet er at kollegene skal forstå begrepene på et overordnet nivå - ikke tekniske detaljer.</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Du forteller språkmodellen litt hva som er bakgrunnen og/eller konteksten til teksten du ber den produsere.</p>
+</div>
+</div>
+</section>
+<section id="spesifiser-format">
+<h3>2. Spesifiser format</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Lag et møtereferat av disse notatene: [dine notater]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Basert på mine notater fra møtet, lag et møtereferat. Strukturer referatet med deltakere, agenda, beslutninger og oppgaver. Mine notater: [dine notater].</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Siden du har spesifisert formatet vil du trenge mindre redigering i etterkant. Språkmodellen vil kunne sortere og skille ut teksten basert på strukturen du ber om.</p>
+</div>
+</div>
+</section>
+<section id="definer-en-rolle">
+<h3>3. Definer en rolle</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Sjekk denne teksten: [din tekst]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Du er en norskspråklig språkvasker i universitetssektoren.
+Gå gjennom teksten nedenfor og gi forslag til forbedringer.</p>
+<ul class="simple">
+<li>Påpek skrivefeil og grammatikk</li>
+<li>Behold innholdet faglig uendret</li>
+</ul>
+<p>Teksten:
+[din tekst]</p>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Språkmodeller har sett tekst fra veldig mange roller og sjangre.
+Fortell modellen hvilken rolle den skal innta, så får du mer relevante og fokuserte svar.</p>
+</div>
+</div>
+</section>
+<section id="gi-eksempler">
+<h3>4. Gi eksempler</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Mangelfull</h3>
+<p>Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Bedre</h3>
+<p>Jeg skal skrive titler til interne nyhetssaker for ansatte ved Universitetet i Oslo.</p>
+<p>Her er eksempler på stilen jeg ønsker:</p>
+<ul class="simple">
+<li>«Nytt tilbud: Gratis språkkurs for ansatte»</li>
+<li>«Viktig: Endringer i møterom-booking fra 1. april»</li>
+<li>«Husk: Frist for registrering av arbeidstid nærmer seg»</li>
+</ul>
+<p>Skriv en kort tittel i samme stil for denne saken: Vi får nytt IT-system for reiseregninger neste måned.</p>
+<p>Krav til tittelen:</p>
+<ul class="simple">
+<li>Maks 90 tegn</li>
+<li>Skal være informativ og nøktern</li>
+<li>Målgruppe: alle ansatte</li>
+</ul>
+<p><strong>Hva gjør denne bedre?</strong></p>
+<p>Her gir du eksempler på stilen eller formatet du ønsker.
+Dette er ofte lettere enn å forklare stilen med ord.
+Denne teknikken kalles gjerne «Few-shot instruksjon»</p>
+</div>
+</div>
+</section>
+</section>
+<span id="document-module3/praktisk-ovelse-forbedre-instruksjoner"></span><section id="praktisk-ovelse-forbedre-instruksjoner">
+<h2>Praktisk øvelse: Forbedre instruksjoner</h2>
+<p>Prøv nå selv å forbedre instruksjonene fra forrige side i GPT UiO.
+Dette vil gi deg en god pekepinn på hvordan språkmodellen reagerer på instruksjonene du gir.</p>
+<div class="uio-icon-box task">
+<h3>Prøv selv!</h3>
+<p>Åpne <a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> og prøv selv å forbedre instruksjonene i eksemplene på forrige side.</p>
+<p><strong>1. Forbedre dårlige instruksjoner</strong></p>
+<p>Kopier hver av de mangelfulle instruksjonene under inn i GPT UiO, og se på svaret du får:</p>
+<ol class="loweralpha simple">
+<li>«Forklar forskjellen på KI og maskinlæring.»</li>
+<li>«Lag et møtereferat av disse notatene: [dine notater]»</li>
+<li>«Sjekk denne teksten: [din tekst]»</li>
+<li>«Skriv en tittel til en nyhetssak om at vi får nytt system for reiseregninger.»</li>
+</ol>
+<p><strong>2. Skriv forbedrede versjoner</strong></p>
+<p>Skriv deretter om hver instruksjon slik at du bruker alle prinsippene fra forrige side</p>
+<ul class="simple">
+<li>Gi kontekst</li>
+<li>Spesifiser format</li>
+<li>Definer en rolle</li>
+<li>Gi eksempler</li>
+</ul>
+<p>Test de nye instruksjonene i GPT UiO og sammenlign svarene med de du fikk i punkt 1.</p>
+<p><strong>3. Refleksjon</strong></p>
+<p>Tenk over følgende:</p>
+<ol class="loweralpha simple">
+<li>Hva ble bedre i svarene etter at dere forbedret instruksjonene?</li>
+<li>Hvilke av prinsippene (kontekst, format, rolle, eksempler) hadde størst utslag på kvaliteten?</li>
+<li>Hvordan kan du bruke disse prinsippene i dine egne, faktiske arbeidsoppgaver (for eksempel e-poster, saksfremlegg, nettsidetekster)?</li>
+</ol>
+</div>
+</section>
+<span id="document-module3/nyttige-instruksjons-teknikker"></span><section id="nyttige-instruksjons-teknikker">
+<h2>Nyttige instruksjons-teknikker</h2>
+<p>Når du har lært prinsippene for gode instruksjoner, kan du ta i bruk ulike instruksjonsteknikker i tillegg.
+Du kan bruke teknikkene hver for seg, eller kombinere de.</p>
+<div class="uio-color-box-3">
+<h3>Lag en plan</h3>
+<p>Lag en arbeidsplan for hvordan KI-en skal løse problemet.
+Dette gir mer gjennomtenkte svar og er spesielt nyttig for komplekse oppgaver.</p>
+<p><strong>Eksempel</strong></p>
+<p>Du er en erfaren kursutvikler ved et universitet.
+Jeg skal holde et 2-timers introduksjonskurs i bruk av GPT UiO for ansatte ved Universitetet i Oslo som er nybegynnere.</p>
+<p>Tenk steg for steg før du svarer:</p>
+<ol class="arabic simple">
+<li>Identifiser målgruppen mer konkret (hvem de er, hva de kan fra før, hva de trenger).</li>
+<li>Foreslå 3-4 konkrete læringsmål for kurset.</li>
+<li>Del opp tiden i en enkel tidsplan (f.eks. 4 x 25 minutter med korte pauser).</li>
+<li>For hver bolk: beskriv innhold, arbeidsform (forelesning, demo, øvelse) og hva deltakerne skal sitte igjen med.</li>
+<li>Til slutt: foreslå en enkel hjemmeoppgave deltakerne kan gjøre etter kurset.</li>
+</ol>
+<p>Vis først din trinnvise tenking som punkter, og deretter et ryddig forslag til kursopplegg.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Be om begrunnelse</h3>
+<p>Be KI-en forklare hvorfor den har gitt det svaret den ga.
+En kort begrunnelse gjør det lettere for deg å vurdere om svaret er relevant og til å stole på.</p>
+<p><strong>Eksempel</strong></p>
+<p>Jeg skal arrangere en workshop om […].
+Foreslå noen aktiviteter som kan hjelpe deltakerne med oppgaven de skal løse.
+Gi en begrunnelsen på 3-5 punkter for hvordan aktivitetene kan hjelpe deltakerne.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Forbedre instruksjonen trinnvis</h3>
+<p>Første svar er sjelden perfekt, og det er helt normalt.
+Bygg videre på svarene i en samtale.</p>
+<p><strong>Eksempel</strong></p>
+<p>Første instruksjon: «Skriv et utkast til e-post om nytt bookingsystem.»</p>
+<p>Oppfølging 1: «Gjør den mer konsis, maks 3 avsnitt.»</p>
+<p>Oppfølging 2: «Legg til en setning om hvor de kan få hjelp.»</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Start en ny samtale</h3>
+<p>Som vi lærte i <a class="reference external" href="module2/sprakmodeller-har-ikke-hukommelse.html" rel="noreferrer" target="_blank">Språkmodellers hukommelse <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> kan lange samtaler eller et nytt tema forvirre modellen og gi dårligere svar.</p>
+<p>Start derfor en ny samtale om du merker at svarene begynner å få dårligere kvalitet.</p>
+</div>
+</section>
+<span id="document-module3/praktisk-ovelse-forbedre-egne-instruksjoner"></span><section id="praktisk-ovelse-forbedre-egne-instruksjoner">
+<h2>Praktisk øvelse: Forbedre egne instruksjoner</h2>
+<div class="uio-icon-box task">
+<h3>Oppgave</h3>
+<p>Tenk på en oppgave du ønsker at KI skal hjelpe deg med og som er av en litt mer kompleks art enn bare tekstforbedring.
+Dette kan for eksempel være planlegging av et arrangement, eller forklaring av komplekse sammenhenger eller begreper.</p>
+<ol class="arabic simple">
+<li>Hvordan ville du gått løs på instruksjonen til KI-en til vanlig?
+-  Åpne <a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> og skriv inn instruksjonen.</li>
+<li>Velg en av teknikkene på forrige side, og bruk prinsipper for gode instruksjoner. Forbedre instruksjonen din.</li>
+<li>Sammenligne svaret. Kan du gjøre ytterligere forbedringer ved å bruke flere teknikker?</li>
+</ol>
+</div>
+</section>
+<span id="document-module3/tips-om-pre-instruksjon-og-ki-assistenter"></span><section id="tips-om-pre-instruksjon-og-ki-assistenter">
+<h2>Tips om pre-instruksjon og KI-assistenter</h2>
+<p>Har du brukt tid på å bygge opp en god instruksjon med teknikkene og prinsippene vi nettopp har lært om, er den verdt å ta vare på.
+Særlig hvis du bruker KI til å løse den samme typen oppgave gjentatte ganger.
+Dette kan du få til ved å lagre instruksjonen som en pre-instruksjon i en KI-assistent, for eksempel i <a class="reference external" href="module5/gpt-uio-ki-assistenter.html" rel="noreferrer" target="_blank">GPT UiO sine KI assistenter <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>  som vi skal komme tilbake til senere i kurset.
+Du vil da ha en spesialtilpasset samtalepartner som kan brukes om og om igjen.</p>
+<div class="uio-icon-box do">
+<h3>Tips</h3>
+<p>Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine.
+Bruk tipsene du har fått i denne episoden til å hjelpe deg å forbedre dine instruksjoner.</p>
+</div>
+</section>
+<span id="document-module3/nar-kan-du-stole-pa-generativ-ki"></span><section id="nar-kan-du-stole-pa-generativ-ki">
+<h2>Når kan du stole på generativ KI?</h2>
+<p>Nå som du har lært om og kan ta i bruk noen teknikker for gode instruksjoner, kan du da stole på svaret KI gir deg?</p>
+<p>Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av hva du bruker den til.
+Som vi allerede har lært har ikke språkmodellen sikker kunnskap om hva som er sant, ei heller hukommelse.
+Et bedre spørsmål er kanskje derfor:  I hvilke situasjoner kan du bruke KI uten at det medfører stor risiko?
+Og hva kan vi gjøre for å redusere risikoen?</p>
+<p>En hovedregel er at kunstig intelligens passer best til oppgaver der feil ikke innebærer stor risiko.</p>
+<p>Hvis feil kan få alvorlige følger, må du enten</p>
+<ul class="simple">
+<li>kunne kontrollere og bekrefte informasjonen før du bruker den videre, eller</li>
+<li>la være å bruke KI til den oppgaven.</li>
+</ul>
+<p>Nedenfor er eksempler på bruk med lav, medium og høy risiko.</p>
+<div class="uio-color-box-3">
+<div class="canvas-tabs-pdf">
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Lav risiko</p>
+<div class="canvas-tab-pdf-body">
+<p>Hvis du har kontroll, eller konsekvensene av feil er lave:</p>
+<ul class="simple">
+<li><strong>Brainstorming og idémyldring</strong> - Eksempel: Du bruker KI for å få andre perspektiver og innfallsvinkler på dine ideer.</li>
+<li><strong>Formulere tekst du selv har kontekst på</strong> - Eksempel: Du utformer materiale hvor du lett kan se om det er riktig eller ikke.</li>
+<li><strong>Språklig forbedring</strong> - Eksempel: Du ber KI gjøre språklige og retoriske endringer på en tekst du selv har skrevet.</li>
+<li><strong>Oppsummere tekst du selv har skrevet</strong> - Eksempel: Du har produsert materialet selv, og kan lett vurdere om oppsummeringen er god.</li>
+<li><strong>Lage utkast</strong> - Eksempel: Du bruker KI til å komme i gang med et arbeid, men kvalitetssikrer utkastet før du jobber videre.</li>
+</ul>
+<p><strong>Hvorfor er det lav risiko?</strong></p>
+<p>Sjansene for feil er mindre, og konsekvenser ved feil er små.</p>
+<p><strong>Tiltak for å begrense risiko</strong></p>
+<ul class="simple">
+<li>Utøv normal kritisk vurdering av resultatet KI gir deg</li>
+</ul>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Medium risiko</p>
+<div class="canvas-tab-pdf-body">
+<p>Hvis resultatet skal «ut i verden» eller du bruker KI på områder du ikke har ekspertise:</p>
+<ul class="simple">
+<li><strong>Utkast til faglig tekst, e-post eller rapport</strong> - Eksempel: Teksten, e-posten eller rapporten skal deles med andre og det har betydning om noe er feil.</li>
+<li><strong>Forslag til prosedyrer</strong> - Eksempel: Du lager materiale som må stemme overens med andre kilder, som retningslinjer, dokumentasjon eller lovverk.</li>
+<li><strong>Tekniske forklaringer</strong> - Eksempel: Du ber KI forklare hvordan noe fungerer, og forklaringen kan være feil selv om den høres overbevisende ut.</li>
+<li><strong>Oppsummering av tekst du ikke kjenner godt</strong> - Eksempel: Du ber KI oppsummere en tekst du ikke har lest, og kan ikke se om noe er misforstått eller utelatt fra originalteksten</li>
+</ul>
+<p><strong>Hvorfor er det medium risiko?</strong></p>
+<p>Feil her kan føre til feil beslutninger, feil i tekniske systemer, ineffektivitet, eller svekket tillit utad.</p>
+<p><strong>Tiltak for å begrense risiko</strong></p>
+<ul class="simple">
+<li>Kontrollere fakta mot andre kilder</li>
+<li>Justere språk og vinkling</li>
+<li>Ta det endelige ansvaret selv</li>
+</ul>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Høy risiko</p>
+<div class="canvas-tab-pdf-body">
+<p>Hvis materialet som produseres må være faktuelt korrekt</p>
+<ul class="simple">
+<li><strong>Tall og statistikk</strong> - Eksempel: Du henter statistisk info fra KI-en og bruker den uten å verifisere mot andre kilder.</li>
+<li><strong>Lover og regler</strong> - Eksempel: Du stoler på KI-ens evne til å gjengi eller oppsummere juridiske dokumenter korrekt, selv om den kan misforstå.</li>
+<li><strong>Referanser</strong> - Eksempel: Du bruker kildene KI oppgir uten å sjekke at de faktisk eksisterer.</li>
+<li><strong>Vurdering av enkeltpersoner</strong> - Eksempel: Du lar KI-en gjøre en vurdering som påvirker enkeltpersoner direkte, for eksempel i en ansettelsesprosess.</li>
+</ul>
+<p><strong>Hvorfor er det høy risiko?</strong></p>
+<p>Her er potensiale for feil stort, og eventuelle feil vil få store konsekvenser.</p>
+<p><strong>Tiltak for å begrense risiko</strong></p>
+<ul class="simple">
+<li>Vurder om KI bør unngås</li>
+<li>Om KI benyttes, sjekk KI resultatet grundig og involver kompetente fagpersoner</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Refleksjon</h3>
+<p>Tenk på en arbeidsoppgave du utfører som del av din jobb. Vurder hvilken kategori den faller inn i: Lav, medium eller høy risiko</p>
+</div>
+</section>
+<span id="document-module3/strategier-for-a-kvalitetssikre-ki-generert-innhold"></span><section id="strategier-for-a-kvalitetssikre-ki-generert-innhold">
+<h2>Strategier for å kvalitetssikre KI-generert innhold</h2>
+<p>Vi har nå lært at en språkmodell lager sannsynlig tekst, ikke sannhet.
+Den har ingen <em>sikker</em> faktakunnskap, ingen hukommelse og har innebygde skjevheter.</p>
+<p>I dette kurset har du likevel fått noen konkrete tips og «sikkerhetsregler» for hvordan du kan kvalitetssikre innhold som er generert av KI.
+Disse oppsummerer vi her.</p>
+<div class="uio-color-box-3">
+<h3>1. Vurder risikoen først</h3>
+<ul class="simple">
+<li>Lav risiko (du har kontroll, og feil er ufarlige): Vanlig kritisk lesing er som regel nok.</li>
+<li>Høy risiko (innholdet skal ut i verden, må være korrekt og påvirker personer): Verifiser innholdet først, eller la være å bruke KI.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>2. Gi gode instruksjoner</h3>
+<ul class="simple">
+<li>Gi kontekst, be om format, definer rolle, gi eksempler.</li>
+<li>Be modellen tenke stegvis og begrunne svaret.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>3. Sjekk svaret, stol aldri på KI-ens «selvsikkerhet»</h3>
+<ul class="simple">
+<li>Kontroller fakta og referanser mot pålitelige kilder. Finner du ingen kilder, er innholdet trolig oppdiktet.</li>
+<li>Motvirk bekreftelsesbias ved også å spørre etter motargumenter eller alternative perspektiver.</li>
+<li>Vær oppmerksom på skjevheter og hull i smale fagfelt, og bruk din egen fagkunnskap aktivt.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>4. Rydd i samtalen</h3>
+<ul class="simple">
+<li>Start en ny samtale når du bytter tema, eller når samtalen har blitt veldig lang.</li>
+<li>Fjern gale svar, slik at de ikke blir med videre i konteksten.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>5. Prøv deg frem</h3>
+<p>Det fins ikke én riktig måte å instruere på, og god instruering er en ferdighet som læres gjennom prøving og feiling.
+Når du får et svar du ikke liker, prøv å identifisere hva som manglet i instruksjonen din - og legg det til i neste iterasjon.</p>
+</div>
+</section>
+<span id="document-module3/oppsummering-god-bruk-ki"></span><section id="oppsummering-kapittel-3">
+<h2>Oppsummering kapittel 3</h2>
+<p>Du har nå et nyttig sett med verktøy for å bruke KI på en tryggere og bedre måte. I dette kapittelet har vi
+lært hvordan man vurderer og kvalitetssikrer svar fra KI, og hvordan du kan bruke godt utformede instruksjoner
+for å få bedre svar.</p>
+<div class="uio-icon-box reflect">
+<h3>Test deg selv</h3>
+<p>Diskuter selv eller med en kollega</p>
+<ol class="arabic simple">
+<li>Hva er en instruksjon og hva bør en instruksjon inneholde for å sikre best mulig svar?</li>
+<li>Hva erfarte du når du forsøkte å forbedre instruksjonene dine?</li>
+<li>Hvilke instruksjonsteknikker vil være mest nyttig for deg?</li>
+<li>Hvordan vil du vurdere risiko ved bruk av KI i egne arbeidsoppgaver?</li>
+<li>Hvordan vil du kvalitetssikre KI-generert innhold?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Repetisjon</h3>
+<ul class="simple">
+<li>Instruksjoner er din måte å kommunisere med KI på. En instruksjon er beskjeden eller spørsmålet du gir til KI. Kvaliteten på
+instruksjonen din påvirker direkte kvaliteten på svaret du får. For å sikre best mulig svar bør du: gi kontekst, spesifisere format,
+definere en rolle og gi eksempler.</li>
+<li>Det finnes mange ulike instruksjonsteknikker:</p>
+<ol class="arabic simple">
+<li>Lag en arbeidsplan for hvordan KI-en skal løse problemet</li>
+<li>Be KI-en forklare hvorfor den har gitt det svaret den ga</li>
+<li>Forbedre instruksjonen trinnvis</li>
+<li>Start en ny samtale om du merker at svarene begynner å få dårligere kvalitet</li>
+</ol>
+</li>
+<li>Generativ KI er ikke enten «pålitelig» eller «upålitelig», det avhenger av hva vi bruker den til. En hovedregel er at KI passer best
+til oppgaver der feil ikke innebærer stor risiko. Hvis feil kan få alvorlige følger, må du enten kunne kontrollere og bekrefte
+informasjonen før du bruker den videre, eller la være å bruke KI til den oppgaven.</li>
+<li>Kunstig intelligens har flere svakheter og innholdet skal alltid kvalitetssikres. For å kvalitetssikre innholdet bør du:
+<ol class="arabic simple">
+<li>Vurdere risikoen</li>
+<li>Skrive gode instruksjoner</li>
+<li>Kontrollere svaret</li>
+<li>Rydde i samtalen</li>
+</ol>
+</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Neste kapittel</h3>
+<p>Vi har nå lagt grunnlaget for å bruke KI trygt. I neste kapittel er temaet: ansvarlig og bærekraftig bruk av KI.
+</section>
+</section>
+<span id="document-module3/avslutning-del1"></span><section id="avslutning-del-1">
+<h2>Avslutning del 1</h2>
+<p>Du har nå lært de viktigste grunnleggende konseptene om KI og språkmodeller, og kanskje enda viktigere: Hvilke begrensninger teknologien har.
+I tillegg har du fått et sett med verktøy som kan hjelpe deg med å få gode resultater fra KI, og hvordan du kan jobbe med å vurdere og sikre kvaliteten på det KI-en gir deg.</p>
+<p>Her passer det bra å ta en pause, dersom tiden eller energien ikke strekker til.
+Du har kommet omtrent halvveis i kurset.</p>
+<p>I del 2 skal du med aspekter knyttet til bærekraft og ansvarlig bruk, om de viktigste KI-tjenestene på UiO,
+før det hele rundes av med to sett med øvelser som du kan laste ned og jobbe på i dagene fremover.</p>
+<p>Vi sees i neste del!</p>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module4/ansvarlig-og-baerekraftig-bruk-av-ki"></span><section id="ansvarlig-og-baerekraftig-bruk-av-ki">
+<h2>Ansvarlig og bærekraftig bruk av KI</h2>
+<p>I kapittel 4 lærer du om viktige etiske, miljømessige og juridiske hensyn ved bruk av kunstig intelligens.
+Denne kunnskapen bidrar til at vi kan bruke KI på en ansvarlig måte.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="bordered reference internal image-reference" href="_images/6.2-environment-and-law.png"><img alt="Illustrasjon av en person som tenker på bærekraft, etikk, og lover" class="bordered" src="_images/6.2-environment-and-law.png" style="width: 40%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Læringsmål</h3>
+<ul class="simple">
+<li>Jeg forstår  miljøkostnader og sosiale kostnader ved bruk av KI</li>
+<li>Jeg er kjent med personvern og opphavsrett i forbindelse med KI</li>
+<li>Jeg kan ta ansvarlige valg om bruk av KI i egen arbeidshverdag</li>
+</ul>
+</div>
+</section>
+<span id="document-module4/baerekraft"></span><section id="baerekraft">
+<h2>Bærekraft</h2>
+<p>Kunstig intelligens har kostnader som går utover det vi betaler for bruken.
+Bruk av KI-tjenester har både miljøkostnader og sosiale kostnader.</p>
+<p>Mange av disse utfordringene er ikke unike for KI.
+Vi finner lignende problemstillinger i klesindustrien, matproduksjon og andre sektorer.
+Som enkeltpersoner har vi begrenset kontroll over hvordan datasentre drives eller hvordan leverandørene behandler sine ansatte.
+Men vi har full kontroll over hvordan vi bruker teknologien i vår egen hverdag.
+Det er der vi kan gjøre en forskjell.</p>
+<p>På de neste sidene skal vi se nærmere på hva du som bruker kan gjøre for å bidra til mer bærekraftig bruk av KI.</p>
+</section>
+<span id="document-module4/miljo"></span><section id="klima-og-miljokostnader">
+<h2>Klima- og miljøkostnader</h2>
+<p>Alle IT-tjenester har en viss miljøpåvirkning, men KI-tjenester er ekstra ressurskrevende.
+Det er fordi modellene krever mye tung beregning.
+KI-tjenester har høyt strømforbruk både for å drive maskinene og til kjøling.
+Det går også med mye vann til vannbasert kjøling av maskinene.
+Både strøm og vann er begrensede ressurser, som bør brukes fornuftig.</p>
+<p>Kostnadene med å bygge datasentre kommer i tillegg til kostnadene med bruken.
+For det første kan arealene som brukes til å bygge datasentre gå på bekostning av natur og andre byggeprosjekter, og når datasentrene står ferdige bruker de enorme mengder strøm.
+Det går også med mye mineraler og andre begrensede naturressurser til å lage serverne i datasentrene.
+Den store økningen i bruk av kunstig intelligens gjør at KI-leverandørene bygger nye datasentre i et høyt tempo.</p>
+<p>Selv om KI er ressurskrevende er det noen grep du kan gjøre for å redusere belastningen på miljøet.</p>
+<div class="uio-color-box-3">
+<h3>Tips 1 - bevissthet</h3>
+<p>Vær bevisst på når du bruker KI og når du kan la være. Prøv å ikke gripe til KI for alt.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Tips 2 - valg av språkmodell</h3>
+<p>I flere tjenester, blant annet GPT UiO, kan du velge blant flere forskjellige språkmodeller, der noen er store og noen er små.
+De små er mindre ressurskrevende både å lage og å bruke.
+De kan fungere godt til enkle oppgaver som å språkvaske en e-post eller få forslag til omskrivinger av setninger.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Tips 3 - start ny samtale</h3>
+<p>Lange samtaler krever mer ressurser.
+Jo lengre en samtale blir, desto mer ressurser bruker systemet, siden modellen må prosesserer hele samtalen på nytt for hver instruksjon.
+Start en ny samtale når samtalen begynner å bli lang.</p>
+</div>
+</section>
+<span id="document-module4/sosiale-kostnader"></span><section id="sosiale-kostnader">
+<h2>Sosiale kostnader</h2>
+<p>Trening og bruk av kunstig intelligens har også sosiale kostnader.
+Noen av KI-leverandørene bruker underleverandører i lavkostland som gir sine ansatte dårlig lønn.
+De ansatte hos underleverandørene kan også ha midlertidige stillinger med dårlige arbeidsvilkår.
+Noen er kritiske til at KI-leverandørene bruker enorme beløp på å bygge datasentre,
+men ikke betaler menneskene som er med på å lage modellene skikkelig.</p>
+<p>En annen utfordring er at ulik tilgang til KI-tjenester kan forsterke eksisterende forskjeller mellom studenter.
+De som har god økonomi kan abonnere på kostbare tjenester med høyere kapasitet,
+bedre kvalitet og ekstra funksjoner.
+Studenter med dårligere økonomi må derimot kanskje nøye seg med gratisversjoner av verktøyene.</p>
+<p>Liknende problemstillinger ser vi ellers i verden, KI er ikke et unntak.
+Som enkeltperson kan du kanskje ikke gjøre mye for å redusere de sosiale kostnadene forbundet med KI-teknologien,
+men du kan i alle fall bidra ved å være en opplyst, bevisst og ansvarlig bruker av teknologien.</p>
+<p>Samtidig ønsker UiO å bidra til å redusere disse forskjellene ved å tilby gode og tilgjengelige KI-tjenester for alle ansatte og studenter.
+UiO følger nøye med på utviklingen av europeiske og nordiske språkmodeller som er bygget under mer etisk forsvarlige rammer, og har som mål å ta i bruk og tilby flere slike løsninger framover.</p>
+</section>
+<span id="document-module4/ki-og-kognisjon"></span><section id="ikke-gjor-deg-avhengig-av-ki">
+<h2>Ikke gjør deg avhengig av KI</h2>
+<p>At KI kan ta over store deler av det kognitive arbeidet vårt, er både praktisk og besnærende.
+I dette kurset foreslår vi at KI kan hjelpe deg med idémyldring, planlegging og tekstproduksjon. Men hvor langt bør denne hjelpen egentlig gå?</p>
+<p>Hvis vi stadig overlater vurderinger, strukturering og formulering til KI, risikerer vi at vi etter hvert stoler mer på KI-ens analyser enn på egne faglige og menneskelige vurderinger.
+Det kan igjen svekke vår egen tålmodighet og utholdenhet i møte med arbeid som krever konsentrasjon, kritisk refleksjon og dyp tenkning. Det finnes ingen enkel løsning for dette, men noen grunnleggende prinsipper er viktige å minne seg selv på:</p>
+<ul class="simple">
+<li>Bruk KI som et verktøy for å styrke din egen tenkning, ikke som en snarvei som på sikt svekker din faglige utholdenhet.</li>
+<li>Ikke ty til KI av ren refleks. Tenk selv først, og bruk KI til å utfordre, utvide eller kvalitetssikre egne ideer.</li>
+<li>Tenk på hjernen som en muskel: Den må brukes og utfordres for å vedlikeholdes og utvikles.</li>
+</ul>
+<p>Som kunnskapsinstitusjon er UiO avhengige av at ansatte har kritisk sans, faglig dømmekraft og innehar selvstendig tenkning.
+KI kan være et kraftfullt støtteverktøy, men det kan aldri erstatte din egen kunnskap, erfaring og vurderingsevne.</p>
+</section>
+<span id="document-module4/datasikkerhet"></span><section id="datasikkerhet">
+<h2>Datasikkerhet</h2>
+<p>Før du bruker en KI-tjeneste til å behandle tekst, dokumenter eller andre opplysninger er det to ting du må tenke på:</p>
+<ol class="arabic simple">
+<li>Er KI-tjenesten godkjent av UiO?</li>
+<li>Hvilken dataklasse har informasjonen du vil bruke?</li>
+</ol>
+<p>Hvis KI-tjenesten <em>ikke</em> er godkjent av UiO, kan du bare behandle <em>grønne data</em>. Dette gjelder uansett hvordan du bruker tjenesten, for eksempel når du</p>
+<ul class="simple">
+<li>limer inn tekst i en chat</li>
+<li>laster opp et dokument</li>
+<li>bruker en KI-assistent</li>
+<li>ber KI oppsummere, oversette eller bearbeide innhold.</li>
+</ul>
+<p>De fleste KI-tjenester der ute sender dataene dine videre til eksterne leverandører. Da kan opplysningene dine bli lagret eller behandlet utenfor UiO sin kontroll. Det unngår du derimot hvis du velger en av <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">UiO sine godkjente KI-tjenester <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+<p>Det viktigste du gjør for å ivareta datasikkerheten er derfor å velge en godkjent KI-tjeneste, og kontrollere hvilken dataklasse tjenesten kan behandle. Du skal lære er om UiO sine KI-tjenester i kapittel 5.</p>
+<section id="uio-sin-dataklassifisering">
+<h3>UiO sin dataklassifisering</h3>
+<p>UiO sine KI-tjenester godkjent for ulike typer data. Dette er tydelig markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av hvor stort beskyttelsesbehov dataene dine har.</p>
+<p>Nedenfor finner du en oversikt over dataklassene med eksempler på hva de type informasjon som hører til i de ulike klassene. Du finner utfyllende informasjon på siden <a class="reference external" href="https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html" rel="noreferrer" target="_blank">Klassifisering av data og informasjon <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> .</p>
+<p>Bruk oversikten sammen med UiOs nettside om dataklassifisering for å finne ut hvilken dataklasse dataene dine tilhører, og velg deretter en KI-tjeneste som er godkjent for denne dataklassen.</p>
+<div style="display: flex; flex-wrap: wrap; width: min(100%, var(--uio-page-max-width));">
+<div class="grid-row" style="grid-gap: 5%; margin: 1rem 0; width: 100%;">
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #7FBF8C; border-bottom: 3px solid #7FBF8C;">
+<h3>🟢 Grønn: Åpen informasjon</h3>
+<p>«Åpen» benyttes dersom det <em>ikke forårsaker noen skade</em> for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres utilsiktet.</p>
+<p>Informasjon som kan deles med alle.</p>
+<p><strong>For eksempel</strong>:</p>
+<ul class="simple">
+<li>mange offentlige nettsider</li>
+<li>publiserte forskningsdata</li>
+<li>offentlige dokumenter</li>
+<li>open access-artikler</li>
+</ul>
+</div>
+</div>
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #E8C46A; border-bottom: 3px solid #E8C46A;">
+<h3>🟡 Gul: Begrenset informasjon</h3>
+<p>«Begrenset» benyttes dersom det <em>vil kunne forårsake en viss skade</em> for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres utilsiktet.</p>
+<p><strong>For eksempel</strong>:</p>
+<ul class="simple">
+<li>personopplysninger</li>
+<li>studentoppgaver</li>
+<li>dokumenter på Canvas eller lignende plattformer</li>
+<li>forelesningsnotater</li>
+<li>forskningsartikler bak betalingsmur</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; width: min(100%, var(--uio-page-max-width));">
+<div class="grid-row" style="grid-gap: 5%; margin: 1rem 0; width: 100%;">
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #DE8A8A; border-bottom: 3px solid #DE8A8A;">
+<h3>🔴 Rød: Fortrolig informasjon</h3>
+<p>«Fortrolig» benyttes hvis det <em>vil kunne forårsake skade</em> for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner hvis informasjonen blir kjent for uvedkommende eller endres utilsiktet.</p>
+<p>Informasjon som kan være tilgjengelig, men bare for de med godkjent tilgang.</p>
+<p><strong>For eksempel</strong>:</p>
+<ul class="simple">
+<li>sensitive personopplysninger</li>
+<li>helseinformasjon</li>
+<li>kommende eksamensspørsmål</li>
+</ul>
+</div>
+</div>
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #57575C; border-bottom: 3px solid #57575C;">
+<h3>⚫ Svart: Strengt fortrolig informasjon</h3>
+<p>«Strengt fortrolig» benyttes dersom det <em>vil kunne forårsake betydelig skade</em> for offentlige interesser, universitetet, enkeltperson eller samarbeidspartner at informasjonen blir kjent for uvedkommende eller endres utilsiktet.</p>
+<p>Informasjon med svært begrenset tilgang.</p>
+<p><strong>For eksempel</strong>:</p>
+<ul class="simple">
+<li>store mengder røde data</li>
+<li>svært konfidensielle forskningsdata</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p>Dataklassen forteller deg hvilke KI-tjenester du kan bruke.
+Inneholder dataene personopplysninger, gjelder personvernreglene i tillegg.</p>
+</section>
+</section>
+<span id="document-module4/personvern"></span><section id="personvern">
+<h2>Personvern</h2>
+<p>Personopplysninger er opplysninger som kan knyttes til en enkeltperson, for eksempel navn, e-postadresse, studentbesvarelser eller helseinformasjon. Skal du behandle personopplysninger i KI, eller hvilket som helst annet IT-verktøy, må du forholde deg til personvernreglene. Disse kommer i tillegg til reglene om dataklassifisering og godkjente tjenester.</p>
+<section id="behandling-av-persondata">
+<h3>Behandling av persondata</h3>
+<p>At en tjeneste er godkjent for dataklassen, betyr bare at selve <em>tjenesten</em> er trygg nok.
+Du må i tillegg ha et <a class="reference external" href="https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html" rel="noreferrer" target="_blank">behandlingsgrunnlag <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> for behandlingen du vil gjøre.
+Uten det har du ikke lov, heller ikke i en godkjent tjeneste.</p>
+<p>Før du skal samle inn eller håndtere personopplysninger må du stoppe opp og tenke deg om.</p>
+<ul class="simple">
+<li>Hva er <em>formålet</em> med denne bruken av personopplysninger?</li>
+<li>Hvilken <em>risiko</em> er forbundet med håndteringen av opplysningene?</li>
+<li>Er det <em>nødvendig</em> å behandle alle personopplysningene for å oppnå formålet?</li>
+<li>Er det <em>lov</em> å behandle personopplysningene til det relevante formålet?</li>
+</ul>
+<p>Selv om du har tilgang til andres personopplysninger, betyr det ikke at du har lov til å se på dem når du vil.</p>
+<p>Kanskje er det helt mulig å gjennomføre oppgaven du står overfor med færre eller ingen personopplysninger.
+Dersom du behandler sensitive opplysninger, skjerpes kravene.</p>
+<p>Du kan heller ikke bruke personopplysninger til <em>andre formål</em> enn det de er samlet inn for.</p>
+<p>Et eksempel på når du må være ekstra varsom, er hvis du vil hente ut personopplysninger fra et system for å behandle dem med KI i et annet system (for eksempel din laptop). Har du lov å lagre personopplysningene der du skal behandle de i KI? Er du sikker på at formålet med å behandle dataene er i tråd med det du har lov til?</p>
+<div class="uio-icon-box do">
+<h3>Hva kan du gjøre?</h3>
+<ul class="simple">
+<li>Unngå personopplysninger du ikke trenger. Anonymiserte data eller et oppdiktet eksempel er ofte nok.</li>
+<li>Avklar behandlingsgrunnlaget før du begynner, ikke etterpå.</li>
+<li>Hold deg til formålet opplysningene ble samlet inn for.</li>
+<li>Sjekk at tjenesten er godkjent for dataklassen opplysningene tilhører.</li>
+</ul>
+</div>
+</section>
+</section>
+<span id="document-module4/opphavsrett"></span><section id="opphavsrett">
+<h2>Opphavsrett</h2>
+<p>I tillegg til datasikkerhet og personvern, må du passe på at du ikke bryter med opphavsretten når du bruker en KI-tjeneste.</p>
+<div class="uio-color-box-3">
+<h3>Huskeregler</h3>
+<p>Du kan bruke opphavsrettslig beskyttet materiale i en KI-tjeneste så sant du</p>
+<ol class="arabic simple">
+<li>gjør det til privat bruk,</li>
+<li>ser til at KI-tjenesten ikke trener på materialet og</li>
+<li>respekterer eventuelle begrensninger som rettighetshaveren, slik som et forlag, har satt.</li>
+</ol>
+</div>
+<p>Etter åndsverkloven har den som skaper et åndsverk, opphavsrett til verket.
+For at noe skal være et «åndsverk» må det være originalt.
+Det kreves ikke en høy grad av innsats for at originalitetskravet skal være oppfylt.
+Ofte vil, for eksempel, til og med kortere tekster være opphavsrettslig beskyttet.</p>
+<section id="privat-bruk-av-opphavsrettslig-beskyttet-materiale-er-tillatt">
+<h3>Privat bruk av opphavsrettslig beskyttet materiale er tillatt</h3>
+<p>Når vi bruker opphavsrettslig beskyttet materiale i en KI-tjeneste, enten i en instruksjon eller ved å laste det opp i tjenesten, lager vi en kopi av det.
+I utgangspunktet er det bare rettighetshaveren som har rett til å lage en kopi.
+Du kan likevel ha rett til å bruke opphavsrettslig beskyttet materiale i en KI-tjeneste.
+Forutsetningen er at du bruker materialet <em>privat</em> når du benytter det i en instruksjon eller laster det opp i KI-tjenesten.
+Formålet må verken direkte eller indirekte være kommersielt.
+Denne privatbruksregelen omfatter også personlig <em>yrkesmessig</em> bruk.</p>
+</section>
+<section id="ki-tjenesten-ma-ikke-trene-pa-materialet">
+<h3>KI-tjenesten må ikke trene på materialet</h3>
+<p>Mange KI-tjenester lagrer alt de mottar, enten det er i en instruksjon eller i en opplasting.
+Du må sørge for at KI-tjenesten ikke trener på materialet du gir tjenesten.</p>
+<p>Når du til privat bruk benytter opphavsrettslig beskyttet materiale i en KI-tjeneste, i en instruks eller i en opplasting, er du på tryggest grunn hvis du bruker en
+<a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">KI-tjeneste som er godkjent av UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
+Ingen av KI-tjenestene som er godkjent av UiO trener på materialet du eller andre brukere gir tjenesten.</p>
+<p>Selv om du har lov til å bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, må du være forsiktig med å dele samtaler eller andre typer av data med andre.
+For eksempel kan en Gemini Notebook eller en GPT UiO-assistent deles med andre brukere.
+Slike delingsfunksjoner bør du ikke bruke med opphavsrettslig beskyttet materiale, men det kan være tillatt i enkelte tilfeller.
+Hvis du ønsker å benytte en delingsfunksjon, vær varsom og henvend deg til Universitetsbiblioteket for veiledning.</p>
+<div class="uio-icon-box info">
+<h3>Om lisenser</h3>
+<details>
+<summary><strong>Klikk for å utvide</strong></summary>
+<p>Du skal ikke bruke opphavsrettslig beskyttet materiale i en KI-tjeneste, selv om det er til privat bruk, hvis rettighetshaveren har satt relevante begrensninger.
+Enkelte utgivere av bøker og tidsskrifter, databaseleverandører, osv., setter begrensninger for innlasting og annen type bruk i KI-tjenester av materiale de har publisert.
+Denne typen regler publiseres ofte i en lisens.</p>
+<p>Ofte vil du finne lisensinformasjonen der materialet er publisert eller tilgjengelig.
+En lisens kan for eksempel fremgå av at materialet er merket med «CC», som stammer fra Creative Commons-systemet.
+Bruker du materiale fra Universitetsbiblioteket, kan du for noen ressurser finne lisensen i
+<a class="reference external" href="https://uio.oria.no/" rel="noreferrer" target="_blank">Oria <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>
+ved å klikke på knappen for «Vis lisens».
+Det kan for eksempel være at utgiveren av artikkelen har satt begrensninger for innlasting i KI-tjenester i form av å skrive at det er forbudt å laste den opp i en KI-tjeneste.
+Det må du respektere.
+Er du usikker, henvend deg til Universitetsbiblioteket.</p>
+</details>
+</div>
+</section>
+</section>
+<span id="document-module4/prompt-injection"></span><section id="prompt-injection">
+<h2>Prompt-injection</h2>
+<p>Når en språkmodell får tilgang til eksternt innhold, for eksempel nettsider eller opplastede dokumenter, kan den bli utsatt for prompt-injection.
+Prompt-injection betyr at det er skjulte instruksjoner i innholdet. Instruksjonene kan påvirke svaret eller få modellen til å ignorere det du selv har bedt om. De kan ligge i tekst, bilder eller annet innhold, og kan være vanskelige å oppdage.</p>
+<p>Derfor bør du alltid vurdere risikoen før du lar en språkmodell bruke eksternt innhold, og tilpasse tiltakene til hvor alvorlige konsekvensene blir hvis modellen blir manipulert.</p>
+<div class="uio-icon-box do">
+<h3>Hva kan du gjøre?</h3>
+<ul class="simple">
+<li>Unngå eksternt innhold når risikoen er høy. Tryggest er en KI-tjeneste uten internettsøk, der du bare gir den dokumenter du selv har kontroll på.</li>
+<li>Bruk pålitelige kilder. Kontroller at dokumentene du laster opp, kommer fra en kjent og troverdig avsender.</li>
+<li>Behandle eksternt innhold som upålitelig. Ikke la nettsider eller dokumenter styre modellens oppgaver, og kontroller alltid svaret før du bruker det.</li>
+</ul>
+</div>
+</section>
+<span id="document-module4/retningslinjer-og-policies"></span><section id="retningslinjer-og-policies">
+<h2>Retningslinjer og policies</h2>
+<p>Når du benytter de digitale tjenestene til UiO, har du plikt til å sette deg inn i de lover og regler som gjelder din bruk.
+KI er en IT tjeneste, og for alle IT-tjenester gjelder <a class="reference external" href="https://www.uio.no/om/regelverk/it/it-reglement.html" rel="noreferrer" target="_blank">UiO sitt IT reglement <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
+Disse setter grunnleggende føringer for all bruk av IT ved UiO.</p>
+<p>For KI gjelder i tillegg UiO sine <a class="reference external" href="https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html" rel="noreferrer" target="_blank">KI retningslinjer <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
+Som en del av disse har vi også et eget sett med <a class="reference external" href="https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html" rel="noreferrer" target="_blank">retningslinjer for agentisk KI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
+Dette kurset dekker de fleste av punktene i UiO sine KI-retningslinjer, men ikke alle. Du må derfor sette deg inn i disse.</p>
+<p>Fordi KI er i stadig endring, kreves det mer av den enkelte for å holde seg oppdatert.
+Besøk derfor jevnlig <a class="reference external" href="https://www.uio.no/tjenester/ki/" rel="noreferrer" target="_blank">UiO sine KI sider <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> for å få med deg det nyeste innen KI-retningslinjer og anbefalt bruk.</p>
+<div class="uio-color-box-3">
+<h3>Husk</h3>
+<p>Du er ansvarlig for hvordan du bruker KI-verktøy, selv om UiO tilbyr dem.</p>
+</div>
+</section>
+<span id="document-module4/oppsummering-ansvarligbruk"></span><section id="oppsummering-kapittel-4">
+<h2>Oppsummering kapittel 4</h2>
+<p>I dette kapitlet har du lært om viktige og utfordrende miljømessige og etiske sider ved bruk av kunstig intelligens.
+Du har også fått frisket opp hvilke regler og retningslinjer du skal følge når du bruker teknologien.
+Med økt kunnskap om dette kan du bruke KI på en mer ansvarlige måte.</p>
+<div class="uio-icon-box reflect">
+<h3>Test deg selv</h3>
+<p>Diskuter med deg selv eller en kollega.</p>
+<ul class="simple">
+<li>Hva kan du gjøre for å redusere miljøpåvirkningen fra KI-tjenester i arbeidshverdagen din?</li>
+<li>Hvilke typer data håndterer du i arbeidshverdagen din? Forsøk å klassifisere dem etter dataklassene.</li>
+<li>Tenk over hvordan du bruker KI. Har du vært usikker på om det du laster opp i KI er i tråd med regler og policy på UiO?</li>
+<li>Reflekter over hvordan du bruker KI. Styrker eller svekker KI deg faglig?</li>
+</ul>
+</div>
+<section id="repetisjon">
+<h3>Repetisjon</h3>
+<ul class="simple">
+<li><strong>KI er en ressurskrevende teknologi.</strong> Den enorme etterspørselen etter KI fører til stort forbruk av strøm, vann og arealer.
+Du kan redusere belastningen ved å være bevisst på når du bruker KI, velge en mindre språkmodell til enkle oppgaver og starte
+en ny samtale når samtalen begynner å bli lang.</li>
+<li><strong>Det er sosiale kostnader knyttet til KI.</strong> Som all storindustri har KI sosiale kostnader, både under produksjon og ved bruk.</li>
+<li><strong>Bruk KI-tjenester som er godkjent av UiO.</strong> De fleste KI-tjenester er skytjenester, og data du deler kan komme på avveie.
+Ved å bruke de godkjente KI-tjenestene til UiO er du trygg på at dette ikke skjer.</li>
+<li><strong>Personopplysninger krever mer enn en godkjent tjeneste.</strong> Personvernreglene gjelder uansett hvilket verktøy du bruker.
+Du må ha et behandlingsgrunnlag, og du kan ikke bruke opplysningene til andre formål enn det de er samlet inn for.</li>
+<li><strong>Opphavsretten gjelder også når du bruker KI.</strong> Mange KI-tjenester lagrer teksten de mottar og kan bruke den til å trene nye
+modeller. Dette er du beskyttet mot dersom du bruker de UiO godkjente KI-tjenestene.
+Du må allikevel alltid sjekke om materialet du laster opp tillater opplasting til KI.</li>
+<li><strong>Eksternt innhold kan inneholde skjulte instruksjoner.</strong> Nettsider og dokumenter du lar en språkmodell lese, kan forsøke å styre den.
+Dette kalles prompt-injection. Bruk kilder du stoler på, og kontroller alltid svaret før du bruker det.</li>
+<li><strong>Du er ansvarlig for hvordan du bruker KI-verktøy</strong>, og må sette deg inn i regelverket. UiOs IT-reglement gjelder også for KI, og i tillegg har UiO egne
+KI-retningslinjer som må følges.</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Neste kapittel</h3>
+<p>Du vet nå hva du bør ta hensyn til for å bruke KI på en ansvarlig måte. I neste kapittel ser vi på hvilke KI-tjenester
+du kan bruke ved UiO, og hva de ulike tjenestene egner seg til.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module5/ki-tjenester-ved-uio"></span><section id="ki-tjenester-ved-uio">
+<h2>KI-tjenester ved UiO</h2>
+<p>Kapittel 5 handler om godkjente KI-verktøy på UiO. I dette kapittelet lærer du hva verktøyene kan brukes til, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.</p>
+<dl class="simple">
+<dt>Verktøyene som presenteres i kapittelet er:</dt><dd><ul class="simple">
+<li>GPT UiO</li>
+<li>Autotekst og nettskjemadiktafon</li>
+<li>Gemini og Gemini notebook</li>
+<li>Microsoft Copilot chat</li>
+</ul>
+</dd>
+</dl>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="bordered reference internal image-reference" href="_images/4.1-AI-tools.png"><img alt="Illustrasjon av en verktøyboks" class="bordered" src="_images/4.1-AI-tools.png" style="width: 70%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Læringsmål</h3>
+<ul class="simple">
+<li>Jeg vet hvilke UiO-data som kan deles med ulike godkjente KI-tjenester</li>
+<li>Jeg kan velge riktig KI-tjeneste basert på behov og klassifisering av data</li>
+<li>Jeg vet hvordan jeg får tilgang til og bruker ulike godkjente KI-verktøy</li>
+</ul>
+</div>
+</section>
+<span id="document-module5/uio-ki-tjenester-video"></span><section id="en-oversikt-over-uio-sine-viktigste-ki-tjenester">
+<h2>En oversikt over UiO sine viktigste KI tjenester</h2>
+<p>I denne videoen får du en kort presentasjon av et utvalg KI-tjenester på UiO.
+Videoen er rettet mot studenter, men er like relevant for ansatte.</p>
+<iframe allow="autoplay" allowfullscreen="allowfullscreen" aria-description="KI-verktøy-ved-UiO-01" aria-label="Panopto Embedded Video Player" loading="lazy" src="https://uio.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ddd1e4c2-9af5-4f79-a809-b46700a28c7e&amp;autoplay=false&amp;offerviewer=false&amp;showtitle=false&amp;showbrand=false&amp;captions=false&amp;interactivity=all" style="width: 650px; height: 365px; border: 1px solid #464646;"></iframe>
+<p><a href="https://www.hf.uio.no/hf-studio">Produsert av HF:Studio</a> for kurset <a href="https://www.uio.no/studier/emner/hf/ifikk/FIL1010/">FIL1010</a>: Redelig bruk av kunstig intelligens i høyere utdanning<p></p></p></section>
+<span id="document-module5/uios-godkjente-ki-tjenester"></span><section id="uios-godkjente-ki-tjenester">
+<h2>UiOs godkjente KI-tjenester</h2>
+<p>Når du skal bruke KI-tjenester på <em>UiO-data</em>, skal de <em>godkjente</em> tjenestene brukes.
+Grunnen til det er at UiO har databehandleravtale med leverandørene for disse tjenestene.
+Det sikrer at dataene som utveksles med tjenestene blir behandlet på en slik måte at GDPR-kravene overholdes.</p>
+<section id="hva-er-problemet-med-ikke-godkjente-tjenester">
+<h3>Hva er problemet med ikke-godkjente tjenester?</h3>
+<p>Hvis du bruker tjenester direkte fra private aktører som for eksempel ChatGPT eller Claude Code, så kan leverandørene i større grad gjøre hva de vil med dine data.
+Selv om du kan reservere deg mot treningsbruk i tjenester som ChatGPT, er det en stor forskjell på en forbrukerkonto og en løsning der virksomheten har en databehandleravtale på plass.</p>
+</section>
+<section id="er-det-forbudt-a-bruke-andre-ki-verktoy-enn-de-godkjente">
+<h3>Er det forbudt å bruke andre KI-verktøy enn de godkjente?</h3>
+<p>Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-verktøy enn de som er godkjent av UiO.
+På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er det faktisk forbudt å bruke andre KI-verktøy enn de som er UiO-godkjent.
+Du må derfor være ekstra påpasselig med hva du bruker tjenester til og hvilke tjenester du bruker.</p>
+<p>Dette betyr altså at generelle spørsmål kan være greit, men ikke om du sender med informasjon om for eksempel UiOs systemer eller ansatte, eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informasjon som UiO eier.</p>
+<div class="uio-color-box-3">
+<h3>Viktig</h3>
+<p>Aldri del UiO-data med KI-tjenester som ikke er godkjent ved UiO.</p>
+</div>
+<p>La oss se nærmere på de forskjellige KI-tjenestene som UiO tilbyr slik at du kan velge riktig tjeneste for ditt formål.</p>
+</section>
+</section>
+<span id="document-module5/gpt-uio"></span><section id="gpt-uio">
+<h2>GPT UiO</h2>
+<p>GPT UiO er UiO sin egenutviklede personverntrygge KI-chat.
+Den fungerer stort sett som andre KI-chat tjenester: Du kommuniserer med språkmodellen via et chat-vindu.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="bordered reference internal image-reference" href="_images/gpt-uio-skjermdump.png"><img alt="Skjermdump av GPT UiO sitt chatte-vindu" class="bordered" src="_images/gpt-uio-skjermdump.png" style="width: 80%;"/>
+</a>
+</figure>
+<p>Den store fordelen med å bruke GPT UiO er at data som lagres, blir lagret på UiOs egne servere.
+Navnet ditt og brukernavnet ditt deles ikke med andre selskaper, bare UiO har tilgang til denne informasjonen.
+I tillegg brukes ikke samtalene dine til videre trening av språkmodellene.
+Og sist men ikke minst: du kan bruke GPT UiO med opptil røde data, men bare hvis du velger egnet modell.</p>
+<p>På de neste sidene skal vi lære mer om to viktige funksjoner ved GPT UiO, nettopp muligheten for å velge blant flere språkmodeller og GPT UiO sine KI assistenter.</p>
+</section>
+<span id="document-module5/gpt-uio-hvilken-modell-skal-du-velge"></span><section id="gpt-uio-hvilken-modell-skal-du-velge">
+<h2>GPT UiO: hvilken modell skal du velge?</h2>
+<p>I GPT UiO kan du velge mellom flere ulike språkmodeller - altså hvilken «hjerne» tjenesten bruker.
+Modellene har forskjellig størrelse, funksjoner og bruksområder.</p>
+<p>En spesielt viktig forskjell mellom modellene er om de kjører i skyen (OpenAI sine GPT-modeller i Microsoft Azure skyen) eller <em>lokalt</em>.
+Med <em>lokalt</em> mener vi på servere som eies og driftes av UiO eller vår samarbeidspartner NTNU.
+Velger du en lokal modell går ingen data ut av UiO/NTNU.</p>
+<p>De lokale språkmodellen er gode, men de er <em>mindre</em> enn de som kjører i skyen.
+Det betyr at dersom oppgaven du skal løse er veldig kompleks, så kan en sky-modell muligens gi deg et resultat av bedre kvalitet.</p>
+<div class="uio-color-box-3">
+<h3>Kontrollspørsmål for å velge modell</h3>
+<ul class="simple">
+<li>Er svaret godt nok med en mindre modell? Bra, gå for den mindre modellen og spar ressurser!</li>
+<li>Ikke god nok kvalitet på svaret? Bytt fra en mindre lokal modell til en større skymodell.</li>
+<li>Trenger du ekstra beskyttelse på dataene dine? Velg en lokal modell som støtter opptil røde data.</li>
+<li>Skal du behandle bilder i tillegg til tekst? Velg en modell som støtter bilder.</li>
+</ul>
+</div>
+<p>I GPT UiO sin modellvelger kan du lese litt om de forskjellige modellene, og se hvilken dataklassifisering hver enkelt er godkjent for.</p>
+<div class="uio-color-box-3">
+<h3>Bonusinnhold</h3>
+<details>
+<summary><strong>GPT UiO sin modellvelger</strong></summary>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-modellvelger.png"><img alt="Meny i GPT som viser de forskjellige språkmodellene du kan velge blant" src="_images/gpt-modellvelger.png" style="width: 75%;"/>
+</a>
+</figure>
+<p>Klikk på nedover-pilen (markert i rødt) for å se hvilke språkmodeller du kan velge mellom.</p>
+</details>
+<details>
+<summary><strong>Eksempel på språkmodeller i modellvelgeren</strong></summary>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-uio-modeller.png"><img alt="Meny i GPT som viser de forskjellige språkmodellene du kan velge blant" src="_images/gpt-uio-modeller.png" style="width: 75%;"/>
+</a>
+</figure>
+<p>Når du klikker på modellvelgeren ser du en liste over de språkmodellene GPT UiO tilbyr.
+Listen oppdateres når nye modeller eller versjoner blir tilgjengelig.</p>
+<p>For hver modell er det indikert hvilken data-kategori den støtter, om den er en eksperimentell modell for testing (kolbe), i tillegg til om modellen støtter bilder.</p>
+<p>Det står også en liten beskrivelse på hva modellen egner seg til.</p>
+<p>Og sist men ikke minst, om modellen kjører lokalt (hos UiO i Educloud eller hos NTNU), gjør den ikke det så kjører den i skyen.</p>
+</details>
+</div>
+</section>
+<span id="document-module5/gpt-uio-ki-assistenter"></span><section id="gpt-uio-ki-assistenter">
+<h2>GPT UiO: KI-assistenter</h2>
+<p>I GPT UiO kan du lage dine egne KI-assistenter.
+En KI-assistent er lagrede instruksjoner som du kan bruke flere ganger.
+Disse instruksjonene kan være enkle eller komplekse.</p>
+<p>Du kan for eksempel gi instruks om at en tekst skal «oversettes til norsk med et formelt fagspråk og at forkortelser og titler på tidsskrifter ikke skal oversettes.».
+Dette er en enkel KI-assistent som kan spare deg tid hvis du ofte skal be KI-en om å oversette slik.</p>
+<p>En kompleks assistent inneholder mange instruksjoner, for eksempel detaljerte instruksjoner for hvilken rolle assistenten skal ha, utførlig hvordan den skal svare, og kanskje også i hvilket format du vil ha svaret.
+Et eksempel er å lage en KI-assistent som opptrer som en erfaren studieadministrativ rådgiver ved UiO:
+Den skal alltid forklare regelverk på en enkel måte, foreslå standardformuleringer til e-poster, og gi svarene strukturert med overskrifter og punktlister slik at de kan kopieres rett inn i saksdokumenter.</p>
+<p>GPT UiO har en egen <em>assistent</em>-funksjon: hvis du bruker en instruksjon ofte, kan det være lurt å lagre den i en assistent instruksjon (også kalt <em>pre-prompt</em>).
+Da kan du raskt starte en samtale basert på instruksjonen, uten å måtte skrive den på nytt.
+Det kan være nyttig til oppgaver du gjør ofte, for eksempel oversetting eller å få kritiske tilbakemeldinger på tekst.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-uio-assistent.png"><img alt="Skjermdump av GPT UiO sin assistent funksjon" src="_images/gpt-uio-assistent.png" style="width: 75%;"/>
+</a>
+</figure>
+<p>Når du lager assistenten kan du kan blant annet:</p>
+<ul class="simple">
+<li>laste opp filer, slik at modellen kan søke i dem og bruke relevant informasjon i svarene sine</li>
+<li>velge en spesifikk språkmodell som assistenten skal benytte</li>
+<li>dele assistenten med andre, for eksempel kollegaer eller studenter.</li>
+</ul>
+<p>UiO tilbyr også noen utvalgte kvalitetssikrede KI-assistenter som mange kan ha nytte av.</p>
+<section id="eksempel-pa-en-assistent-instruksjon">
+<h3>Eksempel på en assistent instruksjon</h3>
+<p>Etter å ha klikket «Opprett KI-assistent» legger man inn sin assistent instruksjon.
+Her ser du et eksempel på en slik.
+Husk å bruke de gode instruksjonsteknikkene du har lært når du prøver dette selv!</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-uio-assistent-admin.png"><img alt="Eksempel på en assistent instruksjon for møtereferater" src="_images/gpt-uio-assistent-admin.png" style="width: 75%;"/>
+</a>
+</figure>
+</section>
+</section>
+<span id="document-module5/oppsummert-om-gpt-uio"></span><section id="oppsummert-om-gpt-uio">
+<h2>Oppsummert om GPT UiO</h2>
+<div class="uio-color-box-3">
+<h3>Bruk GPT UiO hvis du</h3>
+<ul class="simple">
+<li>trenger en trygg og god chat tjeneste</li>
+<li>vil bruke en UiO GPT KI assistent som en kollega har delt med deg, eller prøve en av UiO sine utvalgte KI assistenter</li>
+<li>trenger å håndterer røde data (velg en modell som støtter røde data)</li>
+<li>vil være sikker på at ingen av dine data sendes til skyen (velg en lokal modell)</li>
+<li>vil enkelt kunne bytte mellom større modeller (OpenAI’s GPT modeller) som kjører i skyen eller en av de mindre åpne modellene som kjører på UiO eller NTNU sine IT-systemer</li>
+</ul>
+</div>
+</section>
+<span id="document-module5/autotekst-og-nettskjema-diktafon"></span><section id="autotekst-og-nettskjema-diktafon">
+<h2>Autotekst og Nettskjema-diktafon</h2>
+<section id="autotekst">
+<h3>Autotekst</h3>
+<p>Autotekst er en UiO-utviklet tjeneste som transkriberer tale til tekst ved hjelp av OpenAI sin automatiske språkgjenkjenningsmodell <a class="reference external" href="https://openai.com/nb-NO/index/whisper/" rel="noreferrer" target="_blank">Whisper <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
+Tjenesten kjører i sikre omgivelser lokalt på UiOs IT-systemer, og er derfor godkjent for opptil røde data.</p>
+<p>Du kan bruke Autotekst til å transkribere opptak av møter, av forelesninger eller av intervjuer for å nevne noen bruksområder.
+Lyden som Autotekst transkriberer, kan komme fra lydfiler du laster opp, for eksempel fra Panopto eller Zoom.
+Autotekst kan også automatisk transkibere fra UiOs egenutviklede diktafon-app, Nettskjema-diktafon (mer om denne nedenfor).</p>
+<p>Verdt å merke seg: Whisper er god på norsk, takket være Nasjonalbibliotekets norsk-trente Whisper-modell.</p>
+</section>
+<section id="tsd-autotekst">
+<h3>TSD-Autotekst</h3>
+<p>I tillegg til den «vanlige» Autotekst tjenesten har UiO også TSD-Autotekst.
+TSD står for Tjenester for Sensitive Data og er UiO sin sikre plattform som støtter opptil sorte data.
+Her er det trygt å sende opptak og få transkribert helseintervjuer eller annet som anses som sorte data.</p>
+</section>
+<section id="nettskjema-diktafon">
+<h3>Nettskjema-diktafon</h3>
+<p>Dette er en mobilapp utviklet av UiO, som benytter Autotekst eller TSD-Autotekst i bakkant.
+Med Nettskjema-diktafon kan du gjøre opptak som sendes trygt og automatisk fra din telefon til (TSD-)Autotekst gjennom UiO sin Nettskjema-tjeneste.</p>
+<p>Avhengig av om opptaket er knyttet et Nettskjema i TSD eller ikke, støtter tjenesten opptil sorte data.</p>
+</section>
+<section id="nar-passer-det-a-bruke-autotekst-eller-tsd-autotekst">
+<h3>Når passer det å bruke Autotekst eller TSD-Autotekst?</h3>
+<p>Når du har lyd- eller videopptak (møteopptak, forelesninger, intervjuer) som du vil transkribere.</p>
+<div class="uio-color-box-3">
+<h3>Bruk Autotekst hvis dataene klassifiseres som</h3>
+<p>åpen 🟢, begrenset 🟡 eller fortrolig 🔴 nivå.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Bruk TSD-Autotekst hvis dataene klassifiseres som</h3>
+<p>strengt fortrolig ⚫.</p>
+</div>
+</section>
+</section>
+<span id="document-module5/gemini-og-notebooklm"></span><section id="gemini-og-gemini-notebook">
+<h2>Gemini og Gemini Notebook</h2>
+<p>Gemini og Gemini Notebook er to KI-tjenester fra Google som UiO tilbyr til studenter og ansatte.
+Språkmodellen som brukes i bakgrunnen heter også Gemini, og er en serie språkmodeller utviklet av Google DeepMind.
+Begge tjenestene kjører i Google Cloud, altså utenfor UiOs egne IT-systemer.</p>
+<p>Begge tjenestene er omfattet av UiOs databehandleravtale med Google.
+Det betyr blant annet at informasjonen du legger inn i tjenestene (for eksempel instruksjoner og filer) ikke brukes til å trene KI-modellene videre.</p>
+<p>Du kan jobbe med opptil gule data i både Gemini og Gemini Notebook, i tråd med UiOs interne klassifisering av informasjon.</p>
+<div class="uio-color-box-3">
+<h3>Viktig når du bruker Gemini og Gemini Notebook</h3>
+<p>For å bruke Gemini-tjenestene må du:</p>
+<ol class="arabic simple">
+<li>ha en konto i Google Workspace tilknyttet UiO</li>
+<li>være spesielt oppmerksom på at du er logget inn med din UiO Google konto når du bruker tjenestene</li>
+</ol>
+<p>Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. Tjenesten kjører ikke på UiO sine systemer.</p>
+<ul class="simple">
+<li>Gemini og Gemini Notebook er kun godkjent for opptil gule data 🟡</li>
+<li>Last ikke opp materiale som kan identifisere eller eksponere andre personer (for eksempel studentbesvarelser, pasientopplysninger, intervjuer, personlige bilder eller lydopptak)</li>
+<li>Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)</li>
+</ul>
+</div>
+<section id="gemini">
+<h3>Gemini</h3>
+<p>Gemini er Googles generelle KI-chat.</p>
+<p>Sammenlignet med GPT UiO er Gemini bedre egnet til faktasøk, fordi den kan hente oppdatert informasjon fra åpne nettsider.
+Gemini kan også lage mange typer filer, for eksempel: pdf, Powerpoint-presentasjoner eller Excel-regneark for å nevne noen.</p>
+<p>I tillegg kan Gemini kobles til kilder du har lagret i Gemini Notebook (se avsnittet nedenfor).</p>
+<div class="uio-color-box-3">
+<h3>Bruk Gemini hvis du</h3>
+<ul class="simple">
+<li>trenger en kraftig KI-modell som kan generere bilder</li>
+<li>vil laste opp, bearbeide eller generere filer</li>
+<li>vil bruke kildene du allerede har lagt inn i en Gemini Notebook</li>
+<li>trenger internettsøk</li>
+<li>skal legge inn informasjon som er klassifisert som grønn 🟢 eller gul 🟡</li>
+</ul>
+</div>
+</section>
+<section id="gemini-notebook">
+<h3>Gemini Notebook</h3>
+<p>Gemini Notebook er en KI-assistent fra Google som er spesialisert for å arbeide med dokumenter og egne kilder.</p>
+<p>Notebooken svarer ikke på spørsmål før du har lastet opp informasjon den kan bruke som kilde.
+Du må derfor først bygge opp din egen «kunnskapsbank» for hver Notebook, som kan inneholde:</p>
+<ul class="simple">
+<li>dokumenter eller innlimt tekst</li>
+<li>nettsider</li>
+<li>opptak fra forelesninger</li>
+</ul>
+<p>Når Gemini Notebook svarer på forespørslene dine, forsøker den å være tro mot kildene du har lagt inn.
+Du kan derfor ofte få mer presise og kildetro svar enn ved bruk av GPT UiO.
+Du må likevel alltid kontrollere resultatet Gemini Norebook gir deg, slik som du gjør med alt du får fra en KI.</p>
+<p>Gemini Notebook har også flere nyttige funksjoner, for eksempel til å:</p>
+<ul class="simple">
+<li>lage oppsummeringer i tekst eller lyd</li>
+<li>lage quizzer</li>
+<li>lage presentasjoner</li>
+</ul>
+<p>Husk at når du arbeider med dokumenter er det viktig at du har kontroll på opphavsretten til materialet: last ikke opp dokumenter du ikke har rettigheter til å dele.</p>
+<div class="uio-color-box-3">
+<h3>Bruk Gemini Notebook hvis du</h3>
+<ul class="simple">
+<li>skal jobbe mye med dokumenter og egne kilder</li>
+<li>vil genere forskjellige typer ressurser som quizzer eller podcaster basert på dine dokumenter og kilder</li>
+<li>trenger websøk</li>
+<li>skal legge inn informasjon som er klassifisert som grønn 🟢 eller gul 🟡</li>
+</ul>
+</div>
+</section>
+</section>
+<span id="document-module5/microsoft-copilot-chat"></span><section id="microsoft-copilot-chat">
+<h2>Microsoft Copilot Chat</h2>
+<p>Microsoft Copilot Chat ved UiO fungerer som en vanlig chattetjeneste med tilgang til nettsøk.
+Tjenesten bruker GPT-språkmodellene fra  <a class="reference external" href="https://openai.com/nb-NO/" rel="noreferrer" target="_blank">OpenAI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.
+Chatten kan arbeide både med tekst (for eksempel lage et utkast til en PowerPoint-presentasjon), bilder og video.
+Tjenesten har flere innebygde forslag til instruksjoner (prompt gallery) som hjelper deg i gang, og er derfor godt egnet hvis du ønsker KI-assistanse som er intuitiv og enkel å bruke.</p>
+<p>På UiO er Microsoft Copilot Chat godkjent kun for bruk med grønne data.
+Du må derfor være spesielt forsiktig når du benytter tjenesten.
+Vær nøye med å ikke dele personsensitiv eller konfidensiell informasjon med Microsoft Copilot Chat.</p>
+<div class="uio-color-box-3">
+<h3>Viktig når du bruker Microsoft Copilot Chat</h3>
+<p>For å bruke Microsoft Copilot Chat må du:</p>
+<ol class="arabic simple">
+<li>være aktiv bruker av MS 365</li>
+<li>være spesielt oppmerksom på at du er logget inn med din UiO Microsoft konto når du bruker tjenesten.</li>
+</ol>
+<p>Når du bruker tjenestene, skal du være særlig forsiktig med hva du laster opp. Tjenesten kjører ikke på UiO sine systemer.</p>
+<ul class="simple">
+<li>Microsoft Copilot Chat er kun godkjent for opptil grønne data 🟢</li>
+<li>Ingen personopplysninger eller annen informasjon som ikke er åpent tilgjengelig må lastes opp i Microsoft Copilot Chat.</li>
+<li>Last ikke opp annen informasjon som av sikkerhetsgrunner ikke skal deles utenfor UiOs egne tjenester (for eksempel graderte eller interne dokumenter, forskningsdata med særskilte krav til behandling)</li>
+</ul>
+</div>
+<div class="uio-icon-box info">
+<h3>KI-produktene fra Microsoft</h3>
+<p>Alle Microsoft sine KI-produkter heter nå Microsoft Copilot, men ved UiO har vi kun aktivert chatte-funksjonen.
+Ved UiO er Microsoft Copilot Chat ikke integrert direkte i de andre Microsoft-produktene.
+Det betyr at den såkalte agent-funksjonen ikke er aktivert, og du ser derfor ikke Copilot-ikonet eller KI-funksjoner inne i for eksempel PowerPoint eller Word.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/ms-copilot.png"><img alt="MS Copilot ikon" src="_images/ms-copilot.png" style="width: 10%;"/>
+</a>
+</figure>
+<p>Du kan likevel bruke Microsoft Copilot (Chat) til blant annet å:</p>
+<ul class="simple">
+<li>få hjelp til å lage en PowerPoint-presentasjon</li>
+<li>laste opp en presentasjon og be Copilot lage illustrasjoner</li>
+<li>få oppsummeringer eller andre typer analyser av innholdet</li>
+</ul>
+<p>Det du ikke kan, er å be Copilot gjøre endringer direkte i en fil fra selve
+PowerPoint-, Word- eller andre Microsoft-applikasjoner (agent funksjonaliteten til Microsoft Copilot er ikke skrudd på hos UiO).
+Slike endringer må du fortsatt gjøre selv i programmet, basert på forslagene du får fra Copilot (Chat).</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Bruk Microsoft Copilot Chat hvis du</h3>
+<ul class="simple">
+<li>skal jobbe med grønne 🟢 data, det vil si ikke laste opp noe som omhandler personer eller data som ikke må komme på avveie</li>
+<li>trenger websøk</li>
+<li>vil ha en KI-chat som kan lage og jobbe med flere typer filer</li>
+<li>vil ha en KI-chat som er enkel å bruke og hjelper deg igang</li>
+</ul>
+</div>
+</section>
+<span id="document-module5/oppsummering-uio-tjenester"></span><section id="oppsummering-kapittel-5">
+<h2>Oppsummering kapittel 5</h2>
+<p>I dette kapittelet har vi lært om de godkjente KI-tjenestene på UiO, hvorfor det er viktig å bruke dem, og hvilke tjenester som passer best til ulike formål.</p>
+<div class="uio-icon-box reflect">
+<h3>Test deg selv</h3>
+<p>Diskuter selv eller med en kollega:</p>
+<ol class="arabic simple">
+<li>Hvilke KI-tjenester er godkjent på UiO?</li>
+<li>Hvorfor er det viktig å bruke dem?</li>
+<li>Hvilke KI-tjenester vil være nyttig for deg og dine arbeidsoppgaver?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Repetisjon</h3>
+<p>Tabellen under gir deg en oversikt over de godkjente KI-tjenestene ved UiO: hva de egner seg til,
+hvilken dataklasse de er godkjent for, og om de kjører på UiOs egne IT-systemer eller i skyen.</p>
+<table class="uio-table docutils align-default" style="width:100%; border-collapse:collapse; table-layout:fixed; border:1px solid #e3e3e3; margin-bottom:1.5em; line-height:1.5;">
+<colgroup>
+<col style="width: 12.5%"/>
+<col style="width: 31.2%"/>
+<col style="width: 16.1%"/>
+<col style="width: 11.6%"/>
+<col style="width: 28.6%"/>
+</colgroup>
+<thead>
+<tr class="row-odd" style="background-color:#f5f5f5; color:#1a1a1a;"><th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Tjeneste</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Bruksområde</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Dataklasse</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Nettsøk</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Skytjeneste eller UiO-tjeneste</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>GPT UiO</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">KI-chat til tekstarbeid. Du kan velge mellom flere språkmodeller og lage og dele egne KI-assistenter. Støtter et utvalg filtyper for opplasting.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Opptil 🔴 rød, men bare med en modell som er godkjent for det</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">UiO-tjeneste. Data lagres hos UiO. De største modellene kjører i skyen (OpenAI i Azure), de mindre lokalt hos UiO eller NTNU.</p></td>
+</tr>
+<tr class="row-odd" style="background-color:#fafafa;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;"><strong>Autotekst</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Transkribering av lyd- og videoopptak, for eksempel møter, forelesninger og intervjuer.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Opptil 🔴 rød</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">UiO-tjeneste. Kjører lokalt på UiOs IT-systemer.</p></td>
+</tr>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>TSD-Autotekst</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Transkribering av opptak som er strengt fortrolige, for eksempel helseintervjuer.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Opptil ⚫ svart</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">UiO-tjeneste. Kjører i lokalt på UiOs IT-systemer i Tjenester for Sensitive Data (TSD).</p></td>
+</tr>
+<tr class="row-odd" style="background-color:#fafafa;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;"><strong>Nettskjema-diktafon</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Mobilapp for opptak som sendes trygt og automatisk til transkribering i (TSD-)Autotekst.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Opptil 🔴 rød hvis opptaket er knyttet til nettskjema i Educloud. Opptil ⚫ svart, hvis opptaket er knyttet til et nettskjema i TSD</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">UiO-tjeneste. Bruker UiOs Nettskjema og (TSD-)Autotekst i bakkant.</p></td>
+</tr>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>Gemini (Chat)</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Generell KI-chat med søk i åpne nettsider. Egnet til faktasøk (har internett-tilgang), bildegenerering og til å lage pdf, presentasjoner og regneark. Støtter opplasting og generering av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Opptil 🟡 gul</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">✅</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Skytjeneste fra Google. Kjører i Google Cloud, utenfor UiOs systemer. UiO har databehandleravtale.</p></td>
+</tr>
+<tr class="row-odd" style="background-color:#fafafa;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;"><strong>Gemini Notebook</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">KI-assistent for egne dokumenter og kilder. Gir kildetro svar og lager oppsummeringer, quizzer og podkaster. Støtter opplasting og generering av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Opptil 🟡 gul</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">✅</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Skytjeneste fra Google. Kjører i Google Cloud, utenfor UiOs systemer. UiO har databehandleravtale.</p></td>
+</tr>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>Microsoft Copilot Chat</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Enkel KI-chat med nettsøk. Egnet til faktasøk (har internett-tilgang). Arbeider med tekst, bilder og video, og har ferdige instruksjonsforslag som hjelper deg i gang. Støtter opplasting av mange filtyper, blant annet alle Microsoft Office filtypene. Har internett-tilgang.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Kun 🟢 grønn</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">✅</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Skytjeneste fra Microsoft. Kjører utenfor UiOs systemer. UiO har databehandleravtale.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="uio-color-box-3">
+<h3>Husk</h3>
+<p>Beskyttelsesgraden i tabellen er den <em>høyeste</em> dataklassen tjenesten er godkjent for.
+Du skal alltid bruke den tjenesten som dekker behovet ditt, og aldri dele UiO-data med
+KI-tjenester som ikke er godkjent ved UiO.</p>
+</div>
+</section>
+<section id="neste-kapittel">
+<h3>Neste kapittel</h3>
+<p>Du har nå gjennomført grunnkurset i KI! I neste og siste kapittel får du en oppsummering av det viktigste,
+og konkrete tips til hvordan du kan ta kunnskapen videre i praksis.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module6/avslutning"></span><section id="avslutning">
+<h2>Avslutning</h2>
+<p>Gratulerer! Du har nå fullført kurset «Introduksjon til kunstig intelligens».</p>
+<p>Nå er det opp til deg, men vi gir deg gjerne noen gode råd på veien:</p>
+<ul class="simple">
+<li>Bruk kunnskapen du har fått, det er først med litt erfaring at KI kan bli et nyttig verktøy.</li>
+<li>Vær kritisk og ansvarlig, husk at KI har begrensninger!</li>
+<li>Teknologien utvikler seg raskt. Fortsett å lære og hold deg oppdatert ved å følge med på UiOs nettsider om KI, kurs og workshops ved UiO, og bruk dine fagnettverk og kollegaer til å dele KI erfaringer med!</li>
+</ul>
+<p>KI er et kraftig verktøy som kan være til hjelp i arbeidshverdagen, men det er din kompetanse og dømmekraft som gjør KI anvendbart, nyttig og trygt!</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/5.1-faces.png"><img alt="Ansiktene til personen og roboten" src="_images/5.1-faces.png" style="width: 60%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustrasjon: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<section id="prov-selv">
+<h3>Prøv selv!</h3>
+<p>For å hjelpe deg på veien videre har vi laget to sett med øvingsoppgaver.
+De finner du i <a class="reference external" href="https://uio.instructure.com/courses/63248/pages/prov-selv" rel="noreferrer" target="_blank">kursets siste del <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI.</p>
+<p><strong>Lykke til videre på din KI-reise!</strong></p>
+<div class="uio-icon-box info">
+<h3>Om kurset</h3>
+<p>Kursinnholdet er laget av Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad og Erik Winge.
+Tegningene er laget av Tina Morønning Ruud.</p>
+<p>© Copyright 2026</p>
+<p><strong>Kontakt og tilbakemelding</strong></p>
+<p>Vi tar gjerne imot <a class="reference external" href="https://nettskjema.no/a/ki-intro-admin" rel="noreferrer" target="_blank">tilbakemelding på kurset <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+<p>Har du spørsmål om kurset eller om KI ved UiO?
+Kontakt IT-avdelingen: <a class="reference external" href="mailto:it-hjelp%40uio.no" rel="noreferrer" target="_blank">it-hjelp<span>@</span>uio<span>.</span>no <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> eller kursets ansvarlige: <a class="reference external" href="mailto:ai-contact%40usit.uio.no" rel="noreferrer" target="_blank">ai-contact<span>@</span>usit<span>.</span>uio<span>.</span>no <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+</div>
+</section>
+</section>
+<span id="document-module6/kilder"></span><section id="kilder-og-lenker">
+<h2>Kilder og lenker</h2>
+<div class="uio-icon-box source">
+<h3>Kilder</h3>
+<p id="germain">[Germain] Thomas Germain, «I Hacked ChatGPT and Google’s AI - and It Only Took 20 Minutes», BBC, 18. februar 2026, <a class="reference external" href="https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes" rel="noreferrer" target="_blank">https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p id="hicks">[Hicks] Michael Townsen Hicks, James Humphries, og Joe Slater, «ChatGPT Is Bullshit», <em>Ethics and Information Technology 26</em>, nr. 2 (2024): 38, (<a class="reference external" href="https://doi.org/10.1007/s10676-024-09775-5" rel="noreferrer" target="_blank">https://doi.org/10.1007/s10676-024-09775-5 <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>), på s. 2.</p>
+<p id="laban">[Laban] Philippe Laban, Hiroaki Hayashi, Yingbo Zhou, og Jennifer Neville, «LLMs Get Lost In Multi-Turn Conversation», arXiv:2505.06120, arXiv, 9. mai 2025, <a class="reference external" href="https://doi.org/10.48550/arXiv.2505.06120" rel="noreferrer" target="_blank">https://doi.org/10.48550/arXiv.2505.06120 <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> på s. 1.</p>
+<p id="stokel-walker">[Stokel-Walker] Chris Stokel-Walker, «Scientists Invented a Fake Disease. AI Told People It Was Real», Nature 652, nr. 8110 (2026): 559–61, <a class="reference external" href="https://doi.org/10.1038/d41586-026-01100-y" rel="noreferrer" target="_blank">https://doi.org/10.1038/d41586-026-01100-y <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p id="svarstad">[Svarstad] Jørgen Svarstad, «Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat», 26. februar 2026, <a class="reference external" href="https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462" rel="noreferrer" target="_blank">https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462 <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+</div>
+</section>
+<section id="lenker">
+<h2>Lenker</h2>
+<div class="uio-icon-box source">
+<h3>Lenker til UiO tjenester og andre nettsider vi møter i dette kurset</h3>
+<p><strong>UiOs KI-tjenester</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html" rel="noreferrer" target="_blank">Autotekst <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-tsd.html" rel="noreferrer" target="_blank">TSD-Autotekst <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/gemini/index.html" rel="noreferrer" target="_blank">Gemini <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/notebooklm" rel="noreferrer" target="_blank">Gemini Notebook <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/lagring-samarbeid/googleworkspace/" rel="noreferrer" target="_blank">Google Workspace <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/copilot/index.html" rel="noreferrer" target="_blank">Om Microsoft Copilot Chat <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html" rel="noreferrer" target="_blank">Nettskjema-diktafon <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/lyd-video/panopto/" rel="noreferrer" target="_blank">Panopto <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/forskning/sensitiv/" rel="noreferrer" target="_blank">TSD <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+</ul>
+<p><strong>Lenker til UiOs regler og retningslinjer for bruk av KI og IT-tjenester</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.uio.no/tjenester/ki/" rel="noreferrer" target="_blank">UiO sin KI hovedside <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html" rel="noreferrer" target="_blank">UiOs retningslinjer for bruk av KI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html" rel="noreferrer" target="_blank">UiOs retningslinjer for agentisk KI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/ki/juridiskeforinger.html" rel="noreferrer" target="_blank">Juridiske føringer for bruk av kunstig intelligens (KI) ved UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html" rel="noreferrer" target="_blank">Veiledning i behandlingsgrunnlag for ansatte <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/om/regelverk/it/it-reglement.html" rel="noreferrer" target="_blank">UiO sitt IT reglement <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</li>
+<li><a class="reference external" href="https://www.ub.uio.no/bruk/elektroniske-ressurser/" rel="noreferrer" target="_blank">Retningslinjer for bruk av elektroniske ressurser fra UB <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+</ul>
+<p><strong>KI-kurs på UiO</strong></p>
+<p>Vil du sette deg mer inn i teamene rundt kunstig intelligens? <a class="reference external" href="https://www.uio.no/studier/emner/hf/ifikk/FIL1010/" rel="noreferrer" target="_blank">FIL1010 Redelig bruk av kunstig intelligens for studenter <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>  er et Canvas kurs som består av forelesningsvideoer, oppgaver og anbefalt litteratur rettet mot studenter. Dette er en flott ressurs om du vil lære mer! Videoen i kapittel 5 er lånt herfra.</p>
+<p>Følg også med på UiO sine <a class="reference external" href="https://www.uio.no/tjenester/ki/kurs/" rel="noreferrer" target="_blank">KI-kurs-sider <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+</div>
+</section>
+<span id="document-module6/treningsoppgaver"></span><section id="prov-selv">
+<h2>Prøv selv!</h2>
+<p>Vi har laget to sett med oppgaver. Det første settet skal du øve deg på ulike måter å bruke KI.
+I det andre settet kan du utforske hvordan bruke KI i egne arbeidsoppgaver.</p>
+<p>Dette er oppgaver som du kan jobbe med i dagene og ukene fremover.</p>
+</section>
+<span id="document-module6/sett-1"></span><section id="sett-1">
+<h2>Sett 1</h2>
+<div class="uio-icon-box task">
+<h3>Oppgave 1: Instruksjoner</h3>
+<p>Utforsk 2 ulike KI-tjenestene og øv på ulike teknikker for å gi instruksjoner.
+Diskuter gjerne med en kollega hvordan og hva de ulike tjeneste fungerer til.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 2 - Idegenerering</h3>
+<p>Spør et KI-verktøy om å generere 10 ideer til hvordan KI kan brukes i din arbeidshverdag.
+Spesifiser tydelig hva slags oppgaver du gjør og hvilke verktøy du har tilgjengelig.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 3 - Gemini Notebook</h3>
+<p>Last opp et dokument i Gemini Notebook. Velg et dokument som er relevant for jobben din, eller et dokument du er interessert i.
+Lag et tankekart og en studieveiledning, og still spørsmål om dokumentets innhold.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 4 - Opprettelse av maler</h3>
+<p>Tenk på et arbeidsområde hvor du lager lignende dokumenter eller tekster ofte.
+Bruk et av de tilgjengelige KI-verktøyene til å lage et forslag til en mal du kan bruke i arbeidet ditt.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 5 - KI-assistent</h3>
+<p>Sett opp din helt egne KI-assistent i GPT UiO.</p>
+<ol class="arabic simple">
+<li>Velg én oppgave du gjør ofte (f.eks. svare på henvendelser, lage agenda, oppsummere møter).</li>
+<li>Lag en «standard-instruksjon» som du kan bruke igjen, som beskriver:
+- Din rolle og arbeidsfelt
+- Typisk målgruppe
+- Ønsket stil og format</li>
+<li>Test instruksjonen på et eksempel fra jobben.</li>
+<li>Juster instruksjonen til du har en versjon du kan bruke som mal fremover.</li>
+</ol>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 6 - Bildegenering</h3>
+<p>Du skal kalle inn til et møte med valgfritt tema.
+Be Copilot om å generere et relevant bilde du kan bruke i møteinnkallelsen.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 7 - Powerpoint</h3>
+<p>Be Copilot lage en utkast til en powerpoint-presentasjon om et valgfritt tema.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Oppgave 8 - Enkel programmering</h3>
+<p>Vi ønsker at excel skal summere tallene i to kolonner automatisk.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/excel-snutt.png"><img alt="Skjermdump utsnitt av et excel ark med 3 kolonner." src="_images/excel-snutt.png" style="width: 50%;"/>
+</a>
+</figure>
+<p>For å få til dette har vi skrevet en kort makro:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sub</span> <span class="n">LeggTilTall</span><span class="p">()</span>
+   <span class="n">Dim</span> <span class="n">sisteRad</span> <span class="n">As</span> <span class="n">Long</span>
+   <span class="n">Dim</span> <span class="n">i</span> <span class="n">As</span> <span class="n">Long</span>
+
+   <span class="n">sisteRad</span> <span class="o">=</span> <span class="n">Cells</span><span class="p">(</span><span class="n">Rows</span><span class="o">.</span><span class="n">Count</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">End</span><span class="p">(</span><span class="n">xlUp</span><span class="p">)</span><span class="o">.</span><span class="n">Row</span>
+
+   <span class="n">For</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span> <span class="n">To</span> <span class="n">sisteRad</span> <span class="s1">' Antar at første rad er header</span>
+
+   <span class="n">Cells</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="n">Cells</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">+</span> <span class="n">Cells</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span>
+<span class="n">Next</span> <span class="n">i</span>
+<span class="n">End</span> <span class="n">Sub</span>
+</pre></div>
+</div>
+<p>Dessverre inneholder denne kodesnutten en feil, og summene vi får stemmer ikke med forventningene.</p>
+<ul class="simple">
+<li>Oppgave 1: Få GPT til å forklare hva som er feil med kodesnutten, og hvorfor den ikke gir summen av kolonne A og B.</li>
+<li>Oppgave 2: Få GPT til å skrive en riktig versjon av koden som faktisk gir summen av kolonne A og B.</li>
+</ul>
+<p>Oppgaven kan løses utelukkende med kodesnutten over og GPT UiO,
+men for de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den beskrevne funksjonaliteten om man vil teste det selv her: <a class="reference external" href="https://uio.instructure.com/courses/63248/files/3954949/download" rel="noreferrer" target="_blank">Enkel-koding-med-KI.xlsx <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+</div>
+<div class="uio-icon-box source">
+<h3>Kilder / Ressurser</h3>
+<p>Takk til <a class="reference external" href="https://www.uio.no/om/organisasjon/fellesadm/ova/" rel="noreferrer" target="_blank">ØVA <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> som har delt sine KI_oppgaver med oss!</p>
+</div>
+</section>
+<span id="document-module6/sett-2"></span><section id="sett-2">
+<h2>Sett 2</h2>
+<p>Oppgaver for å utforske muligheter i egen arbeidshverdag.</p>
+<div class="uio-icon-box task">
+<h3>Kartlegg egne arbeidsoppgaver</h3>
+<div class="uio-color-box-3">
+<h3>Steg 1</h3>
+<p>Skriv ned 5-10 arbeidsoppgaver du jobber med i løpet av en arbeidsuke. (Eks. Svare på e-poster, lage presentasjoner, skrive eller oppdatere nettsidetekst, utarbeide rapporter eller saksframlegg, planlegge undervisning, seminarer eller møter, veilede studenter, databehandling / analyse, saksbehandling)</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Steg 2</h3>
+<p>Skriv noen stikkord om hva oppgaven handler om, hvor ofte du gjør den, hvor mye tid du bruker</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Steg 3</h3>
+<p>Marker hvilke oppgaver som er:</p>
+<ul class="simple">
+<li>rutinepreget</li>
+<li>teksttunge</li>
+<li>vanskelige å få oversikt over</li>
+<li>krever mye idearbeid</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>Steg 4</h3>
+<p>Vurder risiko rundt bruk av KI på disse arbeidsoppgavene</p>
+<ol class="loweralpha simple">
+<li>Behandler du persondata?</li>
+<li>Behandler du data som må beskyttes som for eksempel forskningshemmeligheter eller detaljer om kritisk UiO infrastruktur?</li>
+<li>Behandler du data som er beskyttet av opphavsretten?</li>
+<li>Hvis KI gjør feil, vil det få uheldige eller alvorlige konsekvenser?</li>
+</ol>
+</div>
+<div class="uio-color-box-3">
+<h3>Steg 5</h3>
+<p>Velg 2-3 oppgaver der KI kan ha potensiale for å effektivisere eller forbedre og utforsk følgende:</p>
+<ol class="loweralpha simple">
+<li>Hvordan kan KI brukes? Test gjerne sammen med en kollega.</li>
+<li>Hva må du gjøre selv?</li>
+<li>Vurder hva slags risiko som kan oppstå ved å ta i bruk KI i denne oppgaven.</li>
+<li>Dersom oppgaven innebærer risiko: Tenk gjennom og skriv ned nødvendige tiltak for å redusere og kontrollere risikoen.</li>
+</ol>
+</div>
+<div class="uio-color-box-3">
+<h3>Steg 6</h3>
+<p>Etter at du har utforsket dine arbeidsoppgaver over, oppfordrer vi deg til å teste ut å bruke KI i oppgavene der du ser størst potensiale.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Steg 7</h3>
+<p>Identifiser 2-3 oppgaver der KI ikke bør brukes, og reflekter rundt hvorfor.</p>
+</div>
+</div>
+</section>
+</div>
+</section>
+<div class="clearer"></div>
+</div>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<article id="back-cover">
+<div class="container">
+<div class="back-cover-footer">
+<p>
+                    © Copyright IT-avdelingen Universitetet i Oslo.
+            </p>
+<p>
+                  Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3.
+            </p>
+</div>
+</div>
+</article>
+</body>
+</html>

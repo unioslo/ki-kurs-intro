@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 18:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Prøv selv!"
 msgstr ""
 
 #: ../../source/module6/avslutning.rst:25
-msgid "For å hjelpe deg på veien videre har vi laget to sett med øvingsoppgaver. De finner du i `kursets siste del <https://uio.instructure.com/courses/63248/pages/prov-selv>`_ og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI."
+msgid "For å hjelpe deg på veien videre har vi laget to sett med øvingsoppgaver. De finner du i `kursets siste del <treningsoppgaver.html>`_ og er oppgaver du kan jobbe med i dagene og ukene fremover for å bli en kyndig bruker av KI."
 msgstr ""
 
 #: ../../source/module6/avslutning.rst:29

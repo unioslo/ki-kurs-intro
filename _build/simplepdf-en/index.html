@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+
+<html data-content_root="./" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Grunnkurs KI documentation</title>
+<link href="_static/pygments.css?v=d75fae25" rel="stylesheet" type="text/css"/>
+<link href="_static/main.css?v=2db0865d" rel="stylesheet" type="text/css"/>
+<link href="_static/variables.css?v=e199592e" rel="stylesheet" type="text/css"/>
+<link href="_static/fonts.css?v=6adc4b43" rel="stylesheet" type="text/css"/>
+<link href="_static/common.css?v=b287aaa8" rel="stylesheet" type="text/css"/>
+<link href="_static/canvas.css?v=b7ab7f4c" rel="stylesheet" type="text/css"/>
+<link href="_static/wiki_page.css?v=ff805dfb" rel="stylesheet" type="text/css"/>
+<link href="_static/uio-global-override.css?v=e99b8315" rel="stylesheet" type="text/css"/>
+<link href="_static/custom.css?v=7eb9d88d" rel="stylesheet" type="text/css"/>
+<link href="_static/simplepdf.css?v=95bc32ab" rel="stylesheet" type="text/css"/>
+<script src="_static/jquery.js?v=5d32c60e"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="_static/documentation_options.js?v=33929acb"></script>
+<script src="_static/doctools.js?v=9bcbadda"></script>
+<script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/tabs.js?v=5e8c741a"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+</head><body><article class="dont-break" id="cover">
+<div class="container">
+<!-- Logo -->
+<div class="logo">
+<p></p>
+</div>
+<!-- Cover middle -->
+<div class="cover-middle">
+<div class="title">
+<h1 class="title-cover">Grunnkurs KI</h1>
+<p class="subtitle-cover">Version </p>
+<span class="meta">
+</span>
+</div>
+<!--
+      <div class="client-logo">
+        <img src="../data/logo_.png" alt="Logotipo">
+      </div>
+      -->
+</div>
+<!-- Footer -->
+<div class="cover-footer">
+<p>
+</p>
+</div>
+</div>
+</article>
+<div aria-label="Main" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<div>
+<h3><a href="#">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-forside">Welcome to the course: Introduction to artificial intelligence</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-forside#hvorfor-er-dette-kurset-viktig-for-deg">Why is this course important for you?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-forside#gjennomforing">Completing the course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#document-forside#kursets-kapitler">Course chapters:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 1: Fundamental concepts in artificial intelligence</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/introduksjon-til-ki-spraket">Introduction to the “language of AI”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/kunstig-intelligens">Artificial intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/generativ-ki">Generative AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/ki-assistent">AI assistant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/ki-agenter">AI agents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module1/oppsummering-ki">Summary of chapter 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 2: How do language models work?</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/store-sprakmodeller">Large language models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/hvordan-fungerer-store-sprakmodeller">How do large language models work?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/sprakmodeller-har-ikke-faktakunnskap">Language models do not have factual knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/sprakmodeller-finner-pa-ting">Language models make things up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/sprakmodeller-har-ikke-hukommelse">Language models’ memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/skjevheter">The models’ biases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module2/oppsummering-sprakmodeller">Summary of chapter 2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 3: How to use AI safely?</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/hvordan-bruke-ki-pa-en-god-mate">Prompts: Get good at AI!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/prinsipper-for-gode-instruksjoner">Create good prompts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/praktisk-ovelse-forbedre-instruksjoner">Practical exercise: Improve prompts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/nyttige-instruksjons-teknikker">Useful prompting techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/praktisk-ovelse-forbedre-egne-instruksjoner">Practical exercise: Improve your own prompts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/tips-om-pre-instruksjon-og-ki-assistenter">Tips about pre-prompts and AI assistants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/nar-kan-du-stole-pa-generativ-ki">When can you trust generative AI?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/strategier-for-a-kvalitetssikre-ki-generert-innhold">Strategies for quality-assuring AI-generated content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/oppsummering-god-bruk-ki">Summary chapter 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module3/avslutning-del1">Conclusion part 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 4: Ethics, sustainability, copyright and privacy</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/ansvarlig-og-baerekraftig-bruk-av-ki">Responsible and sustainable use of AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/baerekraft">Sustainability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/miljo">Climate and environmental costs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/sosiale-kostnader">Social costs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/ki-og-kognisjon">Do not become dependent on AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/datasikkerhet">Data security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/personvern">Privacy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/opphavsrett">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/prompt-injection">Prompt injection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/retningslinjer-og-policies">Guidelines and policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module4/oppsummering-ansvarligbruk">Summary of chapter 4</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 5: AI services at UiO</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/ki-tjenester-ved-uio">AI services at UiO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/uio-ki-tjenester-video">An overview of UiO’s most important AI services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/uios-godkjente-ki-tjenester">UiO’s approved AI services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gpt-uio">GPT UiO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gpt-uio-hvilken-modell-skal-du-velge">GPT UiO: which model should you choose?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gpt-uio-ki-assistenter">GPT UiO: AI assistants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/oppsummert-om-gpt-uio">Summary of GPT UiO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/autotekst-og-nettskjema-diktafon">Autotekst and Nettskjema-diktafon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/gemini-og-notebooklm">Gemini and Gemini Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/microsoft-copilot-chat">Microsoft Copilot Chat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module5/oppsummering-uio-tjenester">Summary of chapter 5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Episode 6: Conclusion</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/avslutning">Conclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/kilder">Sources and links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/kilder#lenker">Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/treningsoppgaver">Try it yourself!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/sett-1">Set 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-module6/sett-2">Set 2</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="grunnkurs-i-generativ-ki">
+<h1>Foundation course in generative AI</h1>
+<p>Welcome to the foundation course in generative AI!</p>
+<div class="toctree-wrapper compound">
+<span id="document-forside"></span><section id="velkommen-til-kurset-introduksjon-til-kunstig-intelligens">
+<h2>Welcome to the course: Introduction to artificial intelligence</h2>
+<p>Artificial intelligence is an advanced technology that is easy to use, but hard to use well. This is an introduction to what artificial intelligence is, and how you can use it in a good and responsible way. The course aims to give all employees basic training in artificial intelligence, so that they can safely explore how AI can be used in their own work tasks.</p>
+<p>The course is developed for administrative staff, but the topics are fundamental and relevant to all employees who want to learn about how to use artificial intelligence.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width));" class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/0.5-greeting.png"><img alt="Illustration for the front page of the foundation course in generative AI. The human (Pelle) and the robot (Plimbo) greet each other." src="_images/0.5-greeting.png" style="width: 60%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<section id="hvorfor-er-dette-kurset-viktig-for-deg">
+<h3>Why is this course important for you?</h3>
+<p>Imagine that you could have a digital sparring partner who always has time and who can quickly analyse, summarise, translate, simplify or retrieve relevant information for you. Artificial intelligence can be this digital sparring partner.</p>
+<p>Den jobber raskt og kan behandle store mengder data, men den har hverken din fagekspertise eller erfaring fra UiO. Den har heller ikke emosjoner, etisk eller moralsk dømmekraft, faglig skjønn eller bevissthet rundt IT-sikkerhet.
+Derfor skal du alltid bruke din egen kompetanse til å vurdere hvilke oppgaver som er trygge å bruke KI til, vurdere KI-svar og ta det endelige ansvaret for beslutninger.
+Du må også huske at som ansatt i staten forvalter du ressurser på vegne av samfunnet. Da må du være bevisst dine valg rundt ny teknologi og ta den i bruk på en måte som ivaretar tilliten mellom forvaltningen og samfunnet.</p>
+<p>We hope this course gives you the competence to use artificial intelligence in a good and responsible way in your job.</p>
+</section>
+<section id="gjennomforing">
+<h3>Completing the course</h3>
+<p>The course contains theory, reflection exercises, bonus content and practice exercises.</p>
+<ul class="simple">
+<li>Theory: The course theory is meant to give a solid foundation for understanding the most important elements of AI technology, its strengths, weaknesses and how to use AI well.</li>
+<li>Reflection exercises and practice: All the chapters contain encouragements to practise and reflect. Set aside time for these!</li>
+<li>Bonus content: Throughout the course you will find opportunities to go a little deeper into topics.</li>
+<li>Practical exercises: At the end of the course you will find practice exercises to train on AI and explore more about how you can use it in your own working day. These can be downloaded as a PDF.</li>
+</ul>
+<p>The course can be taken all at once or split into two parts. If you want to take the course in two parts, we recommend taking chapters 1-3 as part 1 and chapters 4-6 as part 2.</p>
+<p>The whole course takes about 60 minutes to complete, not counting the practice exercises in the final part.</p>
+<section id="kursets-kapitler">
+<h4>Course chapters:</h4>
+<ul class="simple">
+<li><a class="reference internal" href="#document-module1/introduksjon-til-ki-spraket"><span class="doc">Chapter 1: Introduction to the “AI language”</span></a> (8 min)</li>
+<li><a class="reference internal" href="#document-module2/store-sprakmodeller"><span class="doc">Chapter 2: Large language models</span></a> (10 min)</li>
+<li><a class="reference internal" href="#document-module3/hvordan-bruke-ki-pa-en-god-mate"><span class="doc">Chapter 3: Prompts: Get good at AI</span></a> (13 min)</li>
+<li><a class="reference internal" href="#document-module4/ansvarlig-og-baerekraftig-bruk-av-ki"><span class="doc">Chapter 4: Responsible and sustainable use of AI</span></a> (8 min)</li>
+<li><a class="reference internal" href="#document-module5/ki-tjenester-ved-uio"><span class="doc">Chapter 5: Approved AI services at UiO</span></a> (14 min)</li>
+<li><a class="reference internal" href="#document-module6/avslutning"><span class="doc">Chapter 6: Conclusion and exercise sets</span></a> (6 min)</li>
+</ul>
+<p>The estimated time is based on the number of words, and does not account for extra time spent on reflection and practice exercises.</p>
+<p style="font-size: 2.0rem;">Enjoy the course!</p><div style="text-align: left; padding-top: 4px;">
+<a class="btn btn-large btn-primary" data-api-endpoint="https://uio.instructure.com/api/v1/courses/63248/pages/introduksjon-til-ki-spraket-3" data-api-returntype="Page" href="https://uio.instructure.com/courses/63248/pages/introduksjon-til-ki-spraket-3" style="display: inline-flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+       padding: 10px 28px;
+       background: #92ca61;
+       font-size: 1.5rem;
+       cursor: pointer;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       border-radius: 6px;
+       color: #000000 !important;
+       text-decoration: none !important;
+       border: medium none currentcolor;">Start the course → </a></div></section>
+</section>
+<div class="page-navigation"><div class="prev-link"></div><div class="next-link"></div></div>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module1/introduksjon-til-ki-spraket"></span><section id="introduksjon-til-ki-spraket">
+<h2>Introduction to the “language of AI”</h2>
+<p>In this first chapter you will learn about the concepts of <em>generative AI</em>, <em>language models</em>, <em>AI assistant</em> and <em>AI agent</em>. Once you understand these concepts, you will have laid the first foundation for learning more about how to use AI in a good, responsible and safe way.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/1.1-studying-the-basics.png"><img alt="Illustration of a person reading a book about the ABCs of AI - which is plugged into a power socket" src="_images/1.1-studying-the-basics.png" style="width: 65%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Learning objectives</h3>
+<ul class="simple">
+<li>I understand the main concepts in the “language of AI”</li>
+</ul>
+</div>
+</section>
+<span id="document-module1/kunstig-intelligens"></span><section id="kunstig-intelligens">
+<h2>Artificial intelligence</h2>
+<p>Artificial intelligence (AI) is technology that can perform tasks we usually associate with human intelligence. This could be, for example, producing and understanding text, recognising images, interpreting speech or analysing numbers.</p>
+<p>For artificial intelligence to be able to perform this type of task, it trains on examples from text, images or sound. By looking at examples, the AI learns to recognise patterns and connections, and can eventually:</p>
+<ul class="simple">
+<li>suggest the next word in a text</li>
+<li>recognise what is in an image</li>
+<li>understand the content of an audio recording</li>
+</ul>
+<p>This is called machine learning and means that the technology learns from data.</p>
+<div class="uio-color-box-3">
+<h3>Bonus content</h3>
+<details>
+<summary><strong>A little history of artificial intelligence</strong></summary>
+<p>AI is actually nothing new. Researchers began working on it as early as the 1950s, and in 1956 AI was established as a research field in its own right. What is new today is how powerful and accessible AI has become in recent years. When ChatGPT arrived in 2022, it was a clear turning point. Instead of “dumb chatbots” that could only answer very simple questions, we suddenly got a tool that could:</p>
+<ul class="simple">
+<li>write long texts</li>
+<li>answer complex questions</li>
+<li>express itself in a way that resembles a human</li>
+</ul>
+<p>This development has been possible because of three important things:</p>
+<ol class="arabic simple">
+<li>Large amounts of data: AI can be trained on enormous amounts of text, images and sound from the internet, books, articles and so on.</li>
+<li>Powerful hardware: Special processors that can process a great deal of data at the same time.</li>
+<li>New methods: Researchers have developed better models and techniques that enable AI to learn more efficiently.</li>
+</ol>
+</details>
+<details>
+<summary><strong>Machine learning</strong></summary>
+<p>Humans learn through experience. Machine learning is based on the same principle, just for computer programs. Instead of learning from experience, the program learns from data. When we have large amounts of data available, for example text, images or numbers, we can use machine learning to find patterns and connections that are difficult or time-consuming for humans to discover themselves.</p>
+<p>Machine learning differs from traditional programming in how it solves problems:</p>
+<div class="uio-color-box-3">
+<h3>Traditional programming works like this:</h3>
+<ul class="simple">
+<li>You create clear rules: “If X happens, do Y”.</li>
+<li>The program applies the rules to the data you give it.</li>
+<li>The program gives you the result.</li>
+</ul>
+<p>An example of traditional programming is a program that calculates credits based on the number of passed courses and the weighting of each course.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Machine learning solves a problem like this:</h3>
+<p>In machine learning the <em>rule</em> is unknown, and it is what we want to learn.</p>
+<ul class="simple">
+<li>We have many examples of a given type of data (for example many images of cats or dogs).</li>
+<li>Depending on which type of machine learning is used, the data may also include known answers or labels such as “dog” or “cat”.</li>
+<li>Instead of writing the rules ourselves, we let the system learn the rules from the examples.</li>
+</ul>
+</div>
+</details>
+</div>
+</section>
+<span id="document-module1/generativ-ki"></span><section id="generativ-ki">
+<h2>Generative AI</h2>
+<p>When we talk about AI in everyday life, we usually mean generative AI. UiO GPT, Microsoft Copilot and Gemini Notebook are examples of this. Generative artificial intelligence is called “generative” because it creates (generates) new content based on what it has learned previously. You type in a prompt and the AI generates a suggested answer or piece of content.</p>
+<p>Det finnes flere typer KI. I dette kurset skal du lære mest om store språkmodeller, som en en type generativ KI.
+Store språkmodeller er selve motoren i mange KI-tjenester du bruker, og dette skal du lære mer om litt senere i kurset.</p>
+<div class="uio-color-box-3">
+<h3>Types of AI</h3>
+<p>Did you know that in addition to generative AI, there are two other types that are very common? Namely discriminative and predictive AI.</p>
+<p>Here are some examples of each of these.</p>
+<div class="canvas-tabs-pdf">
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Generativ KI</p>
+<div class="canvas-tab-pdf-body">
+<p>Generative AI produces or <em>generates</em> new content such as text, images or sound.</p>
+<p><strong>Example:</strong> An AI chat that generates meeting minutes based on your meeting notes.</p>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Diskriminativ KI</p>
+<div class="canvas-tab-pdf-body">
+<p>Discriminative AI sorts and recognises things that already exist.</p>
+<p><strong>Example:</strong> An AI system that can work out whether a photograph is of a dog or a cat.</p>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Prediktiv KI</p>
+<div class="canvas-tab-pdf-body">
+<p>Predictive AI looks for patterns in data that can say something about the likelihood of events.</p>
+<p><strong>Example:</strong> the weather forecast</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<span id="document-module1/ki-assistent"></span><section id="ki-assistent">
+<h2>AI assistant</h2>
+<p>You may have used an AI assistant in UiO GPT or Gemini Notebook. An AI assistant is typically an AI chat with a specific role and “personality”. An AI assistant can, for example, “act” like an experienced meeting minute-taker, code checker, exam helper or study adviser.</p>
+<p>You achieve this by giving the AI assistant predefined instructions about how it should behave, what it should focus on, and how it should present the answer. In addition, you can upload material such as PDF documents, plain text or web pages containing the (subject) material your assistant should use as the basis for its answers. In this way, the assistant gets its own reference library that it uses to generate an answer. The result is a more accurate “chatbot” that has expert knowledge in a specific field and makes the answers more targeted.</p>
+<p>A very useful feature is that you can save your assistants and use them over and over again, as well as share them with others.</p>
+<section id="hva-er-forskjellen-mellom-en-ki-assistent-og-en-vanlig-ki-chat">
+<h3>What is the difference between an AI assistant and an ordinary AI chat?</h3>
+<p>Both have a language model at their core, and the difference is not that great technically. When you interact with an AI assistant, it will look quite similar to any other AI chat. The AI assistant just has this extra layer of predefined instructions for how it should behave.</p>
+<div class="uio-color-box-3">
+<h3>Example of the difference</h3>
+<div class="canvas-tabs-pdf">
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">KI chat</p>
+<div class="canvas-tab-pdf-body">
+<ul class="simple">
+<li><strong>User prompt</strong>: What does the Pythagorean theorem state?</li>
+<li><strong>AI answer</strong>: The square of the hypotenuse in a right-angled triangle is equal to the sum of the squares of the two other sides.</li>
+</ul>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">KI studieveileder assistent</p>
+<div class="canvas-tab-pdf-body">
+<ul class="simple">
+<li><strong>User prompt</strong>: What does the Pythagorean theorem state?</li>
+<li><strong>AI assistant instruction</strong>: Never give the student a direct answer to a question, but ask questions or give hints that can help the student arrive at the right answer themselves.</li>
+<li><strong>AI answer</strong>: I won’t give you the answer, but I can give you a hint: could it have something to do with the hypotenuse?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Reflection exercise</h3>
+<p>What kinds of tasks can an AI assistant help you and your team with?</p>
+</div>
+</section>
+</section>
+<span id="document-module1/ki-agenter"></span><section id="ki-agenter">
+<h2>AI agents</h2>
+<p>An AI agent is easily confused with an AI assistant, but an AI agent is a far more powerful tool than an AI assistant. An AI agent does not just tell you how to solve a task, it also carries out the task for you. For example: instead of typing a task into a chat window, copying out the answer, and pasting it into the document you want, the agent can edit the text directly in the document for you. An AI agent is therefore an advanced AI assistant that can <em>perform actions</em> in IT systems, and in that way be a very effective tool.</p>
+<div class="uio-color-box-3">
+<h3>Examples</h3>
+<p>AI agents are usually built for one or more specific purposes and can, for example:</p>
+<ul class="simple">
+<li>retrieve information from other systems, e.g. the internet or a database</li>
+<li>create and write content in an email</li>
+<li>merge two spreadsheets for you</li>
+</ul>
+</div>
+<section id="kraftig-verktoy-som-krever-kompetanse">
+<h3>A powerful tool that requires competence</h3>
+<p>Because AI agents can perform actions on their own, they require more competence and caution when used than an ordinary AI chat.</p>
+<p>At UiO, AI agents are not yet offered to the same extent as AI chat, precisely because they are more demanding to use, and incorrect use can have serious consequences.</p>
+<p>Even so, AI agents are already in use at UiO to a certain degree. One type that is used is so-called code agents. They are used by IT staff and others who work with coding. But they can be used for much more than this. They can, for example, read files in a designated folder and perform actions directly on them. Going forward, such features will probably become more common, also in other digital tools we use.</p>
+</section>
+</section>
+<span id="document-module1/oppsummering-ki"></span><section id="oppsummering-kapittel-1">
+<h2>Summary of chapter 1</h2>
+<p>In this chapter you have learned the most central concepts in the language of AI. Before you move on to chapter 2, you can test what you have learned about the concepts.</p>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Discuss the questions with a colleague</p>
+<ol class="arabic simple">
+<li>What is artificial intelligence, really?</li>
+<li>What is generative AI and how does it “learn”?</li>
+<li>What is the difference between an AI assistant and an AI agent?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Recap</h3>
+<ul class="simple">
+<li><strong>Artificial intelligence</strong> is technology that can perform tasks we usually associate with human intelligence. For example understanding text, interpreting speech or analysing numbers.</li>
+<li><strong>Generative AI</strong> is a type of AI that creates new content, based on what it has learned previously.</li>
+<li><strong>AI assistant</strong> is an AI chat that has been given a predefined role or instructions, so that it can give more targeted and subject-specific answers than an ordinary AI chat.</li>
+<li><strong>AI agent</strong> is an advanced AI assistant that, in addition to giving answers, can perform actions in IT systems.</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Next chapter</h3>
+<p>In the next chapter you will learn about large language models and what can go wrong when you start using them.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module2/store-sprakmodeller"></span><section id="store-sprakmodeller">
+<h2>Large language models</h2>
+<p>As you have just learned, large language models are the very engine of many AI services. Now we will take a closer look at how large language models produce text and what we should be aware of. This knowledge is necessary in order to use AI in a safe and responsible way.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/2.2-llm-machinery.png"><img alt="Illustration of a language-model machine - training in, answer out" src="_images/2.2-llm-machinery.png" style="width: 100%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Learning objectives</h3>
+<ul class="simple">
+<li>I understand how large language models generate text</li>
+<li>I understand the weaknesses of large language models and can recognise when language models give incorrect information</li>
+</ul>
+</div>
+</section>
+<span id="document-module2/hvordan-fungerer-store-sprakmodeller"></span><section id="hvordan-fungerer-store-sprakmodeller">
+<h2>How do large language models work?</h2>
+<p>A type of simple language model you are probably familiar with is the dictionary on your mobile phone. It suggests the next word based on the text you have written so far. The model in your phone is trained on texts gathered from the internet, and the suggestions are the most likely words based on the patterns the model has learned from the texts. The suggestion is <em>conditioned</em> on the text you have written, and this text is called the <em>context</em>.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width));" class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/IMG_2787.jpg"><img alt='Screenshot of a keyboard where "I would like a cup of" has been typed. Suggested continuations are "tea", "coffee" and an emoji.' src="_images/IMG_2787.jpg" style="width: 100%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Suggested continuations of the text “I would like a cup of”.</span></p>
+</figcaption>
+</figure>
+</td>
+<td><figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width));" class="align-right" id="id2">
+<a class="reference internal image-reference" href="_images/IMG_2788.jpg"><img alt='Screenshot of a keyboard where "I would like a glass of" has been typed. Suggested continuations are "wine", "water" and an emoji.' src="_images/IMG_2788.jpg" style="width: 100%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Suggested continuations of the text “I would like a glass of”.</span></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Large language models are far more advanced than the dictionary on your phone, but they work in fundamentally the same way. A language model is a mathematical model that builds up its answer one word at a time, conditioned on the <em>context</em>. Each word is drawn with a little randomness. The model stops when it “believes” the answer is complete.</p>
+<section id="hva-er-konteksten">
+<h3>What is the context?</h3>
+<p>When we talk about large language models, we often say that everything we give the models to work with is <em>context</em>. The context can be a question or a prompt, but also documents, images or other things we upload to the model.</p>
+</section>
+</section>
+<span id="document-module2/sprakmodeller-har-ikke-faktakunnskap"></span><section id="sprakmodeller-har-ikke-faktakunnskap">
+<h2>Language models do not have factual knowledge</h2>
+<p>Large language models generate text that is credible and that resembles the texts they are trained on. Nevertheless, they have no relationship to truth [<a class="reference internal" href="#document-module6/kilder#hicks"><span class="std std-ref">Hicks</span></a>] and therefore have no reliable knowledge of what is true. In other words, this means that what language models deliver to you is not necessarily true. You must always check this yourself!</p>
+<p>Sometimes it matters little which next word the language model chooses. Other times the choice is absolutely decisive for whether the answer is right or wrong.</p>
+<p>Imagine that the model is to complete the sentence: “The colour of the house is …” Possible continuations could be “red”, “blue” or “grey”. In a sentence like this, it is not obvious which word is “right” or “best”, because several options fit. Nor does it matter very much which one is chosen.</p>
+<p>But if you ask the model: “What is the capital of Norway?” Then you expect a correct answer. Here it matters which word the model suggests.</p>
+<p>In both cases the model chooses the most likely word based on patterns in text it has learned from, and not <em>certain</em> factual knowledge. If you expect a knowledge-based or factual answer, there is therefore a risk of error. This applies especially if the training basis is incomplete or biased.</p>
+<div class="uio-color-box-3">
+<h3>Manipulation (language model poisoning)</h3>
+<p>The fact that language models have no reliable knowledge of what is true makes them vulnerable to deliberate manipulation of training data. This type of manipulation is often called “language model poisoning”. Actors can publish misleading information so that the models will be trained on it. As a result, the models can give answers that are manipulated and do not match reality.</p>
+<p>One example is when the BBC journalist Thomas Germain manipulated, among others, ChatGPT and Gemini into answering that he had been crowned a sausage-eating champion. [<a class="reference internal" href="#document-module6/kilder#germain"><span class="std std-ref">Germain</span></a>] This is a fairly harmless type of manipulation, but it nonetheless highlights the models’ weakness.</p>
+<p>A more serious example is an experiment by the Swedish researcher Almira Osmanovic Thunström. She investigated whether AI services would spread medical claims from obviously fabricated articles. She therefore published two fabricated articles about a fictitious diagnosis in the preprints.org archive. After a short time, AI services began to refer to the fictitious diagnosis. [<a class="reference internal" href="#document-module6/kilder#stokel-walker"><span class="std std-ref">Stokel-Walker</span></a>]</p>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Why can the answers from a language model contain errors even though the answer sounds credible?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Click me for a possible answer</strong></summary>
+<p>Because the language model generates text based on statistical patterns it has learned, not based on fact-checking. It has learned what credible answers “look like”, but does not know the difference between true and false. It can therefore produce texts with factual errors just as readily as it gives answers with correct content. That is why you should not use AI to produce a result you do not have the knowledge to verify.</p>
+</details>
+</div>
+</section>
+<span id="document-module2/sprakmodeller-finner-pa-ting"></span><section id="sprakmodeller-finner-pa-ting">
+<h2>Language models make things up</h2>
+<p>Because large language models cannot distinguish between true and false, they can make up things that are not correct. If you have heard someone say that AI and language models <em>hallucinate</em>, this is what they mean.</p>
+<p>Language models can make things up or mix things together in different ways. Here are some examples:</p>
+<ul class="simple">
+<li><em>Incorrect facts</em>: The model gives wrong dates, numbers or names.</li>
+<li><em>Fabricated references</em>: The model invents titles of articles or books that do not exist.</li>
+<li><em>Confusion</em>: The model mixes up different people.</li>
+</ul>
+<p>It is a major problem that language models often make things up with great <em>confidence</em>. They do not say: “I am not sure, but …”. Instead they present misinformation with the same “conviction” as correct information. Therefore you <em>cannot</em> trust that an answer is correct just because it comes across as “self-assured”. You must always check facts against a reliable source.</p>
+<section id="hvorfor-skjer-det">
+<h3>Why does it happen?</h3>
+<p>There are many reasons why the models make things up. Here are some of them:</p>
+<ul class="simple">
+<li>The models “want” to give an answer; they are bad at saying “I don’t know”.</li>
+<li>The models do not have <em>certain</em> factual knowledge, only probabilities.</li>
+<li>Overgeneralisation: the models combine patterns from different sources.</li>
+<li>Outdated training data: the models do not know what has happened after they were trained.</li>
+</ul>
+<div class="uio-icon-box viktig">
+<h3>Important to understand</h3>
+<p>The fact that language models make things up is not an error that can be fixed completely. It is an inherent property of how language models work.</p>
+</div>
+</section>
+<section id="hva-med-internett-sok">
+<h3>What about internet search?</h3>
+<p>Many large language models can now search the internet to obtain up-to-date information. But that does not guarantee that the answer is correct. This is because the language model still has to <em>interpret</em> and <em>summarise</em> the information it finds. It does this in the same way as always, by generating text based on patterns. The model can therefore still make things up, even when it has access to correct information from the web.</p>
+</section>
+<section id="eksempel-fra-virkeligheten">
+<h3>A real-world example</h3>
+<p>When the Norwegian Police University College was to decide how much time lecturers should be given to prepare for teaching, misinformation was used as the basis for the decision [<a class="reference internal" href="#document-module6/kilder#svarstad"><span class="std std-ref">Svarstad</span></a>]. During the preparations for the review, Copilot was used to gather information about preparation time at other universities and colleges. The problem was that Copilot did not find such information online, and therefore simply made up an answer.</p>
+<div class="uio-icon-box reflect">
+<h3>Reflection</h3>
+<p>What could the Norwegian Police University College have done to avoid the error that occurred in the case above?</p>
+<details>
+<summary class="uio-answer-summary"><strong>Click for a possible answer</strong></summary>
+<p>The most important thing to remember is to always check factual information against a reliable source. If it is not possible to find the source, the information is probably wrong.</p>
+</details>
+</div>
+</section>
+</section>
+<span id="document-module2/sprakmodeller-har-ikke-hukommelse"></span><section id="sprakmodellers-hukommelse">
+<h2>Language models’ memory</h2>
+<p>When you use a language model, you interact with it through a chat system. The language model itself does not remember earlier messages in the conversation or earlier conversations you have had with it. That is what the chat system does. The chat system shows you the conversation you are having and passes it on to the language model. What you should note here is that every time you write a new prompt or a new question in the chat, the chat system sends the <em>entire</em> conversation to the language model again. This is because the language model itself cannot remember what you have asked about.</p>
+<p>So it is the chat system that “remembers” what you have written and builds up the context, while the language model only looks at the text it is given at that moment and calculates probable next words. This is important to be aware of because the length of the context affects how much of the conversation the model actually “sees”.</p>
+<div class="uio-color-box-3">
+<h3>Bonus content</h3>
+<details>
+<summary><strong>Is it the whole conversation that is sent to the language model?</strong></summary>
+<p>When we say that the chat system sends the <em>entire conversation</em> to the language model, this is a simplification: In practice, chat systems have different ways of reducing the information they send to the language model.</p>
+<p>Even so: it is never only the last message of a conversation thread that is sent to the language model. Depending on the language model’s capacity and the chat system’s automatic filtering, all or part of the preceding messages in the conversation thread are sent together with your last message.</p>
+</details>
+</div>
+<section id="ha-korte-samtaler">
+<h3>Keep conversations short</h3>
+<p>Long conversations can “confuse” the model, so that it gives poorer answers. One reason for this can be that the entire context does not fit. In long conversations there is also a greater chance that the text contains contradictions or other things that make the message unclear. Philippe Laban et al. found that language models answer best when they are given all the information in a single prompt. [<a class="reference internal" href="#document-module6/kilder#laban"><span class="std std-ref">Laban</span></a>] An important reason for this was that wrong answers from the model remained in the conversation.</p>
+<p>It is especially important to start a new conversation when you change topic. Imagine that you have asked an AI questions about UiO’s financial regulations. If you then ask a question about how to format figures in Word, the model will answer the question in light of UiO’s financial regulations. That does not make sense, and you will get better answers if you start a new conversation.</p>
+<p>In addition, language models are bad at distinguishing between text the user has written and text they have generated themselves. Therefore you should make sure that wrong answers do not remain in the conversation.</p>
+</section>
+</section>
+<span id="document-module2/skjevheter"></span><section id="modellenes-skjevheter">
+<h2>The models’ biases</h2>
+<p>We have learned earlier that it is an inherent property of language models that they <em>make things up</em>. Another inherent property is that language models have built-in <em>biases</em>. There can be many types of bias. We will look at some of them here.</p>
+<section id="skjevhet-som-folge-av-manglende-treningsdata">
+<h3>Bias resulting from a lack of training data</h3>
+<p>As mentioned, large language models are trained on texts from the internet, but there are many texts they do not have access to. For example, they do not have access to information that requires a login, or that is behind a paywall. They also have limited access to printed sources. This creates limitations on what the models can learn and has different effects for different use cases. One example of this is that the models can be weak on very specific subject knowledge within a given research domain.</p>
+</section>
+<section id="skjevhet-som-speiler-skjevheter-i-samfunnet">
+<h3>Bias that mirrors biases in society</h3>
+<p>Another type of bias stems from inequalities in our society, and is therefore also reflected in the digital information we produce. This can involve biases related to ethnicity, gender, religion or other factors, and is very important to be aware of when working with suggestions and text from a language model.</p>
+<div class="uio-color-box-3">
+<h3>Example of biases in training data</h3>
+<p>Suppose a language model is trained on many old job advertisements where “leader” is referred to as “he” more often than “she”. When you ask the model to write a text about “a typical leader”, it will then have a higher probability of using words like “he”, “man” and men’s names.</p>
+<p>The model has no opinions about gender; it merely reproduces the patterns that already existed in the texts it was trained on.</p>
+</div>
+</section>
+<section id="bekreftelsesskjevhet-bekreftelsesbias">
+<h3>Confirmation bias</h3>
+<p>Today’s language models have a tendency to agree with you. This can lead to the language model telling you that you are <em>right about</em> something that is not correct.</p>
+<p>To avoid confirmation bias, you can turn the question around, that is, also ask about the opposite.</p>
+</section>
+</section>
+<span id="document-module2/oppsummering-sprakmodeller"></span><section id="oppsummering-kapittel-2">
+<h2>Summary of chapter 2</h2>
+<p>In this chapter you have learned how large language models produce text and what weaknesses they have when they do this. Before you move on to chapter 3, you can test what you have learned.</p>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Discuss on your own or with a colleague</p>
+<ol class="arabic simple">
+<li>What are large language models and how do they work?</li>
+<li>Name some of the most important weaknesses of large language models and what you can do to address them.</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Recap</h3>
+<ul class="simple">
+<li><strong>Large language models</strong> are mathematical models that build up their answer one word at a time, conditioned on the context you give them. In other words, large language models generate text based on statistical patterns, rather than <em>certain</em> factual knowledge.</li>
+<li><strong>Large language models have no relationship to truth</strong> and therefore have no reliable knowledge of what is true. This makes the models vulnerable to deliberate manipulation of training data. Actors can publish misleading information so that the models will be trained on it. As a result, the models can give answers that are manipulated and do not match reality.</li>
+<li><strong>Language models make up things that are not true</strong> because they do not have <em>certain</em> factual knowledge.</li>
+<li><strong>Long conversations can “confuse” the model, so that it gives poorer answers</strong>. That is why it is important to start a new conversation when you change topic.</li>
+<li><strong>Language models have built-in biases</strong>. These can include, among others, bias resulting from a lack of training data, bias that mirrors biases in society, or confirmation bias.</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Next chapter</h3>
+<p>Now that you understand how language models work and what their limitations are, in the next chapter you will learn how to use AI safely and effectively in practice.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module3/hvordan-bruke-ki-pa-en-god-mate"></span><section id="instruksjoner-bli-god-pa-ki">
+<h2>Prompts: Get good at AI!</h2>
+<p>To master AI, you need to get good at prompts.</p>
+<p>A prompt is the instruction or question you give a language model. Prompts are written into the chat you use to communicate with the language model. What is important to note is that the quality of your prompt is directly related to the quality of the answer you get.</p>
+<p>In this chapter you will learn how to create good prompts, and how to check the quality of the answers AI gives you.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/3.2-walking-together.png"><img alt="Illustration of a person showing the way to the robot" src="_images/3.2-walking-together.png" style="width: 60%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Learning objectives</h3>
+<ul class="simple">
+<li>I can quality-assure AI-generated content</li>
+<li>I can write good and effective prompts</li>
+</ul>
+</div>
+</section>
+<span id="document-module3/prinsipper-for-gode-instruksjoner"></span><section id="lag-gode-instruksjoner">
+<h2>Create good prompts</h2>
+<p>The language model is good at guessing what the answer should contain, but it cannot read your mind. With a few simple steps you can help the language model give answers you are more satisfied with. Feel free to use all of these principles when you write your prompt.</p>
+<p>Here are some simple examples of prompts that could be better, and suggestions for how you can improve them.</p>
+<section id="gi-kontekst">
+<h3>1. Give context</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Explain the difference between AI and machine learning.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>Briefly explain the difference between AI and machine learning, tailored to administrative staff at a university who do not have a technical background. Imagine that the explanation is to be used in a 5-minute talk at a staff meeting, where the goal is for colleagues to understand the concepts at a general level - not technical details.</p>
+<p><strong>What makes this better?</strong></p>
+<p>You tell the language model a bit about the background and/or context of the text you are asking it to produce.</p>
+</div>
+</div>
+</section>
+<section id="spesifiser-format">
+<h3>2. Specify format</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Create meeting minutes from these notes: [your notes]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>Based on my notes from the meeting, create meeting minutes. Structure the minutes with participants, agenda, decisions and tasks. My notes: [your notes].</p>
+<p><strong>What makes this better?</strong></p>
+<p>Since you have specified the format, you will need less editing afterwards. The language model will be able to sort and separate the text based on the structure you ask for.</p>
+</div>
+</div>
+</section>
+<section id="definer-en-rolle">
+<h3>3. Define a role</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Check this text: [your text]</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>You are a Norwegian-language copy editor in the higher education sector. Go through the text below and suggest improvements.</p>
+<ul class="simple">
+<li>Point out spelling and grammar errors</li>
+<li>Keep the subject matter unchanged</li>
+</ul>
+<p>The text: [your text]</p>
+<p><strong>What makes this better?</strong></p>
+<p>Language models have seen text from a great many roles and genres. Tell the model which role it should take on, and you get more relevant and focused answers.</p>
+</div>
+</div>
+</section>
+<section id="gi-eksempler">
+<h3>4. Give examples</h3>
+<div class="uio-grid-row">
+<div class="uio-icon-box dont col-lg">
+<h3>Inadequate</h3>
+<p>Write a title for a news story about us getting a new system for travel expense claims.</p>
+</div>
+<div class="uio-icon-box do col-lg">
+<h3>Better</h3>
+<p>I am going to write titles for internal news stories for staff at the University of Oslo.</p>
+<p>Here are examples of the style I want:</p>
+<ul class="simple">
+<li>“New offer: Free language courses for staff”</li>
+<li>“Important: Changes to meeting-room booking from 1 April”</li>
+<li>“Remember: The deadline for registering working hours is approaching”</li>
+</ul>
+<p>Write a short title in the same style for this story: We are getting a new IT system for travel expense claims next month.</p>
+<p>Requirements for the title:</p>
+<ul class="simple">
+<li>Max 90 characters</li>
+<li>Must be informative and matter-of-fact</li>
+<li>Target audience: all staff</li>
+</ul>
+<p><strong>What makes this better?</strong></p>
+<p>Here you give examples of the style or format you want. This is often easier than explaining the style in words. This technique is often called “Few-shot prompting”</p>
+</div>
+</div>
+</section>
+</section>
+<span id="document-module3/praktisk-ovelse-forbedre-instruksjoner"></span><section id="praktisk-ovelse-forbedre-instruksjoner">
+<h2>Practical exercise: Improve prompts</h2>
+<p>Now try improving the prompts from the previous page in GPT UiO yourself. This will give you a good indication of how the language model responds to the prompts you give.</p>
+<div class="uio-icon-box task">
+<h3>Try it yourself!</h3>
+<p>Open <a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> and try to improve the prompts in the examples from the previous page yourself.</p>
+<p><strong>1. Improve poor prompts</strong></p>
+<p>Copy each of the inadequate prompts below into GPT UiO, and look at the answer you get:</p>
+<ol class="loweralpha simple">
+<li>“Explain the difference between AI and machine learning.”</li>
+<li>“Create meeting minutes from these notes: [your notes]”</li>
+<li>“Check this text: [your text]”</li>
+<li>“Write a title for a news story about us getting a new system for travel expense claims.”</li>
+</ol>
+<p><strong>2. Write improved versions</strong></p>
+<p>Then rewrite each prompt so that you use all the principles from the previous page</p>
+<ul class="simple">
+<li>Give context</li>
+<li>Specify format</li>
+<li>Define a role</li>
+<li>Give examples</li>
+</ul>
+<p>Test the new prompts in GPT UiO and compare the answers with the ones you got in point 1.</p>
+<p><strong>3. Reflection</strong></p>
+<p>Consider the following:</p>
+<ol class="loweralpha simple">
+<li>What became better in the answers after you improved the prompts?</li>
+<li>Which of the principles (context, format, role, examples) had the biggest impact on quality?</li>
+<li>How can you use these principles in your own, actual work tasks (for example emails, case documents, website texts)?</li>
+</ol>
+</div>
+</section>
+<span id="document-module3/nyttige-instruksjons-teknikker"></span><section id="nyttige-instruksjons-teknikker">
+<h2>Useful prompting techniques</h2>
+<p>Once you have learned the principles for good prompts, you can also apply various prompting techniques. You can use the techniques individually, or combine them.</p>
+<div class="uio-color-box-3">
+<h3>Make a plan</h3>
+<p>Create a work plan for how the AI should solve the problem. This gives more well-considered answers and is especially useful for complex tasks.</p>
+<p><strong>Example</strong></p>
+<p>You are an experienced course developer at a university. I am going to hold a 2-hour introductory course in using GPT UiO for staff at the University of Oslo who are beginners.</p>
+<p>Think step by step before you answer:</p>
+<ol class="arabic simple">
+<li>Identify the target audience more concretely (who they are, what they already know, what they need).</li>
+<li>Suggest 3-4 concrete learning objectives for the course.</li>
+<li>Break the time into a simple schedule (e.g. 4 x 25 minutes with short breaks).</li>
+<li>For each block: describe content, working method (lecture, demo, exercise) and what the participants should take away.</li>
+<li>Finally: suggest a simple homework task the participants can do after the course.</li>
+</ol>
+<p>First show your step-by-step thinking as bullet points, and then a clean proposal for a course plan.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Ask for reasoning</h3>
+<p>Ask the AI to explain why it gave the answer it did. A brief justification makes it easier for you to assess whether the answer is relevant and trustworthy.</p>
+<p><strong>Example</strong></p>
+<p>I am going to organize a workshop about […]. Suggest some activities that can help the participants with the task they need to solve. Give a justification in 3-5 points for how the activities can help the participants.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Improve the prompt step by step</h3>
+<p>The first answer is rarely perfect, and that is completely normal. Build on the answers in a conversation.</p>
+<p><strong>Example</strong></p>
+<p>First prompt: “Write a draft email about the new booking system.”</p>
+<p>Follow-up 1: “Make it more concise, max 3 paragraphs.”</p>
+<p>Follow-up 2: “Add a sentence about where they can get help.”</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Start a new conversation</h3>
+<p>As we learned in <a class="reference external" href="module2/sprakmodeller-har-ikke-hukommelse.html" rel="noreferrer" target="_blank">Language models’ memory <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> long conversations or a new topic can confuse the model and give poorer answers.</p>
+<p>So start a new conversation if you notice that the answers are starting to drop in quality.</p>
+</div>
+</section>
+<span id="document-module3/praktisk-ovelse-forbedre-egne-instruksjoner"></span><section id="praktisk-ovelse-forbedre-egne-instruksjoner">
+<h2>Practical exercise: Improve your own prompts</h2>
+<div class="uio-icon-box task">
+<h3>Task</h3>
+<p>Think of a task you would like AI to help you with that is a bit more complex than just improving text. This could for example be planning an event, or explaining complex relationships or concepts.</p>
+<ol class="arabic simple">
+<li>How would you normally go about the prompt to the AI? -  Open <a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> and enter the prompt.</li>
+<li>Choose one of the techniques from the previous page, and apply the principles for good prompts. Improve your prompt.</li>
+<li>Compare the answer. Can you make further improvements by using more techniques?</li>
+</ol>
+</div>
+</section>
+<span id="document-module3/tips-om-pre-instruksjon-og-ki-assistenter"></span><section id="tips-om-pre-instruksjon-og-ki-assistenter">
+<h2>Tips about pre-prompts and AI assistants</h2>
+<p>If you have spent time building a good prompt with the techniques and principles we have just learned about, it is worth holding on to. Especially if you use AI to solve the same type of task repeatedly. You can achieve this by saving the prompt as a pre-prompt in an AI assistant, for example in <a class="reference external" href="module5/gpt-uio-ki-assistenter.html" rel="noreferrer" target="_blank">GPT UiO’s AI assistants <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> which we will return to later in the course. You will then have a specially tailored conversation partner that can be used over and over again.</p>
+<div class="uio-icon-box do">
+<h3>Tip</h3>
+<p>Save prompts that work well, and feel free to share them with your colleagues. Use the tips you have been given in this episode to help you improve your prompts.</p>
+</div>
+</section>
+<span id="document-module3/nar-kan-du-stole-pa-generativ-ki"></span><section id="nar-kan-du-stole-pa-generativ-ki">
+<h2>When can you trust generative AI?</h2>
+<p>Now that you have learned about and can apply some techniques for good prompts, can you then trust the answer AI gives you?</p>
+<p>Generative AI is not simply “reliable” or “unreliable”; it depends on what you use it for. As we have already learned, the language model has no reliable knowledge of what is true, nor any memory. A better question might therefore be: In which situations can you use AI without it entailing significant risk? And what can we do to reduce the risk?</p>
+<p>A general rule is that artificial intelligence is best suited to tasks where errors do not involve significant risk.</p>
+<p>If errors can have serious consequences, you must either</p>
+<ul class="simple">
+<li>be able to check and confirm the information before you use it further, or</li>
+<li>refrain from using AI for that task.</li>
+</ul>
+<p>Below are examples of use with low, medium and high risk.</p>
+<div class="uio-color-box-3">
+<div class="canvas-tabs-pdf">
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Lav risiko</p>
+<div class="canvas-tab-pdf-body">
+<p>If you are in control, or the consequences of errors are low:</p>
+<ul class="simple">
+<li><strong>Brainstorming and idea generation</strong> - Example: You use AI to get other perspectives and angles on your ideas.</li>
+<li><strong>Phrasing text you already have context on</strong> - Example: You produce material where you can easily tell whether it is correct or not.</li>
+<li><strong>Language improvement</strong> - Example: You ask AI to make linguistic and rhetorical changes to a text you have written yourself.</li>
+<li><strong>Summarizing text you have written yourself</strong> - Example: You produced the material yourself, and can easily assess whether the summary is good.</li>
+<li><strong>Creating drafts</strong> - Example: You use AI to get started on a piece of work, but quality-assure the draft before you continue.</li>
+</ul>
+<p><strong>Why is this low risk?</strong></p>
+<p>The chances of errors are smaller, and the consequences of errors are minor.</p>
+<p><strong>Measures to limit risk</strong></p>
+<ul class="simple">
+<li>Apply normal critical assessment of the result AI gives you</li>
+</ul>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Medium risiko</p>
+<div class="canvas-tab-pdf-body">
+<p>If the result is going “out into the world” or you use AI in areas where you lack expertise:</p>
+<ul class="simple">
+<li><strong>Draft of a professional text, email or report</strong> - Example: The text, email or report will be shared with others and it matters if something is wrong.</li>
+<li><strong>Suggested procedures</strong> - Example: You create material that must align with other sources, such as guidelines, documentation or legislation.</li>
+<li><strong>Technical explanations</strong> - Example: You ask AI to explain how something works, and the explanation may be wrong even if it sounds convincing.</li>
+<li><strong>Summarizing text you do not know well</strong> - Example: You ask AI to summarize a text you have not read, and cannot tell whether anything has been misunderstood or omitted from the original text</li>
+</ul>
+<p><strong>Why is this medium risk?</strong></p>
+<p>Errors here can lead to wrong decisions, errors in technical systems, inefficiency, or weakened trust externally.</p>
+<p><strong>Measures to limit risk</strong></p>
+<ul class="simple">
+<li>Check facts against other sources</li>
+<li>Adjust language and framing</li>
+<li>Take final responsibility yourself</li>
+</ul>
+</div>
+</div>
+<div class="canvas-tab-pdf">
+<p class="canvas-tab-pdf-title">Høy risiko</p>
+<div class="canvas-tab-pdf-body">
+<p>If the material produced must be factually correct</p>
+<ul class="simple">
+<li><strong>Numbers and statistics</strong> - Example: You take statistical information from the AI and use it without verifying it against other sources.</li>
+<li><strong>Laws and regulations</strong> - Example: You rely on the AI’s ability to reproduce or summarize legal documents correctly, even though it may misunderstand.</li>
+<li><strong>References</strong> - Example: You use the sources the AI provides without checking that they actually exist.</li>
+<li><strong>Assessment of individuals</strong> - Example: You let the AI make an assessment that directly affects individuals, for example in a hiring process.</li>
+</ul>
+<p><strong>Why is this high risk?</strong></p>
+<p>Here the potential for error is large, and any errors will have major consequences.</p>
+<p><strong>Measures to limit risk</strong></p>
+<ul class="simple">
+<li>Consider whether AI should be avoided</li>
+<li>If AI is used, check the AI result thoroughly and involve competent subject-matter experts</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="uio-icon-box reflect">
+<h3>Reflection</h3>
+<p>Think of a work task you perform as part of your job. Consider which category it falls into: low, medium or high risk</p>
+</div>
+</section>
+<span id="document-module3/strategier-for-a-kvalitetssikre-ki-generert-innhold"></span><section id="strategier-for-a-kvalitetssikre-ki-generert-innhold">
+<h2>Strategies for quality-assuring AI-generated content</h2>
+<p>We have now learned that a language model produces probable text, not truth. It has no <em>reliable</em> factual knowledge, no memory and has built-in biases.</p>
+<p>In this course you have nevertheless been given some concrete tips and “safety rules” for how you can quality-assure content generated by AI. We summarize these here.</p>
+<div class="uio-color-box-3">
+<h3>1. Vurder risikoen først</h3>
+<ul class="simple">
+<li>Low risk (you are in control, and errors are harmless): Normal critical reading is usually enough.</li>
+<li>High risk (the content is going out into the world, must be correct and affects people): Verify the content first, or refrain from using AI.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>2. Gi gode instruksjoner</h3>
+<ul class="simple">
+<li>Give context, ask for a format, define a role, give examples.</li>
+<li>Ask the model to think step by step and justify the answer.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>3. Sjekk svaret, stol aldri på KI-ens “selvsikkerhet”</h3>
+<ul class="simple">
+<li>Check facts and references against reliable sources. If you find no sources, the content is probably fabricated.</li>
+<li>Counteract confirmation bias by also asking for counterarguments or alternative perspectives.</li>
+<li>Be aware of biases and gaps in narrow subject areas, and actively use your own professional knowledge.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>4. Rydd i samtalen</h3>
+<ul class="simple">
+<li>Start a new conversation when you switch topic, or when the conversation has become very long.</li>
+<li>Remove incorrect answers, so that they are not carried along in the context.</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>5. Prøv deg frem</h3>
+<p>There is no single right way to prompt, and good prompting is a skill learned through trial and error. When you get an answer you do not like, try to identify what was missing in your prompt - and add it in the next iteration.</p>
+</div>
+</section>
+<span id="document-module3/oppsummering-god-bruk-ki"></span><section id="oppsummering-kapittel-3">
+<h2>Summary chapter 3</h2>
+<p>You now have a useful set of tools for using AI in a safer and better way. In this chapter we have learned how to assess and quality-assure answers from AI, and how you can use well-designed prompts to get better answers.</p>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Discuss on your own or with a colleague</p>
+<ol class="arabic simple">
+<li>What is a prompt and what should a prompt contain to ensure the best possible answer?</li>
+<li>What did you experience when you tried to improve your prompts?</li>
+<li>Which prompting techniques will be most useful for you?</li>
+<li>How will you assess risk when using AI in your own work tasks?</li>
+<li>How will you quality-assure AI-generated content?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Recap</h3>
+<ul class="simple">
+<li>Prompts are your way of communicating with AI. A prompt is the instruction or question you give to AI. The quality of your prompt directly affects the quality of the answer you get. To ensure the best possible answer you should: give context, specify format, define a role and give examples.</li>
+<li>There are many different prompting techniques:</p>
+<ol class="arabic simple">
+<li>Create a work plan for how the AI should solve the problem</li>
+<li>Ask the AI to explain why it gave the answer it did</li>
+<li>Improve the prompt step by step</li>
+<li>Start a new conversation if you notice that the answers are starting to drop in quality</li>
+</ol>
+</li>
+<li>Generative AI is not simply “reliable” or “unreliable”; it depends on what we use it for. A general rule is that AI is best suited to tasks where errors do not involve significant risk. If errors can have serious consequences, you must either be able to check and confirm the information before you use it further, or refrain from using AI for that task.</li>
+<li>Artificial intelligence has several weaknesses and the content should always be quality-assured. To quality-assure the content you should:
+<ol class="arabic simple">
+<li>Assess the risk</li>
+<li>Write good prompts</li>
+<li>Check the answer</li>
+<li>Tidy up the conversation</li>
+</ol>
+</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Next chapter</h3>
+<p>We have now laid the foundation for using AI safely. In the next chapter the topic is: responsible and sustainable use of AI.
+</section>
+</section>
+<span id="document-module3/avslutning-del1"></span><section id="avslutning-del-1">
+<h2>Conclusion part 1</h2>
+<p>You have now learned the most important fundamental concepts about AI and language models, and perhaps even more importantly: the limitations of the technology. In addition, you have gained a set of tools that can help you get good results from AI, and learned how to assess and ensure the quality of what AI gives you.</p>
+<p>This is a good place to take a break if you are running low on time or energy. You have reached roughly the halfway point of the course.</p>
+<p>In part 2 you will explore aspects related to sustainability and responsible use, and learn about the most important AI services at UiO, before it all wraps up with two sets of exercises that you can download and work on in the days ahead.</p>
+<p>See you in the next part!</p>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module4/ansvarlig-og-baerekraftig-bruk-av-ki"></span><section id="ansvarlig-og-baerekraftig-bruk-av-ki">
+<h2>Responsible and sustainable use of AI</h2>
+<p>In chapter 4 you will learn about important ethical, environmental and legal considerations when using artificial intelligence. This knowledge helps us use AI in a responsible way.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="bordered reference internal image-reference" href="_images/6.2-environment-and-law.png"><img alt="Illustration of a person thinking about sustainability, ethics and laws" class="bordered" src="_images/6.2-environment-and-law.png" style="width: 40%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Learning objectives</h3>
+<ul class="simple">
+<li>I understand the environmental and social costs of using AI</li>
+<li>I am familiar with privacy and copyright in connection with AI</li>
+<li>I can make responsible choices about using AI in my own working day</li>
+</ul>
+</div>
+</section>
+<span id="document-module4/baerekraft"></span><section id="baerekraft">
+<h2>Sustainability</h2>
+<p>Artificial intelligence has costs that go beyond what we pay to use it. Using AI services carries both environmental costs and social costs.</p>
+<p>Many of these challenges are not unique to AI. We find similar issues in the clothing industry, food production and other sectors. As individuals, we have limited control over how data centres are run or how suppliers treat their employees. But we have full control over how we use the technology in our own everyday lives. That is where we can make a difference.</p>
+<p>On the following pages, we will take a closer look at what you as a user can do to contribute to more sustainable use of AI.</p>
+</section>
+<span id="document-module4/miljo"></span><section id="klima-og-miljokostnader">
+<h2>Climate and environmental costs</h2>
+<p>All IT services have a certain environmental impact, but AI services are especially resource-intensive. This is because the models require a lot of heavy computation. AI services have high electricity consumption, both to run the machines and for cooling. A lot of water is also used for water-based cooling of the machines. Both electricity and water are limited resources that should be used sensibly.</p>
+<p>The costs of building data centres come in addition to the costs of using them. First, the land used to build data centres can come at the expense of nature and other construction projects, and once the data centres are finished they use enormous amounts of electricity. A lot of minerals and other limited natural resources also go into making the servers in the data centres. The large increase in the use of artificial intelligence means that AI suppliers are building new data centres at a rapid pace.</p>
+<p>Even though AI is resource-intensive, there are some steps you can take to reduce the burden on the environment.</p>
+<div class="uio-color-box-3">
+<h3>Tip 1 - awareness</h3>
+<p>Be aware of when you use AI and when you can do without it. Try not to reach for AI for everything.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Tip 2 - choice of language model</h3>
+<p>In several services, including GPT UiO, you can choose between several different language models, where some are large and some are small. The small ones are less resource-intensive both to create and to use. They can work well for simple tasks such as proofreading an email or getting suggestions for rephrasing sentences.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Tip 3 - start a new conversation</h3>
+<p>Long conversations require more resources. The longer a conversation becomes, the more resources the system uses, since the model has to process the entire conversation again for each prompt. Start a new conversation when the conversation starts to get long.</p>
+</div>
+</section>
+<span id="document-module4/sosiale-kostnader"></span><section id="sosiale-kostnader">
+<h2>Social costs</h2>
+<p>Training and using artificial intelligence also has social costs. Some AI suppliers use subcontractors in low-cost countries that pay their employees poorly. The employees of these subcontractors may also have temporary positions with poor working conditions. Some are critical of the fact that AI suppliers spend enormous amounts on building data centres, but do not pay the people who help create the models properly.</p>
+<p>Another challenge is that unequal access to AI services can reinforce existing differences between students. Those with good finances can subscribe to expensive services with higher capacity, better quality and extra features. Students with poorer finances may, on the other hand, have to make do with free versions of the tools.</p>
+<p>We see similar issues elsewhere in the world; AI is no exception. As an individual, you may not be able to do much to reduce the social costs associated with AI technology, but you can at least contribute by being an informed, aware and responsible user of the technology.</p>
+<p>At the same time, UiO wants to help reduce these differences by offering good and accessible AI services for all staff and students. UiO closely follows the development of European and Nordic language models that are built within more ethically responsible frameworks, and aims to adopt and offer more such solutions going forward.</p>
+</section>
+<span id="document-module4/ki-og-kognisjon"></span><section id="ikke-gjor-deg-avhengig-av-ki">
+<h2>Do not become dependent on AI</h2>
+<p>The fact that AI can take over large parts of our cognitive work is both practical and tempting. In this course we suggest that AI can help you with brainstorming, planning and producing text. But how far should this help actually go?</p>
+<p>If we constantly leave assessments, structuring and wording to AI, we risk gradually trusting the AI’s analyses more than our own professional and human judgement. This can in turn weaken our own patience and perseverance when faced with work that requires concentration, critical reflection and deep thinking. There is no simple solution to this, but some basic principles are important to remind yourself of:</p>
+<ul class="simple">
+<li>Use AI as a tool to strengthen your own thinking, not as a shortcut that weakens your professional stamina over time.</li>
+<li>Do not reach for AI out of pure reflex. Think for yourself first, and use AI to challenge, expand or quality-check your own ideas.</li>
+<li>Think of the brain as a muscle: it must be used and challenged to be maintained and developed.</li>
+</ul>
+<p>As a knowledge institution, UiO depends on its staff having critical thinking, professional judgement and independent thinking. AI can be a powerful support tool, but it can never replace your own knowledge, experience and ability to make judgements.</p>
+</section>
+<span id="document-module4/datasikkerhet"></span><section id="datasikkerhet">
+<h2>Data security</h2>
+<p>Before you use an AI service to process text, documents or other information, there are two things you need to consider:</p>
+<ol class="arabic simple">
+<li>Is the AI service approved by UiO?</li>
+<li>What data class does the information you want to use belong to?</li>
+</ol>
+<p>If the AI service is <em>not</em> approved by UiO, you may only process <em>green data</em>. This applies no matter how you use the service, for example when you</p>
+<ul class="simple">
+<li>paste text into a chat</li>
+<li>upload a document</li>
+<li>use an AI assistant</li>
+<li>ask the AI to summarise, translate or process content.</li>
+</ul>
+<p>Most AI services out there send your data on to external suppliers. Your information may then be stored or processed outside UiO’s control. You avoid this, however, if you choose one of <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">UiO’s approved AI services <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+<p>The most important thing you can do to safeguard data security is therefore to choose an approved AI service and check which data class the service can handle. You will learn more about UiO’s AI services in chapter 5.</p>
+<section id="uio-sin-dataklassifisering">
+<h3>UiO’s data classification</h3>
+<p>UiO’s AI services are approved for different types of data. This is clearly marked in each service. Which service you can use depends on how great a protection need your data has.</p>
+<p>Below you will find an overview of the data classes with examples of the types of information that belong to each class. You will find more detailed information on the page <a class="reference external" href="https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html" rel="noreferrer" target="_blank">Classification of data and information <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> .</p>
+<p>Use the overview together with UiO’s web page on data classification to work out which data class your data belongs to, and then choose an AI service that is approved for that data class.</p>
+<div style="display: flex; flex-wrap: wrap; width: min(100%, var(--uio-page-max-width));">
+<div class="grid-row" style="grid-gap: 5%; margin: 1rem 0; width: 100%;">
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #7FBF8C; border-bottom: 3px solid #7FBF8C;">
+<h3>🟢 Green: Open information</h3>
+<p>“Open” is used when it <em>does not cause any harm</em> to public interests, the university, an individual or a partner if the information becomes known to unauthorised persons or is changed unintentionally.</p>
+<p>Information that can be shared with everyone.</p>
+<p><strong>For example</strong>:</p>
+<ul class="simple">
+<li>many public websites</li>
+<li>published research data</li>
+<li>public documents</li>
+<li>open access articles</li>
+</ul>
+</div>
+</div>
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #E8C46A; border-bottom: 3px solid #E8C46A;">
+<h3>🟡 Yellow: Restricted information</h3>
+<p>“Restricted” is used when it <em>could cause some harm</em> to public interests, the university, an individual or a partner if the information becomes known to unauthorised persons or is changed unintentionally.</p>
+<p><strong>For example</strong>:</p>
+<ul class="simple">
+<li>personal data</li>
+<li>student assignments</li>
+<li>documents on Canvas or similar platforms</li>
+<li>lecture notes</li>
+<li>research articles behind a paywall</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; width: min(100%, var(--uio-page-max-width));">
+<div class="grid-row" style="grid-gap: 5%; margin: 1rem 0; width: 100%;">
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #DE8A8A; border-bottom: 3px solid #DE8A8A;">
+<h3>🔴 Red: Confidential information</h3>
+<p>“Confidential” is used when it <em>could cause harm</em> to public interests, the university, an individual or a partner if the information becomes known to unauthorised persons or is changed unintentionally.</p>
+<p>Information that may be accessible, but only to those with approved access.</p>
+<p><strong>For example</strong>:</p>
+<ul class="simple">
+<li>sensitive personal data</li>
+<li>health information</li>
+<li>upcoming exam questions</li>
+</ul>
+</div>
+</div>
+<div class="col-xs" style="padding: 0;">
+<div class="uio-icon-box" style="border-top: 7px solid #57575C; border-bottom: 3px solid #57575C;">
+<h3>⚫ Black: Strictly confidential information</h3>
+<p>“Strictly confidential” is used when it <em>could cause significant harm</em> to public interests, the university, an individual or a partner if the information becomes known to unauthorised persons or is changed unintentionally.</p>
+<p>Information with very limited access.</p>
+<p><strong>For example</strong>:</p>
+<ul class="simple">
+<li>large amounts of red data</li>
+<li>highly confidential research data</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p>The data class tells you which AI services you can use. If the data contains personal data, the privacy rules apply in addition.</p>
+</section>
+</section>
+<span id="document-module4/personvern"></span><section id="personvern">
+<h2>Privacy</h2>
+<p>Personal data is information that can be linked to an individual, for example a name, email address, student submissions or health information. If you are going to process personal data in AI, or any other IT tool, you must comply with the privacy rules. These apply in addition to the rules on data classification and approved services.</p>
+<section id="behandling-av-persondata">
+<h3>Processing personal data</h3>
+<p>The fact that a service is approved for the data class only means that the <em>service</em> itself is secure enough. You must also have a <a class="reference external" href="https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html" rel="noreferrer" target="_blank">legal basis for processing <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> for the processing you want to carry out. Without it, you are not allowed, not even in an approved service.</p>
+<p>Before you collect or handle personal data, you must stop and think.</p>
+<ul class="simple">
+<li>What is the <em>purpose</em> of this use of personal data?</li>
+<li>What <em>risk</em> is associated with handling the data?</li>
+<li>Is it <em>necessary</em> to process all the personal data to achieve the purpose?</li>
+<li>Is it <em>lawful</em> to process the personal data for the relevant purpose?</li>
+</ul>
+<p>Even if you have access to other people’s personal data, that does not mean you are allowed to look at it whenever you want.</p>
+<p>Perhaps it is entirely possible to carry out the task you are facing with fewer or no personal data. If you process sensitive data, the requirements are stricter.</p>
+<p>Nor can you use personal data for <em>other purposes</em> than those for which it was collected.</p>
+<p>An example of when you must be extra careful is if you want to extract personal data from one system in order to process it with AI in another system (for example your laptop). Are you allowed to store the personal data where you are going to process it in AI? Are you sure the purpose of processing the data is in line with what you are allowed to do?</p>
+<div class="uio-icon-box do">
+<h3>What can you do?</h3>
+<ul class="simple">
+<li>Avoid personal data you do not need. Anonymised data or a made-up example is often enough.</li>
+<li>Clarify the legal basis for processing before you begin, not afterwards.</li>
+<li>Stick to the purpose for which the data was collected.</li>
+<li>Check that the service is approved for the data class the information belongs to.</li>
+</ul>
+</div>
+</section>
+</section>
+<span id="document-module4/opphavsrett"></span><section id="opphavsrett">
+<h2>Copyright</h2>
+<p>In addition to data security and privacy, you must take care not to breach copyright when you use an AI service.</p>
+<div class="uio-color-box-3">
+<h3>Things to remember</h3>
+<p>You may use copyright-protected material in an AI service as long as you</p>
+<ol class="arabic simple">
+<li>do so for private use,</li>
+<li>make sure the AI service does not train on the material and</li>
+<li>respect any restrictions the rights holder, such as a publisher, has set.</li>
+</ol>
+</div>
+<p>Under the Copyright Act, the person who creates a creative work holds the copyright to it. For something to be a “creative work”, it must be original. A high degree of effort is not required for the originality requirement to be met. Often, for example, even shorter texts will be protected by copyright.</p>
+<section id="privat-bruk-av-opphavsrettslig-beskyttet-materiale-er-tillatt">
+<h3>Private use of copyright-protected material is permitted</h3>
+<p>When we use copyright-protected material in an AI service, either in a prompt or by uploading it to the service, we make a copy of it. In principle, only the rights holder has the right to make a copy. You may nonetheless have the right to use copyright-protected material in an AI service. The condition is that you use the material <em>privately</em> when you include it in a prompt or upload it to the AI service. The purpose must not be commercial, either directly or indirectly. This private-use rule also covers personal <em>professional</em> use.</p>
+</section>
+<section id="ki-tjenesten-ma-ikke-trene-pa-materialet">
+<h3>The AI service must not train on the material</h3>
+<p>Many AI services store everything they receive, whether in a prompt or an upload. You must make sure the AI service does not train on the material you give it.</p>
+<p>When you use copyright-protected material for private use in an AI service, in a prompt or in an upload, you are on the safest ground if you use an <a class="reference external" href="https://www.uio.no/tjenester/it/ki/" rel="noreferrer" target="_blank">AI service approved by UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>. None of the AI services approved by UiO train on the material you or other users give them.</p>
+<p>Even if you are allowed to use copyright-protected material in an AI service, you must be careful about sharing conversations or other types of data with others. For example, a Gemini Notebook or a GPT UiO assistant can be shared with other users. You should not use such sharing features with copyright-protected material, although it may be permitted in some cases. If you want to use a sharing feature, be cautious and contact the University Library for guidance.</p>
+<div class="uio-icon-box info">
+<h3>About licences</h3>
+<details>
+<summary><strong>Click to expand</strong></summary>
+<p>You must not use copyright-protected material in an AI service, even for private use, if the rights holder has set relevant restrictions. Some book and journal publishers, database providers, and so on, set restrictions on uploading and other types of use in AI services of material they have published. This type of rule is often published in a licence.</p>
+<p>You will often find the licence information where the material is published or available. A licence may, for example, be indicated by the material being marked with “CC”, which comes from the Creative Commons system. If you use material from the University Library, for some resources you can find the licence in <a class="reference external" href="https://uio.oria.no/" rel="noreferrer" target="_blank">Oria <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> by clicking the “Show licence” button. For example, the publisher of the article may have set restrictions on uploading to AI services by stating that it is forbidden to upload it to an AI service. You must respect that. If you are unsure, contact the University Library.</p>
+</details>
+</div>
+</section>
+</section>
+<span id="document-module4/prompt-injection"></span><section id="prompt-injection">
+<h2>Prompt injection</h2>
+<p>When a language model gets access to external content, for example websites or uploaded documents, it can be exposed to prompt injection. Prompt injection means that there are hidden instructions in the content. The instructions can affect the answer or make the model ignore what you yourself asked for. They can be in text, images or other content, and can be hard to detect.</p>
+<p>That is why you should always assess the risk before you let a language model use external content, and adapt your measures to how serious the consequences would be if the model is manipulated.</p>
+<div class="uio-icon-box do">
+<h3>What can you do?</h3>
+<ul class="simple">
+<li>Avoid external content when the risk is high. The safest option is an AI service without internet search, where you only give it documents you control yourself.</li>
+<li>Use reliable sources. Check that the documents you upload come from a known and trustworthy sender.</li>
+<li>Treat external content as unreliable. Do not let websites or documents steer the model’s tasks, and always check the answer before you use it.</li>
+</ul>
+</div>
+</section>
+<span id="document-module4/retningslinjer-og-policies"></span><section id="retningslinjer-og-policies">
+<h2>Guidelines and policies</h2>
+<p>When you use UiO’s digital services, you have a duty to familiarise yourself with the laws and rules that apply to your use. AI is an IT service, and <a class="reference external" href="https://www.uio.no/om/regelverk/it/it-reglement.html" rel="noreferrer" target="_blank">UiO’s IT regulations <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> apply to all IT services. These set out basic guidelines for all use of IT at UiO.</p>
+<p>For AI, UiO’s <a class="reference external" href="https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html" rel="noreferrer" target="_blank">AI guidelines <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> apply in addition. As part of these, we also have a separate set of <a class="reference external" href="https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html" rel="noreferrer" target="_blank">guidelines for agentic AI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>. This course covers most of the points in UiO’s AI guidelines, but not all. You must therefore familiarise yourself with them.</p>
+<p>Because AI is constantly changing, more is required of each individual to stay up to date. Therefore, visit <a class="reference external" href="https://www.uio.no/tjenester/ki/" rel="noreferrer" target="_blank">UiO’s AI pages <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> regularly to keep up with the latest on AI guidelines and recommended use.</p>
+<div class="uio-color-box-3">
+<h3>Remember</h3>
+<p>You are responsible for how you use AI tools, even though UiO provides them.</p>
+</div>
+</section>
+<span id="document-module4/oppsummering-ansvarligbruk"></span><section id="oppsummering-kapittel-4">
+<h2>Summary of chapter 4</h2>
+<p>In this chapter you have learned about important and challenging environmental and ethical aspects of using artificial intelligence. You have also refreshed your knowledge of the rules and guidelines you should follow when using the technology. With increased knowledge of this, you can use AI in a more responsible way.</p>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Discuss on your own or with a colleague.</p>
+<ul class="simple">
+<li>What can you do to reduce the environmental impact of AI services in your working day?</li>
+<li>What types of data do you handle in your working day? Try to classify them according to the data classes.</li>
+<li>Think about how you use AI. Have you been unsure whether what you upload to AI complies with UiO’s rules and policies?</li>
+<li>Reflect on how you use AI. Does AI strengthen or weaken you professionally?</li>
+</ul>
+</div>
+<section id="repetisjon">
+<h3>Recap</h3>
+<ul class="simple">
+<li><strong>AI is a resource-intensive technology.</strong> The enormous demand for AI leads to high consumption of electricity, water and land. You can reduce the burden by being aware of when you use AI, choosing a smaller language model for simple tasks and starting a new conversation when the conversation starts to get long.</li>
+<li><strong>There are social costs associated with AI.</strong> Like all large-scale industry, AI has social costs, both during production and in use.</li>
+<li><strong>Use AI services approved by UiO.</strong> Most AI services are cloud services, and data you share can fall into the wrong hands. By using UiO’s approved AI services, you can be confident this will not happen.</li>
+<li><strong>Personal data requires more than an approved service.</strong> The privacy rules apply no matter which tool you use. You must have a legal basis for processing, and you cannot use the data for purposes other than those for which it was collected.</li>
+<li><strong>Copyright also applies when you use AI.</strong> Many AI services store the text they receive and may use it to train new models. You are protected against this if you use UiO’s approved AI services. You must nonetheless always check whether the material you upload permits uploading to AI.</li>
+<li><strong>External content can contain hidden instructions.</strong> Websites and documents you let a language model read may try to steer it. This is called prompt injection. Use sources you trust, and always check the answer before you use it.</li>
+<li><strong>You are responsible for how you use AI tools</strong>, and you must familiarise yourself with the regulations. UiO’s IT regulations also apply to AI, and in addition UiO has its own AI guidelines that must be followed.</li>
+</ul>
+</section>
+<section id="neste-kapittel">
+<h3>Next chapter</h3>
+<p>You now know what to consider in order to use AI responsibly. In the next chapter we look at which AI services you can use at UiO, and what the different services are suited for.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module5/ki-tjenester-ved-uio"></span><section id="ki-tjenester-ved-uio">
+<h2>AI services at UiO</h2>
+<p>Chapter 5 is about approved AI tools at UiO. In this chapter you will learn what the tools can be used for, why it is important to use them, and which services are best suited to different purposes.</p>
+<dl class="simple">
+<dt>The tools presented in this chapter are:</dt><dd><ul class="simple">
+<li>GPT UiO</li>
+<li>Autotekst and Nettskjema-diktafon</li>
+<li>Gemini and Gemini Notebook</li>
+<li>Microsoft Copilot Chat</li>
+</ul>
+</dd>
+</dl>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="bordered reference internal image-reference" href="_images/4.1-AI-tools.png"><img alt="Illustration of a toolbox" class="bordered" src="_images/4.1-AI-tools.png" style="width: 70%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<div class="uio-color-box-1">
+<h3>Learning objectives</h3>
+<ul class="simple">
+<li>I know which UiO data can be shared with the various approved AI services</li>
+<li>I can choose the right AI service based on need and data classification</li>
+<li>I know how to get access to and use the various approved AI tools</li>
+</ul>
+</div>
+</section>
+<span id="document-module5/uio-ki-tjenester-video"></span><section id="en-oversikt-over-uio-sine-viktigste-ki-tjenester">
+<h2>An overview of UiO’s most important AI services</h2>
+<p>In this video you get a short presentation of a selection of AI services at UiO. The video is aimed at students, but is equally relevant for staff.</p>
+<iframe allow="autoplay" allowfullscreen="allowfullscreen" aria-description="KI-verktøy-ved-UiO-01" aria-label="Panopto Embedded Video Player" loading="lazy" src="https://uio.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ddd1e4c2-9af5-4f79-a809-b46700a28c7e&amp;autoplay=false&amp;offerviewer=false&amp;showtitle=false&amp;showbrand=false&amp;captions=false&amp;interactivity=all" style="width: 650px; height: 365px; border: 1px solid #464646;"></iframe>
+<p><a href="https://www.hf.uio.no/hf-studio">Produced by HF:Studio</a> for the course <a href="https://www.uio.no/studier/emner/hf/ifikk/FIL1010/">FIL1010</a>: Responsible use of artificial intelligence in higher education<p></p></p></section>
+<span id="document-module5/uios-godkjente-ki-tjenester"></span><section id="uios-godkjente-ki-tjenester">
+<h2>UiO’s approved AI services</h2>
+<p>When you are going to use AI services on <em>UiO data</em>, the <em>approved</em> services must be used. The reason is that UiO has a data processing agreement with the providers of these services. This ensures that the data exchanged with the services is processed in a way that complies with the GDPR requirements.</p>
+<section id="hva-er-problemet-med-ikke-godkjente-tjenester">
+<h3>What is the problem with non-approved services?</h3>
+<p>If you use services directly from private providers such as ChatGPT or Claude Code, the providers can to a greater extent do what they want with your data. Even though you can opt out of training use in services like ChatGPT, there is a big difference between a consumer account and a solution where the organization has a data processing agreement in place.</p>
+</section>
+<section id="er-det-forbudt-a-bruke-andre-ki-verktoy-enn-de-godkjente">
+<h3>Is it forbidden to use AI tools other than the approved ones?</h3>
+<p>When you, as someone affiliated with UiO, work on your private computer with your own texts and data, it is not forbidden to use AI tools other than those approved by UiO. On the other hand: if you, on a private or UiO-owned computer, submit data owned by UiO to an AI, it is in fact forbidden to use AI tools other than those approved by UiO. You must therefore be extra careful about what you use the services for and which services you use.</p>
+<p>This means, then, that general questions can be fine, but not if you include information about, for example, UiO’s systems or staff, or upload or otherwise make available documents with information that UiO owns.</p>
+<div class="uio-color-box-3">
+<h3>Important</h3>
+<p>Never share UiO data with AI services that are not approved at UiO.</p>
+</div>
+<p>Let us take a closer look at the different AI services that UiO offers so that you can choose the right service for your purpose.</p>
+</section>
+</section>
+<span id="document-module5/gpt-uio"></span><section id="gpt-uio">
+<h2>GPT UiO</h2>
+<p>GPT UiO is UiO’s in-house, privacy-safe AI chat. It works much like other AI chat services: you communicate with the language model through a chat window.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="bordered reference internal image-reference" href="_images/gpt-uio-skjermdump.png"><img alt="Screenshot of GPT UiO's chat window" class="bordered" src="_images/gpt-uio-skjermdump.png" style="width: 80%;"/>
+</a>
+</figure>
+<p>The big advantage of using GPT UiO is that data that is stored is stored on UiO’s own servers. Your name and username are not shared with other companies; only UiO has access to this information. In addition, your conversations are not used to further train the language models. And last but not least: you can use GPT UiO with data up to the red class, but only if you choose a suitable model.</p>
+<p>On the next pages we will learn more about two important features of GPT UiO, namely the ability to choose among several language models and GPT UiO’s AI assistants.</p>
+</section>
+<span id="document-module5/gpt-uio-hvilken-modell-skal-du-velge"></span><section id="gpt-uio-hvilken-modell-skal-du-velge">
+<h2>GPT UiO: which model should you choose?</h2>
+<p>In GPT UiO you can choose between several different language models - that is, which “brain” the service uses. The models have different sizes, features and use cases.</p>
+<p>A particularly important difference between the models is whether they run in the cloud (OpenAI’s GPT models in the Microsoft Azure cloud) or <em>locally</em>. By <em>locally</em> we mean on servers owned and operated by UiO or our partner NTNU. If you choose a local model, no data leaves UiO/NTNU.</p>
+<p>The local language models are good, but they are <em>smaller</em> than those that run in the cloud. This means that if the task you need to solve is very complex, a cloud model may be able to give you a result of better quality.</p>
+<div class="uio-color-box-3">
+<h3>Key questions for choosing a model</h3>
+<ul class="simple">
+<li>Is the answer good enough with a smaller model? Great, go for the smaller model and save resources!</li>
+<li>Not good enough quality in the answer? Switch from a smaller local model to a larger cloud model.</li>
+<li>Do you need extra protection for your data? Choose a local model that supports data up to the red class.</li>
+<li>Are you going to process images in addition to text? Choose a model that supports images.</li>
+</ul>
+</div>
+<p>In GPT UiO’s model selector you can read a little about the different models, and see which data classification each one is approved for.</p>
+<div class="uio-color-box-3">
+<h3>Bonus content</h3>
+<details>
+<summary><strong>GPT UiO’s model selector</strong></summary>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-modellvelger.png"><img alt="Menu in GPT showing the different language models you can choose from" src="_images/gpt-modellvelger.png" style="width: 75%;"/>
+</a>
+</figure>
+<p>Click the down arrow (marked in red) to see which language models you can choose from.</p>
+</details>
+<details>
+<summary><strong>Example of language models in the model selector</strong></summary>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-uio-modeller.png"><img alt="Menu in GPT showing the different language models you can choose from" src="_images/gpt-uio-modeller.png" style="width: 75%;"/>
+</a>
+</figure>
+<p>When you click the model selector you see a list of the language models GPT UiO offers. The list is updated when new models or versions become available.</p>
+<p>For each model it is indicated which data category it supports, whether it is an experimental model for testing (flask), as well as whether the model supports images.</p>
+<p>There is also a short description of what the model is suited for.</p>
+<p>And last but not least, whether the model runs locally (at UiO in Educloud or at NTNU); if it does not, it runs in the cloud.</p>
+</details>
+</div>
+</section>
+<span id="document-module5/gpt-uio-ki-assistenter"></span><section id="gpt-uio-ki-assistenter">
+<h2>GPT UiO: AI assistants</h2>
+<p>In GPT UiO you can create your own AI assistants. An AI assistant is a set of saved prompts that you can use multiple times. These prompts can be simple or complex.</p>
+<p>For example, you can give an instruction that a text should “be translated into Norwegian with formal, academic language, and that abbreviations and journal titles should not be translated.”. This is a simple AI assistant that can save you time if you often need to ask the AI to translate like this.</p>
+<p>A complex assistant contains many prompts, for example detailed instructions for what role the assistant should have, thorough instructions on how it should respond, and perhaps also what format you want the answer in. One example is to create an AI assistant that acts as an experienced student administration adviser at UiO: It should always explain regulations in a simple way, suggest standard wordings for emails, and give the answers in a structured form with headings and bullet points so they can be copied straight into case documents.</p>
+<p>GPT UiO has its own <em>assistant</em> feature: if you use a prompt often, it can be smart to save it in an assistant instruction (also called a <em>pre-prompt</em>). Then you can quickly start a conversation based on the prompt, without having to write it again. This can be useful for tasks you do often, for example translation or getting critical feedback on text.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-uio-assistent.png"><img alt="Screenshot of GPT UiO's assistant feature" src="_images/gpt-uio-assistent.png" style="width: 75%;"/>
+</a>
+</figure>
+<p>When you create the assistant you can, among other things:</p>
+<ul class="simple">
+<li>upload files, so that the model can search them and use relevant information in its answers</li>
+<li>choose a specific language model for the assistant to use</li>
+<li>share the assistant with others, for example colleagues or students.</li>
+</ul>
+<p>UiO also offers some selected quality-assured AI assistants that many may find useful.</p>
+<section id="eksempel-pa-en-assistent-instruksjon">
+<h3>Example of an assistant instruction</h3>
+<p>After clicking “Create AI assistant” you enter your assistant instruction. Here you see an example of one. Remember to use the good prompting techniques you have learned when you try this yourself!</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/gpt-uio-assistent-admin.png"><img alt="Example of an assistant instruction for meeting minutes" src="_images/gpt-uio-assistent-admin.png" style="width: 75%;"/>
+</a>
+</figure>
+</section>
+</section>
+<span id="document-module5/oppsummert-om-gpt-uio"></span><section id="oppsummert-om-gpt-uio">
+<h2>Summary of GPT UiO</h2>
+<div class="uio-color-box-3">
+<h3>Use GPT UiO if you</h3>
+<ul class="simple">
+<li>need a safe and good chat service</li>
+<li>want to use a GPT UiO AI assistant that a colleague has shared with you, or try one of UiO’s selected AI assistants</li>
+<li>need to handle red data (choose a model that supports red data)</li>
+<li>want to be sure that none of your data is sent to the cloud (choose a local model)</li>
+<li>want to easily switch between larger models (OpenAI’s GPT models) that run in the cloud or one of the smaller open models that run on UiO’s or NTNU’s IT systems</li>
+</ul>
+</div>
+</section>
+<span id="document-module5/autotekst-og-nettskjema-diktafon"></span><section id="autotekst-og-nettskjema-diktafon">
+<h2>Autotekst and Nettskjema-diktafon</h2>
+<section id="autotekst">
+<h3>Autotekst</h3>
+<p>Autotekst is a UiO-developed service that transcribes speech to text using OpenAI’s automatic speech recognition model <a class="reference external" href="https://openai.com/nb-NO/index/whisper/" rel="noreferrer" target="_blank">Whisper <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>. The service runs in secure environments locally on UiO’s IT systems, and is therefore approved for data up to the red class.</p>
+<p>You can use Autotekst to transcribe recordings of meetings, lectures or interviews, to name a few use cases. The audio that Autotekst transcribes can come from audio files you upload, for example from Panopto or Zoom. Autotekst can also transcribe automatically from UiO’s in-house dictaphone app, Nettskjema-diktafon (more about this below).</p>
+<p>Worth noting: Whisper is good at Norwegian, thanks to the National Library of Norway’s Norwegian-trained Whisper model.</p>
+</section>
+<section id="tsd-autotekst">
+<h3>TSD-Autotekst</h3>
+<p>In addition to the “regular” Autotekst service, UiO also has TSD-Autotekst. TSD stands for Services for Sensitive Data (Tjenester for Sensitive Data) and is UiO’s secure platform that supports data up to the black class. Here it is safe to send recordings and have health-related interviews or other content considered black data transcribed.</p>
+</section>
+<section id="nettskjema-diktafon">
+<h3>Nettskjema-diktafon</h3>
+<p>This is a mobile app developed by UiO, which uses Autotekst or TSD-Autotekst in the background. With Nettskjema-diktafon you can make recordings that are sent safely and automatically from your phone to (TSD-)Autotekst through UiO’s Nettskjema service.</p>
+<p>Depending on whether the recording is linked to a Nettskjema form in TSD or not, the service supports data up to the black class.</p>
+</section>
+<section id="nar-passer-det-a-bruke-autotekst-eller-tsd-autotekst">
+<h3>When is it appropriate to use Autotekst or TSD-Autotekst?</h3>
+<p>When you have audio or video recordings (meeting recordings, lectures, interviews) that you want to transcribe.</p>
+<div class="uio-color-box-3">
+<h3>Use Autotekst if the data is classified as</h3>
+<p>open 🟢, restricted 🟡 or confidential 🔴 level.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Use TSD-Autotekst if the data is classified as</h3>
+<p>strictly confidential ⚫.</p>
+</div>
+</section>
+</section>
+<span id="document-module5/gemini-og-notebooklm"></span><section id="gemini-og-gemini-notebook">
+<h2>Gemini and Gemini Notebook</h2>
+<p>Gemini and Gemini Notebook are two AI services from Google that UiO offers to students and staff. The language model used in the background is also called Gemini, and is a series of language models developed by Google DeepMind. Both services run in Google Cloud, that is, outside UiO’s own IT systems.</p>
+<p>Both services are covered by UiO’s data processing agreement with Google. Among other things, this means that the information you enter into the services (for example prompts and files) is not used to further train the AI models.</p>
+<p>You can work with data up to the yellow class in both Gemini and Gemini Notebook, in line with UiO’s internal classification of information.</p>
+<div class="uio-color-box-3">
+<h3>Important when you use Gemini and Gemini Notebook</h3>
+<p>To use the Gemini services you must:</p>
+<ol class="arabic simple">
+<li>have an account in Google Workspace linked to UiO</li>
+<li>pay special attention to being logged in with your UiO Google account when you use the services</li>
+</ol>
+<p>When you use the services, you must be especially careful about what you upload. The service does not run on UiO’s systems.</p>
+<ul class="simple">
+<li>Gemini and Gemini Notebook are only approved for data up to the yellow class 🟡</li>
+<li>Do not upload material that can identify or expose other people (for example student submissions, patient information, interviews, personal photos or audio recordings)</li>
+<li>Do not upload other information that for security reasons should not be shared outside UiO’s own services (for example classified or internal documents, research data with special processing requirements)</li>
+</ul>
+</div>
+<section id="gemini">
+<h3>Gemini</h3>
+<p>Gemini is Google’s general AI chat.</p>
+<p>Compared to GPT UiO, Gemini is better suited for fact-finding, because it can retrieve up-to-date information from open websites. Gemini can also create many types of files, for example: PDFs, PowerPoint presentations or Excel spreadsheets, to name a few.</p>
+<p>In addition, Gemini can be connected to sources you have saved in Gemini Notebook (see the section below).</p>
+<div class="uio-color-box-3">
+<h3>Use Gemini if you</h3>
+<ul class="simple">
+<li>need a powerful AI model that can generate images</li>
+<li>want to upload, process or generate files</li>
+<li>want to use the sources you have already added to a Gemini Notebook</li>
+<li>need internet search</li>
+<li>are entering information classified as green 🟢 or yellow 🟡</li>
+</ul>
+</div>
+</section>
+<section id="gemini-notebook">
+<h3>Gemini Notebook</h3>
+<p>Gemini Notebook is an AI assistant from Google that is specialized for working with documents and your own sources.</p>
+<p>The notebook does not answer questions until you have uploaded information it can use as a source. You must therefore first build up your own “knowledge bank” for each notebook, which can contain:</p>
+<ul class="simple">
+<li>documents or pasted text</li>
+<li>websites</li>
+<li>recordings from lectures</li>
+</ul>
+<p>When Gemini Notebook answers your requests, it tries to stay faithful to the sources you have added. You can therefore often get more precise and source-faithful answers than when using GPT UiO. You must nevertheless always check the result Gemini Notebook gives you, just as you do with everything you get from an AI.</p>
+<p>Gemini Notebook also has several useful features, for example to:</p>
+<ul class="simple">
+<li>create summaries in text or audio</li>
+<li>create quizzes</li>
+<li>create presentations</li>
+</ul>
+<p>Remember that when you work with documents it is important that you are in control of the copyright to the material: do not upload documents you do not have the rights to share.</p>
+<div class="uio-color-box-3">
+<h3>Use Gemini Notebook if you</h3>
+<ul class="simple">
+<li>are going to work a lot with documents and your own sources</li>
+<li>want to generate different types of resources such as quizzes or podcasts based on your documents and sources</li>
+<li>need web search</li>
+<li>are entering information classified as green 🟢 or yellow 🟡</li>
+</ul>
+</div>
+</section>
+</section>
+<span id="document-module5/microsoft-copilot-chat"></span><section id="microsoft-copilot-chat">
+<h2>Microsoft Copilot Chat</h2>
+<p>Microsoft Copilot Chat at UiO works like a regular chat service with access to web search. The service uses the GPT language models from <a class="reference external" href="https://openai.com/nb-NO/" rel="noreferrer" target="_blank">OpenAI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>. The chat can work with text (for example create a draft for a PowerPoint presentation), images and video. The service has several built-in prompt suggestions (prompt gallery) to help you get started, and is therefore well suited if you want AI assistance that is intuitive and easy to use.</p>
+<p>At UiO, Microsoft Copilot Chat is approved only for use with green data. You must therefore be especially careful when using the service. Be careful not to share personally sensitive or confidential information with Microsoft Copilot Chat.</p>
+<div class="uio-color-box-3">
+<h3>Important when you use Microsoft Copilot Chat</h3>
+<p>To use Microsoft Copilot Chat you must:</p>
+<ol class="arabic simple">
+<li>be an active user of MS 365</li>
+<li>pay special attention to being logged in with your UiO Microsoft account when you use the service.</li>
+</ol>
+<p>When you use the services, you must be especially careful about what you upload. The service does not run on UiO’s systems.</p>
+<ul class="simple">
+<li>Microsoft Copilot Chat is only approved for data up to the green class 🟢</li>
+<li>No personal data or other information that is not openly available must be uploaded to Microsoft Copilot Chat.</li>
+<li>Do not upload other information that for security reasons should not be shared outside UiO’s own services (for example classified or internal documents, research data with special processing requirements)</li>
+</ul>
+</div>
+<div class="uio-icon-box info">
+<h3>The AI products from Microsoft</h3>
+<p>All of Microsoft’s AI products are now called Microsoft Copilot, but at UiO we have only activated the chat feature. At UiO, Microsoft Copilot Chat is not integrated directly into the other Microsoft products. This means that the so-called agent feature is not activated, and you therefore do not see the Copilot icon or AI features inside, for example, PowerPoint or Word.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/ms-copilot.png"><img alt="MS Copilot icon" src="_images/ms-copilot.png" style="width: 10%;"/>
+</a>
+</figure>
+<p>You can nevertheless use Microsoft Copilot (Chat) for, among other things:</p>
+<ul class="simple">
+<li>getting help to create a PowerPoint presentation</li>
+<li>uploading a presentation and asking Copilot to create illustrations</li>
+<li>getting summaries or other types of analyses of the content</li>
+</ul>
+<p>What you cannot do is ask Copilot to make changes directly in a file from PowerPoint, Word or other Microsoft applications themselves (the agent functionality of Microsoft Copilot is not turned on at UiO). You still have to make such changes yourself in the program, based on the suggestions you get from Copilot (Chat).</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Use Microsoft Copilot Chat if you</h3>
+<ul class="simple">
+<li>are going to work with green 🟢 data, that is, not upload anything concerning people or data that must not go astray</li>
+<li>need web search</li>
+<li>want an AI chat that can create and work with several types of files</li>
+<li>want an AI chat that is easy to use and helps you get started</li>
+</ul>
+</div>
+</section>
+<span id="document-module5/oppsummering-uio-tjenester"></span><section id="oppsummering-kapittel-5">
+<h2>Summary of chapter 5</h2>
+<p>In this chapter we have learned about the approved AI services at UiO, why it is important to use them, and which services are best suited to different purposes.</p>
+<div class="uio-icon-box reflect">
+<h3>Test yourself</h3>
+<p>Discuss on your own or with a colleague:</p>
+<ol class="arabic simple">
+<li>Which AI services are approved at UiO?</li>
+<li>Why is it important to use them?</li>
+<li>Which AI services will be useful for you and your work tasks?</li>
+</ol>
+</div>
+<section id="repetisjon">
+<h3>Review</h3>
+<p>The table below gives you an overview of the approved AI services at UiO: what they are suited for, which data class they are approved for, and whether they run on UiO’s own IT systems or in the cloud.</p>
+<table class="uio-table docutils align-default" style="width:100%; border-collapse:collapse; table-layout:fixed; border:1px solid #e3e3e3; margin-bottom:1.5em; line-height:1.5;">
+<colgroup>
+<col style="width: 12.5%"/>
+<col style="width: 31.2%"/>
+<col style="width: 16.1%"/>
+<col style="width: 11.6%"/>
+<col style="width: 28.6%"/>
+</colgroup>
+<thead>
+<tr class="row-odd" style="background-color:#f5f5f5; color:#1a1a1a;"><th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Service</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Use case</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Data class</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Web search</p></th>
+<th class="head" style="border:1px solid #e3e3e3; border-bottom:1px solid #d9d9d9; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#f5f5f5; color:#1a1a1a; font-weight:bold;"><p style="margin:0;">Cloud service or UiO service</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>GPT UiO</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">AI chat for text work. You can choose between several language models and create and share your own AI assistants. Supports a selection of file types for upload.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Up to 🔴 red, but only with a model approved for it</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">UiO service. Data is stored at UiO. The largest models run in the cloud (OpenAI in Azure), the smaller ones locally at UiO or NTNU.</p></td>
+</tr>
+<tr class="row-odd" style="background-color:#fafafa;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;"><strong>Autotekst</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Transcription of audio and video recordings, for example meetings, lectures and interviews.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Up to 🔴 red</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">UiO service. Runs locally on UiO’s IT systems.</p></td>
+</tr>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>TSD-Autotekst</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Transcription of recordings that are strictly confidential, for example health-related interviews.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Up to ⚫ black</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">UiO service. Runs locally on UiO’s IT systems in Services for Sensitive Data (TSD).</p></td>
+</tr>
+<tr class="row-odd" style="background-color:#fafafa;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;"><strong>Nettskjema-diktafon</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Mobile app for recordings that are sent safely and automatically for transcription in (TSD-)Autotekst.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Up to 🔴 red if the recording is linked to a Nettskjema form in Educloud. Up to ⚫ black if the recording is linked to a Nettskjema form in TSD</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">❌</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">UiO service. Uses UiO’s Nettskjema and (TSD-)Autotekst in the background.</p></td>
+</tr>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>Gemini (Chat)</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">General AI chat with search in open websites. Suited for fact-finding (has internet access), image generation and for creating PDFs, presentations and spreadsheets. Supports upload and generation of many file types, including all the Microsoft Office file types. Has internet access.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Up to 🟡 yellow</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">✅</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Cloud service from Google. Runs in Google Cloud, outside UiO’s systems. UiO has a data processing agreement.</p></td>
+</tr>
+<tr class="row-odd" style="background-color:#fafafa;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;"><strong>Gemini Notebook</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">AI assistant for your own documents and sources. Gives source-faithful answers and creates summaries, quizzes and podcasts. Supports upload and generation of many file types, including all the Microsoft Office file types. Has internet access.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Up to 🟡 yellow</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">✅</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#fafafa;"><p style="margin:0;">Cloud service from Google. Runs in Google Cloud, outside UiO’s systems. UiO has a data processing agreement.</p></td>
+</tr>
+<tr class="row-even" style="background-color:#ffffff;"><td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;"><strong>Microsoft Copilot Chat</strong></p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Simple AI chat with web search. Suited for fact-finding (has internet access). Works with text, images and video, and has ready-made prompt suggestions to help you get started. Supports upload of many file types, including all the Microsoft Office file types. Has internet access.</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Only 🟢 green</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">✅</p></td>
+<td style="border:1px solid #e3e3e3; padding:14px 16px; text-align:left; vertical-align:middle; white-space:normal; overflow-wrap:break-word; background-color:#ffffff;"><p style="margin:0;">Cloud service from Microsoft. Runs outside UiO’s systems. UiO has a data processing agreement.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="uio-color-box-3">
+<h3>Remember</h3>
+<p>The protection level in the table is the <em>highest</em> data class the service is approved for. You must always use the service that meets your need, and never share UiO data with AI services that are not approved at UiO.</p>
+</div>
+</section>
+<section id="neste-kapittel">
+<h3>Next chapter</h3>
+<p>You have now completed the basic course in AI! In the next and final chapter you will get a summary of the most important points, and concrete tips on how you can take the knowledge further in practice.</p>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-module6/avslutning"></span><section id="avslutning">
+<h2>Conclusion</h2>
+<p>Congratulations! You have now completed the course “Introduction to Artificial Intelligence”.</p>
+<p>Now it is up to you, but we would like to offer you some good advice along the way:</p>
+<ul class="simple">
+<li>Use the knowledge you have gained, as it is only with some experience that AI can become a useful tool.</li>
+<li>Be critical and responsible, and remember that AI has limitations!</li>
+<li>The technology is developing rapidly. Keep learning and stay up to date by following UiO’s web pages about AI, attending courses and workshops at UiO, and using your professional networks and colleagues to share AI experiences with!</li>
+</ul>
+<p>AI is a powerful tool that can help in your everyday work, but it is your expertise and judgement that make AI applicable, useful and safe!</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/5.1-faces.png"><img alt="The faces of the person and the robot" src="_images/5.1-faces.png" style="width: 60%;"/>
+</a>
+<figcaption>
+<p><span class="caption-text">Illustration: Tina Morønning Ruud</span></p>
+</figcaption>
+</figure>
+<section id="prov-selv">
+<h3>Try it yourself!</h3>
+<p>To help you on your way, we have created two sets of practice exercises. You will find them in the <a class="reference external" href="https://uio.instructure.com/courses/63248/pages/prov-selv" rel="noreferrer" target="_blank">final part of the course <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>, and they are exercises you can work on in the days and weeks ahead to become a skilled user of AI.</p>
+<p><strong>Good luck on the rest of your AI journey!</strong></p>
+<div class="uio-icon-box info">
+<h3>About the course</h3>
+<p>The course content was created by Poonam Bhondi Jansen, Maiken Pedersen, Johannes Saastad and Erik Winge. The illustrations were created by Tina Morønning Ruud.</p>
+<p>© Copyright 2026</p>
+<p><strong>Contact and feedback</strong></p>
+<p>We would be glad to receive <a class="reference external" href="https://nettskjema.no/a/ki-intro-admin" rel="noreferrer" target="_blank">feedback on the course <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+<p>Do you have questions about the course or about AI at UiO? Contact the IT department: <a class="reference external" href="mailto:it-hjelp%40uio.no" rel="noreferrer" target="_blank">it-hjelp<span>@</span>uio<span>.</span>no <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> or the people responsible for the course: <a class="reference external" href="mailto:ai-contact%40usit.uio.no" rel="noreferrer" target="_blank">ai-contact<span>@</span>usit<span>.</span>uio<span>.</span>no <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+</div>
+</section>
+</section>
+<span id="document-module6/kilder"></span><section id="kilder-og-lenker">
+<h2>Sources and links</h2>
+<div class="uio-icon-box source">
+<h3>Sources</h3>
+<p id="germain">[Germain] Thomas Germain, “I Hacked ChatGPT and Google’s AI - and It Only Took 20 Minutes”, BBC, 18 February 2026, <a class="reference external" href="https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes" rel="noreferrer" target="_blank">https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p id="hicks">[Hicks] Michael Townsen Hicks, James Humphries, and Joe Slater, “ChatGPT Is Bullshit”, <em>Ethics and Information Technology 26</em>, no. 2 (2024): 38, (<a class="reference external" href="https://doi.org/10.1007/s10676-024-09775-5" rel="noreferrer" target="_blank">https://doi.org/10.1007/s10676-024-09775-5 <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>), at p. 2.</p>
+<p id="laban">[Laban] Philippe Laban, Hiroaki Hayashi, Yingbo Zhou, and Jennifer Neville, “LLMs Get Lost In Multi-Turn Conversation”, arXiv:2505.06120, arXiv, 9 May 2025, <a class="reference external" href="https://doi.org/10.48550/arXiv.2505.06120" rel="noreferrer" target="_blank">https://doi.org/10.48550/arXiv.2505.06120 <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> at p. 1.</p>
+<p id="stokel-walker">[Stokel-Walker] Chris Stokel-Walker, “Scientists Invented a Fake Disease. AI Told People It Was Real”, Nature 652, no. 8110 (2026): 559–61, <a class="reference external" href="https://doi.org/10.1038/d41586-026-01100-y" rel="noreferrer" target="_blank">https://doi.org/10.1038/d41586-026-01100-y <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p id="svarstad">[Svarstad] Jørgen Svarstad, “Politihøgskolen brukte falske KI-tall: — Jeg legger meg flat”, 26 February 2026, <a class="reference external" href="https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462" rel="noreferrer" target="_blank">https://www.khrono.no/politihogskolen-brukte-falske-ki-tall-jeg-legger-meg-flat/1040462 <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+</div>
+</section>
+<section id="lenker">
+<h2>Links</h2>
+<div class="uio-icon-box source">
+<h3>Links to UiO services and other websites we encounter in this course</h3>
+<p><strong>UiO’s AI services</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/gpt-uio/index.html" rel="noreferrer" target="_blank">GPT UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/lyd-video/autotekst/index.html" rel="noreferrer" target="_blank">Autotekst <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-tsd.html" rel="noreferrer" target="_blank">TSD-Autotekst <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/gemini/index.html" rel="noreferrer" target="_blank">Gemini <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/notebooklm" rel="noreferrer" target="_blank">Gemini Notebook <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/lagring-samarbeid/googleworkspace/" rel="noreferrer" target="_blank">Google Workspace <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/copilot/index.html" rel="noreferrer" target="_blank">About Microsoft Copilot Chat <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/diktafon.html" rel="noreferrer" target="_blank">Nettskjema-diktafon <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/lyd-video/panopto/" rel="noreferrer" target="_blank">Panopto <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/forskning/sensitiv/" rel="noreferrer" target="_blank">TSD <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+</ul>
+<p><strong>Links to UiO’s rules and guidelines for the use of AI and IT services</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.uio.no/tjenester/ki/" rel="noreferrer" target="_blank">UiO’s main AI page <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html" rel="noreferrer" target="_blank">UiO’s guidelines for the use of AI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html" rel="noreferrer" target="_blank">UiO’s guidelines for agentic AI <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/tjenester/ki/juridiskeforinger.html" rel="noreferrer" target="_blank">Legal requirements for the use of artificial intelligence (AI) at UiO <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www-int.uio.no/for-ansatte/arbeidsstotte/personvern/veiledninger-om-personvern/behandlingsgrunnlag.html" rel="noreferrer" target="_blank">Guidance on legal basis for processing for employees <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+<li><a class="reference external" href="https://www.uio.no/om/regelverk/it/it-reglement.html" rel="noreferrer" target="_blank">UiO’s IT regulations <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</li>
+<li><a class="reference external" href="https://www.ub.uio.no/bruk/elektroniske-ressurser/" rel="noreferrer" target="_blank">Guidelines for the use of electronic resources from the University Library <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></li>
+</ul>
+<p><strong>AI courses at UiO</strong></p>
+<p>Would you like to delve deeper into the topics surrounding artificial intelligence? <a class="reference external" href="https://www.uio.no/studier/emner/hf/ifikk/FIL1010/" rel="noreferrer" target="_blank">FIL1010 Honest use of artificial intelligence for students <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> is a Canvas course consisting of lecture videos, exercises and recommended literature aimed at students. This is a great resource if you want to learn more! The video in chapter 5 is borrowed from here.</p>
+<p>Also keep an eye on UiO’s <a class="reference external" href="https://www.uio.no/tjenester/ki/kurs/" rel="noreferrer" target="_blank">AI course pages <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
+</div>
+</section>
+<span id="document-module6/treningsoppgaver"></span><section id="prov-selv">
+<h2>Try it yourself!</h2>
+<p>We have created two sets of exercises. In the first set, you will practise different ways of using AI. In the second set, you can explore how to use AI in your own work tasks.</p>
+<p>These are exercises you can work on in the days and weeks ahead.</p>
+</section>
+<span id="document-module6/sett-1"></span><section id="sett-1">
+<h2>Set 1</h2>
+<div class="uio-icon-box task">
+<h3>Exercise 1: Prompts</h3>
+<p>Explore 2 different AI services and practise different techniques for writing prompts. Feel free to discuss with a colleague how the various services work and what they are suited for.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 2 - Idea generation</h3>
+<p>Ask an AI tool to generate 10 ideas for how AI can be used in your everyday work. Clearly specify what kinds of tasks you do and which tools you have available.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 3 - Gemini Notebook</h3>
+<p>Upload a document to Gemini Notebook. Choose a document that is relevant to your job, or a document you are interested in. Create a mind map and a study guide, and ask questions about the content of the document.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 4 - Creating templates</h3>
+<p>Think of an area of your work where you often create similar documents or texts. Use one of the available AI tools to create a draft template you can use in your work.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 5 - AI assistant</h3>
+<p>Set up your very own AI assistant in GPT UiO.</p>
+<ol class="arabic simple">
+<li>Choose one task you do often (e.g. responding to enquiries, creating agendas, summarising meetings).</li>
+<li>Create a “standard prompt” that you can reuse, describing: - Your role and field of work - A typical target audience - The desired style and format</li>
+<li>Test the prompt on an example from your job.</li>
+<li>Refine the prompt until you have a version you can use as a template going forward.</li>
+</ol>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 6 - Image generation</h3>
+<p>You are going to send out an invitation to a meeting on a topic of your choice. Ask Copilot to generate a relevant image you can use in the meeting invitation.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 7 - PowerPoint</h3>
+<p>Ask Copilot to create a draft of a PowerPoint presentation on a topic of your choice.</p>
+</div>
+<div class="uio-icon-box task">
+<h3>Exercise 8 - Simple programming</h3>
+<p>We want Excel to sum the numbers in two columns automatically.</p>
+<figure style="display: flow-root; margin: 1em 0; width: min(100%, var(--uio-page-max-width)); text-align: center;" class="align-center">
+<a class="reference internal image-reference" href="_images/excel-snutt.png"><img alt="Screenshot excerpt of an Excel sheet with 3 columns." src="_images/excel-snutt.png" style="width: 50%;"/>
+</a>
+</figure>
+<p>To achieve this, we have written a short macro:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sub</span> <span class="n">LeggTilTall</span><span class="p">()</span>
+   <span class="n">Dim</span> <span class="n">sisteRad</span> <span class="n">As</span> <span class="n">Long</span>
+   <span class="n">Dim</span> <span class="n">i</span> <span class="n">As</span> <span class="n">Long</span>
+
+   <span class="n">sisteRad</span> <span class="o">=</span> <span class="n">Cells</span><span class="p">(</span><span class="n">Rows</span><span class="o">.</span><span class="n">Count</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">End</span><span class="p">(</span><span class="n">xlUp</span><span class="p">)</span><span class="o">.</span><span class="n">Row</span>
+
+   <span class="n">For</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span> <span class="n">To</span> <span class="n">sisteRad</span> <span class="s1">' Antar at første rad er header</span>
+
+   <span class="n">Cells</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">=</span> <span class="n">Cells</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span> <span class="o">+</span> <span class="n">Cells</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">Value</span>
+<span class="n">Next</span> <span class="n">i</span>
+<span class="n">End</span> <span class="n">Sub</span>
+</pre></div>
+</div>
+<p>Unfortunately, this code snippet contains an error, and the sums we get do not match our expectations.</p>
+<ul class="simple">
+<li>Task 1: Get GPT to explain what is wrong with the code snippet, and why it does not give the sum of columns A and B.</li>
+<li>Task 2: Get GPT to write a correct version of the code that actually gives the sum of columns A and B.</li>
+</ul>
+<p>The exercise can be solved using only the code snippet above and GPT UiO, but for those who happen to be extra curious, there is an Excel file with the described functionality available here if you want to test it yourself: <a class="reference external" href="https://uio.instructure.com/courses/63248/files/3954949/download" rel="noreferrer" target="_blank">Enkel-koding-med-KI.xlsx <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+</div>
+<div class="uio-icon-box source">
+<h3>Sources / Resources</h3>
+<p>Thanks to <a class="reference external" href="https://www.uio.no/om/organisasjon/fellesadm/ova/" rel="noreferrer" target="_blank">ØVA <svg aria-hidden="true" height="1.0em" style="display: inline-block; vertical-align: middle; fill: currentColor;" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> for sharing their AI exercises with us!</p>
+</div>
+</section>
+<span id="document-module6/sett-2"></span><section id="sett-2">
+<h2>Set 2</h2>
+<p>Exercises for exploring the possibilities in your own everyday work.</p>
+<div class="uio-icon-box task">
+<h3>Map your own work tasks</h3>
+<div class="uio-color-box-3">
+<h3>Step 1</h3>
+<p>Write down 5-10 work tasks that you do over the course of a working week. (E.g. responding to emails, creating presentations, writing or updating website text, preparing reports or case documents, planning teaching, seminars or meetings, supervising students, data processing / analysis, case handling)</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Step 2</h3>
+<p>Write a few keywords about what the task involves, how often you do it, and how much time you spend on it.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Step 3</h3>
+<p>Mark which tasks are:</p>
+<ul class="simple">
+<li>routine</li>
+<li>text-heavy</li>
+<li>difficult to get an overview of</li>
+<li>require a lot of ideation</li>
+</ul>
+</div>
+<div class="uio-color-box-3">
+<h3>Step 4</h3>
+<p>Assess the risks of using AI for these work tasks.</p>
+<ol class="loweralpha simple">
+<li>Do you process personal data?</li>
+<li>Do you process data that must be protected, such as research secrets or details about critical UiO infrastructure?</li>
+<li>Do you process data that is protected by copyright?</li>
+<li>If the AI makes a mistake, would it have unfortunate or serious consequences?</li>
+</ol>
+</div>
+<div class="uio-color-box-3">
+<h3>Step 5</h3>
+<p>Choose 2-3 tasks where AI has the potential to make things more efficient or improve them, and explore the following:</p>
+<ol class="loweralpha simple">
+<li>How can AI be used? Feel free to test it together with a colleague.</li>
+<li>What must you do yourself?</li>
+<li>Assess what kind of risks can arise from using AI for this task.</li>
+<li>If the task involves risk: Think through and write down the necessary measures to reduce and control the risk.</li>
+</ol>
+</div>
+<div class="uio-color-box-3">
+<h3>Step 6</h3>
+<p>After exploring your work tasks above, we encourage you to try using AI for the tasks where you see the greatest potential.</p>
+</div>
+<div class="uio-color-box-3">
+<h3>Step 7</h3>
+<p>Identify 2-3 tasks where AI should not be used, and reflect on why.</p>
+</div>
+</div>
+</section>
+</div>
+</section>
+<div class="clearer"></div>
+</div>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<article id="back-cover">
+<div class="container">
+<div class="back-cover-footer">
+<p>
+                    © Copyright IT-avdelingen Universitetet i Oslo.
+            </p>
+<p>
+                  Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3.
+            </p>
+</div>
+</div>
+</article>
+</body>
+</html>

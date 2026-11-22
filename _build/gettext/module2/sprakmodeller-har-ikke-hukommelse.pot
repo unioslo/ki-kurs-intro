@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 18:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,13 +49,13 @@ msgid "Ha korte samtaler"
 msgstr ""
 
 #: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:28
-msgid "Lange samtaler kan \"forvirre\" modellen, slik at den gir dårligere svar. En grunn til det kan være at hele konteksten ikke får plass. Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig. Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [:ref:`Laban <Laban>`] En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen."
+msgid "Lange samtaler kan \"forvirre\" modellen, slik at den gir dårligere svar. En grunn til det kan være at hele konteksten ikke får plass. Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig. Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon [:ref:`Laban <Laban>`]. En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen."
 msgstr ""
 
-#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:34
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:33
 msgid "Det er spesielt viktig å starte en ny samtale om du skifter tema. Se for deg at du har stilt KI spørsmål om økonomireglementet til UiO. Hvis du så stiller spørsmål om hvordan man formaterer figurer i Word, vil modellen svare på spørsmålet i lys av økonomireglementet til UiO. Det gir ikke mening, og du vil få bedre svar hvis du starter en ny samtale."
 msgstr ""
 
-#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:39
+#: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:38
 msgid "I tillegg er språkmodellene dårlig til å skille mellom tekst brukeren har skrevet, og tekst de selv har generert. Derfor bør du sørge for at gale svar ikke blir liggende i samtalen."
 msgstr ""

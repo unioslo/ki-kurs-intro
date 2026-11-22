@@ -29,13 +29,13 @@ Dette gjelder særlig hvis treningsgrunnlaget er mangelfullt eller skjevt.
    Denne typen manipulering kalles ofte "språkmodell-forgiftning".  Aktører kan legge ut misvisende informasjon for at modellene skal bli trent på den.
    Dermed kan modellene gi svar som er manipulert og ikke stemmer overens med virkeligheten.
 
-   Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [:ref:`Germain <Germain>`]
+   Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising [:ref:`Germain <Germain>`]. 
    Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet.
 
    Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström.
    Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler.
    Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org.
-   Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [:ref:`Stokel-Walker <Stokel-Walker>`]
+   Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen [:ref:`Stokel-Walker <Stokel-Walker>`].
 
 .. uio-reflect:: Test deg selv
 

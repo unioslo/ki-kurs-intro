@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 18:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,11 +49,11 @@ msgid "At språkmodeller ikke har sikker kunnskap om hva som er sant, gjør dem 
 msgstr ""
 
 #: ../../source/module2/sprakmodeller-har-ikke-faktakunnskap.rst:32
-msgid "Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising. [:ref:`Germain <Germain>`] Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet."
+msgid "Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising [:ref:`Germain <Germain>`]. Dette er en ganske ufarlig type manipulering, men som allikevel tydeliggjør modellenes svakhet."
 msgstr ""
 
 #: ../../source/module2/sprakmodeller-har-ikke-faktakunnskap.rst:35
-msgid "Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström. Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler. Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org. Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen. [:ref:`Stokel-Walker <Stokel-Walker>`]"
+msgid "Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira Osmanovic Thunström. Hun undersøkte om KI-tjenester ville spre medisinske påstander fra åpenbart fabrikkerte artikler. Derfor publiserte hun to fabrikkerte artikler om en fiktiv diagnose i arkivet preprints.org. Etter kort tid begynte KI-tjenester å vise til den fiktive diagnosen [:ref:`Stokel-Walker <Stokel-Walker>`]."
 msgstr ""
 
 #: ../../source/module2/sprakmodeller-har-ikke-faktakunnskap.rst:40

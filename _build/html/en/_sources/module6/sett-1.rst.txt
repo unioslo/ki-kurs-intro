@@ -75,8 +75,8 @@ Sett 1
    - Oppgave 2: Få GPT til å skrive en riktig versjon av koden som faktisk gir summen av kolonne A og B.
 
    Oppgaven kan løses utelukkende med kodesnutten over og GPT UiO,
-   men for de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den beskrevne funksjonaliteten om man vil teste det selv her: `Enkel-koding-med-KI.xlsx <https://uio.instructure.com/courses/63248/files/3954949/download>`_
+   men for de som eventuelt er ekstra nysgjerrige ligger det en excel-fil med den beskrevne funksjonaliteten om man vil teste det selv her: :download:`Enkel-koding-med-KI.xlsx <../downloads/Enkel-koding-med-KI.xlsx>`
 
 .. uio-source::
 
-   Takk til `ØVA <https://www.uio.no/om/organisasjon/fellesadm/ova/>`_ som har delt sine KI_oppgaver med oss!
+   Takk til `ØVA <https://www.uio.no/om/organisasjon/fellesadm/ova/>`_ som har delt sine KI-oppgaver med oss!

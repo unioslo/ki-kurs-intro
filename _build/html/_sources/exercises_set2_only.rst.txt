@@ -1,0 +1,9 @@
+.. Master document for the Set 2 exercises PDF (English / Norwegian).
+   It intentionally has NO title/heading so the PDF does not get a standalone
+   title page before the actual exercises.
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   module6/sett-2

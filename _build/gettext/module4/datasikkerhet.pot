@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 20:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,11 +65,11 @@ msgid "UiO sin dataklassifisering"
 msgstr ""
 
 #: ../../source/module4/datasikkerhet.rst:24
-msgid "UiO sine KI-tjenester godkjent for ulike typer data. Dette er tydelig markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av hvor stort beskyttelsesbehov dataene dine har."
+msgid "UiO sine KI-tjenester er godkjent for ulike typer data. Dette er tydelig markert i den enkelte tjenesten. Hvilken tjeneste du kan bruke, avhenger av hvor stort beskyttelsesbehov dataene dine har."
 msgstr ""
 
 #: ../../source/module4/datasikkerhet.rst:26
-msgid "Nedenfor finner du en oversikt over dataklassene med eksempler på hva de type informasjon som hører til i de ulike klassene. Du finner utfyllende informasjon på siden `Klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_ ."
+msgid "Nedenfor finner du en oversikt over dataklassene med eksempler på type informasjon som hører til i de ulike klassene. Du finner utfyllende informasjon på siden `Klassifisering av data og informasjon <https://www.uio.no/tjenester/it/sikkerhet/lsis/tillegg/lagring/infoklasser.html>`_ ."
 msgstr ""
 
 #: ../../source/module4/datasikkerhet.rst:28
