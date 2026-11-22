@@ -110,8 +110,6 @@ msgstr ""
 "information in a single prompt [:ref:`Laban <Laban>`]. An important reason "
 "for this was that wrong answers from the model remained in the conversation."
 
-Long conversations are also more likely to contain contradictions or other ambiguities that obscure the intended message.
-
 #: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:34
 msgid ""
 "Det er spesielt viktig å starte en ny samtale om du skifter tema. Se for deg"
@@ -134,5 +132,5 @@ msgid ""
 " ikke blir liggende i samtalen."
 msgstr ""
 "In addition, language models are bad at distinguishing between text the user"
-" has written and text they have generated themselves. Therefore you should "
-"make sure that wrong answers do not remain in the conversation."
+" has written and text they have generated themselves. You should therefore "
+"make sure to remove incorrect responses from the conversation."
