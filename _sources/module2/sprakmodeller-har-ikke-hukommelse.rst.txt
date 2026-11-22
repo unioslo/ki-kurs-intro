@@ -28,7 +28,7 @@ Ha korte samtaler
 Lange samtaler kan "forvirre" modellen, slik at den gir dårligere svar.
 En grunn til det kan være at hele konteksten ikke får plass.
 Ved lange samtaler er det også større sannsynlighet for at teksten inneholder motstridelser eller annet som gjør budskapet utydelig.
-Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon.  [:ref:`Laban <Laban>`]
+Philippe Laban mfl. fant at språkmodeller svarer best når de får all informasjon i en enkelt instruksjon [:ref:`Laban <Laban>`].
 En viktig årsak til det var at gale svar fra modellen ble liggende i samtalen.
 
 Det er spesielt viktig å starte en ny samtale om du skifter tema.

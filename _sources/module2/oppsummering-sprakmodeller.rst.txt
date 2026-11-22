@@ -14,7 +14,7 @@ Før du går videre til kapittel 3 kan du teste hva du har lært.
 Repetisjon
 --------------------------------------------------------------------
 
-* **Store språkmodeller** er matematiske modeller som som bygger opp svaret ett ord av gangen, betinget av
+* **Store språkmodeller** er matematiske modeller som bygger opp svaret ett ord av gangen, betinget av
   konteksten du gir den.
   Store språkmodeller generere med andre ord tekster basert på statistiske mønstre, fremfor *sikker* faktakunnskap.
  
