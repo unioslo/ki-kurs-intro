@@ -58,9 +58,9 @@ msgid ""
 " introduksjonskurs i bruk av GPT UiO for ansatte ved Universitetet i Oslo "
 "som er nybegynnere."
 msgstr ""
-"You are an experienced course developer at a university. I am going to hold "
-"a 2-hour introductory course in using GPT UiO for staff at the University of"
-" Oslo who are beginners."
+"You are an experienced course developer at a university. I will be delivering "
+"a 2-hour introductory course on GPT UiO for the University of Oslo staff "
+" who are new to using it."
 
 #: ../../source/module3/nyttige-instruksjons-teknikker.rst:17
 msgid "Tenk steg for steg før du svarer:"
