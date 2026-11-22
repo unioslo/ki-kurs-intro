@@ -103,12 +103,14 @@ msgid ""
 "svar fra modellen ble liggende i samtalen."
 msgstr ""
 "Long conversations can \"confuse\" the model, so that it gives poorer "
-"answers. One reason for this can be that the entire context does not fit. In"
-" long conversations there is also a greater chance that the text contains "
-"contradictions or other things that make the message unclear. Philippe Laban"
+"answers. One reason may be that the full conversation no longer fits within the model's context window. "
+"Long conversations are also more likely to contain "
+"contradictions or other ambiguities that obscure the intended message. Philippe Laban"
 " et al. found that language models answer best when they are given all the "
-"information in a single prompt. [:ref:`Laban <Laban>`] An important reason "
+"information in a single prompt [:ref:`Laban <Laban>`]. An important reason "
 "for this was that wrong answers from the model remained in the conversation."
+
+Long conversations are also more likely to contain contradictions or other ambiguities that obscure the intended message.
 
 #: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:34
 msgid ""
