@@ -10,4 +10,4 @@ Du vil da ha en spesialtilpasset samtalepartner som kan brukes om og om igjen.
 .. uio-do:: Tips
 
    Lagre instruksjoner som fungerer godt, og del dem gjerne med kollegene dine. 
-   Bruk tipsene du har fått i denne episoden til å hjelpe deg å forbedre dine instruksjoner.
+   Bruk tipsene du har fått i dette kapitlet til å hjelpe deg å forbedre dine instruksjoner.
