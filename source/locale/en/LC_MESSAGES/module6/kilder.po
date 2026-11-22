@@ -96,15 +96,15 @@ msgstr "**UiO's AI services**"
 
 #: ../../source/module6/kilder.rst:36
 msgid "`GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_"
-msgstr "`GPT UiO <https://www.uio.no/tjenester/it/ki/gpt-uio/index.html>`_"
+msgstr "`GPT UiO <https://www.uio.no/english/services/it/ai/gpt-uio/index.html>`_"
 
 #: ../../source/module6/kilder.rst:37
 msgid ""
 "`Autotekst <https://www.uio.no/tjenester/it/lyd-"
 "video/autotekst/index.html>`_"
 msgstr ""
-"`Autotekst <https://www.uio.no/tjenester/it/lyd-"
-"video/autotekst/index.html>`_"
+"`Autotekst <https://www.uio.no/english/services/it/video-"
+"sound/autotekst/index.html>`_"
 
 #: ../../source/module6/kilder.rst:38
 msgid ""
@@ -113,24 +113,26 @@ msgid ""
 "tsd.html>`_"
 msgstr ""
 "`TSD-Autotekst "
-"<https://www.uio.no/tjenester/it/forskning/sensitiv/hjelp/autotekst-"
-"tsd.html>`_"
+"<https://www.uio.no/english/services/it/video-sound/tsd-"
+"autotekst/index.html>`_"
+
+
 
 #: ../../source/module6/kilder.rst:39
 msgid "`Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_"
-msgstr "`Gemini <https://www.uio.no/tjenester/it/ki/gemini/index.html>`_"
+msgstr "`Gemini <https://www.uio.no/english/services/it/ai/gemini/index.html>`_"
 
 #: ../../source/module6/kilder.rst:40
 msgid "`Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm>`_"
-msgstr "`Gemini Notebook <https://www.uio.no/tjenester/it/ki/notebooklm>`_"
+msgstr "`Gemini Notebook <https://www.uio.no/english/services/it/ai/notebooklm/index.html>`_"
 
 #: ../../source/module6/kilder.rst:41
 msgid ""
 "`Google Workspace <https://www.uio.no/tjenester/it/lagring-"
 "samarbeid/googleworkspace/>`_"
 msgstr ""
-"`Google Workspace <https://www.uio.no/tjenester/it/lagring-"
-"samarbeid/googleworkspace/>`_"
+"`Google Workspace <https://www.uio.no/english/services/it/store-"
+"collaborate/workspace/>`_"
 
 #: ../../source/module6/kilder.rst:42
 msgid ""
@@ -138,23 +140,23 @@ msgid ""
 "<https://www.uio.no/tjenester/it/ki/copilot/index.html>`_"
 msgstr ""
 "`About Microsoft Copilot Chat "
-"<https://www.uio.no/tjenester/it/ki/copilot/index.html>`_"
+"<https://www.uio.no/english/services/it/ai/copilot/>`_"
 
 #: ../../source/module6/kilder.rst:43
 msgid ""
-"`Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-"
+"`Nettskjema-diktafon <a"
 "app/nettskjema/hjelp/diktafon.html>`_"
 msgstr ""
-"`Nettskjema-diktafon <https://www.uio.no/tjenester/it/adm-"
-"app/nettskjema/hjelp/diktafon.html>`_"
+"`Nettskjema-diktafon <https://www.uio.no/english/services/it/adm-"
+"services/nettskjema/help/dictaphone.html>`_"
 
 #: ../../source/module6/kilder.rst:44
 msgid "`Panopto <https://www.uio.no/tjenester/it/lyd-video/panopto/>`_"
-msgstr "`Panopto <https://www.uio.no/tjenester/it/lyd-video/panopto/>`_"
+msgstr "`Panopto <https://www.uio.no/english/services/it/video-sound/panopto/>`_"
 
 #: ../../source/module6/kilder.rst:45
 msgid "`TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_"
-msgstr "`TSD <https://www.uio.no/tjenester/it/forskning/sensitiv/>`_"
+msgstr "`TSD <https://www.uio.no/english/services/it/research/sensitive-data/>`_"
 
 #: ../../source/module6/kilder.rst:48
 msgid ""
@@ -164,7 +166,7 @@ msgstr ""
 
 #: ../../source/module6/kilder.rst:50
 msgid "`UiO sin KI hovedside <https://www.uio.no/tjenester/ki/>`_"
-msgstr "`UiO's main AI page <https://www.uio.no/tjenester/ki/>`_"
+msgstr "`UiO's main AI page <https://www.uio.no/english/services/ai/index.html>`_"
 
 #: ../../source/module6/kilder.rst:51
 msgid ""
@@ -172,7 +174,7 @@ msgid ""
 "<https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html>`_"
 msgstr ""
 "`UiO's guidelines for the use of AI "
-"<https://www.uio.no/tjenester/it/ki/ki_retningslinjer.html>`_"
+"<https://www.uio.no/english/services/it/ai/guidelines/index.html>`_"
 
 #: ../../source/module6/kilder.rst:52
 msgid ""
@@ -180,7 +182,7 @@ msgid ""
 "<https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html>`_"
 msgstr ""
 "`UiO's guidelines for agentic AI "
-"<https://www.uio.no/tjenester/ki/retningslinjer/agentisk.html>`_"
+"<https://www.uio.no/english/services/it/ai/guidelines/agentic.html>`_"
 
 #: ../../source/module6/kilder.rst:53
 msgid ""
@@ -188,7 +190,7 @@ msgid ""
 "<https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_"
 msgstr ""
 "`Legal requirements for the use of artificial intelligence (AI) at UiO "
-"<https://www.uio.no/tjenester/ki/juridiskeforinger.html>`_"
+"<https://www.uio.no/english/services/ai/guidelines.html>`_"
 
 #: ../../source/module6/kilder.rst:54
 msgid ""
@@ -205,8 +207,9 @@ msgid ""
 "`UiO sitt IT reglement <https://www.uio.no/om/regelverk/it/it-"
 "reglement.html>`_."
 msgstr ""
-"`UiO's IT regulations <https://www.uio.no/om/regelverk/it/it-"
-"reglement.html>`_."
+"`UiO's IT regulations <https://www.uio.no/english/about/regulations/it/>`_."
+
+index.html
 
 #: ../../source/module6/kilder.rst:56
 msgid ""
@@ -214,7 +217,7 @@ msgid ""
 "<https://www.ub.uio.no/bruk/elektroniske-ressurser/>`_"
 msgstr ""
 "`Guidelines for the use of electronic resources from the University Library "
-"<https://www.ub.uio.no/bruk/elektroniske-ressurser/>`_"
+"<https://www.ub.uio.no/english/using/electronic-resources/>`_"
 
 #: ../../source/module6/kilder.rst:59
 msgid "**KI-kurs på UiO**"
@@ -231,7 +234,7 @@ msgid ""
 msgstr ""
 "Would you like to delve deeper into the topics surrounding artificial "
 "intelligence? `FIL1010 Honest use of artificial intelligence for students "
-"<https://www.uio.no/studier/emner/hf/ifikk/FIL1010/>`_ is a Canvas course "
+"<https://www.uio.no/studier/emner/hf/ifikk/FIL1010/index-eng.html>`_ is a Canvas course "
 "consisting of lecture videos, exercises and recommended literature aimed at "
 "students. This is a great resource if you want to learn more! The video in "
 "chapter 5 is borrowed from here."
