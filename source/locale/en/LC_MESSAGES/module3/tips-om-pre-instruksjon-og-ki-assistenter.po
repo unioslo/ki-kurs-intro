@@ -37,9 +37,9 @@ msgstr ""
 "If you have spent time building a good prompt with the techniques and "
 "principles we have just learned about, it is worth holding on to. Especially"
 " if you use AI to solve the same type of task repeatedly. You can achieve "
-"this by saving the prompt as a pre-prompt in an AI assistant, for example in"
-" `GPT UiO's AI assistants <module5/gpt-uio-ki-assistenter.html>`_ which we "
-"will return to later in the course. You will then have a specially tailored "
+"this by saving the prompt as a pre-prompt in an AI assistant, such as one of "
+" `GPT UiO's AI assistants <module5/gpt-uio-ki-assistenter.html>`_, a feature we "
+"will explore later in the course. You will then have a specially tailored "
 "conversation partner that can be used over and over again."
 
 #: ../../source/module3/tips-om-pre-instruksjon-og-ki-assistenter.rst:10
