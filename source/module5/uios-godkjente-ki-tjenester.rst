@@ -15,10 +15,12 @@ Er det forbudt å bruke andre KI-verktøy enn de godkjente?
 -----------------------------------------------------------
 
 Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-verktøy enn de som er godkjent av UiO. 
-På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er det faktisk forbudt å bruke andre KI-verktøy enn de som er UiO-godkjent. 
+På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, 
+er hovedregelen at du *må* bruke et UiO-godkjent verktøy. 
+For grønne data kan ikke-godkjente KI-tjenester i noen tilfeller brukes, men dette krever en konkret vurdering av blant annet personvern, opphavsrett og misbruksrisiko.
 Du må derfor være ekstra påpasselig med hva du bruker tjenester til og hvilke tjenester du bruker. 
 
-Dette betyr altså at generelle spørsmål kan være greit, men ikke om du sender med informasjon om for eksempel UiOs systemer eller ansatte, eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informasjon som UiO eier. 
+Dette betyr altså at generelle spørsmål kan være greit, men ikke om du sender med informasjon om for eksempel UiOs systemer eller ansatte.
 
 
 .. uio-colorbox-3:: Viktig
