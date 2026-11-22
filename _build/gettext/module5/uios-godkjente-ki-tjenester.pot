@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 21:55+0200\n"
+"POT-Creation-Date: 2026-11-22 23:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,21 +37,21 @@ msgid "Er det forbudt å bruke andre KI-verktøy enn de godkjente?"
 msgstr ""
 
 #: ../../source/module5/uios-godkjente-ki-tjenester.rst:17
-msgid "Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-verktøy enn de som er godkjent av UiO. På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er det faktisk forbudt å bruke andre KI-verktøy enn de som er UiO-godkjent. Du må derfor være ekstra påpasselig med hva du bruker tjenester til og hvilke tjenester du bruker."
+msgid "Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-verktøy enn de som er godkjent av UiO. På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er hovedregelen at du *må* bruke et UiO-godkjent verktøy. For grønne data kan ikke-godkjente KI-tjenester i noen tilfeller brukes, men dette krever en konkret vurdering av blant annet personvern, opphavsrett og misbruksrisiko. Du må derfor være ekstra påpasselig med hva du bruker tjenester til og hvilke tjenester du bruker."
 msgstr ""
 
-#: ../../source/module5/uios-godkjente-ki-tjenester.rst:21
-msgid "Dette betyr altså at generelle spørsmål kan være greit, men ikke om du sender med informasjon om for eksempel UiOs systemer eller ansatte, eller laster opp eller på annen måte tilgjengeliggjør dokumenter med informasjon som UiO eier."
-msgstr ""
-
-#: ../../source/module5/uios-godkjente-ki-tjenester.rst:24
-msgid "Viktig"
+#: ../../source/module5/uios-godkjente-ki-tjenester.rst:23
+msgid "Dette betyr altså at generelle spørsmål kan være greit, men ikke om du sender med informasjon om for eksempel UiOs systemer eller ansatte."
 msgstr ""
 
 #: ../../source/module5/uios-godkjente-ki-tjenester.rst:26
+msgid "Viktig"
+msgstr ""
+
+#: ../../source/module5/uios-godkjente-ki-tjenester.rst:28
 msgid "Aldri del UiO-data med KI-tjenester som ikke er godkjent ved UiO."
 msgstr ""
 
-#: ../../source/module5/uios-godkjente-ki-tjenester.rst:29
+#: ../../source/module5/uios-godkjente-ki-tjenester.rst:31
 msgid "La oss se nærmere på de forskjellige KI-tjenestene som UiO tilbyr slik at du kan velge riktig tjeneste for ditt formål."
 msgstr ""
