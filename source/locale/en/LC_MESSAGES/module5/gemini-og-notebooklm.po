@@ -206,7 +206,7 @@ msgid ""
 msgstr ""
 "When Gemini Notebook answers your requests, it tries to stay faithful to the"
 " sources you have added. You can therefore often get more precise answers "
-"that are more faithful to the source than when using GPT UiO. You must nevertheless "
+"that are more faithful to the sources than when using GPT UiO. You must nevertheless "
 "always check the result Gemini Notebook gives you, just as you do with "
 "everything you get from an AI."
 
