@@ -110,7 +110,34 @@ source/
             └── module1../*.po  # one catalog per source file
 ```
 
-Commit `source/locale/` to git. `_build/` is gitignored.
+Commit `source/locale/` to git. `_build/` is **not** gitignored in this project — the generated HTML (inside `_build/html/`) is tracked so it can be deployed directly.
+
+---
+
+## Localized images (screenshots with text)
+
+Sphinx can swap images automatically based on the build language. When building
+English (`make html-en`), any image referenced in `.rst` with a `.en`
+variant next to it will use the English version; otherwise it falls back to the
+original.
+
+**Naming rule** (default Sphinx pattern):
+
+| Original (Norwegian/neutral) | English variant |
+| --- | --- |
+| `gpt-uio-skjermdump.png` | `gpt-uio-skjermdump.en.png` |
+| `excel-snutt.png` | `excel-snutt.en.png` |
+
+**To add or update an English screenshot:**
+
+1. Place the English screenshot in `source/images/` using the exact original
+   name plus `.en` before the extension.
+2. Rebuild: `make html-en`
+3. Commit the new `.en.png` file(s) to git.
+
+You **do not** change the `.. figure::` or `.. image::` directives in the
+`.rst` source. They always point to the original filename; Sphinx resolves the
+language-specific version at build time.
 
 ---
 
@@ -154,5 +181,6 @@ the `.po` catalogs — edit them there if you want different wording.
   body text, so straight quotes render as guillemets (`«...»`) in Norwegian and
   curly quotes in English.
 - **Images with text.** Screenshots that contain Norwegian UI text are not
-  translated by this workflow; they must be recaptured separately if an English
-  version is wanted.
+  translated automatically by gettext, but English variants can be provided
+  using the `.en.png` naming convention shown above. Untranslated screenshots
+  still appear in the English build.
