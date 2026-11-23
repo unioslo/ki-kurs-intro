@@ -106,7 +106,6 @@ msgstr ""
 " not match reality."
 
 #: ../../source/module2/sprakmodeller-har-ikke-faktakunnskap.rst:32
-#, fuzzy
 msgid ""
 "Et eksempel er da BBC-journalisten Thomas Germain manipulerte blant annet"
 " ChatGPT og Gemini til å svare at han var kåret til mester i pølsespising"
@@ -115,12 +114,11 @@ msgid ""
 msgstr ""
 "One example is when BBC journalist Thomas Germain manipulated ChatGPT,  "
 "Gemini and other language models, into claiming that he had been named a "
-"sausage-eating champion. [:ref:`Germain <Germain>`] This is a fairly "
+"sausage-eating champion [:ref:`Germain <Germain>`]. This is a fairly "
 "harmless type of manipulation, but it nonetheless highlights the models' "
 "weakness."
 
 #: ../../source/module2/sprakmodeller-har-ikke-faktakunnskap.rst:35
-#, fuzzy
 msgid ""
 "Et mer alvorlig eksempel er et forsøk av den svenske forskeren Almira "
 "Osmanovic Thunström. Hun undersøkte om KI-tjenester ville spre medisinske"
@@ -134,7 +132,7 @@ msgstr ""
 "medical claims from obviously fabricated articles. She therefore "
 "published two fabricated articles about a fictitious diagnosis in the "
 "preprints.org archive. After a short time, AI services began to refer to "
-"the fictitious diagnosis. [:ref:`Stokel-Walker <Stokel-Walker>`]"
+"the fictitious diagnosis [:ref:`Stokel-Walker <Stokel-Walker>`]."
 
 #: ../../source/module2/sprakmodeller-har-ikke-faktakunnskap.rst:40
 msgid "Test deg selv"

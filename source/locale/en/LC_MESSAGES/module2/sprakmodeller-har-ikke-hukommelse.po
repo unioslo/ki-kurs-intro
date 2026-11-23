@@ -96,7 +96,6 @@ msgid "Ha korte samtaler"
 msgstr "Keep conversations short"
 
 #: ../../source/module2/sprakmodeller-har-ikke-hukommelse.rst:28
-#, fuzzy
 msgid ""
 "Lange samtaler kan \"forvirre\" modellen, slik at den gir dårligere svar."
 " En grunn til det kan være at hele konteksten ikke får plass. Ved lange "
