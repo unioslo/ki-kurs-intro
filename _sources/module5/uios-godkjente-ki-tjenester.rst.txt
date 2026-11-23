@@ -11,11 +11,11 @@ Hva er problemet med ikke-godkjente tjenester?
 Hvis du bruker tjenester direkte, uten UiO-pålogging, fra aktører som for eksempel ChatGPT eller Claude Code, kan leverandørene i større grad gjøre hva de vil med dine data.
 Selv om du kan reservere deg mot treningsbruk i tjenester som ChatGPT, er det en stor forskjell på en forbrukerkonto og en løsning der virksomheten har en databehandleravtale på plass.
 
-Er det forbudt å bruke andre KI-verktøy enn de godkjente?
+Er det forbudt å bruke andre KI-tjenester enn de godkjente?
 -----------------------------------------------------------
 
-Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-verktøy enn de som er godkjent av UiO. 
-På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er hovedregelen at du *må* bruke et UiO-godkjent verktøy. 
+Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-tjenester enn de som er godkjent av UiO. 
+På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er hovedregelen at du *må* bruke et UiO-godkjent tjenester. 
 
 For grønne data kan ikke-godkjente KI-tjenester i noen tilfeller brukes, men dette krever en konkret vurdering av blant annet personvern, opphavsrett og misbruksrisiko.
 I disse tilfellene, kreves det med andre ord at du må være ekstra påpasselig med hva du bruker tjenester til og hvilke tjenester du bruker. [#]_
