@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:17
 msgid "Forslag til fortsettelser av teksten \"Jeg vil ha en kopp\"."
-msgstr "Suggested continuations of the text \"I would like a cup of\"."
+msgstr "Suggested next text \"I'll have a cup of\"."
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:18
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:23
 msgid "Forslag til fortsettelser av teksten \"Jeg vil ha et glass\"."
-msgstr "Suggested continuations of the text \"I would like a glass of\"."
+msgstr "Suggested next text \"I'll have a glass of\"."
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:27
 msgid ""
