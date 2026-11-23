@@ -19,8 +19,9 @@ help:
 
 # Build the English site into _build/html/en (uses the gettext catalogs).
 html-en:
-	@$(SPHINXBUILD) -b html -D language=en "$(SOURCEDIR)" "$(BUILDDIR)/html/en" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -b html -D language=en -t en "$(SOURCEDIR)" "$(BUILDDIR)/html/en" $(SPHINXOPTS) $(O)
 	@echo "English HTML is in $(BUILDDIR)/html/en"
+
 
 # Re-extract strings from the Norwegian source and refresh the English catalogs.
 # Changed Norwegian paragraphs show up as fuzzy/untranslated in source/locale/en.
