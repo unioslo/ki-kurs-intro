@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Grunnkurs KI \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23 13:55+0100\n"
+"POT-Creation-Date: 2026-11-23 16:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,11 +33,11 @@ msgid "Hvis du bruker tjenester direkte, uten UiO-pålogging, fra aktører som f
 msgstr ""
 
 #: ../../source/module5/uios-godkjente-ki-tjenester.rst:15
-msgid "Er det forbudt å bruke andre KI-verktøy enn de godkjente?"
+msgid "Er det forbudt å bruke andre KI-tjenester enn de godkjente?"
 msgstr ""
 
 #: ../../source/module5/uios-godkjente-ki-tjenester.rst:17
-msgid "Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-verktøy enn de som er godkjent av UiO. På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er hovedregelen at du *må* bruke et UiO-godkjent verktøy."
+msgid "Når du, som UiO-tilknyttet, jobber på din private datamaskin med dine egne tekster og data, er det ikke forbudt å bruke andre KI-tjenester enn de som er godkjent av UiO. På den andre siden: Hvis du, på privat eller UiO-eid datamaskin, sender inn data som eies av UiO til en KI, er hovedregelen at du *må* bruke et UiO-godkjent tjenester."
 msgstr ""
 
 #: ../../source/module5/uios-godkjente-ki-tjenester.rst:20
