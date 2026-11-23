@@ -46,8 +46,8 @@ msgid ""
 "Skjermbilde med et tastatur der det er skrevet \"Jeg vil ha en kopp\". "
 "Forslag til fortsettelse er \"te\", \"kaffe\" og en emoji."
 msgstr ""
-"Screenshot of a keyboard where \"I would like a cup of\" has been typed. "
-"Suggested continuations are \"tea\", \"coffee\" and an emoji."
+"Screenshot of a keyboard where \"I'll have a cup of\" has been typed. "
+"Suggested continuations are \"coffee\", \"tea\" and \"water\"."
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:17
 msgid "Forslag til fortsettelser av teksten \"Jeg vil ha en kopp\"."
@@ -58,8 +58,8 @@ msgid ""
 "Skjermbilde med et tastatur der det er skrevet \"Jeg vil ha et glass\". "
 "Forslag til fortsettelse er \"vin\", \"med\" og en emoji."
 msgstr ""
-"Screenshot of a keyboard where \"I would like a glass of\" has been typed. "
-"Suggested continuations are \"wine\", \"water\" and an emoji."
+"Screenshot of a keyboard where \"I'll have a glass of\" has been typed. "
+"Suggested continuations are \"wine\", \"water\" and \"milk\"."
 
 #: ../../source/module2/hvordan-fungerer-store-sprakmodeller.rst:23
 msgid "Forslag til fortsettelser av teksten \"Jeg vil ha et glass\"."
