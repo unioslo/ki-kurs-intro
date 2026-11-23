@@ -10,12 +10,12 @@ Forslaget er *betinget* av teksten du har skrevet, og denne teksten kalles *kont
 
 .. list-table::
 
-    * - .. figure:: ../images/IMG_2787.jpg
+    * - .. figure:: ../images/keyboard_1.jpg
             :width: 100%
             :alt: Skjermbilde med et tastatur der det er skrevet "Jeg vil ha en kopp". Forslag til fortsettelse er "te", "kaffe" og en emoji.
 
             Forslag til fortsettelser av teksten "Jeg vil ha en kopp".
-      - .. figure:: ../images/IMG_2788.jpg
+      - .. figure:: ../images/keyboard_2.jpg
             :align: right
             :width: 100%
             :alt: Skjermbilde med et tastatur der det er skrevet "Jeg vil ha et glass". Forslag til fortsettelse er "vin", "med" og en emoji.
