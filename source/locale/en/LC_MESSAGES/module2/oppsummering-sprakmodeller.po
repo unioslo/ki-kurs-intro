@@ -59,7 +59,6 @@ msgid "Repetisjon"
 msgstr "Recap"
 
 #: ../../source/module2/oppsummering-sprakmodeller.rst:17
-#, fuzzy
 msgid ""
 "**Store språkmodeller** er matematiske modeller som bygger opp svaret ett"
 " ord av gangen, betinget av konteksten du gir den. Store språkmodeller "
